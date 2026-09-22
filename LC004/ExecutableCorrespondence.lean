@@ -122,8 +122,8 @@ theorem stepAt_sound :
               cases i with
               | zero =>
                   rcases x with ⟨c,bx⟩
-                  rcases y with ⟨d,by⟩
-                  cases by with
+                  rcases y with ⟨d,yb⟩
+                  cases yb with
                   | false =>
                       simp [stepAt] at h
                   | true =>

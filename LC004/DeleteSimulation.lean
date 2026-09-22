@@ -6,8 +6,6 @@ import LC004.Simulation
 
 namespace LC004
 
-/-- First substantive concrete simulation theorem: merge-forming deletions are
-simulated by the corresponding merge-forming deletion in every heavier state. -/
 theorem deleteSimulation_merge
     {pre post : RunState} {c d : Nat} {bp bq : Bool} {t : RunState}
     (h :
@@ -17,23 +15,25 @@ theorem deleteSimulation_merge
     ∃ v : RunState,
       Step t v ∧
       Heavier (pre ++ (c,true) :: post) v := by
-  obtain ⟨pre', tail', e, ht, he, hpre, htail⟩ :=
-    heavier_split_run pre ((c,bq)::post) d true h
-  have hetrue : e = true := by
-    exact Bool.eq_true_iff.mpr (he rfl)
-  subst e
-  have htailshape :
-      ∃ q post',
-        tail' = (c,q)::post' ∧
-        (bq → q) ∧ Heavier post post' := by
-    simpa using (heavier_head_shape htail)
-  obtain ⟨q, post', htailEq, hbq, hpost⟩ := htailshape
-  subst tail'
-  refine ⟨pre' ++ (c,true)::post', ?_, ?_⟩
-  · rw [ht]
-    exact Step.merge
-  · exact heavier_append hpre (by
-      simp only [Heavier]
-      exact ⟨trivial, trivial, hpost⟩)
+  obtain ⟨pre1, tail1, ep, ht1, hbp, hpre, hrest⟩ :=
+    heavier_split_run pre ((d,true)::(c,bq)::post) c bp h
+  obtain ⟨pre2, tail2, ed, ht2, hed, hmid, hrest2⟩ :=
+    heavier_split_run [] ((c,bq)::post) d true hrest
+  have hedtrue : ed = true := by
+    cases ed <;> simp_all
+  subst ed
+  obtain ⟨q, post', htail, hbq, hpost⟩ :=
+    heavier_head_shape hrest2
+  subst tail2
+  have hmidnil : pre2 = [] := by
+    cases pre2 <;> simp_all [Heavier]
+  subst pre2
+  subst tail1
+  rw [ht1]
+  refine ⟨pre1 ++ (c,true)::post', ?_, ?_⟩
+  · exact Step.merge
+  · apply heavier_append hpre
+    simp only [Heavier]
+    exact ⟨trivial, (by intro _; trivial), hpost⟩
 
 end LC004

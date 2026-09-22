@@ -8,4 +8,6 @@ import LC004.Simulation
 import LC004.DeleteSimulation
 import LC004.NoMergeSimulation
 import LC004.InteriorNoMerge
+import LC004.ListSplit
+import LC004.NoMergeFull
 import LC004.FullSimulation

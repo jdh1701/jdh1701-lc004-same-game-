@@ -38,7 +38,7 @@ theorem deleteSimulation_noMerge_interior
   subst tail1
   rw [ht1]
   refine ⟨pre1 ++ (a,ea)::(b,eb)::right', ?_, ?_⟩
-  · exact Step.noMerge (by
+  · simpa using (@Step.noMerge (pre1 ++ [(a,ea)]) ((b,eb)::right') c (by
       intro p q hp hq
       have hp' : p = (a,ea) := by
         simpa using hp
@@ -46,7 +46,7 @@ theorem deleteSimulation_noMerge_interior
         simpa using hq
       subst p
       subst q
-      simpa using hab)
+      simpa using hab))
   · apply heavier_append hleft
     simp only [Heavier]
     exact ⟨trivial, hea, trivial, heb, hright⟩

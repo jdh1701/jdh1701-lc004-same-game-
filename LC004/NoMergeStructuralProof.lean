@@ -164,9 +164,12 @@ theorem noMergeStructuralExchange_proved :
   | cons px pxs =>
       cases post with
       | nil =>
+          have hchild' :
+              IndexedStep (px :: pxs) i u := by
+            simpa using hchild
           simpa using
             (noMergeStructuralExchange_right_endpoint
-              (pre := px :: pxs) (c := c) (j := (i,u)) hchild)
+              (pre := px :: pxs) (c := c) (j := (i,u)) hchild')
       | cons py pys =>
           have hpre : (px :: pxs : RunState) ≠ [] := by simp
           have hpost : (py :: pys : RunState) ≠ [] := by simp

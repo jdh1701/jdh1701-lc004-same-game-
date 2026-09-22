@@ -81,7 +81,7 @@ theorem indexedStep_strip_prefix
       simp [hs] at hexec
   | some t =>
       have hu : pre ++ t = u := by
-        simpa [hs] using Option.some.inj hexec
+        simpa [hs] using hexec
       exact ⟨t, hu.symm, stepAt_sound hs⟩
 
 end LC004

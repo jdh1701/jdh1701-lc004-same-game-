@@ -37,6 +37,8 @@ theorem bridgeLeftStructuralExchange_of_parts
     subst i
     exact hadj hpre hn hchild
   · have hfaridx : i + 1 < pre.length := by omega
-    exact hfar hn hfaridx hchild
+    obtain ⟨v, hp, ht⟩ := hfar hn hfaridx hchild
+    refine ⟨(i,v), hp, ?_, ht⟩
+    omega
 
 end LC004

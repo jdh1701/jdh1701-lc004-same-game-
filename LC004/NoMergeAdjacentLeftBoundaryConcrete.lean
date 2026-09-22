@@ -106,18 +106,18 @@ theorem adjacentLeftBoundaryLocal_proved :
             exact ⟨v, hp, ExchangeDominates.heavier hh⟩
           · let v : RunState :=
               (x,bx) :: (c,true) :: (e,be) :: zs
-          have hp :
-              IndexedStep
-                ((x,bx) :: (a,true) :: (c,true) :: (e,be) :: zs)
-                1 v := by
-            apply stepAt_sound
-            simp [v, stepAt, hxe]
-          have hs :
-              IndexedStep v 1 ((x,bx) :: (e,be) :: zs) := by
-            apply stepAt_sound
-            simp [v, stepAt, hxe]
-          exact ⟨v, hp,
-            ExchangeDominates.oneStep hs
-              (heavier_refl ((x,bx) :: (e,be) :: zs))⟩
+            have hp :
+                IndexedStep
+                  ((x,bx) :: (a,true) :: (c,true) :: (e,be) :: zs)
+                  1 v := by
+              apply stepAt_sound
+              simp [v, stepAt, hxc]
+            have hs :
+                IndexedStep v 1 ((x,bx) :: (e,be) :: zs) := by
+              apply stepAt_sound
+              simp [v, stepAt, hxc]
+            exact ⟨v, hp,
+              ExchangeDominates.oneStep hs
+                (heavier_refl ((x,bx) :: (e,be) :: zs))⟩
 
 end LC004

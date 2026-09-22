@@ -14,7 +14,7 @@ inductive CompletePath : RunState → List (Nat × RunState) → Prop
       (htail : CompletePath t rest) :
       CompletePath s ((i, t) :: rest)
 
-def UniqueSuccessfulFirst (s : RunState) : Prop :=
+def UniqueSuccessfulChoice (s : RunState) : Prop :=
   ∃! ch : Nat × RunState, SuccessfulChoice s ch
 
 def UniqueCompletePath (s : RunState) : Prop :=
@@ -83,7 +83,7 @@ theorem uniqueCompletePath_uniqueSuccessfulFirst
     {s : RunState}
     (hne : s ≠ [])
     (hu : UniqueCompletePath s) :
-    UniqueSuccessfulFirst s := by
+    UniqueSuccessfulChoice s := by
   rcases hu with ⟨p, hp, hpuniq⟩
   cases hp with
   | done =>
@@ -102,7 +102,7 @@ itself has a unique complete path. -/
 theorem uniqueCompletePath_of_uniqueFirst_and_children
     {s : RunState}
     (hne : s ≠ [])
-    (hfirst : UniqueSuccessfulFirst s)
+    (hfirst : UniqueSuccessfulChoice s)
     (hchildren :
       ∀ ch : Nat × RunState,
         SuccessfulChoice s ch → UniqueCompletePath ch.2) :

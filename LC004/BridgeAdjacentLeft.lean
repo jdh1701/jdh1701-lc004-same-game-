@@ -45,7 +45,12 @@ theorem bridgeAdjacentLeftStructural_of_local
     simpa [List.append_assoc] using hn
   obtain ⟨v, hp, ht⟩ :=
     hlocal hn' hchild'
-  refine ⟨(leftTail.length, v), hp, ?_, ht⟩
+  have hp' :
+      IndexedStep
+        ((leftTail ++ [(a,ba)]) ++ (c,bp) :: (d,true) :: (c,bq) :: post)
+        leftTail.length v := by
+    simpa [List.append_assoc] using hp
+  refine ⟨(leftTail.length, v), hp', ?_, ht⟩
   simp
   omega
 

@@ -48,9 +48,14 @@ theorem stepAt_append_of_inside
               | nil =>
                   simp at hj
               | cons y ys =>
+                  have hrec' :
+                      stepAt ((y :: ys) ++ suffix) (j + 1) =
+                        (stepAt (y :: ys) (j + 1)).map
+                          (fun t => t ++ suffix) := by
+                    simpa using hrec
                   simp only [stepAt]
-                  rw [hrec]
-                  cases htail : stepAt ((y :: ys : RunState)) (j + 1) <;>
+                  rw [hrec']
+                  cases htail : stepAt (y :: ys) (j + 1) <;>
                     simp [htail, List.append_assoc]
 
 /-- Relational form of the same suffix-inertness law. -/

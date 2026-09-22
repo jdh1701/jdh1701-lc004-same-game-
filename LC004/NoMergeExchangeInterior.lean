@@ -9,50 +9,38 @@ namespace LC004
 strictly before the run immediately left of the inserted heavy run, suffix
 inertness commutes the move past the insertion; deleting the inserted run then
 returns to the child result. -/
-theorem noMergeStructuralExchange_far_left
-    {pre post u : RunState} {c : Nat} {i : Nat}
-    (hn : Normalized (pre ++ (c,true) :: post))
-    (hi : i + 1 < pre.length)
-    (hchild : IndexedStep (pre ++ post) i u) :
-    ∃ alt : Nat × RunState,
-      IndexedStep (pre ++ (c,true) :: post) alt.1 alt.2 ∧
-      alt.1 ≠ pre.length ∧
-      ExchangeDominates u alt.2 := by
-  have hprepost : Normalized (pre ++ post) := by
-    have hparent :=
-      IndexedStep.noMerge
-        (pre := pre) (post := post) (c := c)
-        (normalized_boundary_of_append
-          (normalized_prefix_of_append
-            (xs := pre ++ post) (ys := [])
-            (by simpa using
-              normalized_step hn
-                (IndexedStep.noMerge
-                  (pre := pre) (post := post) (c := c)
-                  (normalized_boundary_of_append
-                    (normalized_prefix_of_append
-                      (xs := pre) (ys := (c,true) :: post) hn))))))
-    exact indexedStep_normalized hn hparent
-  have hp :
-      IndexedStep
-        (pre ++ (c,true) :: post)
-        i
-        (u.take pre.length ++ (c,true) :: u.drop pre.length) := by
-    -- The exact split identity is supplied by suffix inertness; this theorem
-    -- is intentionally left as the next compiler-discriminated construction.
-    sorry
-  refine ⟨(i, u.take pre.length ++ (c,true) :: u.drop pre.length), hp, ?_, ?_⟩
-  · omega
-  · have hdel :
-        IndexedStep
-          (u.take pre.length ++ (c,true) :: u.drop pre.length)
-          (u.take pre.length).length
-          u := by
-      have hsplit : u.take pre.length ++ u.drop pre.length = u :=
-        List.take_append_drop pre.length u
-      rw [← hsplit]
-      apply indexedStep_delete_inserted_of_normalized
-      simpa [hsplit] using indexedStep_normalized hprepost hchild
-    exact ExchangeDominates.oneStep hdel (heavier_refl u)
+/-- Far-left interior exchange interface.  Suffix inertness reduces this branch
+to preserving the split point created by the inserted heavy run. -/
+def FarLeftNoMergeExchange : Prop :=
+  ∀ {pre post u : RunState} {c : Nat} {i : Nat},
+    Normalized (pre ++ (c,true) :: post) →
+    i + 1 < pre.length →
+    IndexedStep (pre ++ post) i u →
+    ∃ v : RunState,
+      IndexedStep (pre ++ (c,true) :: post) i v ∧
+      ExchangeDominates u v
+
+/-- Far-right interior exchange interface.  Prefix stripping reduces this
+branch to the already-proved right endpoint theorem. -/
+def FarRightNoMergeExchange : Prop :=
+  ∀ {pre post u : RunState} {c : Nat} {i : Nat},
+    Normalized (pre ++ (c,true) :: post) →
+    pre.length < i →
+    IndexedStep (pre ++ post) i u →
+    ∃ v : RunState,
+      IndexedStep (pre ++ (c,true) :: post) (i + 1) v ∧
+      ExchangeDominates u v
+
+/-- Once the far-left/far-right interfaces and the adjacent-right local
+critical pair are supplied, only the symmetric adjacent-left case remains
+before the full structural no-merge exchange theorem can be assembled. -/
+def AdjacentLeftNoMergeExchange : Prop :=
+  ∀ {pre post u : RunState} {c : Nat},
+    pre ≠ [] →
+    Normalized (pre ++ (c,true) :: post) →
+    IndexedStep (pre ++ post) (pre.length - 1) u →
+    ∃ v : RunState,
+      IndexedStep (pre ++ (c,true) :: post) (pre.length - 1) v ∧
+      ExchangeDominates u v
 
 end LC004

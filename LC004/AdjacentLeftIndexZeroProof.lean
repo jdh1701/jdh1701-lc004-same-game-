@@ -38,4 +38,11 @@ theorem adjacentLeftIndexZeroStrip_proved :
   adjacentLeftIndexZeroStrip_of_executable
     adjacentLeftIndexZeroExecutable_proved
 
+
+theorem adjacentLeftNoMergeExchange_proved :
+    AdjacentLeftNoMergeExchange :=
+  adjacentLeftNoMergeExchange_of_strip
+    adjacentLeftIndexZeroStrip_proved
+    adjacentLeftIndexZeroExecutable_proved
+
 end LC004

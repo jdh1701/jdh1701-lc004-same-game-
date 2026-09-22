@@ -2,6 +2,7 @@ import LC004.FullSimulation
 import LC004.IndexedMove
 import LC004.SuccessfulPaths
 import LC004.ExchangeTarget
+import LC004.PrefixIndexed
 
 namespace LC004
 
@@ -49,5 +50,43 @@ theorem exchangeTarget_implies_dominates
       exact ExchangeDominates.heavier hh
   | oneStep hs =>
       exact ExchangeDominates.oneStep hs (heavier_refl u)
+
+/-- Exchange dominance is stable under an unchanged prefix. -/
+theorem exchangeDominates_prepend
+    (pre : RunState)
+    {u v : RunState}
+    (h : ExchangeDominates u v) :
+    ExchangeDominates (pre ++ u) (pre ++ v) := by
+  cases h with
+  | heavier hh =>
+      exact ExchangeDominates.heavier
+        (heavier_append (heavier_refl pre) hh)
+  | @oneStep i w hs hh =>
+      have hs' :
+          IndexedStep (pre ++ v) (pre.length + i) (pre ++ w) := by
+        cases i with
+        | zero =>
+            cases hs with
+            | @noMerge p post c hb =>
+                simpa [List.append_assoc] using
+                  (IndexedStep.noMerge
+                    (pre := pre ++ p) (post := post) (c := c)
+                    (by
+                      intro x y hx hy
+                      apply hb x y
+                      · simpa using hx
+                      · exact hy))
+            | @merge p post c d bp bq =>
+                simpa [List.append_assoc] using
+                  (IndexedStep.merge
+                    (pre := pre ++ p) (post := post)
+                    (c := c) (d := d) (bp := bp) (bq := bq))
+        | succ j =>
+            simpa [Nat.add_assoc] using
+              (indexedStep_prepend_list pre
+                (i := j + 1) (by omega) hs)
+      exact ExchangeDominates.oneStep hs'
+        (heavier_append (heavier_refl pre) hh)
+
 
 end LC004

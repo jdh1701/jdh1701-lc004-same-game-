@@ -45,4 +45,37 @@ theorem heavier_headColor
           simp [Heavier] at h
           simp [headColor?, h.1]
 
+
+/-- Transfer a no-merge boundary inequality across states with the same head
+color.  The Bool payload is irrelevant; only the exposed run color matters. -/
+theorem boundary_of_headColor_eq
+    {pre s t : RunState}
+    (heq : headColor? s = headColor? t)
+    (hb : ∀ p q,
+      pre.getLast? = some p →
+      s.head? = some q →
+      p.1 ≠ q.1) :
+    ∀ p q,
+      pre.getLast? = some p →
+      t.head? = some q →
+      p.1 ≠ q.1 := by
+  intro p q hp hq
+  cases t with
+  | nil =>
+      simp at hq
+  | cons tq ts =>
+      rcases tq with ⟨tc,tb⟩
+      have hq' : q = (tc,tb) := by
+        simpa using hq.symm
+      subst q
+      cases s with
+      | nil =>
+          simp [headColor?] at heq
+      | cons sq ss =>
+          rcases sq with ⟨sc,sb⟩
+          have hsc : sc = tc := by
+            simpa [headColor?] using heq
+          have hneq := hb p (sc,sb) hp (by simp)
+          simpa [hsc] using hneq
+
 end LC004

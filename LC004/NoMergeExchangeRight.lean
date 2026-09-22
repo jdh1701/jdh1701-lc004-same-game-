@@ -1,6 +1,8 @@
 import LC004.ExchangeDominance
 import LC004.ListSplit
 import LC004.HeavierLemmas
+import LC004.ExchangeScaffold
+import LC004.IndexedMoveBounds
 
 namespace LC004
 
@@ -142,5 +144,28 @@ theorem noMerge_exchange_right
       exact ⟨v, hp,
         ExchangeDominates.oneStep hdel
           (heavier_refl (left ++ (d,true) :: post))⟩
+
+/-- The right-edge critical pair lifts every successful child choice to a
+distinct successful parent choice. The index stays fixed, while the chosen
+right-edge deletion sits at index `pre.length`. -/
+theorem childChoicesLift_noMerge_right
+    {pre : RunState} {c : Nat} :
+    ChildChoicesLift
+      (pre ++ [(c,true)])
+      (pre.length, pre) := by
+  intro childChoice hchild
+  rcases childChoice with ⟨j,u⟩
+  obtain ⟨v, hparent, hdom⟩ :=
+    noMerge_exchange_right (c := c) hchild.1
+  refine ⟨(j,v), ?_, ?_⟩
+  · exact successfulChoice_of_exchangeDominates
+      hparent hdom hchild.2
+  · intro heq
+    have hidx : j = pre.length :=
+      congrArg Prod.fst heq
+    have hjlt : j < pre.length :=
+      indexedStep_index_lt hchild.1
+    omega
+
 
 end LC004

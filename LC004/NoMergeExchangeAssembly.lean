@@ -16,6 +16,7 @@ result, the existing monotonicity theorem supplies solvability. -/
 def NoMergeStructuralExchange : Prop :=
   ∀ {pre post : RunState} {c : Nat} {j : Nat × RunState},
     Normalized (pre ++ (c,true) :: post) →
+    (∀ p q, pre.getLast? = some p → post.head? = some q → p.1 ≠ q.1) →
     IndexedStep (pre ++ post) j.1 j.2 →
     ∃ alt : Nat × RunState,
       IndexedStep (pre ++ (c,true) :: post) alt.1 alt.2 ∧
@@ -33,7 +34,7 @@ theorem normalizedNoMergeExchange_of_structural
   subst ch
   intro childChoice hchild
   obtain ⟨alt, halt, hidx, hdom⟩ :=
-    hstruct hn hchild.1
+    hstruct hn hboundary hchild.1
   refine ⟨alt, ?_, ?_⟩
   · exact ⟨halt, exchangeDominates_solvable hdom hchild.2⟩
   · intro heq

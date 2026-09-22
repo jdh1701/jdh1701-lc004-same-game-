@@ -61,7 +61,7 @@ theorem stepAt_prepend_list_eq
       | cons y ys =>
           obtain ⟨j, hj⟩ := Nat.exists_eq_succ_of_ne_zero hk
           rw [hj]
-          have hih := ih hi
+          have hih := ih
           rw [htail] at hih
           simp [stepAt, htail, hih, Option.map_map, Function.comp_def,
             List.cons_append]

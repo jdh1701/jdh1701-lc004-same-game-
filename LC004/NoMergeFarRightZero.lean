@@ -1,6 +1,7 @@
 import LC004.NoMergeExchangeInterior
 import LC004.NoMergeExchangeLocal
 import LC004.ExchangeDominance
+import LC004.HeadColorLemmas
 
 namespace LC004
 
@@ -24,5 +25,41 @@ def FarRightZeroBoundaryLaw : Prop :=
     IndexedStep v 0 w →
     (∀ p q, pre.getLast? = some p → v.head? = some q → p.1 ≠ q.1) →
     IndexedStep (pre ++ v) pre.length (pre ++ w)
+
+
+/-- An indexed move at local index zero is necessarily deletion of the first
+heavy run, hence has the exact shape `(d,true) :: w -> w`. -/
+theorem indexedStep_zero_shape
+    {v w : RunState}
+    (h : IndexedStep v 0 w) :
+    ∃ d : Nat, v = (d,true) :: w := by
+  have he := stepAt_complete h
+  cases v with
+  | nil =>
+      simp [stepAt] at he
+  | cons x xs =>
+      rcases x with ⟨d,b⟩
+      cases b with
+      | false =>
+          simp [stepAt] at he
+      | true =>
+          simp [stepAt] at he
+          subst w
+          exact ⟨d, rfl⟩
+
+/-- Lift a local index-zero deletion through a prefix when the newly exposed
+boundary colors differ. -/
+theorem indexedStep_prepend_zero_of_boundary
+    (pre : RunState)
+    {v w : RunState}
+    (h : IndexedStep v 0 w)
+    (hb : ∀ p q,
+      pre.getLast? = some p →
+      w.head? = some q →
+      p.1 ≠ q.1) :
+    IndexedStep (pre ++ v) pre.length (pre ++ w) := by
+  obtain ⟨d, rfl⟩ := indexedStep_zero_shape h
+  exact IndexedStep.noMerge
+    (pre := pre) (post := w) (c := d) hb
 
 end LC004

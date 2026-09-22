@@ -33,6 +33,20 @@ theorem stepAt_prepend_list
   exact stepAt_complete
     (indexedStep_prepend_list pre hi (stepAt_sound h))
 
+theorem stepAt_cons_nonzero_tail
+    (x : Nat × Bool) (s : RunState) (k : Nat)
+    (hk : k ≠ 0) :
+    stepAt (x :: s) (k + 1) =
+      (stepAt s k).map (fun t => x :: t) := by
+  cases s with
+  | nil =>
+      cases k <;> simp [stepAt] at hk ⊢
+  | cons y ys =>
+      cases k with
+      | zero => contradiction
+      | succ j =>
+          simp [stepAt]
+
 /-- Exact executable prefix law away from the boundary.  At any nonzero
 suffix index, an unchanged prefix is completely inert. -/
 theorem stepAt_prepend_list_eq
@@ -50,25 +64,11 @@ theorem stepAt_prepend_list_eq
           (x :: xs).length + i = (xs.length + i) + 1 := by
         simp
         omega
-      rw [hindex]
-      cases htail : xs ++ s with
-      | nil =>
-          have hz := List.append_eq_nil.mp htail
-          rcases hz with ⟨hxs, hs⟩
-          subst xs
-          subst s
-          simp [stepAt]
-      | cons y ys =>
-          obtain ⟨j, hj⟩ := Nat.exists_eq_succ_of_ne_zero hk
-          have hih := ih
-          rw [htail, hj] at hih
-          have hgoal :
-              stepAt (x :: (y :: ys)) (j + 2) =
-                Option.map (fun t => x :: (xs ++ t)) (stepAt s i) := by
-            simp only [stepAt]
-            rw [hih]
-            simp [Option.map_map, Function.comp_def, List.cons_append]
-          simpa [htail, hj, List.cons_append, Nat.add_assoc] using hgoal
+      rw [List.cons_append, hindex]
+      rw [stepAt_cons_nonzero_tail x (xs ++ s) (xs.length + i) hk]
+      rw [ih]
+      simp [Option.map_map, Function.comp_def, List.cons_append]
+
 
 /-- Strip an inert prefix from a nonzero indexed move. -/
 theorem indexedStep_strip_prefix

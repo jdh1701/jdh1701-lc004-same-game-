@@ -87,8 +87,9 @@ theorem noMergeChoice_child_nonempty
     simpa using congrArg List.length hempty
   have hsum : pre.length + post.length = 0 := by
     simpa using hlen0
-  have hpre0 : pre.length = 0 := Nat.eq_zero_of_add_eq_zero_left hsum
-  have hpost0 : post.length = 0 := Nat.eq_zero_of_add_eq_zero_right hsum
+  have hz : pre.length = 0 ∧ post.length = 0 := Nat.add_eq_zero.mp hsum
+  have hpre0 : pre.length = 0 := hz.1
+  have hpost0 : post.length = 0 := hz.2
   have hpre : pre = [] := List.length_eq_zero.mp hpre0
   have hpost : post = [] := List.length_eq_zero.mp hpost0
   subst pre

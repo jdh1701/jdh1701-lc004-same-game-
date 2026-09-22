@@ -42,7 +42,7 @@ theorem noMerge_exchange_left
                     apply stepAt_sound
                     simp [v, stepAt]
                   exact ⟨v, hp,
-                    ExchangeDominates.oneStep hvu heavier_refl⟩
+                    ExchangeDominates.oneStep hvu (heavier_refl _)⟩
               | cons z zs =>
                   rcases z with ⟨e,be⟩
                   by_cases hce : c = e
@@ -71,7 +71,7 @@ theorem noMerge_exchange_left
                       apply stepAt_sound
                       simp [v, stepAt]
                     exact ⟨v, hp,
-                      ExchangeDominates.oneStep hvu heavier_refl⟩
+                      ExchangeDominates.oneStep hvu (heavier_refl _)⟩
       | succ k =>
           let v : RunState := (c,true) :: u
           have hp :
@@ -84,7 +84,7 @@ theorem noMerge_exchange_left
             apply stepAt_sound
             simp [v, stepAt]
           exact ⟨v, hp,
-            ExchangeDominates.oneStep hvu heavier_refl⟩
+            ExchangeDominates.oneStep hvu (heavier_refl _)⟩
 
 /-- The left-edge structural critical pair is enough to lift every successful
 child choice to a distinct successful first choice of the parent. -/

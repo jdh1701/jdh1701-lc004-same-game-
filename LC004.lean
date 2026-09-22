@@ -7,3 +7,4 @@ import LC004.Transition
 import LC004.Simulation
 import LC004.DeleteSimulation
 import LC004.NoMergeSimulation
+import LC004.InteriorNoMerge

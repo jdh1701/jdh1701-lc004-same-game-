@@ -53,3 +53,6 @@ import LC004.NoMergeFarRightProof
 import LC004.NoMergeAdjacentLeft
 import LC004.NoMergeAdjacentLeftConcrete
 import LC004.NoMergeFarLeftProof
+import LC004.NoMergeAdjacentLeftGlobal
+import LC004.AdjacentLeftIndexZeroStrip
+import LC004.AdjacentLeftIndexZeroProof

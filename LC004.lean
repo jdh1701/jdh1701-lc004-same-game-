@@ -30,3 +30,4 @@ import LC004.ExchangeDominance
 import LC004.NoMergeExchangeLocal
 import LC004.BridgeExchangeRight
 import LC004.PrefixIndexed
+import LC004.NoMergeExchangeRight

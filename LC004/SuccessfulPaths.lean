@@ -61,8 +61,11 @@ theorem successfulChoice_iff_path
 theorem uniqueCompletePath_nil : UniqueCompletePath ([] : RunState) := by
   refine ⟨[], CompletePath.done, ?_⟩
   intro p hp
-  cases hp
-  rfl
+  cases hp with
+  | done =>
+      rfl
+  | move hstep htail =>
+      cases hstep <;> simp
 
 /-- If a nonterminal state has one complete successful path, then its first
 edge is a successful first choice. -/

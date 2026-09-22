@@ -26,11 +26,14 @@ theorem normalized_append_of
           rcases x with ⟨c,b⟩
           rcases y with ⟨d,e⟩
           simp only [Normalized] at hxs ⊢
-          exact ⟨hxs.1, ih hxs.2 hys (by
+          have hbTail :
+              ∀ p q, ((d,e)::rest').getLast? = some p →
+                ys.head? = some q → p.1 ≠ q.1 := by
             intro p q hp hq
             apply hb p q
             · simpa using hp
-            · exact hq)⟩
+            · exact hq
+          exact ⟨hxs.1, ih hxs.2 hbTail⟩
 
 theorem normalized_prefix_of_append
     {xs ys : RunState}

@@ -70,9 +70,10 @@ theorem noMerge_exchange_right
               intro p q hp hq
               have hp' : p = (a,ba) := by
                 rw [hlast] at hp
-                exact Option.some.inj hp
+                exact (Option.some.inj hp).symm
               have hq' : q = (c,true) := by
-                simpa using hq
+                have hq0 : (c,true) = q := by simpa using hq
+                exact hq0.symm
               subst p
               subst q
               exact hac

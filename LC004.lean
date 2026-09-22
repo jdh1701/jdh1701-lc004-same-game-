@@ -48,3 +48,4 @@ import LC004.BridgeAdjacentLeftConcrete
 import LC004.BridgeFarLeftConcrete
 import LC004.BridgeAdjacentLeftClosure
 import LC004.BridgeFarLeftProof
+import LC004.BridgeAdjacentPrefixTransport

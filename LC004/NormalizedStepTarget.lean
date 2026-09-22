@@ -13,23 +13,20 @@ theorem normalized_step
   cases hs with
   | @noMerge pre post c hboundary =>
       have hpre : Normalized pre :=
-        normalized_prefix_of_append hn
-      have htail : Normalized ((c,true)::post) := by
-        -- drop the normalized prefix by induction on pre
-        induction pre with
-        | nil => simpa using hn
-        | cons x xs ih =>
-            exact ih (normalized_tail hn)
+        normalized_prefix_of_append
+          (xs := pre) (ys := (c,true)::post) hn
+      have htail : Normalized ((c,true)::post) :=
+        normalized_suffix_of_append
+          (xs := pre) (ys := (c,true)::post) hn
       have hpost : Normalized post := normalized_tail htail
       exact normalized_append_of hpre hpost hboundary
   | @merge pre post c d bp bq =>
       have hpre : Normalized pre :=
-        normalized_prefix_of_append hn
-      have htail : Normalized ((c,bp)::(d,true)::(c,bq)::post) := by
-        induction pre with
-        | nil => simpa using hn
-        | cons x xs ih =>
-            exact ih (normalized_tail hn)
+        normalized_prefix_of_append
+          (xs := pre) (ys := (c,bp)::(d,true)::(c,bq)::post) hn
+      have htail : Normalized ((c,bp)::(d,true)::(c,bq)::post) :=
+        normalized_suffix_of_append
+          (xs := pre) (ys := (c,bp)::(d,true)::(c,bq)::post) hn
       have hright : Normalized ((c,bq)::post) :=
         normalized_tail (normalized_tail htail)
       have hpost : Normalized post := normalized_tail hright
@@ -37,42 +34,27 @@ theorem normalized_step
           ∀ p q, pre.getLast? = some p →
             [(c,true)].head? = some q → p.1 ≠ q.1 := by
         intro p q hp hq
-        have hq' : q = (c,true) := by simpa using hq
+        have hb := normalized_boundary_of_append
+          (xs := pre)
+          (ys := (c,bp)::(d,true)::(c,bq)::post)
+          hn p (c,bp) hp (by simp)
+        have hq' : (c,true) = q := by simpa using hq
         subst q
-        -- source normalization has the same left boundary color c
-        have hpreC : Normalized (pre ++ [(c,bp)]) :=
-          normalized_prefix_of_append
-            (ys := (d,true)::(c,bq)::post) hn
-        cases pre with
-        | nil => simp at hp
-        | cons x xs =>
-            -- use the last boundary directly from hpreC
-            have hb := hpreC
-            clear hpreC
-            -- recover via the directional append boundary by contradiction on equality
-            intro heq
-            -- if p.color=c, the appended source prefix would violate normalization
-            subst heq
-            -- let simp expose the final adjacency
-            simpa [Normalized] using hb
+        simpa using hb
       have hmid : Normalized (pre ++ [(c,true)]) :=
         normalized_append_of hpre (by simp [Normalized]) hleft
       have hrightBoundary :
           ∀ p q, (pre ++ [(c,true)]).getLast? = some p →
             post.head? = some q → p.1 ≠ q.1 := by
         intro p q hp hq
-        have hp' : p = (c,true) := by
-          simpa using hp
+        have hp' : (c,true) = p := by simpa using hp
         subst p
-        cases post with
-        | nil => simp at hq
-        | cons z zs =>
-            rcases z with ⟨e,be⟩
-            have hce : c ≠ e := by
-              simpa [Normalized] using hright
-            have hq' : q = (e,be) := by simpa using hq
-            subst q
-            exact hce
-      exact normalized_append_of hmid hpost hrightBoundary
+        have hb := normalized_boundary_of_append
+          (xs := [(c,bq)]) (ys := post)
+          hright (c,bq) q (by simp) hq
+        simpa using hb
+      have htarget : Normalized ((pre ++ [(c,true)]) ++ post) :=
+        normalized_append_of hmid hpost hrightBoundary
+      simpa [List.append_assoc] using htarget
 
 end LC004

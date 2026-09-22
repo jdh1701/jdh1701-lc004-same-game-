@@ -39,8 +39,8 @@ theorem deleteSimulation_noMerge_right
   subst e
   rw [ht]
   refine ⟨pre', ?_, hpre⟩
-  exact @Step.noMerge pre' [] c (by
+  simpa using (@Step.noMerge pre' [] c (by
     intro p q hp hq
-    simp at hq)
+    simp at hq))
 
 end LC004

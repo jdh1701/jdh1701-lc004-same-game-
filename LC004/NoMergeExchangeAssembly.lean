@@ -26,7 +26,7 @@ def NoMergeStructuralExchange : Prop :=
 child-choice lifting law required by ConditionalMain. -/
 theorem normalizedNoMergeExchange_of_structural
     (hstruct : NoMergeStructuralExchange) :
-    NormalizedNoMergeExchange := by
+    LC004.NormalizedNoMergeExchange := by
   intro s ch hn hnom hsuccess
   rcases hnom with ⟨pre, post, c, hboundary, hs, hch⟩
   subst s

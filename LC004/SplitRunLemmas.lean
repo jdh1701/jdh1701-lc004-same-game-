@@ -8,9 +8,9 @@ same position, with a bit at least as heavy as the source bit. -/
 theorem heavier_split_run
     (pre post : RunState) (c : Nat) (b : Bool) {t : RunState}
     (h : Heavier (pre ++ (c,b) :: post) t) :
-    ∃ pre' post' e,
+    ∃ pre' post' (e : Bool),
       t = pre' ++ (c,e) :: post' ∧
-      (b → e) ∧
+      (b = true → e = true) ∧
       Heavier pre pre' ∧
       Heavier post post' := by
   induction pre generalizing t with
@@ -33,9 +33,8 @@ theorem heavier_split_run
           rcases h with ⟨hcolor, hbit, htail⟩
           obtain ⟨pre', post', e, ht, hb, hp, hs⟩ := ih htail
           subst cy
-          subst ys
           refine ⟨(cx,byy)::pre', post', e, ?_, hb, ?_, hs⟩
-          · simp
+          · simpa [ht]
           · simp only [Heavier]
             exact ⟨trivial, hbit, hp⟩
 

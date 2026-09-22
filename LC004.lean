@@ -14,3 +14,4 @@ import LC004.FullSimulation
 import LC004.Normalized
 import LC004.NormalizedDirectional
 import LC004.NormalizedStepTarget
+import LC004.RunEncoding

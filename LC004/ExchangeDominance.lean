@@ -1,6 +1,7 @@
 import LC004.FullSimulation
 import LC004.IndexedMove
 import LC004.SuccessfulPaths
+import LC004.ExchangeTarget
 
 namespace LC004
 

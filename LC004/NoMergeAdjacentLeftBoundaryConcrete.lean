@@ -31,7 +31,7 @@ theorem adjacentLeftBoundaryLocal_proved :
           simp [v, stepAt]
         have hh : Heavier [(x,bx)] v := by
           simp [v, Heavier]
-        exact ⟨v, hp, ExchangeDominates.heavier hh⟩
+        exact ⟨v, hp, NonzeroExchangeDominates.heavier hh⟩
       · let v : RunState := [(x,bx),(c,true)]
         have hp :
             IndexedStep [(x,bx),(a,true),(c,true)] 1 v := by
@@ -41,7 +41,7 @@ theorem adjacentLeftBoundaryLocal_proved :
           apply stepAt_sound
           simp [v, stepAt]
         exact ⟨v, hp,
-          ExchangeDominates.oneStep hs (heavier_refl [(x,bx)])⟩
+          NonzeroExchangeDominates.oneStep (by omega) hs (heavier_refl [(x,bx)])⟩
   | cons z zs =>
       rcases z with ⟨e,be⟩
       by_cases hxe : x = e
@@ -69,7 +69,7 @@ theorem adjacentLeftBoundaryLocal_proved :
             apply stepAt_sound
             simp [v, stepAt]
           exact ⟨v, hp,
-            ExchangeDominates.oneStep hs
+            NonzeroExchangeDominates.oneStep (by omega) hs
               (heavier_refl ((x,true) :: zs))⟩
       · have hu : u = (x,bx) :: (e,be) :: zs := by
           have he := stepAt_complete hchild
@@ -89,7 +89,7 @@ theorem adjacentLeftBoundaryLocal_proved :
             apply stepAt_sound
             simp [v, stepAt, hxe]
           exact ⟨v, hp,
-            ExchangeDominates.oneStep hs
+            NonzeroExchangeDominates.oneStep (by omega) hs
               (heavier_refl ((x,bx) :: (c,be) :: zs))⟩
         · by_cases hxc : x = c
           · subst c
@@ -103,7 +103,7 @@ theorem adjacentLeftBoundaryLocal_proved :
             have hh :
                 Heavier ((x,bx) :: (e,be) :: zs) v := by
               simp [v, Heavier, heavier_refl]
-            exact ⟨v, hp, ExchangeDominates.heavier hh⟩
+            exact ⟨v, hp, NonzeroExchangeDominates.heavier hh⟩
           · let v : RunState :=
               (x,bx) :: (c,true) :: (e,be) :: zs
             have hp :
@@ -117,7 +117,7 @@ theorem adjacentLeftBoundaryLocal_proved :
               apply stepAt_sound
               simp [v, stepAt, hxc, hxe, hce]
             exact ⟨v, hp,
-              ExchangeDominates.oneStep hs
+              NonzeroExchangeDominates.oneStep (by omega) hs
                 (heavier_refl ((x,bx) :: (e,be) :: zs))⟩
 
 end LC004

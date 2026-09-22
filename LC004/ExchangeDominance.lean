@@ -51,42 +51,28 @@ theorem exchangeTarget_implies_dominates
   | oneStep hs =>
       exact ExchangeDominates.oneStep hs (heavier_refl u)
 
-/-- Exchange dominance is stable under an unchanged prefix. -/
-theorem exchangeDominates_prepend
+/-- Heaviness-based dominance is stable under an unchanged prefix. -/
+theorem exchangeDominates_prepend_heavier
     (pre : RunState)
     {u v : RunState}
-    (h : ExchangeDominates u v) :
+    (hh : Heavier u v) :
     ExchangeDominates (pre ++ u) (pre ++ v) := by
-  cases h with
-  | heavier hh =>
-      exact ExchangeDominates.heavier
-        (heavier_append (heavier_refl pre) hh)
-  | @oneStep i w hs hh =>
-      have hs' :
-          IndexedStep (pre ++ v) (pre.length + i) (pre ++ w) := by
-        cases i with
-        | zero =>
-            cases hs with
-            | @noMerge p post c hb =>
-                simpa [List.append_assoc] using
-                  (IndexedStep.noMerge
-                    (pre := pre ++ p) (post := post) (c := c)
-                    (by
-                      intro x y hx hy
-                      apply hb x y
-                      · simpa using hx
-                      · exact hy))
-            | @merge p post c d bp bq =>
-                simpa [List.append_assoc] using
-                  (IndexedStep.merge
-                    (pre := pre ++ p) (post := post)
-                    (c := c) (d := d) (bp := bp) (bq := bq))
-        | succ j =>
-            simpa [Nat.add_assoc] using
-              (indexedStep_prepend_list pre
-                (i := j + 1) (by omega) hs)
-      exact ExchangeDominates.oneStep hs'
-        (heavier_append (heavier_refl pre) hh)
+  exact ExchangeDominates.heavier
+    (heavier_append (heavier_refl pre) hh)
 
+/-- One-step dominance is stable under an unchanged prefix when the
+compensating local move has nonzero index. -/
+theorem exchangeDominates_prepend_oneStep
+    (pre : RunState)
+    {u v w : RunState} {i : Nat}
+    (hi : i ≠ 0)
+    (hs : IndexedStep v i w)
+    (hh : Heavier u w) :
+    ExchangeDominates (pre ++ u) (pre ++ v) := by
+  have hs' :
+      IndexedStep (pre ++ v) (pre.length + i) (pre ++ w) :=
+    indexedStep_prepend_list pre hi hs
+  exact ExchangeDominates.oneStep hs'
+    (heavier_append (heavier_refl pre) hh)
 
 end LC004

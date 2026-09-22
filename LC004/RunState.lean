@@ -29,7 +29,7 @@ theorem heavier_upgradeAt (s : RunState) (i : Nat) :
   | cons x xs ih =>
       rcases x with ⟨c,b⟩
       cases i with
-      | zero => simp [upgradeAt, Heavier]
+      | zero => simp [upgradeAt, Heavier, heavier_refl]
       | succ i => simp [upgradeAt, Heavier, ih]
 
 end LC004

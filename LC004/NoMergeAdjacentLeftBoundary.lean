@@ -6,6 +6,16 @@ import LC004.ExecutableCorrespondence
 
 namespace LC004
 
+/-- Dominance witness whose compensating move is known to have nonzero local
+index, so it can be transported safely through an arbitrary earlier context. -/
+inductive NonzeroExchangeDominates (u v : RunState) : Prop
+  | heavier (h : Heavier u v) : NonzeroExchangeDominates u v
+  | oneStep {i : Nat} {w : RunState}
+      (hi : i ≠ 0)
+      (hstep : IndexedStep v i w)
+      (hheavy : Heavier u w) :
+      NonzeroExchangeDominates u v
+
 /-- Boundary-aware adjacent-left critical pair.  This deliberately keeps the
 run immediately before the selected run visible, because deleting the selected
 run may merge across that boundary. -/
@@ -15,7 +25,7 @@ def AdjacentLeftBoundaryLocal : Prop :=
     IndexedStep ((x,bx) :: (a,ba) :: post) 1 u →
     ∃ v : RunState,
       IndexedStep ((x,bx) :: (a,ba) :: (c,true) :: post) 1 v ∧
-      ExchangeDominates u v
+      NonzeroExchangeDominates u v
 
 /-- If the earlier context is empty, the already-green front theorem closes
 the adjacent-left case.  Otherwise only AdjacentLeftBoundaryLocal is needed;
@@ -80,13 +90,7 @@ theorem adjacentLeftNoMergeExchange_reduces_to_boundary
         cases hdom with
         | heavier hh =>
             exact exchangeDominates_prepend_heavier front hh
-        | @oneStep k w hs hh =>
-            have hk : k ≠ 0 := by
-              intro hk0
-              subst k
-              -- The boundary-aware local theorem's compensating moves occur
-              -- at index one; an index-zero witness is impossible here.
-              cases hs <;> simp at *
+        | @oneStep k w hk hs hh =>
             exact exchangeDominates_prepend_oneStep front hk hs hh
       exact ⟨gv, hp, hd⟩
 

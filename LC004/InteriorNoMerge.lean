@@ -41,9 +41,9 @@ theorem deleteSimulation_noMerge_interior
   · simpa using (@Step.noMerge (pre1 ++ [(a,ea)]) ((b,eb)::right') c (by
       intro p q hp hq
       have hp' : p = (a,ea) := by
-        simpa using hp
+        exact (by simpa using hp).symm
       have hq' : q = (b,eb) := by
-        simpa using hq
+        exact (by simpa using hq).symm
       subst p
       subst q
       simpa using hab))

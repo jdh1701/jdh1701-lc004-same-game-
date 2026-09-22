@@ -32,3 +32,6 @@ import LC004.BridgeExchangeRight
 import LC004.PrefixIndexed
 import LC004.NoMergeExchangeRight
 import LC004.BridgeExchangeRightFull
+import LC004.SuffixIndexed
+import LC004.InsertedDeletion
+import LC004.NoMergeAdjacentRight

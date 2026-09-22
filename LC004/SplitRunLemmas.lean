@@ -8,7 +8,7 @@ same position, with a bit at least as heavy as the source bit. -/
 theorem heavier_split_run
     (pre post : RunState) (c : Nat) (b : Bool) {t : RunState}
     (h : Heavier (pre ++ (c,b) :: post) t) :
-    ∃ pre' post' (e : Bool),
+    ∃ pre' post' e,
       t = pre' ++ (c,e) :: post' ∧
       (b = true → e = true) ∧
       Heavier pre pre' ∧

@@ -44,10 +44,10 @@ theorem exchangeTarget_implies_dominates
   cases h with
   | same hv =>
       subst v
-      exact ExchangeDominates.heavier heavier_refl
+      exact ExchangeDominates.heavier (heavier_refl u)
   | heavier hh =>
       exact ExchangeDominates.heavier hh
   | oneStep hs =>
-      exact ExchangeDominates.oneStep hs heavier_refl
+      exact ExchangeDominates.oneStep hs (heavier_refl u)
 
 end LC004

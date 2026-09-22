@@ -34,8 +34,17 @@ theorem bridgeAdjacentLeftStructural_of_local
       (leftTail ++ [(a,ba)]).length - 1 = leftTail.length := by
     simp
   rw [hidx] at hchild
+  have hchild' :
+      IndexedStep
+        (leftTail ++ (a,ba) :: (c,true) :: post)
+        leftTail.length u := by
+    simpa [List.append_assoc] using hchild
+  have hn' :
+      Normalized
+        (leftTail ++ (a,ba) :: (c,bp) :: (d,true) :: (c,bq) :: post) := by
+    simpa [List.append_assoc] using hn
   obtain ⟨v, hp, ht⟩ :=
-    hlocal hn hchild
+    hlocal hn' hchild'
   refine ⟨(leftTail.length, v), hp, ?_, ht⟩
   simp
   omega

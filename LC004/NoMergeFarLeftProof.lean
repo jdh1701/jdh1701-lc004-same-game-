@@ -10,7 +10,7 @@ existing no-merge simulation theorem rather than by an unjustified
 normalization assumption. -/
 theorem farLeftNoMergeExchange_proved :
     FarLeftNoMergeExchange := by
-  intro pre post u c i hn hi hchild
+  intro pre post u c i hn hboundary hi hchild
   have hctxChild := stepAt_append_of_inside pre post i hi
   cases hp : stepAt pre i with
   | none =>
@@ -33,22 +33,28 @@ theorem farLeftNoMergeExchange_proved :
           stepAt_append_of_inside pre ((c,true) :: post) i hi
         rw [hp] at hctx
         simpa [v] using hctx
-      -- At this point the remaining local relation is exactly the already
-      -- established arbitrary no-merge simulation shape.  Keep it explicit
-      -- rather than assuming the deleted boundary stays normalized.
-      have hrel :
-          Heavier u v ∨
-          (∃ k w, IndexedStep v k w ∧ Heavier u w) := by
-        -- This is the next compiler-discriminated local lemma.
-        by_cases hsame : pre'.getLast?.map Prod.fst = post.head?.map Prod.fst
-        · right
-          -- boundary merge case
-          sorry
-        · left
-          -- nonmerge boundary case
-          sorry
-      rcases hrel with hh | ⟨k,w,hs,hh⟩
-      · exact ⟨v, hparent, ExchangeDominates.heavier hh⟩
-      · exact ⟨v, hparent, ExchangeDominates.oneStep hs hh⟩
+      have hprepostNorm : Normalized (pre ++ post) := by
+        have hpref : Normalized pre :=
+          normalized_prefix_of_append
+            (xs := pre) (ys := (c,true) :: post) hn
+        have hsuff : Normalized post := by
+          have ht : Normalized ((c,true) :: post) :=
+            normalized_suffix_of_append
+              (xs := pre) (ys := (c,true) :: post) hn
+          exact normalized_tail ht
+        exact normalized_append_of hpref hsuff hboundary
+      have huNorm : Normalized u :=
+        indexedStep_normalized hprepostNorm hchild
+      have huvNorm : Normalized (pre' ++ post) := by
+        simpa [hu] using huNorm
+      have hdel :
+          IndexedStep v pre'.length u := by
+        rw [hu]
+        simpa [v] using
+          (indexedStep_delete_inserted_of_normalized
+            (left := pre') (right := post) (c := c) huvNorm)
+      have hrel : ExchangeDominates u v :=
+        ExchangeDominates.oneStep hdel (heavier_refl u)
+      exact ⟨v, hparent, hrel⟩
 
 end LC004

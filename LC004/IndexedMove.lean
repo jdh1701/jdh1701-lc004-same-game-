@@ -55,6 +55,13 @@ theorem indexedStep_length_lt
   | merge =>
       simp
 
+theorem indexedStep_nil_false
+    {i : Nat} {t : RunState}
+    (h : IndexedStep [] i t) :
+    False := by
+  have hlt := indexedStep_length_lt h
+  simpa using hlt
+
 /-- Normalization is invariant under indexed moves. -/
 theorem indexedStep_normalized
     {s t : RunState} {i : Nat}

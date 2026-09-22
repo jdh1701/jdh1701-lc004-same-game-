@@ -15,3 +15,4 @@ import LC004.Normalized
 import LC004.NormalizedDirectional
 import LC004.NormalizedStepTarget
 import LC004.RunEncoding
+import LC004.RawEncoding

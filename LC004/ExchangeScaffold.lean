@@ -71,4 +71,45 @@ theorem uniqueChoice_not_nonBridge_of_exchange
   exact uniqueChoice_forbids_full_child_exchange
     hu hchosen hchildne (hexchange hnon hchosen)
 
+/-- A non-bridge deletion from a state with at least two runs leaves a
+nonempty child. -/
+theorem noMergeChoice_child_nonempty
+    {s : RunState} {chosen : Nat × RunState}
+    (hlen : 1 < s.length)
+    (hnon : NoMergeChoice s chosen) :
+    chosen.2 ≠ [] := by
+  rcases hnon with ⟨pre, post, c, hboundary, hs, hch⟩
+  subst s
+  subst chosen
+  intro hempty
+  have hlen0 : (pre ++ post).length = 0 := by
+    simpa using congrArg List.length hempty
+  have hsum : pre.length + post.length = 0 := by
+    simpa using hlen0
+  have hpre0 : pre.length = 0 := Nat.eq_zero_of_add_eq_zero_left hsum
+  have hpost0 : post.length = 0 := Nat.eq_zero_of_add_eq_zero_right hsum
+  have hpre : pre = [] := List.length_eq_zero.mp hpre0
+  have hpost : post = [] := List.length_eq_zero.mp hpost0
+  subst pre
+  subst post
+  simp at hlen
+
+/-- Conditional bridge-necessity theorem. The only remaining Same-Game-local
+obligation is the concrete exchange lemma for successful no-merge choices. -/
+theorem bridgeChoice_of_unique_and_noMerge_exchange
+    {s : RunState} {chosen : Nat × RunState}
+    (hlen : 1 < s.length)
+    (hu : UniqueSuccessfulChoice s)
+    (hchosen : SuccessfulChoice s chosen)
+    (hexchange :
+      ∀ {s ch}, NoMergeChoice s ch → SuccessfulChoice s ch →
+        ChildChoicesLift s ch) :
+    BridgeChoice s chosen := by
+  rcases successfulChoice_classify hchosen with hnon | hbridge
+  · have hchildne := noMergeChoice_child_nonempty hlen hnon
+    exact (uniqueChoice_not_nonBridge_of_exchange
+      hu hchosen hnon hchildne hexchange).elim
+  · exact hbridge
+
+
 end LC004

@@ -75,11 +75,7 @@ theorem bridgeAdjacentLeftStructuralExchange_proved :
         | heavier hh =>
             exact ExchangeTarget.heavier
               (heavier_append (heavier_refl front) hh)
-        | @oneStep k hs =>
-            have hk : k ≠ 0 := by
-              intro hk0
-              subst k
-              cases hs <;> simp at *
+        | @oneStep k hk hs =>
             exact ExchangeTarget.oneStep
               (indexedStep_prepend_list front hk hs)
       exact ⟨(pre.length - 1,gv), hp, by omega, htarget⟩

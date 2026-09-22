@@ -85,14 +85,14 @@ theorem stepAt_succ_preserves_head_color
 A successful child move strictly to the right of the newly merged run lifts
 two indices to the right in the parent; after that lifted move, deleting the
 original bridge reaches the child successor exactly. -/
-theorem bridge_front_right_exchange
+theorem bridge_front_right_exchange_step
     {post u : RunState} {c d : Nat} {bp bq : Bool} {i : Nat}
     (hchild : IndexedStep ((c,true) :: post) (i + 1) u) :
     ∃ v : RunState,
       IndexedStep
         ((c,bp) :: (d,true) :: (c,bq) :: post)
         (i + 3) v ∧
-      ExchangeTarget u v := by
+      IndexedStep v 1 u := by
   have hchildExec :
       stepAt ((c,true) :: post) (i + 1) = some u :=
     stepAt_complete hchild
@@ -132,6 +132,20 @@ theorem bridge_front_right_exchange
             (pre := []) (post := rest)
             (c := c) (d := d) (bp := bp) (bq := e))
       subst u
-      exact ⟨v, hparent, ExchangeTarget.oneStep hsecond⟩
+      exact ⟨v, hparent, hsecond⟩
+
+theorem bridge_front_right_exchange
+    {post u : RunState} {c d : Nat} {bp bq : Bool} {i : Nat}
+    (hchild : IndexedStep ((c,true) :: post) (i + 1) u) :
+    ∃ v : RunState,
+      IndexedStep
+        ((c,bp) :: (d,true) :: (c,bq) :: post)
+        (i + 3) v ∧
+      ExchangeTarget u v := by
+  obtain ⟨v, hp, hs⟩ :=
+    bridge_front_right_exchange_step
+      (post := post) (c := c) (d := d) (bp := bp) (bq := bq)
+      hchild
+  exact ⟨v, hp, ExchangeTarget.oneStep hs⟩
 
 end LC004

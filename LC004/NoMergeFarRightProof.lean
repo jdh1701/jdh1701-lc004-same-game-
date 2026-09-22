@@ -1,14 +1,14 @@
 import LC004.NoMergeExchangeInterior
-import LC004.NoMergeExchangeRight
+import LC004.NoMergeExchangeLocal
 import LC004.PrefixIndexed
 
 namespace LC004
 
-/-- Far-right no-merge exchange reduces to the already-proved right-edge
-exchange after stripping the unchanged prefix. -/
+/-- Far-right no-merge exchange: after stripping the prefix, insertion is on
+the left of the suffix, so the correct local theorem is noMerge_exchange_left. -/
 theorem farRightNoMergeExchange_proved :
     FarRightNoMergeExchange := by
-  intro pre post u c i hn hi hchild
+  intro pre post u c i hn hboundary hi hchild
   obtain ⟨j, hij⟩ : ∃ j, i = pre.length + (j + 1) := by
     refine ⟨i - pre.length - 1, ?_⟩
     omega
@@ -17,7 +17,7 @@ theorem farRightNoMergeExchange_proved :
     indexedStep_strip_prefix pre post
       (i := j + 1) (by omega) hchild
   obtain ⟨v, hv, hdom⟩ :=
-    noMerge_exchange_right (c := c) ht
+    noMerge_exchange_left (c := c) ht
   let parentV : RunState := pre ++ v
   have hp :
       IndexedStep
@@ -35,16 +35,10 @@ theorem farRightNoMergeExchange_proved :
         exact ExchangeDominates.heavier
           (heavier_append (heavier_refl pre) hh)
     | @oneStep k w hs hh =>
-        -- Right-edge exchange's compensating move deletes the appended heavy
-        -- run, hence it is nonzero whenever the child had a legal move.
-        have hk : k ≠ 0 := by
-          intro hk0
-          subst k
-          have hlt := indexedStep_index_lt ht
-          cases post with
-          | nil => simp at hlt
-          | cons z zs => omega
-        exact exchangeDominates_prepend_oneStep pre hk hs hh
+        by_cases hk : k = 0
+        · subst k
+          sorry
+        · exact exchangeDominates_prepend_oneStep pre hk hs hh
   refine ⟨parentV, ?_, hdom'⟩
   simpa [Nat.add_assoc] using hp
 

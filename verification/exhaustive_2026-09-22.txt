@@ -1,0 +1,30 @@
+LC004 exhaustive verification — 2026-09-22
+
+Parameters
+----------
+colors=3
+raw word lengths=0..12
+normalized run-state lengths=1..9
+
+Results
+-------
+raw_words_0_to_12=797161
+raw_correspondence_failures=0
+raw_nonempty_unique_first_vs_unique_path_failures=0
+raw_length_12_unique_first=6057
+raw_length_12_unique_path=6057
+normalized_run_states_1_to_9=524286
+normalized_unique_first_vs_unique_path_failures=0
+bridge_necessity_failures_for_multi_run_unique_first=0
+successful_bridge_exchange_instances=1164672
+successful_bridge_exchange_failures=0
+
+Notes
+-----
+The empty state is intentionally excluded from the unique-first iff unique-path
+comparison because it has one empty complete path but no first move.
+
+The normalized-state total corrects an earlier chat-only count of 524280.
+There are 524286 states; the earlier count omitted the six one-run states.
+
+These are exhaustive finite tests, not proofs of the unbounded theorem.

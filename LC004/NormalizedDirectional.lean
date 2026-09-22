@@ -50,4 +50,43 @@ theorem normalized_prefix_of_append
           simp only [List.cons_append, Normalized] at h ⊢
           exact ⟨h.1, ih h.2⟩
 
+theorem normalized_suffix_of_append
+    {xs ys : RunState}
+    (h : Normalized (xs ++ ys)) :
+    Normalized ys := by
+  induction xs with
+  | nil => simpa using h
+  | cons x rest ih =>
+      exact ih (normalized_tail h)
+
+theorem normalized_boundary_of_append
+    {xs ys : RunState}
+    (h : Normalized (xs ++ ys)) :
+    ∀ p q, xs.getLast? = some p → ys.head? = some q → p.1 ≠ q.1 := by
+  induction xs with
+  | nil =>
+      intro p q hp hq
+      simp at hp
+  | cons x rest ih =>
+      cases rest with
+      | nil =>
+          cases ys with
+          | nil =>
+              intro p q hp hq
+              simp at hq
+          | cons y ys' =>
+              rcases x with ⟨c,b⟩
+              rcases y with ⟨d,e⟩
+              intro p q hp hq
+              have hp' : (c,b) = p := by simpa using hp
+              have hq' : (d,e) = q := by simpa using hq
+              subst p
+              subst q
+              simpa [Normalized] using h.1
+      | cons y rest' =>
+          intro p q hp hq
+          apply ih (normalized_tail h) p q
+          · simpa using hp
+          · exact hq
+
 end LC004

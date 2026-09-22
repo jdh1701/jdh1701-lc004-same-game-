@@ -15,7 +15,7 @@ theorem heavier_append {a b c d : RunState}
       | nil => simp [Heavier] at hab
       | cons y ys =>
           rcases x with ⟨cx,bx⟩
-          rcases y with ⟨cy,by⟩
+          rcases y with ⟨cy,byy⟩
           simp only [Heavier] at hab ⊢
           exact ⟨hab.1, hab.2.1, ih hab.2.2 hcd⟩
 
@@ -43,13 +43,13 @@ theorem heavier_split_heavy
       | nil => simp [Heavier] at h
       | cons y ys =>
           rcases x with ⟨cx,bx⟩
-          rcases y with ⟨cy,by⟩
+          rcases y with ⟨cy,byy⟩
           simp only [List.cons_append, Heavier] at h
           rcases h with ⟨hcolor, hbit, htail⟩
           obtain ⟨pre', post', ht, hp, hs⟩ := ih htail
           subst cy
           subst ys
-          refine ⟨(cx,by)::pre', post', ?_, ?_, hs⟩
+          refine ⟨(cx,byy)::pre', post', ?_, ?_, hs⟩
           · simp
           · simp only [Heavier]
             exact ⟨rfl, hbit, hp⟩

@@ -50,21 +50,4 @@ theorem indexedStep_noMerge_isNonBridge
       (pre ++ post) := by
   exact ⟨pre, post, c, rfl, rfl, rfl, hboundary⟩
 
-/-- A successful choice is bridge-forming exactly when its retained indexed
-edge is bridge-forming. -/
-def BridgeChoice (s : RunState) (ch : Nat × RunState) : Prop :=
-  SuccessfulChoice s ch ∧ BridgeStep s ch.1 ch.2
-
-def NonBridgeChoice (s : RunState) (ch : Nat × RunState) : Prop :=
-  SuccessfulChoice s ch ∧ NonBridgeStep s ch.1 ch.2
-
-theorem successfulChoice_bridge_or_nonBridge
-    {s : RunState} {ch : Nat × RunState}
-    (h : SuccessfulChoice s ch) :
-    BridgeChoice s ch ∨ NonBridgeChoice s ch := by
-  rcases ch with ⟨i,t⟩
-  rcases indexedStep_bridge_or_nonBridge h.1 with hb | hn
-  · exact Or.inl ⟨h, hb⟩
-  · exact Or.inr ⟨h, hn⟩
-
 end LC004

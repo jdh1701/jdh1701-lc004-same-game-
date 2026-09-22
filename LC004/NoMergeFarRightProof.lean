@@ -1,6 +1,8 @@
 import LC004.NoMergeExchangeInterior
 import LC004.NoMergeExchangeLocal
 import LC004.PrefixIndexed
+import LC004.NoMergeFarRightZero
+import LC004.HeadColorLemmas
 
 namespace LC004
 
@@ -37,7 +39,26 @@ theorem farRightNoMergeExchange_proved :
     | @oneStep k w hs hh =>
         by_cases hk : k = 0
         · subst k
-          sorry
+          have hheadPostT :
+              headColor? post = headColor? t :=
+            indexedStep_nonzero_headColor (by omega) ht
+          have hheadTW :
+              headColor? t = headColor? w :=
+            heavier_headColor hh
+          have hheadPostW :
+              headColor? post = headColor? w :=
+            hheadPostT.trans hheadTW
+          have hbw :
+              ∀ p q,
+                pre.getLast? = some p →
+                w.head? = some q →
+                p.1 ≠ q.1 :=
+            boundary_of_headColor_eq hheadPostW hboundary
+          have hs' :
+              IndexedStep (pre ++ v) pre.length (pre ++ w) :=
+            indexedStep_prepend_zero_of_boundary pre hs hbw
+          exact ExchangeDominates.oneStep hs'
+            (heavier_append (heavier_refl pre) hh)
         · exact exchangeDominates_prepend_oneStep pre hk hs hh
   refine ⟨parentV, ?_, hdom'⟩
   simpa [Nat.add_assoc] using hp

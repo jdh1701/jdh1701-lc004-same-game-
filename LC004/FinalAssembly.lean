@@ -1,3 +1,4 @@
+import LC004.ExecutableUniqueness
 import LC004.ConditionalMain
 import LC004.NoMergeExchangeAssembly
 import LC004.BridgeExchangeAssembly
@@ -27,8 +28,8 @@ theorem final_executable_unique_first_iff_path
     (hn : Normalized s)
     (hne : s ≠ []) :
     UniqueSuccessfulFirst s ↔ UniqueSuccessfulPath s := by
-  rw [uniqueSuccessfulFirst_iff_choice,
-      uniqueSuccessfulPath_iff_complete]
+  rw [uniqueSuccessfulFirst_iff_uniqueSuccessfulChoice,
+      uniqueSuccessfulPath_iff_uniqueCompletePath]
   exact final_unique_choice_iff_unique_path
     hnoStruct hbridgeStruct hn hne
 

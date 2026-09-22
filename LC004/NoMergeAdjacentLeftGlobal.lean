@@ -5,9 +5,6 @@ import LC004.PrefixIndexed
 
 namespace LC004
 
-/-- Global adjacent-left exchange obtained by splitting the last run of pre,
-using the green front critical pair, and lifting both moves through the inert
-earlier prefix. -/
 /-- The only remaining adjacent-left bookkeeping fact: stripping an inert
 prefix at exactly its length exposes the local index-zero move. -/
 def AdjacentLeftIndexZeroStrip : Prop :=

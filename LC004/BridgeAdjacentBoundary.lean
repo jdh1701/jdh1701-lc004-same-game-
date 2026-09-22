@@ -7,6 +7,14 @@ import LC004.ExecutableCorrespondence
 
 namespace LC004
 
+inductive NonzeroExchangeTarget (u v : RunState) : Prop
+  | same (h : v = u) : NonzeroExchangeTarget u v
+  | heavier (h : Heavier u v) : NonzeroExchangeTarget u v
+  | oneStep {i : Nat}
+      (hi : i ≠ 0)
+      (h : IndexedStep v i u) :
+      NonzeroExchangeTarget u v
+
 /-- Boundary-aware local adjacent-left bridge pair.  The run x immediately
 before the selected a-run is retained so that a child-side boundary merge
 x=c is represented explicitly rather than hidden by invalid prefix transport. -/
@@ -20,7 +28,7 @@ def BridgeAdjacentLeftBoundaryLocal : Prop :=
       IndexedStep
         ((x,bx) :: (a,ba) :: (c,bp) :: (d,true) :: (c,bq) :: post)
         1 v ∧
-      ExchangeTarget u v
+      NonzeroExchangeTarget u v
 
 /-- Concrete boundary-aware bridge critical pair. -/
 theorem bridgeAdjacentLeftBoundaryLocal_proved :
@@ -52,7 +60,7 @@ theorem bridgeAdjacentLeftBoundaryLocal_proved :
         (IndexedStep.merge
           (pre := []) (post := post)
           (c := x) (d := d) (bp := true) (bq := bq))
-    exact ⟨v, hp, ExchangeTarget.oneStep hs⟩
+    exact ⟨v, hp, NonzeroExchangeTarget.oneStep (by omega) hs⟩
   · have hu : u = (x,bx) :: (c,true) :: post := by
       have he := stepAt_complete hchild
       simpa [stepAt, hxc] using he.symm
@@ -71,6 +79,6 @@ theorem bridgeAdjacentLeftBoundaryLocal_proved :
         (IndexedStep.merge
           (pre := [(x,bx)]) (post := post)
           (c := c) (d := d) (bp := bp) (bq := bq))
-    exact ⟨v, hp, ExchangeTarget.oneStep hs⟩
+    exact ⟨v, hp, NonzeroExchangeTarget.oneStep (by omega) hs⟩
 
 end LC004

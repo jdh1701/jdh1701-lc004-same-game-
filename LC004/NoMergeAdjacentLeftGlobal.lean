@@ -15,7 +15,10 @@ def AdjacentLeftIndexZeroStrip : Prop :=
 /-- Once index-zero stripping is available, the already-green front critical
 pair can be lifted to the global adjacent-left interface. -/
 theorem adjacentLeftNoMergeExchange_of_strip
-    (hstrip : AdjacentLeftIndexZeroStrip) :
+    (hstrip : AdjacentLeftIndexZeroStrip)
+    (hexact : ∀ (ctx s : RunState),
+      stepAt (ctx ++ s) ctx.length =
+        (stepAt s 0).map (fun t => ctx ++ t)) :
     AdjacentLeftNoMergeExchange := by
   intro pre post u c hpre hn hboundary hchild
   obtain ⟨ctx, last, hpreEq, hlast⟩ :=
@@ -32,10 +35,12 @@ theorem adjacentLeftNoMergeExchange_of_strip
   have hnlocal :
       Normalized ((a,ba) :: (c,true) :: post) := by
     rw [hpreEq] at hn
-    simpa [List.append_assoc] using
-      (normalized_suffix_of_append
-        (xs := ctx)
-        (ys := (a,ba) :: (c,true) :: post) hn)
+    have hn' :
+        Normalized (ctx ++ ((a,ba) :: (c,true) :: post)) := by
+      simpa [List.append_assoc] using hn
+    exact normalized_suffix_of_append
+      (xs := ctx)
+      (ys := (a,ba) :: (c,true) :: post) hn'
   obtain ⟨v, hv, hdom⟩ :=
     adjacentLeftNoMergeFront_proved hnlocal ht
   let gv : RunState := ctx ++ v
@@ -45,8 +50,10 @@ theorem adjacentLeftNoMergeExchange_of_strip
         (pre.length - 1) gv := by
     rw [hpreEq]
     simp only [List.length_append, List.length_singleton]
-    have hlift := indexedStep_prepend ctx (by omega) hv
-    simpa [gv, List.append_assoc] using hlift
+    apply stepAt_sound
+    have he := stepAt_complete hv
+    rw [hexact ctx ((a,ba) :: (c,true) :: post)]
+    simp [he, gv]
   have hdomGlobal : ExchangeDominates u gv := by
     rw [hu]
     cases hdom with
@@ -57,7 +64,10 @@ theorem adjacentLeftNoMergeExchange_of_strip
             IndexedStep (ctx ++ v) (ctx.length + k) (ctx ++ w) := by
           by_cases hk : k = 0
           · subst k
-            simpa using indexedStep_prepend ctx (by omega) hs
+            apply stepAt_sound
+            have he := stepAt_complete hs
+            rw [hexact ctx v]
+            simp [he]
           · exact indexedStep_prepend_list ctx hk hs
         exact ExchangeDominates.oneStep hs'
           (heavier_append (heavier_refl ctx) hh)

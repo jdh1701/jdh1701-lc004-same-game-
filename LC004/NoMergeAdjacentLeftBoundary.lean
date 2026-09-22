@@ -81,12 +81,13 @@ theorem adjacentLeftNoMergeExchange_reduces_to_boundary
         | heavier hh =>
             exact exchangeDominates_prepend_heavier front hh
         | @oneStep k w hs hh =>
-            by_cases hk : k = 0
-            · -- any compensating boundary-zero step must be analyzed locally
-              -- in the boundary theorem rather than transported generically.
+            have hk : k ≠ 0 := by
+              intro hk0
               subst k
-              sorry
-            · exact exchangeDominates_prepend_oneStep front hk hs hh
+              -- The boundary-aware local theorem's compensating moves occur
+              -- at index one; an index-zero witness is impossible here.
+              cases hs <;> simp at *
+            exact exchangeDominates_prepend_oneStep front hk hs hh
       exact ⟨gv, hp, hd⟩
 
 end LC004

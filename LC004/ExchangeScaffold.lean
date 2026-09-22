@@ -1,5 +1,6 @@
 import LC004.SuccessfulPaths
 import LC004.MoveClassification
+import LC004.IndexedDeterminism
 
 namespace LC004
 
@@ -111,5 +112,50 @@ theorem bridgeChoice_of_unique_and_noMerge_exchange
       hu hchosen hnon hchildne hexchange).elim
   · exact hbridge
 
+
+/-- For a bridge parent, every successful child choice except the newly
+merged run can be lifted to a distinct successful first choice of the parent. -/
+def BridgeChildChoicesLiftExceptMerged
+    (pre post : RunState) (c d : Nat) (bp bq : Bool) : Prop :=
+  ∀ childChoice : Nat × RunState,
+    SuccessfulChoice (pre ++ (c,true) :: post) childChoice →
+    childChoice.1 ≠ pre.length →
+      ∃ alt : Nat × RunState,
+        SuccessfulChoice
+          (pre ++ (c,bp) :: (d,true) :: (c,bq) :: post) alt ∧
+        alt ≠ (pre.length + 1, pre ++ (c,true) :: post)
+
+/-- Conditional bridge heredity.  Once the concrete bridge-exchange lemma is
+proved, the successful child of a unique bridge choice has a unique successful
+first choice of its own. -/
+theorem bridge_child_unique_of_exchange
+    {pre post : RunState} {c d : Nat} {bp bq : Bool}
+    (hmain :
+      SuccessfulChoice
+        (pre ++ (c,bp) :: (d,true) :: (c,bq) :: post)
+        (pre.length + 1, pre ++ (c,true) :: post))
+    (hparent :
+      UniqueSuccessfulChoice
+        (pre ++ (c,bp) :: (d,true) :: (c,bq) :: post))
+    (hlift : BridgeChildChoicesLiftExceptMerged pre post c d bp bq) :
+    UniqueSuccessfulChoice (pre ++ (c,true) :: post) := by
+  have hchildne : pre ++ (c,true) :: post ≠ [] := by
+    intro h
+    have hlen := congrArg List.length h
+    simp at hlen
+  obtain ⟨witness, hwitness⟩ :=
+    runSolvable_nonempty_has_successfulChoice hchildne hmain.2
+  have hwidx : witness.1 = pre.length := by
+    by_contra hne
+    obtain ⟨alt, halt, hnealt⟩ := hlift witness hwitness hne
+    exact (uniqueSuccessfulChoice_no_alt hparent hmain halt hnealt).elim
+  refine ⟨witness, hwitness, ?_⟩
+  intro other hother
+  have hoidx : other.1 = pre.length := by
+    by_contra hne
+    obtain ⟨alt, halt, hnealt⟩ := hlift other hother hne
+    exact (uniqueSuccessfulChoice_no_alt hparent hmain halt hnealt).elim
+  exact successfulChoice_eq_of_index_eq
+    hwitness hother (hwidx.trans hoidx.symm)
 
 end LC004

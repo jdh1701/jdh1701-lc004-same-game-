@@ -50,10 +50,14 @@ theorem adjacentLeftNoMergeExchange_of_strip
         (pre.length - 1) gv := by
     rw [hpreEq]
     simp only [List.length_append, List.length_singleton]
-    apply stepAt_sound
     have he := stepAt_complete hv
-    rw [hexact ctx ((a,ba) :: (c,true) :: post)]
-    simp [he, gv]
+    have hExec :
+        stepAt (ctx ++ ((a,ba) :: (c,true) :: post)) ctx.length =
+          some (ctx ++ v) := by
+      rw [hexact ctx ((a,ba) :: (c,true) :: post)]
+      simp [he]
+    apply stepAt_sound
+    simpa [gv, List.append_assoc] using hExec
   have hdomGlobal : ExchangeDominates u gv := by
     rw [hu]
     cases hdom with
@@ -64,10 +68,12 @@ theorem adjacentLeftNoMergeExchange_of_strip
             IndexedStep (ctx ++ v) (ctx.length + k) (ctx ++ w) := by
           by_cases hk : k = 0
           · subst k
-            apply stepAt_sound
             have he := stepAt_complete hs
-            rw [hexact ctx v]
-            simp [he]
+            have hExec :
+                stepAt (ctx ++ v) ctx.length = some (ctx ++ w) := by
+              rw [hexact ctx v]
+              simp [he]
+            exact stepAt_sound hExec
           · exact indexedStep_prepend_list ctx hk hs
         exact ExchangeDominates.oneStep hs'
           (heavier_append (heavier_refl ctx) hh)

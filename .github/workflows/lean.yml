@@ -10,14 +10,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Cache Lean and Lake
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.elan
+            .lake
+          key: ${{ runner.os }}-lean-v4.19.0-${{ hashFiles('lean-toolchain', 'lakefile.toml') }}
+
       - name: Install Lean
         run: |
-          curl https://elan.lean-lang.org/elan-init.sh -sSf | sh -s -- -y
+          if [ ! -x "$HOME/.elan/bin/elan" ]; then
+            curl https://elan.lean-lang.org/elan-init.sh -sSf | sh -s -- -y
+          fi
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
       - name: Generate Lake manifest
         run: |
           export PATH="$HOME/.elan/bin:$PATH"
           lake update
+
       - name: Build LC004
         run: |
           export PATH="$HOME/.elan/bin:$PATH"

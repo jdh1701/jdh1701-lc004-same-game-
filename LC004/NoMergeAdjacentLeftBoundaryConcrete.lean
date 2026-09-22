@@ -52,15 +52,10 @@ theorem adjacentLeftBoundaryLocal_proved :
         subst u
         by_cases hce : c = x
         · subst c
-          let v : RunState := (x,true) :: zs
-          have hp :
-              IndexedStep
-                ((x,bx) :: (a,true) :: (x,true) :: (x,be) :: zs)
-                1 v := by
-            apply stepAt_sound
-            simp [v, stepAt]
-          exact ⟨v, hp,
-            ExchangeDominates.heavier (heavier_refl v)⟩
+          have himp : False := by
+            have ht := normalized_tail (normalized_tail hn)
+            simpa [Normalized] using ht.1
+          exact himp.elim
         · let v : RunState :=
               (x,bx) :: (c,true) :: (x,be) :: zs
           have hp :
@@ -68,7 +63,7 @@ theorem adjacentLeftBoundaryLocal_proved :
                 ((x,bx) :: (a,true) :: (c,true) :: (x,be) :: zs)
                 1 v := by
             apply stepAt_sound
-            simp [v, stepAt]
+            simp [v, stepAt, Ne.symm hce]
           have hs :
               IndexedStep v 1 ((x,true) :: zs) := by
             apply stepAt_sound
@@ -82,18 +77,34 @@ theorem adjacentLeftBoundaryLocal_proved :
         subst u
         by_cases hce : c = e
         · subst e
-          let v : RunState := (x,bx) :: (c,true) :: zs
+          let v : RunState := (x,bx) :: (c,true) :: (c,be) :: zs
           have hp :
               IndexedStep
                 ((x,bx) :: (a,true) :: (c,true) :: (c,be) :: zs)
                 1 v := by
             apply stepAt_sound
-            simp [v, stepAt]
-          have hh :
-              Heavier ((x,bx) :: (c,be) :: zs) v := by
-            simp [v, Heavier, heavier_refl]
-          exact ⟨v, hp, ExchangeDominates.heavier hh⟩
-        · let v : RunState :=
+            simp [v, stepAt, hxe]
+          have hs :
+              IndexedStep v 1 ((x,bx) :: (c,be) :: zs) := by
+            apply stepAt_sound
+            simp [v, stepAt, hxe]
+          exact ⟨v, hp,
+            ExchangeDominates.oneStep hs
+              (heavier_refl ((x,bx) :: (c,be) :: zs))⟩
+        · by_cases hxc : x = c
+          · subst c
+            let v : RunState := (x,true) :: (e,be) :: zs
+            have hp :
+                IndexedStep
+                  ((x,bx) :: (a,true) :: (x,true) :: (e,be) :: zs)
+                  1 v := by
+              apply stepAt_sound
+              simp [v, stepAt]
+            have hh :
+                Heavier ((x,bx) :: (e,be) :: zs) v := by
+              simp [v, Heavier, heavier_refl]
+            exact ⟨v, hp, ExchangeDominates.heavier hh⟩
+          · let v : RunState :=
               (x,bx) :: (c,true) :: (e,be) :: zs
           have hp :
               IndexedStep

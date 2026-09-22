@@ -19,8 +19,8 @@ def BridgeFarLeftContextLaw : Prop :=
       IndexedStep
         (pre ++ (c,bp) :: (d,true) :: (c,bq) :: post)
         i v ∧
-      (v = u ∨ ∃ k w,
-        IndexedStep v k w ∧ Heavier u w)
+      (v = u ∨ ∃ k,
+        IndexedStep v k u)
 
 /-- The context law immediately implies the far-left exchange interface. -/
 theorem bridgeFarLeftExchange_of_context
@@ -29,7 +29,7 @@ theorem bridgeFarLeftExchange_of_context
   intro pre post c d bp bq i u hn hi hchild
   obtain ⟨v, hp, hv⟩ := hctx hn hi hchild
   refine ⟨v, hp, ?_⟩
-  rcases hv with rfl | ⟨k,w,hs,hh⟩
+  rcases hv with rfl | ⟨k,hs⟩
   · exact ExchangeTarget.same rfl
   · exact ExchangeTarget.oneStep hs
 

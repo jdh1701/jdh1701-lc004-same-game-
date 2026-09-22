@@ -38,3 +38,4 @@ import LC004.NoMergeAdjacentRight
 import LC004.NoMergeExchangeAssembly
 import LC004.BridgeExchangeAssembly
 import LC004.NoMergeExchangeInterior
+import LC004.FinalAssembly

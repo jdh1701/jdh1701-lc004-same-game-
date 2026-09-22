@@ -115,7 +115,7 @@ theorem adjacentLeftBoundaryLocal_proved :
             have hs :
                 IndexedStep v 1 ((x,bx) :: (e,be) :: zs) := by
               apply stepAt_sound
-              simp [v, stepAt, hxc]
+              simp [v, stepAt, hxc, hxe, hce]
             exact ⟨v, hp,
               ExchangeDominates.oneStep hs
                 (heavier_refl ((x,bx) :: (e,be) :: zs))⟩

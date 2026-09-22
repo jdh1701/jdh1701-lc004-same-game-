@@ -62,10 +62,13 @@ theorem stepAt_prepend_list_eq
           obtain ⟨j, hj⟩ := Nat.exists_eq_succ_of_ne_zero hk
           have hih := ih
           rw [htail, hj] at hih
-          rw [htail, hj]
-          simp only [stepAt]
-          rw [hih]
-          simp [Option.map_map, Function.comp_def, List.cons_append]
+          have hgoal :
+              stepAt (x :: (y :: ys)) (j + 2) =
+                Option.map (fun t => x :: (xs ++ t)) (stepAt s i) := by
+            simp only [stepAt]
+            rw [hih]
+            simp [Option.map_map, Function.comp_def, List.cons_append]
+          simpa [htail, hj, List.cons_append, Nat.add_assoc] using hgoal
 
 /-- Strip an inert prefix from a nonzero indexed move. -/
 theorem indexedStep_strip_prefix

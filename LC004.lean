@@ -56,3 +56,4 @@ import LC004.NoMergeFarLeftProof
 import LC004.NoMergeAdjacentLeftBoundary
 import LC004.NoMergeAdjacentLeftBoundaryConcrete
 import LC004.HeadColorLemmas
+import LC004.NoMergeStructuralProof

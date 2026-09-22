@@ -11,22 +11,37 @@ theorem adjacentLeftBoundaryLocal_proved :
     have he := stepAt_complete hchild
     cases ba <;> simp [stepAt] at he ⊢
   subst ba
+  have hxa : x ≠ a := by
+    simpa [Normalized] using hn.1
+  have hac : a ≠ c := by
+    have ht := normalized_tail hn
+    simpa [Normalized] using ht.1
   cases post with
   | nil =>
       have hu : u = [(x,bx)] := by
         have he := stepAt_complete hchild
         simpa [stepAt] using he.symm
       subst u
-      let v : RunState := [(x,bx),(c,true)]
-      have hp :
-          IndexedStep [(x,bx),(a,true),(c,true)] 1 v := by
-        apply stepAt_sound
-        simp [v, stepAt]
-      have hs : IndexedStep v 1 [(x,bx)] := by
-        apply stepAt_sound
-        simp [v, stepAt]
-      exact ⟨v, hp,
-        ExchangeDominates.oneStep hs (heavier_refl [(x,bx)])⟩
+      by_cases hxc : x = c
+      · subst c
+        let v : RunState := [(x,true)]
+        have hp :
+            IndexedStep [(x,bx),(a,true),(x,true)] 1 v := by
+          apply stepAt_sound
+          simp [v, stepAt]
+        have hh : Heavier [(x,bx)] v := by
+          simp [v, Heavier]
+        exact ⟨v, hp, ExchangeDominates.heavier hh⟩
+      · let v : RunState := [(x,bx),(c,true)]
+        have hp :
+            IndexedStep [(x,bx),(a,true),(c,true)] 1 v := by
+          apply stepAt_sound
+          simp [v, stepAt, hxc]
+        have hs : IndexedStep v 1 [(x,bx)] := by
+          apply stepAt_sound
+          simp [v, stepAt]
+        exact ⟨v, hp,
+          ExchangeDominates.oneStep hs (heavier_refl [(x,bx)])⟩
   | cons z zs =>
       rcases z with ⟨e,be⟩
       by_cases hxe : x = e

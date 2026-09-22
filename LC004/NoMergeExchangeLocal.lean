@@ -1,5 +1,6 @@
 import LC004.ExchangeDominance
 import LC004.ExecutableCorrespondence
+import LC004.ExchangeScaffold
 
 namespace LC004
 
@@ -84,5 +85,24 @@ theorem noMerge_exchange_left
             simp [v, stepAt]
           exact ⟨v, hp,
             ExchangeDominates.oneStep hvu heavier_refl⟩
+
+/-- The left-edge structural critical pair is enough to lift every successful
+child choice to a distinct successful first choice of the parent. -/
+theorem childChoicesLift_noMerge_left
+    {post : RunState} {c : Nat} :
+    ChildChoicesLift
+      ((c,true) :: post)
+      (0, post) := by
+  intro childChoice hchild
+  rcases childChoice with ⟨j,u⟩
+  obtain ⟨v, hparent, hdom⟩ :=
+    noMerge_exchange_left (c := c) hchild.1
+  refine ⟨(j + 1, v), ?_, ?_⟩
+  · exact successfulChoice_of_exchangeDominates
+      hparent hdom hchild.2
+  · intro heq
+    have hidx := congrArg Prod.fst heq
+    simp at hidx
+
 
 end LC004

@@ -43,6 +43,40 @@ theorem solvable_completePath
       obtain ⟨p, hp⟩ := ih
       exact ⟨(i, t) :: p, CompletePath.move hi hp⟩
 
+theorem completePath_cons_iff
+    {s t : RunState} {i : Nat} {rest : List (Nat × RunState)} :
+    CompletePath s ((i, t) :: rest) ↔
+      IndexedStep s i t ∧ CompletePath t rest := by
+  constructor
+  · intro h
+    cases h with
+    | move hstep htail =>
+        exact ⟨hstep, htail⟩
+  · rintro ⟨hstep, htail⟩
+    exact CompletePath.move hstep htail
+
+theorem completePath_length_le
+    {s : RunState} {p : List (Nat × RunState)}
+    (h : CompletePath s p) :
+    p.length ≤ s.length := by
+  induction h with
+  | done =>
+      simp
+  | move hstep htail ih =>
+      have hlt := indexedStep_length_lt hstep
+      simp only [List.length_cons]
+      omega
+
+theorem completePath_empty_source
+    {s : RunState}
+    (h : CompletePath s []) :
+    s = [] := by
+  have hlen := completePath_length_le h
+  cases s with
+  | nil => rfl
+  | cons x xs =>
+      cases h
+
 theorem successfulChoice_iff_path
     {s : RunState} {ch : Nat × RunState} :
     SuccessfulChoice s ch ↔
@@ -54,18 +88,15 @@ theorem successfulChoice_iff_path
     exact ⟨rest, CompletePath.move hstep hrest⟩
   · rintro ⟨rest, hpath⟩
     rcases ch with ⟨i, t⟩
-    cases hpath with
-    | move hstep htail =>
-        exact ⟨hstep, completePath_solvable htail⟩
+    rcases completePath_cons_iff.mp hpath with ⟨hstep, htail⟩
+    exact ⟨hstep, completePath_solvable htail⟩
 
 theorem uniqueCompletePath_nil : UniqueCompletePath ([] : RunState) := by
   refine ⟨[], CompletePath.done, ?_⟩
   intro p hp
-  cases hp with
-  | done =>
-      rfl
-  | move hstep htail =>
-      cases hstep <;> simp
+  have hlen := completePath_length_le hp
+  have hz : p.length = 0 := by omega
+  exact List.length_eq_zero.mp hz
 
 /-- If a nonterminal state has one complete successful path, then its first
 edge is a successful first choice. -/
@@ -73,33 +104,32 @@ theorem completePath_first_successful
     {s t : RunState} {i : Nat} {rest : List (Nat × RunState)}
     (h : CompletePath s ((i, t) :: rest)) :
     SuccessfulChoice s (i, t) := by
-  cases h with
-  | move hstep htail =>
-      exact ⟨hstep, completePath_solvable htail⟩
+  rcases completePath_cons_iff.mp h with ⟨hstep, htail⟩
+  exact ⟨hstep, completePath_solvable htail⟩
 
 /-- The easy half of the target equivalence: a unique complete reduction path
-forces a unique successful first move. -/
-theorem uniqueCompletePath_uniqueSuccessfulFirst
+forces a unique successful first choice. -/
+theorem uniqueCompletePath_uniqueSuccessfulChoice
     {s : RunState}
     (hne : s ≠ [])
     (hu : UniqueCompletePath s) :
     UniqueSuccessfulChoice s := by
   rcases hu with ⟨p, hp, hpuniq⟩
-  cases hp with
-  | done =>
-      exact (hne rfl).elim
-  | @move s t i rest hstep htail =>
-      refine ⟨(i, t), ⟨hstep, completePath_solvable htail⟩, ?_⟩
+  cases p with
+  | nil =>
+      exact (hne (completePath_empty_source hp)).elim
+  | cons ch0 rest0 =>
+      refine ⟨ch0, successfulChoice_iff_path.mpr ⟨rest0, hp⟩, ?_⟩
       intro ch hch
-      obtain ⟨rest', hpath'⟩ := successfulChoice_iff_path.mp hch
-      have heq : ch :: rest' = (i, t) :: rest :=
-        hpuniq (ch :: rest') hpath'
+      obtain ⟨rest, hpath⟩ := successfulChoice_iff_path.mp hch
+      have heq : ch :: rest = ch0 :: rest0 :=
+        hpuniq (ch :: rest) hpath
       exact (List.cons.inj heq).1
 
-/-- Generic induction step for the hard direction.  Same-Game-specific work
+/-- Generic induction step for the hard direction. Same-Game-specific work
 is isolated to proving that every successful child of a unique-first state
 itself has a unique complete path. -/
-theorem uniqueCompletePath_of_uniqueFirst_and_children
+theorem uniqueCompletePath_of_uniqueChoice_and_children
     {s : RunState}
     (hne : s ≠ [])
     (hfirst : UniqueSuccessfulChoice s)
@@ -113,10 +143,12 @@ theorem uniqueCompletePath_of_uniqueFirst_and_children
   · rcases hch0 with ⟨hstep0, _⟩
     exact CompletePath.move hstep0 hrest0
   · intro p hp
-    cases hp with
-    | done =>
-        exact (hne rfl).elim
-    | @move s t i rest hstep htail =>
+    cases p with
+    | nil =>
+        exact (hne (completePath_empty_source hp)).elim
+    | cons ch rest =>
+        rcases ch with ⟨i, t⟩
+        rcases completePath_cons_iff.mp hp with ⟨hstep, htail⟩
         have hch : SuccessfulChoice s (i, t) :=
           ⟨hstep, completePath_solvable htail⟩
         have hchoice : (i, t) = ch0 := hfirstuniq (i, t) hch

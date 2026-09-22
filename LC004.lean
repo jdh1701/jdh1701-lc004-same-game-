@@ -40,3 +40,4 @@ import LC004.BridgeExchangeAssembly
 import LC004.NoMergeExchangeInterior
 import LC004.FinalAssembly
 import LC004.BridgeExchangeRemaining
+import LC004.BridgeExchangeLeftAssembly

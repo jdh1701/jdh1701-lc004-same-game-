@@ -37,3 +37,4 @@ import LC004.InsertedDeletion
 import LC004.NoMergeAdjacentRight
 import LC004.NoMergeExchangeAssembly
 import LC004.BridgeExchangeAssembly
+import LC004.NoMergeExchangeInterior

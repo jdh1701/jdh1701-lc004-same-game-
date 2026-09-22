@@ -5,10 +5,6 @@ import LC004.NoMergeAdjacentRight
 
 namespace LC004
 
-/-- Far-left branch of interior no-merge exchange.  If the child move occurs
-strictly before the run immediately left of the inserted heavy run, suffix
-inertness commutes the move past the insertion; deleting the inserted run then
-returns to the child result. -/
 /-- Far-left interior exchange interface.  Suffix inertness reduces this branch
 to preserving the split point created by the inserted heavy run. -/
 def FarLeftNoMergeExchange : Prop :=

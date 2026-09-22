@@ -17,7 +17,7 @@ theorem heavier_append {a b c d : RunState}
           rcases x with ⟨cx,bx⟩
           rcases y with ⟨cy,byy⟩
           simp only [Heavier] at hab ⊢
-          exact ⟨hab.1, hab.2.1, ih hab.2.2 hcd⟩
+          exact ⟨hab.1, hab.2.1, ih hab.2.2⟩
 
 theorem heavier_split_heavy
     (pre post : RunState) (c : Nat) {t : RunState}
@@ -52,6 +52,6 @@ theorem heavier_split_heavy
           refine ⟨(cx,byy)::pre', post', ?_, ?_, hs⟩
           · simp
           · simp only [Heavier]
-            exact ⟨rfl, hbit, hp⟩
+            exact ⟨trivial, hbit, hp⟩
 
 end LC004

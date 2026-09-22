@@ -93,8 +93,11 @@ theorem uniqueCompletePath_of_uniqueSuccessfulChoice_exchange
             simp at hlen
           have hchildLt :
               (pre ++ (c,true) :: post).length < n := by
-            have hlt := indexedStep_length_lt hchosen.1
-            omega
+            calc
+              (pre ++ (c,true) :: post).length
+                  < (pre ++ (c,bp) :: (d,true) :: (c,bq) :: post).length :=
+                indexedStep_length_lt hchosen.1
+              _ = n := hxlen
           have hchildPath :
               UniqueCompletePath (pre ++ (c,true) :: post) :=
             ih _ hchildLt

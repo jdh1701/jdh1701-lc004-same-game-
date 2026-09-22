@@ -27,7 +27,7 @@ theorem bridgeAdjacentLeftStructural_of_local
     (hlocal : BridgeAdjacentLeftLocal) :
     BridgeAdjacentLeftStructuralExchange := by
   intro pre post c d bp bq u hpre hn hchild
-  obtain ⟨leftTail, last, hpreEq⟩ := exists_split_last pre hpre
+  obtain ⟨leftTail, last, hpreEq, hlast⟩ := exists_split_last pre hpre
   rcases last with ⟨a,ba⟩
   rw [hpreEq] at hn hchild ⊢
   have hidx :

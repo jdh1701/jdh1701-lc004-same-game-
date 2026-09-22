@@ -29,7 +29,7 @@ def NormalizedBridgeStructuralExchange : Prop :=
 bridge interface used by the final induction. -/
 theorem normalizedBridgeExchange_of_structural
     (hstruct : NormalizedBridgeStructuralExchange) :
-    NormalizedBridgeExchange := by
+    LC004.NormalizedBridgeExchange := by
   intro pre post c d bp bq hn
   intro childChoice hchild hnotMerged
   obtain ⟨alt, halt, hne, htarget⟩ :=

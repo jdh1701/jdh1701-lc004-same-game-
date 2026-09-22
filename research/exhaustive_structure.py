@@ -125,14 +125,21 @@ def run_range(q: int, max_runs: int):
                 paths,
             )
 
-            if len(s) > 1 and len(successful) == 1:
+            if len(successful) == 1:
                 i, _ = successful[0]
-                assert i in bridge_indices(s), (
-                    "bridge-necessity counterexample",
+                assert n % 2 == 1 and i == n // 2, (
+                    "center-run counterexample",
                     s,
                     successful,
                     paths,
                 )
+                if len(s) > 1:
+                    assert i in bridge_indices(s), (
+                        "bridge-necessity counterexample",
+                        s,
+                        successful,
+                        paths,
+                    )
 
             for i, child in legal_moves(s):
                 if i not in bridge_indices(s):
@@ -163,10 +170,12 @@ def main():
     ranges = ((3, 10), (4, 8), (5, 7))
     total_states = 0
     total_exchange = 0
+    total_unique_first = 0
     for q, max_runs in ranges:
         rows, exchange = run_range(q, max_runs)
         total_states += sum(row[1] for row in rows)
         total_exchange += exchange
+        total_unique_first += sum(row[3] for row in rows)
         print(f"q={q}, through {max_runs} runs")
         for row in rows:
             print("  runs=%d states=%d solvable=%d unique_first=%d unique_path=%d" % row)
@@ -174,7 +183,11 @@ def main():
 
     assert total_states == 489_538, total_states
     assert total_exchange == 1_163_048, total_exchange
-    print(f"PASS states={total_states} bridge_exchange_cases={total_exchange}")
+    assert total_unique_first == 1_002, total_unique_first
+    print(
+        f"PASS states={total_states} unique_first={total_unique_first} "
+        f"bridge_exchange_cases={total_exchange}"
+    )
 
 
 if __name__ == "__main__":

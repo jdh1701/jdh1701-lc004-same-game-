@@ -157,6 +157,6 @@ theorem bridge_child_unique_of_exchange
     obtain ⟨alt, halt, hnealt⟩ := hlift other hother hne
     exact (uniqueSuccessfulChoice_no_alt hparent hmain halt hnealt).elim
   exact successfulChoice_eq_of_index_eq
-    hwitness hother (hwidx.trans hoidx.symm)
+    hother hwitness (hoidx.trans hwidx.symm)
 
 end LC004

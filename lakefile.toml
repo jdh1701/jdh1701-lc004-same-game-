@@ -1,0 +1,11 @@
+name = "lc004"
+version = "0.1.0"
+defaultTargets = ["LC004"]
+
+[[lean_lib]]
+name = "LC004"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.19.0"

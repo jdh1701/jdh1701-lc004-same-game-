@@ -108,7 +108,7 @@ theorem bridge_front_right_exchange
       simp [hraw] at hforce'
   | some u0 =>
       have hfu : forceHeadHeavy u0 = u := by
-        simpa [hraw] using Option.some.inj hforce'.symm
+        simpa [hraw] using hforce'.symm
       obtain ⟨e, rest, hu0⟩ :=
         stepAt_succ_preserves_head_color hraw
       subst u0

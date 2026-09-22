@@ -50,3 +50,4 @@ import LC004.BridgeAdjacentLeftClosure
 import LC004.BridgeFarLeftProof
 import LC004.BridgeAdjacentPrefixTransport
 import LC004.NoMergeFarRightProof
+import LC004.NoMergeAdjacentLeft

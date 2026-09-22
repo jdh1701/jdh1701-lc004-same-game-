@@ -12,5 +12,5 @@ import LC004.ListSplit
 import LC004.NoMergeFull
 import LC004.FullSimulation
 import LC004.Normalized
-import LC004.NormalizedAppend
+import LC004.NormalizedDirectional
 import LC004.NormalizedStepTarget

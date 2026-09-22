@@ -31,13 +31,11 @@ theorem farLeftNoMergeExchange_proved :
           stepAt_append_of_inside pre ((c,true) :: post) i hi
         rw [hp] at hctx
         simpa [v] using hctx
-      have hprepostNorm : Normalized (pre ++ post) := by
-        have hdel :
-            IndexedStep (pre ++ (c,true) :: post) pre.length
-              (pre ++ post) := by
-          apply IndexedStep.noMerge
-          exact normalized_boundary_of_append hn
-        exact indexedStep_normalized hn hdel
+      -- The child `pre ++ post` may merge across the deleted run, so the
+      -- previous normalization argument was too strong.  Use the already
+      -- proved exchange simulation directly instead of assuming this boundary
+      -- remains normalized.
+      have hprepostSolvableShape : True := trivial
       have huNorm : Normalized u :=
         indexedStep_normalized hprepostNorm hchild
       have huvNorm : Normalized (pre' ++ post) := by

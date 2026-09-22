@@ -53,10 +53,16 @@ theorem stepAt_append_of_inside
                         (stepAt (y :: ys) (j + 1)).map
                           (fun t => t ++ suffix) := by
                     simpa using hrec
-                  simp only [stepAt]
-                  rw [hrec']
-                  cases htail : stepAt (y :: ys) (j + 1) <;>
-                    simp [htail, List.append_assoc]
+                  have hgoal :
+                      stepAt (x :: ((y :: ys) ++ suffix)) ((j + 1) + 1) =
+                        Option.map (fun t => t ++ suffix)
+                          (Option.map (fun t => x :: t)
+                            (stepAt (y :: ys) (j + 1))) := by
+                    simp only [stepAt]
+                    rw [hrec']
+                    cases htail : stepAt (y :: ys) (j + 1) <;>
+                      simp [htail, List.append_assoc]
+                  simpa [List.cons_append, Nat.add_assoc] using hgoal
 
 /-- Relational form of the same suffix-inertness law. -/
 theorem indexedStep_append_of_inside

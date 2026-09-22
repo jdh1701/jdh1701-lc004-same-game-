@@ -94,8 +94,9 @@ theorem successfulChoice_iff_path
 theorem uniqueCompletePath_nil : UniqueCompletePath ([] : RunState) := by
   refine ⟨[], CompletePath.done, ?_⟩
   intro p hp
-  have hlen := completePath_length_le hp
-  have hz : p.length = 0 := by omega
+  have hlen : p.length ≤ 0 := by
+    simpa using completePath_length_le hp
+  have hz : p.length = 0 := Nat.eq_zero_of_le_zero hlen
   exact List.length_eq_zero.mp hz
 
 /-- If a nonterminal state has one complete successful path, then its first

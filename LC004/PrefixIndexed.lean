@@ -63,8 +63,9 @@ theorem stepAt_prepend_list_eq
           rw [hj]
           have hih := ih
           rw [htail] at hih
-          simp [stepAt, htail, hih, Option.map_map, Function.comp_def,
-            List.cons_append]
+          rw [← hj]
+          rw [hih]
+          simp [Option.map_map, Function.comp_def, List.cons_append]
 
 /-- Strip an inert prefix from a nonzero indexed move. -/
 theorem indexedStep_strip_prefix

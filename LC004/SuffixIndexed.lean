@@ -31,9 +31,9 @@ theorem stepAt_append_of_inside
                       simp at hk
                   | cons z zs =>
                       rcases x with ⟨cx,bx⟩
-                      rcases y with ⟨cy,by⟩
+                      rcases y with ⟨cy,yb⟩
                       rcases z with ⟨cz,bz⟩
-                      cases by with
+                      cases yb with
                       | false =>
                           simp [stepAt]
                       | true =>

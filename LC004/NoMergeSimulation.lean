@@ -41,6 +41,6 @@ theorem deleteSimulation_noMerge_right
   refine ⟨pre', ?_, hpre⟩
   exact Step.noMerge (by
     intro p q hp hq
-    simp at hq)
+    exact False.elim (by simpa using hq))
 
 end LC004

@@ -10,6 +10,7 @@ to preserving the split point created by the inserted heavy run. -/
 def FarLeftNoMergeExchange : Prop :=
   ∀ {pre post u : RunState} {c : Nat} {i : Nat},
     Normalized (pre ++ (c,true) :: post) →
+    (∀ p q, pre.getLast? = some p → post.head? = some q → p.1 ≠ q.1) →
     i + 1 < pre.length →
     IndexedStep (pre ++ post) i u →
     ∃ v : RunState,
@@ -21,6 +22,7 @@ branch to the already-proved right endpoint theorem. -/
 def FarRightNoMergeExchange : Prop :=
   ∀ {pre post u : RunState} {c : Nat} {i : Nat},
     Normalized (pre ++ (c,true) :: post) →
+    (∀ p q, pre.getLast? = some p → post.head? = some q → p.1 ≠ q.1) →
     pre.length < i →
     IndexedStep (pre ++ post) i u →
     ∃ v : RunState,
@@ -34,6 +36,7 @@ def AdjacentLeftNoMergeExchange : Prop :=
   ∀ {pre post u : RunState} {c : Nat},
     pre ≠ [] →
     Normalized (pre ++ (c,true) :: post) →
+    (∀ p q, pre.getLast? = some p → post.head? = some q → p.1 ≠ q.1) →
     IndexedStep (pre ++ post) (pre.length - 1) u →
     ∃ v : RunState,
       IndexedStep (pre ++ (c,true) :: post) (pre.length - 1) v ∧

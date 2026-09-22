@@ -55,6 +55,16 @@ theorem indexedStep_length_lt
   | merge =>
       simp
 
+theorem indexedStep_index_lt
+    {s t : RunState} {i : Nat}
+    (h : IndexedStep s i t) :
+    i < s.length := by
+  cases h with
+  | noMerge =>
+      simp
+  | merge =>
+      simp
+
 theorem indexedStep_nil_false
     {i : Nat} {t : RunState}
     (h : IndexedStep [] i t) :

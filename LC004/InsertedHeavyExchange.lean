@@ -29,7 +29,7 @@ theorem inserted_heavy_exchange
             (pre := left) (post := []) (c := c)
             (by intro p q hp hq; simp at hq))
       exact ⟨v, rfl,
-        ExchangeDominates.oneStep hs (heavier_refl left)⟩
+        ExchangeDominates.oneStep hs (by simpa using heavier_refl left)⟩
     · obtain ⟨front, ⟨a,ba⟩, hleftEq, hlast⟩ :=
         exists_split_last left hleft
       cases right with
@@ -40,7 +40,7 @@ theorem inserted_heavy_exchange
           · subst b
             let w : RunState := front ++ (a,true) :: zs
             have hs : IndexedStep v (front.length + 1) w := by
-              rw [hleftEq]
+              rw [hleftEq] at ⊢
               simpa [v, w, List.append_assoc] using
                 (IndexedStep.merge
                   (pre := front) (post := zs)
@@ -52,7 +52,7 @@ theorem inserted_heavy_exchange
               rw [hleftEq]
               simp only [List.append_assoc, List.singleton_append]
               apply heavier_append (heavier_refl front)
-              simp [Heavier, w]
+              simp [Heavier]
             exact ⟨v, rfl, ExchangeDominates.oneStep hs hh⟩
           · have hb :
                 ∀ p q, left.getLast? = some p →
@@ -62,7 +62,8 @@ theorem inserted_heavy_exchange
                 rw [hlast] at hp
                 exact (Option.some.inj hp).symm
               have hq' : q = (b,bb) := by
-                simpa using hq
+                have hq0 : (b,bb) = q := by simpa using hq
+                exact hq0.symm
               subst p
               subst q
               exact hab
@@ -75,6 +76,6 @@ theorem inserted_heavy_exchange
                   (c := c) hb)
             exact ⟨v, rfl,
               ExchangeDominates.oneStep hs
-                (heavier_refl (left ++ (a,bb) :: zs))⟩
+                (by simpa using heavier_refl (left ++ (b,bb) :: zs))⟩
 
 end LC004

@@ -62,9 +62,14 @@ theorem stepAt_append_of_inside
                       stepAt (x :: ((y :: ys) ++ suffix)) ((j + 1) + 1) =
                         Option.map (fun t => t ++ suffix)
                           (stepAt (x :: (y :: ys)) ((j + 1) + 1)) := by
-                    simp only [stepAt]
-                    rw [hrec']
                     rw [hbase]
+                    change
+                      Option.map (fun t => x :: t)
+                          (stepAt ((y :: ys) ++ suffix) (j + 1)) =
+                        Option.map (fun t => t ++ suffix)
+                          (Option.map (fun t => x :: t)
+                            (stepAt (y :: ys) (j + 1)))
+                    rw [hrec']
                     cases htail : stepAt (y :: ys) (j + 1) <;>
                       simp [htail, List.append_assoc]
                   simpa [List.cons_append, Nat.add_assoc] using hgoal

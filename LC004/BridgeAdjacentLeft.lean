@@ -27,9 +27,9 @@ theorem bridgeAdjacentLeftStructural_of_local
     (hlocal : BridgeAdjacentLeftLocal) :
     BridgeAdjacentLeftStructuralExchange := by
   intro pre post c d bp bq u hpre hn hchild
-  obtain ⟨leftTail, last, hpreEq⟩ := List.exists_eq_append_cons.mpr hpre
+  obtain ⟨leftTail, last, hpreEq⟩ := exists_split_last pre hpre
   rcases last with ⟨a,ba⟩
-  subst pre
+  rw [hpreEq] at hn hchild ⊢
   have hidx :
       (leftTail ++ [(a,ba)]).length - 1 = leftTail.length := by
     simp

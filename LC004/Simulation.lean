@@ -23,7 +23,7 @@ theorem sameGame_solvable_mono
     subst a
     cases b with
     | nil => rfl
-    | cons x xs => simp [Heavier] at hab
+    | cons x xs => exact False.elim (by simpa [Heavier] using hab)
   · exact hsim
   · exact hst
   · exact hs

@@ -11,9 +11,9 @@ namespace LC004
 theorem deleteSimulation_full : DeleteSimulation := by
   intro s t u hst hstep
   cases hstep with
-  | merge (pre := pre) (post := post) (c := c) (d := d) (bp := bp) (bq := bq) =>
+  | merge =>
       exact deleteSimulation_merge hst
-  | noMerge (pre := pre) (post := post) (c := c) hboundary =>
+  | noMerge hboundary =>
       cases pre with
       | nil =>
           simpa using (deleteSimulation_noMerge_left (post := post) (c := c) hst)

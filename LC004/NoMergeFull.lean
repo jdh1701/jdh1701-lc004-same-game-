@@ -27,10 +27,16 @@ theorem deleteSimulation_noMerge_full
           have hab : a ≠ b := by
             exact hboundary (a,ba) (b,bb) hpreLast (by simp)
           rw [hpreEq] at h ⊢
-          simpa using
-            (deleteSimulation_noMerge_interior
+          have h' :
+              Heavier
+                (left ++ (a,ba) :: (c,true) :: (b,bb) :: right)
+                t := by
+            simpa only [List.append_assoc, List.singleton_append] using h
+          have hi :=
+            deleteSimulation_noMerge_interior
               (left := left) (right := right)
               (a := a) (b := b) (c := c)
-              (ba := ba) (bb := bb) hab h)
+              (ba := ba) (bb := bb) hab h'
+          simpa only [List.append_assoc, List.singleton_append] using hi
 
 end LC004

@@ -108,7 +108,9 @@ A separate isolated Lean module, `OrdinaryCorrespondence.lean`, was
 compiled with `lake env lean LC004/OrdinaryCorrespondence.lean` (exit 0)
 in an isolated checkout based on public checkpoint `9204f839`;
 `lake build LC004` and `lake build LC004.OrdinaryCorrespondence` also
-exited 0. The module defines raw run deletion and proves path,
+exited 0. The exact copied file at
+`research/post_theorem/OrdinaryCorrespondence.lean` also exited 0 under
+`lake env lean` in that checkout. The module defines raw run deletion and proves path,
 solvability, successful-first, and uniqueness transfer **under an explicit
 `hcommute` hypothesis** for an arbitrary raw transition. It neither proves
 `hcommute` for its concrete `ordinaryStepAt` nor imports the module into

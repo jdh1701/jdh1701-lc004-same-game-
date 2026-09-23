@@ -70,6 +70,20 @@ system needed for a recurrence. It also cannot prove indefinite growth.
 Pair interaction distributions and the precise signature definition are
 preserved in `results/pair_geometry_summary.csv` and `census.py`.
 
+An additional ordered-pair transport test tracked each of two distinct
+successful original runs across deletion of the other. At q=3,n=13,
+653436 of 742824 pairs (87.97%) admitted both orders and reached exactly
+the same Boolean state after two moves; 89388 (12.03%) were adjacent
+critical pairs in which one original run was absorbed by the other's
+bridge merge. At q=4,n=11 the respective counts were 335640 of 367368
+(91.36%) and 31728 (8.64%). No surviving-run pair had unequal two-step
+states in this finite census. These are **pairs of successful first moves
+across labeled ordinary words**, counted with multiplicity, not distinct
+states or complete paths. They suggest testing a commutation-quotiented
+path representation, but do not give a counting recurrence. Exact distance
+and interaction counts are in `results/pair_interactions.csv`, with the
+index-transport convention in `pair_interactions.py`.
+
 ## Ordinary semantics and a counterexample to an overstrong statement
 
 The public Lean files already define `RawState`, `encode`, and prove
@@ -127,13 +141,15 @@ https://oeis.org/A035615 ; https://oeis.org/A035617 .
 The full Burns–Purcell proof and later literature remain to be audited
 before making a priority claim.
 
-**Decision C, provisional:** the theorem presently looks primarily like a
-standalone structural result. The branching complement dominates observed
-winners and grows in the tested canonical census; Biedl parse ambiguity
-diverges from deletion-path ambiguity. There may still be a useful
-enumeration application, but a new canonical decomposition or a
-multiplicity correction would be required. No generating function was
-fitted and none was formalized.
+**Decision B, provisional:** the theorem has some structural relevance,
+but a major new idea is required for enumeration. The branching complement
+dominates observed winners and grows in the tested canonical census;
+Biedl parse ambiguity diverges from deletion-path ambiguity. The high
+frequency of exact two-move commutation suggests a possible trace quotient
+with adjacent bridge critical pairs, which remains an untested counting
+representation. A canonical decomposition or multiplicity correction
+would be required. If the trace quotient fails to compress B, this
+decision should revert to C. No generating function was fitted or formalized.
 
 ## Reproduction and limits
 
@@ -142,6 +158,7 @@ python recovered/lc004_same_game.py --root artifacts/control --qmax 4 --nmax 10
 python public-lc004/scripts/exhaustive_verify.py
 python research_cycle/census.py --ranges 2:15,3:13,4:11
 python research_cycle/summarize.py
+python research_cycle/pair_interactions.py --ranges 3:10,3:11,3:12,3:13,4:10,4:11
 python semantics_audit/check_correspondence.py
 python biedl_grammar_audit.py
 ```

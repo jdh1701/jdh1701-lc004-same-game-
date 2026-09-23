@@ -104,6 +104,19 @@ functional commuting equation
 followed by existential relational correspondence and path transfer.
 No claim that this equation is Lean-proved is made here.
 
+A separate isolated Lean module, `OrdinaryCorrespondence.lean`, was
+compiled with `lake env lean LC004/OrdinaryCorrespondence.lean` (exit 0)
+in an isolated checkout based on public checkpoint `9204f839`;
+`lake build LC004` and `lake build LC004.OrdinaryCorrespondence` also
+exited 0. The module defines raw run deletion and proves path,
+solvability, successful-first, and uniqueness transfer **under an explicit
+`hcommute` hypothesis** for an arbitrary raw transition. It neither proves
+`hcommute` for its concrete `ordinaryStepAt` nor imports the module into
+the trusted root. The isolated green commit is
+`a5b48038bfa4e626c3a3905ad054ff55c0a20ea5`; its source is
+preserved verbatim here under research. This is useful conditional
+infrastructure, not the desired unconditional semantic correspondence.
+
 ## Biedl grammar versus path ambiguity
 
 Biedl et al., *The Complexity of Clickomania*, §2.2,

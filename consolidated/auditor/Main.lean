@@ -70,7 +70,7 @@ partial def declarationUsesSorry (environment : Environment) (declaration : Name
 def dependsOnSorry (environment : Environment) (declaration : Name) : Bool :=
   (declarationUsesSorry environment declaration).run' {}
 
-unsafe def audit (moduleName declaration : Name) (allowed : List Name) : IO Json := do
+unsafe def audit (moduleName declaration : Name) (allowed : List Name) : IO String := do
   let diagnostic ← IO.getStderr
   diagnostic.putStrLn s!"audit-stage: import-start {declaration}"
   initSearchPath (← findSysroot)
@@ -99,7 +99,7 @@ unsafe def audit (moduleName declaration : Name) (allowed : List Name) : IO Json
     let unresolved := axioms.filter fun name => !allowedSet.contains name
     let strings := axioms.map toString
     let unresolvedStrings := unresolved.map toString
-    pure <| Json.mkObj [
+    let report := Json.mkObj [
       ("ok", Json.bool unresolved.isEmpty),
       ("declaration", Json.str (toString declaration)),
       ("declaration_kind", Json.str "theorem"),
@@ -107,6 +107,11 @@ unsafe def audit (moduleName declaration : Name) (allowed : List Name) : IO Json
       ("axioms", Lean.toJson strings),
       ("unresolved_assumptions", Lean.toJson unresolvedStrings)
     ]
+    -- Serialize while the imported environment is alive: names/strings obtained
+    -- from imported declarations must not escape through a borrowed JSON tree.
+    let serialized := report.compress
+    diagnostic.putStrLn s!"audit-stage: serialized {serialized}"
+    pure serialized
 
 unsafe def main (args : List String) : IO UInt32 := do
   let options ← match parseArgs args {} with
@@ -121,8 +126,11 @@ unsafe def main (args : List String) : IO UInt32 := do
     IO.println (errorJson "--declaration is required").compress
     return 2
   try
-    let report ← audit moduleName declaration options.allowed
-    IO.println report.compress
+    let serialized ← audit moduleName declaration options.allowed
+    IO.println serialized
+    let report ← match Json.parse serialized with
+      | .ok value => pure value
+      | .error message => throw <| IO.userError message
     match report.getObjValAs? Bool "ok" with
     | .ok true => return 0
     | _ => return 1

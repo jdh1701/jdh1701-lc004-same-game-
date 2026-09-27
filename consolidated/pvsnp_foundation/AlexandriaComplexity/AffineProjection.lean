@@ -24,7 +24,12 @@ theorem select_xor (mask : List Bool) (u v : Bits) :
       | nil => cases bit <;> rfl
       | cons a as =>
           cases v with
-          | nil => cases bit <;> rfl
+          | nil =>
+              cases bit with
+              | false =>
+                  change [] = xorV (select mask as) []
+                  cases select mask as <;> rfl
+              | true => rfl
           | cons b bs => cases bit <;> simp [select, xorV, ih]
 
 -- Every generator is either omitted or XORed into the seed.

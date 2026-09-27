@@ -270,5 +270,21 @@
   {
     "module": "AlexandriaComplexity.RowElimination",
     "declaration": "AlexandriaComplexity.RowElimination.dropping_pivot_is_unsound"
+  },
+  {
+    "module": "AlexandriaComplexity.AffineProjection",
+    "declaration": "AlexandriaComplexity.AffineProjection.select_xor"
+  },
+  {
+    "module": "AlexandriaComplexity.AffineProjection",
+    "declaration": "AlexandriaComplexity.AffineProjection.generated_project"
+  },
+  {
+    "module": "AlexandriaComplexity.AffineProjection",
+    "declaration": "AlexandriaComplexity.AffineProjection.generated_lift"
+  },
+  {
+    "module": "AlexandriaComplexity.AffineProjection",
+    "declaration": "AlexandriaComplexity.AffineProjection.projected_search_complete"
   }
 ]

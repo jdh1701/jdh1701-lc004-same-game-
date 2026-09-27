@@ -1,11 +1,16 @@
 # Consolidated formal check of the 333-test research snapshot
 
 V22 extension: five RowElimination declarations bring the explicit audit to
-68 theorems in 20 modules. The original 333-test inventory remains historical,
+72 theorems in 21 modules. The original 333-test inventory remains historical,
 not an automatically updated test count. The new lemmas prove pointwise XOR
 row-operation equivalence, list lifting and existential satisfiability
 preservation for arbitrary assignment types. They do not prove Python bitmask
 correspondence, affine-basis completeness, unit propagation or solver runtime.
+The V23 AffineProjection extension proves coordinate selection commutes with
+Boolean-list XOR, projects generated choices, lifts projected witnesses, and
+preserves satisfiability of predicates on the selected coordinates. It does not
+prove independence, removal of redundant generators, Gaussian basis construction,
+or the Python integer representation. Formal promotion requires a green replay.
 
 Source: private Alexandria research commit d4fa2d79e9e7410bd35655c25ce69ccee6acd039.
 All 333 Python tests were rerun successfully on 2026-09-27. They are not 333 proofs.
@@ -24,7 +29,7 @@ and Python/Lean correspondence require separate proofs.
 Run `python consolidated/run.py` with elan/Lake installed. Lean is pinned to
 4.34.0; neither formal project has external package dependencies. Source hashes
 bind the initial bundle. The JSON report records per-module builds, per-theorem
-results and failures. A green run verifies only the 63 existing statements.
+results and failures. A green run verifies only the 72 inventoried statements.
 
 ## Missing formal obligations retained explicitly
 

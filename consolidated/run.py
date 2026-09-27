@@ -9,7 +9,7 @@ import sys
 ROOT = Path(__file__).resolve().parent
 report = {'status': 'not_run', 'python_test_inventory_count': 333,
           'python_implementation_verified': False, 'all_mathematical_obligations_closed': False,
-          'commands': [], 'theorems': []}
+          'commands': [], 'theorems': [], 'audit_controls': []}
 
 def execute(args, directory):
     try:
@@ -38,6 +38,33 @@ def main():
     execute([lake,'--version'], project)
     auditor = execute([lake,'build'], ROOT/'auditor')
     targets = json.loads((ROOT/'targets.json').read_text())
+    controls_module = 'AlexandriaComplexity.AuditNegativeControls'
+    control_build = execute([lake, 'build', controls_module], project)
+    if auditor['returncode'] == 0 and control_build['returncode'] == 0:
+        for name, expected_code, expected_axioms in [
+            ('acceptedProof', 0, []),
+            ('rejectedProof', 1, ['AlexandriaAuditControls.untrustedTestAxiom']),
+            ('rejectedDefinition', 2, None),
+            ('missingDeclaration', 2, None),
+        ]:
+            declaration = 'AlexandriaAuditControls.' + name
+            result = execute([lake, 'env', '../auditor/.lake/build/bin/alexandria-lean-audit',
+                              '--module', controls_module, '--declaration', declaration], project)
+            try:
+                receipt = json.loads(result['stdout'])
+                passed = result['returncode'] == expected_code
+                if expected_axioms is not None:
+                    passed = (passed and receipt.get('axioms') == expected_axioms
+                              and receipt.get('unresolved_assumptions') == expected_axioms
+                              and receipt.get('declaration') == declaration
+                              and receipt.get('declaration_kind') == 'theorem'
+                              and receipt.get('kernel_checked') is True
+                              and receipt.get('ok') is (expected_code == 0))
+                else:
+                    passed = passed and receipt.get('ok') is False and bool(receipt.get('error'))
+            except (ValueError, AttributeError):
+                passed = False
+            report['audit_controls'].append({'declaration': declaration, 'passed': passed})
     builds = {}
     for module in sorted({t['module'] for t in targets}):
         builds[module] = execute([lake,'build',module], project)['returncode'] == 0
@@ -58,7 +85,9 @@ def main():
             except (ValueError, AttributeError):
                 row['status'] = 'invalid_audit'
         report['theorems'].append(row)
-    ok = hashes_ok() and all(t['status']=='passed' for t in report['theorems'])
+    ok = (hashes_ok() and all(t['status']=='passed' for t in report['theorems'])
+          and len(report['audit_controls']) == 4
+          and all(t['passed'] for t in report['audit_controls']))
     report['status'] = 'all_existing_theorems_passed' if ok else 'failed_or_blocked'
     return 0 if ok else 1
 

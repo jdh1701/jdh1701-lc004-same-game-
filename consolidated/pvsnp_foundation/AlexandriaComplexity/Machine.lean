@@ -81,7 +81,7 @@ def DeterministicMachine.acceptsWithin {State : Type}
 
 theorem writeTape_at (tape : Int → TapeSymbol) (head : Int) (symbol : TapeSymbol) :
     writeTape tape head symbol head = symbol := by
-  simp [writeTape]
+  exact if_pos rfl
 
 theorem decodeWord_encodeWord : ∀ input : List Bool,
     decodeWord (encodeWord input) = some input
@@ -107,7 +107,7 @@ theorem writeTape_away (tape : Int → TapeSymbol) (head position : Int)
     (symbol : TapeSymbol)
     (different : position ≠ head) :
     writeTape tape head symbol position = tape position := by
-  simp [writeTape, different]
+  exact if_neg different
 
 theorem step_halted {State : Type} (machine : DeterministicMachine State)
     (configuration : MachineConfiguration State) (result : Bool)

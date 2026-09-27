@@ -11,7 +11,7 @@
   "pvsnp_foundation/AlexandriaComplexity/K4ResolutionCertificate.lean": "283463161659d1a9bc5f2c2b173fe8a2a02f2d51eb8a5245d14fcd462a861345",
   "pvsnp_foundation/AlexandriaComplexity/LinkedK4PairResolutionCertificate.lean": "90ec9e431499aa25633cb78d5fe097c4a1de65229fdafcc3453f4482fba7fd19",
   "pvsnp_foundation/AlexandriaComplexity/LocalParity.lean": "0712e782a63d48c4e6b6cfda14fa522c93a4798c18db9d125cb7560daceecf66",
-  "pvsnp_foundation/AlexandriaComplexity/Machine.lean": "b5f7ac89e880e3cb6e2a910744d0324c1a2d3cc6c6d113bd36164396bd968b79",
+  "pvsnp_foundation/AlexandriaComplexity/Machine.lean": "c6dcbb83096868ae97226fb578a2d657936ffc5fb2335750196b8382dbdea583",
   "pvsnp_foundation/AlexandriaComplexity/ReplaySafety.lean": "dc429c89c1cc235c3c280ca3943bdc2c3322a2b351840808a8d89b83d533c717",
   "pvsnp_foundation/AlexandriaComplexity/Resolution.lean": "5d05a3609194c3581f79b087866b58669cda3109d1191ad6fe841a7a85432126",
   "pvsnp_foundation/AlexandriaComplexity/ResolutionProof.lean": "e8d069e4fe4b7b8e4134aa37867f32fbddd94fac28cd1779f0e41986ef84eb60",

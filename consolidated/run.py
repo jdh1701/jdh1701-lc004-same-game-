@@ -44,6 +44,7 @@ def main():
         for name, expected_code, expected_axioms in [
             ('acceptedProof', 0, []),
             ('rejectedProof', 1, ['AlexandriaAuditControls.untrustedTestAxiom']),
+            ('rejectedExtensionality', 1, ['propext']),
             ('rejectedDefinition', 2, None),
             ('missingDeclaration', 2, None),
         ]:
@@ -86,7 +87,7 @@ def main():
                 row['status'] = 'invalid_audit'
         report['theorems'].append(row)
     ok = (hashes_ok() and all(t['status']=='passed' for t in report['theorems'])
-          and len(report['audit_controls']) == 4
+          and len(report['audit_controls']) == 5
           and all(t['passed'] for t in report['audit_controls']))
     report['status'] = 'all_existing_theorems_passed' if ok else 'failed_or_blocked'
     return 0 if ok else 1

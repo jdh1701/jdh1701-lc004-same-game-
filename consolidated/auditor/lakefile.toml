@@ -1,0 +1,7 @@
+name = "alexandria-lean-auditor"
+version = "0.1.0"
+defaultTargets = ["alexandria-lean-audit"]
+
+[[lean_exe]]
+name = "alexandria-lean-audit"
+root = "Main"

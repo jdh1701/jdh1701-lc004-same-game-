@@ -26,5 +26,6 @@
   "pvsnp_foundation/lakefile.toml": "132fe3d1bea779bd361ae233203998b53078467938a23e4cd40e29175ad95c23",
   "pvsnp_foundation/lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
   "python-test-inventory.json": "50e1bb771dac4177adde5457ffb7c96c884f45437cccd9bb76b11d8ea4762740",
-  "targets.json": "dcb7fb5b47ee2ef28f81bcd971734145730f0371af6bd4c68137e91fd644f751"
+  "targets.json": "cbcca5cef8fc9c023c0ddecd643415b73ff63d29920e8a96e74dda44a4c48896",
+  "pvsnp_foundation/AlexandriaComplexity/RowElimination.lean": "56b262915fe7d5416f3cb69bdae2f627c3ec3ce44389cd636e8b6c62992d7476"
 }

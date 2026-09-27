@@ -1,5 +1,12 @@
 # Consolidated formal check of the 333-test research snapshot
 
+V22 extension: five RowElimination declarations bring the explicit audit to
+68 theorems in 20 modules. The original 333-test inventory remains historical,
+not an automatically updated test count. The new lemmas prove pointwise XOR
+row-operation equivalence, list lifting and existential satisfiability
+preservation for arbitrary assignment types. They do not prove Python bitmask
+correspondence, affine-basis completeness, unit propagation or solver runtime.
+
 Source: private Alexandria research commit d4fa2d79e9e7410bd35655c25ce69ccee6acd039.
 All 333 Python tests were rerun successfully on 2026-09-27. They are not 333 proofs.
 The inventory accounts for each test ID and source hash. 88 tests lie in mixed

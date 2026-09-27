@@ -250,5 +250,25 @@
   {
     "module": "AlexandriaComplexity.WidthClosedInvariant",
     "declaration": "AlexandriaComplexity.width_closed_invariant_no_refutation"
+  },
+  {
+    "module": "AlexandriaComplexity.RowElimination",
+    "declaration": "AlexandriaComplexity.RowElimination.bool_row_operation"
+  },
+  {
+    "module": "AlexandriaComplexity.RowElimination",
+    "declaration": "AlexandriaComplexity.RowElimination.row_operation"
+  },
+  {
+    "module": "AlexandriaComplexity.RowElimination",
+    "declaration": "AlexandriaComplexity.RowElimination.system_operation"
+  },
+  {
+    "module": "AlexandriaComplexity.RowElimination",
+    "declaration": "AlexandriaComplexity.RowElimination.satisfiability_preserved"
+  },
+  {
+    "module": "AlexandriaComplexity.RowElimination",
+    "declaration": "AlexandriaComplexity.RowElimination.dropping_pivot_is_unsound"
   }
 ]

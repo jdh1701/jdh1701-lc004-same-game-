@@ -6,14 +6,23 @@ abbrev Bits := List Bool
 
 -- Truncating XOR and coordinate selection. For fixed-length vectors these are
 -- ordinary XOR and coordinate projection. No integer encoding is assumed.
-def xorV : Bits → Bits → Bits
-  | a :: as, b :: bs => Bool.xor a b :: xorV as bs
-  | _, _ => []
+def xorV (u v : Bits) : Bits :=
+  match u with
+  | [] => []
+  | a :: as => match v with
+    | [] => []
+    | b :: bs => Bool.xor a b :: xorV as bs
+termination_by structural u
 
-def select : List Bool → Bits → Bits
-  | true :: ms, b :: bs => b :: select ms bs
-  | false :: ms, _ :: bs => select ms bs
-  | _, _ => []
+def select (mask : List Bool) (bits : Bits) : Bits :=
+  match mask with
+  | [] => []
+  | keep :: ms => match bits with
+    | [] => []
+    | b :: bs => match keep with
+      | true => b :: select ms bs
+      | false => select ms bs
+termination_by structural mask
 
 theorem select_xor (mask : List Bool) (u v : Bits) :
     select mask (xorV u v) = xorV (select mask u) (select mask v) := by
@@ -36,9 +45,11 @@ theorem select_xor (mask : List Bool) (u v : Bits) :
               | true => exact congrArg (List.cons (Bool.xor a b)) (ih as bs)
 
 -- Every generator is either omitted or XORed into the seed.
-def Generated (seed : Bits) : List Bits → Bits → Prop
-  | [], out => out = seed
-  | g :: gs, out => Generated seed gs out ∨ Generated (xorV seed g) gs out
+def Generated (seed : Bits) (generators : List Bits) (out : Bits) : Prop :=
+  match generators with
+  | [] => out = seed
+  | g :: gs => Generated seed gs out ∨ Generated (xorV seed g) gs out
+termination_by structural generators
 
 theorem generated_project (mask : List Bool) (gs : List Bits)
     (seed out : Bits) (h : Generated seed gs out) :

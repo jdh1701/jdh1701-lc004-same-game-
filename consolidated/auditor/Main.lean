@@ -71,8 +71,11 @@ def dependsOnSorry (environment : Environment) (declaration : Name) : Bool :=
   (declarationUsesSorry environment declaration).run' {}
 
 unsafe def audit (moduleName declaration : Name) (allowed : List Name) : IO Json := do
+  let diagnostic ← IO.getStderr
+  diagnostic.putStrLn s!"audit-stage: import-start {declaration}"
   initSearchPath (← findSysroot)
   Lean.withImportModules #[{ module := moduleName }] {} (trustLevel := 0) fun environment => do
+    diagnostic.putStrLn "audit-stage: import-complete"
     let theoremInfo ← match environment.find? declaration with
     | some (.thmInfo info) => pure info
     | some _ => throw <| IO.userError s!"'{declaration}' is not a theorem declaration"
@@ -80,13 +83,17 @@ unsafe def audit (moduleName declaration : Name) (allowed : List Name) : IO Json
     -- Evaluating a proof that depends on `sorryAx` is intentionally unsafe in Lean and can
     -- crash a native executable. Scan the declaration dependency graph syntactically before
     -- invoking the transitive collector; the collector remains authoritative for other axioms.
-    let axioms ← if dependsOnSorry environment declaration then
+    diagnostic.putStrLn "audit-stage: theorem-found"
+    let hasSorry := dependsOnSorry environment declaration
+    diagnostic.putStrLn s!"audit-stage: sorry-scan-complete {hasSorry}"
+    let axioms ← if hasSorry then
       pure #[``sorryAx]
     else
       let context : Core.Context := { fileName := "<alexandria-lean-audit>", fileMap := default }
       let state : Core.State := { env := environment }
       let (axioms, _) ← Core.CoreM.toIO (collectAxioms declaration) (ctx := context) (s := state)
       pure axioms
+    diagnostic.putStrLn "audit-stage: axioms-collected"
     let axioms := axioms.qsort Name.lt
     let allowedSet : NameSet := allowed.foldl (fun result name => result.insert name) {}
     let unresolved := axioms.filter fun name => !allowedSet.contains name

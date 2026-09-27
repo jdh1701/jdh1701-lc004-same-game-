@@ -30,7 +30,10 @@ theorem select_xor (mask : List Bool) (u v : Bits) :
                   change [] = xorV (select mask as) []
                   cases select mask as <;> rfl
               | true => rfl
-          | cons b bs => cases bit <;> simp [select, xorV, ih]
+          | cons b bs =>
+              cases bit with
+              | false => exact ih as bs
+              | true => exact congrArg (List.cons (Bool.xor a b)) (ih as bs)
 
 -- Every generator is either omitted or XORed into the seed.
 def Generated (seed : Bits) : List Bits → Bits → Prop

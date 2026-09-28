@@ -33,11 +33,11 @@ theorem drop_dependent {A : Type} (z : A) (add : A → A → A)
     Span z add (v :: basis) x ↔ Span z add basis x := by
   apply mutual_coverage z add (v :: basis) basis
   · intro y hy
-    cases List.mem_cons.mp hy with
-    | inl he => cases he; exact hv
-    | inr hm => exact Span.generator hm
+    cases hy with
+    | head => exact hv
+    | tail _ hm => exact Span.generator hm
   · intro y hy
-    exact Span.generator (List.mem_cons.mpr (Or.inr hy))
+    exact Span.generator (List.Mem.tail v hy)
 
 theorem drop_zero {A : Type} (z : A) (add : A → A → A)
     (basis : List A) (x : A) :

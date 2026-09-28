@@ -306,5 +306,45 @@
   {
     "module": "AlexandriaComplexity.SpanReduction",
     "declaration": "AlexandriaComplexity.SpanReduction.predicate_preserved"
+  },
+  {
+    "module": "AlexandriaComplexity.CoefficientChecker",
+    "declaration": "AlexandriaComplexity.CoefficientChecker.evaluate_span"
+  },
+  {
+    "module": "AlexandriaComplexity.CoefficientChecker",
+    "declaration": "AlexandriaComplexity.CoefficientChecker.checkCombination_sound"
+  },
+  {
+    "module": "AlexandriaComplexity.CoefficientChecker",
+    "declaration": "AlexandriaComplexity.CoefficientChecker.checkRows_sound"
+  },
+  {
+    "module": "AlexandriaComplexity.CoefficientChecker",
+    "declaration": "AlexandriaComplexity.CoefficientChecker.checkMutual_sound"
+  },
+  {
+    "module": "AlexandriaComplexity.CoefficientChecker",
+    "declaration": "AlexandriaComplexity.CoefficientChecker.checked_predicate_preserved"
+  },
+  {
+    "module": "AlexandriaComplexity.CoefficientCertificateExample",
+    "declaration": "AlexandriaComplexity.CoefficientCertificateExample.projected_accepted"
+  },
+  {
+    "module": "AlexandriaComplexity.CoefficientCertificateExample",
+    "declaration": "AlexandriaComplexity.CoefficientCertificateExample.lifts_accepted"
+  },
+  {
+    "module": "AlexandriaComplexity.CoefficientCertificateExample",
+    "declaration": "AlexandriaComplexity.CoefficientCertificateExample.corrupted_rejected"
+  },
+  {
+    "module": "AlexandriaComplexity.CoefficientCertificateExample",
+    "declaration": "AlexandriaComplexity.CoefficientCertificateExample.projected_span"
+  },
+  {
+    "module": "AlexandriaComplexity.CoefficientCertificateExample",
+    "declaration": "AlexandriaComplexity.CoefficientCertificateExample.lifted_span"
   }
 ]

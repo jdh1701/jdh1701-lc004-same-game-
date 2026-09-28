@@ -1,7 +1,7 @@
 # Consolidated formal check of the 333-test research snapshot
 
-V22 extension: five RowElimination declarations bring the explicit audit to
-72 theorems in 21 modules. The original 333-test inventory remains historical,
+V22–V24 extensions bring the explicit audit to 77 result theorems in 22
+result modules, plus a separate verifier-control module. The original 333-test inventory remains historical,
 not an automatically updated test count. The new lemmas prove pointwise XOR
 row-operation equivalence, list lifting and existential satisfiability
 preservation for arbitrary assignment types. They do not prove Python bitmask
@@ -29,7 +29,8 @@ and Python/Lean correspondence require separate proofs.
 Run `python consolidated/run.py` with elan/Lake installed. Lean is pinned to
 4.34.0; neither formal project has external package dependencies. Source hashes
 bind the initial bundle. The JSON report records per-module builds, per-theorem
-results and failures. A green run verifies only the 72 inventoried statements.
+results and failures. A green run verifies only the 77 inventoried result statements and requires
+all five verifier controls to behave as expected.
 
 ## Missing formal obligations retained explicitly
 
@@ -51,3 +52,14 @@ results and failures. A green run verifies only the 72 inventoried statements.
 
 No exact minimum widths, new asymptotic lower bound, novelty, or P-versus-NP
 solution is promoted by this workflow. Remaining software tests stay in Python.
+
+## V24 mutual-span certificate scope
+
+SpanReduction proves generator substitution, mutual-span equivalence,
+dependent-generator deletion, zero deletion, and preservation of existential
+predicates. Span is the inductive closure under a supplied zero and binary sum;
+for XOR this is linear span. The coverage premises must actually be supplied.
+Theorems do not establish the Python coefficient checker, Gaussian elimination,
+independence, or equivalence with V23's one-use generator enumeration. New result
+promotion requires the complete pinned replay; negative audit fixtures remain
+excluded from mathematical result counts.

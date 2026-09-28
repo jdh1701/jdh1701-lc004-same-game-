@@ -286,5 +286,25 @@
   {
     "module": "AlexandriaComplexity.AffineProjection",
     "declaration": "AlexandriaComplexity.AffineProjection.projected_search_complete"
+  },
+  {
+    "module": "AlexandriaComplexity.SpanReduction",
+    "declaration": "AlexandriaComplexity.SpanReduction.substitute_generators"
+  },
+  {
+    "module": "AlexandriaComplexity.SpanReduction",
+    "declaration": "AlexandriaComplexity.SpanReduction.mutual_coverage"
+  },
+  {
+    "module": "AlexandriaComplexity.SpanReduction",
+    "declaration": "AlexandriaComplexity.SpanReduction.drop_dependent"
+  },
+  {
+    "module": "AlexandriaComplexity.SpanReduction",
+    "declaration": "AlexandriaComplexity.SpanReduction.drop_zero"
+  },
+  {
+    "module": "AlexandriaComplexity.SpanReduction",
+    "declaration": "AlexandriaComplexity.SpanReduction.predicate_preserved"
   }
 ]

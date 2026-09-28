@@ -1,6 +1,6 @@
 # Consolidated formal check of the 333-test research snapshot
 
-V22–V24 extensions bring the explicit audit to 77 result theorems in 22
+V22–V25 extensions bring the explicit audit to 87 result theorems in 24
 result modules, plus a separate verifier-control module. The original 333-test inventory remains historical,
 not an automatically updated test count. The new lemmas prove pointwise XOR
 row-operation equivalence, list lifting and existential satisfiability
@@ -29,7 +29,7 @@ and Python/Lean correspondence require separate proofs.
 Run `python consolidated/run.py` with elan/Lake installed. Lean is pinned to
 4.34.0; neither formal project has external package dependencies. Source hashes
 bind the initial bundle. The JSON report records per-module builds, per-theorem
-results and failures. A green run verifies only the 77 inventoried result statements and requires
+results and failures. A green run verifies only the 87 inventoried result statements and requires
 all five verifier controls to behave as expected.
 
 ## Missing formal obligations retained explicitly
@@ -63,3 +63,19 @@ Theorems do not establish the Python coefficient checker, Gaussian elimination,
 independence, or equivalence with V23's one-use generator enumeration. New result
 promotion requires the complete pinned replay; negative audit fixtures remain
 excluded from mathematical result counts.
+
+## V25 executable coefficient certificate scope
+
+CoefficientChecker evaluates exact-length Boolean coefficient lists and proves
+that accepted evaluations and rows belong to the input span. Mutually accepted
+coverage certificates imply span equivalence and preserve existential predicates.
+These five generic theorems impose no algebraic axioms on the binary operation;
+they concern the inductive closure defined in SpanReduction.
+
+CoefficientCertificateExample contains five finite/derived theorems exported
+from the Python certificate for dimension 4, generators [3,5,6,8], support 7:
+projected acceptance, full-space lift acceptance, corruption rejection, projected
+span equivalence and lifted-span membership. This is one finite producer output,
+not a proof that every Python output matches the Lean encoding. The separate
+Python bounded audit checks 5,054 cases. Independence, integer/list correspondence,
+one-use enumeration correspondence and full solver completeness remain open.

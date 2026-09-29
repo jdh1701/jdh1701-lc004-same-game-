@@ -34,5 +34,5 @@
   "pvsnp_foundation/AlexandriaComplexity/SpanReduction.lean": "475f213d07f85ef6ad56fa32d7c9b4aa041c246419e5eb51602f22224153e209",
   "pvsnp_foundation/AlexandriaComplexity/CoefficientChecker.lean": "6254b1b08c44ff6f8bd63907efb82897d4f665158637aec8fcb8a284caa9e2ae",
   "pvsnp_foundation/AlexandriaComplexity/CoefficientCertificateExample.lean": "82fc447e9a2dc87f4492d56af2a16345cb740fba0b5ba3c8929212b9227ebc66",
-  "pvsnp_foundation/AlexandriaComplexity/EnumerationBridge.lean": "99df7f3f5ed74e8359712a574acaa7bd0e6021dc07bf54544584e9179587611b"
+  "pvsnp_foundation/AlexandriaComplexity/EnumerationBridge.lean": "70a039b470797814dc030a7e3b407432f0306e39efbc5546332ef257e9a3aa32"
 }

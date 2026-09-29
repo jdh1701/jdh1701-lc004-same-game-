@@ -10,6 +10,7 @@ theorem evaluate_cons {A : Type} (z : A) (add : A → A → A)
       (match evaluate z add gs bs with
        | none => none | some v => some (if b then add g v else v)) := by
   rw [evaluate]
+  cases evaluate z add gs bs <;> cases b <;> rfl
 
 def zeros : Nat → Bits
   | 0 => []
@@ -191,7 +192,10 @@ theorem ragged_span_not_generated :
     ¬ Generated [false] [[false, false]] [false, false] := by
   constructor
   · exact Span.generator (List.Mem.head [])
-  · decide
+  · intro h
+    cases h with
+    | inl h => cases h
+    | inr h => cases h
 
 theorem wrong_zero_width_counterexample :
     runCoefficients [false, false] [] [] ≠

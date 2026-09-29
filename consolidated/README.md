@@ -1,6 +1,6 @@
 # Consolidated formal check of the 333-test research snapshot
 
-V22–V25 extensions bring the explicit audit to 87 result theorems in 24
+V22–V26 extensions bring the explicit audit to 101 result theorems in 25
 result modules, plus a separate verifier-control module. The original 333-test inventory remains historical,
 not an automatically updated test count. The new lemmas prove pointwise XOR
 row-operation equivalence, list lifting and existential satisfiability
@@ -29,7 +29,7 @@ and Python/Lean correspondence require separate proofs.
 Run `python consolidated/run.py` with elan/Lake installed. Lean is pinned to
 4.34.0; neither formal project has external package dependencies. Source hashes
 bind the initial bundle. The JSON report records per-module builds, per-theorem
-results and failures. A green run verifies only the 87 inventoried result statements and requires
+results and failures. A green run verifies only the 101 inventoried result statements and requires
 all five verifier controls to behave as expected.
 
 ## Missing formal obligations retained explicitly
@@ -79,3 +79,25 @@ span equivalence and lifted-span membership. This is one finite producer output,
 not a proof that every Python output matches the Lean encoding. The separate
 Python bounded audit checks 5,054 cases. Independence, integer/list correspondence,
 one-use enumeration correspondence and full solver completeness remain open.
+
+## V26 coefficient / enumeration correspondence
+
+EnumerationBridge supplies 14 declarations, including algebraic helpers and two
+negative examples. Its forward coefficient evaluator characterizes the V23
+Generated relation exactly. For equal-width Boolean vectors and a matching zero
+vector, forward evaluation is XOR of the seed with V25's right-fold evaluation.
+At zero seed, successful V25 coefficient evaluations are therefore equivalent
+to Generated choices. Generated outputs belong to the V24 inductive span.
+
+The converse from arbitrary Span derivations to Generated has not been proved
+here. In fact, it is false without a width restriction: the two-bit generator
+[false,false] belongs to Span seeded with [false], but truncating enumeration
+cannot produce it. A second checked counterexample rejects the affine evaluator
+identity when seed and zero have incompatible lengths. The current equal-width
+conditions are sufficient conditions, not a claim of minimal hypotheses.
+
+Python independently exercises 37,477 coefficient evaluations across 5,054
+seed/generator configurations (n<=3, generator count<=3), plus 74,939 malformed
+length rejections. This is finite agreement, not a formal proof of Python/Lean
+encoding equivalence. The historical 333-test suite is not rerun in this cycle.
+No new asymptotic bound or P-versus-NP claim follows from this correspondence.

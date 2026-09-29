@@ -390,5 +390,17 @@
   {
     "module": "AlexandriaComplexity.EnumerationBridge",
     "declaration": "AlexandriaComplexity.EnumerationBridge.generated_in_span"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.evaluate_cons"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.ragged_span_not_generated"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.wrong_zero_width_counterexample"
   }
 ]

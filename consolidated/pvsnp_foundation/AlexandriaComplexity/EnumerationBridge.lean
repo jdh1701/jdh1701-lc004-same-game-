@@ -4,6 +4,13 @@ import AlexandriaComplexity.AffineProjection
 namespace AlexandriaComplexity.EnumerationBridge
 open AffineProjection CoefficientChecker SpanReduction
 
+theorem evaluate_cons {A : Type} (z : A) (add : A → A → A)
+    (g : A) (gs : List A) (b : Bool) (bs : List Bool) :
+    evaluate z add (g :: gs) (b :: bs) =
+      (match evaluate z add gs bs with
+       | none => none | some v => some (if b then add g v else v)) := by
+  rw [evaluate]
+
 def zeros : Nat → Bits
   | 0 => []
   | n + 1 => false :: zeros n
@@ -102,8 +109,7 @@ theorem evaluate_width (n : Nat) (gs : List Bits)
       cases cs with
       | nil => cases h
       | cons b bs =>
-          change (match evaluate (zeros n) xorV gs bs with
-            | none => none | some v => some (if b then xorV g v else v)) = some out at h
+          rw [evaluate_cons] at h
           cases ev : evaluate (zeros n) xorV gs bs with
           | none => rw [ev] at h; cases h
           | some v =>
@@ -135,6 +141,7 @@ theorem run_evaluate (n : Nat) (gs : List Bits)
       cases cs with
       | nil => rfl
       | cons b bs =>
+          rw [evaluate_cons]
           cases b with
           | false =>
               have ht := ih wt seed sw bs
@@ -178,5 +185,16 @@ theorem generated_in_span (n : Nat) (gs : List Bits)
     (h : Generated (zeros n) gs out) : Span (zeros n) xorV gs out := by
   obtain ⟨cs, hc⟩ := (coefficients_iff_generated n gs width out).mpr h
   exact evaluate_span (zeros n) xorV gs cs out hc
+
+theorem ragged_span_not_generated :
+    Span [false] xorV [[false, false]] [false, false] ∧
+    ¬ Generated [false] [[false, false]] [false, false] := by
+  constructor
+  · exact Span.generator (List.Mem.head [])
+  · decide
+
+theorem wrong_zero_width_counterexample :
+    runCoefficients [false, false] [] [] ≠
+      (evaluate [false] xorV [] []).map (xorV [false, false]) := by decide
 
 end AlexandriaComplexity.EnumerationBridge

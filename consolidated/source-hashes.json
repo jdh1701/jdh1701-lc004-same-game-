@@ -26,12 +26,13 @@
   "pvsnp_foundation/lakefile.toml": "132fe3d1bea779bd361ae233203998b53078467938a23e4cd40e29175ad95c23",
   "pvsnp_foundation/lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
   "python-test-inventory.json": "50e1bb771dac4177adde5457ffb7c96c884f45437cccd9bb76b11d8ea4762740",
-  "targets.json": "efc512facc60b8ea102ea2f4969f0ef6f9111f361d1205531fcf38aeaa728b83",
+  "targets.json": "025bb069ef95c46f95ad66cee9b44f0f5249055f23e3973dd08f3d477079ba84",
   "pvsnp_foundation/AlexandriaComplexity/RowElimination.lean": "56b262915fe7d5416f3cb69bdae2f627c3ec3ce44389cd636e8b6c62992d7476",
   "pvsnp_foundation/AlexandriaComplexity/AffineProjection.lean": "901f11ccc517d25de6f49c85074ad5d6eab63f593deca9418a0574325be3e31e",
   "pvsnp_foundation/AlexandriaComplexity/AuditNegativeControls.lean": "a2f7cca31bdb012765961eb7be13fd7127df223168a4526fa57d33d6762ffa5b",
   "run.py": "ef023466187462929d978227472cae5b6177dd1c96edbc5e8d8c8bb52ee9204d",
   "pvsnp_foundation/AlexandriaComplexity/SpanReduction.lean": "475f213d07f85ef6ad56fa32d7c9b4aa041c246419e5eb51602f22224153e209",
   "pvsnp_foundation/AlexandriaComplexity/CoefficientChecker.lean": "6254b1b08c44ff6f8bd63907efb82897d4f665158637aec8fcb8a284caa9e2ae",
-  "pvsnp_foundation/AlexandriaComplexity/CoefficientCertificateExample.lean": "82fc447e9a2dc87f4492d56af2a16345cb740fba0b5ba3c8929212b9227ebc66"
+  "pvsnp_foundation/AlexandriaComplexity/CoefficientCertificateExample.lean": "82fc447e9a2dc87f4492d56af2a16345cb740fba0b5ba3c8929212b9227ebc66",
+  "pvsnp_foundation/AlexandriaComplexity/EnumerationBridge.lean": "3c934e831f36698c15a9829aeb945f9c3e239a3671844b10637e174367cdbcfe"
 }

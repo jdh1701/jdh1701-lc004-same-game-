@@ -346,5 +346,49 @@
   {
     "module": "AlexandriaComplexity.CoefficientCertificateExample",
     "declaration": "AlexandriaComplexity.CoefficientCertificateExample.lifted_span"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.zeros_length"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.xor_length"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.xor_zero_right"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.xor_zero_left"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.xor_associative"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.run_iff_generated"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.evaluate_width"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.run_evaluate"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.zero_run_evaluate"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.coefficients_iff_generated"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.generated_in_span"
   }
 ]

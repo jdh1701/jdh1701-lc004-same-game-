@@ -1,0 +1,15 @@
+{"q_bound": 3, "shells": 1, "skeletons": 1, "bad_pairs": 1, "triples_without_bad_pair_checked": 0}
+{"q_bound": 3, "shells": 2, "skeletons": 2, "bad_pairs": 4, "triples_without_bad_pair_checked": 0}
+{"q_bound": 3, "shells": 3, "skeletons": 4, "bad_pairs": 14, "triples_without_bad_pair_checked": 28}
+{"q_bound": 3, "shells": 4, "skeletons": 8, "bad_pairs": 42, "triples_without_bad_pair_checked": 222}
+{"q_bound": 3, "shells": 5, "skeletons": 16, "bad_pairs": 114, "triples_without_bad_pair_checked": 1112}
+{"q_bound": 3, "shells": 6, "skeletons": 32, "bad_pairs": 292, "triples_without_bad_pair_checked": 4458}
+{"q_bound": 3, "shells": 7, "skeletons": 64, "bad_pairs": 714, "triples_without_bad_pair_checked": 15692}
+{"q_bound": 4, "shells": 1, "skeletons": 1, "bad_pairs": 1, "triples_without_bad_pair_checked": 0}
+{"q_bound": 4, "shells": 2, "skeletons": 2, "bad_pairs": 4, "triples_without_bad_pair_checked": 0}
+{"q_bound": 4, "shells": 3, "skeletons": 5, "bad_pairs": 17, "triples_without_bad_pair_checked": 36}
+{"q_bound": 4, "shells": 4, "skeletons": 14, "bad_pairs": 66, "triples_without_bad_pair_checked": 414}
+{"q_bound": 4, "shells": 5, "skeletons": 41, "bad_pairs": 245, "triples_without_bad_pair_checked": 3076}
+{"status": "NO COUNTEREXAMPLE IN STATED DOMAIN; NOT A PROOF", "tested_candidates": 38416, "rows": [{"q_bound": 3, "shells": 1, "skeletons": 1, "bad_pairs": 1, "triples_without_bad_pair_checked": 0}, {"q_bound": 3, "shells": 2, "skeletons": 2, "bad_pairs": 4, "triples_without_bad_pair_checked": 0}, {"q_bound": 3, "shells": 3, "skeletons": 4, "bad_pairs": 14, "triples_without_bad_pair_checked": 28}, {"q_bound": 3, "shells": 4, "skeletons": 8, "bad_pairs": 42, "triples_without_bad_pair_checked": 222}, {"q_bound": 3, "shells": 5, "skeletons": 16, "bad_pairs": 114, "triples_without_bad_pair_checked": 1112}, {"q_bound": 3, "shells": 6, "skeletons": 32, "bad_pairs": 292, "triples_without_bad_pair_checked": 4458}, {"q_bound": 3, "shells": 7, "skeletons": 64, "bad_pairs": 714, "triples_without_bad_pair_checked": 15692}, {"q_bound": 4, "shells": 1, "skeletons": 1, "bad_pairs": 1, "triples_without_bad_pair_checked": 0}, {"q_bound": 4, "shells": 2, "skeletons": 2, "bad_pairs": 4, "triples_without_bad_pair_checked": 0}, {"q_bound": 4, "shells": 3, "skeletons": 5, "bad_pairs": 17, "triples_without_bad_pair_checked": 36}, {"q_bound": 4, "shells": 4, "skeletons": 14, "bad_pairs": 66, "triples_without_bad_pair_checked": 414}, {"q_bound": 4, "shells": 5, "skeletons": 41, "bad_pairs": 245, "triples_without_bad_pair_checked": 3076}], "seconds": 2.85678902500149}
+
+EXIT_CODE=0

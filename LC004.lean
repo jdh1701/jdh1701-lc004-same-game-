@@ -61,3 +61,6 @@ import LC004.BridgeAdjacentBoundary
 import LC004.BridgeStructuralFinal
 import LC004.UnconditionalFinal
 import LC004.UniqueMedian
+import LC004.UniqueCanonical
+import LC004.CertifiedPaths
+import LC004.FourWayCertificate

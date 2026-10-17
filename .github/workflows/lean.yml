@@ -41,3 +41,9 @@ jobs:
         run: |
           python3 research/checkpoint_2026_10_17/experiments.py
           python3 research/checkpoint_2026_10_17/orbit_experiments.py
+
+      - name: Audit canonical paths and finite counterexample certificates
+        run: |
+          lake env lean research/checkpoint_2026_10_17/canonical/PrintAxioms.lean
+          python3 research/checkpoint_2026_10_17/canonical/unique_weighted.py --q 3 --nmax 14
+          python3 research/checkpoint_2026_10_17/canonical/unique_weighted.py --q 4 --nmax 14

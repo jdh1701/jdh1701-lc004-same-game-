@@ -1,0 +1,274 @@
+{
+  "status": "PAIRWISE GRAPH CONJECTURE FALSIFIED",
+  "q": 3,
+  "nmax": 22,
+  "half": [
+    0,
+    1,
+    0,
+    2,
+    1,
+    2
+  ],
+  "runs": [
+    [
+      0,
+      false
+    ],
+    [
+      1,
+      true
+    ],
+    [
+      0,
+      false
+    ],
+    [
+      2,
+      true
+    ],
+    [
+      1,
+      false
+    ],
+    [
+      2,
+      true
+    ],
+    [
+      1,
+      true
+    ],
+    [
+      2,
+      false
+    ],
+    [
+      0,
+      true
+    ],
+    [
+      1,
+      false
+    ],
+    [
+      0,
+      false
+    ]
+  ],
+  "heavy": [
+    1,
+    3,
+    5,
+    7
+  ],
+  "shortest_raw_representative": [
+    0,
+    1,
+    1,
+    0,
+    2,
+    2,
+    1,
+    2,
+    2,
+    1,
+    1,
+    2,
+    0,
+    0,
+    1,
+    0
+  ],
+  "raw_length": 16,
+  "all_proper_heavy_subsets": [
+    {
+      "heavy": [],
+      "capped_path_count": 1
+    },
+    {
+      "heavy": [
+        1
+      ],
+      "capped_path_count": 1
+    },
+    {
+      "heavy": [
+        3
+      ],
+      "capped_path_count": 1
+    },
+    {
+      "heavy": [
+        5
+      ],
+      "capped_path_count": 1
+    },
+    {
+      "heavy": [
+        7
+      ],
+      "capped_path_count": 1
+    },
+    {
+      "heavy": [
+        1,
+        3
+      ],
+      "capped_path_count": 1
+    },
+    {
+      "heavy": [
+        1,
+        5
+      ],
+      "capped_path_count": 1
+    },
+    {
+      "heavy": [
+        1,
+        7
+      ],
+      "capped_path_count": 1
+    },
+    {
+      "heavy": [
+        3,
+        5
+      ],
+      "capped_path_count": 1
+    },
+    {
+      "heavy": [
+        3,
+        7
+      ],
+      "capped_path_count": 1
+    },
+    {
+      "heavy": [
+        5,
+        7
+      ],
+      "capped_path_count": 1
+    },
+    {
+      "heavy": [
+        1,
+        3,
+        5
+      ],
+      "capped_path_count": 1
+    },
+    {
+      "heavy": [
+        1,
+        3,
+        7
+      ],
+      "capped_path_count": 1
+    },
+    {
+      "heavy": [
+        1,
+        5,
+        7
+      ],
+      "capped_path_count": 1
+    },
+    {
+      "heavy": [
+        3,
+        5,
+        7
+      ],
+      "capped_path_count": 1
+    }
+  ],
+  "successful_paths": [
+    [
+      1,
+      1,
+      3,
+      2,
+      2,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      3,
+      3,
+      2,
+      1,
+      0
+    ]
+  ],
+  "rows": [
+    {
+      "q": 3,
+      "shells": 0,
+      "patterns": 1,
+      "bad_pairs": 0,
+      "mismatches": [],
+      "seconds": 0.00017777300308807753
+    },
+    {
+      "q": 3,
+      "shells": 1,
+      "patterns": 1,
+      "bad_pairs": 1,
+      "mismatches": [],
+      "seconds": 0.0002867940020223614
+    },
+    {
+      "q": 3,
+      "shells": 2,
+      "patterns": 2,
+      "bad_pairs": 4,
+      "mismatches": [],
+      "seconds": 0.0005339990020729601
+    },
+    {
+      "q": 3,
+      "shells": 3,
+      "patterns": 4,
+      "bad_pairs": 14,
+      "mismatches": [],
+      "seconds": 0.0014307340024970472
+    },
+    {
+      "q": 3,
+      "shells": 4,
+      "patterns": 8,
+      "bad_pairs": 42,
+      "mismatches": [],
+      "seconds": 0.005339656003343407
+    },
+    {
+      "q": 3,
+      "shells": 5,
+      "patterns": 16,
+      "bad_pairs": 114,
+      "mismatches": [
+        {
+          "shells": 5,
+          "heavy_outer_runs": 5,
+          "colours": 3,
+          "predicted": 352,
+          "actual": 332
+        },
+        {
+          "shells": 5,
+          "heavy_outer_runs": 4,
+          "colours": 3,
+          "predicted": 984,
+          "actual": 974
+        }
+      ],
+      "seconds": 0.020886153000901686
+    }
+  ],
+  "seconds": 0.0602598580007907
+}

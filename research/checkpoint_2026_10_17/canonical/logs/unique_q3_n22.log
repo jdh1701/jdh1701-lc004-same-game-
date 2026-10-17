@@ -1,0 +1,14 @@
+{"q": 3, "shells": 0, "candidates": 1, "unique_candidates": 1, "elapsed": 4.694900053436868e-05}
+{"q": 3, "shells": 1, "candidates": 4, "unique_candidates": 3, "elapsed": 0.0001440129999537021}
+{"q": 3, "shells": 2, "candidates": 32, "unique_candidates": 18, "elapsed": 0.0005344390010577627}
+{"q": 3, "shells": 3, "candidates": 256, "unique_candidates": 102, "elapsed": 0.004914717002975522}
+{"q": 3, "shells": 4, "candidates": 2048, "unique_candidates": 576, "elapsed": 0.04572904400265543}
+{"q": 3, "shells": 5, "candidates": 16384, "unique_candidates": 3222, "elapsed": 0.6479849010029284}
+{"q": 3, "shells": 6, "candidates": 121504, "unique_candidates": 17742, "elapsed": 8.965169031002006}
+{"q": 3, "shells": 7, "candidates": 414464, "unique_candidates": 93802, "elapsed": 86.29907704200014}
+{"q": 3, "shells": 8, "candidates": 322176, "unique_candidates": 179452, "elapsed": 165.4993338810018}
+{"q": 3, "shells": 9, "candidates": 44032, "unique_candidates": 40112, "elapsed": 171.39596159400025}
+{"q": 3, "shells": 10, "candidates": 512, "unique_candidates": 512, "elapsed": 171.40846194299957}
+{"q": 3, "nmax": 22, "counts": [1, 0, 3, 3, 9, 21, 45, 105, 237, 537, 1209, 2709, 6057, 13521, 30165, 67281, 149985, 334125, 743625, 1653333, 3672261, 8149017, 18068241], "canonical_candidates": 921413, "unique_candidates": 335542, "branching_candidates": 585871, "seconds": 171.40910220800288, "failures": 0, "solver_cache": "CacheInfo(hits=18581888, misses=7869882, maxsize=300000, currsize=300000)"}
+
+EXIT_CODE=0

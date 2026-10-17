@@ -1,5 +1,11 @@
 # Same Game research checkpoint — 17 October 2026
 
+**Subsequent extension:** [canonical/STATUS.md](canonical/STATUS.md) records
+the proved complete index sequence, certified finite path enumerator,
+four-way ambiguity certificate, and longer multicolour unique-word counts.
+This checkpoint was published as `25963923aa96a21bfc685b25c125d7dd94a7e16d`
+and passed normal GitHub Actions run 39025601875.
+
 The existing uniqueness theorem was independently rebuilt. New median and
 colour-palindrome necessity theorems were checked by Lean. A binary unique-word
 counting formula now has an explicit paper proof argument and strong finite

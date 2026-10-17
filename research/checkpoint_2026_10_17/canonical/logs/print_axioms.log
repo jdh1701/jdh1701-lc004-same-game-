@@ -1,0 +1,80 @@
+theorem LC004.unique_successful_path_eq_medianPath : ∀ {s : LC004.RunState} {moves : List ℕ},
+  LC004.Normalized s →
+    LC004.UniqueSuccessfulPath s → LC004.SuccessfulPath s moves → moves = LC004.medianPath (List.length s) :=
+fun {s} {moves} hn hu hp =>
+  Exists.casesOn (LC004.successfulPath_has_completePath hp) fun p h =>
+    And.casesOn h fun hcomplete hindices =>
+      let_fun huc := LC004.uniqueSuccessfulPath_iff_uniqueCompletePath.mp hu;
+      And.casesOn (LC004.unique_completePath_shape hcomplete hn huc) fun hind hsize =>
+        let_fun hlength :=
+          Or.casesOn hsize
+            (fun he =>
+              let_fun hbound := LC004.completePath_length_le hcomplete;
+              Eq.mpr (id (congrArg (fun x => p.length = (x.length + 1) / 2) he))
+                (Decidable.byContradiction fun a =>
+                  LC004.unique_successful_path_eq_medianPath._proof_1 p
+                    (Eq.mp (congrArg (fun x => p.length ≤ x.length) he) hbound) a))
+            fun hsize =>
+            Decidable.byContradiction fun a => LC004.unique_successful_path_eq_medianPath._proof_2 p hsize a;
+        Trans.trans (Trans.trans (Eq.symm hindices) hind)
+          (Eq.mpr (id (congrArg (fun _a => LC004.descendingChoices _a = LC004.medianPath (List.length s)) hlength))
+            (Eq.refl (LC004.descendingChoices ((List.length s + 1) / 2))))
+theorem LC004.unique_successful_path_length : ∀ {s : LC004.RunState} {moves : List ℕ},
+  LC004.Normalized s →
+    LC004.UniqueSuccessfulPath s → LC004.SuccessfulPath s moves → moves.length = (List.length s + 1) / 2 :=
+fun {s} {moves} hn hu hp =>
+  Eq.mpr
+    (id
+      (congrArg (fun _a => _a.length = (List.length s + 1) / 2) (LC004.unique_successful_path_eq_medianPath hn hu hp)))
+    (LC004.descendingChoices_length ((List.length s + 1) / 2))
+theorem LC004.unique_successful_path_medianPath_success : ∀ {s : LC004.RunState},
+  LC004.Normalized s → LC004.UniqueSuccessfulPath s → LC004.SuccessfulPath s (LC004.medianPath (List.length s)) :=
+fun {s} hn hu =>
+  let_fun huniq := hu;
+  Exists.casesOn hu fun moves h =>
+    And.casesOn h fun hp right =>
+      let_fun heq := LC004.unique_successful_path_eq_medianPath hn huniq hp;
+      Eq.mp (congrArg (LC004.SuccessfulPath s) heq) hp
+'LC004.unique_successful_path_eq_medianPath' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.unique_successful_path_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.unique_successful_path_medianPath_success' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.medianPath_failure_excludes_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem LC004.mem_solutionPaths_iff : ∀ (s : LC004.RunState) (p : List ℕ),
+  p ∈ LC004.solutionPaths s ↔ LC004.SuccessfulPath s p :=
+fun s p =>
+  Eq.mpr (id (congrArg (fun _a => p ∈ _a ↔ LC004.SuccessfulPath s p) (LC004.solutionPaths.eq_1 s)))
+    (Eq.mpr
+      (id (congrArg (fun _a => _a ↔ LC004.SuccessfulPath s p) (propext (LC004.mem_pathSetFuel (List.length s) s p))))
+      { mp := And.left, mpr := fun hp => ⟨hp, LC004.successfulPath_length_le_runs hp⟩ })
+theorem LC004.uniqueSuccessfulPath_iff_card_solutionPaths : ∀ (s : LC004.RunState),
+  LC004.UniqueSuccessfulPath s ↔ (LC004.solutionPaths s).card = 1 :=
+fun s =>
+  {
+    mp := fun a =>
+      Exists.casesOn a fun p h =>
+        And.casesOn h fun hp huniq =>
+          Finset.card_eq_one.mpr
+            (Exists.intro p
+              (Finset.ext fun q =>
+                Eq.mpr (id (congrArg (fun _a => _a ↔ q ∈ {p}) (propext (LC004.mem_solutionPaths_iff s q))))
+                  (Eq.mpr (id (congrArg (fun _a => LC004.SuccessfulPath s q ↔ _a) (propext Finset.mem_singleton)))
+                    { mp := fun hq => huniq q hq, mpr := fun he => Eq.symm he ▸ hp }))),
+    mpr := fun hcard =>
+      Exists.casesOn (Finset.card_eq_one.mp hcard) fun p he =>
+        let_fun hp :=
+          (LC004.mem_solutionPaths_iff s p).mp
+            (Eq.mpr (id (congrArg (fun _a => p ∈ _a) he)) (of_eq_true (Eq.trans _proof_1✝ (eq_self p))));
+        Exists.intro p
+          ⟨hp, fun q hq =>
+            let_fun hmem := (LC004.mem_solutionPaths_iff s q).mpr hq;
+            Finset.mem_singleton.mp (Eq.mp (congrArg (fun _a => q ∈ _a) he) hmem)⟩ }
+'LC004.mem_pathSetFuel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.mem_solutionPaths_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.uniqueSuccessfulPath_iff_card_solutionPaths' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.fourWay_proper_mask_cards' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.fourWay_all_proper_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.fourWay_full_mask_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.fourWay_full_mask_not_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.fourWay_only_short_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT_CODE=0

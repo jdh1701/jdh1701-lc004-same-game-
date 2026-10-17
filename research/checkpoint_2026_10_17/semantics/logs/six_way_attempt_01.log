@@ -1,0 +1,10 @@
+LC004/HigherObstructions.lean:25:2: error: failed to synthesize
+  Decidable (∀ (mask : Fin 63), ∃ i, Heavier (sixWayState ↑mask) (sixWayState (63 - 2 ^ ↑i)))
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+LC004/HigherObstructions.lean:29:2: error: failed to synthesize
+  Decidable (∀ (mask : Fin 64), SuccessfulPath (sixWayState ↑mask) [8, 7, 6, 5, 4, 3, 2, 1, 0])
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+'LC004.sixWay_all_proper_unique' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'LC004.sixWay_full_not_unique' depends on axioms: [propext]

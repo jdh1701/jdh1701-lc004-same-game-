@@ -1,0 +1,136 @@
+✔ [26/86] Built Batteries.Control.ForInStep.Lemmas
+✔ [30/96] Built Batteries.Lean.Util.EnvSearch
+✔ [37/96] Built Batteries.Lean.Except
+✔ [38/131] Built Batteries.Data.ByteSubarray
+✔ [39/131] Built Batteries.Data.List.ArrayMap
+✔ [45/139] Built Batteries.Data.NameSet
+✔ [53/139] Built Batteries.Util.Panic
+✔ [54/143] Built Batteries.Lean.TagAttribute
+✔ [57/144] Built Batteries.CodeAction.Attr
+✔ [60/144] Built Batteries.Control.AlternativeMonad
+✔ [61/149] Built Batteries.Classes.Order
+✔ [64/149] Built Batteries.Lean.Meta.Expr
+✔ [65/149] Built Batteries.Tactic.OpenPrivate
+✔ [72/149] Built Batteries.Lean.Meta.Basic
+✔ [74/149] Built Batteries.Lean.MonadBacktrack
+✔ [75/151] Built Batteries.CodeAction
+✔ [76/151] Built Batteries.Data.Array.Match
+✔ [77/151] Built Batteries.Lean.Meta.Inaccessible
+✔ [81/151] Built Batteries.Data.HashMap.Lemmas
+✔ [87/152] Built Batteries.Data.DList.Basic
+✔ [100/155] Built Batteries.Lean.NameMapAttribute
+✔ [105/159] Built Batteries.Linter.UnnecessarySeqFocus
+✔ [111/159] Built Batteries.Data.Int
+✔ [112/160] Built Batteries.Data.UInt
+✔ [114/160] Built Batteries.Data.Rat.Lemmas
+✔ [117/162] Built Batteries.Data.DList.Lemmas
+✔ [121/164] Built Batteries.Logic
+✔ [123/171] Built Batteries.Data.Array.Lemmas
+✔ [125/171] Built Batteries.Data.Rat
+✔ [137/171] Built Batteries.Tactic.Instances
+✔ [138/171] Built Batteries.Tactic.Lemma
+✔ [139/174] Built Batteries.Data.BitVec
+✔ [141/266] Built Batteries.WF
+✔ [143/289] Built Aesop.Forward.SlotIndex
+✔ [162/299] Built Aesop.Check
+✔ [168/310] Built Batteries.Tactic.Lint.Frontend
+✔ [181/335] Built Batteries.Data.Fin.Fold
+✔ [219/522] Built Plausible.Attr
+✔ [226/529] Built Aesop.Script.Util
+✔ [245/743] Built Mathlib.Tactic.Linter.DirectoryDependency
+✔ [261/743] Built Aesop.Options.Public
+✔ [270/743] Built LeanSearchClient.Basic
+✔ [337/743] Built Mathlib.Logic.OpClass
+✔ [342/743] Built Mathlib.Tactic.Check
+✔ [433/806] Built Mathlib.Tactic.GuardGoalNums
+✔ [495/1423] Built Mathlib.Data.String.Defs
+✔ [541/1773] Built Aesop.Util.Tactic.Unfold
+✔ [543/1773] Built Mathlib.Tactic.Coe
+✔ [591/2547] Built Batteries.Data.RBMap.Basic
+✔ [610/3722] Built Aesop.Forward.RuleInfo
+✔ [683/4089] Built Batteries.Data.UnionFind.Basic
+✔ [761/6714] Built Batteries.Data.BinomialHeap.Basic
+✔ [6653/6714] Built LC004.RunState
+✔ [6654/6714] Built LC004.Monotonicity
+✔ [6655/6714] Built LC004.Transition
+✔ [6656/6714] Built LC004.ListSplit
+✔ [6657/6714] Built LC004.Normalized
+✔ [6658/6714] Built LC004.HeavierLemmas
+✔ [6659/6714] Built LC004.Simulation
+✔ [6660/6714] Built LC004.RawEncoding
+✔ [6661/6714] Built LC004.RunEncoding
+✔ [6662/6714] Built LC004.ExecutableStep
+⚠ [6663/6714] Built LC004.NormalizedDirectional
+warning: ././././LC004/NormalizedDirectional.lean:18:19: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [6664/6714] Built LC004.SplitRunLemmas
+warning: ././././LC004/SplitRunLemmas.lean:37:12: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [6665/6714] Built LC004.BoundaryLemmas
+✔ [6666/6714] Built LC004.NormalizedStepTarget
+✔ [6667/6714] Built LC004.NoMergeSimulation
+✔ [6668/6714] Built LC004.DeleteSimulation
+✔ [6669/6714] Built LC004.InteriorNoMerge
+⚠ [6670/6714] Built LC004.IndexedMove
+warning: ././././LC004/IndexedMove.lean:73:2: try 'simp at hlt' instead of 'simpa using hlt'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [6671/6714] Built LC004.NoMergeFull
+✔ [6672/6714] Built LC004.InsertedDeletion
+✔ [6673/6714] Built LC004.HeadColorLemmas
+⚠ [6674/6714] Built LC004.ExecutableCorrespondence
+warning: ././././LC004/ExecutableCorrespondence.lean:48:10: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [6675/6714] Built LC004.SuccessfulPaths
+warning: ././././LC004/SuccessfulPaths.lean:100:8: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+✔ [6676/6714] Built LC004.FullSimulation
+✔ [6677/6714] Built LC004.IndexedDeterminism
+✔ [6678/6714] Built LC004.MoveClassification
+✔ [6679/6714] Built LC004.PrefixIndexed
+✔ [6680/6714] Built LC004.SuffixIndexed
+✔ [6681/6714] Built LC004.ExchangeTarget
+⚠ [6682/6714] Built LC004.ExecutableUniqueness
+warning: ././././LC004/ExecutableUniqueness.lean:93:14: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+⚠ [6683/6714] Built LC004.ExchangeScaffold
+warning: ././././LC004/ExchangeScaffold.lean:93:26: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+warning: ././././LC004/ExchangeScaffold.lean:94:28: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+✔ [6684/6714] Built LC004.ExchangeDominance
+✔ [6685/6714] Built LC004.BridgeExchangeRight
+⚠ [6686/6714] Built LC004.ConditionalMain
+warning: ././././LC004/ConditionalMain.lean:55:12: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+✔ [6687/6714] Built LC004.NoMergeExchangeLocal
+✔ [6688/6714] Built LC004.NoMergeExchangeRight
+✔ [6689/6714] Built LC004.NoMergeAdjacentRight
+✔ [6690/6714] Built LC004.BridgeExchangeRightFull
+✔ [6691/6714] Built LC004.NoMergeExchangeAssembly
+✔ [6692/6714] Built LC004.BridgeExchangeAssembly
+✔ [6693/6714] Built LC004.NoMergeExchangeInterior
+✔ [6694/6714] Built LC004.FinalAssembly
+✔ [6695/6714] Built LC004.BridgeExchangeRemaining
+✔ [6696/6714] Built LC004.NoMergeAdjacentLeft
+✔ [6697/6714] Built LC004.NoMergeFarRightZero
+✔ [6698/6714] Built LC004.NoMergeFarLeftProof
+✔ [6699/6714] Built LC004.BridgeExchangeLeftAssembly
+✔ [6700/6714] Built LC004.NoMergeAdjacentLeftConcrete
+✔ [6701/6714] Built LC004.NoMergeFarRightProof
+✔ [6702/6714] Built LC004.BridgeExchangeFarLeft
+✔ [6703/6714] Built LC004.BridgeAdjacentLeft
+✔ [6704/6714] Built LC004.NoMergeAdjacentLeftBoundary
+✔ [6705/6714] Built LC004.BridgeFarLeftConcrete
+⚠ [6706/6714] Built LC004.BridgeAdjacentLeftFront
+warning: ././././LC004/BridgeAdjacentLeftFront.lean:26:9: unused variable `d`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+warning: ././././LC004/BridgeAdjacentLeftFront.lean:26:22: unused variable `bp`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+warning: ././././LC004/BridgeAdjacentLeftFront.lean:26:25: unused variable `bq`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+✔ [6707/6714] Built LC004.BridgeAdjacentLeftConcrete
+✔ [6708/6714] Built LC004.BridgeFarLeftProof
+✔ [6709/6714] Built LC004.NoMergeAdjacentLeftBoundaryConcrete
+✔ [6710/6714] Built LC004.BridgeAdjacentBoundary
+✔ [6711/6714] Built LC004.NoMergeStructuralProof
+✔ [6712/6714] Built LC004.BridgeStructuralFinal
+ℹ [6713/6714] Built LC004.UnconditionalFinal
+info: ././././LC004/UnconditionalFinal.lean:30:0: 'LC004.unconditional_unique_choice_iff_unique_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UnconditionalFinal.lean:31:0: 'LC004.unconditional_executable_unique_first_iff_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [6714/6714] Built LC004.OrdinaryCorrespondence
+Build completed successfully.

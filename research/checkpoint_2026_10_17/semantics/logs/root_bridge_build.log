@@ -1,0 +1,62 @@
+⚠ [6656/6726] Replayed LC004.SplitRunLemmas
+warning: ././././LC004/SplitRunLemmas.lean:37:12: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [6667/6726] Replayed LC004.NormalizedDirectional
+warning: ././././LC004/NormalizedDirectional.lean:18:19: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [6671/6726] Replayed LC004.IndexedMove
+warning: ././././LC004/IndexedMove.lean:73:2: try 'simp at hlt' instead of 'simpa using hlt'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [6672/6726] Replayed LC004.SuccessfulPaths
+warning: ././././LC004/SuccessfulPaths.lean:100:8: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+⚠ [6675/6726] Replayed LC004.ExecutableCorrespondence
+warning: ././././LC004/ExecutableCorrespondence.lean:48:10: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [6677/6726] Replayed LC004.ExchangeScaffold
+warning: ././././LC004/ExchangeScaffold.lean:93:26: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+warning: ././././LC004/ExchangeScaffold.lean:94:28: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+⚠ [6679/6726] Replayed LC004.ExecutableUniqueness
+warning: ././././LC004/ExecutableUniqueness.lean:93:14: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+⚠ [6680/6726] Replayed LC004.ConditionalMain
+warning: ././././LC004/ConditionalMain.lean:55:12: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+⚠ [6698/6726] Replayed LC004.BridgeAdjacentLeftFront
+warning: ././././LC004/BridgeAdjacentLeftFront.lean:26:9: unused variable `d`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+warning: ././././LC004/BridgeAdjacentLeftFront.lean:26:22: unused variable `bp`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+warning: ././././LC004/BridgeAdjacentLeftFront.lean:26:25: unused variable `bq`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+ℹ [6713/6726] Replayed LC004.UnconditionalFinal
+info: ././././LC004/UnconditionalFinal.lean:30:0: 'LC004.unconditional_unique_choice_iff_unique_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UnconditionalFinal.lean:31:0: 'LC004.unconditional_executable_unique_first_iff_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6714/6726] Replayed LC004.UniqueMedian
+info: ././././LC004/UniqueMedian.lean:155:0: 'LC004.unique_successful_choice_is_median' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UniqueMedian.lean:156:0: 'LC004.unique_successful_first_is_median' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UniqueMedian.lean:157:0: 'LC004.unique_successful_path_odd_runs' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UniqueMedian.lean:158:0: 'LC004.unique_successful_path_color_palindrome' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6715/6726] Replayed LC004.UniqueCanonical
+info: ././././LC004/UniqueCanonical.lean:135:0: 'LC004.unique_successful_path_eq_medianPath' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UniqueCanonical.lean:136:0: 'LC004.unique_successful_path_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UniqueCanonical.lean:137:0: 'LC004.unique_successful_path_medianPath_success' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6716/6726] Replayed LC004.CertifiedPaths
+info: ././././LC004/CertifiedPaths.lean:110:0: 'LC004.mem_pathSetFuel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CertifiedPaths.lean:111:0: 'LC004.mem_solutionPaths_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CertifiedPaths.lean:112:0: 'LC004.uniqueSuccessfulPath_iff_card_solutionPaths' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [6719/6726] Built LC004.Bridge
+✔ [6720/6726] Built LC004.BridgeAdjacentLeftClosure
+ℹ [6721/6726] Built LC004.OrdinaryFinal
+info: ././././LC004/OrdinaryFinal.lean:61:0: 'LC004.ordinaryStepAt_map_encode' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/OrdinaryFinal.lean:62:0: 'LC004.ordinary_path_iff' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/OrdinaryFinal.lean:63:0: 'LC004.ordinary_unique_first_iff_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/OrdinaryFinal.lean:64:0: 'LC004.ordinary_unique_path_eq_medianPath' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/OrdinaryFinal.lean:65:0: 'LC004.mem_ordinarySolutionPaths_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [6722/6726] Built LC004.PathMonotonicity
+✔ [6723/6726] Built LC004.BridgeAdjacentPrefixTransport
+ℹ [6724/6726] Built LC004.FourWayCertificate
+info: ././././LC004/FourWayCertificate.lean:59:0: 'LC004.fourWay_proper_mask_cards' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourWayCertificate.lean:60:0: 'LC004.fourWay_all_proper_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourWayCertificate.lean:61:0: 'LC004.fourWay_full_mask_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourWayCertificate.lean:62:0: 'LC004.fourWay_full_mask_not_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourWayCertificate.lean:63:0: 'LC004.fourWay_only_short_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [6725/6726] Built LC004
+Build completed successfully.

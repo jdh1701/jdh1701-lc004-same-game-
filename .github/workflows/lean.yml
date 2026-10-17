@@ -47,3 +47,10 @@ jobs:
           lake env lean research/checkpoint_2026_10_17/canonical/PrintAxioms.lean
           python3 research/checkpoint_2026_10_17/canonical/unique_weighted.py --q 3 --nmax 14
           python3 research/checkpoint_2026_10_17/canonical/unique_weighted.py --q 4 --nmax 14
+
+      - name: Audit ordinary-word transfer and higher-order interactions
+        run: |
+          lake env lean research/checkpoint_2026_10_17/semantics/PrintAxioms.lean
+          python3 research/checkpoint_2026_10_17/semantics/check_witnesses.py
+          python3 research/checkpoint_2026_10_17/semantics/chain_family.py --kmax 5
+          python3 research/checkpoint_2026_10_17/semantics/audit.py

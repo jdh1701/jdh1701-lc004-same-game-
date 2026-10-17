@@ -1,0 +1,33 @@
+LC004/PathMonotonicity.lean:52:78: error: unexpected token '('; expected '⟩'
+LC004/PathMonotonicity.lean:52:33: error: type mismatch, term
+  And.intro (Eq.symm hca)
+after simplification has type
+  ?m.161901 → a = c ∧ ?m.161901 : Prop
+but is expected to have type
+  a = c ∧ (True → True) ∧ Heavier zs zs' : Prop
+LC004/PathMonotonicity.lean:45:34: error: unsolved goals
+case neg
+u : RunState
+c : ℕ
+b e : Bool
+hb : b = true → e = true
+d : ℕ
+hf : true = true → true = true
+zs : List (ℕ × Bool)
+a : ℕ
+h : Bool
+ih :
+  ∀ {t u : RunState} {i : ℕ},
+    Heavier ((d, true) :: (a, h) :: zs) t →
+      stepAt ((d, true) :: (a, h) :: zs) i = some u → ∃ v, stepAt t i = some v ∧ Heavier u v
+hs : stepAt ((c, b) :: (d, true) :: (a, h) :: zs) (0 + 1) = some u
+k : Bool
+zs' : List (ℕ × Bool)
+hpost : Heavier ((a, h) :: zs) ((a, k) :: zs')
+hh : Heavier ((c, b) :: (d, true) :: (a, h) :: zs) ((c, e) :: (d, true) :: (a, k) :: zs')
+ht : Heavier ((d, true) :: (a, h) :: zs) ((d, true) :: (a, k) :: zs')
+hk : h = true → k = true
+hzs : Heavier zs zs'
+hca : ¬c = a
+⊢ ∃ v, stepAt ((c, e) :: (d, true) :: (a, k) :: zs') (0 + 1) = some v ∧ Heavier u v
+LC004/PathMonotonicity.lean:31:14: error: alternative 'succ' has not been provided

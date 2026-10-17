@@ -12,11 +12,18 @@ The default build checks:
 * the entire unique index sequence `[m,m-1,...,0]` for `2m+1` runs;
 * correctness of an exact finite successful-path enumerator;
 * a concrete four-way ambiguity certificate: every proper subset of four
-  optional heavy runs has one solution, but all four have 91 solutions.
+  optional heavy runs has one solution, but all four have 91 solutions;
+* an unconditional commuting theorem from ordinary maximal cell-run deletion
+  to the Boolean model, transferring path uniqueness and exact path sets;
+* preservation of each successful path under heavy-run upgrades;
+* five- and six-run ambiguity obstructions, with every proper flag subset
+  proved unique in both the run and ordinary-cell models.
 
-The [current research report](research/checkpoint_2026_10_17/canonical/STATUS.md)
+The [current research report](research/checkpoint_2026_10_17/semantics/STATUS.md)
 contains statements, assumptions, counts, failures, source provenance and
 reproduction commands. The
+[canonical-path checkpoint](research/checkpoint_2026_10_17/canonical/STATUS.md)
+records the previous structural advance. The
 [earlier checkpoint](research/checkpoint_2026_10_17/STATUS.md) records the
 independent baseline reproduction and binary counting candidate.
 
@@ -24,9 +31,11 @@ independent baseline reproduction and binary counting candidate.
 lake exe cache get
 lake build
 lake env lean research/checkpoint_2026_10_17/canonical/PrintAxioms.lean
+lake env lean research/checkpoint_2026_10_17/semantics/PrintAxioms.lean
 ```
 
 Lean is pinned to 4.19.0; dependencies are pinned in `lake-manifest.json`.
 Python experiments use the standard library. Mathematical priority remains
-under review. The full q>=3 winning-string enumeration and the unconditional
-ordinary-cell/Boolean-state commuting theorem are not established here.
+under review. The full q>=3 winning-string enumeration remains unresolved.
+An explicit three-colour obstruction family has finite evidence through
+14 optional runs, but its universal claim is not proved.

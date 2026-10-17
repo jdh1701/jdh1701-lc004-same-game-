@@ -1,0 +1,59 @@
+theorem LC004.ordinaryStepAt_map_encode : ∀ (w : LC004.RawState) (i : ℕ),
+  Option.map LC004.encode (LC004.ordinaryStepAt w i) = LC004.stepAt (LC004.encode w) i :=
+fun w i => LC004.ordinaryStepAtFuel_map_encode (List.length w) w i (Nat.le_refl (List.length w))
+theorem LC004.ordinary_unique_first_iff_path : ∀ (w : LC004.RawState),
+  w ≠ [] →
+    (LC004.OrdinaryUniqueSuccessfulFirst LC004.ordinaryStepAt w ↔
+      LC004.OrdinaryUniqueSuccessfulPath LC004.ordinaryStepAt w) :=
+fun w hne => LC004.ordinary_unique_first_iff_path_of_commute LC004.ordinaryStepAt LC004.ordinaryStepAt_map_encode w hne
+theorem LC004.ordinary_unique_path_eq_medianPath : ∀ (w : LC004.RawState) (moves : List ℕ),
+  LC004.OrdinaryUniqueSuccessfulPath LC004.ordinaryStepAt w →
+    LC004.ordinaryFollow LC004.ordinaryStepAt w moves = some [] →
+      moves = LC004.medianPath (List.length (LC004.encode w)) :=
+fun w moves hu hp =>
+  LC004.unique_successful_path_eq_medianPath (LC004.encode_normalized w)
+    ((LC004.ordinaryUniquePath_iff LC004.ordinaryStepAt LC004.ordinaryStepAt_map_encode w).mp hu)
+    ((LC004.ordinary_path_iff w moves).mp hp)
+'LC004.ordinaryStepAtFuel_map_encode' depends on axioms: [propext, Quot.sound]
+'LC004.ordinaryStepAt_map_encode' depends on axioms: [propext, Quot.sound]
+'LC004.encode_expandRuns' depends on axioms: [propext]
+'LC004.ordinary_expansion_path_iff' depends on axioms: [propext, Quot.sound]
+'LC004.ordinary_path_iff' depends on axioms: [propext, Quot.sound]
+'LC004.ordinary_solvable_iff' depends on axioms: [propext, Quot.sound]
+'LC004.ordinary_unique_first_iff_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.ordinary_unique_path_eq_medianPath' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.ordinary_unique_path_color_palindrome' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.mem_ordinarySolutionPaths_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.ordinary_paths_invariant_of_encode_eq' depends on axioms: [propext, Quot.sound]
+'LC004.ordinary_path_count_invariant_of_encode_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.stepAt_heavier' depends on axioms: [propext]
+'LC004.successfulPath_heavier' depends on axioms: [propext]
+'LC004.solutionPaths_card_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.ambiguity_heavier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.uniqueSuccessfulPath_of_heavier' depends on axioms: [propext]
+theorem LC004.sixWay_all_proper_unique : ∀ (mask : Fin 63), LC004.UniqueSuccessfulPath (LC004.sixWayState ↑mask) :=
+fun mask =>
+  Exists.casesOn (LC004.sixWay_proper_heavier mask) fun i hi =>
+    LC004.uniqueSuccessfulPath_of_heavier hi
+      ((LC004.uniqueSuccessfulPath_iff_card_solutionPaths (LC004.sixWayState (63 - 2 ^ ↑i))).mpr
+        (LC004.sixWay_maximal_proper_cards i))
+      (LC004.sixWay_canonical_success
+        ⟨↑mask, Decidable.byContradiction fun a => LC004.sixWay_all_proper_unique._proof_1 mask a⟩)
+theorem LC004.fiveWay_all_proper_unique : ∀ (mask : Fin 31), LC004.UniqueSuccessfulPath (LC004.fiveWayState ↑mask) :=
+fun mask =>
+  Exists.casesOn (LC004.fiveWay_proper_heavier mask) fun i hi =>
+    LC004.uniqueSuccessfulPath_of_heavier hi
+      ((LC004.uniqueSuccessfulPath_iff_card_solutionPaths (LC004.fiveWayState (31 - 2 ^ ↑i))).mpr
+        (LC004.fiveWay_maximal_proper_cards i))
+      (LC004.fiveWay_canonical_success
+        ⟨↑mask, Decidable.byContradiction fun a => LC004.fiveWay_all_proper_unique._proof_1 mask a⟩)
+'LC004.sixWay_maximal_proper_cards' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.sixWay_all_proper_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.sixWay_full_not_unique' depends on axioms: [propext]
+'LC004.fiveWay_maximal_proper_cards' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.fiveWay_all_proper_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.fiveWay_full_not_unique' depends on axioms: [propext]
+'LC004.sixWay_raw_proper_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.sixWay_raw_full_not_unique' depends on axioms: [propext, Quot.sound]
+'LC004.fiveWay_raw_proper_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.fiveWay_raw_full_not_unique' depends on axioms: [propext, Quot.sound]

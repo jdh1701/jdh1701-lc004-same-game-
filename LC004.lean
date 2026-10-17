@@ -64,3 +64,6 @@ import LC004.UniqueMedian
 import LC004.UniqueCanonical
 import LC004.CertifiedPaths
 import LC004.FourWayCertificate
+import LC004.OrdinaryFinal
+import LC004.PathMonotonicity
+import LC004.HigherObstructions

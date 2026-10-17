@@ -1,5 +1,8 @@
 # Canonical paths, a certified enumerator, and a four-way obstruction
 
+Historical checkpoint. The [next report](../semantics/STATUS.md) closes the
+ordinary-word commuting obligation and develops higher-order obstructions.
+
 Continuation of the 17 October 2026 checkpoint. Published base commit:
 `25963923aa96a21bfc685b25c125d7dd94a7e16d`. Its Git tree is exactly the
 approved local checkpoint `0f6fd5cd15e714997c64f89d12412a9c65f1624e`.

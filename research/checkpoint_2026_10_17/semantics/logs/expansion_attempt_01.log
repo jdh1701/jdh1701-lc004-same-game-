@@ -1,0 +1,46 @@
+LC004/OrdinaryFinal.lean:20:27: error: tactic 'rfl' failed, the left-hand side
+  encode (expandRuns [(c, true)])
+is not definitionally equal to the right-hand side
+  [(c, true)]
+case cons.mk.nil.true
+c : ℕ
+ih : Normalized [] → encode (expandRuns []) = []
+ht : encode (expandRuns []) = []
+hn : Normalized [(c, true)]
+⊢ encode (expandRuns [(c, true)]) = [(c, true)]
+LC004/OrdinaryFinal.lean:21:18: error: unsolved goals
+case cons.mk.cons.mk.false
+c : ℕ
+ys : List (ℕ × Bool)
+d : ℕ
+e : Bool
+ih : Normalized ((d, e) :: ys) → encode (expandRuns ((d, e) :: ys)) = (d, e) :: ys
+ht : encode (expandRuns ((d, e) :: ys)) = (d, e) :: ys
+hcd : c ≠ d
+hn : Normalized ((c, false) :: (d, e) :: ys)
+⊢ (match encode (if e = true then d :: d :: expandRuns ys else d :: expandRuns ys) with
+    | [] => [(c, false)]
+    | (d, b) :: xs => if c = d then (d, true) :: xs else (c, false) :: (d, b) :: xs) =
+    (c, false) :: (d, e) :: ys
+
+case cons.mk.cons.mk.true
+c : ℕ
+ys : List (ℕ × Bool)
+d : ℕ
+e : Bool
+ih : Normalized ((d, e) :: ys) → encode (expandRuns ((d, e) :: ys)) = (d, e) :: ys
+ht : encode (expandRuns ((d, e) :: ys)) = (d, e) :: ys
+hcd : c ≠ d
+hn : Normalized ((c, true) :: (d, e) :: ys)
+⊢ (match
+      match encode (if e = true then d :: d :: expandRuns ys else d :: expandRuns ys) with
+      | [] => [(c, false)]
+      | (d, b) :: xs => if c = d then (d, true) :: xs else (c, false) :: (d, b) :: xs with
+    | [] => [(c, false)]
+    | (d, b) :: xs => if c = d then (d, true) :: xs else (c, false) :: (d, b) :: xs) =
+    (c, true) :: (d, e) :: ys
+'LC004.ordinaryStepAt_map_encode' depends on axioms: [propext, Quot.sound]
+'LC004.ordinary_path_iff' depends on axioms: [propext, Quot.sound]
+'LC004.ordinary_unique_first_iff_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.ordinary_unique_path_eq_medianPath' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.mem_ordinarySolutionPaths_iff' depends on axioms: [propext, Classical.choice, Quot.sound]

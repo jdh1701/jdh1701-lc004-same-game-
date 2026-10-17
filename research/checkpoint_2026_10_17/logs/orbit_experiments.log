@@ -1,0 +1,16 @@
+{"n": 0, "no_singleton_orbits": 1, "winning": {"0": 1}, "unique": {"0": 1}}
+{"n": 1, "no_singleton_orbits": 0, "winning": {}, "unique": {}}
+{"n": 2, "no_singleton_orbits": 1, "winning": {"1": 1}, "unique": {"1": 1}}
+{"n": 3, "no_singleton_orbits": 1, "winning": {"1": 1}, "unique": {"1": 1}}
+{"n": 4, "no_singleton_orbits": 4, "winning": {"1": 1, "2": 2}, "unique": {"1": 1, "2": 1}}
+{"n": 5, "no_singleton_orbits": 11, "winning": {"1": 1, "2": 5}, "unique": {"1": 1, "2": 3}}
+{"n": 6, "no_singleton_orbits": 41, "winning": {"1": 1, "2": 12, "3": 5}, "unique": {"1": 1, "2": 6, "3": 1}}
+{"n": 7, "no_singleton_orbits": 162, "winning": {"1": 1, "2": 28, "3": 21}, "unique": {"1": 1, "2": 12, "3": 5}}
+{"n": 8, "no_singleton_orbits": 715, "winning": {"1": 1, "2": 62, "3": 84, "4": 14}, "unique": {"1": 1, "2": 23, "3": 16, "4": 1}}
+{"n": 9, "no_singleton_orbits": 3425, "winning": {"1": 1, "2": 138, "3": 300, "4": 84}, "unique": {"1": 1, "2": 43, "3": 46, "4": 7}}
+{"n": 10, "no_singleton_orbits": 17722, "winning": {"1": 1, "2": 300, "3": 1005, "4": 480, "5": 42}, "unique": {"1": 1, "2": 78, "3": 123, "4": 31, "5": 1}}
+{"n": 11, "no_singleton_orbits": 98253, "winning": {"1": 1, "2": 649, "3": 3300, "4": 2310, "5": 330}, "unique": {"1": 1, "2": 138, "3": 313, "4": 117, "5": 9}}
+{"n": 12, "no_singleton_orbits": 580317, "winning": {"1": 1, "2": 1386, "3": 10511, "4": 10395, "5": 2475, "6": 132}, "unique": {"1": 1, "2": 239, "3": 770, "4": 400, "5": 51, "6": 1}}
+{"failures": 0, "raw_crosschecks": 936, "cache": "CacheInfo(hits=1029739, misses=576078, maxsize=300000, currsize=300000)", "seconds": 10.160376153999096}
+
+EXIT_CODE=0

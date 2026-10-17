@@ -1,0 +1,10 @@
+{
+  "raw_strings": 208721,
+  "grammar_checks": 10352,
+  "reported_experiment": {
+    "total": 10350,
+    "solvable": 1567
+  },
+  "failures": 0,
+  "elapsed_seconds": 2.147966657001234
+}

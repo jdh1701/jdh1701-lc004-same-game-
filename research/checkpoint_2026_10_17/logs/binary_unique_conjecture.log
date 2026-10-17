@@ -1,0 +1,18 @@
+{"shells": 0, "runs": 1, "flag_assignments": 1, "unique": 1, "by_heavy_runs": {"0": 1}, "held_out": false}
+{"shells": 1, "runs": 3, "flag_assignments": 4, "unique": 3, "by_heavy_runs": {"0": 1, "1": 2}, "held_out": false}
+{"shells": 2, "runs": 5, "flag_assignments": 16, "unique": 9, "by_heavy_runs": {"0": 1, "1": 4, "2": 4}, "held_out": false}
+{"shells": 3, "runs": 7, "flag_assignments": 64, "unique": 21, "by_heavy_runs": {"0": 1, "1": 6, "2": 10, "3": 4}, "held_out": false}
+{"shells": 4, "runs": 9, "flag_assignments": 256, "unique": 45, "by_heavy_runs": {"0": 1, "1": 8, "2": 18, "3": 14, "4": 4}, "held_out": false}
+{"shells": 5, "runs": 11, "flag_assignments": 1024, "unique": 93, "by_heavy_runs": {"0": 1, "1": 10, "2": 28, "3": 32, "4": 18, "5": 4}, "held_out": false}
+{"shells": 6, "runs": 13, "flag_assignments": 4096, "unique": 189, "by_heavy_runs": {"0": 1, "1": 12, "2": 40, "3": 60, "4": 50, "5": 22, "6": 4}, "held_out": false}
+{"shells": 7, "runs": 15, "flag_assignments": 16384, "unique": 381, "by_heavy_runs": {"0": 1, "1": 14, "2": 54, "3": 100, "4": 110, "5": 72, "6": 26, "7": 4}, "held_out": false}
+{"shells": 8, "runs": 17, "flag_assignments": 65536, "unique": 765, "by_heavy_runs": {"0": 1, "1": 16, "2": 70, "3": 154, "4": 210, "5": 182, "6": 98, "7": 30, "8": 4}, "held_out": true}
+{"shells": 9, "runs": 19, "flag_assignments": 262144, "unique": 1533, "by_heavy_runs": {"0": 1, "1": 18, "2": 88, "3": 224, "4": 364, "5": 392, "6": 280, "7": 128, "8": 34, "9": 4}, "held_out": true}
+{"shells": 10, "runs": 21, "flag_assignments": 1048576, "unique": 3069, "by_heavy_runs": {"0": 1, "1": 20, "2": 108, "3": 312, "4": 588, "5": 756, "6": 672, "7": 408, "8": 162, "9": 38, "10": 4}, "held_out": true}
+{"n": 15, "total": 32768, "unique": 2278, "held_out": true}
+{"n": 16, "total": 65536, "unique": 3760, "held_out": true}
+{"n": 17, "total": 131072, "unique": 6172, "held_out": true}
+{"n": 18, "total": 262144, "unique": 10090, "held_out": true}
+{"failures": 0, "seconds": 72.11475867599984}
+
+EXIT_CODE=0

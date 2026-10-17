@@ -1,7 +1,8 @@
 name: Lean Proof Check
 on:
   push:
-    branches: [main]
+    branches: [main, research/enumeration-audit-2026-10-17]
+  pull_request:
   workflow_dispatch:
 permissions:
   contents: read
@@ -17,7 +18,7 @@ jobs:
           path: |
             ~/.elan
             .lake
-          key: ${{ runner.os }}-lean-v4.19.0-${{ hashFiles('lean-toolchain', 'lakefile.toml') }}
+          key: ${{ runner.os }}-lean-v4.19.0-${{ hashFiles('lean-toolchain', 'lakefile.toml', 'lake-manifest.json') }}
 
       - name: Install Lean
         run: |
@@ -26,12 +27,17 @@ jobs:
           fi
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
 
-      - name: Generate Lake manifest
+      - name: Fetch pinned dependency cache
         run: |
           export PATH="$HOME/.elan/bin:$PATH"
-          lake update
+          lake exe cache get
 
       - name: Build LC004
         run: |
           export PATH="$HOME/.elan/bin:$PATH"
           lake build
+
+      - name: Cross-check independent Same Game solvers
+        run: |
+          python3 research/checkpoint_2026_10_17/experiments.py
+          python3 research/checkpoint_2026_10_17/orbit_experiments.py

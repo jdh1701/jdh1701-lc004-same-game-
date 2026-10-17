@@ -1,0 +1,38 @@
+{"q": 2, "n": 0, "total": 1, "solvable": 1, "unique": 1, "branching": 0, "distinct_shell_unique": 0, "maximum_successful_paths": 1}
+{"q": 2, "n": 1, "total": 2, "solvable": 0, "unique": 0, "branching": 0, "distinct_shell_unique": 0, "maximum_successful_paths": 0}
+{"q": 2, "n": 2, "total": 4, "solvable": 2, "unique": 2, "branching": 0, "distinct_shell_unique": 2, "maximum_successful_paths": 1}
+{"q": 2, "n": 3, "total": 8, "solvable": 2, "unique": 2, "branching": 0, "distinct_shell_unique": 2, "maximum_successful_paths": 1}
+{"q": 2, "n": 4, "total": 16, "solvable": 6, "unique": 4, "branching": 2, "distinct_shell_unique": 4, "maximum_successful_paths": 2}
+{"q": 2, "n": 5, "total": 32, "solvable": 12, "unique": 8, "branching": 4, "distinct_shell_unique": 8, "maximum_successful_paths": 2}
+{"q": 2, "n": 6, "total": 64, "solvable": 26, "unique": 14, "branching": 12, "distinct_shell_unique": 12, "maximum_successful_paths": 5}
+{"q": 2, "n": 7, "total": 128, "solvable": 58, "unique": 26, "branching": 32, "distinct_shell_unique": 16, "maximum_successful_paths": 5}
+{"q": 2, "n": 8, "total": 256, "solvable": 126, "unique": 48, "branching": 78, "distinct_shell_unique": 20, "maximum_successful_paths": 14}
+{"q": 2, "n": 9, "total": 512, "solvable": 278, "unique": 88, "branching": 190, "distinct_shell_unique": 24, "maximum_successful_paths": 16}
+{"q": 2, "n": 10, "total": 1024, "solvable": 602, "unique": 158, "branching": 444, "distinct_shell_unique": 28, "maximum_successful_paths": 43}
+{"q": 2, "n": 11, "total": 2048, "solvable": 1300, "unique": 278, "branching": 1022, "distinct_shell_unique": 32, "maximum_successful_paths": 58}
+{"q": 2, "n": 12, "total": 4096, "solvable": 2774, "unique": 480, "branching": 2294, "distinct_shell_unique": 36, "maximum_successful_paths": 149}
+{"q": 2, "n": 13, "total": 8192, "solvable": 5878, "unique": 816, "branching": 5062, "distinct_shell_unique": 40, "maximum_successful_paths": 224}
+{"q": 2, "n": 14, "total": 16384, "solvable": 12350, "unique": 1370, "branching": 10980, "distinct_shell_unique": 44, "maximum_successful_paths": 575}
+{"q": 3, "n": 0, "total": 1, "solvable": 1, "unique": 1, "branching": 0, "distinct_shell_unique": 0, "maximum_successful_paths": 1}
+{"q": 3, "n": 1, "total": 3, "solvable": 0, "unique": 0, "branching": 0, "distinct_shell_unique": 0, "maximum_successful_paths": 0}
+{"q": 3, "n": 2, "total": 9, "solvable": 3, "unique": 3, "branching": 0, "distinct_shell_unique": 3, "maximum_successful_paths": 1}
+{"q": 3, "n": 3, "total": 27, "solvable": 3, "unique": 3, "branching": 0, "distinct_shell_unique": 3, "maximum_successful_paths": 1}
+{"q": 3, "n": 4, "total": 81, "solvable": 15, "unique": 9, "branching": 6, "distinct_shell_unique": 9, "maximum_successful_paths": 2}
+{"q": 3, "n": 5, "total": 243, "solvable": 33, "unique": 21, "branching": 12, "distinct_shell_unique": 21, "maximum_successful_paths": 2}
+{"q": 3, "n": 6, "total": 729, "solvable": 105, "unique": 45, "branching": 60, "distinct_shell_unique": 39, "maximum_successful_paths": 6}
+{"q": 3, "n": 7, "total": 2187, "solvable": 297, "unique": 105, "branching": 192, "distinct_shell_unique": 75, "maximum_successful_paths": 6}
+{"q": 3, "n": 8, "total": 6561, "solvable": 879, "unique": 237, "branching": 642, "distinct_shell_unique": 135, "maximum_successful_paths": 22}
+{"q": 3, "n": 9, "total": 19683, "solvable": 2631, "unique": 537, "branching": 2094, "distinct_shell_unique": 219, "maximum_successful_paths": 22}
+{"q": 3, "n": 10, "total": 59049, "solvable": 7833, "unique": 1209, "branching": 6624, "distinct_shell_unique": 327, "maximum_successful_paths": 96}
+{"q": 4, "n": 0, "total": 1, "solvable": 1, "unique": 1, "branching": 0, "distinct_shell_unique": 0, "maximum_successful_paths": 1}
+{"q": 4, "n": 1, "total": 4, "solvable": 0, "unique": 0, "branching": 0, "distinct_shell_unique": 0, "maximum_successful_paths": 0}
+{"q": 4, "n": 2, "total": 16, "solvable": 4, "unique": 4, "branching": 0, "distinct_shell_unique": 4, "maximum_successful_paths": 1}
+{"q": 4, "n": 3, "total": 64, "solvable": 4, "unique": 4, "branching": 0, "distinct_shell_unique": 4, "maximum_successful_paths": 1}
+{"q": 4, "n": 4, "total": 256, "solvable": 28, "unique": 16, "branching": 12, "distinct_shell_unique": 16, "maximum_successful_paths": 2}
+{"q": 4, "n": 5, "total": 1024, "solvable": 64, "unique": 40, "branching": 24, "distinct_shell_unique": 40, "maximum_successful_paths": 2}
+{"q": 4, "n": 6, "total": 4096, "solvable": 268, "unique": 100, "branching": 168, "distinct_shell_unique": 88, "maximum_successful_paths": 6}
+{"q": 4, "n": 7, "total": 16384, "solvable": 844, "unique": 268, "branching": 576, "distinct_shell_unique": 208, "maximum_successful_paths": 6}
+{"q": 4, "n": 8, "total": 65536, "solvable": 3100, "unique": 688, "branching": 2412, "distinct_shell_unique": 448, "maximum_successful_paths": 24}
+{"raw_strings": 208721, "grammar_checks": 10352, "reported_experiment": {"total": 10350, "solvable": 1567}, "failures": 0, "elapsed_seconds": 2.147966657001234}
+
+EXIT_CODE=0

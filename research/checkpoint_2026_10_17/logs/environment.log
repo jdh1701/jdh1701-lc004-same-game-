@@ -1,0 +1,12 @@
+python= 3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]
+platform= Linux-6.18.55-x86_64-with-glibc2.39
+git= git version 2.51.1
+sha256 /root/.elan/toolchains/leanprover--lean4---v4.19.0/bin/lean 92c3d35b5bfaa5e0fea413a775d504cf46cd95e1345df61c2274f76779e7e023
+sha256 /root/.elan/toolchains/leanprover--lean4---v4.19.0/lib/lean/libleanshared.so 2ab605c74c78f9ba4431a7b5305a4b28a9071d8a826f223eb14fe5530f78e14d
+sha256 /root/.elan/toolchains/leanprover--lean4---v4.19.0/lib/lean/libleanshared_1.so 44bc5837306f8e24a5db0db56d56ca3114415bd65e3b107426d3c93e21d20098
+sha256 research/checkpoint_2026_10_17/proc_self_compat.c ab7fa17b67bca264bf7129fab8cf503622210885a9d72bfa6cf9d09dbeb5e697
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+Lake version 5.0.0-6caaee8 (Lean version 4.19.0)
+baseline_commit= a9cb335c11b795372b7a4d22b68c6c4fab83239c
+baseline_tracked_source_diff= 
+EXIT_CODE=0

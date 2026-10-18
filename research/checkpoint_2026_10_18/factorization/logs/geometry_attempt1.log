@@ -1,0 +1,23 @@
+⚠ [719/791] Replayed LC004.SignedConstraints
+warning: ././././LC004/SignedConstraints.lean:43:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ././././LC004/SignedConstraints.lean:104:0: 'LC004.signedEval_addConstraint' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:105:0: 'LC004.signedEval_unionTerms' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:106:0: 'LC004.signedEval_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:107:0: 'LC004.signed_constraint_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [790/791] Replayed LC004.PartitionCounting
+info: ././././LC004/PartitionCounting.lean:58:0: 'LC004.respects_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionCounting.lean:59:0: 'LC004.card_partitionEvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionCounting.lean:60:0: 'LC004.partition_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [791/791] Building LC004.NoncrossingRestriction
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /tmp/lean-4.19.0-linux/bin/lean ././././LC004/NoncrossingRestriction.lean -R ./././. -o ././.lake/build/lib/lean/LC004/NoncrossingRestriction.olean -i ././.lake/build/lib/lean/LC004/NoncrossingRestriction.ilean -c ././.lake/build/ir/LC004/NoncrossingRestriction.c --json
+error: ././././LC004/NoncrossingRestriction.lean:51:8: synthesized type class instance is not definitionally equal to expression inferred by typing rules, synthesized
+  Subtype.fintype fun x => r x a
+inferred
+  Fintype.ofFinite { x // r x a }
+info: ././././LC004/NoncrossingRestriction.lean:53:0: 'LC004.noncrossing_iff_blocks' depends on axioms: [propext]
+info: ././././LC004/NoncrossingRestriction.lean:54:0: 'LC004.blockRestriction_card' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required builds logged failures:
+- LC004.NoncrossingRestriction
+error: build failed

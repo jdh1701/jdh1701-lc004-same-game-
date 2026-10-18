@@ -1,0 +1,412 @@
+{
+  "rows": [
+    {
+      "n": 0,
+      "engine": {
+        "n": 0,
+        "witnesses": 1,
+        "terms": 1,
+        "peak": 1
+      },
+      "polynomial": {
+        "0": 1
+      },
+      "connected_polynomial": {},
+      "small_block_counterexamples": [],
+      "factorization_counterexamples": [],
+      "nontrivial_support_factorizations": 0,
+      "connected_size_histogram": {},
+      "coefficient_map_sha256": "fa310912173de15282c19da7fcdd24d15efa1a08044c3e432b46382a6970f226",
+      "q3": 1,
+      "q4": 1,
+      "seconds": 0.0027131430006193114
+    },
+    {
+      "n": 1,
+      "engine": {
+        "n": 1,
+        "witnesses": 0,
+        "terms": 0,
+        "peak": 0
+      },
+      "polynomial": {},
+      "connected_polynomial": {},
+      "small_block_counterexamples": [],
+      "factorization_counterexamples": [],
+      "nontrivial_support_factorizations": 0,
+      "connected_size_histogram": {},
+      "coefficient_map_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "q3": 0,
+      "q4": 0,
+      "seconds": 0.004475422999348666
+    },
+    {
+      "n": 2,
+      "engine": {
+        "n": 2,
+        "witnesses": 1,
+        "terms": 1,
+        "peak": 1
+      },
+      "polynomial": {
+        "1": 1
+      },
+      "connected_polynomial": {
+        "1": 1
+      },
+      "small_block_counterexamples": [],
+      "factorization_counterexamples": [],
+      "nontrivial_support_factorizations": 0,
+      "connected_size_histogram": {},
+      "coefficient_map_sha256": "0a826aeef9d8983430554881ac6a07e58a19641710df75357e601968c5dbb3d2",
+      "q3": 3,
+      "q4": 4,
+      "seconds": 0.002147620999494393
+    },
+    {
+      "n": 3,
+      "engine": {
+        "n": 3,
+        "witnesses": 1,
+        "terms": 1,
+        "peak": 1
+      },
+      "polynomial": {
+        "1": 1
+      },
+      "connected_polynomial": {
+        "1": 1
+      },
+      "small_block_counterexamples": [],
+      "factorization_counterexamples": [],
+      "nontrivial_support_factorizations": 0,
+      "connected_size_histogram": {},
+      "coefficient_map_sha256": "371a2113a7e7d20ea91c11f356815909ff3d94bffa0e270dbceb02d9d84d2a85",
+      "q3": 3,
+      "q4": 4,
+      "seconds": 0.0014960270000301534
+    },
+    {
+      "n": 4,
+      "engine": {
+        "n": 4,
+        "witnesses": 2,
+        "terms": 3,
+        "peak": 3
+      },
+      "polynomial": {
+        "1": -1,
+        "2": 2
+      },
+      "connected_polynomial": {
+        "1": -1
+      },
+      "small_block_counterexamples": [],
+      "factorization_counterexamples": [],
+      "nontrivial_support_factorizations": 2,
+      "connected_size_histogram": {},
+      "coefficient_map_sha256": "ecdf3d3a8886d5abb973f3658b172a10df93ecd4a1c0215448840371e298515c",
+      "q3": 15,
+      "q4": 28,
+      "seconds": 0.0014726019999216078
+    },
+    {
+      "n": 5,
+      "engine": {
+        "n": 5,
+        "witnesses": 5,
+        "terms": 6,
+        "peak": 6
+      },
+      "polynomial": {
+        "1": -4,
+        "2": 5
+      },
+      "connected_polynomial": {
+        "1": -4
+      },
+      "small_block_counterexamples": [],
+      "factorization_counterexamples": [],
+      "nontrivial_support_factorizations": 5,
+      "connected_size_histogram": {},
+      "coefficient_map_sha256": "625d3028dc2915baaa96012a49cc9d3d8f9666d1a7e4745dc6035eae3ed25153",
+      "q3": 33,
+      "q4": 64,
+      "seconds": 0.0022819179994257865
+    },
+    {
+      "n": 6,
+      "engine": {
+        "n": 6,
+        "witnesses": 8,
+        "terms": 15,
+        "peak": 15
+      },
+      "polynomial": {
+        "1": -1,
+        "2": -3,
+        "3": 5
+      },
+      "connected_polynomial": {
+        "1": -1
+      },
+      "small_block_counterexamples": [],
+      "factorization_counterexamples": [],
+      "nontrivial_support_factorizations": 14,
+      "connected_size_histogram": {},
+      "coefficient_map_sha256": "4ed93a773b937ac76cab83388efb6f4bf013b5ad99e152568f9e133c6e8b3add",
+      "q3": 105,
+      "q4": 268,
+      "seconds": 0.003020763000677107
+    },
+    {
+      "n": 7,
+      "engine": {
+        "n": 7,
+        "witnesses": 21,
+        "terms": 36,
+        "peak": 36
+      },
+      "polynomial": {
+        "1": 15,
+        "2": -35,
+        "3": 21
+      },
+      "connected_polynomial": {
+        "1": 15
+      },
+      "small_block_counterexamples": [],
+      "factorization_counterexamples": [],
+      "nontrivial_support_factorizations": 35,
+      "connected_size_histogram": {},
+      "coefficient_map_sha256": "61da6e5ae13f663506472dfa367197e5dde9c4bdddbcc989a2cd517b8e0af041",
+      "q3": 297,
+      "q4": 844,
+      "seconds": 0.005578326999966521
+    },
+    {
+      "n": 8,
+      "engine": {
+        "n": 8,
+        "witnesses": 42,
+        "terms": 91,
+        "peak": 91
+      },
+      "polynomial": {
+        "1": 23,
+        "2": -36,
+        "4": 14
+      },
+      "connected_polynomial": {
+        "1": 23
+      },
+      "small_block_counterexamples": [],
+      "factorization_counterexamples": [],
+      "nontrivial_support_factorizations": 90,
+      "connected_size_histogram": {},
+      "coefficient_map_sha256": "098f1d9a5fd82d3cccd30703389f0d004f45c7b9fd25ed6e39a82ca4bc7ab1e9",
+      "q3": 879,
+      "q4": 3100,
+      "seconds": 0.012204744999507966
+    },
+    {
+      "n": 9,
+      "engine": {
+        "n": 9,
+        "witnesses": 96,
+        "terms": 232,
+        "peak": 232
+      },
+      "polynomial": {
+        "1": -41,
+        "2": 162,
+        "3": -204,
+        "4": 84
+      },
+      "connected_polynomial": {
+        "1": -41
+      },
+      "small_block_counterexamples": [],
+      "factorization_counterexamples": [],
+      "nontrivial_support_factorizations": 231,
+      "connected_size_histogram": {},
+      "coefficient_map_sha256": "a720226c607673dc63d49859730be8d73ad7a452cf21edcf3d95f857037225ae",
+      "q3": 2631,
+      "q4": 10876,
+      "seconds": 0.07181271399986144
+    },
+    {
+      "n": 10,
+      "engine": {
+        "n": 10,
+        "witnesses": 222,
+        "terms": 608,
+        "peak": 608
+      },
+      "polynomial": {
+        "1": -161,
+        "2": 465,
+        "3": -405,
+        "4": 60,
+        "5": 42
+      },
+      "connected_polynomial": {
+        "2": -5,
+        "1": -161
+      },
+      "small_block_counterexamples": [],
+      "factorization_counterexamples": [],
+      "nontrivial_support_factorizations": 602,
+      "connected_size_histogram": {
+        "(5, 5)": 5
+      },
+      "coefficient_map_sha256": "601fe5bdc66ee66fc8d2dd61a144230db71eee6fccee28ed88fce3ba8fb1b6c2",
+      "q3": 7833,
+      "q4": 39244,
+      "seconds": 0.4152833370008011
+    },
+    {
+      "n": 11,
+      "engine": {
+        "n": 11,
+        "witnesses": 495,
+        "terms": 1607,
+        "peak": 1607
+      },
+      "polynomial": {
+        "1": 12,
+        "2": -341,
+        "3": 990,
+        "4": -990,
+        "5": 330
+      },
+      "connected_polynomial": {
+        "1": 12,
+        "2": -22
+      },
+      "small_block_counterexamples": [],
+      "factorization_counterexamples": [],
+      "nontrivial_support_factorizations": 1584,
+      "connected_size_histogram": {
+        "(5, 6)": 22
+      },
+      "coefficient_map_sha256": "b374fdaf33de6f8b38756fd66d8bac331dd34945eefea2747c7e7c0995f08c27",
+      "q3": 23697,
+      "q4": 142432,
+      "seconds": 0.10800271399966732
+    },
+    {
+      "n": 12,
+      "engine": {
+        "n": 12,
+        "witnesses": 1177,
+        "terms": 4351,
+        "peak": 4351
+      },
+      "polynomial": {
+        "1": 827,
+        "2": -3384,
+        "3": 5066,
+        "4": -3135,
+        "5": 495,
+        "6": 132
+      },
+      "connected_polynomial": {
+        "2": 30,
+        "1": 827
+      },
+      "small_block_counterexamples": [],
+      "factorization_counterexamples": [],
+      "nontrivial_support_factorizations": 4272,
+      "connected_size_histogram": {
+        "(5, 7)": 48,
+        "(6, 6)": 30
+      },
+      "coefficient_map_sha256": "de8d2e47df0b669c8c079ab2806b3c94ed2abdf390f5ea5fd635091d10098fb9",
+      "q3": 71385,
+      "q4": 518380,
+      "seconds": 0.563993226999628
+    },
+    {
+      "n": 13,
+      "engine": {
+        "n": 13,
+        "witnesses": 2717,
+        "terms": 11883,
+        "peak": 11883
+      },
+      "polynomial": {
+        "1": 807,
+        "2": -2392,
+        "3": 585,
+        "4": 4004,
+        "5": -4290,
+        "6": 1287
+      },
+      "connected_polynomial": {
+        "2": 403,
+        "1": 807
+      },
+      "small_block_counterexamples": [],
+      "factorization_counterexamples": [],
+      "nontrivial_support_factorizations": 11648,
+      "connected_size_histogram": {
+        "(5, 8)": 91,
+        "(6, 7)": 143
+      },
+      "coefficient_map_sha256": "87e79c7f346120b7e91ba6c34b2c10a86384340e88d785a17e27bb7ac539dfe3",
+      "q3": 216765,
+      "q4": 1906012,
+      "seconds": 3.2308284299997467
+    },
+    {
+      "n": 14,
+      "engine": {
+        "n": 14,
+        "witnesses": 6435,
+        "terms": 33113,
+        "peak": 33113
+      },
+      "polynomial": {
+        "1": -3599,
+        "2": 18095,
+        "3": -38402,
+        "4": 40495,
+        "5": -20020,
+        "6": 3003,
+        "7": 429
+      },
+      "connected_polynomial": {
+        "2": 546,
+        "1": -3599
+      },
+      "small_block_counterexamples": [],
+      "factorization_counterexamples": [],
+      "nontrivial_support_factorizations": 32461,
+      "connected_size_histogram": {
+        "(5, 9)": 154,
+        "(6, 8)": 308,
+        "(7, 7)": 189
+      },
+      "coefficient_map_sha256": "1bf337c610e25fd974db8ffbbe249e7c2de969e2383ef5be610bdb4f4ffdce7a",
+      "q3": 657849,
+      "q4": 7012660,
+      "seconds": 22.395764994000274,
+      "prediction_matches": true,
+      "prediction_sha256": "a130caf443f5d102c3b94bad0c40175d4e0ca85374635d24c9fdcf601f9db133"
+    }
+  ],
+  "exact_map_control_lengths": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ]
+}

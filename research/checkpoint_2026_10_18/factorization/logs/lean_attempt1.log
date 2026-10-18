@@ -1,0 +1,16 @@
+⚠ [719/791] Replayed LC004.SignedConstraints
+warning: ././././LC004/SignedConstraints.lean:43:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ././././LC004/SignedConstraints.lean:104:0: 'LC004.signedEval_addConstraint' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:105:0: 'LC004.signedEval_unionTerms' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:106:0: 'LC004.signedEval_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:107:0: 'LC004.signed_constraint_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [790/791] Running Mathlib.Algebra.Order.Prod
+error: no such file or directory (error code: 2)
+  file: ././.lake/packages/mathlib/././Mathlib/Algebra/Order/Prod.lean
+✖ [791/791] Running LC004.CoefficientFactorization
+error: ././././LC004/CoefficientFactorization.lean: bad import 'Mathlib.Algebra.Order.Prod'
+Some required builds logged failures:
+- Mathlib.Algebra.Order.Prod
+- LC004.CoefficientFactorization
+error: build failed

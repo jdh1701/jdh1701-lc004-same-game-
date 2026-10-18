@@ -1,0 +1,2 @@
+{"n": 15, "created_utc": "2026-10-18T09:40:26.844557+00:00", "rival": "connected polynomial remains quadratic", "structural_alternative": "degree three is permitted, but not required, by five positions per block", "quadratic_connected": {"1": -7555, "2": -3390}, "quadratic_polynomial": {"2": 36390, "3": -62420, "4": 38500, "5": 7098, "6": -17017, "7": 5005, "1": -7555}, "quadratic_q3": 2003361, "quadratic_q4": 25981780, "binary_count": 25778}
+sha256=54da44b0d8441b8d54bc2b2e6312940bec709c12779d0c0179187a486ebcf51f

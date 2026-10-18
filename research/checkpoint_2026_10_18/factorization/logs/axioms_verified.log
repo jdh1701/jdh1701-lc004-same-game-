@@ -1,0 +1,20 @@
+LC004.collected_union_product.{u_1, u_2} {P : Type u_1} {Q : Type u_2} [Fintype P] [Fintype Q] [SemilatticeSup P]
+  [SemilatticeSup Q] (ps : List P) (qs : List Q) (x : P) (y : Q) :
+  LC004.collectedCoeff
+      (LC004.unionTerms (fun x1 x2 => x1 ⊔ x2) (List.flatMap (fun p => List.map (fun q => (p, q)) qs) ps)) (x, y) =
+    LC004.collectedCoeff (LC004.unionTerms (fun x1 x2 => x1 ⊔ x2) ps) x *
+      LC004.collectedCoeff (LC004.unionTerms (fun x1 x2 => x1 ⊔ x2) qs) y
+LC004.pairTriple_iff_blocks.{u_1} {α : Type u_1} [LinearOrder α] [Finite α] (r s : Setoid α) (hrs : r ≤ s)
+  (hs : LC004.IsNoncrossing s) :
+  LC004.PairTriplePartition r ↔ ∀ (a : α), LC004.PairTriplePartition (LC004.restrictToBlock r s a)
+'LC004.zetaSum_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.zetaSum_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.coefficient_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.zetaSum_collectedCoeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.collected_union_zeta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.collected_union_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.noncrossing_restrict' depends on axioms: [propext]
+'LC004.noncrossing_iff_blocks' depends on axioms: [propext]
+'LC004.blockRestriction_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.restrictedBlockSize' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.pairTriple_iff_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]

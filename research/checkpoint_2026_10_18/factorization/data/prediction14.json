@@ -1,0 +1,26 @@
+{
+  "n": 14,
+  "created_utc": "2026-10-18T09:32:00.647206+00:00",
+  "assumptions": [
+    "component factorization",
+    "minimum five positions per block in nontrivial connected support"
+  ],
+  "inputs": "polynomials through 13 and known one-/two-colour values at 14",
+  "binary_count": 12350,
+  "connected_polynomial": {
+    "1": -3599,
+    "2": 546
+  },
+  "polynomial": {
+    "2": 18095,
+    "3": -38402,
+    "4": 40495,
+    "5": -20020,
+    "6": 3003,
+    "7": 429,
+    "1": -3599
+  },
+  "q3": 657849,
+  "q4": 7012660,
+  "status": "conditional prediction recorded before n=14 computations"
+}

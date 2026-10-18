@@ -71,3 +71,14 @@ jobs:
           /tmp/samegame-raw-counter 3 13 > research/checkpoint_2026_10_18/bridge/logs/raw_q3_n13.log
           /tmp/samegame-raw-counter 4 13 > research/checkpoint_2026_10_18/bridge/logs/raw_q4_n13.log
           python3 research/checkpoint_2026_10_18/bridge/check_raw_counts.py
+
+      - name: Audit factorization lemmas and threshold predictions
+        run: |
+          lake env lean research/checkpoint_2026_10_18/factorization/PrintAxioms.lean
+          python3 research/checkpoint_2026_10_18/factorization/audit.py
+          c++ -std=c++17 -O3 -Wall -Wextra -pedantic research/checkpoint_2026_10_18/factorization/partition_counter.cpp -o /tmp/samegame-partition-counter
+          python3 research/checkpoint_2026_10_18/factorization/test_engine.py
+          c++ -std=c++17 -O3 -Wall -Wextra -pedantic research/checkpoint_2026_10_18/factorization/raw_counter15.cpp -o /tmp/samegame-raw-counter15
+          /tmp/samegame-raw-counter15 3 15 > research/checkpoint_2026_10_18/factorization/logs/raw_q3_n15.log
+          /tmp/samegame-raw-counter15 4 14 > research/checkpoint_2026_10_18/factorization/logs/raw_q4_n14.log
+          python3 research/checkpoint_2026_10_18/factorization/check_raw.py

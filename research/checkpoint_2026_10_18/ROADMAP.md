@@ -3,6 +3,8 @@
 Checkpoint: 2026-10-18. Initial base: `7fe93b8d01742104ef0479f3e0988db532fef644`.
 Updated by the [raw/grammar and connected-coefficient checkpoint](bridge/STATUS.md),
 whose base is `c04443b029ff85da4fad7ecc65f2d6e29f9aabb2`.
+The subsequent [factorization checkpoint](factorization/STATUS.md) adds formal
+coefficient and witness-decomposition lemmas and tests lengths 14 and 15.
 
 The target is W(q,n), the number of length-n words over q labelled colours
 that can be completely removed by legal maximal-run deletions. Count each
@@ -78,6 +80,13 @@ independent maximal-run enumeration also confirmed its three- and four-colour
 values. Neither candidate is yet a general theorem. The simpler linear
 connected-weight model was falsified at length 10. See `bridge/STATUS.md` for
 the exact hypotheses, evidence, and next proof obligations.
+
+Factorization now has an explicit mathematical argument and Lean proofs of
+its algebraic and witness-decomposition ingredients. The partition-ideal
+product isomorphism, coefficient transport, and generator identification
+remain formal assembly obligations. Therefore F is still open and the fixed
+stage count remains 4 verified, 1 partial, 4 open. See
+`factorization/FACTORIZATION_ARGUMENT.md` for that boundary.
 
 ## A shortcut ruled out now
 

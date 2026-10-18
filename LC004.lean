@@ -73,3 +73,5 @@ import LC004.PartitionCounting
 import LC004.CrossingJoin
 import LC004.GrammarInsertion
 import LC004.OrdinaryGrammarComplete
+import LC004.CoefficientFactorization
+import LC004.NoncrossingRestriction

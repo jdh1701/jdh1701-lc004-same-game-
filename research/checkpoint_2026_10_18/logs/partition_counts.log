@@ -1,0 +1,14 @@
+{"n": 0, "witnesses": 1, "signed_join_terms": 1, "peak_terms": 1, "polynomial": {"0": 1}, "q3": 1, "seconds": 0.00010603999999148073}
+{"n": 1, "witnesses": 0, "signed_join_terms": 0, "peak_terms": 0, "polynomial": {}, "q3": 0, "seconds": 2.8774000156772672e-05}
+{"n": 2, "witnesses": 1, "signed_join_terms": 1, "peak_terms": 1, "polynomial": {"1": 1}, "q3": 3, "seconds": 9.459199986849853e-05}
+{"n": 3, "witnesses": 1, "signed_join_terms": 1, "peak_terms": 1, "polynomial": {"1": 1}, "q3": 3, "seconds": 9.490299999015406e-05}
+{"n": 4, "witnesses": 2, "signed_join_terms": 3, "peak_terms": 3, "polynomial": {"1": -1, "2": 2}, "q3": 15, "seconds": 0.00030108400005701697}
+{"n": 5, "witnesses": 5, "signed_join_terms": 6, "peak_terms": 6, "polynomial": {"1": -4, "2": 5}, "q3": 33, "seconds": 0.0012410120000367897}
+{"n": 6, "witnesses": 8, "signed_join_terms": 15, "peak_terms": 15, "polynomial": {"1": -1, "2": -3, "3": 5}, "q3": 105, "seconds": 0.007209833999922921}
+{"n": 7, "witnesses": 21, "signed_join_terms": 36, "peak_terms": 36, "polynomial": {"1": 15, "2": -35, "3": 21}, "q3": 297, "seconds": 0.049358760999894}
+{"n": 8, "witnesses": 42, "signed_join_terms": 91, "peak_terms": 91, "polynomial": {"1": 23, "2": -36, "4": 14}, "q3": 879, "seconds": 0.5523515350000707}
+{"n": 9, "witnesses": 96, "signed_join_terms": 232, "peak_terms": 232, "polynomial": {"1": -41, "2": 162, "3": -204, "4": 84}, "q3": 2631, "seconds": 0.06860501300002397}
+{"n": 10, "witnesses": 222, "signed_join_terms": 608, "peak_terms": 608, "polynomial": {"1": -161, "2": 465, "3": -405, "4": 60, "5": 42}, "q3": 7833, "seconds": 0.5326719039999261}
+{"n": 11, "witnesses": 495, "signed_join_terms": 1607, "peak_terms": 1607, "polynomial": {"1": 12, "2": -341, "3": 990, "4": -990, "5": 330}, "q3": 23697, "seconds": 3.1296983670001737}
+{"n": 12, "witnesses": 1177, "signed_join_terms": 4351, "peak_terms": 4351, "polynomial": {"1": 827, "2": -3384, "3": 5066, "4": -3135, "5": 495, "6": 132}, "q3": 71385, "seconds": 20.753272361999734}
+{"checks": {"equality_types": 5296, "alphabet_evaluations": 117}, "failures": 0}

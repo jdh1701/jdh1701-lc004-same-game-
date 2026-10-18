@@ -1,0 +1,47 @@
+✖ [719/720] Building LC004.GrammarNormalForm
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /tmp/lean-4.19.0-linux/bin/lean ././././LC004/GrammarNormalForm.lean -R ./././. -o ././.lake/build/lib/lean/LC004/GrammarNormalForm.olean -i ././.lake/build/lib/lean/LC004/GrammarNormalForm.ilean -c ././.lake/build/ir/LC004/GrammarNormalForm.c --json
+error: ././././LC004/GrammarNormalForm.lean:34:60: function expected at
+  ihz
+term has type
+  FirstBlock (v✝ ++ v)
+error: ././././LC004/GrammarNormalForm.lean:36:65: function expected at
+  ihz
+term has type
+  FirstBlock (z✝ ++ v)
+info: ././././LC004/GrammarNormalForm.lean:65:0: 'LC004.clickGrammar_iff_firstBlock' depends on axioms: [propext, sorryAx]
+info: ././././LC004/GrammarNormalForm.lean:66:0: 'LC004.clickGrammar_map' depends on axioms: [propext]
+error: Lean exited with code 1
+✖ [720/720] Building LC004.SignedConstraints
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /tmp/lean-4.19.0-linux/bin/lean ././././LC004/SignedConstraints.lean -R ./././. -o ././.lake/build/lib/lean/LC004/SignedConstraints.olean -i ././.lake/build/lib/lean/LC004/SignedConstraints.ilean -c ././.lake/build/ir/LC004/SignedConstraints.c --json
+info: ././././LC004/SignedConstraints.lean:50:16: Try this: ring_nf
+error: ././././LC004/SignedConstraints.lean:35:55: unsolved goals
+case neg
+C : Type u_1
+W : Type u_2
+sat : C → W → Prop
+inst✝ : DecidableRel sat
+join : C → C → C
+hjoin : ∀ (p r : C) (w : W), sat (join p r) w ↔ sat p w ∧ sat r w
+p : C
+terms : SignedTerms C
+w : W
+hmap : signedEval sat (List.map (fun t => (-t.1, join t.2 p)) terms) w = if sat p w then -signedEval sat terms w else 0
+h✝ : ¬sat p w
+⊢ signedEval sat terms w = (List.map (fun t => if sat t.2 w then t.1 else 0) terms).sum
+error: ././././LC004/SignedConstraints.lean:70:19: unexpected token 'universe'; expected '_' or identifier
+error: ././././LC004/SignedConstraints.lean:70:27: unexpected token ':'; expected identifier
+error: ././././LC004/SignedConstraints.lean:71:18: unexpected token ','; expected identifier
+error: ././././LC004/SignedConstraints.lean:79:29: unexpected token 'universe'; expected '_' or identifier
+error: ././././LC004/SignedConstraints.lean:79:37: unexpected token ':'; expected identifier
+error: ././././LC004/SignedConstraints.lean:80:18: unexpected token ','; expected identifier
+error: ././././LC004/SignedConstraints.lean:97:19: unexpected token 'universe'; expected '_' or identifier
+error: ././././LC004/SignedConstraints.lean:97:27: unexpected token ':'; expected identifier
+info: ././././LC004/SignedConstraints.lean:103:0: 'LC004.signedEval_addConstraint' depends on axioms: [propext, sorryAx, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:104:0: 'LC004.signedEval_unionTerms' depends on axioms: [propext, sorryAx, Quot.sound]
+error: ././././LC004/SignedConstraints.lean:105:14: unknown constant 'signedEval_union_count'
+error: ././././LC004/SignedConstraints.lean:106:14: unknown constant 'signed_constraint_count'
+error: Lean exited with code 1
+Some required builds logged failures:
+- LC004.GrammarNormalForm
+- LC004.SignedConstraints
+error: build failed

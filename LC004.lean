@@ -67,3 +67,7 @@ import LC004.FourWayCertificate
 import LC004.OrdinaryFinal
 import LC004.PathMonotonicity
 import LC004.HigherObstructions
+import LC004.GrammarNormalForm
+import LC004.SignedConstraints
+import LC004.PartitionCounting
+import LC004.CrossingJoin

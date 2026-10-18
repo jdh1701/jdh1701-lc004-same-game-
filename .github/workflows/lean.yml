@@ -54,3 +54,10 @@ jobs:
           python3 research/checkpoint_2026_10_17/semantics/check_witnesses.py
           python3 research/checkpoint_2026_10_17/semantics/chain_family.py --kmax 5
           python3 research/checkpoint_2026_10_17/semantics/audit.py
+
+      - name: Audit partition counting and overlap controls
+        run: |
+          lake env lean research/checkpoint_2026_10_18/PrintAxioms.lean
+          python3 research/checkpoint_2026_10_18/partition_count.py --max-n 12 --word-check-n 8
+          python3 research/checkpoint_2026_10_18/join_controls.py
+          python3 research/checkpoint_2026_10_18/audit.py

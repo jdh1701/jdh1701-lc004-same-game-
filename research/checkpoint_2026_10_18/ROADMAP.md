@@ -5,6 +5,9 @@ Updated by the [raw/grammar and connected-coefficient checkpoint](bridge/STATUS.
 whose base is `c04443b029ff85da4fad7ecc65f2d6e29f9aabb2`.
 The subsequent [factorization checkpoint](factorization/STATUS.md) adds formal
 coefficient and witness-decomposition lemmas and tests lengths 14 and 15.
+The [cancellation checkpoint](cancellation/STATUS.md) develops the four-gap
+mechanism, proves its conditional coefficient machinery, and tests the exact
+small-block formula and its failure at size five.
 
 The target is W(q,n), the number of length-n words over q labelled colours
 that can be completely removed by legal maximal-run deletions. Count each
@@ -87,6 +90,12 @@ product isomorphism, coefficient transport, and generator identification
 remain formal assembly obligations. Therefore F is still open and the fixed
 stage count remains 4 verified, 1 partial, 4 open. See
 `factorization/FACTORIZATION_ARGUMENT.md` for that boundary.
+
+The minimum-five support condition now has a proposed cyclic-gap cancellation
+argument in `cancellation/ARGUMENT.md`. Its algebraic two-branch theorem and
+chord-separation lemma are compiled in Lean. The actual forced-pairing/gap
+invariance and partition coefficient transport are still formal obligations;
+the general minimum-five theorem must not be counted as Lean verified.
 
 ## A shortcut ruled out now
 

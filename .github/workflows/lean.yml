@@ -82,3 +82,9 @@ jobs:
           /tmp/samegame-raw-counter15 3 15 > research/checkpoint_2026_10_18/factorization/logs/raw_q3_n15.log
           /tmp/samegame-raw-counter15 4 14 > research/checkpoint_2026_10_18/factorization/logs/raw_q4_n14.log
           python3 research/checkpoint_2026_10_18/factorization/check_raw.py
+
+      - name: Audit small-block cancellation machinery
+        run: |
+          lake env lean research/checkpoint_2026_10_18/cancellation/PrintAxioms.lean
+          python3 research/checkpoint_2026_10_18/cancellation/test_small_blocks.py
+          python3 research/checkpoint_2026_10_18/cancellation/audit.py

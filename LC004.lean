@@ -75,3 +75,5 @@ import LC004.GrammarInsertion
 import LC004.OrdinaryGrammarComplete
 import LC004.CoefficientFactorization
 import LC004.NoncrossingRestriction
+import LC004.FourBlockCancellation
+import LC004.ChordBarrier

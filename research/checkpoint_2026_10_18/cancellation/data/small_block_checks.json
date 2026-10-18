@@ -1,0 +1,30 @@
+{
+  "max_n": 10,
+  "checks": {
+    "rotation_support_checks": 9285,
+    "block_2_coefficient_checks": 46113,
+    "crossing_zero_checks": 79990,
+    "block_3_coefficient_checks": 38639,
+    "block_4_coefficient_checks": 20614,
+    "four_block_pairing_checks": 20614
+  },
+  "size_five_counterexample": {
+    "n": 10,
+    "partition": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      1
+    ],
+    "actual": -1,
+    "small_block_prediction": 0
+  },
+  "unexpected_failures": 0,
+  "seconds": 3.566945074000614
+}

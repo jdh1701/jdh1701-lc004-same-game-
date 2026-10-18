@@ -1,0 +1,44 @@
+⚠ [719/792] Replayed LC004.SignedConstraints
+warning: ././././LC004/SignedConstraints.lean:43:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ././././LC004/SignedConstraints.lean:104:0: 'LC004.signedEval_addConstraint' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:105:0: 'LC004.signedEval_unionTerms' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:106:0: 'LC004.signedEval_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:107:0: 'LC004.signed_constraint_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [790/792] Replayed LC004.PartitionCounting
+info: ././././LC004/PartitionCounting.lean:58:0: 'LC004.respects_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionCounting.lean:59:0: 'LC004.card_partitionEvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionCounting.lean:60:0: 'LC004.partition_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [791/792] Replayed LC004.NoncrossingRestriction
+info: ././././LC004/NoncrossingRestriction.lean:90:0: 'LC004.noncrossing_iff_blocks' depends on axioms: [propext]
+info: ././././LC004/NoncrossingRestriction.lean:91:0: 'LC004.blockRestriction_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/NoncrossingRestriction.lean:92:0: 'LC004.pairTriple_iff_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [792/792] Building LC004.ChordBarrier
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /tmp/lean-4.19.0-linux/bin/lean ././././LC004/ChordBarrier.lean -R ./././. -o ././.lake/build/lib/lean/LC004/ChordBarrier.olean -i ././.lake/build/lib/lean/LC004/ChordBarrier.ilean -c ././.lake/build/ir/LC004/ChordBarrier.c --json
+error: ././././LC004/ChordBarrier.lean:20:26: unknown identifier 'a'
+error: ././././LC004/ChordBarrier.lean:22:39: unknown identifier 'h'
+error: ././././LC004/ChordBarrier.lean:23:37: tactic 'cases' failed, nested error:
+tactic 'induction' failed, recursor 'Or.casesOn' can only eliminate into Prop
+case right.refine_1
+α : Type u_1
+inst✝ : LinearOrder α
+r : Setoid α
+hr : IsNoncrossing r
+a b x✝¹ y✝ : α
+hab : r a b
+hxy✝ : r x✝¹ y✝
+hax✝ : ¬r a x✝¹
+hay✝ : ¬r a y✝
+x y : α
+hxy : r x y
+hax : ¬r a x
+hay : ¬r a y
+hx : a < x ∧ x < b
+hby : b ≤ y
+x✝ : b < y ∨ b = y
+⊢ Decidable (y < b)
+info: ././././LC004/ChordBarrier.lean:28:0: 'LC004.noncrossing_interval_barrier' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required builds logged failures:
+- LC004.ChordBarrier
+error: build failed

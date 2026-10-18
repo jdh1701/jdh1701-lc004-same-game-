@@ -8,6 +8,9 @@ coefficient and witness-decomposition lemmas and tests lengths 14 and 15.
 The [cancellation checkpoint](cancellation/STATUS.md) develops the four-gap
 mechanism, proves its conditional coefficient machinery, and tests the exact
 small-block formula and its failure at size five.
+The [four-gap witness checkpoint](gaps/STATUS.md) constructs regional witnesses,
+discharges the corresponding intersection-invariance condition, and proves
+regional four-position cancellation at arbitrary ordered board positions.
 
 The target is W(q,n), the number of length-n words over q labelled colours
 that can be completely removed by legal maximal-run deletions. Count each
@@ -94,8 +97,12 @@ stage count remains 4 verified, 1 partial, 4 open. See
 The minimum-five support condition now has a proposed cyclic-gap cancellation
 argument in `cancellation/ARGUMENT.md`. Its algebraic two-branch theorem and
 chord-separation lemma are compiled in Lean. The actual forced-pairing/gap
-invariance and partition coefficient transport are still formal obligations;
-the general minimum-five theorem must not be counted as Lean verified.
+invariance is now proved for the complete specified regional witness families
+in `FourGapWitnesses.lean` and `RegionalCancellation.lean`. Identification with
+the full-board witness family, its exhaustive branch classification, and
+partition coefficient transport are still formal obligations. The general
+minimum-five theorem must not be counted as Lean verified. The new checkpoint
+adds 24 named theorems, including helpers, without changing the major-stage count.
 
 ## A shortcut ruled out now
 

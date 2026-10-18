@@ -88,3 +88,9 @@ jobs:
           lake env lean research/checkpoint_2026_10_18/cancellation/PrintAxioms.lean
           python3 research/checkpoint_2026_10_18/cancellation/test_small_blocks.py
           python3 research/checkpoint_2026_10_18/cancellation/audit.py
+
+      - name: Audit four-gap witness construction and regional cancellation
+        run: |
+          lake env lean research/checkpoint_2026_10_18/gaps/PrintAxioms.lean > /tmp/samegame-gaps-axioms.log
+          cat /tmp/samegame-gaps-axioms.log
+          python3 research/checkpoint_2026_10_18/gaps/audit.py --axioms-log /tmp/samegame-gaps-axioms.log

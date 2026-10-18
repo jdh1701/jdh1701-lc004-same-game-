@@ -4,6 +4,12 @@ This is a proposed general proof in the partition-witness model, with its
 formal boundary identified below. It is not an end-to-end Lean theorem for
 the existing generator or raw game. No novelty claim has been established.
 
+Later formal progress is recorded in [the four-gap checkpoint](../gaps/STATUS.md):
+the regional witness intersection and positional regional cancellation are
+now proved. The boundary below describes the earlier checkpoint; locality,
+full-board/product transport, complete branch identification, and the final
+minimum-five assembly remain open.
+
 ## Definitions and proposed conclusion
 
 Let V_n be all noncrossing partitions of n cyclically ordered positions into

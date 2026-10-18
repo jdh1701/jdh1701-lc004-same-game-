@@ -2,6 +2,11 @@
 
 Date: 2026-10-18. Base commit: `f2eef1f724258de2e6a08ffd83dfeb77f9fa5ab2`.
 
+Subsequent update: the [four-gap witness checkpoint](../gaps/STATUS.md)
+discharges intersection invariance for the complete specified regional
+witness families and their actual board-position geometry. This report
+retains the status at the earlier base; full-board transport remains open.
+
 The general enumeration problem remains unresolved. The fixed roadmap still
 has **9 major stages: 4 verified, 1 partial, 4 open**. This checkpoint does
 not close another stage or claim an end-to-end small-block theorem in Lean.

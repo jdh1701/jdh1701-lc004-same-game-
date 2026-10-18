@@ -1,0 +1,53 @@
+⚠ [719/793] Replayed LC004.SignedConstraints
+warning: ././././LC004/SignedConstraints.lean:43:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ././././LC004/SignedConstraints.lean:104:0: 'LC004.signedEval_addConstraint' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:105:0: 'LC004.signedEval_unionTerms' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:106:0: 'LC004.signedEval_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:107:0: 'LC004.signed_constraint_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [790/793] Replayed LC004.PartitionCounting
+info: ././././LC004/PartitionCounting.lean:58:0: 'LC004.respects_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionCounting.lean:59:0: 'LC004.card_partitionEvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionCounting.lean:60:0: 'LC004.partition_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [791/793] Replayed LC004.NoncrossingRestriction
+info: ././././LC004/NoncrossingRestriction.lean:90:0: 'LC004.noncrossing_iff_blocks' depends on axioms: [propext]
+info: ././././LC004/NoncrossingRestriction.lean:91:0: 'LC004.blockRestriction_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/NoncrossingRestriction.lean:92:0: 'LC004.pairTriple_iff_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [792/793] Replayed LC004.ChordBarrier
+info: ././././LC004/ChordBarrier.lean:29:0: 'LC004.noncrossing_interval_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [793/793] Building LC004.PairGapDecomposition
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /tmp/lean-4.19.0-linux/bin/lean ././././LC004/PairGapDecomposition.lean -R ./././. -o ././.lake/build/lib/lean/LC004/PairGapDecomposition.olean -i ././.lake/build/lib/lean/LC004/PairGapDecomposition.ilean -c ././.lake/build/ir/LC004/PairGapDecomposition.c --json
+error: ././././LC004/PairGapDecomposition.lean:46:8: tactic 'rewrite' failed, motive is not type correct:
+  fun _a => (if _a then 1 else 2) = if a < y ∧ y < b then 1 else 2
+Error: application type mismatch
+  @ite ℕ _a instDecidableAnd
+argument
+  instDecidableAnd
+has type
+  Decidable (a < x ∧ x < b) : Type
+but is expected to have type
+  Decidable _a : Type
+
+Explanation: The rewrite tactic rewrites an expression 'e' using an equality 'a = b' by the following process. First, it looks for all 'a' in 'e'. Second, it tries to abstract these occurrences of 'a' to create a function 'm := fun _a => ...', called the *motive*, with the property that 'm a' is definitionally equal to 'e'. Third, we observe that 'congrArg' implies that 'm a = m b', which can be used with lemmas such as 'Eq.mpr' to change the goal. However, if 'e' depends on specific properties of 'a', then the motive 'm' might not typecheck.
+
+Possible solutions: use rewrite's 'occs' configuration option to limit which occurrences are rewritten, or use 'simp' or 'conv' mode, which have strategies for certain kinds of dependencies (these tactics can handle proofs and 'Decidable' instances whose types depend on the rewritten term, and 'simp' can apply user-defined '@[congr]' theorems as well).
+case neg
+n : ℕ
+r : Setoid (Fin n)
+hr : IsNoncrossing r
+a b : Fin n
+hp : IsPairBlock r a b
+x y : Fin n
+hxy : r x y
+hpair : r a b
+hend : x = a ∨ x = b ↔ y = a ∨ y = b
+hx : ¬(x = a ∨ x = b)
+hy : ¬(y = a ∨ y = b)
+hax : ¬r a x
+hay : ¬r a y
+hi : a < x ∧ x < b ↔ a < y ∧ y < b
+⊢ (if a < x ∧ x < b then 1 else 2) = if a < y ∧ y < b then 1 else 2
+error: Lean exited with code 1
+Some required builds logged failures:
+- LC004.PairGapDecomposition
+error: build failed

@@ -1,0 +1,44 @@
+LC004.positional_regional_four_block_zero {n : ℕ} (a b c d : Fin n) (hab : a < b) (hbc : b < c) (hcd : c < d)
+  (p : Setoid (LC004.QuadRemainder a b c d)) (hp : ¬p ≤ Setoid.ker (LC004.remainderGapIndex a b c d)) :
+  LC004.collectedCoeff
+      (LC004.unionTerms (fun x1 x2 => x1 ⊔ x2) (LC004.regionalFourBlockFamily (LC004.remainderGapIndex a b c d)))
+      (⊤, p) =
+    0
+theorem LC004.positional_regional_four_block_zero : ∀ {n : ℕ} (a b c d : Fin n),
+  a < b →
+    b < c →
+      c < d →
+        ∀ (p : Setoid (LC004.QuadRemainder a b c d)),
+          ¬p ≤ Setoid.ker (LC004.remainderGapIndex a b c d) →
+            LC004.collectedCoeff
+                (LC004.unionTerms (fun x1 x2 => x1 ⊔ x2)
+                  (LC004.regionalFourBlockFamily (LC004.remainderGapIndex a b c d)))
+                (⊤, p) =
+              0 :=
+fun {n} a b c d hab hbc hcd p hp =>
+  LC004.regional_four_block_zero (LC004.remainderGapIndex a b c d)
+    (LC004.remainderGapIndex_noncrossing a b c d hab hbc hcd) p hp
+'LC004.pairGapPartition_noncrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.forced_pair_refines_gaps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.noncrossing_inf' depends on axioms: [propext]
+'LC004.forced_pair_gap_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.forced_two_pair_gap_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.splicePartitions_left' depends on axioms: [propext]
+'LC004.splicePartitions_right' depends on axioms: [propext]
+'LC004.splicePartitions_pairTriple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.witness_intersection_glue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.four_gap_witness_intersection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.witnessUnder_meet' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.witness_list_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.four_gap_join_coverage_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.four_gap_witness_coefficient_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.quadGapIndex_noncrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.remainderGapIndex_noncrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.adjacent_pair_remainder_regions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.nested_pair_remainder_regions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.forced_adjacent_pairs_remainder_refines' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.forced_nested_pairs_remainder_refines' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.positional_four_gap_intersection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.mem_regionalWitnessList' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.regional_four_block_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.positional_regional_four_block_zero' depends on axioms: [propext, Classical.choice, Quot.sound]

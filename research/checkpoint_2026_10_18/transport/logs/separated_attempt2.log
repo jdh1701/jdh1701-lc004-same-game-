@@ -1,0 +1,68 @@
+⚠ [719/813] Replayed LC004.SignedConstraints
+warning: ././././LC004/SignedConstraints.lean:43:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ././././LC004/SignedConstraints.lean:104:0: 'LC004.signedEval_addConstraint' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:105:0: 'LC004.signedEval_unionTerms' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:106:0: 'LC004.signedEval_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:107:0: 'LC004.signed_constraint_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [790/813] Replayed LC004.PartitionCounting
+info: ././././LC004/PartitionCounting.lean:58:0: 'LC004.respects_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionCounting.lean:59:0: 'LC004.card_partitionEvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionCounting.lean:60:0: 'LC004.partition_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [810/813] Replayed LC004.CoefficientFactorization
+info: ././././LC004/CoefficientFactorization.lean:138:0: 'LC004.zetaSum_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientFactorization.lean:139:0: 'LC004.coefficient_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientFactorization.lean:140:0: 'LC004.collected_union_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [811/813] Built LC004.CoefficientLocality
+✔ [812/813] Built LC004.CoefficientTransport
+✖ [813/813] Building LC004.SeparatedPartitions
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /tmp/lean-4.19.0-linux/bin/lean ././././LC004/SeparatedPartitions.lean -R ./././. -o ././.lake/build/lib/lean/LC004/SeparatedPartitions.olean -i ././.lake/build/lib/lean/LC004/SeparatedPartitions.ilean -c ././.lake/build/ir/LC004/SeparatedPartitions.c --json
+error: ././././LC004/SeparatedPartitions.lean:36:22: type mismatch
+  h (Sum.LiftRel.inl ?m.1322)
+has type
+  t (Sum.inl ?m.1289) (Sum.inl ?m.1290) : Prop
+but is expected to have type
+  ∀ ⦃y : α⦄, p.1 hxy y → (Setoid.comap Sum.inl t) hxy y : Prop
+error: ././././LC004/SeparatedPartitions.lean:36:57: type mismatch
+  h (Sum.LiftRel.inr ?m.1563)
+has type
+  t (Sum.inr ?m.1542) (Sum.inr ?m.1543) : Prop
+but is expected to have type
+  ∀ ⦃y : β⦄, p.2 hxy y → (Setoid.comap Sum.inr t) hxy y : Prop
+error: ././././LC004/SeparatedPartitions.lean:36:76: application type mismatch
+  Sum.LiftRel.inr hxy
+argument
+  hxy
+has type
+  β : Type u_2
+but is expected to have type
+  p.2 ?m.1542 ?m.1543 : Prop
+error: ././././LC004/SeparatedPartitions.lean:57:6: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  (Setoid.comap Sum.inl (separatedPartition q), Setoid.comap Sum.inr (separatedPartition q)).1
+α : Type u_1
+β : Type u_2
+p q : Setoid α × Setoid β
+h : (Setoid.comap Sum.inl (separatedPartition q), Setoid.comap Sum.inr (separatedPartition q)) = q
+hl : (Setoid.comap Sum.inl (separatedPartition q), Setoid.comap Sum.inr (separatedPartition q)).1 = q.1
+hr : (Setoid.comap Sum.inl (separatedPartition q), Setoid.comap Sum.inr (separatedPartition q)).2 = q.2
+⊢ p.1 ≤ Setoid.comap Sum.inl (separatedPartition q) ∧ p.2 ≤ Setoid.comap Sum.inr (separatedPartition q) ↔ p ≤ q
+error: ././././LC004/SeparatedPartitions.lean:75:14: function expected at
+  le_sup_left
+term has type
+  ?m.2036 ≤ ?m.2036 ⊔ ?m.2037
+error: ././././LC004/SeparatedPartitions.lean:77:14: function expected at
+  le_sup_right
+term has type
+  ?m.2111 ≤ ?m.2110 ⊔ ?m.2111
+error: ././././LC004/SeparatedPartitions.lean:80:14: function expected at
+  le_sup_left
+term has type
+  ?m.2513 ≤ ?m.2513 ⊔ ?m.2514
+error: ././././LC004/SeparatedPartitions.lean:82:14: function expected at
+  le_sup_right
+term has type
+  ?m.2588 ≤ ?m.2587 ⊔ ?m.2588
+error: Lean exited with code 1
+Some required builds logged failures:
+- LC004.SeparatedPartitions
+error: build failed

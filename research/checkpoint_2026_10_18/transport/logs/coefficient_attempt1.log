@@ -1,0 +1,27 @@
+⚠ [719/811] Replayed LC004.SignedConstraints
+warning: ././././LC004/SignedConstraints.lean:43:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ././././LC004/SignedConstraints.lean:104:0: 'LC004.signedEval_addConstraint' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:105:0: 'LC004.signedEval_unionTerms' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:106:0: 'LC004.signedEval_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:107:0: 'LC004.signed_constraint_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [809/811] Replayed LC004.CoefficientFactorization
+info: ././././LC004/CoefficientFactorization.lean:138:0: 'LC004.zetaSum_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientFactorization.lean:139:0: 'LC004.coefficient_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientFactorization.lean:140:0: 'LC004.collected_union_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [810/811] Building LC004.CoefficientLocality
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /tmp/lean-4.19.0-linux/bin/lean ././././LC004/CoefficientLocality.lean -R ./././. -o ././.lake/build/lib/lean/LC004/CoefficientLocality.olean -i ././.lake/build/lib/lean/LC004/CoefficientLocality.ilean -c ././.lake/build/ir/LC004/CoefficientLocality.c --json
+error: ././././LC004/CoefficientLocality.lean:41:50: unsolved goals
+P : Type u_1
+inst✝¹ : Fintype P
+inst✝ : SemilatticeSup P
+ps qs : List P
+p : P
+h : ∀ x ≤ p, (∃ r ∈ ps, r ≤ x) ↔ ∃ r ∈ qs, r ≤ x
+x : P
+hxp : x ≤ p
+⊢ (if ∃ p ∈ ps, p ≤ x then 1 else 0) = if ∃ p ∈ qs, p ≤ x then 1 else 0
+error: Lean exited with code 1
+Some required builds logged failures:
+- LC004.CoefficientLocality
+error: build failed

@@ -1,3 +1,12 @@
+# Later correction (2026-10-18)
+
+The subsequent [novelty audit](../transport/NOVELTY_AUDIT.md) found the
+length-14 and length-15 polynomials already listed in OEIS A323844, along
+with lengths 12–16. These numerical formulas are reproductions. Predictions
+below record internal computation order, not public priority or externally
+blinded tests. Historical data, hashes and logs are preserved. See the
+[current report](../transport/STATUS.md) for the formal boundary.
+
 # Factorization and the first permitted three-block threshold
 
 Date: 2026-10-18. Base: `5e3f6856df0395f88b69e6c0fcd52cf0da9c4519`.

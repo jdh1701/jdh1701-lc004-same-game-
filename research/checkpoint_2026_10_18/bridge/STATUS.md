@@ -1,3 +1,12 @@
+# Later correction (2026-10-18)
+
+The subsequent [novelty audit](../transport/NOVELTY_AUDIT.md) found the
+length-13 polynomial already listed in OEIS A323844, along with lengths
+12–16. The calculation below reproduces a published formula. Its prediction
+and holdout labels describe internal computation order, not public priority
+or an externally blinded test. Historical data, hashes and logs are preserved.
+See the [current report](../transport/STATUS.md) for the formal boundary.
+
 # Raw grammar bridge and connected counting hypotheses
 
 Date: 2026-10-18. Base commit: `c04443b029ff85da4fad7ecc65f2d6e29f9aabb2`.

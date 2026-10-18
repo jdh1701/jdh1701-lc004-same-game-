@@ -94,3 +94,10 @@ jobs:
           lake env lean research/checkpoint_2026_10_18/gaps/PrintAxioms.lean > /tmp/samegame-gaps-axioms.log
           cat /tmp/samegame-gaps-axioms.log
           python3 research/checkpoint_2026_10_18/gaps/audit.py --axioms-log /tmp/samegame-gaps-axioms.log
+
+      - name: Audit coefficient transport and prior-art correction
+        run: |
+          lake env lean research/checkpoint_2026_10_18/transport/PrintAxioms.lean > /tmp/samegame-transport-axioms.log
+          cat /tmp/samegame-transport-axioms.log
+          python3 research/checkpoint_2026_10_18/transport/check_prior_art.py
+          python3 research/checkpoint_2026_10_18/transport/audit.py --axioms-log /tmp/samegame-transport-axioms.log

@@ -19,11 +19,15 @@ The default build checks:
 * five- and six-run ambiguity obstructions, with every proper flag subset
   proved unique in both the run and ordinary-cell models.
 
-The [current research report](research/checkpoint_2026_10_18/gaps/STATUS.md)
-records four-gap witness construction and regional coefficient cancellation,
+The [current research report](research/checkpoint_2026_10_18/transport/STATUS.md)
+records coefficient locality and transport of regional cancellation to full-board partitions,
 with **9 major enumeration stages: 4 verified, 1 partial, 4 open**. The
 [enumeration roadmap](research/checkpoint_2026_10_18/ROADMAP.md) distinguishes
 this progress from a solution of the general winning-word counting problem.
+The [novelty audit](research/checkpoint_2026_10_18/transport/NOVELTY_AUDIT.md)
+identifies existing OEIS formulas matching our lengths 12–15. These numerical
+results are reproductions; originality of the specific cancellation law is
+unestablished. Its application to the entire witness family remains open.
 The [earlier semantic report](research/checkpoint_2026_10_17/semantics/STATUS.md)
 contains statements, assumptions, counts, failures, source provenance and
 reproduction commands. The

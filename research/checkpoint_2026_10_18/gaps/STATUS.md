@@ -1,3 +1,12 @@
+# Subsequent progress (2026-10-18)
+
+The [transport checkpoint](../transport/STATUS.md) now discharges locality
+and coefficient transport, the first two obligations listed below.
+Identification with all full-board witnesses remains open. Its
+[novelty audit](../transport/NOVELTY_AUDIT.md) records numerical prior art
+and leaves the specific cancellation law's originality unestablished.
+The body below describes this earlier checkpoint's boundary.
+
 # Four-gap witness construction checkpoint
 
 Date: 2026-10-18. Base commit: `1018891a8e7aa450af1fb8549ee5fc8eeffdd8a5`.

@@ -11,6 +11,11 @@ small-block formula and its failure at size five.
 The [four-gap witness checkpoint](gaps/STATUS.md) constructs regional witnesses,
 discharges the corresponding intersection-invariance condition, and proves
 regional four-position cancellation at arbitrary ordered board positions.
+The [transport checkpoint](transport/STATUS.md) proves coefficient locality,
+the disjoint-part partition product isomorphism and full-board coefficient
+transport. Its [novelty audit](transport/NOVELTY_AUDIT.md) records that the
+length-12–15 polynomials already appear in OEIS A323844. Those numerical
+results are reproductions; the cancellation law's originality is unestablished.
 
 The target is W(q,n), the number of length-n words over q labelled colours
 that can be completely removed by legal maximal-run deletions. Count each
@@ -49,8 +54,10 @@ existing raw game in Lean remains necessary.
 | F | A useful general recurrence or structural coefficient description, with a growth analysis | **Research open** | The substantive enumeration result; generic inclusion-exclusion alone is insufficient evidence of solving it |
 | G | End-to-end theorem equating the proposed formula with W(q,n), and novelty assessment | **Open**, depends on B, C2, E2/F | A defensible final solution claim |
 
-The next Lean priority is B and C2. The next mathematical priority is F,
-using the exact coefficient map as a falsification tool. Do not assume
+The semantic and executable Lean obligations B and C2 remain necessary.
+The immediate structural Lean priority is the complete four-position
+witness coverage proof; the mathematical priority is F, using the exact
+coefficient map as a falsification tool. Do not assume
 that coefficients depend only on block counts or that joins stay noncrossing.
 
 There are **9 major stages: 4 verified, 1 partial, 4 open**. They have unequal
@@ -83,14 +90,17 @@ noncrossing closure, and cancellation of nontrivial connected terms containing
 a block of fewer than five positions. Together they predicted the entire
 length-13 polynomial before the new join calculation. That prediction passed;
 independent maximal-run enumeration also confirmed its three- and four-colour
-values. Neither candidate is yet a general theorem. The simpler linear
+values. This was an internal prediction: the subsequent novelty audit found
+the polynomial already listed in OEIS. It establishes no public priority
+or externally blinded holdout. Neither candidate is yet a general theorem. The simpler linear
 connected-weight model was falsified at length 10. See `bridge/STATUS.md` for
 the exact hypotheses, evidence, and next proof obligations.
 
 Factorization now has an explicit mathematical argument and Lean proofs of
-its algebraic and witness-decomposition ingredients. The partition-ideal
-product isomorphism, coefficient transport, and generator identification
-remain formal assembly obligations. Therefore F is still open and the fixed
+its algebraic and witness-decomposition ingredients. The transport checkpoint
+now supplies a two-part partition-ideal product isomorphism and coefficient
+transport. Assembly across all noncrossing-closure components and generator
+identification remain formal obligations. Therefore F is still open and the fixed
 stage count remains 4 verified, 1 partial, 4 open. See
 `factorization/FACTORIZATION_ARGUMENT.md` for that boundary.
 
@@ -99,10 +109,14 @@ argument in `cancellation/ARGUMENT.md`. Its algebraic two-branch theorem and
 chord-separation lemma are compiled in Lean. The actual forced-pairing/gap
 invariance is now proved for the complete specified regional witness families
 in `FourGapWitnesses.lean` and `RegionalCancellation.lean`. Identification with
-the full-board witness family, its exhaustive branch classification, and
-partition coefficient transport are still formal obligations. The general
-minimum-five theorem must not be counted as Lean verified. The new checkpoint
-adds 24 named theorems, including helpers, without changing the major-stage count.
+the full-board witness family and its exhaustive branch classification remain
+formal obligations. Locality and full-board partition coefficient transport
+are now proved; `fullBoard_four_block_zero` applies to the defined image of
+the regional family. `fullBoard_four_block_zero_of_coverage` explicitly requires
+coverage equivalence for another supplied family. The general minimum-five
+theorem must not be counted as Lean verified. The witness-construction
+checkpoint added 24 named theorems and the transport checkpoint adds 23,
+including helpers, without changing the major-stage count.
 
 ## A shortcut ruled out now
 

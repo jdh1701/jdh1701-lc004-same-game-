@@ -61,3 +61,13 @@ jobs:
           python3 research/checkpoint_2026_10_18/partition_count.py --max-n 12 --word-check-n 8
           python3 research/checkpoint_2026_10_18/join_controls.py
           python3 research/checkpoint_2026_10_18/audit.py
+
+      - name: Audit raw grammar bridge and connected coefficient hypotheses
+        run: |
+          lake env lean research/checkpoint_2026_10_18/bridge/PrintAxioms.lean
+          python3 research/checkpoint_2026_10_18/bridge/connected_weights.py
+          python3 research/checkpoint_2026_10_18/bridge/audit_progress.py
+          c++ -std=c++17 -O2 -Wall -Wextra -pedantic research/checkpoint_2026_10_18/bridge/raw_counter.cpp -o /tmp/samegame-raw-counter
+          /tmp/samegame-raw-counter 3 13 > research/checkpoint_2026_10_18/bridge/logs/raw_q3_n13.log
+          /tmp/samegame-raw-counter 4 13 > research/checkpoint_2026_10_18/bridge/logs/raw_q4_n13.log
+          python3 research/checkpoint_2026_10_18/bridge/check_raw_counts.py

@@ -1,0 +1,13 @@
+{"n": 1, "signed_terms": 0, "connected_polynomial": {}, "nontrivial_factorization_checks": 0}
+{"n": 2, "signed_terms": 1, "connected_polynomial": {"1": 1}, "nontrivial_factorization_checks": 0}
+{"n": 3, "signed_terms": 1, "connected_polynomial": {"1": 1}, "nontrivial_factorization_checks": 0}
+{"n": 4, "signed_terms": 3, "connected_polynomial": {"1": -1}, "nontrivial_factorization_checks": 2}
+{"n": 5, "signed_terms": 6, "connected_polynomial": {"1": -4}, "nontrivial_factorization_checks": 5}
+{"n": 6, "signed_terms": 15, "connected_polynomial": {"1": -1}, "nontrivial_factorization_checks": 20}
+{"n": 7, "signed_terms": 36, "connected_polynomial": {"1": 15}, "nontrivial_factorization_checks": 77}
+{"n": 8, "signed_terms": 91, "connected_polynomial": {"1": 23}, "nontrivial_factorization_checks": 330}
+{"n": 9, "signed_terms": 232, "connected_polynomial": {"1": -41}, "nontrivial_factorization_checks": 1518}
+{"n": 10, "signed_terms": 608, "connected_polynomial": {"1": -161, "2": -5}, "nontrivial_factorization_checks": 7517}
+{"n": 11, "signed_terms": 1607, "connected_polynomial": {"2": -22, "1": 12}, "nontrivial_factorization_checks": 1584}
+{"n": 12, "signed_terms": 4351, "connected_polynomial": {"1": 827, "2": 30}, "nontrivial_factorization_checks": 4272}
+{"all_partition_range": [1, 10], "support_only_range": [11, 12], "nontrivial_factorization_checks": 15325, "zero_coefficient_checks": 128825, "block_size_only_counterexample": {"n": 4, "partition": [0, 1, 0, 1], "actual": 0, "block_size_product": 1}, "free_additivity_counterexamples": [{"n": 10, "actual": {"1": -161, "2": -5}, "linear_prediction": {"1": -166}}, {"n": 11, "actual": {"2": -22, "1": 12}, "linear_prediction": {"1": -10}}, {"n": 12, "actual": {"1": 827, "2": 30}, "linear_prediction": {"1": 857}}], "orbit_transform_checks": 12, "unexpected_failures": 0, "elapsed_seconds": 20.908133445000203}

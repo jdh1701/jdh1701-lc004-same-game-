@@ -1,10 +1,8 @@
+import LC004.RawGame
 import LC004.RunState
 import LC004.Normalized
 
 namespace LC004
-
-/-- Raw one-dimensional Same Game position: one color per cell. -/
-abbrev RawState := List Nat
 
 /-- Insert one raw cell at the left of an already compressed run state.
 If it matches the first run, that run becomes heavy; otherwise a new

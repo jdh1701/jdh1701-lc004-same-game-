@@ -1,0 +1,40 @@
+{
+  "total_stages": 9,
+  "stage_counts": {
+    "verified": 4,
+    "partial": 1,
+    "open": 4
+  },
+  "new_named_theorems": [
+    "spliceWord_cons",
+    "spliceWord_end",
+    "spliceWord_append_left",
+    "spliceWord_append_right",
+    "clickGrammar_splice",
+    "clickGrammar_insert",
+    "clickGrammar_replicate",
+    "ordinaryStepAtFuel_block",
+    "ordinaryStepAt_grammar_backward",
+    "ordinaryFollow_grammar_backward",
+    "ordinarySolvable_clickGrammar",
+    "ordinarySolvable_firstBlock"
+  ],
+  "new_theorem_count": 12,
+  "unchanged_raw_definition_hashes": {
+    "ordinaryStepAtFuel": "edb6062aed9615ef3a39cf2f17fa4b05cabba0f2245f5802667bf392ac010e68",
+    "ordinaryStepAt": "842a656272fcb3ac9f53cd90a0155cef791067e116da8d2535d56fb0fbf06434",
+    "ordinaryFollow": "41d3b13ff1d0835a26bfda0ec7f4cd9dab77ca6686e9104c5785a1ec702cd10c",
+    "OrdinarySolvable": "dda2bb551f5732a095c02335da8b8e8dbdf6285e5496d90f1e38ff667d77d7a3"
+  },
+  "source_hashes": {
+    "LC004/GrammarInsertion.lean": "14f92bae11eca0b1e57e14f2eea464755e93edc0f1b5eed51144b63faef92449",
+    "LC004/OrdinaryGrammarComplete.lean": "7b2834a4d80c7bd041a638b89d4647f7f3f8478bcb2b0bbcfe97a31fcc58a739"
+  },
+  "source_scans": {
+    "holes": [],
+    "project_axioms": [],
+    "unsafe_overrides": [],
+    "native_computation": []
+  },
+  "evidence": "Lean compiler output and full GitHub build are separate verification evidence."
+}

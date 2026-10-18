@@ -1,0 +1,28 @@
+ℹ [398/402] Replayed LC004.GrammarNormalForm
+info: ././././LC004/GrammarNormalForm.lean:65:0: 'LC004.clickGrammar_iff_firstBlock' depends on axioms: [propext]
+info: ././././LC004/GrammarNormalForm.lean:66:0: 'LC004.clickGrammar_map' depends on axioms: [propext]
+✔ [401/402] Built LC004.RawGame
+✖ [402/402] Building LC004.GrammarInsertion
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /tmp/lean-4.19.0-linux/bin/lean ././././LC004/GrammarInsertion.lean -R ./././. -o ././.lake/build/lib/lean/LC004/GrammarInsertion.olean -i ././.lake/build/lib/lean/LC004/GrammarInsertion.ilean -c ././.lake/build/ir/LC004/GrammarInsertion.c --json
+error: ././././LC004/GrammarInsertion.lean:19:55: unsolved goals
+i : ℕ
+v u w : List ℕ
+h : i ≤ u.length
+⊢ List.take i (u ++ w) ++ (v ++ List.drop i (u ++ w)) = List.take i u ++ (v ++ (List.drop i u ++ w))
+error: ././././LC004/GrammarInsertion.lean:24:66: unsolved goals
+i : ℕ
+v u w : List ℕ
+h : u.length ≤ i
+⊢ List.take i (u ++ w) ++ (v ++ List.drop i (u ++ w)) =
+    u ++ (List.take (i - u.length) w ++ (v ++ List.drop (i - u.length) w))
+error: ././././LC004/GrammarInsertion.lean:85:6: tactic 'simp' failed, nested error:
+maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+info: ././././LC004/GrammarInsertion.lean:87:0: 'LC004.clickGrammar_splice' depends on axioms: [propext, sorryAx, Quot.sound]
+info: ././././LC004/GrammarInsertion.lean:88:0: 'LC004.clickGrammar_insert' depends on axioms: [propext, sorryAx, Quot.sound]
+info: ././././LC004/GrammarInsertion.lean:89:0: 'LC004.clickGrammar_replicate' depends on axioms: [sorryAx]
+error: Lean exited with code 1
+Some required builds logged failures:
+- LC004.GrammarInsertion
+error: build failed

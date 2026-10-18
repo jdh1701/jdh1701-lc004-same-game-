@@ -1,0 +1,25 @@
+ℹ [400/403] Replayed LC004.GrammarNormalForm
+info: ././././LC004/GrammarNormalForm.lean:65:0: 'LC004.clickGrammar_iff_firstBlock' depends on axioms: [propext]
+info: ././././LC004/GrammarNormalForm.lean:66:0: 'LC004.clickGrammar_map' depends on axioms: [propext]
+ℹ [402/403] Built LC004.GrammarInsertion
+info: ././././LC004/GrammarInsertion.lean:91:0: 'LC004.clickGrammar_splice' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/GrammarInsertion.lean:92:0: 'LC004.clickGrammar_insert' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/GrammarInsertion.lean:93:0: 'LC004.clickGrammar_replicate' depends on axioms: [propext, Quot.sound]
+✖ [403/403] Building LC004.OrdinaryGrammarComplete
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /tmp/lean-4.19.0-linux/bin/lean ././././LC004/OrdinaryGrammarComplete.lean -R ./././. -o ././.lake/build/lib/lean/LC004/OrdinaryGrammarComplete.olean -i ././.lake/build/lib/lean/LC004/OrdinaryGrammarComplete.ilean -c ././.lake/build/ir/LC004/OrdinaryGrammarComplete.c --json
+error: ././././LC004/OrdinaryGrammarComplete.lean:38:12: 'change' tactic failed, pattern
+  Option.map (fun tail => c :: same ++ tail) (ordinaryStepAtFuel fuel rest (i - 1)) = some t
+is not definitionally equal to target
+  ordinaryStepAtFuel (fuel + 1) (c :: cs) i = some t
+error: ././././LC004/OrdinaryGrammarComplete.lean:73:16: function expected at
+  ih ?m.863
+term has type
+  ClickGrammar ?m.862
+error: ././././LC004/OrdinaryGrammarComplete.lean:74:10: no goals to be solved
+info: ././././LC004/OrdinaryGrammarComplete.lean:87:0: 'LC004.ordinaryStepAtFuel_block' depends on axioms: [propext, sorryAx, Quot.sound]
+info: ././././LC004/OrdinaryGrammarComplete.lean:88:0: 'LC004.ordinarySolvable_clickGrammar' depends on axioms: [propext, sorryAx]
+info: ././././LC004/OrdinaryGrammarComplete.lean:89:0: 'LC004.ordinarySolvable_firstBlock' depends on axioms: [propext, sorryAx]
+error: Lean exited with code 1
+Some required builds logged failures:
+- LC004.OrdinaryGrammarComplete
+error: build failed

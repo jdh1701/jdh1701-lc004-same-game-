@@ -1,0 +1,14 @@
+{
+  "scope": "Nine major stages from the existing roadmap; unequal difficulty, not a completion percentage.",
+  "stages": [
+    {"id": "A", "description": "Raw/run move and path correspondence", "status": "verified", "declarations": ["ordinaryStepAt_map_encode", "ordinary_path_iff"]},
+    {"id": "B", "description": "Raw solvability iff grammar", "status": "partial", "declarations": ["ordinarySolvable_clickGrammar"], "remaining": "Grammar implies solvable by maximal-run deletions"},
+    {"id": "C1", "description": "Grammar iff first-block decomposition", "status": "verified", "declarations": ["clickGrammar_iff_firstBlock"]},
+    {"id": "C2", "description": "Finite partition generator soundness and completeness", "status": "open", "declarations": []},
+    {"id": "D", "description": "Join intersection law and q^blocks cardinality", "status": "verified", "declarations": ["respects_join", "card_partitionEvent"]},
+    {"id": "E1", "description": "Exact signed union counting", "status": "verified", "declarations": ["partition_union_count"]},
+    {"id": "E2", "description": "Verified compressed coefficient implementation", "status": "open", "declarations": []},
+    {"id": "F", "description": "Useful general recurrence or structural coefficient law with growth analysis", "status": "open", "declarations": []},
+    {"id": "G", "description": "End-to-end enumeration theorem and external novelty assessment", "status": "open", "declarations": []}
+  ]
+}

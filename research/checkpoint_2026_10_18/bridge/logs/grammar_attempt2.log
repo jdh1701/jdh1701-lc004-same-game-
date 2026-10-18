@@ -1,0 +1,26 @@
+ℹ [398/400] Replayed LC004.GrammarNormalForm
+info: ././././LC004/GrammarNormalForm.lean:65:0: 'LC004.clickGrammar_iff_firstBlock' depends on axioms: [propext]
+info: ././././LC004/GrammarNormalForm.lean:66:0: 'LC004.clickGrammar_map' depends on axioms: [propext]
+✖ [400/400] Building LC004.GrammarInsertion
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /tmp/lean-4.19.0-linux/bin/lean ././././LC004/GrammarInsertion.lean -R ./././. -o ././.lake/build/lib/lean/LC004/GrammarInsertion.olean -i ././.lake/build/lib/lean/LC004/GrammarInsertion.ilean -c ././.lake/build/ir/LC004/GrammarInsertion.c --json
+error: ././././LC004/GrammarInsertion.lean:86:10: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  List.replicate (?m.2008 + 1) ?m.2007
+case neg
+c n : ℕ
+ih : ∀ (m : ℕ), m < n → 2 ≤ m → ClickGrammar (List.replicate m c)
+hn : 2 ≤ n
+h2 : ¬n = 2
+h3 : ¬n = 3
+hsmall : n - 2 < n
+hlarge : 2 ≤ n - 2
+hp : ClickGrammar (c :: (List.replicate (n - 2) c ++ [c]))
+he : n = n - 2 + 1 + 1
+heq : (fun k => List.replicate k c) n = (fun k => List.replicate k c) (n - 2 + 1 + 1)
+⊢ ClickGrammar (List.replicate n c)
+info: ././././LC004/GrammarInsertion.lean:90:0: 'LC004.clickGrammar_splice' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/GrammarInsertion.lean:91:0: 'LC004.clickGrammar_insert' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/GrammarInsertion.lean:92:0: 'LC004.clickGrammar_replicate' depends on axioms: [sorryAx]
+error: Lean exited with code 1
+Some required builds logged failures:
+- LC004.GrammarInsertion
+error: build failed

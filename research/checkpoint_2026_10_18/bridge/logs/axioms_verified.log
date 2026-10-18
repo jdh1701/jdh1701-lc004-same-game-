@@ -1,0 +1,16 @@
+LC004.ordinarySolvable_clickGrammar {w : LC004.RawState} (h : LC004.OrdinarySolvable LC004.ordinaryStepAt w) :
+  LC004.ClickGrammar w
+LC004.ordinarySolvable_firstBlock {w : LC004.RawState} (h : LC004.OrdinarySolvable LC004.ordinaryStepAt w) :
+  LC004.FirstBlock w
+'LC004.spliceWord_cons' depends on axioms: [propext]
+'LC004.spliceWord_end' depends on axioms: [propext]
+'LC004.spliceWord_append_left' depends on axioms: [propext, Quot.sound]
+'LC004.spliceWord_append_right' depends on axioms: [propext, Quot.sound]
+'LC004.clickGrammar_splice' depends on axioms: [propext, Quot.sound]
+'LC004.clickGrammar_insert' depends on axioms: [propext, Quot.sound]
+'LC004.clickGrammar_replicate' depends on axioms: [propext, Quot.sound]
+'LC004.ordinaryStepAtFuel_block' depends on axioms: [propext, Quot.sound]
+'LC004.ordinaryStepAt_grammar_backward' depends on axioms: [propext, Quot.sound]
+'LC004.ordinaryFollow_grammar_backward' depends on axioms: [propext, Quot.sound]
+'LC004.ordinarySolvable_clickGrammar' depends on axioms: [propext, Quot.sound]
+'LC004.ordinarySolvable_firstBlock' depends on axioms: [propext, Quot.sound]

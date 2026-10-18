@@ -4,6 +4,12 @@ Date: 2026-10-18. This is verified progress toward general winning-word
 enumeration, not a claim that the open enumeration problem is solved.
 See [ROADMAP.md](ROADMAP.md) for the ordered remaining obligations.
 
+**Later checkpoint on the same date:** [bridge/STATUS.md](bridge/STATUS.md)
+records the newly proved raw-solvable-to-grammar direction, the fixed nine-stage
+count, a prospective length-13 prediction, and independent raw-game checks.
+The body below records the earlier partition-counting checkpoint; its statements
+about the then-open semantic bridge are historical.
+
 ## New Lean results
 
 - `GrammarNormalForm.lean`: `ClickGrammar` is exactly the published

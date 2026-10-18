@@ -1,6 +1,8 @@
 # Same Game enumeration: remaining proof obligations
 
-Checkpoint: 2026-10-18. Base: `7fe93b8d01742104ef0479f3e0988db532fef644`.
+Checkpoint: 2026-10-18. Initial base: `7fe93b8d01742104ef0479f3e0988db532fef644`.
+Updated by the [raw/grammar and connected-coefficient checkpoint](bridge/STATUS.md),
+whose base is `c04443b029ff85da4fad7ecc65f2d6e29f9aabb2`.
 
 The target is W(q,n), the number of length-n words over q labelled colours
 that can be completely removed by legal maximal-run deletions. Count each
@@ -30,7 +32,7 @@ existing raw game in Lean remains necessary.
 | Stage | Required result | Status | What it unlocks |
 |---|---|---|---|
 | A | Raw maximal-run deletion commutes with encoding; successful paths correspond | Proved previously, `OrdinaryFinal.lean` | A stable formal game specification |
-| B | Raw solvability iff the published grammar | Known mathematics; **not yet proved in this repository** | Transfers grammar counting to the actual game |
+| B | Raw solvability iff the published grammar | **Partial**: `ordinarySolvable_clickGrammar` proves raw-solvable implies grammar; converse open | Transfers grammar counting to the actual game |
 | C1 | Published grammar iff leftmost pair/triple block decomposition | **Proved now**, `clickGrammar_iff_firstBlock` | Removes associative concatenation parses |
 | C2 | A finite generator of equality partitions recognizes exactly C1 at each length | Python generator checked; **Lean proof open** | A concrete finite witness family without a game-solving oracle |
 | D | Equality-event intersections are joins; each event has q^b words | **Proved now**, `respects_join`, `card_partitionEvent` | Correct intersection weights for arbitrary q and n |
@@ -43,11 +45,16 @@ The next Lean priority is B and C2. The next mathematical priority is F,
 using the exact coefficient map as a falsification tool. Do not assume
 that coefficients depend only on block counts or that joins stay noncrossing.
 
+There are **9 major stages: 4 verified, 1 partial, 4 open**. They have unequal
+difficulty; this count is not a percentage estimate of progress to a solution.
+The new bridge adds 12 named Lean theorems, including helpers, without closing
+another whole stage. Machine-readable statuses are in `bridge/STAGES.json`.
+
 ## Immediate next proofs
 
-1. Formalize insertion closure of `ClickGrammar`, including monochromatic
-   words of length at least two. Use it with a decomposition of one raw
-   maximal-run deletion to prove raw-solvable implies grammar membership.
+1. **Completed in the bridge checkpoint:** insertion closure of `ClickGrammar`,
+   monochromatic words of length at least two, and decomposition of actual
+   raw deletions prove raw-solvable implies grammar membership.
 2. Formalize the converse without silently permitting partial deletion
    of a maximal run. A suitable intermediate statement is an internal
    solution lemma: boundary runs can be postponed, allowing concatenation
@@ -62,6 +69,15 @@ that coefficients depend only on block counts or that joins stay noncrossing.
 5. Search for a recursive description of the **signed** join support.
    Validate predictions against existing full polynomials and held-out
    lengths before attempting a general theorem. A finite fit is not a proof.
+
+The current structural candidates are factorization over the blocks of the
+noncrossing closure, and cancellation of nontrivial connected terms containing
+a block of fewer than five positions. Together they predicted the entire
+length-13 polynomial before the new join calculation. That prediction passed;
+independent maximal-run enumeration also confirmed its three- and four-colour
+values. Neither candidate is yet a general theorem. The simpler linear
+connected-weight model was falsified at length 10. See `bridge/STATUS.md` for
+the exact hypotheses, evidence, and next proof obligations.
 
 ## A shortcut ruled out now
 

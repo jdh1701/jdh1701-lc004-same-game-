@@ -71,3 +71,5 @@ import LC004.GrammarNormalForm
 import LC004.SignedConstraints
 import LC004.PartitionCounting
 import LC004.CrossingJoin
+import LC004.GrammarInsertion
+import LC004.OrdinaryGrammarComplete

@@ -1,0 +1,1296 @@
+⚠ [719/830] Replayed LC004.SignedConstraints
+warning: ././././LC004/SignedConstraints.lean:43:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ././././LC004/SignedConstraints.lean:104:0: 'LC004.signedEval_addConstraint' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:105:0: 'LC004.signedEval_unionTerms' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:106:0: 'LC004.signedEval_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:107:0: 'LC004.signed_constraint_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [790/830] Replayed LC004.PartitionCounting
+info: ././././LC004/PartitionCounting.lean:58:0: 'LC004.respects_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionCounting.lean:59:0: 'LC004.card_partitionEvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionCounting.lean:60:0: 'LC004.partition_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [810/830] Replayed LC004.CoefficientFactorization
+info: ././././LC004/CoefficientFactorization.lean:138:0: 'LC004.zetaSum_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientFactorization.lean:139:0: 'LC004.coefficient_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientFactorization.lean:140:0: 'LC004.collected_union_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [814/830] Replayed LC004.NoncrossingRestriction
+info: ././././LC004/NoncrossingRestriction.lean:90:0: 'LC004.noncrossing_iff_blocks' depends on axioms: [propext]
+info: ././././LC004/NoncrossingRestriction.lean:91:0: 'LC004.blockRestriction_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/NoncrossingRestriction.lean:92:0: 'LC004.pairTriple_iff_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [815/830] Replayed LC004.ChordBarrier
+info: ././././LC004/ChordBarrier.lean:29:0: 'LC004.noncrossing_interval_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [818/830] Replayed LC004.GrammarNormalForm
+info: ././././LC004/GrammarNormalForm.lean:65:0: 'LC004.clickGrammar_iff_firstBlock' depends on axioms: [propext]
+info: ././././LC004/GrammarNormalForm.lean:66:0: 'LC004.clickGrammar_map' depends on axioms: [propext]
+ℹ [819/830] Replayed LC004.CoefficientBarrier
+info: ././././LC004/CoefficientBarrier.lean:45:0: 'LC004.coefficient_zero_outside_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientBarrier.lean:46:0: 'LC004.four_gap_pairing_intersection' does not depend on any axioms
+info: ././././LC004/CoefficientBarrier.lean:47:0: 'LC004.two_pairing_indicator' depends on axioms: [propext]
+ℹ [820/830] Replayed LC004.UnionCoefficientIdentity
+info: ././././LC004/UnionCoefficientIdentity.lean:101:0: 'LC004.two_branch_join_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UnionCoefficientIdentity.lean:102:0: 'LC004.two_branch_barrier_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UnionCoefficientIdentity.lean:103:0: 'LC004.collected_union_append' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UnionCoefficientIdentity.lean:104:0: 'LC004.collected_union_fixed_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [821/830] Replayed LC004.FourBlockCancellation
+info: ././././LC004/FourBlockCancellation.lean:58:0: 'LC004.quad_pairings_join_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourBlockCancellation.lean:59:0: 'LC004.four_block_barrier_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [823/830] Replayed LC004.FourGapGeometry
+warning: ././././LC004/FourGapGeometry.lean:34:5: unused variable `hab`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+warning: ././././LC004/FourGapGeometry.lean:34:33: unused variable `hcd`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+✔ [828/830] Built LC004.QuadWitnessClassification
+✖ [829/830] Building LC004.QuadWitnessGeometry
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /tmp/lean-4.19.0-linux/bin/lean ././././LC004/QuadWitnessGeometry.lean -R ./././. -o ././.lake/build/lib/lean/LC004/QuadWitnessGeometry.olean -i ././.lake/build/lib/lean/LC004/QuadWitnessGeometry.ilean -c ././.lake/build/ir/LC004/QuadWitnessGeometry.c --json
+error: ././././LC004/QuadWitnessGeometry.lean:44:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  j ≥ 0
+  i ≥ 0
+  i - j ≤ -1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+error: ././././LC004/QuadWitnessGeometry.lean:44:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  j ≥ 0
+  i ≥ 0
+  i - j ≤ -1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ 0
+  g - j ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ -1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+error: ././././LC004/QuadWitnessGeometry.lean:44:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  j ≥ 0
+  i ≥ 0
+  i - j ≤ -1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+error: ././././LC004/QuadWitnessGeometry.lean:44:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  j ≥ 0
+  i ≥ 0
+  i - j ≤ -1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - j ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ -1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+error: ././././LC004/QuadWitnessGeometry.lean:44:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  j ≥ 0
+  i ≥ 0
+  i - j ≤ -1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ -1
+  g - j ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+error: ././././LC004/QuadWitnessGeometry.lean:44:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  j ≥ 0
+  i ≥ 0
+  i - j ≤ -1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ -1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+error: ././././LC004/QuadWitnessGeometry.lean:44:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  j ≥ 0
+  i ≥ 0
+  i - j ≤ -1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ -1
+  g - j ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ 0
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+error: ././././LC004/QuadWitnessGeometry.lean:44:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  j ≥ 0
+  i ≥ 0
+  i - j ≤ -1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ -1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+error: ././././LC004/QuadWitnessGeometry.lean:52:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ -1
+  g - j ≤ -1
+  g - k ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - k ≥ 1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑y
+error: ././././LC004/QuadWitnessGeometry.lean:52:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ -1
+  g - j ≤ -1
+  g - k ≥ 1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - k ≥ 1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑y
+error: ././././LC004/QuadWitnessGeometry.lean:52:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - k ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ -1
+  f - k ≥ 1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑y
+error: ././././LC004/QuadWitnessGeometry.lean:52:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - k ≥ 1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ -1
+  f - k ≥ 1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑y
+error: ././././LC004/QuadWitnessGeometry.lean:52:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≤ -1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ -1
+  g - k ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - k ≤ -1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑y
+error: ././././LC004/QuadWitnessGeometry.lean:52:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ -1
+  g - k ≥ 1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - k ≥ 1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑y
+error: ././././LC004/QuadWitnessGeometry.lean:52:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≤ -1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - j ≤ -1
+  g - k ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ -1
+  f - k ≤ -1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑y
+error: ././././LC004/QuadWitnessGeometry.lean:52:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - j ≤ -1
+  g - k ≥ 1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ -1
+  f - k ≥ 1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑y
+error: ././././LC004/QuadWitnessGeometry.lean:62:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ -1
+  g - j ≤ -1
+  g - k ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - k ≥ 1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑x
+error: ././././LC004/QuadWitnessGeometry.lean:62:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ -1
+  g - j ≤ -1
+  g - k ≥ 1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - k ≥ 1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑x
+error: ././././LC004/QuadWitnessGeometry.lean:62:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - k ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ -1
+  f - k ≥ 1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑x
+error: ././././LC004/QuadWitnessGeometry.lean:62:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - k ≥ 1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ -1
+  f - k ≥ 1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑x
+error: ././././LC004/QuadWitnessGeometry.lean:62:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≤ -1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ -1
+  g - k ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - k ≤ -1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑x
+error: ././././LC004/QuadWitnessGeometry.lean:62:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ -1
+  g - k ≥ 1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - k ≥ 1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑x
+error: ././././LC004/QuadWitnessGeometry.lean:62:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≤ -1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - j ≤ -1
+  g - k ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ -1
+  f - k ≤ -1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑x
+error: ././././LC004/QuadWitnessGeometry.lean:62:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - j ≤ -1
+  g - k ≥ 1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ -1
+  f - k ≥ 1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑x
+error: ././././LC004/QuadWitnessGeometry.lean:90:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  j ≥ 0
+  i ≥ 0
+  i - j ≤ -1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ -1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+error: ././././LC004/QuadWitnessGeometry.lean:90:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  j ≥ 0
+  i ≥ 0
+  i - j ≤ -1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+error: ././././LC004/QuadWitnessGeometry.lean:90:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  j ≥ 0
+  i ≥ 0
+  i - j ≤ -1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ -1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+error: ././././LC004/QuadWitnessGeometry.lean:90:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  j ≥ 0
+  i ≥ 0
+  i - j ≤ -1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ -1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+error: ././././LC004/QuadWitnessGeometry.lean:90:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  j ≥ 0
+  i ≥ 0
+  i - j ≤ -1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+error: ././././LC004/QuadWitnessGeometry.lean:90:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  j ≥ 0
+  i ≥ 0
+  i - j ≤ -1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ -1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+error: ././././LC004/QuadWitnessGeometry.lean:90:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  j ≥ 0
+  i ≥ 0
+  i - j ≤ -1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ -1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+error: ././././LC004/QuadWitnessGeometry.lean:90:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  j ≥ 0
+  i ≥ 0
+  i - j ≤ -1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+error: ././././LC004/QuadWitnessGeometry.lean:98:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ -1
+  g - k ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - k ≥ 1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑y
+error: ././././LC004/QuadWitnessGeometry.lean:98:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ -1
+  g - k ≥ 1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - k ≥ 1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑y
+error: ././././LC004/QuadWitnessGeometry.lean:98:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - k ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ -1
+  f - k ≤ -1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑y
+error: ././././LC004/QuadWitnessGeometry.lean:98:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - k ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ -1
+  f - k ≥ 1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑y
+error: ././././LC004/QuadWitnessGeometry.lean:98:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ -1
+  g - k ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - k ≤ -1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑y
+error: ././././LC004/QuadWitnessGeometry.lean:98:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ -1
+  g - k ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - k ≥ 1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑y
+error: ././././LC004/QuadWitnessGeometry.lean:98:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - k ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ -1
+  f - k ≥ 1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑y
+error: ././././LC004/QuadWitnessGeometry.lean:98:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - k ≥ 1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ -1
+  f - k ≥ 1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑y
+error: ././././LC004/QuadWitnessGeometry.lean:108:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ -1
+  g - k ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - k ≥ 1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑x
+error: ././././LC004/QuadWitnessGeometry.lean:108:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ -1
+  g - k ≥ 1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - k ≥ 1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑x
+error: ././././LC004/QuadWitnessGeometry.lean:108:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - k ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ -1
+  f - k ≤ -1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑x
+error: ././././LC004/QuadWitnessGeometry.lean:108:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - k ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ -1
+  f - k ≥ 1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑x
+error: ././././LC004/QuadWitnessGeometry.lean:108:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ -1
+  g - k ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - k ≤ -1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑x
+error: ././././LC004/QuadWitnessGeometry.lean:108:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - i ≤ -1
+  g - k ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - k ≥ 1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑x
+error: ././././LC004/QuadWitnessGeometry.lean:108:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - k ≤ -1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ -1
+  f - k ≥ 1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑x
+error: ././././LC004/QuadWitnessGeometry.lean:108:22: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 1
+  i ≥ 0
+  i - j ≤ -1
+  i - k ≥ 1
+  h ≥ 0
+  h - i ≥ 1
+  h - j ≥ 1
+  h - k ≥ 1
+  g ≥ 0
+  g - h ≤ -1
+  g - k ≥ 1
+  f ≥ 0
+  f - g ≥ 1
+  f - h ≤ -1
+  f - i ≤ -1
+  f - j ≤ -1
+  f - k ≥ 1
+where
+ f := ↑↑b
+ g := ↑↑a
+ h := ↑n
+ i := ↑↑c
+ j := ↑↑d
+ k := ↑↑↑x
+error: Lean exited with code 1
+Some required builds logged failures:
+- LC004.QuadWitnessGeometry
+error: build failed

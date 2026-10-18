@@ -16,6 +16,10 @@ the disjoint-part partition product isomorphism and full-board coefficient
 transport. Its [novelty audit](transport/NOVELTY_AUDIT.md) records that the
 length-12–15 polynomials already appear in OEIS A323844. Those numerical
 results are reproductions; the cancellation law's originality is unestablished.
+The [complete-family checkpoint](coverage/STATUS.md) now proves exact
+witness-family identification and four-position cancellation for all
+pair/triple witnesses. No coverage premise remains. Stage F is now partial;
+no additional major stage has been declared complete.
 
 The target is W(q,n), the number of length-n words over q labelled colours
 that can be completely removed by legal maximal-run deletions. Count each
@@ -51,19 +55,22 @@ existing raw game in Lean remains necessary.
 | D | Equality-event intersections are joins; each event has q^b words | **Proved now**, `respects_join`, `card_partitionEvent` | Correct intersection weights for arbitrary q and n |
 | E1 | Signed union identity counts every covered word exactly once | **Proved now**, `partition_union_count` | General overlap-correct counting for any supplied partition list |
 | E2 | Collecting equal joins in the executable coefficient map preserves E1 | Implemented and tested in Python; **Lean refinement open** | A verified compressed executable instead of exponential term-list expansion |
-| F | A useful general recurrence or structural coefficient description, with a growth analysis | **Research open** | The substantive enumeration result; generic inclusion-exclusion alone is insufficient evidence of solving it |
+| F | A useful general recurrence or structural coefficient description, with a growth analysis | **Partial**: unconditional four-position cancellation for all witnesses is proved; remaining connected coefficients and growth analysis open | The substantive enumeration result; generic inclusion-exclusion alone is insufficient evidence of solving it |
 | G | End-to-end theorem equating the proposed formula with W(q,n), and novelty assessment | **Open**, depends on B, C2, E2/F | A defensible final solution claim |
 
 The semantic and executable Lean obligations B and C2 remain necessary.
-The immediate structural Lean priority is the complete four-position
-witness coverage proof; the mathematical priority is F, using the exact
+The complete four-position witness coverage proof is now closed. The
+immediate structural priority is size-two/three and component assembly;
+the mathematical priority is F, using the exact
 coefficient map as a falsification tool. Do not assume
 that coefficients depend only on block counts or that joins stay noncrossing.
 
-There are **9 major stages: 4 verified, 1 partial, 4 open**. They have unequal
+There are **9 major stages: 4 verified, 2 partial, 3 open**. They have unequal
 difficulty; this count is not a percentage estimate of progress to a solution.
-The new bridge adds 12 named Lean theorems, including helpers, without closing
-another whole stage. Machine-readable statuses are in `bridge/STAGES.json`.
+The complete-family checkpoint adds 31 named Lean theorems, including helpers,
+and moves F to partial without closing another whole stage. Current
+machine-readable statuses are in `coverage/STAGES.json`; the historical
+`bridge/STAGES.json` is preserved for its original audits.
 
 ## Immediate next proofs
 
@@ -100,8 +107,8 @@ Factorization now has an explicit mathematical argument and Lean proofs of
 its algebraic and witness-decomposition ingredients. The transport checkpoint
 now supplies a two-part partition-ideal product isomorphism and coefficient
 transport. Assembly across all noncrossing-closure components and generator
-identification remain formal obligations. Therefore F is still open and the fixed
-stage count remains 4 verified, 1 partial, 4 open. See
+identification remain formal obligations. F is now partial because of the
+complete-family four-position theorem, not because factorization is complete. See
 `factorization/FACTORIZATION_ARGUMENT.md` for that boundary.
 
 The minimum-five support condition now has a proposed cyclic-gap cancellation
@@ -109,14 +116,14 @@ argument in `cancellation/ARGUMENT.md`. Its algebraic two-branch theorem and
 chord-separation lemma are compiled in Lean. The actual forced-pairing/gap
 invariance is now proved for the complete specified regional witness families
 in `FourGapWitnesses.lean` and `RegionalCancellation.lean`. Identification with
-the full-board witness family and its exhaustive branch classification remain
-formal obligations. Locality and full-board partition coefficient transport
-are now proved; `fullBoard_four_block_zero` applies to the defined image of
-the regional family. `fullBoard_four_block_zero_of_coverage` explicitly requires
-coverage equivalence for another supplied family. The general minimum-five
-theorem must not be counted as Lean verified. The witness-construction
-checkpoint added 24 named theorems and the transport checkpoint adds 23,
-including helpers, without changing the major-stage count.
+the entire full-board witness family and exhaustive branch classification
+are now proved in `AllWitnessCancellation.lean` and
+`QuadWitnessClassification.lean`. Combined with locality and coefficient
+transport, `all_witness_four_block_zero` proves cancellation for every
+length with no assumed coverage premise. The general minimum-five theorem
+must still not be counted as Lean verified: the size-two/three and component
+assembly obligations remain. This advances F to partial while the number
+of fully completed major stages remains four.
 
 ## A shortcut ruled out now
 

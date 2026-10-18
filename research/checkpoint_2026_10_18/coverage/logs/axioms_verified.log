@@ -1,0 +1,47 @@
+LC004.mem_fullBoardFourBlockFamily_iff {n : ℕ} (a b c d : Fin n) (hab : a < b) (hbc : b < c) (hcd : c < d)
+  (r : Setoid (Fin n)) :
+  r ∈ LC004.fullBoardFourBlockFamily a b c d hab hbc hcd ↔
+    LC004.PairTriplePartition r ∧ r ≤ LC004.fullBoardPartition (LC004.quadSplitEquiv a b c d hab hbc hcd) (⊤, ⊤)
+LC004.all_witness_four_block_zero {n : ℕ} (a b c d : Fin n) (hab : a < b) (hbc : b < c) (hcd : c < d)
+  (p : Setoid (LC004.QuadRemainder a b c d)) (hp : ¬p ≤ Setoid.ker (LC004.remainderGapIndex a b c d)) :
+  LC004.collectedCoeff (LC004.unionTerms (fun x1 x2 => x1 ⊔ x2) (LC004.allPairTripleWitnesses n))
+      (LC004.fullBoardPartition (LC004.quadSplitEquiv a b c d hab hbc hcd) (⊤, p)) =
+    0
+LC004.all_witness_four_block_support {n : ℕ} (a b c d : Fin n) (hab : a < b) (hbc : b < c) (hcd : c < d)
+  (p : Setoid (LC004.QuadRemainder a b c d))
+  (hne :
+    LC004.collectedCoeff (LC004.unionTerms (fun x1 x2 => x1 ⊔ x2) (LC004.allPairTripleWitnesses n))
+        (LC004.fullBoardPartition (LC004.quadSplitEquiv a b c d hab hbc hcd) (⊤, p)) ≠
+      0) :
+  p ≤ Setoid.ker (LC004.remainderGapIndex a b c d)
+'LC004.noncrossing_comap_strictMono' depends on axioms: [propext]
+'LC004.blockSize_comap_saturated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.pairTriple_comap_saturated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.fullBoardPartition_rel' depends on axioms: [propext, Quot.sound]
+'LC004.fullBoardPartition_reconstruct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.fullBoardPartition_left_saturated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.fullBoardPartition_right_saturated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.fullBoardPartition_noncrossing' depends on axioms: [propext, Quot.sound]
+'LC004.fullBoardPartition_comap_left' depends on axioms: [propext, Quot.sound]
+'LC004.fullBoardPartition_comap_right' depends on axioms: [propext, Quot.sound]
+'LC004.fullBoardPartition_pairTriple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.fullBoardPartition_pairBlock_left' depends on axioms: [propext, Quot.sound]
+'LC004.partitionBlockSize_fin4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.pairTriple_fin4_classification' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.quadAdjacent_pairTriple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.quadNested_pairTriple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.quadAdjacent_pairBlocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.quadNested_pairBlocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.quadPosition_strictMono' depends on axioms: [propext, Quot.sound]
+'LC004.quadSplitEquiv_symm_selected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.quadSplitEquiv_symm_remainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.quad_adjacent_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.quad_nested_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.quad_adjacent_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.quad_nested_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.quad_selected_restriction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.quad_remainder_restriction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.mem_fullBoardFourBlockFamily_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.mem_allPairTripleWitnesses' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.all_witness_four_block_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.all_witness_four_block_support' depends on axioms: [propext, Classical.choice, Quot.sound]

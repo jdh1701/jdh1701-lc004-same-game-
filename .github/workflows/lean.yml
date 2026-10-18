@@ -101,3 +101,10 @@ jobs:
           cat /tmp/samegame-transport-axioms.log
           python3 research/checkpoint_2026_10_18/transport/check_prior_art.py
           python3 research/checkpoint_2026_10_18/transport/audit.py --axioms-log /tmp/samegame-transport-axioms.log
+
+      - name: Audit complete witness coverage and unconditional cancellation
+        run: |
+          lake env lean research/checkpoint_2026_10_18/coverage/PrintAxioms.lean > /tmp/samegame-coverage-axioms.log
+          cat /tmp/samegame-coverage-axioms.log
+          lake env lean research/checkpoint_2026_10_18/coverage/Nonvacuity.lean
+          python3 research/checkpoint_2026_10_18/coverage/audit.py --axioms-log /tmp/samegame-coverage-axioms.log

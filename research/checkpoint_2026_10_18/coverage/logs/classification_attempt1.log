@@ -1,0 +1,534 @@
+⚠ [719/826] Replayed LC004.SignedConstraints
+warning: ././././LC004/SignedConstraints.lean:43:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ././././LC004/SignedConstraints.lean:104:0: 'LC004.signedEval_addConstraint' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:105:0: 'LC004.signedEval_unionTerms' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:106:0: 'LC004.signedEval_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:107:0: 'LC004.signed_constraint_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [790/826] Replayed LC004.PartitionCounting
+info: ././././LC004/PartitionCounting.lean:58:0: 'LC004.respects_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionCounting.lean:59:0: 'LC004.card_partitionEvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionCounting.lean:60:0: 'LC004.partition_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [810/826] Replayed LC004.CoefficientFactorization
+info: ././././LC004/CoefficientFactorization.lean:138:0: 'LC004.zetaSum_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientFactorization.lean:139:0: 'LC004.coefficient_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientFactorization.lean:140:0: 'LC004.collected_union_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [814/826] Replayed LC004.NoncrossingRestriction
+info: ././././LC004/NoncrossingRestriction.lean:90:0: 'LC004.noncrossing_iff_blocks' depends on axioms: [propext]
+info: ././././LC004/NoncrossingRestriction.lean:91:0: 'LC004.blockRestriction_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/NoncrossingRestriction.lean:92:0: 'LC004.pairTriple_iff_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [815/826] Replayed LC004.ChordBarrier
+info: ././././LC004/ChordBarrier.lean:29:0: 'LC004.noncrossing_interval_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [818/826] Replayed LC004.GrammarNormalForm
+info: ././././LC004/GrammarNormalForm.lean:65:0: 'LC004.clickGrammar_iff_firstBlock' depends on axioms: [propext]
+info: ././././LC004/GrammarNormalForm.lean:66:0: 'LC004.clickGrammar_map' depends on axioms: [propext]
+ℹ [819/826] Replayed LC004.CoefficientBarrier
+info: ././././LC004/CoefficientBarrier.lean:45:0: 'LC004.coefficient_zero_outside_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientBarrier.lean:46:0: 'LC004.four_gap_pairing_intersection' does not depend on any axioms
+info: ././././LC004/CoefficientBarrier.lean:47:0: 'LC004.two_pairing_indicator' depends on axioms: [propext]
+ℹ [820/826] Replayed LC004.UnionCoefficientIdentity
+info: ././././LC004/UnionCoefficientIdentity.lean:101:0: 'LC004.two_branch_join_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UnionCoefficientIdentity.lean:102:0: 'LC004.two_branch_barrier_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UnionCoefficientIdentity.lean:103:0: 'LC004.collected_union_append' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UnionCoefficientIdentity.lean:104:0: 'LC004.collected_union_fixed_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [821/826] Replayed LC004.FourBlockCancellation
+info: ././././LC004/FourBlockCancellation.lean:58:0: 'LC004.quad_pairings_join_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourBlockCancellation.lean:59:0: 'LC004.four_block_barrier_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [823/826] Replayed LC004.FourGapGeometry
+warning: ././././LC004/FourGapGeometry.lean:34:5: unused variable `hab`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+warning: ././././LC004/FourGapGeometry.lean:34:33: unused variable `hcd`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+✖ [826/826] Building LC004.QuadWitnessClassification
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /tmp/lean-4.19.0-linux/bin/lean ././././LC004/QuadWitnessClassification.lean -R ./././. -o ././.lake/build/lib/lean/LC004/QuadWitnessClassification.olean -i ././.lake/build/lib/lean/LC004/QuadWitnessClassification.ilean -c ././.lake/build/ir/LC004/QuadWitnessClassification.c --json
+error: ././././LC004/QuadWitnessClassification.lean:7:7: failed to synthesize
+  Decidable (r 0 a)
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: ././././LC004/QuadWitnessClassification.lean:7:34: failed to synthesize
+  Decidable (r 1 a)
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: ././././LC004/QuadWitnessClassification.lean:8:7: failed to synthesize
+  Decidable (r 2 a)
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: ././././LC004/QuadWitnessClassification.lean:8:34: failed to synthesize
+  Decidable (r 3 a)
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: ././././LC004/QuadWitnessClassification.lean:8:61: unsolved goals
+r : Setoid (Fin 4)
+a : Fin 4
+hu : Finset.univ = {0, 1, 2, 3}
+⊢ {x ∈ {0, 1, 2, 3} | r x a}.card = sorry () + (sorry () + (sorry () + sorry ()))
+error: ././././LC004/QuadWitnessClassification.lean:48:5: unknown tactic
+error: ././././LC004/QuadWitnessClassification.lean:40:61: unsolved goals
+case pos
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : r 0 1
+h02 : r 0 2
+h03 : r 0 3
+h12 : r 1 2
+h13 : r 1 3
+h23 : r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : r 0 1
+h02 : r 0 2
+h03 : r 0 3
+h12 : r 1 2
+h13 : r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : r 0 1
+h02 : r 0 2
+h03 : r 0 3
+h12 : r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case pos
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : r 0 1
+h02 : r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : r 1 3
+h23 : r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : r 0 1
+h02 : r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case pos
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : r 0 1
+h02 : r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : r 0 1
+h02 : r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : r 0 1
+h02 : r 0 2
+h03 : ¬r 0 3
+h12 : r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : r 0 1
+h02 : r 0 2
+h03 : ¬r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case pos
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : r 0 1
+h02 : ¬r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : r 1 3
+h23 : r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : r 0 1
+h02 : ¬r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case pos
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : r 0 1
+h02 : ¬r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : r 0 1
+h02 : ¬r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : r 0 1
+h02 : ¬r 0 2
+h03 : ¬r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : ¬r 0 1
+h02 : r 0 2
+h03 : r 0 3
+h12 : r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case pos
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : ¬r 0 1
+h02 : r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : ¬r 0 1
+h02 : r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : ¬r 0 1
+h02 : r 0 2
+h03 : ¬r 0 3
+h12 : r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : ¬r 0 1
+h02 : r 0 2
+h03 : ¬r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case pos
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : r 0 3
+h12 : r 1 2
+h13 : r 1 3
+h23 : r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : r 0 3
+h12 : r 1 2
+h13 : r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case pos
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : r 1 3
+h23 : r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case pos
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case pos
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : ¬r 0 3
+h12 : r 1 2
+h13 : r 1 3
+h23 : r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : ¬r 0 3
+h12 : r 1 2
+h13 : r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : ¬r 0 3
+h12 : r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case pos
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : ¬r 0 3
+h12 : ¬r 1 2
+h13 : r 1 3
+h23 : r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : ¬r 0 3
+h12 : ¬r 1 2
+h13 : r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case pos
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : ¬r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc3 : sorry () + sorry () + sorry () + sorry () = 2 ∨ sorry () + sorry () + sorry () + sorry () = 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : ¬r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+error: ././././LC004/QuadWitnessClassification.lean:45:2: unsolved goals
+case inl.intro.intro.intro.intro.intro.h.a
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+h10 : r 1 0 ↔ r 0 1
+h20 : r 2 0 ↔ r 0 2
+h30 : r 3 0 ↔ r 0 3
+h21 : r 2 1 ↔ r 1 2
+h31 : r 3 1 ↔ r 1 3
+h32 : r 3 2 ↔ r 2 3
+hc0 hc1 hc2 hc3 : sorry + sorry + sorry + sorry = 2 ∨ sorry + sorry + sorry + sorry = 3
+hnc : r 0 2 → r 1 3 → r 0 1
+ht012 : r 0 1 → r 1 2 → r 0 2
+ht013 : r 0 1 → r 1 3 → r 0 3
+ht023 : r 0 2 → r 2 3 → r 0 3
+ht123 : r 1 2 → r 2 3 → r 1 3
+h01 : r 0 1
+h02 : ¬r 0 2
+h03 : ¬r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : r 2 3
+i j : Fin 4
+⊢ r i j ↔ quadAdjacent i j
+error: ././././LC004/QuadWitnessClassification.lean:19:72: unsolved goals
+case inr.intro.intro.intro.intro.intro
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+h10 : r 1 0 ↔ r 0 1
+h20 : r 2 0 ↔ r 0 2
+h30 : r 3 0 ↔ r 0 3
+h21 : r 2 1 ↔ r 1 2
+h31 : r 3 1 ↔ r 1 3
+h32 : r 3 2 ↔ r 2 3
+hc0 hc1 hc2 hc3 : sorry + sorry + sorry + sorry = 2 ∨ sorry + sorry + sorry + sorry = 3
+hnc : r 0 2 → r 1 3 → r 0 1
+ht012 : r 0 1 → r 1 2 → r 0 2
+ht013 : r 0 1 → r 1 3 → r 0 3
+ht023 : r 0 2 → r 2 3 → r 0 3
+ht123 : r 1 2 → r 2 3 → r 1 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : r 0 3
+h12 : r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ r = quadAdjacent ∨ r = quadNested
+error: Lean exited with code 1
+Some required builds logged failures:
+- LC004.QuadWitnessClassification
+error: build failed

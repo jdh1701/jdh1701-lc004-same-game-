@@ -79,3 +79,4 @@ import LC004.FourBlockCancellation
 import LC004.ChordBarrier
 import LC004.RegionalCancellation
 import LC004.FullBoardCancellation
+import LC004.AllWitnessCancellation

@@ -1,0 +1,221 @@
+{
+  "new_theorem_count": 31,
+  "new_named_theorems": [
+    "noncrossing_comap_strictMono",
+    "blockSize_comap_saturated",
+    "pairTriple_comap_saturated",
+    "fullBoardPartition_rel",
+    "fullBoardPartition_reconstruct",
+    "fullBoardPartition_left_saturated",
+    "fullBoardPartition_right_saturated",
+    "fullBoardPartition_noncrossing",
+    "fullBoardPartition_comap_left",
+    "fullBoardPartition_comap_right",
+    "fullBoardPartition_pairTriple",
+    "fullBoardPartition_pairBlock_left",
+    "partitionBlockSize_fin4",
+    "pairTriple_fin4_classification",
+    "quadAdjacent_pairTriple",
+    "quadNested_pairTriple",
+    "quadAdjacent_pairBlocks",
+    "quadNested_pairBlocks",
+    "quadPosition_strictMono",
+    "quadSplitEquiv_symm_selected",
+    "quadSplitEquiv_symm_remainder",
+    "quad_adjacent_barrier",
+    "quad_nested_barrier",
+    "quad_adjacent_extension",
+    "quad_nested_extension",
+    "quad_selected_restriction",
+    "quad_remainder_restriction",
+    "mem_fullBoardFourBlockFamily_iff",
+    "mem_allPairTripleWitnesses",
+    "all_witness_four_block_zero",
+    "all_witness_four_block_support"
+  ],
+  "axiom_reports": {
+    "noncrossing_comap_strictMono": [
+      "propext"
+    ],
+    "blockSize_comap_saturated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "pairTriple_comap_saturated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "fullBoardPartition_rel": [
+      "propext",
+      "Quot.sound"
+    ],
+    "fullBoardPartition_reconstruct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "fullBoardPartition_left_saturated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "fullBoardPartition_right_saturated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "fullBoardPartition_noncrossing": [
+      "propext",
+      "Quot.sound"
+    ],
+    "fullBoardPartition_comap_left": [
+      "propext",
+      "Quot.sound"
+    ],
+    "fullBoardPartition_comap_right": [
+      "propext",
+      "Quot.sound"
+    ],
+    "fullBoardPartition_pairTriple": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "fullBoardPartition_pairBlock_left": [
+      "propext",
+      "Quot.sound"
+    ],
+    "partitionBlockSize_fin4": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "pairTriple_fin4_classification": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "quadAdjacent_pairTriple": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "quadNested_pairTriple": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "quadAdjacent_pairBlocks": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "quadNested_pairBlocks": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "quadPosition_strictMono": [
+      "propext",
+      "Quot.sound"
+    ],
+    "quadSplitEquiv_symm_selected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "quadSplitEquiv_symm_remainder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "quad_adjacent_barrier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "quad_nested_barrier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "quad_adjacent_extension": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "quad_nested_extension": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "quad_selected_restriction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "quad_remainder_restriction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "mem_fullBoardFourBlockFamily_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "mem_allPairTripleWitnesses": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "all_witness_four_block_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "all_witness_four_block_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "source_hashes": {
+    "LC004/WitnessEmbedding.lean": "083ef49f61faf9621e6d98eec37b83625abaeee5dadf05bd990bcd8d8f2aecc8",
+    "LC004/QuadWitnessClassification.lean": "20e07d21ac93fb2552ab3b8f22f62618e99a6c8cfe27f2e64a4572c6abf7675a",
+    "LC004/QuadWitnessGeometry.lean": "50a53e6d0e83efef9e80e1d47f4ced482b1b25a9f8876045749ed99c2ca2f951",
+    "LC004/AllWitnessCancellation.lean": "a0fefe09058065f542235959a7d31ae8a3144a8a79918844b92882902a972bef"
+  },
+  "scans": {
+    "holes": [],
+    "custom_axioms": [],
+    "unchecked_code": []
+  },
+  "stage_counts": {
+    "verified": 4,
+    "partial": 2,
+    "open": 3
+  },
+  "changed_stage_statuses": [
+    "F"
+  ],
+  "stage_definitions_unchanged": true,
+  "exhaustive_four_position_classification_lean_verified": true,
+  "full_board_witness_extension_and_restriction_lean_verified": true,
+  "complete_witness_family_identification_lean_verified": true,
+  "all_witness_four_block_cancellation_lean_verified": true,
+  "coverage_assumption_remaining": false,
+  "minimum_five_connected_support_lean_verified": false,
+  "executable_generator_identification_lean_verified": false,
+  "general_enumeration_solved": false,
+  "mathematical_originality_established": false,
+  "remaining": [
+    "Size-two/three and connected-component assembly for minimum-five support",
+    "Complete noncrossing-closure component factorization",
+    "Executable witness generator, compression refinement and grammar-to-raw direction",
+    "Determine connected coefficients and analyze growth of a useful general method",
+    "End-to-end W(q,n) theorem and external originality assessment"
+  ]
+}

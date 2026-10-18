@@ -1,3 +1,11 @@
+# Subsequent progress (2026-10-18)
+
+The [complete-family checkpoint](../coverage/STATUS.md) now proves exhaustive
+classification, witness restriction/extension, and exact family identification.
+It discharges the `hcover` premise for all pair/triple witnesses and proves
+`all_witness_four_block_zero`. The body below preserves this earlier
+checkpoint's boundary. Originality remains unestablished.
+
 # Coefficient locality and full-board transport
 
 Date: 2026-10-18. Base commit: `9f56ef71e9738fe9e86e6f8c7468ba2785f3b4b9`.

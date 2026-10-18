@@ -1,0 +1,13 @@
+research/checkpoint_2026_10_18/coverage/Nonvacuity.lean:12:15: error: invalid argument name 'a' for function
+research/checkpoint_2026_10_18/coverage/Nonvacuity.lean:8:57: error: unsolved goals
+h : ⊤ ≤ Setoid.ker (remainderGapIndex 0 3 6 9)
+x : QuadRemainder 0 3 6 9 := ⟨1, ⋯⟩
+y : QuadRemainder 0 3 6 9 := ⟨4, ⋯⟩
+⊢ False
+research/checkpoint_2026_10_18/coverage/Nonvacuity.lean:22:15: error: invalid argument name 'a' for function
+research/checkpoint_2026_10_18/coverage/Nonvacuity.lean:17:39: error: unsolved goals
+case hp
+h : ⊤ ≤ Setoid.ker (remainderGapIndex 0 3 6 9)
+x : QuadRemainder 0 3 6 9 := ⟨1, ⋯⟩
+y : QuadRemainder 0 3 6 9 := ⟨4, ⋯⟩
+⊢ False

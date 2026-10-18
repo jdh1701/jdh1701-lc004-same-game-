@@ -1,0 +1,102 @@
+⚠ [719/828] Replayed LC004.SignedConstraints
+warning: ././././LC004/SignedConstraints.lean:43:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ././././LC004/SignedConstraints.lean:104:0: 'LC004.signedEval_addConstraint' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:105:0: 'LC004.signedEval_unionTerms' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:106:0: 'LC004.signedEval_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:107:0: 'LC004.signed_constraint_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [790/828] Replayed LC004.PartitionCounting
+info: ././././LC004/PartitionCounting.lean:58:0: 'LC004.respects_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionCounting.lean:59:0: 'LC004.card_partitionEvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionCounting.lean:60:0: 'LC004.partition_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [810/828] Replayed LC004.CoefficientFactorization
+info: ././././LC004/CoefficientFactorization.lean:138:0: 'LC004.zetaSum_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientFactorization.lean:139:0: 'LC004.coefficient_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientFactorization.lean:140:0: 'LC004.collected_union_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [814/828] Replayed LC004.NoncrossingRestriction
+info: ././././LC004/NoncrossingRestriction.lean:90:0: 'LC004.noncrossing_iff_blocks' depends on axioms: [propext]
+info: ././././LC004/NoncrossingRestriction.lean:91:0: 'LC004.blockRestriction_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/NoncrossingRestriction.lean:92:0: 'LC004.pairTriple_iff_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [815/828] Replayed LC004.ChordBarrier
+info: ././././LC004/ChordBarrier.lean:29:0: 'LC004.noncrossing_interval_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [818/828] Replayed LC004.GrammarNormalForm
+info: ././././LC004/GrammarNormalForm.lean:65:0: 'LC004.clickGrammar_iff_firstBlock' depends on axioms: [propext]
+info: ././././LC004/GrammarNormalForm.lean:66:0: 'LC004.clickGrammar_map' depends on axioms: [propext]
+ℹ [819/828] Replayed LC004.CoefficientBarrier
+info: ././././LC004/CoefficientBarrier.lean:45:0: 'LC004.coefficient_zero_outside_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientBarrier.lean:46:0: 'LC004.four_gap_pairing_intersection' does not depend on any axioms
+info: ././././LC004/CoefficientBarrier.lean:47:0: 'LC004.two_pairing_indicator' depends on axioms: [propext]
+ℹ [820/828] Replayed LC004.UnionCoefficientIdentity
+info: ././././LC004/UnionCoefficientIdentity.lean:101:0: 'LC004.two_branch_join_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UnionCoefficientIdentity.lean:102:0: 'LC004.two_branch_barrier_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UnionCoefficientIdentity.lean:103:0: 'LC004.collected_union_append' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UnionCoefficientIdentity.lean:104:0: 'LC004.collected_union_fixed_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [821/828] Replayed LC004.FourBlockCancellation
+info: ././././LC004/FourBlockCancellation.lean:58:0: 'LC004.quad_pairings_join_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourBlockCancellation.lean:59:0: 'LC004.four_block_barrier_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [823/828] Replayed LC004.FourGapGeometry
+warning: ././././LC004/FourGapGeometry.lean:34:5: unused variable `hab`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+warning: ././././LC004/FourGapGeometry.lean:34:33: unused variable `hcd`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+✖ [827/828] Building LC004.WitnessEmbedding
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /tmp/lean-4.19.0-linux/bin/lean ././././LC004/WitnessEmbedding.lean -R ./././. -o ././.lake/build/lib/lean/LC004/WitnessEmbedding.olean -i ././.lake/build/lib/lean/LC004/WitnessEmbedding.ilean -c ././.lake/build/ir/LC004/WitnessEmbedding.c --json
+error: ././././LC004/WitnessEmbedding.lean:117:81: unsolved goals
+case a
+α : Type u_1
+β : Type u_2
+γ : Type u_3
+e : γ ≃ α ⊕ β
+p : Setoid α × Setoid β
+x y : α
+⊢ (separatedPartition p) (Sum.inl x) (Sum.inl y) ↔ p.1 x y
+error: ././././LC004/WitnessEmbedding.lean:125:81: unsolved goals
+case a
+α : Type u_1
+β : Type u_2
+γ : Type u_3
+e : γ ≃ α ⊕ β
+p : Setoid α × Setoid β
+x y : β
+⊢ (separatedPartition p) (Sum.inr x) (Sum.inr y) ↔ p.2 x y
+error: Lean exited with code 1
+✖ [828/828] Building LC004.QuadWitnessClassification
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /tmp/lean-4.19.0-linux/bin/lean ././././LC004/QuadWitnessClassification.lean -R ./././. -o ././.lake/build/lib/lean/LC004/QuadWitnessClassification.olean -i ././.lake/build/lib/lean/LC004/QuadWitnessClassification.ilean -c ././.lake/build/ir/LC004/QuadWitnessClassification.c --json
+error: ././././LC004/QuadWitnessClassification.lean:70:6: tactic 'simp' failed, nested error:
+(deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+Use `set_option maxHeartbeats <num>` to set the limit.
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: ././././LC004/QuadWitnessClassification.lean:69:4: (deterministic) timeout at `«tactic execution»`, maximum number of heartbeats (200000) has been reached
+Use `set_option maxHeartbeats <num>` to set the limit.
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: ././././LC004/QuadWitnessClassification.lean:21:0: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+Use `set_option maxHeartbeats <num>` to set the limit.
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: ././././LC004/QuadWitnessClassification.lean:78:13: tactic 'decide' failed for proposition
+  IsNoncrossing quadAdjacent
+since its 'Decidable' instance
+  Classical.propDecidable (IsNoncrossing quadAdjacent)
+did not reduce to 'isTrue' or 'isFalse'.
+
+After unfolding the instance 'Classical.propDecidable', reduction got stuck at the 'Decidable' instance
+  Classical.choice ⋯
+
+Hint: Reduction got stuck on 'Classical.choice', which indicates that a 'Decidable' instance is defined using classical reasoning, proving an instance exists rather than giving a concrete construction. The 'decide' tactic works by evaluating a decision procedure via reduction, and it cannot make progress with such instances. This can occur due to the 'opened scoped Classical' command, which enables the instance 'Classical.propDecidable'.
+error: ././././LC004/QuadWitnessClassification.lean:83:13: tactic 'decide' failed for proposition
+  IsNoncrossing quadNested
+since its 'Decidable' instance
+  Classical.propDecidable (IsNoncrossing quadNested)
+did not reduce to 'isTrue' or 'isFalse'.
+
+After unfolding the instance 'Classical.propDecidable', reduction got stuck at the 'Decidable' instance
+  Classical.choice ⋯
+
+Hint: Reduction got stuck on 'Classical.choice', which indicates that a 'Decidable' instance is defined using classical reasoning, proving an instance exists rather than giving a concrete construction. The 'decide' tactic works by evaluating a decision procedure via reduction, and it cannot make progress with such instances. This can occur due to the 'opened scoped Classical' command, which enables the instance 'Classical.propDecidable'.
+error: Lean exited with code 1
+Some required builds logged failures:
+- LC004.WitnessEmbedding
+- LC004.QuadWitnessClassification
+error: build failed

@@ -65,6 +65,27 @@ def rooted(word):
     return mass == len(word) - 1
 
 
+def decode(word):
+    """Stack inverse: positive arity opens a block; zero fills a pending slot."""
+    assert rooted(word) and word[-1] == 0
+    blocks, pending = [], []
+    for position, size in enumerate(word[:-1]):
+        if size:
+            blocks.append([position])
+            if size > 1:
+                pending.append([len(blocks) - 1, size - 1])
+        else:
+            assert pending
+            block, remaining = pending[-1]
+            blocks[block].append(position)
+            if remaining == 1:
+                pending.pop()
+            else:
+                pending[-1][1] -= 1
+    assert not pending
+    return tuple(tuple(block) for block in blocks)
+
+
 def check(k, profile):
     n = 2 * k + 2
     sizes = (4, *((2,) * (k - 1))) if profile == 'four' else (
@@ -82,6 +103,8 @@ def check(k, profile):
     words = set(multiset_words(counts))
     tree_words = {word for word in words if rooted(word)}
     assert set(encoded) == tree_words
+    for word in tree_words:
+        assert decode(word) == encoded[word]
     # Check the entire rotation action, including uniqueness of the root.
     for word in words:
         rotations = {word[i:] + word[:i] for i in range(n + 1)}

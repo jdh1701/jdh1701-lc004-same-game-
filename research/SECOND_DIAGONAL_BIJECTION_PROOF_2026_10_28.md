@@ -204,3 +204,24 @@ set partitions and degree words for lengths 6, 8, and 10. It checks exact
 image equality, injectivity, full rotation orbits, unique valid roots,
 and the expected finite cardinalities. Passing finite tests does not prove
 the universal assertions.
+
+The executable inverse uses a stack of pending block slots. A positive
+degree opens a new block at that position and pushes size-1 pending slots;
+a zero fills a slot in the most recently opened unfinished block. The
+terminal zero is omitted. Prefix balance ensures that a zero never faces
+an empty stack, and total balance ensures that all blocks close. The
+finite checker verifies that this decoder returns the exact original
+partition for every tested valid word. Formal invariants for this stack,
+its noncrossing output, and the two inverse laws remain to be proved.
+
+A specialized counting route can avoid a general multinomial theorem.
+For the fourfold profile, rotate the unique degree-4 entry to the first
+position. The remaining degree-2 positions form a (k-1)-subset of the n
+remaining positions, yielding binom(n,k-1). For the two-triple profile,
+mark one of the two degree-3 entries and rotate it first. Choose the other
+degree-3 position in n ways and the k-2 degree-2 positions from the other
+n-1 positions. The resulting marked count is
+n*binom(n-1,k-2)=(k-1)*binom(n,k-1), and marking multiplies the unmarked
+count by two. Both routes still require the universal decoder inverse
+and unique valid rotation theorem; the elementary choice counts alone
+do not evaluate the partition spaces.

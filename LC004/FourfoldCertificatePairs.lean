@@ -38,7 +38,7 @@ theorem certificate_even_small_classes_all_pairs {n : Nat} (p : ColorPattern n)
       · omega
       · exact h
     have hdiff : ((patternClassPositions p i) \ b.toFinset).card = 1 := by
-      rw [Finset.card_sdiff_of_subset hsub, hclass, hbc]
+      rw [Finset.card_sdiff hsub, hclass, hbc]
     obtain ⟨j, hj⟩ := Finset.card_pos.mp (show 0 <
       ((patternClassPositions p i) \ b.toFinset).card by omega)
     have hjc := (Finset.mem_sdiff.mp hj).1

@@ -79,6 +79,27 @@ theorem fourfold_winning_has_pair_refinement {n : Nat} (p : ColorPattern n)
     certificateBlockPattern_pair_noncrossing cert (fourfold_certificate_all_pairs p hprofile cert),
     fun _ _ h => certificateBlockPattern_refines p cert h⟩
 
+theorem fourfold_representation_profile {n : Nat}
+    (r : FourfoldMatchingRepresentation n) :
+    FourfoldPairPattern (fourfoldRepresentationPattern r) := by
+  classical
+  obtain ⟨i, hi, hrel⟩ := fourfold_representation_unique_four_class r
+  refine ⟨i, hi, ?_⟩
+  intro j hj
+  have hnot : Quotient.mk r.1.val j ∉ r.2.val := by
+    intro hmem
+    exact hj ((hrel j).mpr ((fourfold_representation_class_card r j).1 hmem))
+  exact (fourfold_representation_class_card r j).2 hnot
+
+/-- The finite representation map lands in the exact intended winning
+fourfold-plus-pairs space. No surjectivity assertion is hidden here. -/
+def fourfoldRepresentationProfileMap {n : Nat}
+    (r : FourfoldMatchingRepresentation n) :
+    {p : ColorPattern n // WinningColorPattern p ∧ FourfoldPairPattern p} :=
+  ⟨fourfoldRepresentationPattern r, fourfold_representation_winning r,
+    fourfold_representation_profile r⟩
+
+#print axioms fourfold_representation_profile
 #print axioms certificateBlockPattern_pair_noncrossing
 #print axioms fourfold_winning_has_pair_refinement
 

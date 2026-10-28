@@ -130,6 +130,7 @@ theorem fourfold_representation_fiber_one_or_two {n : Nat} (p : ColorPattern n)
   have hbound := fourfold_representation_fiber_le_two p hprofile
   omega
 
+open scoped Classical in
 theorem fourfoldProfileMap_fiber {n : Nat}
     (p : {p : ColorPattern n // WinningColorPattern p ∧ FourfoldPairPattern p}) :
     ((Finset.univ : Finset (FourfoldMatchingRepresentation n)).filter

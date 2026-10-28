@@ -17,12 +17,12 @@ theorem disjoint_blocks_of_nodup_flatten {α : Type*}
       rcases hb with rfl | hb
       · rcases hc with rfl | hc
         · exact hne rfl
-        · exact (List.disjoint_left.mp hd.2.2) p hp
+        · exact (List.disjoint_left.mp hd.2.2) hp
             (List.mem_flatten.mpr ⟨c, hc, hpc⟩)
       · rcases hc with rfl | hc
-        · exact (List.disjoint_left.mp hd.2.2) p hpc
+        · exact (List.disjoint_left.mp hd.2.2) hpc
             (List.mem_flatten.mpr ⟨b, hb, hp⟩)
-        · exact (List.disjoint_left.mp (ih hd.2.1 hb hc hne)) p hp hpc
+        · exact (List.disjoint_left.mp (ih hd.2.1 hb hc)) hp hpc
 
 theorem Noncrossing23Certificate.flatten_nodup {n q : Nat}
     {color : Fin n → Fin q} (cert : Noncrossing23Certificate color) :
@@ -109,17 +109,23 @@ theorem Noncrossing23Certificate.exists_innermost_block {n q : Nat}
     intro t ht
     have htlNe : t.val ≠ lo.val := by
       intro heq
-      exact (List.disjoint_left.mp hdisjoint) lo hlo ((Fin.ext heq) ▸ ht)
+      exact (List.disjoint_left.mp hdisjoint) hlo ((Fin.ext heq) ▸ ht)
     have hthNe : t.val ≠ hi.val := by
       intro heq
-      exact (List.disjoint_left.mp hdisjoint) hi hhi ((Fin.ext heq) ▸ ht)
-    constructor
-    · by_contra hle
-      have hlt : t.val < lo.val := by omega
-      exact cert.no_alternation hb hc hlo hhi ht hpc (Or.inr ⟨hlt, hpl, hph⟩)
-    · by_contra hge
-      have hgt : hi.val < t.val := by omega
-      exact cert.no_alternation hb hc hlo hhi hpc ht (Or.inl ⟨hpl, hph, hgt⟩)
+      exact (List.disjoint_left.mp hdisjoint) hhi ((Fin.ext heq) ▸ ht)
+    have hlow : lo.val < t.val := by
+      by_cases hlt : lo.val < t.val
+      · exact hlt
+      · have hback : t.val < lo.val := by omega
+        exact False.elim
+          (cert.no_alternation hb hc hlo hhi ht hpc (Or.inr ⟨hback, hpl, hph⟩))
+    have hhigh : t.val < hi.val := by
+      by_cases hlt : t.val < hi.val
+      · exact hlt
+      · have hback : hi.val < t.val := by omega
+        exact False.elim
+          (cert.no_alternation hb hc hlo hhi hpc ht (Or.inl ⟨hpl, hph, hback⟩))
+    exact ⟨hlow, hhigh⟩
   obtain ⟨clo, hclo, chi, hchi, hcbounds⟩ :=
     fin_block_extrema c (List.length_pos_of_mem hpc)
   have hcLo := hcInside clo hclo

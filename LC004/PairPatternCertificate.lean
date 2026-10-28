@@ -55,19 +55,21 @@ theorem pair_pattern_fibers_no_cross {n : Nat} (p : ColorPattern n)
       ((patternQuotientFiber p r).toList.map Fin.val) := by
   classical
   rintro ⟨u, hu, v, hv, s, hs, t, ht, hcross⟩
-  obtain ⟨u, hu, rfl⟩ := List.mem_map.mp hu
-  obtain ⟨v, hv, rfl⟩ := List.mem_map.mp hv
-  obtain ⟨s, hs, rfl⟩ := List.mem_map.mp hs
-  obtain ⟨t, ht, rfl⟩ := List.mem_map.mp ht
-  have huq : Quotient.mk p u = q := by simpa using hu
-  have hvq : Quotient.mk p v = q := by simpa using hv
-  have hsr : Quotient.mk p s = r := by simpa using hs
-  have htr : Quotient.mk p t = r := by simpa using ht
-  have huv : p u v := Quotient.exact (huq.trans hvq.symm)
-  have hst : p s t := Quotient.exact (hsr.trans htr.symm)
-  rcases hcross with ⟨hus, hsv, hvt⟩ | ⟨hsu, hut, htv⟩
-  · exact hp.2 u s v t hus hsv hvt ⟨huv, hst⟩
-  · exact hp.2 s u t v hsu hut htv ⟨hst, huv⟩
+  obtain ⟨iu, hiu, heu⟩ := List.mem_map.mp hu
+  obtain ⟨iv, hiv, hev⟩ := List.mem_map.mp hv
+  obtain ⟨is, his, hes⟩ := List.mem_map.mp hs
+  obtain ⟨it, hit, het⟩ := List.mem_map.mp ht
+  have huq : Quotient.mk p iu = q := by simpa using hiu
+  have hvq : Quotient.mk p iv = q := by simpa using hiv
+  have hsr : Quotient.mk p is = r := by simpa using his
+  have htr : Quotient.mk p it = r := by simpa using hit
+  have huv : p iu iv := Quotient.exact (huq.trans hvq.symm)
+  have hst : p is it := Quotient.exact (hsr.trans htr.symm)
+  have hc : PairCross iu.val iv.val is.val it.val := by
+    simpa only [heu, hev, hes, het] using hcross
+  rcases hc with ⟨hus, hsv, hvt⟩ | ⟨hsu, hut, htv⟩
+  · exact hp.2 iu is iv it hus hsv hvt ⟨huv, hst⟩
+  · exact hp.2 is iu it iv hsu hut htv ⟨hst, huv⟩
 
 /-- A perfect noncrossing matching gives a complete monochromatic
 certificate for its unlabeled color pattern. No enumeration theorem

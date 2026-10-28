@@ -37,3 +37,8 @@ jobs:
         run: |
           export PATH="$HOME/.elan/bin:$PATH"
           lake build
+
+      - name: Validate direct grammar counting against Same Game
+        run: |
+          python research/validate_direct_grammar_dfa.py
+          python -c "import sys;sys.path.insert(0,'research');from direct_grammar_dfa import compute as direct;from orbit_grammar_dfa import compute as orbit;[(lambda a,b: (_ for _ in ()).throw(AssertionError((q,n,a,b))) if a!=b else print('ORBIT CHECK PASS',q,n,a))(direct(q,n)[0],orbit(q,n)[0]) for q,n in [(2,8),(3,10),(3,12),(3,14),(4,8)]]"

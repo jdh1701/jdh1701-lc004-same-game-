@@ -10,9 +10,16 @@ theorem erases_imply_win_of_one_step_lift {q : Nat}
     (emptyWin : Win [])
     (lift : ∀ {u v : List (Fin q)}, SmallErase u v → Win v → Win u)
     {w : List (Fin q)} (h : Erases w []) : Win w := by
-  induction h with
-  | refl _ => exact emptyWin
-  | next hstep hrest ih => exact lift hstep ih
+  have aux : ∀ {u v : List (Fin q)}, Erases u v → Win v → Win u := by
+    intro u v huv
+    induction huv with
+    | refl _ =>
+        intro hv
+        exact hv
+    | next step rest ih =>
+        intro hv
+        exact lift step (ih hv)
+  exact aux h emptyWin
 
 /-- Conditional grammar soundness. To use this for the original maximal-run
     game one MUST separately prove its one-step lifting property. -/

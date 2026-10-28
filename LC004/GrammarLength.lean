@@ -59,7 +59,7 @@ theorem grammar_empty_or_length_ge_two {q : Nat}
 theorem grammar_append {q : Nat} {u v : List (Fin q)}
     (hu : Grammar q u) (hv : Grammar q v) :
     Grammar q (u ++ v) := by
-  induction hu with
+  induction hu generalizing v with
   | empty =>
       simpa using hv
   | pair a hu₁ hu₂ ih₁ ih₂ =>

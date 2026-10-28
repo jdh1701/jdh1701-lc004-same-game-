@@ -11,7 +11,7 @@ theorem win_of_erases_of_lift {q : Nat}
     Win u := by
   induction h with
   | refl _ => exact hv
-  | next step rest ih => exact lift step ih
+  | next step rest ih => exact lift step (ih hv)
 
 /-- A compositional consequence: one-step lifting implies insertion
     closure for ANY word erasable by pair/triple deletion, in ANY context.

@@ -160,3 +160,5 @@ import LC004.TwoTripleCorrespondence
 import LC004.FourfoldSplit
 
 import LC004.DoubleFiberGeometry
+
+import LC004.DoubleFiberCountCorrespondence

@@ -15,20 +15,29 @@ inductive InsertionHistory {q : Nat} : List (Fin q) → Prop where
       InsertionHistory (left ++ right) →
       InsertionHistory (left ++ [a, a, a] ++ right)
 
-/-- Any finite pair/triple deletion history ending at empty reconstructs
-an insertion history in the reverse order. -/
-theorem erases_empty_to_insertion_history {q : Nat}
-    {w : List (Fin q)} (h : Erases w []) :
-    InsertionHistory w := by
+/-- Backward lifting along an auxiliary erasure path:
+if the terminal word has an insertion-history certificate, then the
+source word also has one. The endpoint remains arbitrary throughout
+the induction, preventing dependent-index elaboration failures. -/
+theorem insertion_history_backwards {q : Nat}
+    {u v : List (Fin q)}
+    (h : Erases u v) (hv : InsertionHistory v) :
+    InsertionHistory u := by
   induction h with
-  | refl _ =>
-      exact InsertionHistory.empty
+  | refl _ => exact hv
   | next step rest ih =>
       cases step with
       | pair left right a =>
-          exact InsertionHistory.pair left right a ih
+          exact InsertionHistory.pair left right a (ih hv)
       | triple left right a =>
-          exact InsertionHistory.triple left right a ih
+          exact InsertionHistory.triple left right a (ih hv)
+
+/-- Every successful pair/triple deletion history admits a
+reverse contextual insertion history. -/
+theorem erases_empty_to_insertion_history {q : Nat}
+    {w : List (Fin q)} (h : Erases w []) :
+    InsertionHistory w := by
+  exact insertion_history_backwards h InsertionHistory.empty
 
 /-- The reverse insertion history generates a finite auxiliary erasure
 sequence, because each insertion reverses a legal contextual pair/triple

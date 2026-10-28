@@ -74,3 +74,5 @@ import LC004.InsertionRunCases
 import LC004.RunLengthTwoThree
 
 import LC004.FullRunErasure
+
+import LC004.RawMaxSemanticsBridge

@@ -146,3 +146,5 @@ import LC004.FourfoldCertificatePairs
 import LC004.CertificatePairRefinement
 
 import LC004.FourfoldRepresentationSurjection
+
+import LC004.FourfoldMatchingChoices

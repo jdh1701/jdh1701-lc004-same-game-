@@ -118,3 +118,5 @@ import LC004.HistoryCertificate
 import LC004.InnermostBlock
 
 import LC004.CertificateFirstErase
+
+import LC004.CertificateDeletion

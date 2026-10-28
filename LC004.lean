@@ -132,3 +132,5 @@ import LC004.SecondDiagonalProfiles
 import LC004.FourRefinementOverlap
 
 import LC004.DoubleRepresentationCount
+
+import LC004.ColorPatternSpace

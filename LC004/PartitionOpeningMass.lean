@@ -44,9 +44,9 @@ noncomputable def patternOpeningMass {n : Nat} (p : ColorPattern n) (cut : Nat) 
   classical
   exact ∑ q ∈ patternOpenedClasses p cut, (patternQuotientFiber p q).card
 
+open scoped Classical in
 /-- Class selection has its expected size without any assumptions on
 block sizes or noncrossing. -/
-open scoped Classical in
 theorem selected_pattern_positions_card {n : Nat} (p : ColorPattern n)
     (chosen : Finset (Quotient p)) :
     (selectedPatternPositions p chosen).card =

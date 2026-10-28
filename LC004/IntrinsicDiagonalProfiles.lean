@@ -24,6 +24,7 @@ theorem out_related_iff_quotient_eq {n : Nat} (p : ColorPattern n) (q : Quotient
   exact ⟨fun h => (related_out_iff_quotient_eq p i q).mp (p.symm h),
     fun h => p.symm ((related_out_iff_quotient_eq p i q).mpr h)⟩
 
+open scoped Classical in
 theorem pattern_sum_class_sizes {n : Nat} (p : ColorPattern n) :
     n = ∑ q : Quotient p, (patternQuotientFiber p q).card := by
   classical
@@ -148,6 +149,7 @@ theorem fourfold_profile_position_count {n : Nat} (p : ColorPattern n)
     (by
       intro q _ hq
       have hn : ¬ p a q.out := fun h => hq ((related_out_iff_quotient_eq p a q).mp h).symm
+      change (patternQuotientFiber p q).card = 2
       rw [patternQuotientFiber_eq_class]
       exact hrest q.out hn)
   have hn := pattern_sum_class_sizes p
@@ -170,6 +172,8 @@ theorem two_triple_profile_position_count {n : Nat} (p : ColorPattern n)
       intro q _ hqa hqb
       have hna : ¬ p a q.out := fun h => hqa ((related_out_iff_quotient_eq p a q).mp h).symm
       have hnb : ¬ p b q.out := fun h => hqb ((related_out_iff_quotient_eq p b q).mp h).symm
+      change (patternQuotientFiber p q).card = 2
+      change (patternQuotientFiber p q).card = 2
       rw [patternQuotientFiber_eq_class]
       exact hrest q.out hna hnb)
   have hn := pattern_sum_class_sizes p

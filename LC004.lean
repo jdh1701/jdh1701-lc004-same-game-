@@ -124,3 +124,5 @@ import LC004.CertificateDeletion
 import LC004.CertificateConverse
 
 import LC004.RawRunInflation
+
+import LC004.RawCertificateEquivalence

@@ -50,7 +50,8 @@ theorem raw_inflates_replicate {q : Nat} (a : Fin q) (n : Nat)
       | cons a k htail =>
           obtain ⟨m, hnm, heq⟩ := ih htail
           refine ⟨k + 1 + m, by omega, ?_⟩
-          rw [heq, List.replicate_add]
+          rw [heq]
+          exact (List.replicate_add (k + 1) m a).symm
 
 theorem raw_inflates_head {q : Nat} {u v : List (Fin q)}
     (h : RawInflates u v) : v.head? = u.head? := by

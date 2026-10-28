@@ -180,3 +180,5 @@ import LC004.EndpointMatching
 import LC004.EndpointMatchingDyck
 
 import LC004.MatchingCatalan
+
+import LC004.SecondDiagonalArithmetic

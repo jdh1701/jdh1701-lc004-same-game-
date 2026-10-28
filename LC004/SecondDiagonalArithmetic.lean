@@ -47,6 +47,31 @@ theorem second_diagonal_subtraction_algebra (k R D T : Nat) (hk : 1 ≤ k)
       congrArg (fun j : Nat => j * D) (Nat.sub_add_cancel hk)
   nlinarith
 
+/-- The candidate two-triple expression is integral; parity follows
+from the Catalan coefficient identity rather than a counting assumption. -/
+theorem second_diagonal_two_triple_numerator_even (k : Nat) (hk : 1 ≤ k) :
+    2 ∣ (k - 1) * (2 * k + 2).choose (k - 1) := by
+  have hR := second_diagonal_representation_coefficient k hk
+  have hkd : (k - 1) * (2 * k + 2).choose (k - 1) +
+      (2 * k + 2).choose (k - 1) = k * (2 * k + 2).choose (k - 1) := by
+    simpa only [Nat.add_mul, Nat.one_mul] using
+      congrArg (fun j : Nat => j * (2 * k + 2).choose (k - 1)) (Nat.sub_add_cancel hk)
+  have hbalance : (k - 1) * (2 * k + 2).choose (k - 1) +
+      4 * (2 * k + 2).choose (k - 1) =
+      2 * ((k + 1).choose 2 * catalan (k + 1)) := by nlinarith
+  apply Nat.dvd_of_mod_eq_zero
+  omega
+
+/-- Pure arithmetic simplification of the candidate count. It makes no
+claim that either refined partition space has the proposed cardinality. -/
+theorem second_diagonal_candidate_simplification (k : Nat) (hk : 1 ≤ k) :
+    ((k + 1).choose 2 * catalan (k + 1) - (2 * k + 2).choose (k - 1)) +
+      ((k - 1) * (2 * k + 2).choose (k - 1) / 2) =
+        k * (2 * k + 2).choose (k - 1) := by
+  apply second_diagonal_subtraction_algebra k _ _ _ hk
+    (second_diagonal_representation_coefficient k hk)
+  rw [Nat.mul_div_cancel' (second_diagonal_two_triple_numerator_even k hk)]
+
 /-- Conditional assembly of the proposed formula. This does not assert
 or assume as axioms the two outstanding refined cardinality evaluations. -/
 theorem second_diagonal_formula_of_refined_counts (k : Nat) (hk : 2 ≤ k)
@@ -62,6 +87,8 @@ theorem second_diagonal_formula_of_refined_counts (k : Nat) (hk : 2 ≤ k)
 
 #print axioms second_diagonal_representation_coefficient
 #print axioms second_diagonal_subtraction_algebra
+#print axioms second_diagonal_two_triple_numerator_even
+#print axioms second_diagonal_candidate_simplification
 #print axioms second_diagonal_formula_of_refined_counts
 
 end LC004

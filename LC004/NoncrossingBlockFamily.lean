@@ -57,6 +57,7 @@ so inserting it preserves pairwise noncrossing for a whole family.
 The result allows ANY k, including both pair and triple insertions. -/
 theorem noncrossing_block_family_insert
     (blocks : List (List Nat)) (gap k : Nat)
+    (hk : k ≤ 3)
     (h : NoncrossingBlockFamily blocks) :
     NoncrossingBlockFamily
       ((List.range k).map (fun s => gap + s) ::
@@ -75,6 +76,10 @@ theorem noncrossing_block_family_insert
     obtain ⟨v0,hv0,rfl⟩ := List.mem_map.mp hv
     obtain ⟨s0,hs0,rfl⟩ := List.mem_map.mp hs
     obtain ⟨t0,ht0,rfl⟩ := List.mem_map.mp ht
+    have huBound := hnew u0 hu0
+    have hvBound := hnew v0 hv0
+    have hsBound := hnew s0 hs0
+    have htBound := hnew t0 ht0
     unfold PairCross at hcross
     omega
   intro a ha b hb

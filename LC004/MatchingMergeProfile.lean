@@ -13,12 +13,18 @@ noncomputable def selectedPatternPositions {n : Nat} (p : ColorPattern n)
   classical
   exact Finset.univ.filter (fun i => Quotient.mk p i ∈ chosen)
 
+noncomputable def patternQuotientFiber {n : Nat} (p : ColorPattern n)
+    (q : Quotient p) : Finset (Fin n) := by
+  classical
+  exact Finset.univ.filter (fun i => Quotient.mk p i = q)
+
 theorem pair_pattern_quotient_fiber_card {n : Nat} (p : ColorPattern n)
     (hp : NoncrossingPairPattern p) (q : Quotient p) :
-    ((Finset.univ : Finset (Fin n)).filter (fun i => Quotient.mk p i = q)).card = 2 := by
+    (patternQuotientFiber p q).card = 2 := by
   classical
   induction q using Quotient.inductionOn with
   | h i =>
+    unfold patternQuotientFiber
     have hf : ((Finset.univ : Finset (Fin n)).filter
         (fun j => Quotient.mk p j = Quotient.mk p i)) =
         Finset.univ.filter (p i) := by
@@ -88,11 +94,14 @@ theorem merged_class_of_unselected {n : Nat} (p : ColorPattern n)
 multiplicities. This does not yet establish winning or surjectivity. -/
 theorem fourfold_representation_class_card {n : Nat}
     (r : FourfoldMatchingRepresentation n) (i : Fin n) :
-    (patternClassPositions (fourfoldRepresentationPattern r) i).card =
-      if Quotient.mk r.1.val i ∈ r.2.val then 4 else 2 := by
+    (Quotient.mk r.1.val i ∈ r.2.val →
+      (patternClassPositions (fourfoldRepresentationPattern r) i).card = 4) ∧
+    (Quotient.mk r.1.val i ∉ r.2.val →
+      (patternClassPositions (fourfoldRepresentationPattern r) i).card = 2) := by
   classical
-  change (patternClassPositions (mergePatternClasses r.1.val r.2.val) i).card = _
-  split_ifs with hi
+  change (_ → (patternClassPositions (mergePatternClasses r.1.val r.2.val) i).card = 4) ∧
+    (_ → (patternClassPositions (mergePatternClasses r.1.val r.2.val) i).card = 2)
+  constructor <;> intro hi
   · rw [merged_class_of_selected _ _ _ hi,
       selected_pair_positions_card _ r.1.property, r.2.property]
   · rw [merged_class_of_unselected _ _ _ hi]

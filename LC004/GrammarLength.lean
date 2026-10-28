@@ -54,4 +54,19 @@ theorem grammar_empty_or_length_ge_two {q : Nat}
       simp only [List.length_append, List.length_cons, List.length_nil]
       omega
 
+/-- Concatenation preserves the candidate winning-word grammar.
+    This is a key compositional lemma for a later soundness theorem. -/
+theorem grammar_append {q : Nat} {u v : List (Fin q)}
+    (hu : Grammar q u) (hv : Grammar q v) :
+    Grammar q (u ++ v) := by
+  induction hu with
+  | empty =>
+      simpa using hv
+  | pair a hu₁ hu₂ ih₁ ih₂ =>
+      simpa only [List.append_assoc] using
+        (Grammar.pair a hu₁ (ih₂ hv))
+  | triple a hu₁ hu₂ hu₃ ih₁ ih₂ ih₃ =>
+      simpa only [List.append_assoc] using
+        (Grammar.triple a hu₁ hu₂ (ih₃ hv))
+
 end LC004

@@ -27,9 +27,16 @@ theorem four_related_positions_card_ge_four {n : Nat} (p : ColorPattern n)
   have hsub : ({a, b, c, d} : Finset (Fin n)) ⊆ patternClassPositions p a := by
     intro x hx
     simp only [Finset.mem_insert, Finset.mem_singleton] at hx
-    have hax : p a x := hx.elim (fun h => h ▸ p.refl a)
-      (fun h => h.elim (fun h => h.symm ▸ hpab)
-        (fun h => h.elim (fun h => h.symm ▸ hpac) (fun h => h.symm ▸ hpad)))
+    have hax : p a x := by
+      rcases hx with h | h | h | h
+      · subst x
+        exact p.refl a
+      · subst x
+        exact hpab
+      · subst x
+        exact hpac
+      · subst x
+        exact hpad
     simpa only [patternClassPositions, Finset.mem_filter, Finset.mem_univ, true_and] using hax
   have hle := Finset.card_le_card hsub
   omega
@@ -160,7 +167,7 @@ noncomputable def smallPatternCertificate {n : Nat} (p : ColorPattern n)
   sizes := by
     intro b hb
     obtain ⟨q, _, rfl⟩ := List.mem_map.mp hb
-    rw [Finset.length_toList, patternQuotientFiber_eq_class]
+    simp only [Finset.length_toList, patternQuotientFiber_eq_class]
     exact hsmall q.out
   exactCover := patternBlockLists_exact_cover p
   monochromatic := by

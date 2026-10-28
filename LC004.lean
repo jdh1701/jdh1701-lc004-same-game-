@@ -100,3 +100,5 @@ import LC004.FourBlockCrossing
 import LC004.FourBlockOverlapCorollary
 
 import LC004.ReverseInsertionHistory
+
+import LC004.NoncrossingInsertionIndex

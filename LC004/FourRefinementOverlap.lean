@@ -13,13 +13,16 @@ theorem pairFamily_cons_iff (e : Nat × Nat) (edges : List (Nat × Nat)) :
     exact ⟨fun a ha b hb => h a (by simp [ha]) b (by simp [hb]),
       fun f hf => h f (by simp [hf]) e (by simp)⟩
   · rintro ⟨h, he⟩ a ha b hb
-    rcases List.mem_cons.mp ha with rfl | ha
-    · rcases List.mem_cons.mp hb with rfl | hb
-      · unfold PairCross
+    rcases List.mem_cons.mp ha with haEq | ha
+    · subst a
+      rcases List.mem_cons.mp hb with hbEq | hb
+      · subst b
+        unfold PairCross
         omega
       · exact (pairCross_symmetric e.1 e.2 b.1 b.2).not.mpr (he b hb)
-    · rcases List.mem_cons.mp hb with rfl | hb
-      · exact he a ha
+    · rcases List.mem_cons.mp hb with hbEq | hb
+      · subst b
+        exact he a ha
       · exact h a ha b hb
 
 inductive FourRefinement where
@@ -111,11 +114,15 @@ noncomputable def validFourRefinements (edges : List (Nat × Nat))
   classical
   exact Finset.univ.filter (FourRefinementValid edges a b c d)
 
+noncomputable def refinementIndicator (P : Prop) : Nat := by
+  classical
+  exact if P then 1 else 0
+
 theorem valid_four_refinements_card (edges : List (Nat × Nat))
     {a b c d : Nat} (hab : a < b) (hbc : b < c) (hcd : c < d) :
     (validFourRefinements edges a b c d).card =
-      (if FourRefinementValid edges a b c d .separated then 1 else 0) +
-      (if FourRefinementValid edges a b c d .nested then 1 else 0) := by
+      refinementIndicator (FourRefinementValid edges a b c d .separated) +
+      refinementIndicator (FourRefinementValid edges a b c d .nested) := by
   classical
   have huniv : (Finset.univ : Finset FourRefinement) =
       {.separated, .nested, .interleaved} := by
@@ -124,13 +131,15 @@ theorem valid_four_refinements_card (edges : List (Nat × Nat))
   have hbad := interleaved_refinement_invalid edges hab hbc hcd
   by_cases hs : FourRefinementValid edges a b c d .separated <;>
     by_cases hn : FourRefinementValid edges a b c d .nested <;>
-    simp [validFourRefinements, huniv, hbad, hs, hn]
+    simp [validFourRefinements, refinementIndicator, huniv,
+      Finset.filter_insert, hbad, hs, hn]
 
 theorem valid_four_refinements_card_le_two (edges : List (Nat × Nat))
     {a b c d : Nat} (hab : a < b) (hbc : b < c) (hcd : c < d) :
     (validFourRefinements edges a b c d).card ≤ 2 := by
   classical
   rw [valid_four_refinements_card edges hab hbc hcd]
+  unfold refinementIndicator
   split_ifs <;> omega
 
 /-- Exact double-refinement classification for an arbitrary forced
@@ -149,7 +158,8 @@ theorem valid_four_refinements_card_eq_two_iff (edges : List (Nat × Nat))
   rw [← both_refinements_valid_iff edges hab hbc hcd hordered hdisjoint,
     valid_four_refinements_card edges hab hbc hcd]
   by_cases hs : FourRefinementValid edges a b c d .separated <;>
-    by_cases hn : FourRefinementValid edges a b c d .nested <;> simp [hs, hn]
+    by_cases hn : FourRefinementValid edges a b c d .nested <;>
+    simp [refinementIndicator, hs, hn]
 
 #print axioms both_refinements_valid_iff
 #print axioms valid_four_refinements_card_le_two

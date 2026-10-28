@@ -32,9 +32,15 @@ theorem finite_one_or_two_fiber_count {R W : Type*}
         (fun r _ => Finset.mem_univ (f r)))
   change Fintype.card W +
     ((Finset.univ : Finset W).filter (fun w => multiplicity w = 2)).card = _
+  have hones : (∑ w : W, (1 : Nat)) = Fintype.card W := by simp
+  have htwice : (∑ w : W, if multiplicity w = 2 then 1 else 0) =
+      ((Finset.univ : Finset W).filter (fun w => multiplicity w = 2)).card :=
+    Finset.sum_boole _ _
   calc
-    _ = ∑ w : W, (1 + (if multiplicity w = 2 then 1 else 0)) := by
-      simp [Finset.sum_add_distrib, Finset.card_filter]
+    _ = (∑ w : W, (1 : Nat)) +
+        (∑ w : W, if multiplicity w = 2 then 1 else 0) := by rw [hones, htwice]
+    _ = ∑ w : W, (1 + (if multiplicity w = 2 then 1 else 0)) :=
+      (Finset.sum_add_distrib).symm
     _ = ∑ w : W, multiplicity w := by
       apply Finset.sum_congr rfl
       intro w hw

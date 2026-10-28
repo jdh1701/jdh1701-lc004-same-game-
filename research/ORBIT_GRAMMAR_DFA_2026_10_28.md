@@ -8,6 +8,7 @@ Canonicalize each reachable parser-set state by lexicographically minimizing the
 ## Executed exact results
 q=3,n=12, unquotiented peak states 1419, color-orbit peak 239, count 71385 both ways. Unquotiented runtime 0.933 s, orbit 0.532 s.
 q=3,n=14, unquotiented peak states 5634, color-orbit peak 941, count 657849 both ways. Unquotiented runtime 7.22 s, orbit 3.45 s.
+q=3,n=15, color-orbit peak 2247, count 2003151, runtime 10.879 s. The count agrees with OEIS A035617.
 q=3,n=16 attempt exceeded local execution time budget. NO count reported and no claim of scalability beyond these tested cases.
 
 For q=3,n=12, orbit-state counts by prefix depth:

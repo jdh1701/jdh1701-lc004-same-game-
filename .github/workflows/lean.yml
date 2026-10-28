@@ -46,3 +46,8 @@ jobs:
       - name: Validate symbolic restricted-growth polynomial counts
         run: |
           python research/check_rgs_symbolic_count.py
+
+      - name: Verify second-diagonal combinatorial conjecture
+        run: |
+          python research/second_diagonal_formula_check.py
+          python research/second_diagonal_independent_n16.py

@@ -48,8 +48,10 @@ theorem toDyck_nest {n : Nat} (m : EndpointMatching n) : m.nest.toDyck = m.toDyc
   have hinterior (i : Fin n) : f (interior i) = g i := by
     dsimp [f, g]
     rw [step_formula, step_formula]
-    simp only [nest, nestMate_interior, interior, Fin.lt_def, Fin.val_succ,
-      Fin.coe_castSucc, Nat.add_lt_add_iff_right]
+    change (if interior i < nestMate m (interior i) then DyckStep.U else DyckStep.D) =
+      (if i < m.mate i then DyckStep.U else DyckStep.D)
+    rw [nestMate_interior]
+    simp only [interior, Fin.lt_def, Fin.val_succ, Fin.coe_castSucc, Nat.add_lt_add_iff_right]
   apply DyckWord.ext
   change List.ofFn f = [DyckStep.U] ++ List.ofFn g ++ [DyckStep.D]
   rw [List.ofFn_succ, List.ofFn_succ', List.concat_eq_append]
@@ -68,7 +70,7 @@ def empty : EndpointMatching 0 where
 
 theorem toDyck_empty : empty.toDyck = 0 := by
   apply DyckWord.ext
-  simp [toDyck, matchingToDyckWord]
+  rfl
 
 #print axioms toDyck_append
 #print axioms toDyck_nest

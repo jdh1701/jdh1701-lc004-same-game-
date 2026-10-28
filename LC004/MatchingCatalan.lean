@@ -1,4 +1,5 @@
 import LC004.EndpointMatchingDyck
+import LC004.SecondDiagonalCountAssembly
 
 namespace LC004
 
@@ -49,6 +50,14 @@ theorem second_diagonal_matching_count (k : Nat) :
   have h := noncrossing_pair_pattern_count_eq_catalan (k + 1)
   simpa only [Nat.mul_add, Nat.mul_one] using h
 
+theorem second_diagonal_count_reduction_catalan (k : Nat) :
+    winningColorPatternCount (2 * k + 2) k =
+      ((k + 1).choose 2 * catalan (k + 1) -
+        fourfoldNoncrossingPatternCount (2 * k + 2)) +
+          twoTripleNoncrossingPatternCount (2 * k + 2) := by
+  rw [second_diagonal_count_reduction, second_diagonal_matching_count]
+
+#print axioms second_diagonal_count_reduction_catalan
 #print axioms matchingDyckMap_surjective
 #print axioms noncrossing_pair_pattern_count_eq_catalan
 

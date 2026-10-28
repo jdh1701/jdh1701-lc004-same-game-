@@ -136,3 +136,5 @@ import LC004.DoubleRepresentationCount
 import LC004.ColorPatternSpace
 
 import LC004.MatchingPatternMerge
+
+import LC004.MatchingMergeProfile

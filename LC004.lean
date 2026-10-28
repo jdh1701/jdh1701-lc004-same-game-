@@ -126,3 +126,5 @@ import LC004.CertificateConverse
 import LC004.RawRunInflation
 
 import LC004.RawCertificateEquivalence
+
+import LC004.SecondDiagonalProfiles

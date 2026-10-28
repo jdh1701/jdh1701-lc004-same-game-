@@ -132,7 +132,7 @@ theorem valid_four_refinements_card (edges : List (Nat × Nat))
   by_cases hs : FourRefinementValid edges a b c d .separated <;>
     by_cases hn : FourRefinementValid edges a b c d .nested <;>
     simp [validFourRefinements, refinementIndicator, huniv,
-      Finset.filter_insert, hbad, hs, hn]
+      Finset.filter_insert, Finset.filter_singleton, hbad, hs, hn]
 
 theorem valid_four_refinements_card_le_two (edges : List (Nat × Nat))
     {a b c d : Nat} (hab : a < b) (hbc : b < c) (hcd : c < d) :

@@ -144,3 +144,5 @@ import LC004.PairPatternCertificate
 import LC004.FourfoldCertificatePairs
 
 import LC004.CertificatePairRefinement
+
+import LC004.FourfoldRepresentationSurjection

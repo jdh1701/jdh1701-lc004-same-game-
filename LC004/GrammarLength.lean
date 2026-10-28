@@ -25,4 +25,33 @@ theorem grammar_length_ne_one {q : Nat} {w : List (Fin q)}
       simp only [List.length_append, List.length_cons, List.length_nil]
       omega
 
+/-- Renaming colors preserves membership in the candidate grammar. -/
+theorem grammar_map {q r : Nat} (f : Fin q → Fin r)
+    {w : List (Fin q)} (h : Grammar q w) :
+    Grammar r (w.map f) := by
+  induction h with
+  | empty =>
+      simpa using (Grammar.empty : Grammar r [])
+  | pair a hu hv ihu ihv =>
+      simpa only [List.map_append, List.map_cons, List.map_nil] using
+        (Grammar.pair (f a) ihu ihv)
+  | triple a hu hv hw ihu ihv ihw =>
+      simpa only [List.map_append, List.map_cons, List.map_nil] using
+        (Grammar.triple (f a) ihu ihv ihw)
+
+/-- A grammar derivation is either empty or at least two positions long. -/
+theorem grammar_empty_or_length_ge_two {q : Nat}
+    {w : List (Fin q)} (h : Grammar q w) :
+    w = [] ∨ 2 ≤ w.length := by
+  cases h with
+  | empty => exact Or.inl rfl
+  | pair a hu hv =>
+      right
+      simp only [List.length_append, List.length_cons, List.length_nil]
+      omega
+  | triple a hu hv hw =>
+      right
+      simp only [List.length_append, List.length_cons, List.length_nil]
+      omega
+
 end LC004

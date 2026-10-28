@@ -158,3 +158,5 @@ import LC004.SmallPatternCorrespondence
 import LC004.TwoTripleCorrespondence
 
 import LC004.FourfoldSplit
+
+import LC004.DoubleFiberGeometry

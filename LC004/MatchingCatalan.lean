@@ -31,7 +31,11 @@ theorem matchingDyckMap_surjective (m : Nat) : Function.Surjective (matchingDyck
   have hwlen := w.val.two_mul_semilength_eq_length
   rw [w.property] at hwlen
   have heq := congrArg (fun v : DyckWord => v.toList.length) he
-  have hn : n = 2 * m := by omega
+  have hn : n = 2 * m := by
+    calc
+      n = e.toDyck.toList.length := hlen.symm
+      _ = w.val.toList.length := heq
+      _ = 2 * m := hwlen.symm
   subst n
   exact ⟨⟨e.pattern, e.pattern_noncrossing⟩, Subtype.ext he⟩
 

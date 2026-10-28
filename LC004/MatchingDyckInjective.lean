@@ -112,7 +112,7 @@ every Dyck word comes from a matching, which is not assumed here. -/
 theorem noncrossing_pair_pattern_count_le_catalan (m : Nat) :
     noncrossingPairPatternCount (2 * m) ≤ catalan m := by
   classical
-  have h := Fintype.card_le_of_injective (matchingDyckMap_injective m)
+  have h := Fintype.card_le_of_injective (matchingDyckMap m) (matchingDyckMap_injective m)
   rw [DyckWord.card_dyckWord_semilength_eq_catalan] at h
   exact h
 

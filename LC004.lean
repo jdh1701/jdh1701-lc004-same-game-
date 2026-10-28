@@ -112,3 +112,5 @@ import LC004.NoncrossingBlockFamily
 import LC004.TypedInsertionPositions
 
 import LC004.CertificateInsertion
+
+import LC004.HistoryCertificate

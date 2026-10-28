@@ -75,21 +75,25 @@ def Noncrossing23Certificate.insert {n q : Nat}
         (List.range k).map (fun s => gap + s) := by
       calc
         _ = ((List.finRange k).map Fin.val).map (fun s => gap + s) := by
-          simp [List.map_map, freshPosition, Function.comp_def]
+          simp only [List.map_map, freshPosition, Function.comp_def]
         _ = _ := by rw [List.map_coe_finRange]
     have holdBlock (b : List (Fin n)) :
         (b.map (oldPosition gap k)).map Fin.val =
         shiftBlock gap k (b.map Fin.val) := by
       simp [List.map_map, shiftBlock, oldPosition, Function.comp_def]
+    have hblocks :
+        (cert.blocks.map (List.map (oldPosition gap k))).map (List.map Fin.val) =
+        (cert.blocks.map (List.map Fin.val)).map (shiftBlock gap k) := by
+      rw [List.map_map, List.map_map]
+      apply List.map_congr_left
+      intro b hb
+      exact holdBlock b
     change NoncrossingBlockFamily
       ((((List.finRange k).map (freshPosition gap k hgap)).map Fin.val) ::
         (cert.blocks.map (List.map (oldPosition gap k))).map (List.map Fin.val))
-    rw [hnew]
-    simp only [List.map_map, Function.comp_def]
-    simp_rw [holdBlock]
+    rw [hnew, hblocks]
     have hbound : k ≤ 3 := by omega
-    simpa only [List.map_map, Function.comp_def] using
-      noncrossing_block_family_insert
+    exact noncrossing_block_family_insert
         (cert.blocks.map (List.map Fin.val)) gap k hbound cert.noncrossing
 
 #print axioms insertion_positions_perm

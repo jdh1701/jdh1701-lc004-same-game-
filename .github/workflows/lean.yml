@@ -51,3 +51,6 @@ jobs:
         run: |
           python research/second_diagonal_formula_check.py
           python research/second_diagonal_independent_n16.py
+
+      - name: Test four-block matching overlap criterion
+        run: python research/overlap_criterion_test.py

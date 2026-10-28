@@ -140,3 +140,7 @@ import LC004.MatchingPatternMerge
 import LC004.MatchingMergeProfile
 
 import LC004.PairPatternCertificate
+
+import LC004.FourfoldCertificatePairs
+
+import LC004.CertificatePairRefinement

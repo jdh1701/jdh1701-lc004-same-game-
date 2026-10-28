@@ -17,7 +17,7 @@ theorem count_take_ofFn_eq_card {α : Type*} [DecidableEq α] {n : Nat}
     ((List.ofFn f).take k).count a =
       ((Finset.univ : Finset (Fin n)).filter (fun i => i.val < k ∧ f i = a)).card := by
   rw [list_count_eq_sum_indicator, List.map_take, List.map_ofFn, List.sum_take_ofFn]
-  simp only [Function.comp_apply, Finset.sum_boole, Finset.filter_filter]
+  simp only [Function.comp_apply, Finset.sum_boole, Finset.filter_filter, Nat.cast_id]
 
 noncomputable def matchingDyckStep {n : Nat} (p : ColorPattern n)
     (hp : NoncrossingPairPattern p) (i : Fin n) : DyckStep := by

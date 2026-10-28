@@ -18,8 +18,9 @@ The proposed second-diagonal formula has the simpler form
 
 The argument below uses the now Lean-verified structural characterization
 and the classical refined enumeration theorem for noncrossing partitions.
-It is a paper-level combinatorial derivation. The global finite-set
-bijections and their cardinalities are NOT yet all formalized in Lean.
+It is a paper-level combinatorial derivation. The game-specific finite-set bijections and the Catalan matching count
+are now formalized in Lean. The two refined noncrossing cardinalities
+are NOT yet formalized.
 This document must not be cited as a fully Lean-certified counting theorem.
 
 ## Inputs and their provenance
@@ -152,18 +153,54 @@ For k=2,...,7 this yields 12, 84, 480, 2475, 12012, 56056, agreeing
 with the earlier independent checks. Finite checks do not prove the
 universal counting formula.
 
-## Remaining Lean obligations and novelty limits
+## Current formalization boundary (updated 2026-10-28)
 
-The remaining full counting formalization must define the finite
-color-pattern and matching representation spaces, prove the global
-bijections and their exact fibers, and instantiate the Catalan and
-refined noncrossing-partition cardinalities. The formula is not yet a
-kernel-certified statement about a formal Same Game counting function.
+The actual finite color-pattern spaces, exhaustive and disjoint intrinsic
+profile split, representation surjection, one-or-two fiber count, and
+both conventional noncrossing correspondences are now Lean theorems.
+`MatchingCatalan.lean` also proves the exact noncrossing matching count
+through a full bijection with Dyck words. These passed CI at head
+3c2f9ad8593d3269d66e2432030f325944e96d43.
 
-The underlying pair/triple solvability grammar is established in
-Biedl et al. (2001), *The Complexity of Clickomania*, Theorem 2:
-https://arxiv.org/pdf/cs/0107031 . Polynomial dependence on alphabet
-size and initial small-length polynomials already appear in Kurz (2001):
-https://oeis.org/A065237/a065237.pdf . No bibliographic novelty claim
-is made for this diagonal formula or its simplified expression without
-a dedicated comparison with prior work.
+`SecondDiagonalArithmetic.lean` proves the coefficient identity
+2R=(k+3)*binom(2k+2,k-1), handles natural-number subtraction, and
+assembles the final formula CONDITIONAL on the two refined counts.
+This initial arithmetic assembly passed CI at head
+3746a5a6cbd02a74ff45b91eb267362beeefe363. Subsequent parity and encoding
+extensions must be checked at their own source heads.
+
+Exactly two universal cardinality evaluations remain:
+
+* N4(2k+2) = binom(2k+2,k-1).
+* 2*N33(2k+2) = (k-1)*binom(2k+2,k-1).
+
+No unconditional closed counting formula is claimed. General n,k
+enumeration and any novelty claim remain outside what has been proved.
+The earlier descriptions in sections 2--4 that a local module alone
+does not supply a global bijection remain true of those individual
+modules; the later modules now supply those bridges.
+
+## Next counting route: rooted-tree degree words
+
+Record a block's size at its least position, put zero at all other
+positions, and append one terminal zero. The resulting list has length
+n+1, total degree n, and every proper prefix has degree sum at least its
+length. `PartitionOpeningMass.lean` develops these invariants and the
+correspondence between positive arities and original block sizes.
+Its source must be compiler-checked before being called a proved bridge.
+
+The missing universal steps are injective reconstruction for conventional
+noncrossing partitions, surjectivity onto the valid degree words, and the
+rotation counting argument. In a list of length n+1 with total degree n,
+exactly one rotation is valid and each orbit has size n+1. For fixed block
+multiplicities m_j, the degree multiset has m_j copies of j and
+n+1-sum(m_j) zeros. Counting the multiset words and dividing by the orbit
+size gives the refined factorial formula used above. These universal
+bijection and rotation assertions are the intended proof obligations,
+not imported axioms or established Lean results.
+
+`check_partition_degree_encoding.py` independently enumerates fixed-profile
+set partitions and degree words for lengths 6, 8, and 10. It checks exact
+image equality, injectivity, full rotation orbits, unique valid roots,
+and the expected finite cardinalities. Passing finite tests does not prove
+the universal assertions.

@@ -103,6 +103,65 @@ noncomputable def patternOpeningDegree {n : Nat} (p : ColorPattern n) (i : Fin n
   exact ∑ q ∈ (Finset.univ : Finset (Quotient p)).filter
     (fun q => patternClassMinimum p q = i), (patternQuotientFiber p q).card
 
+theorem patternOpeningDegree_at_minimum {n : Nat} (p : ColorPattern n)
+    (q : Quotient p) : patternOpeningDegree p (patternClassMinimum p q) =
+      (patternQuotientFiber p q).card := by
+  classical
+  unfold patternOpeningDegree
+  apply Finset.sum_eq_single q
+  · intro r hr hne
+    have hmin := (Finset.mem_filter.mp hr).2
+    exact (hne (patternClassMinimum_injective p hmin)).elim
+  · intro hnot
+    exact (hnot (Finset.mem_filter.mpr ⟨Finset.mem_univ _, rfl⟩)).elim
+
+theorem patternOpeningDegree_eq {n : Nat} (p : ColorPattern n) (i : Fin n) :
+    patternOpeningDegree p i =
+      if patternClassMinimum p (Quotient.mk p i) = i then
+        (patternClassPositions p i).card else 0 := by
+  classical
+  split_ifs with hi
+  · have h := patternOpeningDegree_at_minimum p (Quotient.mk p i)
+    rw [hi, patternQuotientFiber_mk_eq_class] at h
+    exact h
+  · unfold patternOpeningDegree
+    apply Finset.sum_eq_zero
+    intro q hq
+    have hmin := (Finset.mem_filter.mp hq).2
+    have hqi : Quotient.mk p i = q := by
+      rw [← hmin, patternClassMinimum_quotient]
+    exact (hi (by simpa only [hqi] using hmin)).elim
+
+theorem nonzero_patternOpeningDegree_minimum {n : Nat} (p : ColorPattern n)
+    (i : Fin n) (hi : patternOpeningDegree p i ≠ 0) :
+    patternClassMinimum p (Quotient.mk p i) = i := by
+  by_contra h
+  exact hi (by rw [patternOpeningDegree_eq, if_neg h])
+
+/-- Positive arities in the degree encoding correspond to classes of
+that size, with no multiplicity from block ordering or labels. -/
+noncomputable def patternDegreeClassEquiv {n : Nat} (p : ColorPattern n)
+    (s : Nat) (hs : 0 < s) :
+    {q : Quotient p // (patternQuotientFiber p q).card = s} ≃
+      {i : Fin n // patternOpeningDegree p i = s} where
+  toFun q := ⟨patternClassMinimum p q.val,
+    (patternOpeningDegree_at_minimum p q.val).trans q.property⟩
+  invFun i := ⟨Quotient.mk p i.val, by
+    have hne : patternOpeningDegree p i.val ≠ 0 := by rw [i.property]; omega
+    have hmin := nonzero_patternOpeningDegree_minimum p i.val hne
+    have h := patternOpeningDegree_at_minimum p (Quotient.mk p i.val)
+    rw [hmin] at h
+    exact h.symm.trans i.property⟩
+  left_inv q := Subtype.ext (patternClassMinimum_quotient p q.val)
+  right_inv i := Subtype.ext (nonzero_patternOpeningDegree_minimum p i.val (by rw [i.property]; omega))
+
+open scoped Classical in
+theorem patternOpeningDegree_arity_count {n : Nat} (p : ColorPattern n)
+    (s : Nat) (hs : 0 < s) :
+    Fintype.card {i : Fin n // patternOpeningDegree p i = s} =
+      Fintype.card {q : Quotient p // (patternQuotientFiber p q).card = s} := by
+  exact (Fintype.card_congr (patternDegreeClassEquiv p s hs)).symm
+
 open scoped Classical in
 theorem patternOpeningDegree_prefix_sum {n : Nat} (p : ColorPattern n) (cut : Nat) :
     (∑ i ∈ (Finset.univ : Finset (Fin n)).filter (fun i => i.val < cut),
@@ -145,6 +204,7 @@ theorem patternTreeDegrees_prefix {n : Nat} (p : ColorPattern n) (cut : Nat)
     patternOpeningDegree_prefix_sum]
   exact patternOpeningMass_prefix p cut hcut
 
+#print axioms patternOpeningDegree_arity_count
 #print axioms patternTreeDegrees_sum
 #print axioms patternTreeDegrees_prefix
 

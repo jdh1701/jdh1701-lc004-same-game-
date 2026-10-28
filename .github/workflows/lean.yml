@@ -54,3 +54,6 @@ jobs:
 
       - name: Test four-block matching overlap criterion
         run: python research/overlap_criterion_test.py
+
+      - name: Check proposed refined partition degree encoding
+        run: python research/check_partition_degree_encoding.py

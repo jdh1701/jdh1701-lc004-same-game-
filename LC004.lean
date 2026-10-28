@@ -162,3 +162,5 @@ import LC004.FourfoldSplit
 import LC004.DoubleFiberGeometry
 
 import LC004.DoubleFiberCountCorrespondence
+
+import LC004.MatchingRepresentationCardinality

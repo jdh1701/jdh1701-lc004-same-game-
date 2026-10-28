@@ -152,3 +152,7 @@ import LC004.FourfoldMatchingChoices
 import LC004.FourfoldFiberCount
 
 import LC004.FourfoldDoubleFiber
+
+import LC004.SmallPatternCorrespondence
+
+import LC004.TwoTripleCorrespondence

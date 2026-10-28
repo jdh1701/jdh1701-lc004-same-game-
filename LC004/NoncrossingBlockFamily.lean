@@ -52,9 +52,9 @@ theorem noncrossing_block_family_shift
   obtain ⟨b0,hb0,rfl⟩ := List.mem_map.mp hb
   exact (blocksCross_shift_iff gap k a0 b0).not.mpr (h a0 ha0 b0 hb0)
 
-/-- A contiguous new block is noncrossing with every shifted old block,
-so inserting it preserves pairwise noncrossing for a whole family.
-The result allows ANY k, including both pair and triple insertions. -/
+/-- A contiguous new block of at most three positions is noncrossing
+with itself and every shifted old block. Thus adjoining it preserves
+noncrossing for the whole family, including pair and triple insertions. -/
 theorem noncrossing_block_family_insert
     (blocks : List (List Nat)) (gap k : Nat)
     (hk : k ≤ 3)

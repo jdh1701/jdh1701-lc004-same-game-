@@ -12,8 +12,9 @@ theorem pair_pattern_class_eq_pair {n : Nat} (m : ColorPattern n)
   have hpair : ({a, b} : Finset (Fin n)).card = 2 := by simp [hne]
   have hsub : ({a, b} : Finset (Fin n)) ⊆ patternClassPositions m a := by
     intro x hx
-    rcases Finset.mem_insert.mp hx with rfl | hx
-    · simp [patternClassPositions, m.refl]
+    rcases Finset.mem_insert.mp hx with hxa | hx
+    · subst x
+      exact Finset.mem_filter.mpr ⟨Finset.mem_univ _, m.refl a⟩
     · have hxb := Finset.mem_singleton.mp hx
       subst x
       simp [patternClassPositions, hab]

@@ -49,8 +49,7 @@ theorem certificate_of_length_cast {m n q : Nat} (h : m = n)
 
 theorem has_certificate_empty (q : Nat) :
     HasNoncrossing23Certificate ([] : List (Fin q)) := by
-  refine ⟨{ blocks := [], sizes := ?_, exactCover := ?_,
-    monochromatic := ?_, noncrossing := ?_ }⟩
+  refine ⟨⟨[], ?_, ?_, ?_, ?_⟩⟩
   · simp
   · exact List.Perm.refl []
   · simp

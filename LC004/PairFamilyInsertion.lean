@@ -38,26 +38,35 @@ theorem pairFamily_noncrossing_insert_pair
       ((gap, gap + 1) :: edges.map (shiftPair gap k)) := by
   intro e he f hf
   simp only [List.mem_cons] at he hf
-  rcases he with rfl | ⟨e0, he0, rfl⟩
-  · rcases hf with rfl | ⟨f0, hf0, rfl⟩
-    · unfold PairCross
+  rcases he with heNew | heOld
+  · rw [heNew]
+    rcases hf with hfNew | hfOld
+    · rw [hfNew]
+      unfold PairCross
       omega
-    · change ¬ PairCross gap (gap + 1)
-        (shiftAfterInsertion gap k f0.1)
-        (shiftAfterInsertion gap k f0.2)
+    · obtain ⟨f0, hf0, hfEq⟩ := List.mem_map.mp hfOld
+      rw [← hfEq]
+      change ¬ PairCross gap (gap + 1)
+          (shiftAfterInsertion gap k f0.1)
+          (shiftAfterInsertion gap k f0.2)
       have hno := old_pair_not_cross_new_pair gap k f0.1 f0.2 0 1
         (hordered f0 hf0) (by omega) (by omega)
       unfold PairCross at hno ⊢
       omega
-  · rcases hf with rfl | ⟨f0, hf0, rfl⟩
-    · change ¬ PairCross (shiftAfterInsertion gap k e0.1)
-        (shiftAfterInsertion gap k e0.2) gap (gap + 1)
+  · obtain ⟨e0, he0, heEq⟩ := List.mem_map.mp heOld
+    rw [← heEq]
+    rcases hf with hfNew | hfOld
+    · rw [hfNew]
+      change ¬ PairCross (shiftAfterInsertion gap k e0.1)
+          (shiftAfterInsertion gap k e0.2) gap (gap + 1)
       exact old_pair_not_cross_new_pair gap k e0.1 e0.2 0 1
         (hordered e0 he0) (by omega) (by omega)
-    · change ¬ PairCross (shiftAfterInsertion gap k e0.1)
-        (shiftAfterInsertion gap k e0.2)
-        (shiftAfterInsertion gap k f0.1)
-        (shiftAfterInsertion gap k f0.2)
+    · obtain ⟨f0, hf0, hfEq⟩ := List.mem_map.mp hfOld
+      rw [← hfEq]
+      change ¬ PairCross (shiftAfterInsertion gap k e0.1)
+          (shiftAfterInsertion gap k e0.2)
+          (shiftAfterInsertion gap k f0.1)
+          (shiftAfterInsertion gap k f0.2)
       exact (pairCross_shift_iff gap k e0.1 e0.2 f0.1 f0.2).not.mpr
         (h e0 he0 f0 hf0)
 

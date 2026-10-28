@@ -86,3 +86,5 @@ import LC004.RawPrefixRepeat
 import LC004.RawAnywhereHeaviness
 
 import LC004.RawAnywhereRepeat
+
+import LC004.EncodingAgreement

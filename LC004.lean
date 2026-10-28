@@ -80,3 +80,5 @@ import LC004.RawMaxSemanticsBridge
 import LC004.RawIsolatedInsertion
 
 import LC004.RawPrefixHeaviness
+
+import LC004.RawPrefixRepeat

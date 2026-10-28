@@ -164,3 +164,7 @@ import LC004.DoubleFiberGeometry
 import LC004.DoubleFiberCountCorrespondence
 
 import LC004.MatchingRepresentationCardinality
+
+import LC004.IntrinsicDiagonalProfiles
+
+import LC004.SecondDiagonalCountAssembly

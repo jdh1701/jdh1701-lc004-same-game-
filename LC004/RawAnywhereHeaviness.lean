@@ -22,14 +22,14 @@ theorem heavier_pushColor (c : Nat)
           by_cases hc : c = d
           · subst d
             simp [pushColor, Heavier, hrest]
-          · simp [pushColor, hc, Heavier, hbf, hrest]
+          · simpa [pushColor, hc, Heavier, hrest] using hbf
 
-/-- The same prefix can be added to any related raw encodings. -/
+/-- The same pre can be added to any related raw encodings. -/
 theorem heavier_encode_prefix
-    (prefix : List Nat) {u v : List Nat}
+    (pre : List Nat) {u v : List Nat}
     (h : Heavier (encode u) (encode v)) :
-    Heavier (encode (prefix ++ u)) (encode (prefix ++ v)) := by
-  induction prefix with
+    Heavier (encode (pre ++ u)) (encode (pre ++ v)) := by
+  induction pre generalizing u v with
   | nil => simpa using h
   | cons c cs ih =>
       simpa [encode, List.cons_append] using
@@ -38,21 +38,21 @@ theorem heavier_encode_prefix
 /-- Duplication at any position in the raw word makes its run
 encoding at least as heavy without changing the run-color skeleton. -/
 theorem encode_duplicate_anywhere_heavier
-    (prefix : List Nat) (a : Nat) (suffix : List Nat) :
-    Heavier (encode (prefix ++ a :: suffix))
-      (encode (prefix ++ a :: a :: suffix)) := by
-  exact heavier_encode_prefix prefix
+    (pre : List Nat) (a : Nat) (suffix : List Nat) :
+    Heavier (encode (pre ++ a :: suffix))
+      (encode (pre ++ a :: a :: suffix)) := by
+  exact heavier_encode_prefix pre
     (encode_duplicate_head_heavier a suffix)
 
 /-- Solvability in the compressed run model survives duplication of
 a raw cell at an arbitrary position. -/
 theorem encoded_duplicate_anywhere_solvable
-    (prefix : List Nat) (a : Nat) (suffix : List Nat)
+    (pre : List Nat) (a : Nat) (suffix : List Nat)
     (h : Solvable Step (fun s => s = [])
-      (encode (prefix ++ a :: suffix))) :
+      (encode (pre ++ a :: suffix))) :
     Solvable Step (fun s => s = [])
-      (encode (prefix ++ a :: a :: suffix)) := by
+      (encode (pre ++ a :: a :: suffix)) := by
   exact sameGame_solvable_mono_full
-    (encode_duplicate_anywhere_heavier prefix a suffix) h
+    (encode_duplicate_anywhere_heavier pre a suffix) h
 
 end LC004

@@ -10,7 +10,7 @@ theorem encoded_repeat_anywhere_solvable
     (h : Solvable Step (fun s => s = [])
       (encode (pre ++ a :: suffix))) :
     ∀ k : Nat, Solvable Step (fun s => s = [])
-      (encode (pre ++ a :: List.replicate k a ++ suffix)) := by
+      (encode (pre ++ a :: (List.replicate k a ++ suffix))) := by
   intro k
   induction k with
   | zero =>

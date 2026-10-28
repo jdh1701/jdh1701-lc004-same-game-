@@ -97,6 +97,57 @@ theorem patternOpeningMass_total {n : Nat} (p : ColorPattern n) :
   rw [hclasses]
   exact (pattern_sum_class_sizes p).symm
 
+/-- Place each class size at its least position, and zero elsewhere. -/
+noncomputable def patternOpeningDegree {n : Nat} (p : ColorPattern n) (i : Fin n) : Nat := by
+  classical
+  exact ∑ q ∈ (Finset.univ : Finset (Quotient p)).filter
+    (fun q => patternClassMinimum p q = i), (patternQuotientFiber p q).card
+
+open scoped Classical in
+theorem patternOpeningDegree_prefix_sum {n : Nat} (p : ColorPattern n) (cut : Nat) :
+    (∑ i ∈ (Finset.univ : Finset (Fin n)).filter (fun i => i.val < cut),
+      patternOpeningDegree p i) = patternOpeningMass p cut := by
+  classical
+  have h := Finset.sum_fiberwise_eq_sum_filter
+    (Finset.univ : Finset (Quotient p))
+    ((Finset.univ : Finset (Fin n)).filter (fun i => i.val < cut))
+    (patternClassMinimum p) (fun q => (patternQuotientFiber p q).card)
+  simpa only [patternOpeningDegree, patternOpeningMass, patternOpenedClasses,
+    Finset.mem_filter, Finset.mem_univ, true_and] using h
+
+/-- A degree word with one terminal zero. For noncrossing partitions,
+this is the intended bridge to rooted ordered trees. -/
+noncomputable def patternTreeDegrees {n : Nat} (p : ColorPattern n) : List Nat :=
+  List.ofFn (patternOpeningDegree p) ++ [0]
+
+theorem patternTreeDegrees_length {n : Nat} (p : ColorPattern n) :
+    (patternTreeDegrees p).length = n + 1 := by
+  simp only [patternTreeDegrees, List.length_append, List.length_ofFn,
+    List.length_singleton]
+
+theorem patternTreeDegrees_sum {n : Nat} (p : ColorPattern n) :
+    (patternTreeDegrees p).sum = n := by
+  classical
+  have h := patternOpeningDegree_prefix_sum p n
+  have hf : (Finset.univ : Finset (Fin n)).filter (fun i => i.val < n) =
+      Finset.univ := by
+    ext i
+    simp only [Finset.mem_filter, Finset.mem_univ, true_and]
+    exact iff_true_intro i.isLt
+  rw [hf, patternOpeningMass_total] at h
+  simpa only [patternTreeDegrees, List.sum_append, List.sum_singleton,
+    Nat.add_zero, List.sum_ofFn] using h
+
+theorem patternTreeDegrees_prefix {n : Nat} (p : ColorPattern n) (cut : Nat)
+    (hcut : cut ≤ n) : cut ≤ ((patternTreeDegrees p).take cut).sum := by
+  rw [patternTreeDegrees, List.take_append_of_le_length
+    (by simpa only [List.length_ofFn] using hcut), List.sum_take_ofFn,
+    patternOpeningDegree_prefix_sum]
+  exact patternOpeningMass_prefix p cut hcut
+
+#print axioms patternTreeDegrees_sum
+#print axioms patternTreeDegrees_prefix
+
 #print axioms patternClassMinimum_injective
 #print axioms patternOpeningMass_prefix
 #print axioms patternOpeningMass_total

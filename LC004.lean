@@ -168,3 +168,7 @@ import LC004.MatchingRepresentationCardinality
 import LC004.IntrinsicDiagonalProfiles
 
 import LC004.SecondDiagonalCountAssembly
+
+import LC004.MatchingPartner
+
+import LC004.MatchingDyckEncoding

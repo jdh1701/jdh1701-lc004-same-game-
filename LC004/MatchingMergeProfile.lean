@@ -108,6 +108,34 @@ theorem fourfold_representation_class_card {n : Nat}
     simpa only [patternClassPositions, Nat.card_eq_fintype_card,
       Fintype.card_subtype] using r.1.property.1 i
 
+/-- There is one four-position class; every class of size four is
+that same merged class. The original matching is still remembered here. -/
+theorem fourfold_representation_unique_four_class {n : Nat}
+    (r : FourfoldMatchingRepresentation n) :
+    ∃ i : Fin n,
+      (patternClassPositions (fourfoldRepresentationPattern r) i).card = 4 ∧
+      ∀ j, fourfoldRepresentationPattern r i j ↔
+        (patternClassPositions (fourfoldRepresentationPattern r) j).card = 4 := by
+  classical
+  have hpos : 0 < r.2.val.card := by rw [r.2.property]; decide
+  obtain ⟨q, hq⟩ := Finset.card_pos.mp hpos
+  obtain ⟨i, rfl⟩ := Quotient.mk_surjective q
+  refine ⟨i, (fourfold_representation_class_card r i).1 hq, ?_⟩
+  intro j
+  constructor
+  · intro hij
+    have hj : Quotient.mk r.1.val j ∈ r.2.val := by
+      rcases hij with hij | ⟨_, hj⟩
+      · simpa only [Quotient.sound hij] using hq
+      · exact hj
+    exact (fourfold_representation_class_card r j).1 hj
+  · intro hj
+    have hmem : Quotient.mk r.1.val j ∈ r.2.val := by
+      by_contra hn
+      have hc := (fourfold_representation_class_card r j).2 hn
+      omega
+    exact Or.inr ⟨hq, hmem⟩
+
 /-- The selected classes are exactly those incident to a newly related
 pair. Thus selection can be reconstructed from the original and merged
 partitions, without naming either selected edge. -/
@@ -136,5 +164,6 @@ theorem merge_selection_injective {n : Nat} (p : ColorPattern n)
 
 #print axioms fourfold_representation_class_card
 #print axioms merge_selection_injective
+#print axioms fourfold_representation_unique_four_class
 
 end LC004

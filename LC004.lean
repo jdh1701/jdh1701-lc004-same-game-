@@ -92,3 +92,5 @@ import LC004.EncodingAgreement
 import LC004.NewProofAxiomAudit
 
 import LC004.GrammarColorSymmetry
+
+import LC004.ErasureColorSymmetry

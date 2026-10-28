@@ -88,3 +88,5 @@ import LC004.RawAnywhereHeaviness
 import LC004.RawAnywhereRepeat
 
 import LC004.EncodingAgreement
+
+import LC004.NewProofAxiomAudit

@@ -44,9 +44,8 @@ theorem shifted_old_block_noncrossing_new_triple
   have h := shifted_old_block_noncrossing_new_block
     gap 3 old [0,1,2] (by
       intro s hs
-      simp only [List.mem_cons, List.mem_singleton] at hs
-      rcases hs with rfl | rfl | rfl
-      all_goals omega)
+      simp at hs
+      omega)
   simpa only [List.map_cons, List.map_nil, Nat.add_zero] using h
 
 end LC004

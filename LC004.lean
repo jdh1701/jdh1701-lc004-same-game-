@@ -150,3 +150,5 @@ import LC004.FourfoldRepresentationSurjection
 import LC004.FourfoldMatchingChoices
 
 import LC004.FourfoldFiberCount
+
+import LC004.FourfoldDoubleFiber

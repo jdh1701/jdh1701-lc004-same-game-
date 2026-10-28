@@ -35,3 +35,10 @@ This is a meaningful general near-maximal-color formula candidate, unlike fittin
 
 ## Falsification
 Compute a(16,7) independently from the RGS parser, ideally with a profile-specific solver instead of full Q=8 determinization; compare to 56056. Also prove the overlap correction bijection. If mismatch, retract formula and retain only the verified decomposition of multiplicity profiles.
+
+## New held-out n=16,k=7 independent structural enumeration
+Executed a separate Python program that enumerates ALL noncrossing perfect matchings on 16 positions (1430), merges two pairs (28 choices), canonicalizes the resulting color patterns and checks every generated word against an independent maximal-run solver. Result: 32032 distinct four-occurrence profiles; 8008 patterns occur twice (exactly binom(16,6)); none occur more than twice; all generated patterns win.
+
+Separately enumerated ALL noncrossing partitions of 16 positions with exactly two triple blocks and six pair blocks: 24024 distinct patterns, all winning under the maximal-run solver. The two multiplicity profiles are disjoint. Their sum is 56056, agreeing with the formula's held-out prediction.
+
+This is independent of the RGS grammar parser and is much stronger than fitting coefficients. It is NOT a full independent exhaustive test over all possible length-16 patterns of multiplicity (4,2,...,2) or (3,3,2,...,2). Completeness requires the noncrossing-history characterization proof. It does independently test the claimed matching overlap and count.

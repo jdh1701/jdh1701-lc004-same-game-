@@ -80,7 +80,7 @@ noncomputable def Noncrossing23Certificate.deleteInterval
         intro p hp
         obtain ⟨c, hc, hpc⟩ := List.mem_flatten.mp hp
         exact hback c hc p hpc
-      _ = _ := List.map_id
+      _ = _ := List.map_id _
   have hflatNodup : rest.flatten.Nodup :=
     cert.flatten_nodup.sublist (List.filter_sublist.flatten)
   have hshrinkNodup : (rest.flatten.map shrink).Nodup := by
@@ -146,5 +146,17 @@ noncomputable def Noncrossing23Certificate.deleteInterval
     simpa only [List.map_map, Function.comp_def] using hfamily
 
 #print axioms Noncrossing23Certificate.deleteInterval
+
+/-- A length equality lets clients retain their original position type. -/
+theorem delete_interval_of_length {N n q k : Nat} (hlen : N = n + k)
+    {color : Fin N → Fin q} (cert : Noncrossing23Certificate color)
+    (gap : Nat) (hn : 0 < n) (hgap : gap ≤ n)
+    (b : List (Fin N)) (hb : b ∈ cert.blocks)
+    (hinterval : ∀ p, p ∈ b ↔ gap ≤ p.val ∧ p.val < gap + k)
+    (color' : Fin n → Fin q)
+    (hcolor : ∀ i, color (Fin.cast hlen.symm (oldPosition gap k i)) = color' i) :
+    Nonempty (Noncrossing23Certificate color') := by
+  subst N
+  exact ⟨cert.deleteInterval gap hn hgap b hb hinterval color' hcolor⟩
 
 end LC004

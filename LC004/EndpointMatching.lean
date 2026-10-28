@@ -90,7 +90,8 @@ def append {n k : Nat} (m : EndpointMatching n) (t : EndpointMatching k) : Endpo
     intro x h
     rcases fin_add_witness x with ⟨i, rfl⟩ | ⟨j, rfl⟩
     · simp only [appendMate, Fin.addCases_left] at h
-      exact m.nofixed i (Fin.ext (congrArg Fin.val h))
+      have hv := congrArg (fun x : Fin (n + k) => x.val) h
+      exact m.nofixed i (Fin.ext hv)
     · simp only [appendMate, Fin.addCases_right] at h
       have hv := congrArg Fin.val h
       change n + (t.mate j).val = n + j.val at hv
@@ -125,7 +126,7 @@ def nestMate {n : Nat} (m : EndpointMatching n) : Fin (n + 2) → Fin (n + 2) :=
 @[simp] theorem nestMate_last {n : Nat} (m : EndpointMatching n) :
     nestMate m (Fin.last (n + 1)) = 0 := by
   change nestMate m (Fin.last n).succ = 0
-  simp [nestMate]
+  simp only [nestMate, Fin.cases_succ, Fin.lastCases_last]
 
 @[simp] theorem nestMate_interior {n : Nat} (m : EndpointMatching n) (i : Fin n) :
     nestMate m (interior i) = interior (m.mate i) := by simp [nestMate, interior]

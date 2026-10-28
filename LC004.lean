@@ -128,3 +128,7 @@ import LC004.RawRunInflation
 import LC004.RawCertificateEquivalence
 
 import LC004.SecondDiagonalProfiles
+
+import LC004.FourRefinementOverlap
+
+import LC004.DoubleRepresentationCount

@@ -113,7 +113,9 @@ theorem raw_win_second_diagonal_profiles {q : Nat} {w : List (Fin q)}
         have hh := hmin a ha
         omega
       _ = _ := by rw [Finset.sum_add_distrib]; simp [Nat.mul_comm]
-  have hexcess : (∑ a ∈ s, (w.count a - 2)) = 2 := by omega
+  have hexcess : (∑ a ∈ s, (w.count a - 2)) = 2 := by
+    change w.length = 2 * s.card + 2 at hlen
+    omega
   rcases finset_nat_sum_two s (fun a => w.count a - 2) hexcess with hfour | hthree
   · obtain ⟨a, ha, hfa, hrest⟩ := hfour
     left

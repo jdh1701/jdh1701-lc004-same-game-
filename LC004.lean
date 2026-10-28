@@ -176,3 +176,7 @@ import LC004.MatchingDyckEncoding
 import LC004.MatchingDyckInjective
 
 import LC004.EndpointMatching
+
+import LC004.EndpointMatchingDyck
+
+import LC004.MatchingCatalan

@@ -16,7 +16,11 @@ theorem ordered_fourfold_profile {n : Nat} (p : ColorPattern n)
     have huniv : (Finset.univ : Finset (Fin 4)) = {0, 1, 2, 3} := by decide
     have h := Finset.image_orderEmbOfFin_univ s he
     rw [huniv] at h
-    simpa only [Finset.image_insert, Finset.image_singleton] using h.symm
+    apply Finset.ext
+    intro x
+    have hx := Iff.of_eq (congrArg (fun t : Finset (Fin n) => x ∈ t) h.symm)
+    simpa only [Finset.image_insert, Finset.image_singleton,
+      Finset.mem_insert, Finset.mem_singleton] using hx
   have hea : p e (f 0) := by
     have hmem := Finset.orderEmbOfFin_mem s he (0 : Fin 4)
     simpa only [s, patternClassPositions, Finset.mem_filter,
@@ -138,7 +142,12 @@ theorem fourfoldProfileMap_fiber {n : Nat}
   classical
   ext r
   simp only [fourfoldRepresentationFiber, Finset.mem_filter, Finset.mem_univ, true_and]
-  exact ⟨fun h => congrArg Subtype.val h, fun h => Subtype.ext h⟩
+  constructor
+  · intro h
+    exact congrArg Subtype.val h
+  · intro h
+    apply Subtype.ext
+    exact h
 
 noncomputable def fourfoldWinningPatternCount (n : Nat) : Nat := by
   classical

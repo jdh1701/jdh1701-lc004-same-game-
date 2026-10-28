@@ -96,3 +96,5 @@ import LC004.GrammarColorSymmetry
 import LC004.ErasureColorSymmetry
 
 import LC004.FourBlockCrossing
+
+import LC004.FourBlockOverlapCorollary

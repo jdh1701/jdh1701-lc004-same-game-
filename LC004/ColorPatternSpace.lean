@@ -91,9 +91,6 @@ theorem certificate_ofFn_iff {n q : Nat} (color : Fin n → Fin q) :
       (fun i => color (Fin.cast h i)) := by
     funext i
     simp only [List.get_ofFn]
-    apply congrArg color
-    apply Fin.ext
-    rfl
   unfold HasNoncrossing23Certificate
   rw [hc]
   exact certificate_cast_iff h color

@@ -9,7 +9,7 @@ abbrev ColorPattern (n : Nat) := Setoid (Fin n)
 instance colorPatternFinite (n : Nat) : Finite (ColorPattern n) := by
   classical
   exact Finite.of_injective (fun p : ColorPattern n => p.r)
-    (fun p q h => Setoid.ext fun i j => by rw [h])
+    (fun p q h => Setoid.ext fun i j => Iff.of_eq (congrFun (congrFun h i) j))
 
 noncomputable instance colorPatternFintype (n : Nat) : Fintype (ColorPattern n) :=
   Fintype.ofFinite _
@@ -90,7 +90,10 @@ theorem certificate_ofFn_iff {n q : Nat} (color : Fin n → Fin q) :
   have hc : (List.ofFn color).get =
       (fun i => color (Fin.cast h i)) := by
     funext i
-    simp [List.get_ofFn]
+    simp only [List.get_ofFn]
+    apply congrArg color
+    apply Fin.ext
+    rfl
   unfold HasNoncrossing23Certificate
   rw [hc]
   exact certificate_cast_iff h color
@@ -117,7 +120,7 @@ theorem winning_word_pattern_iff {q : Nat} (w : List (Fin q)) :
   simpa only [List.ofFn_get] using winning_color_pattern_iff_raw_win w.get
 
 /-- Number of used colors, intrinsically defined without alphabet labels. -/
-def colorPatternClassCount {n : Nat} (p : ColorPattern n) : Nat :=
+noncomputable def colorPatternClassCount {n : Nat} (p : ColorPattern n) : Nat :=
   Nat.card (Quotient p)
 
 theorem colorPatternClassCount_of {n q : Nat} (color : Fin n → Fin q) :

@@ -42,6 +42,15 @@ theorem mergePatternClasses_coarsens {n : Nat} (p : ColorPattern n)
     (chosen : Finset (Quotient p)) {i j : Fin n} (h : p i j) :
     mergePatternClasses p chosen i j := Or.inl h
 
+theorem winning_mergePatternClasses {n : Nat} (p : ColorPattern n)
+    (chosen : Finset (Quotient p)) (h : WinningColorPattern p) :
+    WinningColorPattern (mergePatternClasses p chosen) := by
+  obtain ⟨cert⟩ := h
+  refine ⟨cert.recolor _ ?_⟩
+  intro i j hij
+  exact (patternColor_eq_iff _ i j).mpr
+    (mergePatternClasses_coarsens p chosen ((patternColor_eq_iff p i j).mp hij))
+
 /-- Actual finite domain for the fourfold matching-to-pattern map.
 No Catalan cardinality or surjectivity is assumed here. -/
 noncomputable def fourfoldMatchingRepresentationCount (n : Nat) : Nat := by
@@ -49,5 +58,6 @@ noncomputable def fourfoldMatchingRepresentationCount (n : Nat) : Nat := by
   exact Fintype.card (FourfoldMatchingRepresentation n)
 
 #print axioms mergePatternClasses
+#print axioms winning_mergePatternClasses
 
 end LC004

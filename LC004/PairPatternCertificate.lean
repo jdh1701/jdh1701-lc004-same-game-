@@ -117,6 +117,69 @@ def fourfoldRepresentationWinningMap {n : Nat}
     {p : ColorPattern n // WinningColorPattern p} :=
   ⟨fourfoldRepresentationPattern r, fourfold_representation_winning r⟩
 
+/-- For a pair-colored pattern, a certificate block containing i is
+forced to equal i's entire color class: it has at least two positions
+and is contained in a class of exactly two positions. -/
+theorem certificate_block_eq_pair_class {n : Nat} (p : ColorPattern n)
+    (hpair : ∀ i : Fin n, Nat.card {j : Fin n // p i j} = 2)
+    (cert : Noncrossing23Certificate (patternColor p))
+    {b : List (Fin n)} (hb : b ∈ cert.blocks) {i : Fin n} (hi : i ∈ b) :
+    b.toFinset = patternClassPositions p i := by
+  classical
+  obtain ⟨a, ha⟩ := cert.monochromatic b hb
+  have hsub : b.toFinset ⊆ patternClassPositions p i := by
+    intro j hj
+    have hjb := List.mem_toFinset.mp hj
+    have hij : p i j := (patternColor_eq_iff p i j).mp
+      ((ha i hi).trans (ha j hjb).symm)
+    simpa only [patternClassPositions, Finset.mem_filter,
+      Finset.mem_univ, true_and] using hij
+  have hclass : (patternClassPositions p i).card = 2 := by
+    simpa only [patternClassPositions, Nat.card_eq_fintype_card,
+      Fintype.card_subtype] using hpair i
+  have hnodup := (List.nodup_flatten.mp cert.flatten_nodup).1 b hb
+  have hlen := cert.sizes b hb
+  apply Finset.eq_of_subset_of_card_le hsub
+  rw [hclass, List.toFinset_card_of_nodup hnodup]
+  rcases hlen with hlen | hlen <;> omega
+
+theorem winning_pair_pattern_iff {n : Nat} (p : ColorPattern n)
+    (hpair : ∀ i : Fin n, Nat.card {j : Fin n // p i j} = 2) :
+    WinningColorPattern p ↔ NoncrossingPairPattern p := by
+  constructor
+  · rintro ⟨cert⟩
+    refine ⟨hpair, ?_⟩
+    intro a b c d hab hbc hcd hcross
+    obtain ⟨ablock, ha, hap⟩ := cert.cover_position a
+    obtain ⟨bblock, hb, hbp⟩ := cert.cover_position b
+    have hac := certificate_block_eq_pair_class p hpair cert ha hap
+    have hbd := certificate_block_eq_pair_class p hpair cert hb hbp
+    have hc : c ∈ ablock := by
+      apply List.mem_toFinset.mp
+      rw [hac]
+      simpa only [patternClassPositions, Finset.mem_filter,
+        Finset.mem_univ, true_and] using hcross.1
+    have hd : d ∈ bblock := by
+      apply List.mem_toFinset.mp
+      rw [hbd]
+      simpa only [patternClassPositions, Finset.mem_filter,
+        Finset.mem_univ, true_and] using hcross.2
+    exact cert.no_alternation ha hb hap hc hbp hd (Or.inl ⟨hab, hbc, hcd⟩)
+  · exact noncrossing_pair_pattern_winning p
+
+/-- Winning patterns with every color used twice are exactly the
+noncrossing perfect matchings, as finite unlabeled object spaces. -/
+def pairWinningPatternEquiv (n : Nat) :
+    {p : ColorPattern n // NoncrossingPairPattern p} ≃
+    {p : ColorPattern n // WinningColorPattern p ∧
+      ∀ i : Fin n, Nat.card {j : Fin n // p i j} = 2} where
+  toFun p := ⟨p.val, noncrossing_pair_pattern_winning p.val p.property, p.property.1⟩
+  invFun p := ⟨p.val, (winning_pair_pattern_iff p.val p.property.2).mp p.property.1⟩
+  left_inv p := Subtype.ext rfl
+  right_inv p := Subtype.ext rfl
+
+#print axioms winning_pair_pattern_iff
+#print axioms pairWinningPatternEquiv
 #print axioms patternBlockLists_exact_cover
 #print axioms noncrossing_pair_pattern_winning
 #print axioms fourfold_representation_winning

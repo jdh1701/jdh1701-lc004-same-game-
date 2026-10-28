@@ -108,3 +108,5 @@ import LC004.PairFamilyInsertion
 import LC004.BlockCrossingInsertion
 
 import LC004.NoncrossingBlockFamily
+
+import LC004.TypedInsertionPositions

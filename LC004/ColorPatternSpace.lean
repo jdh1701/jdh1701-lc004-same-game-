@@ -120,6 +120,25 @@ theorem winning_word_pattern_iff {q : Nat} (w : List (Fin q)) :
 def colorPatternClassCount {n : Nat} (p : ColorPattern n) : Nat :=
   Nat.card (Quotient p)
 
+theorem colorPatternClassCount_of {n q : Nat} (color : Fin n → Fin q) :
+    colorPatternClassCount (colorPatternOf color) = (List.ofFn color).toFinset.card := by
+  classical
+  let e : Set.range color ≃ {a : Fin q // a ∈ (List.ofFn color).toFinset} :=
+    { toFun := fun a => ⟨a.val, by
+        simpa only [List.mem_toFinset, List.mem_ofFn] using a.property⟩
+      invFun := fun a => ⟨a.val, by
+        simpa only [List.mem_toFinset, List.mem_ofFn] using a.property⟩
+      left_inv := fun a => rfl
+      right_inv := fun a => rfl }
+  calc
+    _ = Nat.card (Set.range color) := Nat.card_congr (Setoid.quotientKerEquivRange color)
+    _ = Nat.card {a : Fin q // a ∈ (List.ofFn color).toFinset} := Nat.card_congr e
+    _ = _ := Nat.card_eq_finsetCard _
+
+theorem colorPatternClassCount_word {q : Nat} (w : List (Fin q)) :
+    colorPatternClassCount (colorPatternOf w.get) = w.toFinset.card := by
+  simpa only [List.ofFn_get] using colorPatternClassCount_of w.get
+
 /-- A precise finite target for A(n,k); no enumeration formula is asserted. -/
 noncomputable def winningColorPatternCount (n k : Nat) : Nat := by
   classical
@@ -139,5 +158,6 @@ noncomputable def noncrossingPairPatternCount (n : Nat) : Nat := by
 #print axioms colorPatternOf_surjective
 #print axioms certificate_iff_same_color_pattern
 #print axioms winning_word_pattern_iff
+#print axioms colorPatternClassCount_word
 
 end LC004

@@ -134,3 +134,5 @@ import LC004.FourRefinementOverlap
 import LC004.DoubleRepresentationCount
 
 import LC004.ColorPatternSpace
+
+import LC004.MatchingPatternMerge

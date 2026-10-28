@@ -24,7 +24,9 @@ theorem certificate_has_first_erasure {q : Nat} {w : List (Fin q)}
       have hik : i < k := by simpa only [List.length_replicate] using hi'
       have hip : gap + i < w.length := by omega
       have hp : (⟨gap + i, hip⟩ : Fin w.length) ∈ b :=
-        (hmem _).mpr ⟨by omega, by omega⟩
+        (hmem _).mpr (by
+          change gap ≤ gap + i ∧ gap + i < gap + k
+          omega)
       simpa only [List.getElem_take, List.getElem_drop, List.getElem_replicate,
         List.get_eq_getElem] using hmono ⟨gap + i, hip⟩ hp
   have hdecomp : w = w.take gap ++ List.replicate k a ++ w.drop (gap + k) := by
@@ -33,7 +35,7 @@ theorem certificate_has_first_erasure {q : Nat} {w : List (Fin q)}
       _ = w.take gap ++ ((w.drop gap).take k ++ (w.drop gap).drop k) := by
         exact congrArg (fun rest => w.take gap ++ rest)
           (List.take_append_drop k (w.drop gap)).symm
-      _ = _ := by rw [hsegment, List.drop_drop]
+      _ = _ := by simp only [hsegment, List.drop_drop, List.append_assoc]
   have hstep : SmallErase
       (w.take gap ++ List.replicate k a ++ w.drop (gap + k))
       (w.take gap ++ w.drop (gap + k)) := by
@@ -43,7 +45,8 @@ theorem certificate_has_first_erasure {q : Nat} {w : List (Fin q)}
     · simpa [List.replicate_succ] using
         SmallErase.triple (w.take gap) (w.drop (gap + 3)) a
   have hactual : SmallErase w (w.take gap ++ w.drop (gap + k)) :=
-    hdecomp.symm ▸ hstep
+    Eq.mpr (congrArg
+      (fun u => SmallErase u (w.take gap ++ w.drop (gap + k))) hdecomp) hstep
   exact ⟨_, hactual, smallErase_length_lt hactual⟩
 
 #print axioms certificate_has_first_erasure

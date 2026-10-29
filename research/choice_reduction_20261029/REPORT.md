@@ -129,3 +129,5 @@ python scripts/test_verification_guards.py
 ```
 
 Final local verification: **195 active modules**, **2450 audited declarations**, build/coverage/axiom audit and both negative guards pass. Standard axioms only.
+
+Follow-up: exact CI 40968123417 and coefficient run 40968123431 succeeded at f83b4626f7b4be4b0098d8330b5199fabfd49863. The abstract core is PROVED-LEAN on that commit. Generic support restriction and its corrected cover-based connectivity criterion are now in `../choice_support_20261029/REPORT.md`; original geometric and coefficient bridges remain open.

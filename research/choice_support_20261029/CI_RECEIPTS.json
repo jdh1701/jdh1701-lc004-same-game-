@@ -1,0 +1,20 @@
+{
+  "status": "awaiting new proof-commit run; local verification passed",
+  "local": {
+    "modules": 197,
+    "audited_declarations": 2494,
+    "build": "pass",
+    "coverage": "pass",
+    "axiom_audit": "pass",
+    "negative_guards": "pass",
+    "normalization_controls": "2 negative controls and 38 positive cover graphs pass"
+  },
+  "baseline": {
+    "commit": "f83b4626f7b4be4b0098d8330b5199fabfd49863",
+    "run_id": 40968123417,
+    "status": "success",
+    "probe_run": 40968123431,
+    "probe_status": "success"
+  },
+  "scope": "support normalization and cover-based cancellation; original game geometry and coefficient identification pending"
+}

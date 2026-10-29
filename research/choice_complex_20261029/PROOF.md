@@ -269,3 +269,5 @@ to these hypotheses, and the coefficient/face-sum identification still needs
 Lean assembly. The full all-five game statement remains PROVED-PAPER until
 those links are supplied. This supersedes the older list of missing abstract
 quotient steps in Section 5 without claiming the original game bridge is done.
+
+Follow-up: generic restriction to supported domains, preservation of the face sum, and the constant-coordinate split now compile in Lean. The connectedness step uses covered compatibility edges across each proper cut; general nonuniversality alone does not survive removal of unused values (explicit counterexamples in `../choice_support_20261029/`). The remaining game-specific tasks are finite geometric closure/cover properties, their order transport, and the original coefficient identification. The full game statement remains PROVED-PAPER.

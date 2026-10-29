@@ -243,3 +243,5 @@ import LC004.ChoiceComplexCancellation
 import LC004.ChoiceFunctionalElimination
 
 import LC004.ChoiceAbstractCancellation
+
+import LC004.ChoiceSupportedCancellation

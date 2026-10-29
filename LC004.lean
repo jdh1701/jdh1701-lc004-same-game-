@@ -209,3 +209,4 @@ import LC004.ExceptionalDegreeProfiles
 import LC004.PartitionExceptionalWordProfiles
 import LC004.SingleExceptionalWordCount
 import LC004.NoncrossingProfileEnumeration
+import LC004.DoubleExceptionalWordCount

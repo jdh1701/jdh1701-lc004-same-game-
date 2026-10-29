@@ -175,7 +175,7 @@ theorem double_anchored_word_count (k : Nat) (hk : 2 ≤ k) :
     have hpred : ∀ s : Finset (Fin (2 * k + 2)),
         (s.card = k - 2 ∧ j ∉ s) ↔ s ∈ (Finset.univ.erase j).powersetCard (k - 2) := by
       intro s
-      simp only [Finset.mem_powersetCard, Finset.subset_erase, Finset.subset_univ, and_true]
+      simp only [Finset.mem_powersetCard, Finset.subset_erase, Finset.subset_univ, and_true, true_and]
       exact and_comm
     rw [Fintype.card_congr (Equiv.subtypeEquivRight hpred), Fintype.card_coe,
       Finset.card_powersetCard, Finset.card_erase_of_mem (Finset.mem_univ j),

@@ -32,7 +32,8 @@ theorem opening_degree_pos_iff_leader {n : Nat} (p : ColorPattern n) (i : Fin n)
   change (0 < if patternClassLeader p i = i then
     (patternClassPositions p i).card else 0) ↔ _
   split_ifs with h
-  · have hm : i ∈ patternClassPositions p i := by simp [patternClassPositions, p.refl]
+  · have hm : i ∈ patternClassPositions p i :=
+      Finset.mem_filter.mpr ⟨Finset.mem_univ _, p.refl i⟩
     exact ⟨fun _ => h, fun _ => Finset.card_pos.mpr ⟨i, hm⟩⟩
   · simp [h]
 

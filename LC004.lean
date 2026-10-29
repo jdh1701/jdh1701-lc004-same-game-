@@ -207,3 +207,4 @@ import LC004.CyclicWordEnumeration
 import LC004.NoncrossingDegreeWordEquiv
 import LC004.ExceptionalDegreeProfiles
 import LC004.PartitionExceptionalWordProfiles
+import LC004.SingleExceptionalWordCount

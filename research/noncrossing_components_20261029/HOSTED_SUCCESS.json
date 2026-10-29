@@ -1,0 +1,26 @@
+{
+  "status": "PROVED-LEAN",
+  "source_commit": "7c1c26ceec76a4de681abc39b6a24389888b678e",
+  "ci_run": 40903775123,
+  "conclusion": "success",
+  "new_theorems": 28,
+  "active_modules": 179,
+  "audited_project_declarations": 2280,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "python_region_checks": 11147,
+  "main_theorems": [
+    "winningJoinCoefficient_noncrossing_product",
+    "winningJoinCoefficient_closure_components",
+    "closurePushforward_incidence"
+  ],
+  "remaining": [
+    "connected closure-fiber bijection",
+    "class-count weights and free-cumulant identification",
+    "universal cumulant support bound",
+    "surviving connected coefficient enumeration"
+  ]
+}

@@ -9,7 +9,7 @@ def crossed_classes(x):
     for i, j, k, l in itertools.combinations(range(n), 4):
         if x[i] == x[k] and x[j] == x[l] and x[i] != x[j]: s.add(x[i]); s.add(x[j])
     return s
-for n in range(8, int(sys.argv[1]) + 1):
+for n in range(int(sys.argv[2]) if len(sys.argv) > 2 else 8, int(sys.argv[1]) + 1):
     certs, coef = run(n)
     prof = Counter(); cnt = Counter()
     for x, c in coef.items():

@@ -16,4 +16,16 @@ Instead of enumerating all subsets F, keep signed coefficients indexed by their 
 
 `LC004/CertificateConstraintJoins.lean` provides the initial formal claims: winning is upward closed under color identification; joining constraints multiplies their indicators; and the signed inclusion-exclusion update preserves a union indicator. Consult CI for compilation status.
 
-Remaining formal obligations: finite certificate partitions with an exact refinement characterization; induction over their enumeration and coefficient collection; a bijection between k-class coarsenings of a partition with b classes and k-block partitions of its quotient (cardinality S(b,k)); and the final finite-sum interchange. Higher-diagonal simplification then requires structural information about which joins survive cancellation.
+## Further formal development
+
+Three additional modules implement the next bridges:
+
+- `CertificateJoinIteration.lean` defines a recursively expanded list of signed joins and proves its score equals the indicator that at least one input constraint is satisfied. This theorem accepts arbitrary finite lists, including duplicates and the empty list. It retains duplicate join terms; coefficient compression is not yet formalized.
+- `WinningConstraintGenerators.lean` defines the finite family of noncrossing pair/triple partitions. It proves that a color pattern is winning exactly when it coarsens one of these generators, then proves the unconditional signed-join winning indicator. The family includes the empty certificate at length zero.
+- `PatternCoarseningCorrespondence.lean` applies mathlib's `Setoid.correspondence`, proves preservation of the number of resulting classes using the quotient isomorphism theorem, and restricts the equivalence to exactly k classes. This identifies the objects that the Stirling numbers must count; it does not yet identify their cardinality with a numerical Stirling recurrence.
+
+The pointwise theorem is `winning_signed_join_indicator`. The quotient cardinality bridge is `patternCoarseningClass_card`. Compilation and the global axiom audit are enforced by the PR workflow; inspect the run for the exact commit being used.
+
+The independent all-pattern check through length 9 is now a CI step, rather than a manual-only experiment.
+
+Remaining formal obligations for the displayed Stirling-number formula: identify the cardinality of k-block partitions of a finite quotient with the standard Stirling number; sum the pointwise identity over patterns with k classes and interchange the finite sums; and, if using the compressed implementation, prove coefficient collection preserves the score. Higher-diagonal simplification requires structural information about which joins survive cancellation. These constructions establish no novelty claim and no polynomial-time bound.

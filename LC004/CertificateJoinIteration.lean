@@ -43,6 +43,7 @@ theorem certificateJoinTerms_score {n : Nat} (cs : List (ColorPattern n))
       change _ + (_ + joinTermScore
         ((certificateJoinTerms cs).map (fun t => (t.1 ⊔ c, -t.2))) r) = _
       rw [joinTermScore_intersections]
+      unfold joinTermScore
       ring
     rw [hstep, ih]
     by_cases hc : c ≤ r <;> by_cases hs : ∃ d ∈ cs, d ≤ r <;>
@@ -56,7 +57,8 @@ theorem certificateJoinTerms_winning_indicator {n : Nat}
     joinTermScore (certificateJoinTerms cs) r =
       if WinningColorPattern r then 1 else 0 := by
   classical
-  rw [certificateJoinTerms_score, ← hcs r]
+  rw [certificateJoinTerms_score]
+  simp only [← hcs r]
 
 #print axioms certificateJoinTerms_score
 #print axioms certificateJoinTerms_winning_indicator

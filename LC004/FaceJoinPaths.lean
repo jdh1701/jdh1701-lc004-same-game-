@@ -30,8 +30,8 @@ theorem faceJoinPath_le_join {n : Nat} (p q : ColorPattern n)
   | tail hab hbc ih =>
       apply (p ⊔ q).trans ih
       rcases hbc with hp | hq
-      · exact le_sup_left hp
-      · exact le_sup_right hq
+      · exact (show p ≤ p ⊔ q from le_sup_left) hp
+      · exact (show q ≤ p ⊔ q from le_sup_right) hq
 
 #print axioms faceJoinPath_le_join
 

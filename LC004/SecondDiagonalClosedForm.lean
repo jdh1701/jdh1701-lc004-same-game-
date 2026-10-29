@@ -27,6 +27,33 @@ theorem two_triple_noncrossing_count_closed (k : Nat) (hk : 2 ≤ k) :
   have hs : k - 2 + 1 = k - 1 := by omega
   simpa only [Nat.succ_eq_add_one, hs, Nat.mul_comm] using h
 
+theorem two_triple_profile_minimum_length {n : Nat} (p : ColorPattern n)
+    (hp : TwoTriplePairPattern p) : 6 ≤ n := by
+  classical
+  have hsize := two_triple_profile_position_count p hp
+  obtain ⟨a, b, hab, _, _, _⟩ := hp
+  have hne : Quotient.mk p a ≠ Quotient.mk p b := fun h => hab (Quotient.exact h)
+  have hcard : 2 ≤ colorPatternClassCount p := by
+    change 2 ≤ Nat.card (Quotient p)
+    rw [Nat.card_eq_fintype_card]
+    exact Fintype.one_lt_card_iff.mpr ⟨Quotient.mk p a, Quotient.mk p b, hne⟩
+  omega
+
+theorem two_triple_noncrossing_count_at_four : twoTripleNoncrossingPatternCount 4 = 0 := by
+  classical
+  letI : IsEmpty {p : ColorPattern 4 // PatternNoncrossing p ∧ TwoTriplePairPattern p} :=
+    ⟨fun p => by have h := two_triple_profile_minimum_length p.val p.property.2; omega⟩
+  exact Fintype.card_eq_zero
+
+theorem two_triple_noncrossing_count_closed_all (k : Nat) (hk : 1 ≤ k) :
+    2 * twoTripleNoncrossingPatternCount (2 * k + 2) =
+      (k - 1) * (2 * k + 2).choose (k - 1) := by
+  by_cases h : k = 1
+  · subst k
+    simpa only [Nat.reduceMul, Nat.reduceAdd, Nat.reduceSub, Nat.zero_mul] using
+      congrArg (fun t => 2 * t) two_triple_noncrossing_count_at_four
+  · exact two_triple_noncrossing_count_closed k (by omega)
+
 /-- The complete second-diagonal formula for winning color patterns,
 with maximal-run deletion semantics inherited from the certified reduction. -/
 theorem winningColorPatternCount_second_diagonal (k : Nat) (hk : 1 ≤ k) :

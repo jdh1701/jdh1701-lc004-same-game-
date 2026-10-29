@@ -60,8 +60,9 @@ theorem fourfold_iff_singleExceptionalWord {n : Nat} (p : ColorPattern n) :
     let t := patternClassLeader p j
     have hne : t.castSucc ≠ a.castSucc := by
       intro h
-      have heq : t = a := Fin.castSucc_injective h
+      have heq : t = a := Fin.castSucc_injective n h
       have hrel := patternClassLeader_related p j
+      change p t j at hrel
       rw [heq] at hrel
       exact hna hrel
     have h := hrest t.castSucc hne
@@ -81,7 +82,7 @@ theorem twoTriple_iff_doubleExceptionalWord {n : Nat} (p : ColorPattern n) :
     have hij : i ≠ j := fun h => hab ((pattern_related_iff_leaders p a b).mpr h)
     have hi : patternOpeningDegree p i = 3 := (opening_degree_at_leader p a).trans ha
     have hj : patternOpeningDegree p j = 3 := (opening_degree_at_leader p b).trans hb
-    refine ⟨i.castSucc, j.castSucc, fun h => hij (Fin.castSucc_injective h),
+    refine ⟨i.castSucc, j.castSucc, fun h => hij (Fin.castSucc_injective n h),
       (patternDegreeWord_castSucc p i).trans hi, (patternDegreeWord_castSucc p j).trans hj, ?_⟩
     intro t hti htj
     rcases Fin.eq_castSucc_or_eq_last t with ⟨s, rfl⟩ | rfl
@@ -123,8 +124,9 @@ theorem twoTriple_iff_doubleExceptionalWord {n : Nat} (p : ColorPattern n) :
     let t := patternClassLeader p s
     have hne (u : Fin n) (hu : ¬ p u s) : t.castSucc ≠ u.castSucc := by
       intro h
-      have heq : t = u := Fin.castSucc_injective h
+      have heq : t = u := Fin.castSucc_injective n h
       have hrel := patternClassLeader_related p s
+      change p t s at hrel
       rw [heq] at hrel
       exact hu hrel
     have h := hrest t.castSucc (hne a hna) (hne b hnb)

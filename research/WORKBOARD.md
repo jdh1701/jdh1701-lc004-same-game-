@@ -192,3 +192,9 @@ GPT session handoff: coefficient cancellation source work is complete locally, h
 ## Final campaign CI receipt, 2026-10-29
 
 PROVED-LEAN: winningJoinCoefficient_crossed_four_zero and its prerequisite modules at e6dbea580447aae5b8d87a4095a186dc26107bb0. Hosted run 40895249874 completed SUCCESS, both Lean and Sage jobs green. Coverage 174 modules, axiom audit 2240 declarations (propext, Classical.choice, Quot.sound only), negative guards passed. This supersedes the in-progress entries above. The cumulant support assembly and full enumeration remain unresolved. See solver_campaign_20261029/HOSTED_SUCCESS.json and hosted-lean-success.log.
+
+## Noncrossing coefficient decomposition checkpoint, 2026-10-29
+
+PR34, source 7c1c26ceec76a4de681abc39b6a24389888b678e adds 28 theorem declarations across five modules: least NC closure; signed-weight closure pushforward; refinement/region order equivalence; and signed game coefficient factoring over any NC coarsening, including the least closure. Targeted and complete local Lean builds passed, all 179 modules are imported, audit passed for 2280 declarations with standard axioms, and negative guards passed. Hosted run 40903775123 was in progress at this archive. Do not promote to PROVED-LEAN under the hosted rule until it completes.
+
+VERIFIED-COMP: all partitions through n=7 and 11147 regional cases independently verify closure and coefficient-product controls. Sources, raw logs ZIP, hashes, reports and next obligations are under research/noncrossing_components_20261029/. Reuse the primary LabeledJoinEnumeration source rather than rebuilding that bridge. The closure-fiber connectedness bijection and class-count weights still need formalization before calling the sums cumulants. The nonzero connected-kernel enumeration remains unresolved. No novelty claim is made.

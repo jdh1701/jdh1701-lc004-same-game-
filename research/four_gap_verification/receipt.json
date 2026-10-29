@@ -1,0 +1,23 @@
+{
+  "new_modules": 9,
+  "new_theorems": 31,
+  "active_modules": 171,
+  "project_axiom_declarations": 2124,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "source_sha256": {
+    "LC004/FiniteIncidenceSupport.lean": "d00e5dcef8d3de86d9357f70cd07fdf25a254329a27d61a219096626355d03d2",
+    "LC004/CollectedJoinCoefficients.lean": "2da94ab573e409d238a739ba1283c5a2ee9d7ae6d296b2872ef3d5efdd1882e5",
+    "LC004/FourClassLocalPairs.lean": "5066069e75d6b7954e4a038397f8cb9eef956eaa8210746f429cb337d5c33694",
+    "LC004/FourClassTwoShapes.lean": "7e99db3982fc832dbf316d8bee122967d10e35b4711a23d83b5f80ee7d58cd6c",
+    "LC004/CertificatePairRegions.lean": "cb5cfd222af9e97479a7ac75870c1021ec33c29966ca03c34aa7ac03f03c3fd4",
+    "LC004/FourGapWitnessOverlap.lean": "febfa715fdf63b34c7b37a36cc7cb383ff29786e7fca1ec17ef7c857b835bb38",
+    "LC004/FourGapAssembly.lean": "0af7769fbdaae020ff7587b6de1b9f6254be0904d5e3f63b95aafde96f00aa97",
+    "LC004/FourGapIndicator.lean": "df9cf0a62f3e9bb8599beef6048803a0f38aa84190105cd1cd414df9029e1fec",
+    "LC004/NoncrossingRegionEquivalence.lean": "8e9f17392280b2cb51d929e401a455104b34e93521dde5ae7aef819a485749ce"
+  },
+  "scope": "Four-gap indicator and prerequisites verified; coefficient cancellation, cumulant support bound, and full enumeration are not Lean-certified."
+}

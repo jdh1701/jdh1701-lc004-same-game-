@@ -19,8 +19,8 @@ theorem faceInternalPath_sound {n m : Nat}
   | tail hab hbc ih =>
       apply (restrictColorPattern p e ⊔ restrictColorPattern q e).trans ih
       rcases hbc with hp | hq
-      · exact le_sup_left ((restrictColorPattern_rel p e _ _).mpr hp)
-      · exact le_sup_right ((restrictColorPattern_rel q e _ _).mpr hq)
+      · exact (show restrictColorPattern p e ≤ restrictColorPattern p e ⊔ restrictColorPattern q e from le_sup_left) ((restrictColorPattern_rel p e _ _).mpr hp)
+      · exact (show restrictColorPattern q e ≤ restrictColorPattern p e ⊔ restrictColorPattern q e from le_sup_right) ((restrictColorPattern_rel q e _ _).mpr hq)
 
 /-- The meaningful face-locality condition replaces any global path
 between selected endpoints by an internal path. -/

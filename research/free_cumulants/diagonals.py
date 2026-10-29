@@ -14,7 +14,7 @@ for j, f in P.items():
             assert rows[n][k-1] == f(k) * comb(n, k-1), (j, k)
             checks += 1
 print("A(2k+j,k) = C(2k+j,k-1)*P_j(k) verified at", checks, "data points; j<=5")
-print("PREDICTION A(16,6) =", f(6) * comb(16, 5))
+print("formula A(16,6) =", P[4](6) * comb(16, 5), "(brute force: 603148)")
 
 extra = {(16, 6): 603148, (15, 6): 88088, (16, 7): 56056, (17, 6): 3817996, (17, 8): 19448}  # bf-k run 40844840701
 for (n, k), v in extra.items():

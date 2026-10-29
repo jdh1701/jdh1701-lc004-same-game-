@@ -28,8 +28,10 @@ theorem singleExceptionalWord_rotate {n : Nat} (w : CyclicDegreeWord n)
     refine ⟨-r + i, ?_, ?_⟩
     · simpa only [rotateDegreeWord, add_neg_cancel_left] using hi
     · intro j hj
-      exact hrest (r + j) (by intro h; apply hj; simpa only [neg_add_cancel_left] using
-        congrArg (fun t => -r + t) h)
+      exact hrest (r + j) (by
+        intro h
+        apply hj
+        simpa only [neg_add_cancel_left] using congrArg (fun t => -r + t) h)
 
 theorem doubleExceptionalWord_rotate {n : Nat} (w : CyclicDegreeWord n)
     (a : Nat) (r : Fin (n + 1)) :

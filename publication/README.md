@@ -49,7 +49,7 @@ leanblueprint web
 python publication/build_site.py
 ```
 
-Graphviz and its development headers are required. The GitHub workflow installs the system packages. Python dependencies and Actions are version/commit pinned; the operating-system package repositories are not an immutable container image. The manifests provide exact source and artifact hashes, not an unsupported claim of bit-identical builds across operating systems.
+Graphviz and its development headers are required. The GitHub workflow installs the system packages. Python dependencies and top-level Actions references are version/commit pinned; composite actions can contain tagged transitive dependencies, and the operating-system package repositories are not an immutable container image. The manifests provide exact source and artifact hashes, not an unsupported claim of bit-identical builds across operating systems.
 
 The validator checks the frozen proof inventory, embedded source listings, bibliography identity, theorem mapping, absence of dangling cross-references, and an acyclic dependency graph. Its mutation checks reject an invented declaration, a changed source digest, a dependency cycle, and promotion of an open obligation. The Lean audit independently resolves every mapped declaration and admits only `propext`, `Classical.choice`, and `Quot.sound`.
 
@@ -59,7 +59,9 @@ The validator checks the frozen proof inventory, embedded source listings, bibli
 
 One-time repository configuration: **Settings → Pages → Build and deployment → Source → GitHub Actions**. The `github-pages` deployment environment must permit the publication branch. The connected repository reported `has_pages: false` during initial publication setup, so a workflow file alone is not evidence of a live deployment. See `publication/status.json` for the observed execution status. The GitHub connector does not expose a Pages-settings mutation.
 
-The job preserves PDF and validation artifacts even when deployment is blocked by repository settings. After Pages is enabled, a further branch push runs the workflow automatically. Manual dispatch also requires the workflow to be available to GitHub's dispatch mechanism; a branch push avoids reliance on that condition.
+Hosted run [40837599814](https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40837599814) passed every build gate and uploaded both publication and Pages artifacts. The deployment job then failed with `Get Pages site failed` / `Not Found`, confirming the repository-setting blocker. The browser was signed out and could not change that setting. This is a successful build and a failed deployment, not an entirely green workflow.
+
+The job preserves PDF and validation artifacts even when deployment is blocked by repository settings. After Pages is enabled, a further branch push runs the workflow automatically. Manual dispatch also requires the workflow to be available to GitHub's dispatch mechanism; a branch push avoids reliance on that condition. The status file archives this first complete build; subsequent branch runs are visible in GitHub Actions and the pull request.
 
 ## Provenance
 

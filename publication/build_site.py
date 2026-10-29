@@ -3,6 +3,7 @@ from pathlib import Path
 import hashlib
 import html
 import json
+import os
 import shutil
 from importlib.metadata import version
 from html.parser import HTMLParser
@@ -98,12 +99,15 @@ source_files = [
     ROOT / "blueprint/src/plastex.cfg", ROOT / "blueprint/src/latexmkrc",
 ]
 source_files += [p for p in (ROOT / "publication").rglob("*") if p.is_file()
-                 and p.suffix in {".tex", ".bib", ".py", ".lean", ".json", ".md", ".txt"}
+                 and p.suffix in {".tex", ".bib", ".py", ".lean", ".json", ".md", ".txt", ".log"}
                  and "build" not in p.parts and "__pycache__" not in p.parts]
+source_files = [p for p in source_files if p.name != "paper.log"]
 source_files = sorted(set(source_files))
 manifest = {
     "schema": "alexandria-publication-artifacts/1",
     "proof_commit": sha,
+    "publication_commit": os.environ.get("GITHUB_SHA"),
+    "commit_binding": "CI commit when present; source digests identify local builds",
     "page_count": page_count,
     "blueprint_statements": len(config["statements"]),
     "checked_declarations": len(names),

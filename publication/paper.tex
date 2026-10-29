@@ -984,7 +984,8 @@ effect. A check made earlier, followed by an unconditional write, is not the
 same guarantee.
 
 \begin{proposition}[Conditional source-preservation contract]\label{prop:transaction}
-Suppose immutable source snapshots are content-addressed, the verifier binds
+Suppose immutable source snapshots have collision-free content identities
+on the admitted snapshot set, the verifier binds
 a passing result to the exact snapshot digest, and publication atomically
 checks both that binding and the expected predecessor. Then a successful
 publication under that contract cannot silently substitute a different
@@ -994,7 +995,7 @@ source snapshot for the verified one.
 \begin{proof}
 A substituted snapshot either has a different digest, contradicting the
 verification-binding check, or has the same digest. Under the stated
-content-addressing assumption, the latter is the same snapshot. A concurrent
+collision-free identity assumption, the latter is the same snapshot. A concurrent
 branch replacement invalidates the expected predecessor and causes the
 conditional update to fail. These exhaust the specified substitution cases.
 \end{proof}

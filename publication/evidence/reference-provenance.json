@@ -1,0 +1,62 @@
+{
+  "schema": "alexandria-reference-provenance/1",
+  "checked_date": "2026-10-29",
+  "method": "Primary publication pages, original PDFs, and official software repositories; software is not misrepresented as a journal article",
+  "references": [
+    {
+      "key": "Hubert2026AlphaProof",
+      "url": "https://www.nature.com/articles/s41586-025-09833-y",
+      "doi": "10.1038/s41586-025-09833-y",
+      "online_year": 2025,
+      "issue_year": 2026,
+      "volume": 651,
+      "pages": "607-613"
+    },
+    {
+      "key": "Breen2026AxProver",
+      "url": "https://doi.org/10.1088/2632-2153/ae9452",
+      "preprint": "https://arxiv.org/abs/2510.12787",
+      "year": 2026,
+      "volume": 7,
+      "article": "045073"
+    },
+    {
+      "key": "LeanDojoV2",
+      "url": "https://github.com/lean-dojo/LeanDojo-v2",
+      "type": "software repository",
+      "note": "Access year 2026, not an asserted separate journal publication"
+    },
+    {
+      "key": "Biedl2002",
+      "url": "https://library.slmath.org/books/Book42/files/biedl.pdf",
+      "first_author": "Therese C. Biedl",
+      "note": "Grammar/recognition foundation; novelty of the present formulation not established by this citation"
+    },
+    {
+      "key": "BurnsPurcell2007",
+      "url": "https://www.fq.math.ca/Papers1/45-3/burns.pdf",
+      "authors": [
+        "Chris Burns",
+        "Benjamin Purcell"
+      ],
+      "note": "Corrected against journal contents, journal abstract, OpenAlex metadata and OCR of the original PDF. Earlier author names John M. Burns/Donal Purcell and omission of binary were erroneous.",
+      "title": "Counting the number of winning binary strings in the 1-dimensional same game",
+      "doi": "10.1080/00150517.2007.12428215",
+      "openalex": "W4403297183"
+    },
+    {
+      "key": "KrattenthalerMuller2007",
+      "url": "https://arxiv.org/abs/0704.0199",
+      "note": "Related noncrossing decomposition literature; no unproved equivalence to the Same Game formula"
+    },
+    {
+      "key": "MassotLeanBlueprint",
+      "url": "https://github.com/PatrickMassot/leanblueprint",
+      "note": "Upstream uses TeX/plastex.cfg, not blueprint.toml"
+    },
+    {
+      "key": "GitHubPagesDocs",
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages"
+    }
+  ]
+}

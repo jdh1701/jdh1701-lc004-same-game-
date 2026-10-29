@@ -50,7 +50,24 @@ The headline theorem is about the abstract `RunState` model. It says nothing
 yet about actual Same Game words like `0110`. The bridge exists except for a
 single lemma, `hcommute`, which has 4.8M finite confirmations and no proof.
 
-## 4. Recommended next problem: prove `hcommute`
+## 4. Next problem: prove `hcommute` — done (2026-10-29)
+
+**Status:** proved in `LC004/OrdinaryCommute.lean` and imported from the root.
+`OrdinaryCorrespondence.lean` was promoted from `research/post_theorem/` into
+`LC004/`. The ordinary-word capstone is
+
+```lean
+theorem ordinary_unique_first_iff_unique_path
+    (w : RawState) (hne : w ≠ []) :
+    OrdinaryUniqueFirst w ↔ OrdinaryUniquePath w
+```
+
+i.e. the uniqueness theorem now holds for actual Same Game words, with run
+indices counted in the raw word. The commuting lemma itself was compiled
+standalone against core Lean 4.19.0 (axioms: `propext`, `Quot.sound`); the
+full Mathlib build is checked by CI. The original plan is kept below.
+
+### Original plan
 
 ```lean
 theorem ordinaryStepAt_commute (w : RawState) (i : Nat) :

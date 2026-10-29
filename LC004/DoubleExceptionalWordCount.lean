@@ -21,12 +21,12 @@ theorem doubleExceptionalWord_at_anchor {n : Nat} (w : CyclicDegreeWord n)
       · exact (hij rfl).elim
       · refine ⟨s, hj, ?_⟩
         intro t hts
-        exact hrest t.succ (Fin.succ_ne_zero _) (fun h => hts (Fin.succ_injective h))
+        exact hrest t.succ (Fin.succ_ne_zero _) (fun h => hts (Fin.succ_injective n h))
     · rcases Fin.eq_zero_or_eq_succ i with rfl | ⟨s, rfl⟩
       · exact (hij rfl).elim
       · refine ⟨s, hi, ?_⟩
         intro t hts
-        exact hrest t.succ (fun h => hts (Fin.succ_injective h)) (Fin.succ_ne_zero _)
+        exact hrest t.succ (fun h => hts (Fin.succ_injective n h)) (Fin.succ_ne_zero _)
   · rintro ⟨j, hj, hrest⟩
     refine ⟨0, j.succ, Ne.symm (Fin.succ_ne_zero _), hzero, hj, ?_⟩
     intro t ht0 htj

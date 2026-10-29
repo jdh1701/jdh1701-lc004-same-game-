@@ -7,6 +7,7 @@ on:
       - 'LC004/**'
       - 'LC004.lean'
       - 'research/rigid_face_geometry_check.py'
+      - 'research/heavy_face_assembly_check.py'
       - 'scripts/FaceAxiomAudit.lean'
       - '.github/workflows/rigid-face-geometry.yml'
   workflow_dispatch:
@@ -27,7 +28,9 @@ jobs:
           python scripts/check_lean_coverage.py
           lake env lean scripts/FaceAxiomAudit.lean 2>&1 | tee face-axiom-audit.log
       - name: Independent maximal-run, certificate, and face tests
-        run: python research/rigid_face_geometry_check.py
+        run: |
+          python research/rigid_face_geometry_check.py
+          python research/heavy_face_assembly_check.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -35,3 +38,4 @@ jobs:
           path: |
             face-axiom-audit.log
             research/rigid_face_geometry_results.json
+            research/heavy_face_assembly_results.json

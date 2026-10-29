@@ -1,4 +1,4 @@
-import LC004.HeavyFaceReconstruction
+import LC004.HeavyFaceDecomposition
 import Lean.Util.CollectAxioms
 
 open Lean Elab Command in

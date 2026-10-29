@@ -1,0 +1,53 @@
+name: Crossed-four coefficient campaign
+on:
+  push:
+    branches: [proof/four-gap-coefficient-20261029]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.elan
+            .lake
+          key: ${{ runner.os }}-lean-v4.19.0-${{ hashFiles('lean-toolchain', 'lakefile.toml', 'lake-manifest.json') }}
+          restore-keys: |
+            ${{ runner.os }}-lean-v4.19.0-
+      - name: Install pinned Lean
+        run: |
+          if [ ! -x "$HOME/.elan/bin/elan" ]; then
+            curl https://elan.lean-lang.org/elan-init.sh -sSf | sh -s -- -y
+          fi
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Build and audit
+        run: |
+          set -o pipefail
+          lake exe cache get
+          python scripts/check_lean_coverage.py
+          lake build 2>&1 | tee campaign-build.log
+          lake env lean scripts/AxiomAudit.lean 2>&1 | tee campaign-axioms.log
+          python scripts/test_verification_guards.py
+          git diff --exit-code -- lake-manifest.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: coefficient-lean-receipts
+          path: campaign-*.log
+  sage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Exact independent Sage controls
+        run: |
+          set -o pipefail
+          docker run --rm -v "$PWD:/work" -w /work sagemath/sagemath:latest sage research/solver_campaign_20261029/sage_controls.sage 2>&1 | tee sage-controls.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: coefficient-sage-receipt
+          path: sage-controls.log

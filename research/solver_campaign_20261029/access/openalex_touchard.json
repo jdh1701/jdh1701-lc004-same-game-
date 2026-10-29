@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-29T14:41:06.725886+00:00",
+  "url": "https://api.openalex.org/works",
+  "method": "GET",
+  "parameters": {
+    "params": {
+      "search": "Touchard configurations fractions continues",
+      "per-page": 5
+    }
+  },
+  "error": "<HTTPError 429: 'Too Many Requests'>",
+  "seconds": 4.75041127204895
+}

@@ -1,0 +1,71 @@
+/-
+LEAN TARGET (not compiled, not in the build closure). Claim C2 of research/WORKBOARD.md.
+Drafted by Claude against LC004 at 8d8f647. Definitions below are proposals;
+rename freely. Move to LC004/FaceLemma.lean only once it compiles with no sorry.
+
+Mathematical content: research/face_decomposition/NOTE.md, Step 2.
+Evidence so far: exhaustive check of every pattern n <= 12 and 200k random
+words up to length 60 (research/face_decomposition/audit/g1ex.c, g1face.c).
+-/
+import LC004.ColorPatternSpace
+import LC004.SmallPatternCorrespondence
+
+namespace LC004
+open Classical
+
+variable {n : Nat}
+
+/-- Size of the class of position `i`. -/
+noncomputable def classSize (p : ColorPattern n) (i : Fin n) : Nat :=
+  Fintype.card {j : Fin n // p i j}
+
+/-- Rigid positions: their class has size 2 or 3. -/
+def IsRigid (p : ColorPattern n) (i : Fin n) : Prop :=
+  classSize p i = 2 ∨ classSize p i = 3
+
+/-- Heavy positions: their class has size at least 4. -/
+def IsHeavy (p : ColorPattern n) (i : Fin n) : Prop := 4 ≤ classSize p i
+
+/-- A rigid class separates `x < y` if it has a point strictly between them
+and a point outside the closed interval. -/
+def RigidSeparates (p : ColorPattern n) (x y : Fin n) : Prop :=
+  ∃ c d : Fin n, IsRigid p c ∧ p c d ∧ x < c ∧ c < y ∧ (d < x ∨ y < d)
+
+/-- Same face: no rigid class separates the two positions (order-symmetrised). -/
+def SameFace (p : ColorPattern n) (x y : Fin n) : Prop :=
+  ¬ RigidSeparates p (min x y) (max x y)
+
+/-- The rigid classes are pairwise noncrossing. -/
+def RigidNoncrossing (p : ColorPattern n) : Prop :=
+  ∀ a b c d : Fin n, a < b → b < c → c < d → IsRigid p a → IsRigid p b →
+    p a c → p b d → p a b
+
+/-- Restriction of a pattern to an ordered subset of positions. -/
+noncomputable def restrictPattern (p : ColorPattern n) (s : Finset (Fin n)) :
+    ColorPattern s.card :=
+  Setoid.comap (s.orderEmbOfFin rfl) p
+
+/-- The heavy positions in the face of a heavy position `x`. -/
+noncomputable def faceOf (p : ColorPattern n) (x : Fin n) : Finset (Fin n) :=
+  Finset.univ.filter (fun y => IsHeavy p y ∧ SameFace p x y)
+
+/-- TARGET C2 (face lemma). -/
+theorem winning_iff_faces (p : ColorPattern n) :
+    WinningColorPattern p ↔
+      (∀ i, 2 ≤ classSize p i) ∧ RigidNoncrossing p ∧
+      ∀ x, IsHeavy p x → WinningColorPattern (restrictPattern p (faceOf p x)) := by
+  sorry
+
+/-
+Suggested proof plan (each line is a lemma):
+1. no_singleton_of_winning: certificate blocks have size >= 2.
+2. rigid_class_is_block: LC004.certificate_small_block_eq_class.
+3. block_within_face: a certificate block of heavy positions has all points
+   in one face (uses noncrossing against rigid blocks).
+4. restrict_certificate: a certificate restricts along orderEmbOfFin.
+5. cross_faces_impossible: the arc argument in NOTE.md Step 2 (<=).
+6. glue_certificates: rigid blocks ++ face certificates is a certificate
+   (exactCover via a partition of Fin n into rigid positions and faces).
+-/
+
+end LC004

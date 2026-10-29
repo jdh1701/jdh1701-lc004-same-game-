@@ -10,7 +10,7 @@ int pairsLeft, triplesLeft;
 long long cnt = 0, xs = 0, connectedXs = 0;
 static bool cross(const vector<int>& A0, const vector<int>& B0) {
   // blocks may be unsorted for pair/triple built from sorted classes; sort small copies on stack
-  int a[16], b[16]; int na=A0.size(), nb=B0.size();
+  int a[40], b[40]; int na=A0.size(), nb=B0.size();
   for(int i=0;i<na;i++)a[i]=A0[i]; for(int i=0;i<nb;i++)b[i]=B0[i];
   sort(a,a+na); sort(b,b+nb);
   int i=0,j=0,st=0,f=-1,last=-1; // merge, track alternation a b a b of runs

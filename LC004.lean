@@ -188,3 +188,7 @@ import LC004.PartitionOpeningMass
 import LC004.BoundaryContextRegression
 
 import LC004.SecondDiagonalEndpoint
+
+import LC004.NoncrossingLastBlock
+
+import LC004.NoncrossingDegreeInjective

@@ -1,0 +1,48 @@
+✖ [6653/6653] Building LC004.FiniteIncidenceSupport
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /tmp/lean-4.19.0-linux/bin/lean ././././LC004/FiniteIncidenceSupport.lean -R ./././. -o ././.lake/build/lib/lean/LC004/FiniteIncidenceSupport.olean -i ././.lake/build/lib/lean/LC004/FiniteIncidenceSupport.ilean -c ././.lake/build/ir/LC004/FiniteIncidenceSupport.c --json
+info: ././././LC004/FiniteIncidenceSupport.lean:63:0: 'LC004.lowerIncidence_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FiniteIncidenceSupport.lean:64:0: 'LC004.incidence_support_of_meet_invariance' depends on axioms: [propext, Classical.choice, Quot.sound]
+error: ././././LC004/FiniteIncidenceSupport.lean:68:29: failed to synthesize
+  Decidable (q ≤ rho)
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: ././././LC004/FiniteIncidenceSupport.lean:69:36: unsolved goals
+case pos
+α : Type u_1
+inst✝¹ : Fintype α
+inst✝ : SemilatticeInf α
+f : α → ℤ
+rho r q : α
+a✝ : q ∈ Finset.univ
+hqr : q ≤ r
+hq : q ≤ rho
+⊢ sorry () = f q
+
+case neg
+α : Type u_1
+inst✝¹ : Fintype α
+inst✝ : SemilatticeInf α
+f : α → ℤ
+rho r q : α
+a✝ : q ∈ Finset.univ
+hqr : q ≤ r
+hq : ¬q ≤ rho
+⊢ sorry () = 0
+error: ././././LC004/FiniteIncidenceSupport.lean:88:8: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  lowerIncidence f (r ⊓ p)
+α : Type u_1
+inst✝¹ : Fintype α
+inst✝ : SemilatticeInf α
+f : α → ℤ
+rho p : α
+h : ∀ r ≤ p, lowerIncidence f r = lowerIncidence f (r ⊓ rho)
+hp : ¬p ≤ rho
+g : α → ℤ := fun q => if q ≤ p then f q else 0
+r : α
+⊢ lowerIncidence (fun q => if q ≤ p then f q else 0) r = lowerIncidence (fun q => if q ≤ p then f q else 0) (r ⊓ rho)
+info: ././././LC004/FiniteIncidenceSupport.lean:94:0: 'LC004.lowerIncidence_truncate' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: ././././LC004/FiniteIncidenceSupport.lean:95:0: 'LC004.incidence_support_of_local_meet_invariance' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required builds logged failures:
+- LC004.FiniteIncidenceSupport
+error: build failed

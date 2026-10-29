@@ -1,0 +1,7 @@
+NEGATIVE COVERAGE CHECK PASS: unimported active module rejected
+Traceback (most recent call last):
+  File "/workspace/scratch/4a2529ad4f2b/verifier/scripts/test_verification_guards.py", line 31, in <module>
+    assert result.returncode != 0 and 'Forbidden axiom Quot.sound' in combined, combined
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: error: failed to locate application
+

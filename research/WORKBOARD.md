@@ -170,3 +170,9 @@ analysis before further sequence fitting.
 - 2026-10-29 GPT/Codex: read the handoff and full workboard, verified current PR
   bases/heads and PR32 CI state, corrected the asymptotic retraction, revised
   execution gates, and independently resolved the n=13 sums into cyclic orbits.
+
+## Archive/CI update, 2026-10-29
+
+PROVED-LEAN for the 31 theorem statements in PR #32 at a2212dc08ca633cb6925208a865493648c237b0a: hosted run 40890080150 completed SUCCESS. This supersedes the earlier in-progress entry, and does not promote the unfinished coefficient-cancellation or cumulant-support assembly.
+
+Uploaded all currently retained local four-gap pass/fail/environment logs, hashed manifest and a continuation index under handoff_review_20261029/. Intermediate failed source snapshots were not separately retained. See CONTINUATION_INDEX.md for the exact archive boundary and next proof obligation.

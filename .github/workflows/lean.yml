@@ -19,7 +19,10 @@ jobs:
           path: |
             ~/.elan
             .lake
-          key: ${{ runner.os }}-lean-v4.19.0-${{ hashFiles('lean-toolchain', 'lakefile.toml') }}
+          key: ${{ runner.os }}-lean-v4.19.0-${{ hashFiles('lean-toolchain', 'lakefile.toml', 'lake-manifest.json') }}
+
+          restore-keys: |
+            ${{ runner.os }}-lean-v4.19.0-
 
       - name: Install Lean
         run: |
@@ -28,15 +31,28 @@ jobs:
           fi
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
 
-      - name: Generate Lake manifest
+      - name: Check all active modules are in the build closure
+        run: python scripts/check_lean_coverage.py
+
+      - name: Restore pinned dependencies and mathlib cache
         run: |
           export PATH="$HOME/.elan/bin:$PATH"
-          lake update
+          lake exe cache get
+          git diff --exit-code -- lake-manifest.json
 
       - name: Build LC004
         run: |
           export PATH="$HOME/.elan/bin:$PATH"
-          lake build
+          set -o pipefail
+          lake build 2>&1 | tee lean-build.log
+          git diff --exit-code -- lake-manifest.json
+
+      - name: Enforce the project axiom allowlist
+        run: |
+          export PATH="$HOME/.elan/bin:$PATH"
+          set -o pipefail
+          lake env lean scripts/AxiomAudit.lean 2>&1 | tee axiom-audit.log
+          python scripts/test_verification_guards.py
 
       - name: Validate direct grammar counting against Same Game
         run: |
@@ -54,3 +70,19 @@ jobs:
 
       - name: Test four-block matching overlap criterion
         run: python research/overlap_criterion_test.py
+
+      - name: Check proposed refined partition degree encoding
+        run: python research/check_partition_degree_encoding.py
+
+      - name: Check signed certificate joins against maximal-run deletion
+        run: python research/certificate_join_count.py
+
+      - name: Preserve verification logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lean-verification-logs
+          path: |
+            lean-build.log
+            axiom-audit.log
+            lake-manifest.json

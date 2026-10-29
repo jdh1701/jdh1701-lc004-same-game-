@@ -22,5 +22,6 @@ jobs:
                       raise SystemExit(f"law violated at s={s}, j={j}")
           print("law gamma_j(s)=0 for j>=2, s<5j holds for s<=15")
           PY
+          python3 diagonals.py | tee diag.log; echo "::notice title=diagonals::$(tr "\n" " " < diag.log)"
           echo "::notice title=cumulants::$(tr '\n' ';' < out.txt | cut -c1-900)"
           echo "::notice title=law::j>=2, s<5j law checked through s=15"

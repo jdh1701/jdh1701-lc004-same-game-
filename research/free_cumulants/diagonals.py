@@ -1,0 +1,16 @@
+from math import comb
+from fractions import Fraction as F
+rows = {}
+for l in open("rows.txt"):
+    n, v = l.split(":"); rows[int(n)] = [int(x) for x in v.split()]
+P = {1: lambda k: F(1), 2: lambda k: F(k), 3: lambda k: F((2*k-1)*(k+2), 3),
+     4: lambda k: F(5*k**3 + 17*k**2 - 5*k - 5, 12)}
+checks = 0
+for j, f in P.items():
+    for k in range(1, 9):
+        n = 2*k + j
+        if n in rows and k - 1 < len(rows[n]) and n >= 2:
+            assert rows[n][k-1] == f(k) * comb(n, k-1), (j, k)
+            checks += 1
+print("A(2k+j,k) = C(2k+j,k-1)*P_j(k) verified at", checks, "data points; j<=4")
+print("PREDICTION A(16,6) =", f(6) * comb(16, 5))

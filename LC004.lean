@@ -233,3 +233,5 @@ import LC004.NoncrossingCoefficientProduct
 import LC004.NoncrossingClosureRegions
 
 import LC004.NoncrossingConnectedFiber
+
+import LC004.RegionalClassCount

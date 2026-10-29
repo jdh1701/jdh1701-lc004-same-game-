@@ -16,6 +16,8 @@ None of this claims novelty; no OEIS/OpenAlex check was possible from Claude's s
 | 6 | A finite summary (colour counts, run-colour sequence, #heavy runs, boundary run lengths) determines the next continuation | GPT: u=AAABBABCCCBC, v=AAABABBCCCBC have equal summaries, both lose, u+C wins, v+C loses. Claude re-verified in Python and Lean (run 40886782065) | PROVED-LEAN | research/ContinuationSummaryObstruction.lean |
 | 7 | Word-recognizer complexity is bounded | GPT: Hankel ranks q=3, d=2,3,4 = 13, 37, 103 (Claude reproduced mod p); binary control shows rank growth does not rule out a compact scalar formula | VERIFIED-COMP (lower bounds only) | research/tool_grounded_20261029 |
 
+| 8 | Support of the all-five connected kernel is counted by 5-ary Fuss-Catalan numbers 5, 35, 285 (GPT conjecture) | Exhaustive n=20 enumeration (488,864,376 partitions, 48 CI shards, run 40927418509) finds 415 patterns (all c=-1) instead of 285; n=10: 5 and n=15: 35 reproduced exactly | KILLED | research/free_cumulants/five_kernel.cpp, n20_shards.txt |
+
 ## Limits and corrections to our own work
 
 * The Lean statement winning_iff_heavy_face_decomposition and the certificate product count certificate partitions of a fixed word, NOT winning patterns; they do not solve the count (PR #28 notes; Claude's independent audit run 40832788563).

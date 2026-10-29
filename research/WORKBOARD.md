@@ -92,6 +92,7 @@ current; it outranks older journals and notes when they disagree.
 
 ## 2026-10-29 free-cumulant branch (research/free-cumulants-20261029)
 - C2 face decomposition (`winning_iff_heavy_face_decomposition`): PROVED-LEAN on PR #28 (0f32a99); independent rebuild + audit run 40832788563 (162 modules, 1913 decls, standard axioms only).
+- R2 `join_small_class_no_cross` (in a join of NC 2/3 certificates, a class of size <= 3 is never crossed by another class): PROVED-LEAN, commit 9d494fe, standard axioms only. Not yet imported into LC004.lean.
 - R1 `small_class_eq_of_refines` (a refinement with all classes >= 2 agrees with the coarser pattern on classes of size <= 3): PROVED-LEAN, run 40837815906, axioms propext/choice/Quot.sound.
 - kappa_s(q) polynomial in q, q^j coefficient (j >= 2) zero for s < 5j, s <= 15: VERIFIED-COMP (run d4e19c2). General law: CONJECTURE.
 - "kappa_s linear in q": KILLED (fails n = 10: 305 vs 300).

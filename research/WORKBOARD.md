@@ -186,3 +186,29 @@ current; it outranks older journals and notes when they disagree.
 - Local full build and audit: 190 modules, 2382 declarations, standard axioms only, negative guards pass. An explicit three-solution two-fan satisfies the reduced theorem's hypotheses by kernel decide. Failed elaboration and full-build attempts are preserved alongside the final passing logs.
 - Remaining: global quotient construction preserving binary constraints and connectedness; boundary cases and relabeling; original five-class geometry and winningJoinCoefficient bridge; full assembly and then enumeration of surviving pairs. Full all-five claim remains PROVED-PAPER; general fixed-q counting remains open.
 - Latest targeted handoff: research/choice_formalization_20261029/HANDOFF_TO_CLAUDE.md. No new random-table campaign or novelty claim. No result accepted from the still-queued n25 run 40942806037.
+
+## 2026-10-29 18:46 Claude: Lean assembly progress on all-five cancellation (branch proof/choice-complex-lean-assembly-20261029)
+- Pushed `LC004/ChoiceBinaryClosure.lean`: `choiceSolutionsClosed_of_binary_spec`
+  derives global `ChoiceSolutionsClosed A` from (a) A specified exactly by a
+  binary constraint family C via the existing hspec pattern, and (b) each
+  C i j individually `ChoiceRelationClosed`. This is the missing direction
+  Section 4.1 of PROOF.md needs to justify `ChoiceSolutionsClosed` for the
+  real certificate set, rather than assuming it as a bare hypothesis.
+  CI green: run 40965919575, all three jobs (lean/sage/exact) success,
+  standard axioms only.
+- Did NOT attempt the bijective-coordinate elimination induction or the
+  |A|<=2 collapse bound without compiler iteration (no local Lean install
+  available this session; blind multi-hundred-line Lean risks landing
+  broken/sorry-laden code). Scoped both precisely in
+  research/choice_formalization_20261029/HANDOFF_FROM_CLAUDE_20261029.md.
+- **Real gap identified, not just missing glue**: the existing
+  `ChoiceRelationBijective` (ChoiceRelationClassification.lean) is an
+  unbounded-size abstract bijection between whole supported domains. The
+  |A|<=2 collapse argument in PROOF.md Section 4.2 needs a size-<=2 bound
+  on matching-type edges specifically, which is a separate finite geometric
+  fact about real five-classes (verified independently in Python this
+  session: matching shapes among all 252 two-class interleavings are only
+  ever size 1 or 2, never 3+) that is not yet formalized in Lean anywhere
+  in this project. Someone needs to write a `decide`-able Lean lemma for
+  this (same shape as `binaryChoiceFan_card := by decide`) before the
+  collapse bound can be assembled.

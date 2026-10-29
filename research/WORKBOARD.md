@@ -150,3 +150,31 @@ current; it outranks older journals and notes when they disagree.
 - VERIFIED-COMP (exhaustive over all connected all-five partitions at n=10, 15, 20; CI run 40938156080 for n=20): every x with c(x) != 0 has EXACTLY TWO certificates (NC pair/triple refinements) below it and x is their join; then c(x) = (-1)^(2+1) = -1 (crosscut sum, rigorous). At n=15 the 620 patterns with exactly two atoms contain all 35 nonzero ones; all patterns with >= 3 atoms have c=0 (7850 with one atom, 2460 with five, ... all zero), and at n=20 all 415 nonzero have exactly two atoms.
 - CONJECTURE: for every j, an all-five NC-connected x has c(x) != 0 iff it has exactly two atoms whose join is x (then c=-1). Not proved; the "iff" direction >= 3 atoms => c=0 is the open part.
 - Consequence if true: the all-five kernel is a pure two-certificate problem: count pairs {a,b} of NC certificates (j pairs + j triples) such that their join is connected all-five and no third certificate lies below the join. five_pairs.cpp implements this (enumerate a, a perfect matching of its pairs to its triples -> x, then test atoms == 2) and reproduces 5, 35, 415 (n=20 in 4m51s vs ~8 core-hours for the exhaustive scan). The n=25 count under the characterisation is a LOWER BOUND for the true support (x with exactly two atoms really have c=-1; extra nonzero x with >= 3 atoms are not excluded). Running: workflow five-pairs.yml (128 shards).
+
+## 2026-10-29 16:34 Claude: independent review of PR #35 (GPT's all-five projection formula)
+- GPT (commit fd64c4d, PR #35) derived a PROVED-PAPER identity: for an all-five
+  NC pattern p with j classes, encode each certificate below p as a j-tuple of
+  local pair/triple splits (the set A); then
+    c(p) = sum_{T subset [j]} (-1)^|T| * |pi_T(A)|  (projection/inclusion-exclusion formula),
+  equivalently c(p) = -(reduced Euler characteristic) of the j-partite "choice
+  complex" whose facets are the tuples of A. This does NOT assume or prove the
+  >=3-atom cancellation conjecture; it is a from-scratch reduction that holds
+  for every A, independent of NC-connectedness.
+- CONFIRMED independently (Claude, code written from scratch, no reuse of GPT's
+  probe.py or my own five_kernel.py/five_pairs.cpp): research/free_cumulants/review_20261029/.
+  (1) the abstract identity sum_{nonempty S subset A}(-1)^(|S|+1)[S agrees nowhere]
+  = sum_T (-1)^|T| |pi_T(A)|, checked on 2000 random finite tuple-sets (j<=4), 0 mismatches;
+  (2) the geometric lemma that any two DISTINCT 2+3 splits of a 5-set join to the
+  full 5-set (what licenses "agree on coordinate i" <-> "same local split"),
+  checked on all 45 pairs of the 10 possible splits, 0 failures.
+- GPT also ran a biased, non-exhaustive, self-checking adversarial search
+  (seed 20261031, n=10..30) that found 2674 connected all-five patterns with
+  >=3 certificates, ALL with coefficient 0 -- support, not proof, for the
+  cancellation conjecture; GPT itself flags the sampling bias and draws no
+  exhaustive conclusion. Only two nonzero samples total, both at n=10 (the
+  known 2-atom cases).
+- Net effect: the open problem is now recast as proving reduced Euler
+  characteristic zero for these choice complexes when |A| >= 3 and p is
+  NC-connected all-five, rather than the original huge certificate-subset
+  signed sum. Real progress on tractability; the >=3-atom conjecture itself
+  remains open.

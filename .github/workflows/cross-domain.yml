@@ -31,6 +31,8 @@ jobs:
           python research/overlap_20261029/correction.py
       - name: Hypergraph partition function and dynamics witnesses
         run: python research/physics_audit_20261029/probe.py
+      - name: All-five projection and adversarial checks
+        run: python research/all_five_adversarial_20261029/controls.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -39,3 +41,4 @@ jobs:
             research/cross_domain_20261029/*.json
             research/overlap_20261029/*.json
             research/physics_audit_20261029/*.json
+            research/all_five_adversarial_20261029/*.json

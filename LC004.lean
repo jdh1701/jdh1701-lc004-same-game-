@@ -227,3 +227,5 @@ import LC004.CollectedJoinCoefficients
 import LC004.NoncrossingRegionEquivalence
 import LC004.FourGapIndicator
 import LC004.CrossedFourCancellation
+import LC004.NoncrossingCoefficientPushforward
+import LC004.NoncrossingCoefficientProduct

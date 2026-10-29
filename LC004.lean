@@ -217,3 +217,9 @@ import LC004.CertificateJoinIteration
 import LC004.PatternCoarseningCorrespondence
 import LC004.WinningConstraintGenerators
 import LC004.WinningJoinCount
+import LC004.FaceBoundaryJoinPrelim
+import LC004.FaceJoinConditional
+import LC004.FaceJoinOrder
+import LC004.HeavyFaceReconstruction
+import LC004.HeavyFaceDecomposition
+import LC004.HeavyFaceCertificateProduct

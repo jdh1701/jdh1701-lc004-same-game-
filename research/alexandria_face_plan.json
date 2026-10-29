@@ -1,0 +1,231 @@
+{
+  "schema_version": "alexandria-candidate-campaign-plan/1",
+  "campaign_id": "lc004-face-continuation-20261029",
+  "campaign_sha256": "sha256:c50bda12cbaad125ee81933f485ff3d4931c207a4c3cad051a9d7e1cc17d8192",
+  "execution_state": "not_started",
+  "planned_task_count": 6,
+  "started_task_count": 0,
+  "completed_task_count": 0,
+  "verified_task_count": 0,
+  "batch_count": 6,
+  "budget": {
+    "max_planned_tasks": 6,
+    "batch_width": 1,
+    "max_concurrency": 1,
+    "per_task_timeout_seconds": 1800,
+    "max_total_tokens": 120000,
+    "max_total_wall_time_seconds": 10800
+  },
+  "targets": [
+    {
+      "id": "face-iff",
+      "statement": "Prove the full winning-pattern iff using rigid-skeleton noncrossing and winning heavy face subwords.",
+      "acceptance_criteria": [
+        "Pinned Lean compilation and transitive axiom audit for formal claims.",
+        "Independent finite counterexample tests and exact-source provenance."
+      ],
+      "falsifier": "A losing word satisfying every stated right-hand condition.",
+      "claim_boundary": "open_research_obligation"
+    },
+    {
+      "id": "general-enumeration",
+      "statement": "Investigate a non-circular description of the heavy-word content series beyond the known binary case.",
+      "acceptance_criteria": [
+        "Pinned Lean compilation and transitive axiom audit for formal claims.",
+        "Independent finite counterexample tests and exact-source provenance."
+      ],
+      "falsifier": "A held-out coefficient inconsistent with the proposed recurrence.",
+      "claim_boundary": "open_research_obligation"
+    },
+    {
+      "id": "gluing",
+      "statement": "Construct a global Noncrossing23Certificate from one winning certificate per complete heavy face and the rigid skeleton.",
+      "acceptance_criteria": [
+        "Pinned Lean compilation and transitive axiom audit for formal claims.",
+        "Independent finite counterexample tests and exact-source provenance."
+      ],
+      "falsifier": "A singleton face block or duplicate position after assembly.",
+      "claim_boundary": "open_research_obligation"
+    },
+    {
+      "id": "partition-equivalence",
+      "statement": "Build an equivalence of certificate partitions with products of face certificate partitions.",
+      "acceptance_criteria": [
+        "Pinned Lean compilation and transitive axiom audit for formal claims.",
+        "Independent finite counterexample tests and exact-source provenance."
+      ],
+      "falsifier": "Two different global partitions having identical face partitions or a local tuple with no lift.",
+      "claim_boundary": "open_research_obligation"
+    },
+    {
+      "id": "profile-count",
+      "statement": "Connect the established noncrossing type/cotype enumeration to the exact LC004 profile formula.",
+      "acceptance_criteria": [
+        "Pinned Lean compilation and transitive axiom audit for formal claims.",
+        "Independent finite counterexample tests and exact-source provenance."
+      ],
+      "falsifier": "Missing orbit multiplicity or invalid w=0 denominator.",
+      "claim_boundary": "open_research_obligation"
+    },
+    {
+      "id": "slot-count",
+      "statement": "Certify the ordered-slot weak-composition correspondence including the extra outer slot.",
+      "acceptance_criteria": [
+        "Pinned Lean compilation and transitive axiom audit for formal claims.",
+        "Independent finite counterexample tests and exact-source provenance."
+      ],
+      "falsifier": "Failure at empty words, zero rigid classes or the outer-face cut.",
+      "claim_boundary": "open_research_obligation"
+    }
+  ],
+  "batches": [
+    {
+      "id": "campaign-batch_40979c8c6e75",
+      "index": 1,
+      "layer": 0,
+      "task_ids": [
+        "campaign-task_df7105eb676e"
+      ]
+    },
+    {
+      "id": "campaign-batch_62db7d7223e4",
+      "index": 2,
+      "layer": 1,
+      "task_ids": [
+        "campaign-task_29ae0b9eac1e"
+      ]
+    },
+    {
+      "id": "campaign-batch_eda6e1f6f6c3",
+      "index": 3,
+      "layer": 2,
+      "task_ids": [
+        "campaign-task_c10bde536435"
+      ]
+    },
+    {
+      "id": "campaign-batch_a42726ce6335",
+      "index": 4,
+      "layer": 3,
+      "task_ids": [
+        "campaign-task_dc6351a7262f"
+      ]
+    },
+    {
+      "id": "campaign-batch_3721bef79ece",
+      "index": 5,
+      "layer": 4,
+      "task_ids": [
+        "campaign-task_d9447704e0c8"
+      ]
+    },
+    {
+      "id": "campaign-batch_f46f5f431fef",
+      "index": 6,
+      "layer": 5,
+      "task_ids": [
+        "campaign-task_bb5d43b49489"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "campaign-task_df7105eb676e",
+      "target_id": "gluing",
+      "workstream_id": "gluing",
+      "role": "formalize",
+      "strategy_id": "gluing",
+      "replica_index": 1,
+      "instruction_sha256": "sha256:88c0bb42fa1c9308b61d6d47029eb1f5631b4e57bb2c3a3ec37e37467d267f68",
+      "isolation_group": "single-research-campaign",
+      "batch_index": 1,
+      "dependency_task_ids": []
+    },
+    {
+      "id": "campaign-task_29ae0b9eac1e",
+      "target_id": "face-iff",
+      "workstream_id": "face-iff",
+      "role": "formalize",
+      "strategy_id": "face-iff",
+      "replica_index": 1,
+      "instruction_sha256": "sha256:df8e619112b8b175079cf040a99129e6d4b06ed3694c3469455a1323b39d4913",
+      "isolation_group": "single-research-campaign",
+      "batch_index": 2,
+      "dependency_task_ids": [
+        "campaign-task_df7105eb676e"
+      ]
+    },
+    {
+      "id": "campaign-task_c10bde536435",
+      "target_id": "partition-equivalence",
+      "workstream_id": "partition-equivalence",
+      "role": "formalize",
+      "strategy_id": "partition-equivalence",
+      "replica_index": 1,
+      "instruction_sha256": "sha256:29a10830cc2b714d654c02a414a0bd76bc34bdc2b8a5efd31e5f6a2b302c15ce",
+      "isolation_group": "single-research-campaign",
+      "batch_index": 3,
+      "dependency_task_ids": [
+        "campaign-task_29ae0b9eac1e"
+      ]
+    },
+    {
+      "id": "campaign-task_dc6351a7262f",
+      "target_id": "slot-count",
+      "workstream_id": "slot-count",
+      "role": "formalize",
+      "strategy_id": "slot-count",
+      "replica_index": 1,
+      "instruction_sha256": "sha256:f7b4456feef40e3da35d559f8fcebfa23f2885d2e4d6a580aee8b65064aa9920",
+      "isolation_group": "single-research-campaign",
+      "batch_index": 4,
+      "dependency_task_ids": [
+        "campaign-task_c10bde536435"
+      ]
+    },
+    {
+      "id": "campaign-task_d9447704e0c8",
+      "target_id": "profile-count",
+      "workstream_id": "profile-count",
+      "role": "formalize",
+      "strategy_id": "profile-count",
+      "replica_index": 1,
+      "instruction_sha256": "sha256:e1d9d04d8d4f43ac27ae3d7e1c955d2e2d98183d538d3ee594f28c4dc4254453",
+      "isolation_group": "single-research-campaign",
+      "batch_index": 5,
+      "dependency_task_ids": [
+        "campaign-task_dc6351a7262f"
+      ]
+    },
+    {
+      "id": "campaign-task_bb5d43b49489",
+      "target_id": "general-enumeration",
+      "workstream_id": "general-enumeration",
+      "role": "propose",
+      "strategy_id": "general-enumeration",
+      "replica_index": 1,
+      "instruction_sha256": "sha256:ea26ef3546453266c3b8aad95b3bcf573ba7372629d4cdc2e99b18491f2a84df",
+      "isolation_group": "single-research-campaign",
+      "batch_index": 6,
+      "dependency_task_ids": [
+        "campaign-task_d9447704e0c8"
+      ]
+    }
+  ],
+  "stopping_rules": [
+    "Stop and preserve a minimal counterexample when a target fails.",
+    "Stop at the stated resource bound and record unresolved obligations.",
+    "Never promote a theorem using only finite tests or planning receipts."
+  ],
+  "limitations": [
+    "This is a future research queue, not a scheduled automation or claim of completed work.",
+    "The existing Core planner records no agent execution or theorem verification.",
+    "A planned task is not an executed agent, message, proof attempt, or independent replication.",
+    "Agent counts and isolation labels describe work allocation, not statistical independence.",
+    "Generated text is an untrusted proposal and cannot promote a theorem.",
+    "Only an exact claim-bound formal-proof receipt may report a theorem as verified.",
+    "This campaign makes no claim that P equals NP or that P differs from NP."
+  ],
+  "claim_boundary": "planning_only_no_agents_invoked",
+  "plan_sha256": "sha256:1ec3bf2c8fce4f523ad3674a2a9fb62f13c1c3f84374c4f3ab1ef097b4648a57"
+}

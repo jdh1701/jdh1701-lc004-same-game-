@@ -66,6 +66,14 @@ theorem anchoredTriplePosition_spec {n : Nat} (w : CyclicDegreeWord n)
   Classical.choose_spec ((doubleExceptionalWord_at_anchor w 3 (by omega) hzero).mp hw)
 
 open scoped Classical in
+noncomputable def doubleSubsetDegreeWord (k : Nat) (hk : 2 ≤ k)
+    (j : Fin (2 * k + 2)) (s : Finset (Fin (2 * k + 2))) : CyclicDegreeWord (2 * k + 2) :=
+  Fin.cases (⟨3, by omega⟩ : Fin (2 * k + 2 + 1))
+    (fun t : Fin (2 * k + 2) =>
+      if t = j then (⟨3, by omega⟩ : Fin (2 * k + 2 + 1))
+      else if t ∈ s then (⟨2, by omega⟩ : Fin (2 * k + 2 + 1)) else 0)
+
+open scoped Classical in
 noncomputable def doubleAnchoredWordEquiv (k : Nat) (hk : 2 ≤ k) :
     {w : CyclicDegreeWord (2 * k + 2) //
       ((∑ i, (w i).val = 2 * k + 2) ∧ DoubleExceptionalWord w 3) ∧ (w 0).val = 3} ≃
@@ -85,13 +93,12 @@ noncomputable def doubleAnchoredWordEquiv (k : Nat) (hk : 2 ≤ k) :
   invFun x :=
     let j := x.1
     let s := x.2.val
-    let w : CyclicDegreeWord (2 * k + 2) := Fin.cases ⟨3, by omega⟩
-      (fun t => if t = j then ⟨3, by omega⟩ else if t ∈ s then ⟨2, by omega⟩ else 0)
+    let w := doubleSubsetDegreeWord k hk j s
     have hzero : (w 0).val = 3 := rfl
-    have hj : (w j.succ).val = 3 := by simp only [w, Fin.cases_succ, if_pos rfl]
+    have hj : (w j.succ).val = 3 := by simp only [w, doubleSubsetDegreeWord, Fin.cases_succ, if_pos rfl]
     have hrest : ∀ t, t ≠ j → (w t.succ).val = 0 ∨ (w t.succ).val = 2 := by
       intro t ht
-      dsimp only [w, Fin.cases_succ]
+      dsimp only [w, doubleSubsetDegreeWord, Fin.cases_succ]
       rw [if_neg ht]
       split_ifs <;> simp
     ⟨w, ⟨by
@@ -101,7 +108,7 @@ noncomputable def doubleAnchoredWordEquiv (k : Nat) (hk : 2 ≤ k) :
           (fun t => (w t.succ).val = 2) = s := by
         ext t
         simp only [Finset.mem_filter, Finset.mem_univ, true_and]
-        dsimp only [w, Fin.cases_succ]
+        dsimp only [w, doubleSubsetDegreeWord, Fin.cases_succ]
         by_cases ht : t = j
         · subst t
           simp only [if_pos rfl]
@@ -120,11 +127,11 @@ noncomputable def doubleAnchoredWordEquiv (k : Nat) (hk : 2 ≤ k) :
     funext i
     apply Fin.ext
     cases i using Fin.cases with
-    | zero => exact w.property.2.symm
+    | zero => simpa only [doubleSubsetDegreeWord, Fin.cases_zero] using w.property.2.symm
     | succ t =>
       have hs := anchoredTriplePosition_spec w.val w.property.1.2 w.property.2
       dsimp only
-      simp only [Fin.cases_succ, Finset.mem_filter, Finset.mem_univ, true_and]
+      simp only [doubleSubsetDegreeWord, Fin.cases_succ, Finset.mem_filter, Finset.mem_univ, true_and]
       split_ifs with ht htwo
       · exact hs.1.symm.trans (congrArg (fun t => (w.val t.succ).val) ht).symm
       · exact htwo.symm
@@ -134,13 +141,12 @@ noncomputable def doubleAnchoredWordEquiv (k : Nat) (hk : 2 ≤ k) :
   right_inv x := by
     classical
     rcases x with ⟨j, ⟨s, hcard, hnot⟩⟩
-    let w : CyclicDegreeWord (2 * k + 2) := Fin.cases ⟨3, by omega⟩
-      (fun t => if t = j then ⟨3, by omega⟩ else if t ∈ s then ⟨2, by omega⟩ else 0)
+    let w := doubleSubsetDegreeWord k hk j s
     have hz : (w 0).val = 3 := rfl
-    have hj : (w j.succ).val = 3 := by simp only [w, Fin.cases_succ, if_pos rfl]
+    have hj : (w j.succ).val = 3 := by simp only [w, doubleSubsetDegreeWord, Fin.cases_succ, if_pos rfl]
     have hrest : ∀ t, t ≠ j → (w t.succ).val = 0 ∨ (w t.succ).val = 2 := by
       intro t ht
-      dsimp only [w, Fin.cases_succ]
+      dsimp only [w, doubleSubsetDegreeWord, Fin.cases_succ]
       rw [if_neg ht]
       split_ifs <;> simp
     have hw : DoubleExceptionalWord w 3 :=
@@ -154,7 +160,7 @@ noncomputable def doubleAnchoredWordEquiv (k : Nat) (hk : 2 ≤ k) :
     ext t
     simp only [Finset.mem_filter, Finset.mem_univ, true_and]
     try dsimp only
-    simp only [Fin.cases_succ]
+    simp only [doubleSubsetDegreeWord, Fin.cases_succ]
     by_cases ht : t = j
     · subst t
       simp only [if_pos rfl, hnot, iff_false]

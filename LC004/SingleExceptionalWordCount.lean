@@ -35,6 +35,13 @@ theorem binary_vector_sum {n : Nat} (f : Fin n → Nat)
     _ = _ := by simp [Nat.mul_comm]
 
 open scoped Classical in
+noncomputable def singleSubsetDegreeWord (k : Nat) (hk : 1 ≤ k)
+    (s : Finset (Fin (2 * k + 2))) : CyclicDegreeWord (2 * k + 2) :=
+  Fin.cases (⟨4, by omega⟩ : Fin (2 * k + 2 + 1))
+    (fun j : Fin (2 * k + 2) =>
+      if j ∈ s then (⟨2, by omega⟩ : Fin (2 * k + 2 + 1)) else 0)
+
+open scoped Classical in
 noncomputable def singleAnchoredWordEquiv (k : Nat) (hk : 1 ≤ k) :
     {w : CyclicDegreeWord (2 * k + 2) //
       ((∑ i, (w i).val = 2 * k + 2) ∧ SingleExceptionalWord w 4) ∧ (w 0).val = 4} ≃
@@ -48,14 +55,13 @@ noncomputable def singleAnchoredWordEquiv (k : Nat) (hk : 1 ≤ k) :
     dsimp only at hs ht ⊢
     omega⟩
   invFun s :=
-    let w : CyclicDegreeWord (2 * k + 2) := Fin.cases ⟨4, by omega⟩
-      (fun j => if j ∈ s.val then ⟨2, by omega⟩ else 0)
+    let w := singleSubsetDegreeWord k hk s.val
     have hzero : (w 0).val = 4 := by rfl
     have hrest : ∀ j : Fin (2 * k + 2), (w j.succ).val = 0 ∨ (w j.succ).val = 2 := by
       intro j
       by_cases hj : j ∈ s.val
-      · right; simp only [w, Fin.cases_succ, if_pos hj]
-      · left; simp only [w, Fin.cases_succ, if_neg hj, Fin.val_zero]
+      · right; simp only [w, singleSubsetDegreeWord, Fin.cases_succ, if_pos hj]
+      · left; simp only [w, singleSubsetDegreeWord, Fin.cases_succ, if_neg hj, Fin.val_zero]
     ⟨w, ⟨by
       rw [Fin.sum_univ_succ, hzero]
       have hs := binary_vector_sum (fun j => (w j.succ).val) hrest
@@ -63,7 +69,7 @@ noncomputable def singleAnchoredWordEquiv (k : Nat) (hk : 1 ≤ k) :
           (fun j => (w j.succ).val = 2) = s.val := by
         ext j
         simp only [Finset.mem_filter, Finset.mem_univ, true_and]
-        dsimp only [w, Fin.cases_succ]
+        dsimp only [w, singleSubsetDegreeWord, Fin.cases_succ]
         split_ifs <;> simp_all
       rw [hfilter, s.property] at hs
       dsimp only at hs ⊢
@@ -74,12 +80,12 @@ noncomputable def singleAnchoredWordEquiv (k : Nat) (hk : 1 ≤ k) :
     funext i
     apply Fin.ext
     cases i using Fin.cases with
-    | zero => exact w.property.2.symm
+    | zero => simpa only [singleSubsetDegreeWord, Fin.cases_zero] using w.property.2.symm
     | succ j =>
       have hrest := (singleExceptionalWord_at_anchor w.val 4 (by omega) w.property.2).mp
         w.property.1.2 j
       dsimp only
-      simp only [Fin.cases_succ, Finset.mem_filter, Finset.mem_univ, true_and]
+      simp only [singleSubsetDegreeWord, Fin.cases_succ, Finset.mem_filter, Finset.mem_univ, true_and]
       split_ifs with h
       · exact h.symm
       · rcases hrest with hz | ht
@@ -90,7 +96,7 @@ noncomputable def singleAnchoredWordEquiv (k : Nat) (hk : 1 ≤ k) :
     ext j
     simp only [Finset.mem_filter, Finset.mem_univ, true_and]
     try dsimp only
-    simp only [Fin.cases_succ]
+    simp only [singleSubsetDegreeWord, Fin.cases_succ]
     split_ifs <;> simp_all
 
 open scoped Classical in

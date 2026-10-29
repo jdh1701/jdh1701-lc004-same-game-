@@ -5,6 +5,7 @@ on:
       - integration/alexandria-face-lemma-20261029
     paths:
       - 'LC004/FaceJoinPaths.lean'
+      - 'LC004/FaceInternalPaths.lean'
       - '.github/workflows/face-join-paths.yml'
   workflow_dispatch:
 jobs:
@@ -19,7 +20,8 @@ jobs:
       - name: Build restriction dependency and path theorem
         run: |
           lake env lean -o .lake/build/lib/lean/LC004/FaceRestriction.olean LC004/FaceRestriction.lean
-          lake env lean LC004/FaceJoinPaths.lean
+          lake env lean -o .lake/build/lib/lean/LC004/FaceJoinPaths.olean LC004/FaceJoinPaths.lean
+          lake env lean LC004/FaceInternalPaths.lean
       - name: Reject proof placeholders
         run: |
-          if grep -nE '\b(sorry|admit)\b' LC004/FaceJoinPaths.lean; then exit 1; fi
+          if grep -nE '\b(sorry|admit)\b' LC004/FaceJoinPaths.lean LC004/FaceInternalPaths.lean; then exit 1; fi

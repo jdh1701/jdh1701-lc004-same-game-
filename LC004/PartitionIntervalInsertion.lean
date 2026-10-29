@@ -17,13 +17,17 @@ def survivingPosition {n k : Nat} (gap : Nat) (hgap : gap ≤ n)
 
 theorem oldPosition_not_fresh {n k : Nat} (gap : Nat) (i : Fin n) :
     ¬ InFreshInterval gap (oldPosition gap k i) := by
-  unfold InFreshInterval oldPosition shiftAfterInsertion
+  change ¬ (gap ≤ shiftAfterInsertion gap k i.val ∧
+    shiftAfterInsertion gap k i.val < gap + k)
+  unfold shiftAfterInsertion
   split_ifs <;> omega
 
 theorem survivingPosition_old {n k : Nat} (gap : Nat) (hgap : gap ≤ n) (i : Fin n) :
     survivingPosition gap hgap (oldPosition gap k i) (oldPosition_not_fresh gap i) = i := by
   apply Fin.ext
-  unfold survivingPosition oldPosition shiftAfterInsertion
+  change (if shiftAfterInsertion gap k i.val < gap then
+    shiftAfterInsertion gap k i.val else shiftAfterInsertion gap k i.val - k) = i.val
+  unfold shiftAfterInsertion
   split_ifs <;> omega
 
 theorem oldPosition_surviving {n k : Nat} (gap : Nat) (hgap : gap ≤ n)
@@ -32,7 +36,8 @@ theorem oldPosition_surviving {n k : Nat} (gap : Nat) (hgap : gap ≤ n)
   apply Fin.ext
   have hn := i.isLt
   unfold InFreshInterval at hi
-  unfold oldPosition survivingPosition shiftAfterInsertion
+  change shiftAfterInsertion gap k (if i.val < gap then i.val else i.val - k) = i.val
+  unfold shiftAfterInsertion
   split_ifs <;> omega
 
 theorem oldPosition_lt_iff {n k : Nat} (gap : Nat) (i j : Fin n) :
@@ -118,12 +123,12 @@ theorem insertPatternInterval_noncrossing {n k : Nat} (p : ColorPattern n)
       have hab' : a' < b' := (oldPosition_lt_iff (k := k) gap a' b').mp (by simpa [ha', hb'] using hab)
       have hbc' : b' < c' := (oldPosition_lt_iff (k := k) gap b' c').mp (by simpa [hb', hc'] using hbc)
       have hcd' : c' < d' := (oldPosition_lt_iff (k := k) gap c' d').mp (by simpa [hc', hd'] using hcd)
-      have hac' : p a' c' := (insertPatternInterval_old_rel p gap hgap a' c').mp
+      have hac' : p a' c' := (insertPatternInterval_old_rel (k := k) p gap hgap a' c').mp
         (by simpa [ha', hc'] using hac)
-      have hbd' : p b' d' := (insertPatternInterval_old_rel p gap hgap b' d').mp
+      have hbd' : p b' d' := (insertPatternInterval_old_rel (k := k) p gap hgap b' d').mp
         (by simpa [hb', hd'] using hbd)
       have habrel := hp a' b' c' d' hab' hbc' hcd' hac' hbd'
-      have h := (insertPatternInterval_old_rel p gap hgap a' b').mpr habrel
+      have h := (insertPatternInterval_old_rel (k := k) p gap hgap a' b').mpr habrel
       simpa [ha', hb'] using h
 
 #print axioms insertPatternInterval_noncrossing

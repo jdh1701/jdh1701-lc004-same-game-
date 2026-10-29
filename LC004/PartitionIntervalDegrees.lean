@@ -34,7 +34,7 @@ theorem inserted_old_class_positions {n k : Nat} (p : ColorPattern n)
   · intro hj
     obtain ⟨j', hj', rfl⟩ := Finset.mem_image.mp hj
     exact Finset.mem_filter.mpr ⟨Finset.mem_univ _,
-      (insertPatternInterval_old_rel p gap hgap i j').mpr (Finset.mem_filter.mp hj').2⟩
+      (insertPatternInterval_old_rel (k := k) p gap hgap i j').mpr (Finset.mem_filter.mp hj').2⟩
 
 theorem inserted_old_class_card {n k : Nat} (p : ColorPattern n)
     (gap : Nat) (hgap : gap ≤ n) (i : Fin n) :
@@ -82,7 +82,7 @@ theorem inserted_old_class_leader {n k : Nat} (p : ColorPattern n)
     patternClassLeader (insertPatternInterval p gap hgap) (oldPosition gap k i) =
       oldPosition gap k (patternClassLeader p i) := by
   apply patternClassLeader_eq_of_least
-  · exact (insertPatternInterval_old_rel p gap hgap _ _).mpr (patternClassLeader_related p i)
+  · exact (insertPatternInterval_old_rel (k := k) p gap hgap _ _).mpr (patternClassLeader_related p i)
   · intro j hj
     have hmem : j ∈ patternClassPositions (insertPatternInterval p gap hgap)
         (oldPosition gap k i) :=

@@ -1,0 +1,27 @@
+name: Independent greedy-obstruction verification
+on:
+  push:
+    branches: [verify/greedy-obstruction-20261029]
+  workflow_dispatch:
+jobs:
+  v:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -sSfL https://elan.lean-lang.org/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - run: |
+          lake exe cache get
+          lake build LC004.ExecutableUniqueness LC004.RawEncoding 2>&1 | tail -3
+      - name: compile research files
+        run: |
+          set -o pipefail
+          mkdir -p .lake/build/lib/lean/research
+          lake env lean -o .lake/build/lib/lean/research/HeavyGreedyObstruction.olean research/HeavyGreedyObstruction.lean 2>&1 | tee a.log
+          lake env lean research/ContinuationSummaryObstruction.lean 2>&1 | tee b.log
+          echo "::notice title=greedy::$(grep -c 'depends on axioms' a.log) axiom lines; sorry=$(cat a.log b.log | grep -c sorry); errors=$(cat a.log b.log | grep -c 'error')"
+          echo "::notice title=axioms::$(cat a.log b.log | grep 'axioms' | tr '\n' ' ' | cut -c1-700)"
+      - name: independent python re-check of the words
+        run: python3 research/heavy_greedy_obstruction.py | tail -5

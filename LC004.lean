@@ -192,3 +192,7 @@ import LC004.SecondDiagonalEndpoint
 import LC004.NoncrossingLastBlock
 
 import LC004.NoncrossingDegreeInjective
+
+import LC004.PartitionIntervalInsertion
+
+import LC004.PartitionIntervalDegrees

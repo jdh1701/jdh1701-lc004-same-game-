@@ -22,7 +22,7 @@ jobs:
       - name: Check new theorem files with project environment
         run: |
           lake env lean LC004/FaceBoundaryJoinPrelim.lean
-          lake env lean LC004/FaceRestriction.lean
+          lake env lean -o .lake/build/lib/lean/LC004/FaceRestriction.olean LC004/FaceRestriction.lean
           lake env lean LC004/FaceJoinConditional.lean
           lake env lean LC004/FaceJoinOrder.lean
       - name: Reject placeholders in new files

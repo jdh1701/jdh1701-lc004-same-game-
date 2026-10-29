@@ -52,6 +52,7 @@ jobs:
           export PATH="$HOME/.elan/bin:$PATH"
           set -o pipefail
           lake env lean scripts/AxiomAudit.lean 2>&1 | tee axiom-audit.log
+          python scripts/test_verification_guards.py
 
       - name: Validate direct grammar counting against Same Game
         run: |

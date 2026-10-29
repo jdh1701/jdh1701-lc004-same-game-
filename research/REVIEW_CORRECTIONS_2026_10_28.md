@@ -62,8 +62,10 @@ unexpected mutation after restoring dependencies and building.
 
 The conditional terminal theorem now requires k>=1, since all its arithmetic
 lemmas already support that range. At k=1 the mathematical count is A(4,1)=1,
-D=1 and T=0. Extending the conditional theorem does not by itself formalize
-those separate endpoint cardinalities. The factorial expression involving
+D=1 and T=0. The separate theorem second_diagonal_one_color_count now proves
+A(4,1)=1 unconditionally, and second_diagonal_formula_at_one supplies
+the endpoint formula. Separate D=1 and T=0 lemmas are not needed for this
+direct endpoint proof. The factorial expression involving
 (k-2)! is reserved for k>=2.
 
 ## Comparison of formalization routes

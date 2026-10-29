@@ -7,6 +7,7 @@ on:
       - 'LC004/FaceBoundaryJoinPrelim.lean'
       - 'LC004/FaceRestriction.lean'
       - 'LC004/FaceJoinConditional.lean'
+      - 'LC004/FaceJoinOrder.lean'
       - '.github/workflows/face-boundary-prelim.yml'
   workflow_dispatch:
 jobs:
@@ -23,6 +24,7 @@ jobs:
           lake env lean LC004/FaceBoundaryJoinPrelim.lean
           lake env lean LC004/FaceRestriction.lean
           lake env lean LC004/FaceJoinConditional.lean
+          lake env lean LC004/FaceJoinOrder.lean
       - name: Reject placeholders in new files
         run: |
-          if grep -nE '\b(sorry|admit)\b' LC004/FaceBoundaryJoinPrelim.lean LC004/FaceRestriction.lean LC004/FaceJoinConditional.lean; then exit 1; fi
+          if grep -nE '\b(sorry|admit)\b' LC004/FaceBoundaryJoinPrelim.lean LC004/FaceRestriction.lean LC004/FaceJoinConditional.lean LC004/FaceJoinOrder.lean; then exit 1; fi

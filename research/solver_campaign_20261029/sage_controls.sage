@@ -1,7 +1,8 @@
 # Independent SageMath controls; exact arithmetic throughout.
 import json
 from functools import lru_cache
-print(version())
+from sage.version import version as sage_version
+print(sage_version)
 R.<k> = PolynomialRing(QQ)
 f=(38*k^6+694*k^5+4025*k^4+6670*k^3-5593*k^2-9434*k+6840)/(360*(k+8))
 lead=f.numerator().leading_coefficient()/f.denominator().leading_coefficient()
@@ -31,4 +32,4 @@ for A in parts:
         muB=(-1)^(len(B)-1)*factorial(len(B)-1)
         coefficient += muA*muB*ZZ(win(tuple(w)));tested+=1
 assert coefficient==0 and tested==225
-print(json.dumps({'R6_leading':str(lead),'R6_residue_at_minus8':str(res),'crossed44_coefficient':int(coefficient),'refinements':tested}))
+print(json.dumps({'R6_leading':str(lead),'R6_residue_at_minus8':str(res),'crossed44_coefficient':int(coefficient),'refinements':int(tested)}))

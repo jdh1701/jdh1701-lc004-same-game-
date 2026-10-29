@@ -45,7 +45,7 @@ jobs:
       - name: Exact independent Sage controls
         run: |
           set -o pipefail
-          docker run --rm -v "$PWD:/work" -w /work sagemath/sagemath:latest sage research/solver_campaign_20261029/sage_controls.sage 2>&1 | tee sage-controls.log
+          docker run --rm -v "$PWD:/work" -w /work sagemath/sagemath@sha256:310dfe23fc786f3a5a06a7b0387c60201ec79b32c0db941b7624505ee5edb565 sage research/solver_campaign_20261029/sage_controls.sage 2>&1 | tee sage-controls.log
       - uses: actions/upload-artifact@v4
         if: always()
         with:

@@ -1,0 +1,628 @@
+{
+  "method": "exact bounded-deficit content DP plus face-profile formula",
+  "mathematical_dependency": "full enumerative face-profile theorem remains under audit; not an independent proof of that theorem",
+  "results": [
+    {
+      "n": 8,
+      "k": 1,
+      "value": 1,
+      "profiles": [
+        {
+          "m2": 0,
+          "m3": 0,
+          "heavy": [
+            8
+          ],
+          "faces": 1,
+          "omega_power_coefficient": 1,
+          "contribution": "1"
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "k": 2,
+      "value": 300,
+      "profiles": [
+        {
+          "m2": 0,
+          "m3": 0,
+          "heavy": [
+            4,
+            6
+          ],
+          "faces": 1,
+          "omega_power_coefficient": 130,
+          "contribution": "130"
+        },
+        {
+          "m2": 0,
+          "m3": 0,
+          "heavy": [
+            5,
+            5
+          ],
+          "faces": 1,
+          "omega_power_coefficient": 150,
+          "contribution": "75"
+        },
+        {
+          "m2": 0,
+          "m3": 1,
+          "heavy": [
+            7
+          ],
+          "faces": 3,
+          "omega_power_coefficient": 18,
+          "contribution": "60"
+        },
+        {
+          "m2": 1,
+          "m3": 0,
+          "heavy": [
+            8
+          ],
+          "faces": 2,
+          "omega_power_coefficient": 7,
+          "contribution": "35"
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "k": 3,
+      "value": 10511,
+      "profiles": [
+        {
+          "m2": 0,
+          "m3": 0,
+          "heavy": [
+            4,
+            4,
+            4
+          ],
+          "faces": 1,
+          "omega_power_coefficient": 4818,
+          "contribution": "803"
+        },
+        {
+          "m2": 0,
+          "m3": 1,
+          "heavy": [
+            4,
+            5
+          ],
+          "faces": 3,
+          "omega_power_coefficient": 627,
+          "contribution": "2508"
+        },
+        {
+          "m2": 1,
+          "m3": 0,
+          "heavy": [
+            4,
+            6
+          ],
+          "faces": 2,
+          "omega_power_coefficient": 517,
+          "contribution": "3102"
+        },
+        {
+          "m2": 1,
+          "m3": 0,
+          "heavy": [
+            5,
+            5
+          ],
+          "faces": 2,
+          "omega_power_coefficient": 552,
+          "contribution": "1656"
+        },
+        {
+          "m2": 0,
+          "m3": 2,
+          "heavy": [
+            6
+          ],
+          "faces": 5,
+          "omega_power_coefficient": 45,
+          "contribution": "594"
+        },
+        {
+          "m2": 1,
+          "m3": 1,
+          "heavy": [
+            7
+          ],
+          "faces": 4,
+          "omega_power_coefficient": 40,
+          "contribution": "1320"
+        },
+        {
+          "m2": 2,
+          "m3": 0,
+          "heavy": [
+            8
+          ],
+          "faces": 3,
+          "omega_power_coefficient": 24,
+          "contribution": "528"
+        }
+      ]
+    },
+    {
+      "n": 14,
+      "k": 4,
+      "value": 185640,
+      "profiles": [
+        {
+          "m2": 0,
+          "m3": 2,
+          "heavy": [
+            4,
+            4
+          ],
+          "faces": 5,
+          "omega_power_coefficient": 1050,
+          "contribution": "9555"
+        },
+        {
+          "m2": 1,
+          "m3": 0,
+          "heavy": [
+            4,
+            4,
+            4
+          ],
+          "faces": 2,
+          "omega_power_coefficient": 17706,
+          "contribution": "20657"
+        },
+        {
+          "m2": 1,
+          "m3": 1,
+          "heavy": [
+            4,
+            5
+          ],
+          "faces": 4,
+          "omega_power_coefficient": 1248,
+          "contribution": "56784"
+        },
+        {
+          "m2": 2,
+          "m3": 0,
+          "heavy": [
+            4,
+            6
+          ],
+          "faces": 3,
+          "omega_power_coefficient": 1356,
+          "contribution": "41132"
+        },
+        {
+          "m2": 0,
+          "m3": 3,
+          "heavy": [
+            5
+          ],
+          "faces": 7,
+          "omega_power_coefficient": 49,
+          "contribution": "2548"
+        },
+        {
+          "m2": 2,
+          "m3": 0,
+          "heavy": [
+            5,
+            5
+          ],
+          "faces": 3,
+          "omega_power_coefficient": 1338,
+          "contribution": "20293"
+        },
+        {
+          "m2": 1,
+          "m3": 2,
+          "heavy": [
+            6
+          ],
+          "faces": 6,
+          "omega_power_coefficient": 71,
+          "contribution": "12922"
+        },
+        {
+          "m2": 2,
+          "m3": 1,
+          "heavy": [
+            7
+          ],
+          "faces": 5,
+          "omega_power_coefficient": 75,
+          "contribution": "16380"
+        },
+        {
+          "m2": 3,
+          "m3": 0,
+          "heavy": [
+            8
+          ],
+          "faces": 4,
+          "omega_power_coefficient": 59,
+          "contribution": "5369"
+        }
+      ]
+    },
+    {
+      "n": 16,
+      "k": 5,
+      "value": 2306780,
+      "profiles": [
+        {
+          "m2": 0,
+          "m3": 4,
+          "heavy": [
+            4
+          ],
+          "faces": 9,
+          "omega_power_coefficient": 45,
+          "contribution": "9100"
+        },
+        {
+          "m2": 1,
+          "m3": 2,
+          "heavy": [
+            4,
+            4
+          ],
+          "faces": 6,
+          "omega_power_coefficient": 1716,
+          "contribution": "240240"
+        },
+        {
+          "m2": 2,
+          "m3": 0,
+          "heavy": [
+            4,
+            4,
+            4
+          ],
+          "faces": 3,
+          "omega_power_coefficient": 45318,
+          "contribution": "302120"
+        },
+        {
+          "m2": 2,
+          "m3": 1,
+          "heavy": [
+            4,
+            5
+          ],
+          "faces": 5,
+          "omega_power_coefficient": 2210,
+          "contribution": "742560"
+        },
+        {
+          "m2": 3,
+          "m3": 0,
+          "heavy": [
+            4,
+            6
+          ],
+          "faces": 4,
+          "omega_power_coefficient": 2912,
+          "contribution": "407680"
+        },
+        {
+          "m2": 1,
+          "m3": 3,
+          "heavy": [
+            5
+          ],
+          "faces": 8,
+          "omega_power_coefficient": 64,
+          "contribution": "58240"
+        },
+        {
+          "m2": 3,
+          "m3": 0,
+          "heavy": [
+            5,
+            5
+          ],
+          "faces": 4,
+          "omega_power_coefficient": 2664,
+          "contribution": "186480"
+        },
+        {
+          "m2": 2,
+          "m3": 2,
+          "heavy": [
+            6
+          ],
+          "faces": 7,
+          "omega_power_coefficient": 105,
+          "contribution": "163800"
+        },
+        {
+          "m2": 3,
+          "m3": 1,
+          "heavy": [
+            7
+          ],
+          "faces": 6,
+          "omega_power_coefficient": 126,
+          "contribution": "152880"
+        },
+        {
+          "m2": 4,
+          "m3": 0,
+          "heavy": [
+            8
+          ],
+          "faces": 5,
+          "omega_power_coefficient": 120,
+          "contribution": "43680"
+        }
+      ]
+    },
+    {
+      "n": 18,
+      "k": 6,
+      "value": 23078316,
+      "profiles": [
+        {
+          "m2": 0,
+          "m3": 6,
+          "heavy": [],
+          "faces": 13,
+          "omega_power_coefficient": 1,
+          "contribution": "1428"
+        },
+        {
+          "m2": 1,
+          "m3": 4,
+          "heavy": [
+            4
+          ],
+          "faces": 10,
+          "omega_power_coefficient": 55,
+          "contribution": "235620"
+        },
+        {
+          "m2": 2,
+          "m3": 2,
+          "heavy": [
+            4,
+            4
+          ],
+          "faces": 7,
+          "omega_power_coefficient": 2646,
+          "contribution": "3470040"
+        },
+        {
+          "m2": 3,
+          "m3": 0,
+          "heavy": [
+            4,
+            4,
+            4
+          ],
+          "faces": 4,
+          "omega_power_coefficient": 97440,
+          "contribution": "3312960"
+        },
+        {
+          "m2": 3,
+          "m3": 1,
+          "heavy": [
+            4,
+            5
+          ],
+          "faces": 6,
+          "omega_power_coefficient": 3612,
+          "contribution": "7368480"
+        },
+        {
+          "m2": 4,
+          "m3": 0,
+          "heavy": [
+            4,
+            6
+          ],
+          "faces": 5,
+          "omega_power_coefficient": 5530,
+          "contribution": "3384360"
+        },
+        {
+          "m2": 2,
+          "m3": 3,
+          "heavy": [
+            5
+          ],
+          "faces": 9,
+          "omega_power_coefficient": 81,
+          "contribution": "771120"
+        },
+        {
+          "m2": 4,
+          "m3": 0,
+          "heavy": [
+            5,
+            5
+          ],
+          "faces": 5,
+          "omega_power_coefficient": 4710,
+          "contribution": "1441260"
+        },
+        {
+          "m2": 3,
+          "m3": 2,
+          "heavy": [
+            6
+          ],
+          "faces": 8,
+          "omega_power_coefficient": 148,
+          "contribution": "1585080"
+        },
+        {
+          "m2": 4,
+          "m3": 1,
+          "heavy": [
+            7
+          ],
+          "faces": 7,
+          "omega_power_coefficient": 196,
+          "contribution": "1199520"
+        },
+        {
+          "m2": 5,
+          "m3": 0,
+          "heavy": [
+            8
+          ],
+          "faces": 6,
+          "omega_power_coefficient": 216,
+          "contribution": "308448"
+        }
+      ]
+    },
+    {
+      "n": 20,
+      "k": 7,
+      "value": 199207020,
+      "profiles": [
+        {
+          "m2": 1,
+          "m3": 6,
+          "heavy": [],
+          "faces": 14,
+          "omega_power_coefficient": 1,
+          "contribution": "38760"
+        },
+        {
+          "m2": 2,
+          "m3": 4,
+          "heavy": [
+            4
+          ],
+          "faces": 11,
+          "omega_power_coefficient": 66,
+          "contribution": "3488400"
+        },
+        {
+          "m2": 3,
+          "m3": 2,
+          "heavy": [
+            4,
+            4
+          ],
+          "faces": 8,
+          "omega_power_coefficient": 3900,
+          "contribution": "37791000"
+        },
+        {
+          "m2": 4,
+          "m3": 0,
+          "heavy": [
+            4,
+            4,
+            4
+          ],
+          "faces": 5,
+          "omega_power_coefficient": 187800,
+          "contribution": "30329700"
+        },
+        {
+          "m2": 4,
+          "m3": 1,
+          "heavy": [
+            4,
+            5
+          ],
+          "faces": 7,
+          "omega_power_coefficient": 5565,
+          "contribution": "61628400"
+        },
+        {
+          "m2": 5,
+          "m3": 0,
+          "heavy": [
+            4,
+            6
+          ],
+          "faces": 6,
+          "omega_power_coefficient": 9645,
+          "contribution": "24922680"
+        },
+        {
+          "m2": 3,
+          "m3": 3,
+          "heavy": [
+            5
+          ],
+          "faces": 10,
+          "omega_power_coefficient": 100,
+          "contribution": "7752000"
+        },
+        {
+          "m2": 5,
+          "m3": 0,
+          "heavy": [
+            5,
+            5
+          ],
+          "faces": 6,
+          "omega_power_coefficient": 7680,
+          "contribution": "9922560"
+        },
+        {
+          "m2": 4,
+          "m3": 2,
+          "heavy": [
+            6
+          ],
+          "faces": 9,
+          "omega_power_coefficient": 201,
+          "contribution": "12984600"
+        },
+        {
+          "m2": 5,
+          "m3": 1,
+          "heavy": [
+            7
+          ],
+          "faces": 8,
+          "omega_power_coefficient": 288,
+          "contribution": "8372160"
+        },
+        {
+          "m2": 6,
+          "m3": 0,
+          "heavy": [
+            8
+          ],
+          "faces": 7,
+          "omega_power_coefficient": 357,
+          "contribution": "1976760"
+        }
+      ]
+    }
+  ],
+  "seconds": 0.3526313304901123,
+  "degree5_holdout": {
+    "fitted_k": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "held_out_k": 7,
+    "predicted_R6": "10289277/2002",
+    "actual_R6": "10279/2",
+    "difference": "1/1001",
+    "qualification": "conditional on the face-profile enumeration formula"
+  }
+}

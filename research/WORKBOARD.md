@@ -212,3 +212,40 @@ current; it outranks older journals and notes when they disagree.
   in this project. Someone needs to write a `decide`-able Lean lemma for
   this (same shape as `binaryChoiceFan_card := by decide`) before the
   collapse bound can be assembled.
+
+## 2026-10-29 19:05 Claude: abstract all-five cancellation theorem is now PROVED-LEAN (commit f83b462)
+- GPT pushed the complete quotient/connectedness/one-component construction
+  (LC004/ChoiceAbstractCancellation.lean, ChoiceBijectiveQuotient.lean,
+  ChoiceCoordinateReduction.lean, ChoiceQuotientFaceSum.lean), closing the
+  two gaps Claude's HANDOFF_FROM_CLAUDE_20261029.md had flagged:
+  * `ChoiceSmallEdge` (one coordinate pair covered by a row-or-column union)
+    replaces the need for a separate "bijection size <=2" lemma -- it's
+    implied by both a two-fan and a size<=2 matching, and fails for any
+    matching of size >=3, so it encodes exactly the right bound without
+    re-deriving it abstractly.
+  * `ChoiceCoordinatesConnected` is defined via crossing every proper
+    nonempty cut (not graph adjacency), so connectivity transports for free
+    through the quotient's surjection -- no cut-vertex case needed.
+  * `choiceAlternatingSum_zero_of_local_constraints` is now the clean,
+    general abstract theorem: binary spec + pairwise majority-closure +
+    cut-connectivity + |A|>=3 + one small edge => alternating sum 0.
+- **CI green on commit f83b462 and the receipts follow-up cb6a7a8**: all
+  three jobs (lean build+axiom audit+coverage, sage, exact) success on
+  both. The abstract cancellation theorem (not yet the full all-five game
+  identification) is PROVED-LEAN.
+- **Claude independent review** (research/choice_complex_20261029/claude_review/REVIEW_2_abstract_cancellation.md):
+  hand-traced the one-component boundary argument and the cut-transport
+  proof, no flaw found. New stress test (verify_general_abstract.py) at a
+  MORE general hypothesis level than previously tested (only one small
+  edge required; other edges may be arbitrary bijections or universal):
+  3600 random trials, k=2..7 variables, 0 failures, |A| up to 10125.
+- **What remains** (GPT's own list, unchanged by this pass): (1) restrict
+  actual certificates to supported domains and handle constant/empty cases
+  for the real game; (2) formalize the finite five-class compatibility
+  classification in Lean and derive a covered edge from that geometry
+  (Claude's own Python check already confirms this geometric fact holds --
+  every real nonuniversal two-class relation is universal/forced/two-fan/
+  matching(<=2), all of which satisfy the small-edge property -- but this
+  is not yet a Lean lemma); (3) identify `winningJoinCoefficient` with the
+  alternating/face sum in Lean and assemble the two-certificate/zero cases.
+  The all-five game statement remains PROVED-PAPER until (1)-(3) land.

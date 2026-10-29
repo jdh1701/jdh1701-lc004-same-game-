@@ -1,0 +1,34 @@
+name: Heavy greedy obstruction verification
+on:
+  push:
+    branches: [research/heavy-greedy-obstruction-20261029]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+      - uses: leanprover/lean-action@434f25c2f80ded67bba02502ad3a86f25db50709
+        with:
+          auto-config: false
+          build: false
+          use-mathlib-cache: true
+      - name: Build imported mathematical foundation
+        run: lake build LC004.ExecutableUniqueness LC004.RawEncoding
+      - name: Certify concrete obstruction and transitive axiom allowlist
+        shell: bash
+        run: |
+          set -euo pipefail
+          lake env lean research/HeavyGreedyObstruction.lean | tee research/heavy_greedy_lean_audit.log
+      - name: Independent exact searches
+        run: python3 research/heavy_greedy_obstruction.py
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: heavy-greedy-obstruction-evidence
+          path: |
+            research/heavy_greedy_lean_audit.log
+            research/heavy_greedy_obstruction_results.json

@@ -1,0 +1,3 @@
+'LC004.heavyGreedy_nonconfluence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.heavyGreedyTrap_loses' depends on axioms: [propext, Classical.choice, Quot.sound]
+HEAVY GREEDY AUDIT PASS: 11 declarations

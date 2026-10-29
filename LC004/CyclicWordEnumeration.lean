@@ -80,7 +80,7 @@ noncomputable def markedRootedWordEquiv {n : Nat}
         (degreeWordRoot (rotateDegreeWord w i) (htotal _ ((hrotate w i).mpr hw))) = w := by
       rw [heq, rotateDegreeWord_add, add_neg_cancel, rotateDegreeWord_zero]
     apply Sigma.ext (Subtype.ext hwEq)
-    apply (Subtype.heq_iff_coe_eq (fun j => by rw [hwEq])).mpr
+    apply (Subtype.heq_iff_coe_eq (fun j => by dsimp only; rw [hwEq])).mpr
     simp only [heq, neg_neg]
   right_inv w := by
     apply Subtype.ext

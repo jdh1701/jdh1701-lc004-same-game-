@@ -1,0 +1,26 @@
+name: free-cumulants
+on:
+  push:
+    branches: [research/free-cumulants-20261029]
+  workflow_dispatch:
+jobs:
+  repro:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          cd research/free_cumulants
+          python3 cumulants.py > out.txt
+          python3 - <<'PY'
+          import re
+          for line in open("out.txt"):
+              s, rest = line.split(" ", 1)
+              coeffs = eval(rest)
+              s = int(s)
+              for j, c in enumerate(coeffs):
+                  if c != 0 and s < 5 * j:
+                      raise SystemExit(f"law violated at s={s}, j={j}")
+          print("law gamma_j(s)=0 for s<5j holds for s<=15")
+          PY
+          echo "::notice title=cumulants::$(tr '\n' ';' < out.txt | cut -c1-900)"
+          echo "::notice title=law::s<5j law checked through s=15"

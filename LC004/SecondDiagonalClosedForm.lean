@@ -22,11 +22,13 @@ theorem two_triple_noncrossing_count_closed (k : Nat) (hk : 2 ≤ k) :
     TwoTriplePairPattern (fun w => DoubleExceptionalWord w 3) twoTriple_iff_doubleExceptionalWord)
   change twoTripleNoncrossingPatternCount (2 * k + 2) =
     Fintype.card {w : CyclicDegreeWord (2 * k + 2) // P w ∧ RootedDegreeWord w} at heq
+  simp only [← Nat.card_eq_fintype_card] at hmark heq
   calc
-    _ = 2 * Fintype.card {w : CyclicDegreeWord (2 * k + 2) // P w ∧ RootedDegreeWord w} :=
+    _ = 2 * Nat.card {w : CyclicDegreeWord (2 * k + 2) // P w ∧ RootedDegreeWord w} :=
       congrArg (fun t => 2 * t) heq
-    _ = Fintype.card {w : CyclicDegreeWord (2 * k + 2) // P w ∧ (w 0).val = 3} := hmark.symm
-    _ = (2 * k + 2) * (2 * k + 1).choose (k - 2) := double_anchored_word_count k hk
+    _ = Nat.card {w : CyclicDegreeWord (2 * k + 2) // P w ∧ (w 0).val = 3} := hmark.symm
+    _ = (2 * k + 2) * (2 * k + 1).choose (k - 2) := by
+      simpa only [← Nat.card_eq_fintype_card] using double_anchored_word_count k hk
     _ = _ := by
       have h := Nat.succ_mul_choose_eq (2 * k + 1) (k - 2)
       have hs : k - 2 + 1 = k - 1 := by omega

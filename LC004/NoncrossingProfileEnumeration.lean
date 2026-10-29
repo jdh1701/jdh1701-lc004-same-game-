@@ -47,11 +47,11 @@ theorem fourfold_noncrossing_count_closed (k : Nat) (hk : 1 ≤ k) :
     FourfoldPairPattern (fun w => SingleExceptionalWord w 4) fourfold_iff_singleExceptionalWord)
   change fourfoldNoncrossingPatternCount (2 * k + 2) =
     Fintype.card {w : CyclicDegreeWord (2 * k + 2) // P w ∧ RootedDegreeWord w} at heq
-  calc
-    _ = Fintype.card {w : CyclicDegreeWord (2 * k + 2) // P w ∧ RootedDegreeWord w} := heq
-    _ = Fintype.card {w : CyclicDegreeWord (2 * k + 2) // P w ∧ (w 0).val = 4} := by
-      simpa only [Nat.one_mul] using hmark.symm
-    _ = _ := single_anchored_word_count k hk
+  simp only [← Nat.card_eq_fintype_card, Nat.one_mul] at hmark heq
+  have hanchored : Nat.card {w : CyclicDegreeWord (2 * k + 2) // P w ∧ (w 0).val = 4} =
+      (2 * k + 2).choose (k - 1) := by
+    simpa only [← Nat.card_eq_fintype_card] using single_anchored_word_count k hk
+  exact heq.trans (hmark.symm.trans hanchored)
 
 #print axioms fourfold_noncrossing_count_closed
 

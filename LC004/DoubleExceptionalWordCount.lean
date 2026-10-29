@@ -186,6 +186,7 @@ theorem double_anchored_word_count (k : Nat) (hk : 2 ≤ k) :
     rw [Fintype.card_congr (Equiv.subtypeEquivRight hpred), Fintype.card_coe,
       Finset.card_powersetCard, Finset.card_erase_of_mem (Finset.mem_univ j),
       Finset.card_univ, Fintype.card_fin]
+    congr 1 <;> omega
   simp only [hcard, Finset.sum_const, Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
   simp
 

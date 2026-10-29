@@ -1,0 +1,1 @@
+{"status":"VERIFIED-COMP","rows":[{"pattern":[0,0,1,0,0,0,0,1,1,1,0,1,1],"actual":2,"graph_prediction":1,"missing_generating_faces_by_size":{"3":2,"4":1},"alternating_correction":-1},{"pattern":[0,1,1,0,1,1,1,1,0,0,1,0,0],"actual":2,"graph_prediction":1,"missing_generating_faces_by_size":{"3":4,"4":4,"5":1},"alternating_correction":-1}]}

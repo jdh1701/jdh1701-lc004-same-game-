@@ -1,0 +1,27 @@
+name: Cross-domain exact coefficient probes
+on:
+  push:
+    branches: [research/cross-domain-20261029]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  exact:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Independent coefficient probes
+        run: |
+          python research/cross_domain_20261029/probe.py
+          python research/cross_domain_20261029/probe56.py
+          python research/cross_domain_20261029/probe57.py
+          python research/cross_domain_20261029/crosscheck.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cross-domain-results
+          path: research/cross_domain_20261029/*.json

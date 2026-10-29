@@ -211,3 +211,5 @@ import LC004.SingleExceptionalWordCount
 import LC004.NoncrossingProfileEnumeration
 import LC004.DoubleExceptionalWordCount
 import LC004.SecondDiagonalClosedForm
+
+import LC004.CertificateConstraintJoins

@@ -74,7 +74,7 @@ theorem second_diagonal_candidate_simplification (k : Nat) (hk : 1 ≤ k) :
 
 /-- Conditional assembly of the proposed formula. This does not assert
 or assume as axioms the two outstanding refined cardinality evaluations. -/
-theorem second_diagonal_formula_of_refined_counts (k : Nat) (hk : 2 ≤ k)
+theorem second_diagonal_formula_of_refined_counts (k : Nat) (hk : 1 ≤ k)
     (hfour : fourfoldNoncrossingPatternCount (2 * k + 2) =
       (2 * k + 2).choose (k - 1))
     (htriple : 2 * twoTripleNoncrossingPatternCount (2 * k + 2) =

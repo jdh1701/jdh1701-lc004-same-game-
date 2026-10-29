@@ -200,3 +200,5 @@ import LC004.PartitionIntervalDegrees
 import LC004.DegreePrefixArithmetic
 
 import LC004.NoncrossingDegreeRealization
+
+import LC004.CyclicRootLemma

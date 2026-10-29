@@ -53,7 +53,7 @@ theorem fresh_interval_positions {n k : Nat} (gap : Nat) (hgap : gap ≤ n) :
   constructor
   · intro hj
     let s : Fin k := ⟨j.val - gap, by unfold InFreshInterval at hj; omega⟩
-    refine ⟨s, Finset.mem_univ _, ?_⟩
+    refine ⟨s, ?_⟩
     apply Fin.ext
     change gap + (j.val - gap) = j.val
     unfold InFreshInterval at hj
@@ -81,6 +81,7 @@ theorem inserted_old_class_leader {n k : Nat} (p : ColorPattern n)
     (gap : Nat) (hgap : gap ≤ n) (i : Fin n) :
     patternClassLeader (insertPatternInterval p gap hgap) (oldPosition gap k i) =
       oldPosition gap k (patternClassLeader p i) := by
+  classical
   apply patternClassLeader_eq_of_least
   · exact (insertPatternInterval_old_rel (k := k) p gap hgap _ _).mpr (patternClassLeader_related p i)
   · intro j hj

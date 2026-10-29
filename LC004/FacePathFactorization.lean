@@ -22,7 +22,9 @@ theorem faceJoinPath_complete {n : Nat} (p q : ColorPattern n)
             · exact Or.inr (q.symm hq)
           exact Relation.ReflTransGen.trans
             (Relation.ReflTransGen.single hs) ih),
-      (fun a b c hab hbc => Relation.ReflTransGen.trans hab hbc)⟩
+      (by
+        intro a b c hab hbc
+        exact Relation.ReflTransGen.trans hab hbc)⟩
   }
   have hp : p ≤ R := by
     intro i j hij

@@ -12,7 +12,7 @@ HOW TO USE (GPT): for each idea pick the "Test", run it with SymPy/Z3/Lean on CI
 1. **Direct transfer-matrix / DFA on the word.** Fails: the winning language is not regular. GPT's Hankel ranks q=3: 13, 37, 103, 268 for d=2..5 and growing; the binary control shows rank growth does not kill a scalar formula, only a finite-state recognizer.
 2. **Greedy canonical deletion (always delete a safe run).** Fails: Lean-certified trap AAABAABBAB (heavy multiplicities do not make a move safe); the family A^r B A^s B^t A B defeats every fixed multiplicity threshold.
 3. **Finite summary state for DP (colour counts, run-colour sequence, #heavy runs, boundary runs).** Fails: Lean-certified collision u=AAABBABCCCBC, v=AAABABBCCCBC.
-4. **Inclusion-exclusion over certificates (count words with >=1 certificate).** Not a failure but a reformulation: it gives the signed join expansion, which is exact but needs c(x) for every join x. Obstruction: c(x) is not sign-regular (test below) and nonzero crossing coefficients keep appearing for classes of size >= 5 (e.g. 285+... at n=13).
+4. **Inclusion-exclusion over certificates (count words with >=1 certificate).** Not a failure but a reformulation: it gives the signed join expansion, which is exact but needs c(x) for every join x. Obstruction: c(x) is not sign-regular (test below) and nonzero crossing coefficients keep appearing for classes of size >= 5 (n=13: 585 of them, with profile sums -65, -286, 286, 117).
 5. **Count certificate partitions per word (certificate product).** Fails to count winning words: it counts certificate partitions of a FIXED word; many certificates per word cause overcount (face-decomposition / product theorem is per word).
 6. **Linear free-cumulant ansatz kappa_s(q) = a_s + b_s q.** Killed at n=10 (305 vs 300).
 7. **Closed form along diagonals A(2k+j,k) = C(2k+j,k-1) P_j(k) with deg P_j = j-1.** Holds j<=5 (j=4: 2 checks, j=5: 1), breaks at j=6.
@@ -37,6 +37,7 @@ Test: model winning words as a contraction of a delta-tensor network on q colour
 ### B3. Random-matrix / Wigner-semicircle moments and free independence
 Translation: the moment-cumulant formula m_n = sum over NC(n) prod kappa already holds for T(q,.); ask whether T(q,.) is the moment sequence of a positive measure for each q (Hankel positivity). If yes, a spectral measure exists and orthogonal polynomials give a three-term recurrence (Jacobi parameters), the usual route to P-recursion.
 Test: Hankel determinants of (m_n) for q=2,3,4 up to size 7 (15 terms). Kill: a negative Hankel determinant.
+**RESULT (Claude, local exact arithmetic, rows n<=15): KILLED.** Hankel determinants of m_n=T(q,n), sizes 1..7: q=2: 1,2,0,-8,-16,160,-5184; q=3: 1,3,9,-54,-2916,-44712,828144; q=4: 1,4,32,192,-48384,... The size-4 determinant is negative for q=2 and q=3, so T(q,.) is not the moment sequence of a positive measure. (A signed measure or a different normalisation, e.g. cumulant-shifted, is not excluded.)
 
 ### B4. Statistical mechanics: partition function and zeros  [physics]
 Translation: sum over k of A(n,k) q^falling k is a partition function Z_n(q); chromatic-polynomial-like. Chromatic polynomials have well-studied zero loci and transfer-matrix structure.
@@ -69,7 +70,7 @@ Test: for n=10 (the first 5 nonzero crossing joins, c=-1 each) compute the homol
 
 ### B11. Information theory / Kolmogorov structure  [information theory]
 Translation: a winning word has a short "deletion program" (the certificate). Count words by description length: T(q,n) = number of words whose shortest program exists; the multiplicity of programs (certificates) is the redundancy.
-Test: compute the entropy of the certificate-count distribution d(w) over winning words for n<=12; check whether log T(q,n)/n has a limit and whether the limit is the log of an algebraic number (growth rate). Observed growth ratios for q=3: 2003151/657849 = 3.045..., compare with q=2: 25778/12350 = 2.087 (golden-ratio-like limit 2+? check). Use these as a growth-constant fingerprint: if rho(q) is algebraic of low degree, we gain a target.
+Test: compute the entropy of the certificate-count distribution d(w) over winning words for n<=12; check whether log T(q,n)/n has a limit and whether the limit is the log of an algebraic number (growth rate). Observed ratios T(q,n+1)/T(q,n) at n=14: q=2: 2.087 (falling, plausibly toward 2), q=3: 3.045 (rising), q=4: 3.705 (rising); so the growth constant rho(q) for q>=3 is not read off from n<=15. Use these as a growth-constant fingerprint: if rho(q) is algebraic of low degree, we gain a target.
 
 ### B12. Quantum / interference reading of the signed expansion  [SPEC]
 Translation: OR over certificates becomes a sum with signs (Mobius); crossed-four cancellation looks like destructive interference between amplitudes of pairing (separated) and (nested) pairings. In quantum terms: a "state" |w> = sum over certificates of signed amplitudes; the coefficient c(x) is a net amplitude on join x. Cancellation is forced when two paths related by a local move differ by a sign.

@@ -1,0 +1,101 @@
+{
+  "url": "https://api.openalex.org/works/W4403297183?select=id%2Ctitle%2Cdoi%2Cpublication_year%2Cauthorships",
+  "response": {
+    "id": "https://openalex.org/W4403297183",
+    "title": "Counting the number of winning binary strings in the 1-dimensional same game",
+    "doi": "https://doi.org/10.1080/00150517.2007.12428215",
+    "publication_year": 2007,
+    "authorships": [
+      {
+        "author_position": "first",
+        "author": {
+          "id": "https://openalex.org/A5114243951",
+          "display_name": "Chris Burns",
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I141945490",
+            "display_name": "University of British Columbia",
+            "ror": "https://ror.org/03rmrcq20",
+            "country_code": "CA",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I141945490"
+            ]
+          }
+        ],
+        "countries": [
+          "CA"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Chris Burns",
+        "raw_affiliation_strings": [
+          "Department of Mathematics, The University of British Columbia",
+          "Department of Mathematics, The University of British Columbia, 1984 Mathematics Rd, Vancouver, B.C., Canada V6T IZ2"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Mathematics, The University of British Columbia",
+            "institution_ids": [
+              "https://openalex.org/I141945490"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Department of Mathematics, The University of British Columbia, 1984 Mathematics Rd, Vancouver, B.C., Canada V6T IZ2",
+            "institution_ids": [
+              "https://openalex.org/I141945490"
+            ]
+          }
+        ]
+      },
+      {
+        "author_position": "last",
+        "author": {
+          "id": "https://openalex.org/A5108344706",
+          "display_name": "Benjamin Purcell",
+          "orcid": null,
+          "observed_orcids": []
+        },
+        "institutions": [
+          {
+            "id": "https://openalex.org/I141945490",
+            "display_name": "University of British Columbia",
+            "ror": "https://ror.org/03rmrcq20",
+            "country_code": "CA",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I141945490"
+            ]
+          }
+        ],
+        "countries": [
+          "CA"
+        ],
+        "is_corresponding": false,
+        "raw_author_name": "Benjamin Purcell",
+        "raw_affiliation_strings": [
+          "Department of Mathematics, The University of British Columbia",
+          "Department of Mathematics, The University of British Columbia. 1984 Mathematics Rd, Vancouver, B.C., Canada V6T 1Z2"
+        ],
+        "raw_orcid": null,
+        "affiliations": [
+          {
+            "raw_affiliation_string": "Department of Mathematics, The University of British Columbia",
+            "institution_ids": [
+              "https://openalex.org/I141945490"
+            ]
+          },
+          {
+            "raw_affiliation_string": "Department of Mathematics, The University of British Columbia. 1984 Mathematics Rd, Vancouver, B.C., Canada V6T 1Z2",
+            "institution_ids": [
+              "https://openalex.org/I141945490"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

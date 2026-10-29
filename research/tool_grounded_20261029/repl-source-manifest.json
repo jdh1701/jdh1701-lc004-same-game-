@@ -1,0 +1,63 @@
+{
+  "repository": "leanprover-community/repl",
+  "commit": "3b27c8543a48444ffab4077f47526d91849cca3d",
+  "lean": "leanprover/lean4:v4.19.0",
+  "files": [
+    {
+      "path": "REPL/Frontend.lean",
+      "sha256": "042fe4709f4ba3bdd2a6b218ab66cbb23ec6e456cd05621979cea18c2012050d"
+    },
+    {
+      "path": "REPL/JSON.lean",
+      "sha256": "87554dbb915043ba6bea6380715422e6eb3eb0b8cfd5b47e31ad49aed8b4e94b"
+    },
+    {
+      "path": "REPL/Lean/ContextInfo.lean",
+      "sha256": "7eb8186eeacf8faf6690dcd9636ae20547343ddc7b3683ecb313e16ed643d7ce"
+    },
+    {
+      "path": "REPL/Lean/Environment.lean",
+      "sha256": "f9c6e89d3146b9f420779bba241e41cc614aeaffd66ce3edf22a5b1d031a4f1b"
+    },
+    {
+      "path": "REPL/Lean/InfoTree/ToJson.lean",
+      "sha256": "1b266d3bedeaba8c226b2783b700e45d93c6b4b8b442c577ecc392cd493e9aca"
+    },
+    {
+      "path": "REPL/Lean/InfoTree.lean",
+      "sha256": "ca770e7537d2af4f67c3c707eb76de4c9ea410f654864404a38ba15bbbcaa183"
+    },
+    {
+      "path": "REPL/Main.lean",
+      "sha256": "01b58b09faa47c316d6b40c16172d52d069833f8a0610ba643241ecc3d4514f5"
+    },
+    {
+      "path": "REPL/Snapshots.lean",
+      "sha256": "107dfa89ae2c53cff4f33bfc039d96237a32d57a91bae924bbbbbc3af74fc9a7"
+    },
+    {
+      "path": "REPL/Util/Path.lean",
+      "sha256": "4ef291a8c1b763e1ee5750d46dcd6bc6f9be5a89c6a9f7b577814ad61193b161"
+    },
+    {
+      "path": "REPL/Util/Pickle.lean",
+      "sha256": "7d4ba5908d5ee3a17aa9d6bb7a6063529b7c6c179a5aa90743ba06e7d4eef955"
+    },
+    {
+      "path": "REPL.lean",
+      "sha256": "b843c1ebb1192522f3a64aca4b32168ddbd365b30a1914538a53ba010aa5d954"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "74f3289150df0affc4b53eb8911e3cda1a86554752e0f31fb20e8d0c51c7632f"
+    },
+    {
+      "path": "lakefile.toml",
+      "sha256": "312f2d1e180cf9ba2498001f2a698d1483f3b2d5a6f288a82744592f669c1b83"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
+    }
+  ]
+}

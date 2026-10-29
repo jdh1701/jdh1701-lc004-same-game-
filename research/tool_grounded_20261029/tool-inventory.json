@@ -1,0 +1,18 @@
+{
+  "as_of": "2026-10-29",
+  "active": {
+    "OpenAlex": "Anonymous GET succeeded; no account creation",
+    "SymPy": "1.14.0; exact ranks, determinants and generating function",
+    "Z3": "4.15.3; bounded synthesis and held-out tests",
+    "Lean": "4.19.0; native compiler and official pinned REPL",
+    "GitHub": "Connected; source publication and hosted checks"
+  },
+  "not_used": {
+    "LeanDojo": "Not installed or invoked; existing REPL supplies current incremental proof need",
+    "Rocq_Coq": "No local executable discovered",
+    "Wolfram": "No connector returned by discovery; no local executable or configured app identifier",
+    "External_GPT_API": "No configured API key",
+    "External_Claude_API": "No configured API key"
+  },
+  "limitations": "Tool access and permission are distinct; none of these entries implies a solved enumeration problem"
+}

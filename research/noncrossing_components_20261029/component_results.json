@@ -50,7 +50,7 @@
       "nonzero_coefficients": 36
     }
   ],
-  "seconds": 0.9631037712097168,
+  "seconds": 0.904656171798706,
   "arithmetic": "exact Python integers",
   "range": "all set partitions through n=7; all refinements of every noncrossing partition"
 }

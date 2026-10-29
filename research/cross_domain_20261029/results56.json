@@ -1,0 +1,8222 @@
+{
+  "status": "VERIFIED-COMP",
+  "scope": "every connected partition of type (5,6) at n=11",
+  "method": "partition-lattice Mobius inversion of independent raw maximal-run indicator",
+  "rows": [
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 10
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 5
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 10
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 8
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 16
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 6
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 10
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 12
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 5
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 16
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 10
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 8
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 8
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": -1,
+      "genus": 2,
+      "certificates": 3
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": -1,
+      "genus": 2,
+      "certificates": 3
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 8
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 16
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 7
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 16
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 7
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 6
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": -1,
+      "genus": 2,
+      "certificates": 3
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 10
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 12
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 12
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": -1,
+      "genus": 2,
+      "certificates": 3
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 5
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 16
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 16
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 10
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 8
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 8
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 8
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": -1,
+      "genus": 2,
+      "certificates": 3
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": -1,
+      "genus": 2,
+      "certificates": 3
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 8
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 4,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 4,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 4,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 4,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 10
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 6
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 16
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": -1,
+      "genus": 2,
+      "certificates": 3
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 7
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 7
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 16
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 4,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 6
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 7
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 6
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": -1,
+      "genus": 2,
+      "certificates": 3
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 10
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 5
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 12
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": -1,
+      "genus": 2,
+      "certificates": 3
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 12
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": -1,
+      "genus": 2,
+      "certificates": 3
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 5
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 10
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 16
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 16
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 10
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 8
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 8
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 10
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 5
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 10
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 8
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 16
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 6
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 12
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 16
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 8
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 8
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": -1,
+      "genus": 2,
+      "certificates": 3
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": -1,
+      "genus": 2,
+      "certificates": 3
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 16
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 7
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 7
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": -1,
+      "genus": 2,
+      "certificates": 3
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 12
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": -1,
+      "genus": 2,
+      "certificates": 3
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 16
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 8
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 4,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 4,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 4,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 4,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 10
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 6
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": -1,
+      "genus": 2,
+      "certificates": 3
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 7
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 4,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 6
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 5
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": -1,
+      "genus": 2,
+      "certificates": 3
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 10
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 10
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 5
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 10
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 8
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 16
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 6
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 12
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 16
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 8
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": -1,
+      "genus": 2,
+      "certificates": 3
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": -1,
+      "genus": 2,
+      "certificates": 3
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 16
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 7
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 7
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 12
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 16
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 4,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 10
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 6
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": -1,
+      "genus": 2,
+      "certificates": 3
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 7
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 6
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 5
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": -1,
+      "genus": 2,
+      "certificates": 3
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 10
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 10
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 5
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 8
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 16
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 12
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 8
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": -1,
+      "genus": 2,
+      "certificates": 3
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 16
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 12
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 3,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 10
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 1
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": -1,
+      "genus": 2,
+      "certificates": 3
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 5
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 10
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 8
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 16
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 8
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 16
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 2
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 2,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 10
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 0
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 8
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 8
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "coefficient": 0,
+      "genus": 1,
+      "certificates": 0
+    }
+  ],
+  "histogram": {
+    "0": 429,
+    "-1": 22
+  },
+  "collisions_graph": [
+    {
+      "feature": "K2",
+      "witnesses": [
+        {
+          "p": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "coefficient": 0,
+          "genus": 1,
+          "certificates": 0
+        },
+        {
+          "p": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "coefficient": -1,
+          "genus": 2,
+          "certificates": 3
+        }
+      ]
+    }
+  ],
+  "collisions_genus": [
+    {
+      "feature": "2",
+      "witnesses": [
+        {
+          "p": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "coefficient": 0,
+          "genus": 2,
+          "certificates": 0
+        },
+        {
+          "p": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "coefficient": -1,
+          "genus": 2,
+          "certificates": 3
+        }
+      ]
+    }
+  ],
+  "collisions_certificates": [],
+  "entropy_bits": {
+    "graph": 0.2811937964320427,
+    "genus": 0.22877833833623473,
+    "certificates": 0.0,
+    "genus_and_certificates": 0.0
+  }
+}

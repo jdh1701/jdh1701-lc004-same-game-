@@ -231,3 +231,5 @@ import LC004.NoncrossingCoefficientPushforward
 import LC004.NoncrossingCoefficientProduct
 
 import LC004.NoncrossingClosureRegions
+
+import LC004.NoncrossingConnectedFiber

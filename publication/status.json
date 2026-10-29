@@ -1,0 +1,37 @@
+{
+  "schema": "alexandria-publication-status/1",
+  "as_of_date": "2026-10-29",
+  "proof_commit": "3446f6313f1f8a35a3c7891d5deece19c4599855",
+  "proof_ci": {
+    "run_id": 40831342439,
+    "conclusion": "success"
+  },
+  "publication_branch": "publication/alexandria-blueprint-20261029",
+  "local_validation": {
+    "pdf_pages": 37,
+    "pdf_compile": "pass",
+    "pdf_visual_review": "All pages in contact sheets; full-size title, mathematics, assurance table, Lean source, references inspected",
+    "blueprint_render": "pass",
+    "mapped_statements": 17,
+    "native_declarations": 23,
+    "lean_declaration_audit": "pass",
+    "mutation_checks": "4 rejected as expected",
+    "local_html_links": 175,
+    "local_html_link_audit": "pass"
+  },
+  "hosted_publication": {
+    "status": "pending initial branch push"
+  },
+  "deployment": {
+    "status": "not deployed",
+    "initial_repository_has_pages": false,
+    "settings_operation_available_in_connector": false
+  },
+  "scope": {
+    "game": "linear maximal-run deletion",
+    "general_enumeration": "open",
+    "counterexample_minimality": "computational",
+    "slot_bijection": "ordinary manuscript proof; Lean target open",
+    "architecture": "source audit and conditional specifications, not universal verification guarantee"
+  }
+}

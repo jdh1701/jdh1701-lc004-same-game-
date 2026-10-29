@@ -52,6 +52,8 @@ def conditions(w):
 
 def run(max_n=10):
     rows = []
+    minimal_counterexamples = {}
+    hypothesis_names = ('no_singleton', 'noncrossing_skeleton', 'winning_faces')
     for n in range(max_n + 1):
         shapes = brute_certificate_shapes(n)
         row = dict(n=n, patterns=0, eligible=0, winning=0,
@@ -62,6 +64,11 @@ def run(max_n=10):
             no_singleton, skel_nc, faces_win = conditions(w)
             direct_win = wins(w)
             assert direct_win == (no_singleton and skel_nc and faces_win), w
+            flags = (no_singleton, skel_nc, faces_win)
+            if not direct_win:
+                for j, name in enumerate(hypothesis_names):
+                    if not flags[j] and all(flag for k, flag in enumerate(flags) if k != j):
+                        minimal_counterexamples.setdefault(name, w)
             row['winning'] += direct_win
             if not no_singleton:
                 continue
@@ -103,8 +110,12 @@ def run(max_n=10):
         index = list(witnesses).index(removed)
         assert not wins(w) and not flags[index]
         assert all(flag for j, flag in enumerate(flags) if j != index)
+    assert set(minimal_counterexamples) == set(hypothesis_names)
+    assert len(certificates((0,) * 4)) == 2  # One word, two partitions.
     return dict(scope=f'exhaustive patterns, assembly, and product identity through n={max_n}',
                 rows=rows, necessary_hypothesis_counterexamples=witnesses,
+                smallest_hypothesis_counterexamples=minimal_counterexamples,
+                minimality_scope='first restricted-growth word in increasing length; all shorter words checked',
                 interpretation='Counts are certificate partitions, not distinct winning color patterns.')
 
 

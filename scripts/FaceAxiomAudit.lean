@@ -1,4 +1,4 @@
-import LC004.HeavyFaceDecomposition
+import LC004.HeavyFaceCertificateProduct
 import Lean.Util.CollectAxioms
 
 open Lean Elab Command in

@@ -222,3 +222,4 @@ import LC004.FaceJoinConditional
 import LC004.FaceJoinOrder
 import LC004.HeavyFaceReconstruction
 import LC004.HeavyFaceDecomposition
+import LC004.HeavyFaceCertificateProduct

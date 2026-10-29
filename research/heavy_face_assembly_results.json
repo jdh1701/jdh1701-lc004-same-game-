@@ -133,6 +133,26 @@
       1
     ]
   },
+  "smallest_hypothesis_counterexamples": {
+    "no_singleton": [
+      0
+    ],
+    "noncrossing_skeleton": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "winning_faces": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      1
+    ]
+  },
+  "minimality_scope": "first restricted-growth word in increasing length; all shorter words checked",
   "interpretation": "Counts are certificate partitions, not distinct winning color patterns.",
-  "elapsed_seconds": 7.598096275003627
+  "elapsed_seconds": 8.405969481995271
 }

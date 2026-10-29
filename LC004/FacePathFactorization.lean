@@ -16,12 +16,11 @@ theorem faceJoinPath_complete {n : Nat} (p q : ColorPattern n)
         induction hab with
         | refl => exact Relation.ReflTransGen.refl
         | tail hab hbc ih =>
-          have hs : FaceJoinEdge p q _ _ := by
-            rcases hbc with hp | hq
-            · exact Or.inl (p.symm hp)
-            · exact Or.inr (q.symm hq)
-          exact Relation.ReflTransGen.trans
-            (Relation.ReflTransGen.single hs) ih),
+          apply Relation.ReflTransGen.trans _ ih
+          apply Relation.ReflTransGen.single
+          rcases hbc with hp | hq
+          · exact Or.inl (p.symm hp)
+          · exact Or.inr (q.symm hq)),
       (by
         intro a b c hab hbc
         exact Relation.ReflTransGen.trans hab hbc)⟩

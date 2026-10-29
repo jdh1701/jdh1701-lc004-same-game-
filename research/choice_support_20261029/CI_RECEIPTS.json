@@ -1,5 +1,5 @@
 {
-  "status": "awaiting new proof-commit run; local verification passed",
+  "status": "queued at snapshot; local verification passed",
   "local": {
     "modules": 197,
     "audited_declarations": 2494,
@@ -16,5 +16,24 @@
     "probe_run": 40968123431,
     "probe_status": "success"
   },
-  "scope": "support normalization and cover-based cancellation; original game geometry and coefficient identification pending"
+  "scope": "support normalization and cover-based cancellation; original game geometry and coefficient identification pending",
+  "proof_commit": "c799420d1412535d3a56e8061882a6f6770182eb",
+  "runs": [
+    {
+      "id": 40973071008,
+      "name": "Choice-complex cancellation audit",
+      "status": "queued",
+      "conclusion": null,
+      "url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40973071008",
+      "head_sha": "c799420d1412535d3a56e8061882a6f6770182eb"
+    },
+    {
+      "id": 40973070990,
+      "name": "Cross-domain exact coefficient probes",
+      "status": "queued",
+      "conclusion": null,
+      "url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40973070990",
+      "head_sha": "c799420d1412535d3a56e8061882a6f6770182eb"
+    }
+  ]
 }

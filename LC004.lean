@@ -223,3 +223,6 @@ import LC004.FaceJoinOrder
 import LC004.HeavyFaceReconstruction
 import LC004.HeavyFaceDecomposition
 import LC004.HeavyFaceCertificateProduct
+import LC004.CollectedJoinCoefficients
+import LC004.NoncrossingRegionEquivalence
+import LC004.FourGapIndicator

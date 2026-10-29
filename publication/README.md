@@ -66,3 +66,7 @@ The job preserves PDF and validation artifacts even when deployment is blocked b
 ## Provenance
 
 `publication/evidence/core-source-provenance.json` identifies the exact Core snapshot and archived source bytes used for the architecture audit. `publication/evidence/reference-provenance.json` identifies the primary sources used for bibliographic checks. The source bundle and generated site include `publication-manifest.json`, with hashes and evidence boundaries. No claim of novelty is inferred from a sequence match, a dependency graph, or a successful compilation.
+
+## Bibliography correction, 29 October 2026
+
+The binary-game paper is by **Chris Burns and Benjamin Purcell**, titled *Counting the number of winning binary strings in the 1-dimensional same game*, DOI 10.1080/00150517.2007.12428215. Earlier attribution to John M. Burns and Donal Purcell, and omission of “binary” from the title, were errors. The corrected bibliography is embedded in paper.tex and reflected in the rebuilt 37-page PDF. Journal contents, the journal abstract, original title-page OCR, and OpenAlex agree. The exact correction and old/new bibliography digests are archived in publication/evidence/bibliography-correction.json. The Lean proof source is unchanged.

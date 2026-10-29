@@ -48,5 +48,11 @@
   "post_build_changes": [
     "Explicit collision-free identity assumption in manuscript architecture contract",
     "Provenance, status and README updates; mathematical Lean source unchanged"
-  ]
+  ],
+  "bibliography_correction": {
+    "record": "publication/evidence/bibliography-correction.json",
+    "authors": "Chris Burns and Benjamin Purcell",
+    "title_includes_binary": true,
+    "proof_source_changed": false
+  }
 }

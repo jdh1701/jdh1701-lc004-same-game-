@@ -1,0 +1,25 @@
+{
+  "schema": "alexandria-bibliography-correction/1",
+  "date": "2026-10-29",
+  "previous_publication_commit": "ccc32a622415f1347130a2726727f396b667421a",
+  "incorrect_authors": [
+    "John M. Burns",
+    "Donal Purcell"
+  ],
+  "correct_authors": [
+    "Chris Burns",
+    "Benjamin Purcell"
+  ],
+  "correct_title": "Counting the number of winning binary strings in the 1-dimensional same game",
+  "doi": "10.1080/00150517.2007.12428215",
+  "openalex": "W4403297183",
+  "primary_sources": [
+    "https://www.fq.math.ca/45-3.html",
+    "https://www.fq.math.ca/Abstracts/45-3/burns.pdf",
+    "https://www.fq.math.ca/Papers1/45-3/burns.pdf"
+  ],
+  "old_bibliography_sha256": "01bf9a43ed9ec732e65c7f011397c272a86498f7a792d11b1c524ca6ccc66ace",
+  "new_bibliography_sha256": "62c8eeb82277ff3aa166e7f1df715cf3165aef63d415f56da45d65d374293c31",
+  "mathematical_proof_source": "unchanged; this corrects source attribution, not any Lean theorem",
+  "additional_name_parsing_correction": "Standard BibTeX Last, Jr, First syntax for Holden, III, John D."
+}

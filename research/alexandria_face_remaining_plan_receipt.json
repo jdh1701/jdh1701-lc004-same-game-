@@ -1,0 +1,15 @@
+{
+  "core_commit": "fb413043cb0f4369615132e014691782a344af8a",
+  "source_sha256": {
+    "alexandria_core/models.py": "f919a00c5757b59495ebae808e52836cbbcbf29afc77dbeac2e125dae7ba66db",
+    "alexandria_core/campaign.py": "fcfac224857c04bbcaeacaca16e1a7ad381b8c94f9684ecb788b042a7f8ce6c8"
+  },
+  "unchanged_core": true,
+  "planning_executions": 2,
+  "deterministic": true,
+  "elapsed_seconds": 0.000922131999686826,
+  "discovery_speedup_measured": false,
+  "formal_authority_receipt_issued": false,
+  "status": "planned_only",
+  "note": "Lean verification evidence remains separate from Core plan execution counters."
+}

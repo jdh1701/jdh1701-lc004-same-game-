@@ -12,11 +12,11 @@ The reverse proof constructs an equivalence relation from local pair/triple cert
 
 ## Verification at this checkpoint
 
-All three new modules compiled with pinned Lean 4.19.0. The main declarations report only `propext`, `Classical.choice`, and `Quot.sound`. The local runtime uses the previously documented executable-path compatibility shim; hosted verification is required separately and will be recorded with its exact source SHA.
+All three new modules compiled with pinned Lean 4.19.0. The main declarations report only `propext`, `Classical.choice`, and `Quot.sound`. The local runtime uses the previously documented executable-path compatibility shim; hosted verification passed at `3446f6313f1f8a35a3c7891d5deece19c4599855`, run [40831342439](https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40831342439).
 
 The independent audit exhaustively checks 142,418 color patterns through length 10. For 22,083 patterns without singleton colors it filters all set partitions for noncrossing monochromatic pair/triple blocks, independently of the recursive certificate solver. It finds 2,592 winning patterns and 6,707 global certificate partitions. Every one of those 6,707 partitions is recovered uniquely by face assembly. All 7,300 noncrossing-skeleton cases satisfy the exact product identity, including zero products for losing faces. The later `heavyFaceCertificateEquiv` and `certificate_partition_count_product` now prove the corresponding partition equivalence and product identity in Lean for every finite length, under the no-singleton and noncrossing-skeleton conditions.
 
-The three hypotheses are individually necessary: `A` refutes removing the no-singleton condition; `ABAB` refutes removing rigid-skeleton noncrossing; `ABABABAB` refutes removing face winning. Each word satisfies the other two conditions and loses.
+The three hypotheses are individually necessary: `A` refutes removing the no-singleton condition; `ABAB` refutes removing rigid-skeleton noncrossing; `AAABAB` refutes removing face winning: its rigid B chord separates the four A positions into face subwords AAA and A. Each word satisfies the other two conditions and loses. Exhaustive enumeration of all shorter restricted-growth words establishes computational minimality at lengths 1, 4, and 6 respectively; minimality itself is not a Lean theorem.
 
 ## Claim boundaries and research queue
 
@@ -26,7 +26,7 @@ Still open at this checkpoint: ordered-slot/weak-composition correspondence; exa
 
 This is a formalization milestone for the geometry already described in the repository, not a claim of new mathematical priority. No new sequence identification is asserted. The earlier primary-source novelty assessment remains applicable. When no rigid colors exist, the sole heavy face is the original word, so the equivalence does not itself solve unrestricted enumeration.
 
-Alexandria Core remains frozen at `fb413043cb0f4369615132e014691782a344af8a`. The queued targets `gluing` and `face-iff` passed hosted run 40830582287 at `cf3f20ea1d40f5a7f11fb4046fa31f913d048d4c`. The additional `partition-equivalence` target is now locally compiled and axiom-audited, with hosted confirmation pending for its own source SHA. No duplicate research architecture or unmeasured performance improvement is introduced.
+Alexandria Core remains frozen at `fb413043cb0f4369615132e014691782a344af8a`. The queued targets `gluing` and `face-iff` passed hosted run 40830582287 at `cf3f20ea1d40f5a7f11fb4046fa31f913d048d4c`. The additional `partition-equivalence` target passed hosted run 40831342439 at `3446f6313f1f8a35a3c7891d5deece19c4599855`. No duplicate research architecture or unmeasured performance improvement is introduced.
 
 ## Exact certificate product
 
@@ -51,3 +51,17 @@ python research/heavy_face_assembly_check.py
 ```
 
 Focused local compilation used `lake build LC004.HeavyFaceCertificateProduct`; hosted CI performs the full root build. The final local transitive audit checks 638 project declarations, and all 162 active modules are in the root import closure.
+
+## Quantitative progress and current boundary
+
+Three named targets from the six-target continuation queue are discharged: gluing, structural iff, and certificate partition equivalence. This is not a claim of being halfway through general enumeration. There is no defensible percentage denominator for that open problem. The finite certificate-assembly audit grew from length 8 and 503 assembled certificates to length 10 and all 6,707 certificates; the Lean results hold for arbitrary finite length.
+
+The new brute-force certificate oracle shares the restricted-growth input generator with the earlier script, but uses a separate exhaustive set-partition filter and four-position crossing predicate instead of interval recursion. The maximal-run solver is algorithmically different again. The audit provides reproducible agreement, not statistical independence or a proof by finite evidence.
+
+`docs/FACE_DECOMPOSITION_PROOF_LEDGER_20261029.md` gives exact declaration links. `research/face_decomposition_verification.json` binds all active Lean files, the workflow, tests, manifest and toolchain to the hosted Git blobs. `research/face_decomposition_counterexamples.json` records both mathematical counterexamples and failed elaboration attempts. The separate historical ledgers remain preserved.
+
+## Alexandria continuation
+
+No Core code changed. The existing native planner consumed the three remaining targets under a budget of three single-task batches, 1,800 seconds per task and 5,400 seconds total. Its source hashes match the frozen canonical Core commit. Two planning replays agree; the new plan's started/completed/verified execution counters remain zero. Actual proof outcomes are recorded separately in `research/alexandria_face_queue_progress.json`; no trusted Core authority was impersonated and no formal-authority receipt was issued.
+
+The measured improvement is verification coverage: independent global partition filtering and full face assembly through length 10, plus a universal Lean equivalence. No discovery-speed or architecture-performance improvement is claimed. The next mathematical work is the ordered-slot correspondence, then exact profile and automorphism accounting. A Core modernization benchmark should remain a separate assignment with equal budgets and frozen proof states.

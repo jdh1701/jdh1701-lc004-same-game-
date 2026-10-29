@@ -1,5 +1,7 @@
 # Alexandria research architecture after the LC004 geometric campaign
 
+Historical checkpoint retained below. The later [structural Face Decomposition continuation](FACE_DECOMPOSITION_CONTINUATION_20261029.md) closes the reverse, full iff, and certificate-product obligations.
+
 ## Decision
 
 Reuse the existing verification-first Core. This campaign required a mathematical construction and a reliable compiler environment; it did not justify a second architecture or a new autonomous-agent layer. Core code was not changed, and no comparative discovery speedup is claimed.

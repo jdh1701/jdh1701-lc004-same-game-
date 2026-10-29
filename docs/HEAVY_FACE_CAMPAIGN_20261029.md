@@ -1,5 +1,7 @@
 # LC004 geometric face campaign — 29 October 2026
 
+Historical checkpoint retained below. The later [structural Face Decomposition continuation](FACE_DECOMPOSITION_CONTINUATION_20261029.md) closes the reverse, full iff, and certificate-product obligations.
+
 ## Result and scope
 
 The missing geometric implication is now proved in the repository's pinned Lean 4.19.0 environment: actual pair/triple certificates of the same color pattern cannot move a heavy position out of its rigid-skeleton face. Consequently, the existing join-restriction theorem can be applied without assuming path locality. The face carrier is constructed canonically, and its definition is formally equivalent to the paper's two-open-arcs criterion.

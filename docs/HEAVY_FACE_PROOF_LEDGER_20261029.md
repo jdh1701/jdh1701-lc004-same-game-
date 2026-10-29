@@ -1,5 +1,7 @@
 # Verified heavy-face proof ledger
 
+Historical checkpoint retained below. The later [structural Face Decomposition continuation](FACE_DECOMPOSITION_CONTINUATION_20261029.md) closes the reverse, full iff, and certificate-product obligations.
+
 Proof source: `5f4d56e608ea6fc024aca91af514c95ec33f6871`. Pinned Lean 4.19.0; [hosted full build and audit passed](https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40828254711).
 
 The 19 declarations below include supporting lemmas. The substantive milestone is actual geometric locality, forward winning preservation, and injectivity of certificate restriction. The full converse and enumerative theorem are not proved.

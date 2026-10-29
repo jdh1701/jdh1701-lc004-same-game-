@@ -15,7 +15,6 @@ None of this claims novelty; no OEIS/OpenAlex check was possible from Claude's s
 | 5 | Greedy deletion is safe if every colour stays heavy (any fixed multiplicity threshold) | GPT: AAABAABBAB wins, deleting AA at [4,6) loses; family A^r B A^s B^t A B vs A^r B^(t+1) A B. Claude re-verified in Python and in Lean (run 40886782065); family itself not in Lean | PROVED-LEAN for the concrete witness; family PROVED-PAPER | research/HeavyGreedyObstruction.lean (branch research/heavy-greedy-obstruction-20261029), verify/greedy-obstruction-20261029 |
 | 6 | A finite summary (colour counts, run-colour sequence, #heavy runs, boundary run lengths) determines the next continuation | GPT: u=AAABBABCCCBC, v=AAABABBCCCBC have equal summaries, both lose, u+C wins, v+C loses. Claude re-verified in Python and Lean (run 40886782065) | PROVED-LEAN | research/ContinuationSummaryObstruction.lean |
 | 7 | Word-recognizer complexity is bounded | GPT: Hankel ranks q=3, d=2,3,4 = 13, 37, 103 (Claude reproduced mod p); binary control shows rank growth does not rule out a compact scalar formula | VERIFIED-COMP (lower bounds only) | research/tool_grounded_20261029 |
-
 | 8 | Support of the all-five connected kernel is counted by 5-ary Fuss-Catalan numbers 5, 35, 285 (GPT conjecture) | Exhaustive n=20 enumeration (488,864,376 partitions, 48 CI shards, run 40927418509) finds 415 patterns (all c=-1) instead of 285; n=10: 5 and n=15: 35 reproduced exactly | KILLED | research/free_cumulants/five_kernel.cpp, n20_shards.txt |
 
 ## Limits and corrections to our own work

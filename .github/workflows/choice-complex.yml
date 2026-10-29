@@ -4,6 +4,9 @@ on:
     branches: [research/cross-domain-20261029]
     paths:
       - 'research/choice_complex_20261029/**'
+      - 'research/choice_formalization_20261029/**'
+      - 'LC004/**'
+      - 'LC004.lean'
       - '.github/workflows/choice-complex.yml'
   workflow_dispatch:
 permissions:

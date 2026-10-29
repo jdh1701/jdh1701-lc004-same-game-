@@ -20,7 +20,7 @@ no new n=25 count. Claude's job remains queued at the last check.
 | Current research parent | `fd64c4d1f6b000b7ac59fd7b95a4ee3ce51fffe7`; CI 40945905280 in progress at last check |
 | Mathlib / Lean | Both pinned to v4.19.0; fresh baseline build passed; new module imported in root |
 | Earlier Sage control run | CI 40895249874 success, Sage job 123522462820, Lean job 123522463522 |
-| Fresh Sage checks | Local Sage unavailable; new pinned-image homology job committed, no fresh pass claimed before CI completes |
+| Fresh Sage checks | VERIFIED-COMP: Sage 10.10, CI 40952508624, job 123724018890; all 38 complexes pass Euler/reduced-rational-homology checks, two-component control passes |
 | OpenAlex | Two focused queries returned HTTP 429; exact errors in `openalex.json`; no novelty conclusion |
 | Literature actually read | Zhang, Yap, Jaffar (AAAI 1999), https://cdn.aaai.org/AAAI/1999/AAAI99-026.pdf |
 | Claude n=25 pair scan | CI 40942806037 queued at last check; no result accepted |
@@ -36,8 +36,8 @@ in mathlib or claim an exhaustive literature search.
 |---|---|---|
 | All-five >=3-certificate cancellation | PROVED-PAPER | `PROOF.md`, Sections 1–5; no claim of complete Lean formalization |
 | Abstract two-fan / size-two-matching collapse theorem | PROVED-PAPER | `PROOF.md`, Section 4; the matching-size and connectedness hypotheses are essential |
-| Dominated-vertex cancellation and facet version | PROVED-PAPER, with local Lean verification | `LC004/ChoiceComplexCancellation.lean`; exact-head CI pending at initial upload |
-| Two-fan majority closure and row-completion lemma | PROVED-PAPER, with local Lean verification | Same Lean module; kernel reports standard axioms only |
+| Dominated-vertex cancellation and facet version | PROVED-LEAN | `LC004/ChoiceComplexCancellation.lean`, commit 895dcec1830fc5f710c5db63d786690ca345c428, CI 40952508624 success |
+| Two-fan majority closure and row-completion lemma | PROVED-LEAN | Same Lean module and exact commit/run; standard axioms only |
 | Full 126-pair classification / 13 orbits | VERIFIED-COMP | `structure.py`, `pair_orbits.py`, all cases; table also explicit in proof |
 | Constructive collapse for 38 geometric examples | VERIFIED-COMP | `eliminate.py`, `structural_certificates.json`, independent replay; these are a biased sample |
 | Four-binary-variable exhaustive stress test | VERIFIED-COMP | 117649 presentations; 116208 connected; 3681 distinct relations; 2640 nontrivial relations, every paper construction replayed |
@@ -87,3 +87,5 @@ No additional broad analogy campaign is needed for these steps. No main merge
 or changes to Claude's running branch were made.
 
 Initial proof commit: `0c9a067f24988fd97483cfe4c73181b9fb1c6e4f`. New Lean / exact / Sage workflow: CI **40952210810**, queued at snapshot. Cross-domain checks: CI **40952210619**, queued. These run IDs are pending receipts, not passing evidence.
+
+Follow-up: CI 40952508624 and 40952508600 passed on 895dcec1830fc5f710c5db63d786690ca345c428. Sage, exact and Lean jobs all succeeded. Further formalization is documented in `../choice_formalization_20261029/REPORT.md`; the full all-five theorem remains PROVED-PAPER.

@@ -176,3 +176,13 @@ current; it outranks older journals and notes when they disagree.
 
 
 - Upload receipt: proof commit 0c9a067f24988fd97483cfe4c73181b9fb1c6e4f; new Lean/exact/Sage workflow 40952210810 and cross-domain workflow 40952210619 queued at snapshot. Additional 1911 nontrivial five-valued abstract cases also pass the paper-construction replay. No new PROVED-LEAN promotion while CI is pending.
+
+## 2026-10-29 GPT: formal reduced-system cancellation and largest-fiber argument
+
+- PROVED-LEAN: the four previous choice-complex support lemmas at commit 895dcec1830fc5f710c5db63d786690ca345c428, CI 40952508624 success. Exact and Sage jobs also succeeded; Sage 10.10 checked all 38 stored examples and the two-component control. Broader coefficient CI 40952508600 is green.
+- Claude head d0efa2b6317617fdd1a2384a1a2d396053dfa052 independently confirms the older fd64c4d projection identity (2000 abstract checks and all 45 local split-pair joins). This review does not cover the later cancellation paper proof. Snapshot and provenance: research/choice_formalization_20261029/.
+- PROVED-PAPER, now with local Lean verification: unbounded exact-relation classification; mutual forcing implies bijection; maximal-fiber universal value; binary replacement; reduced-system alternating-sum cancellation; face-sum preservation under determined/bijective coordinate deletion. Four new imported modules: ChoiceRelationClassification, ChoiceUniversalValue, ChoiceReducedCancellation, ChoiceFunctionalElimination. The new exact-commit CI receipt is in research/choice_formalization_20261029/CI_RECEIPTS.json; do not promote while pending.
+- The largest-fiber proof replaces the directed-graph acyclicity step: containment of a maximal value fiber forces equality and hence a prohibited bijective coordinate pair. This reduces the remaining formalization dependencies.
+- Local full build and audit: 190 modules, 2382 declarations, standard axioms only, negative guards pass. An explicit three-solution two-fan satisfies the reduced theorem's hypotheses by kernel decide. Failed elaboration and full-build attempts are preserved alongside the final passing logs.
+- Remaining: global quotient construction preserving binary constraints and connectedness; boundary cases and relabeling; original five-class geometry and winningJoinCoefficient bridge; full assembly and then enumeration of surviving pairs. Full all-five claim remains PROVED-PAPER; general fixed-q counting remains open.
+- Latest targeted handoff: research/choice_formalization_20261029/HANDOFF_TO_CLAUDE.md. No new random-table campaign or novelty claim. No result accepted from the still-queued n25 run 40942806037.

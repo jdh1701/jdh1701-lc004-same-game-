@@ -168,17 +168,20 @@ such values. A two-fan also contains at most two pairs from any bijection:
 only one pair can use its row pivot and only one can use its column pivot.
 Thus |A| <= 2, a contradiction.
 
-### 4.3 A sink value supplies a cone
+### 4.3 A largest fiber supplies a cone
 
-On the remaining supported vertices put an arrow `(i,x) -> (k,y)` for i != k
-when every solution containing (i,x) contains (k,y). A directed cycle would
-give mutual implication between vertices of two different variables. The
-corresponding exact pair projection would have a row and column both singleton
-at their intersection. Among the three types in 4.1 only a bijection can do
-this. Such variables would already have been merged. The graph is acyclic.
+For each supported vertex (i,x), let F(i,x) be the set of solutions in B
+whose i-coordinate is x. Choose (i,x) maximizing the cardinality of F(i,x).
+If its row in an exact projection to another coordinate k were not full,
+Section 4.1 would make that row a singleton y. Then F(i,x) is contained in
+F(k,y); maximality forces equality of these finite sets. Thus the two values
+mutually force each other. The exact pair projection has a singleton row and
+singleton column meeting at (x,y), which among the three types in 4.1 is
+possible only for a bijection. Those coordinates would already have been
+merged, a contradiction. Every such row is therefore full.
 
-A finite acyclic graph has a sink (i,x). Its row in every exact pair projection
-is full, since a singleton row would give an outgoing arrow. Consequently
+This maximal-fiber argument replaces the earlier directed-graph sink proof;
+it has fewer dependencies and is now checked in Lean. Consequently
 replacing coordinate i in any solution of B by x gives another solution:
 all binary constraints touching i remain satisfied and all others are unchanged.
 This uses the binary description of B, not an unjustified extension property
@@ -207,9 +210,22 @@ remain. This proof is formalized in Lean as
 
 The majority preservation and row-completion steps of Section 4.1 are also
 formalized as `twoFan_closed_choiceMajority` and
-`choiceMajority_closed_row_all`. The classification, functional reduction,
-acyclicity, game-to-complex identification, and final assembly remain to be
-formalized. Local compilation is not a substitute for those missing bridges.
+`choiceMajority_closed_row_all`. The new files `ChoiceRelationClassification`,
+`ChoiceUniversalValue`, `ChoiceReducedCancellation`, and
+`ChoiceFunctionalElimination` formalize the exact-projection classification,
+maximal-fiber argument, binary replacement, reduced-system cancellation,
+and preservation of the face sum under deletion of a determined coordinate.
+The reduced-system theorem explicitly assumes supported nonsingleton domains,
+majority closure, binary determination, absence of bijective coordinate pairs,
+and a nonuniversal neighbor for each coordinate. A kernel-checked three-solution
+example verifies these hypotheses can hold together.
+
+Still missing in Lean: the global quotient construction preserving the binary
+description and connectedness, the one-component/two-solution boundary case,
+the local five-class geometry and original-game coefficient identification,
+and final assembly. New exact-commit receipts and failed compilation attempts
+are retained in `../choice_formalization_20261029/`; a local pass does not fill
+those remaining bridges.
 
 ## 6. Literature and scope
 

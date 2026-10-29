@@ -1,0 +1,23 @@
+⚠ [2793/2795] Replayed LC004.ChoiceComplexCancellation
+warning: ././././LC004/ChoiceComplexCancellation.lean:22:4: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+info: ././././LC004/ChoiceComplexCancellation.lean:131:0: 'LC004.faceAlternatingSum_delete_dominated' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceComplexCancellation.lean:132:0: 'LC004.facetAlternatingSum_erase_dominated' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceComplexCancellation.lean:133:0: 'LC004.twoFan_closed_choiceMajority' depends on axioms: [propext]
+info: ././././LC004/ChoiceComplexCancellation.lean:134:0: 'LC004.choiceMajority_closed_row_all' depends on axioms: [propext]
+ℹ [2794/2795] Replayed LC004.ChoiceRelationClassification
+info: ././././LC004/ChoiceRelationClassification.lean:125:0: 'LC004.choiceRelation_classification' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceRelationClassification.lean:126:0: 'LC004.choiceRelation_bijective_of_isolated_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2795/2795] Building LC004.ChoiceUniversalValue
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /tmp/lean-4.19.0-linux/bin/lean ././././LC004/ChoiceUniversalValue.lean -R ./././. -o ././.lake/build/lib/lean/LC004/ChoiceUniversalValue.olean -i ././.lake/build/lib/lean/LC004/ChoiceUniversalValue.ilean -c ././.lake/build/ir/LC004/ChoiceUniversalValue.c --json
+error: ././././LC004/ChoiceUniversalValue.lean:55:49: failed to synthesize
+  Nonempty (Sigma D)
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+info: ././././LC004/ChoiceUniversalValue.lean:111:0: 'LC004.choicePairProjection_closed' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/ChoiceUniversalValue.lean:112:0: 'LC004.choice_exists_universal_value' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceUniversalValue.lean:113:0: 'LC004.choice_universal_value_replace' depends on axioms: [propext, Quot.sound]
+error: Lean exited with code 1
+Some required builds logged failures:
+- LC004.ChoiceUniversalValue
+error: build failed

@@ -64,6 +64,24 @@ theorem faceAlternatingSum_delete_dominated {α : Type*} [DecidableEq α]
   rw [hzero, zero_add] at hsplit
   exact hsplit.symm
 
+/-- The alternating face sum of a cone is zero, including its empty face. -/
+theorem faceAlternatingSum_zero_of_cone {α : Type*} [DecidableEq α]
+    (F : Finset (Finset α)) (w : α)
+    (herase : ∀ s ∈ F, s.erase w ∈ F)
+    (hinsert : ∀ s ∈ F, insert w s ∈ F) : faceAlternatingSum F = 0 := by
+  classical
+  unfold faceAlternatingSum
+  have hmem : ∀ s ∈ F, faceToggle w s ∈ F := by
+    intro s hs
+    by_cases hw : w ∈ s
+    · simpa [faceToggle, hw] using herase s hs
+    · simpa [faceToggle, hw] using hinsert s hs
+  apply Finset.sum_involution (fun s _ => faceToggle w s)
+  · intro s _; exact faceToggle_sign w s
+  · intro s _ _; exact faceToggle_ne w s
+  · exact hmem
+  · intro s _; exact faceToggle_twice w s
+
 /-- The downward closure of a finite family of facets. -/
 def facetFaces {α : Type*} [DecidableEq α] (facets : Finset (Finset α)) :
     Finset (Finset α) := facets.biUnion Finset.powerset

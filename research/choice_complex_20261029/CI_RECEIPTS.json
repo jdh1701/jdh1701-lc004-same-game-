@@ -1,5 +1,5 @@
 {
-  "status": "queued at snapshot; no new PROVED-LEAN promotion",
+  "status": "success on verified commit 895dcec1830fc5f710c5db63d786690ca345c428",
   "proof_commit": "0c9a067f24988fd97483cfe4c73181b9fb1c6e4f",
   "runs": [
     {
@@ -35,5 +35,33 @@
     "independent_claude_run": 40935572104,
     "prior_sage_run": 40895249874
   },
-  "complete_all_five_theorem": "PROVED-PAPER; not fully formalized"
+  "complete_all_five_theorem": "PROVED-PAPER; not fully formalized",
+  "initial_snapshot_status": "queued at snapshot; no new PROVED-LEAN promotion",
+  "verified_commit": "895dcec1830fc5f710c5db63d786690ca345c428",
+  "successful_runs": [
+    {
+      "id": 40952508624,
+      "name": "Choice-complex cancellation audit",
+      "status": "completed",
+      "conclusion": "success",
+      "jobs": {
+        "sage": 123724018890,
+        "exact": 123724019186,
+        "lean": 123724019280
+      }
+    },
+    {
+      "id": 40952508600,
+      "name": "Cross-domain exact coefficient probes",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "sage_verified": {
+    "version": "10.10",
+    "cases": 38,
+    "euler": 1,
+    "reduced_rational_homology": "zero",
+    "control": "two components confirmed"
+  }
 }

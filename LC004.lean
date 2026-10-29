@@ -239,3 +239,5 @@ import LC004.RegionalClassCount
 import LC004.LabeledConnectedExpansion
 
 import LC004.ChoiceComplexCancellation
+
+import LC004.ChoiceFunctionalElimination

@@ -1,0 +1,17 @@
+{
+  "status": "new run awaiting upload; local verification passed",
+  "local": {
+    "modules": 190,
+    "audited_declarations": 2382,
+    "build": "pass",
+    "coverage": "pass",
+    "axiom_audit": "pass",
+    "negative_guards": "pass"
+  },
+  "baseline": {
+    "commit": "895dcec1830fc5f710c5db63d786690ca345c428",
+    "run_id": 40952508624,
+    "status": "success"
+  },
+  "scope": "reduced-system theorem and elimination invariant; not complete original-game cancellation"
+}

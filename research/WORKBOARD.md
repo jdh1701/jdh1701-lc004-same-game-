@@ -249,3 +249,37 @@ current; it outranks older journals and notes when they disagree.
   is not yet a Lean lemma); (3) identify `winningJoinCoefficient` with the
   alternating/face sum in Lean and assemble the two-certificate/zero cases.
   The all-five game statement remains PROVED-PAPER until (1)-(3) land.
+
+## 2026-10-29 19:35 Claude: support-restriction gap closed (commit c799420), CI green
+- GPT caught and killed its own near-miss: restricting a solution family to
+  supported values does NOT automatically preserve connectedness of the
+  nonuniversal exact-pair relations. Counterexample: A = {(x,x,y,y): x,y in
+  {0,1}}, ambient domain {0,1,2} (value 2 unused). Before restriction every
+  pair relation looks nonuniversal (vacuously, since 2 never occurs); after
+  restriction only two equality edges survive and the graph disconnects.
+  Alternating sum = 1, not 0. **Independently reproduced by Claude from
+  scratch** (both via the projection formula and a raw brute-force subset
+  sum): confirmed, sum = 1 exactly.
+- Fix: `ChoiceSupportedDomains.lean` / `ChoiceSupportedCancellation.lean`
+  introduce a corrected "covered cuts" criterion (every proper cut crossed
+  by an edge whose allowed pairs lie in one row-or-column union, tracked
+  BEFORE normalization) and assemble
+  `choiceAlternatingSum_zero_of_covered_binary_spec`: the final theorem now
+  needs only a binary spec, local majority closure, covered cuts, and
+  |A|>=3 -- no separate full-support, nonconstant-coordinate, global-closure,
+  binary-determination, or quotient hypothesis left for the caller. Constant
+  coordinates give a cone automatically; nonconstant normalizes to support
+  and reuses the complete abstract cancellation theorem (PROVED-LEAN,
+  f83b462).
+- **CI green on commit c799420** (receipts follow-up aabb8c5): all jobs
+  (lean build+axiom audit+coverage, sage, exact) success. 197 modules, 2494
+  audited declarations, standard axioms only.
+- GPT's suggested next game-bridge encoding: use all ten pair/triple splits
+  per five-class (not just the five internally-noncrossing ones), folding
+  internal-noncrossing into the binary compatibility predicate C itself --
+  proposed as a way to avoid separately proving the cyclic-adjacent-pair
+  enumeration lemma. Not yet implemented.
+- Remaining before the full all-five game theorem is PROVED-LEAN: the
+  finite five-class geometric bridge (deriving covered-cuts from actual
+  crossing-compatibility) and identifying `winningJoinCoefficient` with the
+  face sum.

@@ -11,7 +11,8 @@ theorem faceJoinPath_complete {n : Nat} (p q : ColorPattern n)
     r := FaceJoinPath p q
     iseqv := ⟨
       (fun a => Relation.ReflTransGen.refl),
-      (fun a b hab => by
+      (by
+        intro a b hab
         induction hab with
         | refl => exact Relation.ReflTransGen.refl
         | tail hab hbc ih =>

@@ -1,5 +1,24 @@
 {
-  "status": "new workflow awaiting commit/run creation",
+  "status": "queued at snapshot; no new PROVED-LEAN promotion",
+  "proof_commit": "0c9a067f24988fd97483cfe4c73181b9fb1c6e4f",
+  "runs": [
+    {
+      "id": 40952210810,
+      "name": "Choice-complex cancellation audit",
+      "head_sha": "0c9a067f24988fd97483cfe4c73181b9fb1c6e4f",
+      "status": "queued",
+      "conclusion": null,
+      "url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40952210810"
+    },
+    {
+      "id": 40952210619,
+      "name": "Cross-domain exact coefficient probes",
+      "head_sha": "0c9a067f24988fd97483cfe4c73181b9fb1c6e4f",
+      "status": "queued",
+      "conclusion": null,
+      "url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40952210619"
+    }
+  ],
   "local": {
     "lean_version": "4.19.0",
     "mathlib": "v4.19.0",

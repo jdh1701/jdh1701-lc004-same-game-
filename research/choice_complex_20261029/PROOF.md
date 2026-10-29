@@ -227,3 +227,10 @@ on all 38 nonfrozen geometric examples from our earlier sample and on all
 Mixed-size classes do not have this local classification; the earlier
 mixed-size counterexamples still stand. The number of surviving certificate
 pairs and the general connected kernel remain open.
+
+The abstract hypotheses cannot be dropped. Two independent binary coordinates
+have four solutions and alternating sum 1 (the complex is a four-cycle);
+their constraint graph is disconnected. A bijection on three values has
+three solutions and alternating sum -2 (three disjoint edges); it violates
+the matching-size restriction. Thus majority closure by itself does not
+establish the theorem.

@@ -1,5 +1,6 @@
 """Try to refute extension from geometric pair relations to abstract constraints."""
 import itertools,random,json,pathlib,collections,time
+from eliminate import structural_collapse,verify
 rng=random.Random(20261101);stats=collections.Counter();witnesses=[]
 for test in range(6000):
  j=rng.choice([3,4,5]);edges={(i,rng.randrange(i)) for i in range(1,j)}
@@ -19,6 +20,8 @@ for test in range(6000):
  if len(A)<3:continue
  if any(len({a[i] for a in A})==1 for i in range(j)):continue
  stats['nontrivial']+=1
+ verify(A,structural_collapse(A))
+ stats['paper_construction_verified']+=1
  c=sum((-1)**mask.bit_count()*len({tuple(a[i] for i in range(j) if mask>>i&1) for a in A}) for mask in range(1<<j))
  stats['coefficient_'+str(c)]+=1
  if c:

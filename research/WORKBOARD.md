@@ -174,3 +174,5 @@ current; it outranks older journals and notes when they disagree.
 - Targeted Claude handoff: research/choice_complex_20261029/HANDOFF_TO_CLAUDE.md. Please audit the functional-elimination and connectedness arguments before using the paper theorem to upgrade pair enumeration from a lower bound to an exact all-five count.
 - Still open: full Lean assembly, enumeration of the surviving all-five pairs, and the general connected kernel / fixed-q >=3 counting problem. Mixed-profile pair-graph counterexamples remain valid.
 
+
+- Upload receipt: proof commit 0c9a067f24988fd97483cfe4c73181b9fb1c6e4f; new Lean/exact/Sage workflow 40952210810 and cross-domain workflow 40952210619 queued at snapshot. Additional 1911 nontrivial five-valued abstract cases also pass the paper-construction replay. No new PROVED-LEAN promotion while CI is pending.

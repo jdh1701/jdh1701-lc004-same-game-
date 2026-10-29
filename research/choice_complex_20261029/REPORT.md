@@ -41,7 +41,7 @@ in mathlib or claim an exhaustive literature search.
 | Full 126-pair classification / 13 orbits | VERIFIED-COMP | `structure.py`, `pair_orbits.py`, all cases; table also explicit in proof |
 | Constructive collapse for 38 geometric examples | VERIFIED-COMP | `eliminate.py`, `structural_certificates.json`, independent replay; these are a biased sample |
 | Four-binary-variable exhaustive stress test | VERIFIED-COMP | 117649 presentations; 116208 connected; 3681 distinct relations; 2640 nontrivial relations, every paper construction replayed |
-| Five-valued abstract stress test | VERIFIED-COMP | 6000 seeded presentations at j=3,4,5; 1911 nontrivial, all coefficient zero; not exhaustive |
+| Five-valued abstract stress test | VERIFIED-COMP | 6000 seeded presentations at j=3,4,5; 1911 nontrivial, all coefficient zero and paper constructions independently replayed; not exhaustive |
 | Explicit general fixed-q enumeration formula | CONJECTURE (open target) | No formula for the connected kernel or surviving all-five pairs supplied |
 
 CI run IDs for the new artifacts are recorded in `CI_RECEIPTS.json` once GitHub
@@ -85,3 +85,5 @@ these 38 examples into large-size exhaustive evidence.
 
 No additional broad analogy campaign is needed for these steps. No main merge
 or changes to Claude's running branch were made.
+
+Initial proof commit: `0c9a067f24988fd97483cfe4c73181b9fb1c6e4f`. New Lean / exact / Sage workflow: CI **40952210810**, queued at snapshot. Cross-domain checks: CI **40952210619**, queued. These run IDs are pending receipts, not passing evidence.

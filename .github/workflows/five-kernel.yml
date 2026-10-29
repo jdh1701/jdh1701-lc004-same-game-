@@ -24,3 +24,21 @@ jobs:
         with:
           name: shard-${{ matrix.r }}
           path: shard.txt
+  analyze:
+    needs: shard
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: shard-*
+          path: shards
+      - run: |
+          g++ -O2 -o fk research/free_cumulants/five_kernel.cpp
+          ./fk 10 1 0 > k10.txt; ./fk 15 1 0 > k15.txt
+          cat shards/*/shard.txt > k20.txt
+          cd research/free_cumulants
+          for n in 10 15 20; do
+            python3 kernel_structure.py $n ../../k$n.txt | tee s$n.log
+            echo "::notice title=structure n=$n::$(tr '\n' ' ' < s$n.log | cut -c1-1500)"
+          done

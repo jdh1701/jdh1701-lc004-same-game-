@@ -1,0 +1,27 @@
+{
+  "repository": "jdh1701/jdh1701-lc004-same-game-",
+  "base_commit": "4b7ea924ca4376ab97ffd4eac4254aae3c0aa758",
+  "proof_commit": "5f4d56e608ea6fc024aca91af514c95ec33f6871",
+  "branch": "proof/rigid-face-geometry-20261029",
+  "toolchain": "leanprover/lean4:v4.19.0",
+  "workflow_run_id": 40828254711,
+  "workflow_job_id": 123296197224,
+  "workflow_url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40828254711",
+  "status": "completed",
+  "conclusion": "success",
+  "full_library_build": true,
+  "coverage_active_modules": 159,
+  "axiom_audit_project_declarations": 588,
+  "trusted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "source_guard_passed": true,
+  "finite_checks_passed": true,
+  "local_shim_used_on_hosted_runner": false,
+  "independent_kernel_replay": false,
+  "core_formal_authority_receipt_issued": false,
+  "full_face_decomposition_proved": false,
+  "general_enumeration_solved": false
+}

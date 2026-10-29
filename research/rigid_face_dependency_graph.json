@@ -7,9 +7,9 @@
     "LC004.FaceJoinPaths",
     "LC004.FaceInternalPaths",
     "LC004.FacePathFactorization",
-    "LC004.RigidFaceGeometry"
+    "LC004.HeavyFaceReconstruction"
   ],
-  "module_count": 38,
+  "module_count": 41,
   "modules": {
     "LC004.BlockCrossingInsertion": {
       "imports": [
@@ -122,6 +122,20 @@
       "imports": [],
       "sha256": "bee19c962aad38fc6f2a200836e49bf346ee0fd5cfdfb5e5371c6e0e5e3fc021"
     },
+    "LC004.HeavyFaceReconstruction": {
+      "imports": [
+        "LC004.HeavyFaceRestriction",
+        "LC004.RigidFaceArcCriterion"
+      ],
+      "sha256": "f3e17b9e8c907722f300638b6bc3293434076d5b3c4a041a635069d518459450"
+    },
+    "LC004.HeavyFaceRestriction": {
+      "imports": [
+        "LC004.RigidFaceGeometry",
+        "LC004.WinningConstraintGenerators"
+      ],
+      "sha256": "9273308aa24dbe97567fa1574a00d0be3a03a8ba79daa645600166c0e33d7da2"
+    },
     "LC004.HistoryCertificate": {
       "imports": [
         "LC004.CertificateInsertion",
@@ -202,6 +216,12 @@
         "LC004.RawMaxSemanticsBridge"
       ],
       "sha256": "b5e1302e2c76603f69b2aaff4830ded61fd1f8c7671a0ed306224ba1a0e31ff4"
+    },
+    "LC004.RigidFaceArcCriterion": {
+      "imports": [
+        "LC004.RigidFaceGeometry"
+      ],
+      "sha256": "bd37291f05b1cba08ac19a112988f0c1f8255cfd5e8f208a35da6275856c7a55"
     },
     "LC004.RigidFaceGeometry": {
       "imports": [

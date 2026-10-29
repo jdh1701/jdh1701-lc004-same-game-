@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-29",
+  "items": [
+    {
+      "id": "heavy-color-is-one-face",
+      "rejected_claim": "Every heavy color class occupies a single face.",
+      "witness": {
+        "word": "AABAAB",
+        "rigid_B": [
+          2,
+          5
+        ],
+        "heavy_faces": [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      },
+      "verification": "independent maximal-run solver and certificate enumeration",
+      "minimality": "Requires at least four heavy positions and two rigid positions; witness attains six.",
+      "correction": "Certificate blocks are confined, not color classes."
+    },
+    {
+      "id": "partial-face-join",
+      "rejected_claim": "Any subset of one geometric face preserves joins of actual certificate partitions.",
+      "witness": {
+        "word": "AAAA",
+        "certificate_c": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "certificate_d": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "selected": [
+          0,
+          2
+        ]
+      },
+      "verification": "global union-find connected; internal BFS disconnected",
+      "minimality": "First possible distinct noncrossing pair/triple certificate partitions occur at length four.",
+      "correction": "Use the full face carrier or separately prove path locality."
+    },
+    {
+      "id": "singleton-vacuity",
+      "rejected_claim": "Rigid noncrossing plus winning heavy-face words implies global winning without excluding singleton colors.",
+      "witness": {
+        "word": "A",
+        "rigid_classes": [],
+        "heavy_faces": [],
+        "wins": false
+      },
+      "verification": "maximal-run solver",
+      "correction": "Require all color classes to have size at least two."
+    },
+    {
+      "id": "arbitrary-restriction-join",
+      "rejected_claim": "Restriction preserves all binary equivalence joins.",
+      "witness": {
+        "p": [
+          [
+            0,
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "q": [
+          [
+            0
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "selected": [
+          0,
+          2
+        ]
+      },
+      "verification": "baseline exhaustive partition regression rerun",
+      "correction": "Locality is necessary; geometric edge saturation is sufficient."
+    },
+    {
+      "id": "count-certificates-as-patterns",
+      "rejected_claim": "The product of certificate counts is the count of winning color patterns.",
+      "witness": {
+        "word": "AAAA",
+        "distinct_certificate_partitions": 2,
+        "color_patterns": 1
+      },
+      "verification": "certificate enumerator",
+      "correction": "Separate partition-level bijections from color-pattern enumeration."
+    },
+    {
+      "id": "locality-stronger-than-join-equality",
+      "rejected_claim": "The baseline definition of FacePathLocality is strictly stronger than binary restriction/join equality.",
+      "verification": "Path soundness and completeness give both implications.",
+      "correction": "The definition is equivalent; edge saturation is a stronger, geometric sufficient condition.",
+      "formal_status": "equivalence explanation only; not added as a Lean theorem"
+    }
+  ],
+  "proof_attempts": {
+    "new_mathematical_compilation_failures": 0,
+    "environment_failures_preserved": "research/verification/local_environment.json"
+  },
+  "limitations": "Finite witnesses are computationally verified; no separate Lean finite-counterexample theorem added."
+}

@@ -67,11 +67,11 @@ theorem noncrossing_degree_realization (n : Nat) (d : Fin n → Nat)
           by_cases heq : x.val = gap
           · rw [if_pos heq]
             have hxi : Fin.cast hlen x = i := Fin.ext heq
-            rw [hxi]
+            exact (congrArg d hxi).symm
           · rw [if_neg heq]
             have hix : i < Fin.cast hlen x := by
               change i.val < x.val
-              exact lt_of_le_of_ne hx.1 heq.symm
+              exact lt_of_le_of_ne hx.1 (Ne.symm heq)
             exact (hsupport _ hix).symm
         · let j := survivingPosition gap hgap x hx
           have hback : oldPosition gap k j = x := oldPosition_surviving gap hgap x hx

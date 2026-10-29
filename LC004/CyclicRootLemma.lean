@@ -117,6 +117,7 @@ theorem rooted_rotation_iff_first_minimum {n : Nat} (f : Fin (n + 1) → Int)
         change r.val ≤ j.val at hrj
         omega
       rw [heq] at h
+      change cyclicHeight f r.val ≤ cyclicHeight f j.val
       omega
     · intro j hjr
       let cut := n + 1 + j.val - r.val
@@ -136,6 +137,7 @@ theorem rooted_rotation_iff_first_minimum {n : Nat} (f : Fin (n + 1) → Int)
         dsimp [cut]
         omega
       rw [heq] at h
+      change cyclicHeight f r.val < cyclicHeight f j.val
       omega
   · intro hmin cut hcut
     by_cases hwrap : n + 1 ≤ r.val + cut

@@ -202,3 +202,5 @@ import LC004.DegreePrefixArithmetic
 import LC004.NoncrossingDegreeRealization
 
 import LC004.CyclicRootLemma
+
+import LC004.CyclicWordEnumeration

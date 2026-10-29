@@ -31,6 +31,7 @@ jobs:
           python scripts/check_lean_coverage.py
           python research/noncrossing_components_20261029/check_components.py
           python research/connected_fiber_20261029/check_fibers.py
+          python research/weighted_fibers_20261029/check_expansion.py
           lake build 2>&1 | tee campaign-build.log
           lake env lean scripts/AxiomAudit.lean 2>&1 | tee campaign-axioms.log
           python scripts/test_verification_guards.py

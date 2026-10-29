@@ -99,6 +99,14 @@ add `ordinaryStepAt_commute` to a non-root module first, then promote.
 
 ## 5. After that (research, not yet tractable)
 
+**Update 2026-10-29:** the trace-quotient test has been run; see
+`research/trace_quotient/README.md`. Summary: trace classes equal deletion
+schemes (T = K, 0 exceptions). Schemes cut path multiplicity sharply
+(q=3, n=11: 76% of winners have one scheme vs 11% with one path), but the
+one-scheme share keeps falling with n. Picking the finest or coarsest scheme
+is not canonical (counterexamples at n=8: `abbaabba`, `aabbaabb`). The next
+test is a positional canonical-scheme rule.
+
 - **Trace-quotient enumeration.** Pair data suggests counting paths modulo
   commuting independent moves, with adjacent bridge pairs as the only
   non-commuting relations. Test whether this compresses B before investing

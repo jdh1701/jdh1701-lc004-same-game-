@@ -28,7 +28,7 @@ theorem small_class_eq_of_refines {n : Nat} {c x : ColorPattern n}
   have hsub2 : patternClassPositions c e ⊆ patternClassPositions x i := by
     intro j hj
     simp only [patternClassPositions, Finset.mem_filter, Finset.mem_univ, true_and] at hj he ⊢
-    exact x.trans' he (x.symm' (hcx hj))
+    exact x.trans' he (hcx hj)
   have hdisj : Disjoint (patternClassPositions c i) (patternClassPositions c e) := by
     rw [Finset.disjoint_left]
     intro j hj1 hj2

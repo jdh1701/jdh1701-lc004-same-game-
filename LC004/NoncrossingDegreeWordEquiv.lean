@@ -19,7 +19,7 @@ noncomputable def patternDegreeWord {n : Nat} (p : ColorPattern n) : CyclicDegre
 
 @[simp] theorem patternDegreeWord_castSucc {n : Nat} (p : ColorPattern n) (i : Fin n) :
     (patternDegreeWord p i.castSucc).val = patternOpeningDegree p i := by
-  simp only [patternDegreeWord, Fin.val_castSucc, i.isLt, dite_true]
+  simp only [patternDegreeWord, Fin.coe_castSucc, i.isLt, dite_true]
 
 @[simp] theorem patternDegreeWord_last {n : Nat} (p : ColorPattern n) :
     patternDegreeWord p (Fin.last n) = 0 := by
@@ -68,7 +68,7 @@ theorem rootedDegreeWord_iff {n : Nat} (w : CyclicDegreeWord n) :
 
 theorem patternDegreeWord_rooted {n : Nat} (p : ColorPattern n) :
     RootedDegreeWord (patternDegreeWord p) := by
-  apply rootedDegreeWord_iff.mpr
+  apply (rootedDegreeWord_iff (patternDegreeWord p)).mpr
   intro cut hcut
   have h := degreePrefix_castLE (fun i => (patternDegreeWord p i).val)
     (Nat.le_succ n) cut hcut
@@ -88,7 +88,7 @@ theorem rootedDegreeWord_last_zero {n : Nat} (w : CyclicDegreeWord n)
     (hsum : ∑ i, (w i).val = n) (hroot : RootedDegreeWord w) :
     (w (Fin.last n)).val = 0 := by
   classical
-  have hp := rootedDegreeWord_iff.mp hroot n (le_refl n)
+  have hp := (rootedDegreeWord_iff w).mp hroot n (le_refl n)
   have h := degreePrefix_castLE (fun i => (w i).val) (Nat.le_succ n) n (le_refl n)
   rw [degreePrefix_total] at h
   rw [Fin.sum_univ_castSucc] at hsum
@@ -119,7 +119,7 @@ noncomputable def noncrossingDegreeWordEquiv (n : Nat) :
       exact h
     have hdPrefix : ∀ cut, cut ≤ n → cut ≤ degreePrefix d cut := by
       intro cut hcut
-      have h := rootedDegreeWord_iff.mp w.property.2 cut hcut
+      have h := (rootedDegreeWord_iff w.val).mp w.property.2 cut hcut
       have heq := degreePrefix_castLE (fun i => (w.val i).val) (Nat.le_succ n) cut hcut
       rw [← heq] at h
       exact h

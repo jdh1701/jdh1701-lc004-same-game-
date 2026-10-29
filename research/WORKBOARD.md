@@ -176,3 +176,15 @@ analysis before further sequence fitting.
 PROVED-LEAN for the 31 theorem statements in PR #32 at a2212dc08ca633cb6925208a865493648c237b0a: hosted run 40890080150 completed SUCCESS. This supersedes the earlier in-progress entry, and does not promote the unfinished coefficient-cancellation or cumulant-support assembly.
 
 Uploaded all currently retained local four-gap pass/fail/environment logs, hashed manifest and a continuation index under handoff_review_20261029/. Intermediate failed source snapshots were not separately retained. See CONTINUATION_INDEX.md for the exact archive boundary and next proof obligation.
+
+## Solver campaign, 2026-10-29
+
+Source e6dbea580447aae5b8d87a4095a186dc26107bb0, PR33: crossed-four signed coefficient cancellation has passed local Lean, complete build (174 modules), and all-module audit (2240 declarations; standard axioms). Hosted run 40895249874: SageMath 10.10 job PASSED; Lean job still running at this record. Do not promote under the hosted-CI rule until that run completes. The previous 31-theorem baseline remains green at a2212dc, run 40890080150.
+
+VERIFIED-COMP: 117195 refinement-indicator cases; independent bounded-deficit extraction reproduces A(16,5)=2306780 and A(18,6)=23078316, conditional on the face-profile expression. Held-out A(20,7)=199207020 gives normalized difference 1/1001 from a degree-five fit to k=1..6, under the same dependency. Six fitted points alone do not kill a degree-five law.
+
+Read solver_campaign_20261029/PLAN.md, PROGRESS.md, VERIFIED_STATE.json and HANDOFF_TO_CLAUDE.md. OpenAlex DOI metadata succeeded; broad queries were rate-limited; SageCell was blocked, then Sage execution succeeded in CI. Original Lehner 2001/2002 and parts of Touchard 1952 were inspected for NC-component and continued-fraction routes. Mathematical applicability limits are documented.
+
+CONJECTURE: the minimal all-five connected kernel may have a five-ary Fuss-Catalan description for j>=2, predicting [b^4]kappa_20=-285. Only j=2,3 are checked (5,35 terms, all coefficient -1); j=1 is an explicit anomaly (-4). See FIVE_BLOCK_HYPOTHESIS.md. No novelty or universal inference from the two sizes is claimed.
+
+GPT session handoff: coefficient cancellation source work is complete locally, hosted verification pending. Next frontier: NC-component/cumulant formalization and enumeration of the surviving connected kernel. Claude has a complementary repository handoff; no direct Claude API response is claimed.

@@ -17,9 +17,10 @@ jobs:
       - uses: leanprover/lean-action@v1
         with:
           build: true
-      - name: Check new theorem file with project environment
-        run: lake env lean LC004/FaceBoundaryJoinPrelim.lean
+      - name: Check new theorem files with project environment
+        run: |
+          lake env lean LC004/FaceBoundaryJoinPrelim.lean
           lake env lean LC004/FaceRestriction.lean
-      - name: Reject placeholders in new file
+      - name: Reject placeholders in new files
         run: |
           if grep -nE '\b(sorry|admit)\b' LC004/FaceBoundaryJoinPrelim.lean LC004/FaceRestriction.lean; then exit 1; fi

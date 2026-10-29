@@ -215,3 +215,4 @@ import LC004.SecondDiagonalClosedForm
 import LC004.CertificateConstraintJoins
 import LC004.CertificateJoinIteration
 import LC004.PatternCoarseningCorrespondence
+import LC004.WinningConstraintGenerators

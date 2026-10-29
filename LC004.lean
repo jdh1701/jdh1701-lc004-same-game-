@@ -237,3 +237,5 @@ import LC004.NoncrossingConnectedFiber
 import LC004.RegionalClassCount
 
 import LC004.LabeledConnectedExpansion
+
+import LC004.ChoiceComplexCancellation

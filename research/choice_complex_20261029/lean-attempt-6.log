@@ -1,0 +1,6 @@
+LC004/ChoiceComplexCancellation.lean:22:4: warning: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+'LC004.faceAlternatingSum_delete_dominated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.facetAlternatingSum_erase_dominated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.twoFan_closed_choiceMajority' depends on axioms: [propext]
+'LC004.choiceMajority_closed_row_all' depends on axioms: [propext]

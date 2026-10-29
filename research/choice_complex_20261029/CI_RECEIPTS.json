@@ -1,0 +1,20 @@
+{
+  "status": "new workflow awaiting commit/run creation",
+  "local": {
+    "lean_version": "4.19.0",
+    "mathlib": "v4.19.0",
+    "build": "pass",
+    "active_modules": 186,
+    "axiom_audit": "pass",
+    "audited_declarations": 2342,
+    "negative_guards": "pass",
+    "sage": "unavailable"
+  },
+  "baseline": {
+    "commit": "0fb784ad778b0efe5f46260a24690c9b524b0f19",
+    "lean_run": 40931129635,
+    "independent_claude_run": 40935572104,
+    "prior_sage_run": 40895249874
+  },
+  "complete_all_five_theorem": "PROVED-PAPER; not fully formalized"
+}

@@ -1,0 +1,70 @@
+name: Choice-complex cancellation audit
+on:
+  push:
+    branches: [research/cross-domain-20261029]
+    paths:
+      - 'research/choice_complex_20261029/**'
+      - '.github/workflows/choice-complex.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.elan
+            .lake
+          key: ${{ runner.os }}-lean-v4.19.0-${{ hashFiles('lean-toolchain', 'lakefile.toml', 'lake-manifest.json') }}
+          restore-keys: |
+            ${{ runner.os }}-lean-v4.19.0-
+      - name: Install Lean
+        run: |
+          if [ ! -x "$HOME/.elan/bin/elan" ]; then
+            curl https://elan.lean-lang.org/elan-init.sh -sSf | sh -s -- -y
+          fi
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Compile and audit every active module
+        run: |
+          set -o pipefail
+          python scripts/check_lean_coverage.py
+          lake exe cache get
+          lake build LC004 2>&1 | tee choice-lean-build.log
+          lake env lean scripts/AxiomAudit.lean 2>&1 | tee choice-axiom-audit.log
+          python scripts/test_verification_guards.py
+          git diff --exit-code -- lake-manifest.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: choice-lean-receipt
+          path: |
+            choice-lean-build.log
+            choice-axiom-audit.log
+  exact:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify structural classifications
+        run: |
+          python research/choice_complex_20261029/structure.py
+          python research/choice_complex_20261029/pair_orbits.py
+          python research/choice_complex_20261029/verify_collapse.py
+          python research/choice_complex_20261029/eliminate.py
+          python research/choice_complex_20261029/abstract_csp.py
+          python research/choice_complex_20261029/boolean_exhaustive.py
+  sage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Independent Sage homology
+        run: |
+          set -o pipefail
+          docker run --rm -v "$PWD:/work" -w /work sagemath/sagemath@sha256:310dfe23fc786f3a5a06a7b0387c60201ec79b32c0db941b7624505ee5edb565 sage research/choice_complex_20261029/sage_check.sage 2>&1 | tee sage-choice.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: sage-choice-receipt
+          path: sage-choice.log

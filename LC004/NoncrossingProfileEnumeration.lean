@@ -18,8 +18,8 @@ noncomputable def noncrossingProfileWordEquiv (n : Nat)
       ⟨w.val, w.property.1.1, w.property.2⟩
     have hp : patternDegreeWord p.val = w.val := by
       exact congrArg (fun v : {w : CyclicDegreeWord n // (∑ i, (w i).val = n) ∧ RootedDegreeWord w} => v.val)
-      ((noncrossingDegreeWordEquiv n).apply_symm_apply
-        ⟨w.val, w.property.1.1, w.property.2⟩)
+        ((noncrossingDegreeWordEquiv n).apply_symm_apply
+          ⟨w.val, w.property.1.1, w.property.2⟩)
     ⟨p.val, p.property, (hprofile p.val).mpr (by rw [hp]; exact w.property.1.2)⟩
   left_inv p := by
     apply Subtype.ext

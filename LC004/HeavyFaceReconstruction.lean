@@ -1,4 +1,5 @@
 import LC004.HeavyFaceRestriction
+import LC004.RigidFaceArcCriterion
 
 namespace LC004
 

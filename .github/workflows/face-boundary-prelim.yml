@@ -5,6 +5,7 @@ on:
       - integration/alexandria-face-lemma-20261029
     paths:
       - 'LC004/FaceBoundaryJoinPrelim.lean'
+      - 'LC004/FaceRestriction.lean'
       - '.github/workflows/face-boundary-prelim.yml'
   workflow_dispatch:
 jobs:
@@ -18,6 +19,7 @@ jobs:
           build: true
       - name: Check new theorem file with project environment
         run: lake env lean LC004/FaceBoundaryJoinPrelim.lean
+          lake env lean LC004/FaceRestriction.lean
       - name: Reject placeholders in new file
         run: |
-          if grep -nE '\b(sorry|admit)\b' LC004/FaceBoundaryJoinPrelim.lean; then exit 1; fi
+          if grep -nE '\b(sorry|admit)\b' LC004/FaceBoundaryJoinPrelim.lean LC004/FaceRestriction.lean; then exit 1; fi

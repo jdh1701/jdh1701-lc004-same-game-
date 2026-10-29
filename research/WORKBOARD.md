@@ -188,3 +188,7 @@ Read solver_campaign_20261029/PLAN.md, PROGRESS.md, VERIFIED_STATE.json and HAND
 CONJECTURE: the minimal all-five connected kernel may have a five-ary Fuss-Catalan description for j>=2, predicting [b^4]kappa_20=-285. Only j=2,3 are checked (5,35 terms, all coefficient -1); j=1 is an explicit anomaly (-4). See FIVE_BLOCK_HYPOTHESIS.md. No novelty or universal inference from the two sizes is claimed.
 
 GPT session handoff: coefficient cancellation source work is complete locally, hosted verification pending. Next frontier: NC-component/cumulant formalization and enumeration of the surviving connected kernel. Claude has a complementary repository handoff; no direct Claude API response is claimed.
+
+## Final campaign CI receipt, 2026-10-29
+
+PROVED-LEAN: winningJoinCoefficient_crossed_four_zero and its prerequisite modules at e6dbea580447aae5b8d87a4095a186dc26107bb0. Hosted run 40895249874 completed SUCCESS, both Lean and Sage jobs green. Coverage 174 modules, axiom audit 2240 declarations (propext, Classical.choice, Quot.sound only), negative guards passed. This supersedes the in-progress entries above. The cumulant support assembly and full enumeration remain unresolved. See solver_campaign_20261029/HOSTED_SUCCESS.json and hosted-lean-success.log.

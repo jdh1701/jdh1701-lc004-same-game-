@@ -3,7 +3,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int n, J, T, R; int lab[40]; int cnt[8]; long long pref = 0;
-map<int,long long> dist; long long candidates = 0, withAtoms = 0;
+map<int,long long> dist; map<int,long long> atomDist; long long candidates = 0, withAtoms = 0;
 vector<array<signed char,40>> atoms; // block labels
 vector<int> pos[8];
 
@@ -80,7 +80,7 @@ void process() {
   if (atoms.empty()) { dist[0]++; return; }
   withAtoms++;
   int l[40]; for (int i = 0; i < n; i++) l[i] = lab[i]; Part tg = canon(l);
-  long long c = coefficient(tg); dist[(int)c]++; if (c) found.push_back(tg);
+  long long c = coefficient(tg); dist[(int)c]++; if (c) { found.push_back(tg); atomDist[(int)atoms.size()]++; }
 }
 void rec(int i, int used) {
   if (i == n) { process(); return; }
@@ -93,5 +93,6 @@ int main(int argc, char** argv) {
   printf("n=%d shard %d/%d candidates=%lld withAtoms=%lld dist:", n, R, T, candidates, withAtoms);
   for (auto& kv: dist) printf(" [%d]=%lld", kv.first, kv.second);
   printf("\n");
+  printf("atoms-below counts among nonzero:"); for (auto& kv: atomDist) printf(" [%d atoms]=%lld", kv.first, kv.second); printf("\n");
   for (auto& p: found) { for (int i = 0; i < n; i++) putchar('a' + p[i]); putchar('\n'); }
 }

@@ -18,7 +18,7 @@ jobs:
       - run: |
           ./fk 10 1 0 | head -1 | sed 's/^/validate10 /'
           ./fk 20 48 ${{ matrix.r }} > shard.txt
-          out=$(head -1 shard.txt)
+          out=$(head -2 shard.txt | tr "\n" " ")
           echo "::notice title=n20 shard ${{ matrix.r }}::$out"
       - uses: actions/upload-artifact@v4
         with:
@@ -38,6 +38,14 @@ jobs:
           ./fk 10 1 0 > k10.txt; ./fk 15 1 0 > k15.txt
           cat shards/*/shard.txt > k20.txt
           cd research/free_cumulants
+          grep -h 'atoms-below' shards/*/shard.txt > atoms20.txt || true
+          python3 - <<'PY2'
+          import re,collections
+          d=collections.Counter()
+          for l in open('atoms20.txt'):
+              for k,v in re.findall(r'\[(\d+) atoms\]=(\d+)',l): d[int(k)]+=int(v)
+          print('::notice title=atoms-below distribution n=20::'+str(dict(d)))
+          PY2
           for n in 10 15 20; do
             python3 kernel_structure.py $n ../../k$n.txt | tee s$n.log
             echo "::notice title=structure n=$n::$(tr '\n' ' ' < s$n.log | cut -c1-1500)"

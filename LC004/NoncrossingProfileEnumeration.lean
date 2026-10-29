@@ -17,16 +17,19 @@ noncomputable def noncrossingProfileWordEquiv (n : Nat)
     let p := (noncrossingDegreeWordEquiv n).symm
       ⟨w.val, w.property.1.1, w.property.2⟩
     have hp : patternDegreeWord p.val = w.val := by
-      exact congrArg Subtype.val ((noncrossingDegreeWordEquiv n).apply_symm_apply
+      exact congrArg (fun v : {w : CyclicDegreeWord n // (∑ i, (w i).val = n) ∧ RootedDegreeWord w} => v.val)
+      ((noncrossingDegreeWordEquiv n).apply_symm_apply
         ⟨w.val, w.property.1.1, w.property.2⟩)
     ⟨p.val, p.property, (hprofile p.val).mpr (by rw [hp]; exact w.property.1.2)⟩
   left_inv p := by
     apply Subtype.ext
-    exact congrArg Subtype.val ((noncrossingDegreeWordEquiv n).symm_apply_apply
+    exact congrArg (fun q : {p : ColorPattern n // PatternNoncrossing p} => q.val)
+      ((noncrossingDegreeWordEquiv n).symm_apply_apply
       ⟨p.val, p.property.1⟩)
   right_inv w := by
     apply Subtype.ext
-    exact congrArg Subtype.val ((noncrossingDegreeWordEquiv n).apply_symm_apply
+    exact congrArg (fun v : {w : CyclicDegreeWord n // (∑ i, (w i).val = n) ∧ RootedDegreeWord w} => v.val)
+      ((noncrossingDegreeWordEquiv n).apply_symm_apply
       ⟨w.val, w.property.1.1, w.property.2⟩)
 
 open scoped Classical in
@@ -44,10 +47,11 @@ theorem fourfold_noncrossing_count_closed (k : Nat) (hk : 1 ≤ k) :
     FourfoldPairPattern (fun w => SingleExceptionalWord w 4) fourfold_iff_singleExceptionalWord)
   change fourfoldNoncrossingPatternCount (2 * k + 2) =
     Fintype.card {w : CyclicDegreeWord (2 * k + 2) // P w ∧ RootedDegreeWord w} at heq
-  rw [heq]
-  rw [Nat.one_mul] at hmark
-  rw [← hmark]
-  exact single_anchored_word_count k hk
+  calc
+    _ = Fintype.card {w : CyclicDegreeWord (2 * k + 2) // P w ∧ RootedDegreeWord w} := heq
+    _ = Fintype.card {w : CyclicDegreeWord (2 * k + 2) // P w ∧ (w 0).val = 4} := by
+      simpa only [Nat.one_mul] using hmark.symm
+    _ = _ := single_anchored_word_count k hk
 
 #print axioms fourfold_noncrossing_count_closed
 

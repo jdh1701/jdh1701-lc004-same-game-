@@ -88,14 +88,16 @@ noncomputable def doubleAnchoredWordEquiv (k : Nat) (hk : 2 ≤ k) :
         rw [Fin.sum_univ_succ, w.property.2] at ht
         dsimp only at hsum ht ⊢
         omega
-      · simp only [Finset.mem_filter, Finset.mem_univ, true_and, hs.1]
+      · simp only [Finset.mem_filter, Finset.mem_univ, true_and]
+        change ¬ (w.val j.succ).val = 2
+        have hj : (w.val j.succ).val = 3 := hs.1
         omega⟩⟩
   invFun x :=
     let j := x.1
     let s := x.2.val
     let w := doubleSubsetDegreeWord k hk j s
     have hzero : (w 0).val = 3 := rfl
-    have hj : (w j.succ).val = 3 := by simp only [w, doubleSubsetDegreeWord, Fin.cases_succ, if_pos rfl]
+    have hj : (w j.succ).val = 3 := by simp [w, doubleSubsetDegreeWord]
     have hrest : ∀ t, t ≠ j → (w t.succ).val = 0 ∨ (w t.succ).val = 2 := by
       intro t ht
       dsimp only [w, doubleSubsetDegreeWord, Fin.cases_succ]
@@ -111,11 +113,9 @@ noncomputable def doubleAnchoredWordEquiv (k : Nat) (hk : 2 ≤ k) :
         dsimp only [w, doubleSubsetDegreeWord, Fin.cases_succ]
         by_cases ht : t = j
         · subst t
-          simp only [if_pos rfl]
           have hnot := x.2.property.2
           change j ∉ s at hnot
-          simp only [hnot, iff_false]
-          omega
+          simp [hnot]
         · rw [if_neg ht]
           split_ifs <;> simp_all
       rw [hfilter, x.2.property.1] at hs
@@ -143,7 +143,7 @@ noncomputable def doubleAnchoredWordEquiv (k : Nat) (hk : 2 ≤ k) :
     rcases x with ⟨j, ⟨s, hcard, hnot⟩⟩
     let w := doubleSubsetDegreeWord k hk j s
     have hz : (w 0).val = 3 := rfl
-    have hj : (w j.succ).val = 3 := by simp only [w, doubleSubsetDegreeWord, Fin.cases_succ, if_pos rfl]
+    have hj : (w j.succ).val = 3 := by simp [w, doubleSubsetDegreeWord]
     have hrest : ∀ t, t ≠ j → (w t.succ).val = 0 ∨ (w t.succ).val = 2 := by
       intro t ht
       dsimp only [w, doubleSubsetDegreeWord, Fin.cases_succ]
@@ -153,7 +153,8 @@ noncomputable def doubleAnchoredWordEquiv (k : Nat) (hk : 2 ≤ k) :
       (doubleExceptionalWord_at_anchor w 3 (by omega) hz).mpr ⟨j, hj, hrest⟩
     have hpos : anchoredTriplePosition w hw hz = j := by
       have hs := anchoredTriplePosition_spec w hw hz
-      by_contra h
+      apply Classical.byContradiction
+      intro h
       rcases hs.2 j (Ne.symm h) with h | h <;> omega
     apply Sigma.ext hpos
     apply (Subtype.heq_iff_coe_eq (fun t => by dsimp only; rw [hpos])).mpr
@@ -163,8 +164,7 @@ noncomputable def doubleAnchoredWordEquiv (k : Nat) (hk : 2 ≤ k) :
     simp only [doubleSubsetDegreeWord, Fin.cases_succ]
     by_cases ht : t = j
     · subst t
-      simp only [if_pos rfl, hnot, iff_false]
-      omega
+      simp [hnot]
     · rw [if_neg ht]
       split_ifs <;> simp_all
 
@@ -186,8 +186,6 @@ theorem double_anchored_word_count (k : Nat) (hk : 2 ≤ k) :
     rw [Fintype.card_congr (Equiv.subtypeEquivRight hpred), Fintype.card_coe,
       Finset.card_powersetCard, Finset.card_erase_of_mem (Finset.mem_univ j),
       Finset.card_univ, Fintype.card_fin]
-    congr 1
-    omega
   simp only [hcard, Finset.sum_const, Finset.card_univ, Fintype.card_fin, nsmul_eq_mul]
   simp
 

@@ -227,3 +227,13 @@ import LC004.CollectedJoinCoefficients
 import LC004.NoncrossingRegionEquivalence
 import LC004.FourGapIndicator
 import LC004.CrossedFourCancellation
+import LC004.NoncrossingCoefficientPushforward
+import LC004.NoncrossingCoefficientProduct
+
+import LC004.NoncrossingClosureRegions
+
+import LC004.NoncrossingConnectedFiber
+
+import LC004.RegionalClassCount
+
+import LC004.LabeledConnectedExpansion

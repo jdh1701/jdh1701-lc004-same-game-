@@ -1,0 +1,39 @@
+{
+  "status": "VERIFIED-COMP",
+  "rows": [
+    {
+      "n": 0,
+      "checks": 1
+    },
+    {
+      "n": 1,
+      "checks": 1
+    },
+    {
+      "n": 2,
+      "checks": 3
+    },
+    {
+      "n": 3,
+      "checks": 12
+    },
+    {
+      "n": 4,
+      "checks": 56
+    },
+    {
+      "n": 5,
+      "checks": 288
+    },
+    {
+      "n": 6,
+      "checks": 1586
+    },
+    {
+      "n": 7,
+      "checks": 9201
+    }
+  ],
+  "total": 11148,
+  "scope": "all patterns n=0..7; includes empty case; not a universal proof of class-count additivity"
+}

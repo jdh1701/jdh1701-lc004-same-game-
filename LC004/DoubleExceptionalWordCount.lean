@@ -78,6 +78,7 @@ noncomputable def doubleAnchoredWordEquiv (k : Nat) (hk : 2 ≤ k) :
       · have hsum := tail_single_three_sum (fun t => (w.val t.succ).val) j hs.1 hs.2
         have ht := w.property.1.1
         rw [Fin.sum_univ_succ, w.property.2] at ht
+        dsimp only at hsum ht ⊢
         omega
       · simp only [Finset.mem_filter, Finset.mem_univ, true_and, hs.1]
         omega⟩⟩
@@ -92,7 +93,7 @@ noncomputable def doubleAnchoredWordEquiv (k : Nat) (hk : 2 ≤ k) :
       intro t ht
       dsimp only [w, Fin.cases_succ]
       rw [if_neg ht]
-      split_ifs <;> simp only [Fin.val_zero] <;> omega
+      split_ifs <;> simp
     ⟨w, ⟨by
       rw [Fin.sum_univ_succ, hzero]
       have hs := tail_single_three_sum (fun t => (w t.succ).val) j hj hrest
@@ -111,6 +112,7 @@ noncomputable def doubleAnchoredWordEquiv (k : Nat) (hk : 2 ≤ k) :
         · rw [if_neg ht]
           split_ifs <;> simp_all
       rw [hfilter, x.2.property.1] at hs
+      dsimp only at hs ⊢
       omega,
       (doubleExceptionalWord_at_anchor w 3 (by omega) hzero).mpr ⟨j, hj, hrest⟩⟩, hzero⟩
   left_inv w := by
@@ -140,7 +142,7 @@ noncomputable def doubleAnchoredWordEquiv (k : Nat) (hk : 2 ≤ k) :
       intro t ht
       dsimp only [w, Fin.cases_succ]
       rw [if_neg ht]
-      split_ifs <;> simp only [Fin.val_zero] <;> omega
+      split_ifs <;> simp
     have hw : DoubleExceptionalWord w 3 :=
       (doubleExceptionalWord_at_anchor w 3 (by omega) hz).mpr ⟨j, hj, hrest⟩
     have hpos : anchoredTriplePosition w hw hz = j := by
@@ -151,7 +153,7 @@ noncomputable def doubleAnchoredWordEquiv (k : Nat) (hk : 2 ≤ k) :
     apply (Subtype.heq_iff_coe_eq (fun t => by dsimp only; rw [hpos])).mpr
     ext t
     simp only [Finset.mem_filter, Finset.mem_univ, true_and]
-    dsimp only
+    try dsimp only
     simp only [Fin.cases_succ]
     by_cases ht : t = j
     · subst t

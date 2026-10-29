@@ -45,6 +45,7 @@ noncomputable def singleAnchoredWordEquiv (k : Nat) (hk : 1 ≤ k) :
     have hs := binary_vector_sum (fun j => (w.val j.succ).val) hrest
     have ht := w.property.1.1
     rw [Fin.sum_univ_succ, w.property.2] at ht
+    dsimp only at hs ht ⊢
     omega⟩
   invFun s :=
     let w : CyclicDegreeWord (2 * k + 2) := Fin.cases ⟨4, by omega⟩
@@ -52,8 +53,9 @@ noncomputable def singleAnchoredWordEquiv (k : Nat) (hk : 1 ≤ k) :
     have hzero : (w 0).val = 4 := by rfl
     have hrest : ∀ j : Fin (2 * k + 2), (w j.succ).val = 0 ∨ (w j.succ).val = 2 := by
       intro j
-      dsimp only [w, Fin.cases_succ]
-      split_ifs <;> simp only [Fin.val_zero] <;> omega
+      by_cases hj : j ∈ s.val
+      · right; simp only [w, Fin.cases_succ, if_pos hj]
+      · left; simp only [w, Fin.cases_succ, if_neg hj, Fin.val_zero]
     ⟨w, ⟨by
       rw [Fin.sum_univ_succ, hzero]
       have hs := binary_vector_sum (fun j => (w j.succ).val) hrest
@@ -64,6 +66,7 @@ noncomputable def singleAnchoredWordEquiv (k : Nat) (hk : 1 ≤ k) :
         dsimp only [w, Fin.cases_succ]
         split_ifs <;> simp_all
       rw [hfilter, s.property] at hs
+      dsimp only at hs ⊢
       omega,
       (singleExceptionalWord_at_anchor w 4 (by omega) hzero).mpr hrest⟩, hzero⟩
   left_inv w := by
@@ -86,7 +89,7 @@ noncomputable def singleAnchoredWordEquiv (k : Nat) (hk : 1 ≤ k) :
     apply Subtype.ext
     ext j
     simp only [Finset.mem_filter, Finset.mem_univ, true_and]
-    dsimp only
+    try dsimp only
     simp only [Fin.cases_succ]
     split_ifs <;> simp_all
 

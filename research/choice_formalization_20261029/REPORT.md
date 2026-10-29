@@ -110,3 +110,6 @@ The local loader shim is an environment workaround for executable discovery;
 GitHub CI uses the ordinary pinned Lean 4.19.0 toolchain. The CI workflow now
 also triggers on Lean source/import changes so these additions cannot miss
 the full build and axiom audit.
+
+
+Follow-up: exact proof-commit CI 40963222453 at 1ff8e2c69979c75bdd5a67437151abf7df34e433 is now successful. The reduced-system results have green CI. Further global quotient/boundary assembly is documented in `../choice_reduction_20261029/REPORT.md`; its new exact-commit CI is tracked separately.

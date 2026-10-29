@@ -1,0 +1,25 @@
+{
+  "status": "awaiting new proof-commit run; local verification passed",
+  "local": {
+    "modules": 195,
+    "audited_declarations": 2450,
+    "build": "pass",
+    "coverage": "pass",
+    "axiom_audit": "pass",
+    "negative_guards": "pass"
+  },
+  "baseline": {
+    "commit": "1ff8e2c69979c75bdd5a67437151abf7df34e433",
+    "run_id": 40963222453,
+    "status": "success"
+  },
+  "claude_integration": {
+    "source_commit": "6bf6206e6a0949b81073c671f2e6070d773bfee0",
+    "tested_commit": "afe821e682b654e33298fe1521a9724a625678ce",
+    "run_id": 40965919575,
+    "status": "success",
+    "file": "LC004/ChoiceBinaryClosure.lean",
+    "source_bytes_match": true
+  },
+  "scope": "complete abstract cancellation; five-class geometry and original coefficient bridge pending"
+}

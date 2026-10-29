@@ -250,3 +250,22 @@ their constraint graph is disconnected. A bijection on three values has
 three solutions and alternating sum -2 (three disjoint edges); it violates
 the matching-size restriction. Thus majority closure by itself does not
 establish the theorem.
+
+
+## 2026-10-29 follow-up: abstract quotient and boundary assembly
+
+The global quotient construction, binary-description and connectedness
+preservation, injective face-sum transport, and the one-component/two-solution
+bound now compile in Lean. The main abstract theorem is
+`choiceAlternatingSum_zero_of_local_constraints` in
+`LC004/ChoiceAbstractCancellation.lean`. It includes Claude's binary-closure
+lemma from PR #36. New details, source provenance, failures, exact hypotheses
+and CI receipts are in `../choice_reduction_20261029/`.
+
+The size bound uses an explicit covered-edge hypothesis; it does not follow
+from an arbitrary abstract bijection. Restriction to supported domains and
+finite five-class geometry must still connect the actual certificate choices
+to these hypotheses, and the coefficient/face-sum identification still needs
+Lean assembly. The full all-five game statement remains PROVED-PAPER until
+those links are supplied. This supersedes the older list of missing abstract
+quotient steps in Section 5 without claiming the original game bridge is done.

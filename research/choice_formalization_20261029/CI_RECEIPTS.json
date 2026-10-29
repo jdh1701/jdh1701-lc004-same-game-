@@ -1,5 +1,24 @@
 {
-  "status": "new run awaiting upload; local verification passed",
+  "status": "queued at snapshot; local verification passed",
+  "proof_commit": "1ff8e2c69979c75bdd5a67437151abf7df34e433",
+  "runs": [
+    {
+      "id": 40963222410,
+      "name": "Cross-domain exact coefficient probes",
+      "status": "queued",
+      "conclusion": null,
+      "url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40963222410",
+      "head_sha": "1ff8e2c69979c75bdd5a67437151abf7df34e433"
+    },
+    {
+      "id": 40963222453,
+      "name": "Choice-complex cancellation audit",
+      "status": "queued",
+      "conclusion": null,
+      "url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40963222453",
+      "head_sha": "1ff8e2c69979c75bdd5a67437151abf7df34e433"
+    }
+  ],
   "local": {
     "modules": 190,
     "audited_declarations": 2382,
@@ -13,5 +32,5 @@
     "run_id": 40952508624,
     "status": "success"
   },
-  "scope": "reduced-system theorem and elimination invariant; not complete original-game cancellation"
+  "scope": "reduced-system cancellation and coordinate-deletion invariant; not complete original-game cancellation"
 }

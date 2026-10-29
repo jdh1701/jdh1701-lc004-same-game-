@@ -1,0 +1,23 @@
+name: join-rigid-blocks
+on:
+  push:
+    branches: [research/free-cumulants-20261029]
+    paths: ['LC004/JoinRigidBlocks.lean', '.github/workflows/join-rigid-blocks.yml']
+  workflow_dispatch:
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          build: true
+          build-args: LC004.JoinRigidBlocks
+      - run: |
+          cat > /tmp/A.lean <<'L'
+          import LC004.JoinRigidBlocks
+          #print axioms LC004.small_class_eq_of_refines
+          L
+          lake env lean /tmp/A.lean | tee ax.log
+          echo "::notice title=axioms::$(tr '\n' ' ' < ax.log)"

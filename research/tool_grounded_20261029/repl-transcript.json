@@ -1,0 +1,188 @@
+{
+  "source_sha256": "fec925034b2526cf9648bb884e4d5dbfe093694a6f40763aa3b6859786ba82be",
+  "commands": [
+    {
+      "cmd": "import research.HeavyGreedyObstruction\n\nnamespace LC004\n\n/-- Every color appears four times in these two ternary heavy words. -/\ndef continuationWordLeft : RawState := [0,0,0,1,1,0,1,2,2,2,1,2]\ndef continuationWordRight : RawState := [0,0,0,1,0,1,1,2,2,2,1,2]\n\n/-- A proposed summary retaining all color multiplicities, the entire run-color\nsequence, the number of heavy runs, and both exact boundary-run lengths. -/\ndef continuationSummary (w : RawState) :=\n  (w.count 0, w.count 1, w.count 2, (encode w).map Prod.fst,\n   ((encode w).filter (fun p => p.2)).length,\n   (w.takeWhile (fun a => a == w.headD 0)).length,\n   (w.reverse.takeWhile (fun a => a == w.reverse.headD 0)).length)\n\ntheorem continuation_summary_eq :\n    continuationSummary continuationWordLeft =\n      continuationSummary continuationWordRight := by decide\n\ntheorem continuation_heavy_counts :\n    ([0,1,2].map (fun a => continuationWordLeft.count a)) = [4,4,4] \u2227\n    ([0,1,2].map (fun a => continuationWordRight.count a)) = [4,4,4] := by decide\n\ntheorem continuation_not_solvable {s : RunState} (fuel : Nat)\n    (hlen : s.length \u2264 fuel) (hfalse : greedyAuditSearch fuel s = false) :\n    \u00ac RunSolvable s := by\n  intro h\n  have hh := greedyAuditSearch_complete fuel s hlen h\n  rw [hfalse] at hh\n  contradiction\n\ntheorem continuation_left_loses : \u00ac RunSolvable (encode continuationWordLeft) :=\n  continuation_not_solvable 7 (by decide) (by decide)\n\ntheorem continuation_right_loses : \u00ac RunSolvable (encode continuationWordRight) :=\n  continuation_not_solvable 7 (by decide) (by decide)\n\ntheorem continuation_left_wins_after_C :\n    RunSolvable (encode (continuationWordLeft ++ [2])) := by\n  have h : SuccessfulPath (encode (continuationWordLeft ++ [2])) [1,0,1,0,0] := by rfl\n  obtain \u27e8p, hp, _\u27e9 := successfulPath_has_completePath h\n  exact completePath_solvable hp\n\ntheorem continuation_right_loses_after_C :\n    \u00ac RunSolvable (encode (continuationWordRight ++ [2])) :=\n  continuation_not_solvable 7 (by decide) (by decide)\n\n/-- Equal summaries and equal present winning status do not determine\nwinning status after appending just one cell, even for ternary heavy inputs. -/\ntheorem continuation_summary_collision :\n    continuationSummary continuationWordLeft = continuationSummary continuationWordRight \u2227\n    \u00ac RunSolvable (encode continuationWordLeft) \u2227\n    \u00ac RunSolvable (encode continuationWordRight) \u2227\n    RunSolvable (encode (continuationWordLeft ++ [2])) \u2227\n    \u00ac RunSolvable (encode (continuationWordRight ++ [2])) :=\n  \u27e8continuation_summary_eq, continuation_left_loses, continuation_right_loses,\n    continuation_left_wins_after_C, continuation_right_loses_after_C\u27e9\n\nopen Lean Elab Command in\nrun_cmd do\n  for name in [``continuation_summary_eq, ``continuation_heavy_counts,\n      ``continuation_not_solvable, ``continuation_left_loses,\n      ``continuation_right_loses, ``continuation_left_wins_after_C,\n      ``continuation_right_loses_after_C, ``continuation_summary_collision] do\n    let axs \u2190 collectAxioms name\n    for ax in axs do\n      unless ax == ``propext || ax == ``Classical.choice || ax == ``Quot.sound do\n        throwError \"Forbidden axiom {ax} in {name}\"\n  logInfo \"CONTINUATION AUDIT PASS: 8 theorems\"\n\nend LC004\n"
+    },
+    {
+      "cmd": "example : LC004.RunSolvable (LC004.encode (LC004.continuationWordLeft ++ [2])) := LC004.continuation_left_wins_after_C",
+      "env": 0
+    },
+    {
+      "cmd": "example : (1 : Nat) = 2 := by rfl",
+      "env": 0
+    },
+    {
+      "cmd": "example : (2 : Nat) = 2 := by rfl",
+      "env": 0
+    }
+  ],
+  "responses": [
+    {
+      "messages": [
+        {
+          "severity": "info",
+          "pos": {
+            "line": 17,
+            "column": 0
+          },
+          "endPos": {
+            "line": 19,
+            "column": 60
+          },
+          "data": "Goals accomplished!"
+        },
+        {
+          "severity": "info",
+          "pos": {
+            "line": 21,
+            "column": 0
+          },
+          "endPos": {
+            "line": 23,
+            "column": 81
+          },
+          "data": "Goals accomplished!"
+        },
+        {
+          "severity": "info",
+          "pos": {
+            "line": 25,
+            "column": 0
+          },
+          "endPos": {
+            "line": 31,
+            "column": 15
+          },
+          "data": "Goals accomplished!"
+        },
+        {
+          "severity": "info",
+          "pos": {
+            "line": 33,
+            "column": 0
+          },
+          "endPos": {
+            "line": 34,
+            "column": 53
+          },
+          "data": "Goals accomplished!"
+        },
+        {
+          "severity": "info",
+          "pos": {
+            "line": 36,
+            "column": 0
+          },
+          "endPos": {
+            "line": 37,
+            "column": 53
+          },
+          "data": "Goals accomplished!"
+        },
+        {
+          "severity": "info",
+          "pos": {
+            "line": 39,
+            "column": 0
+          },
+          "endPos": {
+            "line": 43,
+            "column": 32
+          },
+          "data": "Goals accomplished!"
+        },
+        {
+          "severity": "info",
+          "pos": {
+            "line": 45,
+            "column": 0
+          },
+          "endPos": {
+            "line": 47,
+            "column": 53
+          },
+          "data": "Goals accomplished!"
+        },
+        {
+          "severity": "info",
+          "pos": {
+            "line": 51,
+            "column": 0
+          },
+          "endPos": {
+            "line": 58,
+            "column": 69
+          },
+          "data": "Goals accomplished!"
+        },
+        {
+          "severity": "info",
+          "pos": {
+            "line": 61,
+            "column": 0
+          },
+          "endPos": {
+            "line": 61,
+            "column": 7
+          },
+          "data": "CONTINUATION AUDIT PASS: 8 theorems"
+        }
+      ],
+      "env": 0
+    },
+    {
+      "messages": [
+        {
+          "severity": "info",
+          "pos": {
+            "line": 1,
+            "column": 0
+          },
+          "endPos": {
+            "line": 1,
+            "column": 118
+          },
+          "data": "Goals accomplished!"
+        }
+      ],
+      "env": 1
+    },
+    {
+      "messages": [
+        {
+          "severity": "error",
+          "pos": {
+            "line": 1,
+            "column": 30
+          },
+          "endPos": {
+            "line": 1,
+            "column": 33
+          },
+          "data": "tactic 'rfl' failed, the left-hand side\n  1\nis not definitionally equal to the right-hand side\n  2\n\u22a2 1 = 2"
+        }
+      ],
+      "env": 2
+    },
+    {
+      "messages": [
+        {
+          "severity": "info",
+          "pos": {
+            "line": 1,
+            "column": 0
+          },
+          "endPos": {
+            "line": 1,
+            "column": 33
+          },
+          "data": "Goals accomplished!"
+        }
+      ],
+      "env": 3
+    }
+  ],
+  "rejected_environment_reused": false,
+  "status": "Three intended acceptances; false theorem rejected; new theorem axiom audit passed"
+}

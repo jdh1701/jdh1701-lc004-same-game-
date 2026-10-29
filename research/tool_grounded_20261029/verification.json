@@ -1,0 +1,33 @@
+{
+  "schema": "lc004-tool-grounded-research/1",
+  "base_commit": "5332d6f2db15e3e988814fb8e38e187b13c9cc13",
+  "local_native_lean": "pass: eight new theorems, original axiom allowlist",
+  "local_repl": "pass: exact source, incremental proof, rejection test and safe environment reuse",
+  "symbolic_and_smt": "exact experiments passed; selected repair failed hold-out as recorded",
+  "claims_not_Lean_certified": [
+    "Hankel ranks and finite determinant computation",
+    "SMT feature minimization",
+    "Held-out synthesis failure"
+  ],
+  "source_hashes": {
+    ".github/workflows/heavy-greedy-obstruction.yml": "db2985ae2ccb2208e4ac2ffa6c9e1522e024840e46f09a2383664cc30372cb39",
+    "research/ContinuationSummaryObstruction.lean": "fec925034b2526cf9648bb884e4d5dbfe093694a6f40763aa3b6859786ba82be",
+    "research/heavy_greedy_verification.json": "94173b1c8fc9eb420b692f4873c415c94547646157512e74c549d3f73c2c78f7",
+    "research/tool_grounded_20261029/REPORT.md": "2f6fd4dbd9eff138a3d074c3636410629049c80885181ae5ef249a8a43511191",
+    "research/tool_grounded_20261029/bootstrap_repl.py": "da0d61f61c875d2303638cc95aaefe8861796e6d1e4bccae7873781692e2c20c",
+    "research/tool_grounded_20261029/continuation-lean.log": "7be0bf24d5b2e0a0c9a7e0e4323ad352c46fd605aab2ae7e09b86e61ba25a297",
+    "research/tool_grounded_20261029/openalex-binary-work.json": "f9ffb0988b9dc0a895492b46e76b008bdf17c5f98e4ed6221ce70de5374c27ae",
+    "research/tool_grounded_20261029/openalex-citing-works.json": "b592ce456a9c9076dced809500ef2e9fea176db776b06ef0410c7a65af11d194",
+    "research/tool_grounded_20261029/openalex-kurz-search.json": "4f9c28bdbbe8e3cb6d57fdb6743815bd76e6a9690990b0dbbda8a2c3014e9581",
+    "research/tool_grounded_20261029/repl-smoke.jsonl": "b0df21f6db5f08014dd5f5517c3cefebae0c4cc00d784785d703e95ac2504bf7",
+    "research/tool_grounded_20261029/repl-source-manifest.json": "f6a7b565e287f7f0e1983f7dd98ced42cf24f8f616f098fb4e80b429e7088d9a",
+    "research/tool_grounded_20261029/repl-transcript.json": "970572e119a3d1cab9d526c81f8553890e0cadf7202289e9b47b54ae546da184",
+    "research/tool_grounded_20261029/repl_check.py": "30e7c18ea33ceef1e70939722df66b4b396b967d1de069493c166acc8ba433c4",
+    "research/tool_grounded_20261029/requirements.txt": "3a12385869028b47fef07fbd4058a69be6d7c8cf64277c5fd786096a6a8ad835",
+    "research/tool_grounded_20261029/residual-results.json": "9a82e4a78af8d7e452cf5d44406782cb7241632f589f08bd95ec990aef163e46",
+    "research/tool_grounded_20261029/residual_hankel.py": "e523f0338c1ab5e4faddf1c77e7f54e5134ae7de5974aedbbe4b63df8b7d4cab",
+    "research/tool_grounded_20261029/summary-repair-results.json": "1982eb0409206e0d5682a0fb6705d114e19e302aa27ff68fee81c9cffcbfdc58",
+    "research/tool_grounded_20261029/summary_repair.py": "398c8d6140073bacf6198a47a561554ab4081f3c6fba6cf64dc55105d17ccba2",
+    "research/tool_grounded_20261029/tool-inventory.json": "5bb56027fb74096776f621384e40b2093c9e0504861abf188d390faedbde07e9"
+  }
+}

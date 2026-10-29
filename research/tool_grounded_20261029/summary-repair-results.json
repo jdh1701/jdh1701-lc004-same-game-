@@ -1,0 +1,88 @@
+{
+  "training_length": 12,
+  "training_ternary_heavy_patterns": 5775,
+  "distinct_constraints": 74,
+  "selected_run_positions": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+  ],
+  "minimum_retained_positions": 6,
+  "minimum_independently_checked": true,
+  "heldout_length": 13,
+  "heldout_ternary_heavy_patterns": 45045,
+  "survives_heldout": false,
+  "witness": {
+    "left": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2
+    ],
+    "right": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2
+    ],
+    "suffix": 2,
+    "left_wins": false,
+    "right_wins": true
+  },
+  "heldout_counterexample": {
+    "left": [
+      0,
+      0,
+      1,
+      2,
+      1,
+      0,
+      2,
+      1,
+      1,
+      2,
+      0,
+      1,
+      2
+    ],
+    "right": [
+      0,
+      0,
+      1,
+      2,
+      1,
+      0,
+      2,
+      1,
+      2,
+      0,
+      1,
+      1,
+      2
+    ],
+    "suffix": 1,
+    "left_wins": true,
+    "right_wins": false
+  },
+  "scope": "One-letter continuations of losing, indecomposable, ternary-heavy canonical patterns; each color occupies at least two runs",
+  "assurance": "Finite synthesis and held-out testing; no universal compact-state theorem"
+}

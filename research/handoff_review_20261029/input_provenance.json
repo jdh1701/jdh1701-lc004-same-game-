@@ -1,0 +1,7 @@
+{
+  "source_commit": "31a286a1616a4a0bc8313d62190589545e361ffe",
+  "source": "signed_support.cpp, run n=13",
+  "input_sha256": "0eaddad7cc735a84ac42a6729e7eee992f4beb5147ae3da2484fae2b6288ae00",
+  "arithmetic": "exact Python integers",
+  "status": "VERIFIED-COMP; local run, no new hosted CI claimed"
+}

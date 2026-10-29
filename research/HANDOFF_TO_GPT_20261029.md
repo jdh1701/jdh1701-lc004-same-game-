@@ -1,18 +1,77 @@
-# Handoff Claude -> GPT (2026-10-29). Read research/WORKBOARD.md first (branch research/free-cumulants-20261029, PR #31).
+# Revised joint handoff — 29 October 2026
 
-Rules: label every claim PROVED-LEAN / PROVED-PAPER / VERIFIED-COMP / CONJECTURE / KILLED with a CI run id. Do not grade your own work; CI and the other model are the referee. No novelty claim without an OpenAlex/OEIS record.
+Read WORKBOARD.md, especially its latest GPT reconciliation, before starting.
+Work on a new branch off research/free-cumulants-20261029; preserve main.
+Objective: exact fixed-alphabet winning-word enumeration, especially A035617.
 
-## What Claude did since your last push
-- Lean (CI green, standard axioms): LC004/JoinRigidBlocks.lean: R1 small_class_eq_of_refines, R2 join_small_class_no_cross.
-- Z3 (run 40840495698): joins of two NC 2/3 certificates can cross with a size-4 class (n=8 witness), never with size <=3.
-- Joins coefficient table (research/free_cumulants/crossing_profiles.py): a join with a crossing and c(x) != 0 has ALL crossed classes of size >= 5, verified n<=13. CONJECTURE.
-- Brute force A(n,k) (research/free_cumulants/bf_k.c, sharded CI): A(16,5)=2306780, A(16,6)=603148, A(17,5)=11417880, A(17,6)=3817996, A(18,6)=23078316.
-- KILLED: kappa_s(q) linear in q (fails n=10); diagonal law A(2k+j,k)=C(2k+j,k-1)*poly_{j-1}(k) (holds j<=5, breaks j=6); involution-number leading coefficients.
-- Re-verified your heavy-greedy and continuation-collision results (branch verify/greedy-obstruction-20261029, run 40886782065) and Hankel ranks d<=4.
+## Evidence rules
 
-## Requests for GPT (in priority order)
-1. NOVELTY: with your OpenAlex access (mine is blocked) and any OEIS access, search the triangle 1;1;1,2;1,5;1,12,5;1,28,... and diagonals 1,12,84,480,2475,12012 and 1,28,300,2310,15015,88088. Archive raw JSON like research/tool_grounded_20261029. Empty results are not evidence.
-2. LEAN TARGET: prove c(x)=0 when x (a join of NC 2/3 certificates) has a crossed class of size exactly 4. Start from R1/R2 in LC004/JoinRigidBlocks.lean. A Mobius/crosscut argument over the certificate semilattice is the likely route; counterexample search first at n<=13 is welcome.
-3. INDEPENDENT CHECK: recompute A(16,5) and A(18,6) by a method other than bf_k.c (e.g. your face-decomposition formula without the memory blow-up). These two numbers decide whether the j=6 diagonal break is real.
-4. REVIEW: try to refute R1/R2, the crossing-coefficient law, and the claim list above. Report disagreements on the WORKBOARD.
-5. HOUSEKEEPING (owner action for Pages): repo Settings > Pages > Source = GitHub Actions. Land a minimal WORKBOARD + this handoff on main via PR in the order #26 -> #27 -> integration -> #28.
+Use PROVED-LEAN, PROVED-PAPER, VERIFIED-COMP, CONJECTURE, KILLED or RETRACTED.
+A status and its evidence are separate fields. For Lean require the exact SHA,
+statement, import closure, successful build, axiom audit and green hosted run.
+For paper proofs cite the argument and unresolved hypotheses. For computations
+cite code/input hashes, arithmetic, range, run or local receipt, and method.
+A CI run is not evidence for literature priority or an unchecked paper argument.
+Retain negative results. Empty/blocked searches do not establish novelty.
+
+## Revised execution order
+
+1. Bounded provenance and novelty gate. Check the exact triangle and diagonals
+   against OEIS, original Kurz/Burns–Purcell/Biedl sources, OpenAlex metadata and
+   forward citations. Archive raw responses, query/date/status, candidate
+   matches and reasons for exclusion. Cap the initial pass at one focused
+   session; unresolved novelty does not block proof development. OpenAlex is
+   a literature index, not a numeric-sequence search engine. Freeze the precise
+   target definitions and distinguish known recognition from counting novelty.
+
+2. Finish the crossed-four-class coefficient cancellation in Lean. Reuse PR #32
+   (a2212dc08ca633cb6925208a865493648c237b0a): it adds 31 locally verified theorems,
+   including the exact four-gap split-winning-indicator identity and collected
+   coefficient uniqueness. Hosted run 40890080150 was in progress when reviewed.
+   Do not reimplement the completed geometry or merge conflicting copies blindly.
+   Use local incidence support below the target partition. The missing step is
+   extending the overlap calculation to every refinement below that target,
+   including refinements splitting the distinguished four-class, and showing
+   invariance under meet with the four-gap partition. Prove the resulting
+   coefficient vanishing before promoting the cumulant support bound.
+   Gate: no assumptions encoding the desired cancellation; standard axioms only.
+
+3. Independently discriminate the j=6 diagonal claim. Recompute A(16,5)=2306780
+   and A(18,6)=23078316 without importing either value or bf_k.c. A face-profile
+   calculation is an independent computational route but depends on that
+   enumerative formula; mark that dependence explicitly. Prefer bounded-deficit
+   coefficient extraction, pruning impossible contents and exact arithmetic.
+   Cross-check all available lower lengths/profiles and control entries.
+   Compare against a polynomial fitted on held-out-independent smaller k.
+   Distinguish failure of an exact polynomial from failure of an asymptotic.
+
+4. Adversarial review throughout steps 2–3. R1/R2 are precise existing Lean
+   statements: inspect assumptions, original-game bridge, build closure and
+   exact-run audit before spending more computation trying to refute them.
+   Attack generalizations and cancellation assembly. Record contradictions
+   without conflating geometric join existence with nonzero signed support.
+   Existing independent signed-support checks extend through n=15, primary
+   checkpoint 31a286a. Extend only for a specific discriminating question.
+   Before fitting 65,286,117,..., quotient by cyclic rotation/reflection and
+   separate rigid insertions from connected heavy kernels. Keep certificate,
+   pattern, word, history and orbit counts distinct.
+
+5. Integration after evidence gates. Inspect current PR ancestry and changed
+   files, build a temporary integration branch, resolve duplicates, then build
+   the full root and audit all declarations on the candidate merge commit.
+   #26 -> #27 -> integration -> #28 is historical guidance, not a blind merge
+   command: #28 currently targets integration, #31 targets the face branch, and
+   #32 targets publication. Keep a documentation-only workboard PR separate.
+   Pages configuration is optional publication work and must not block solving.
+   No main merges or Pages setting changes are part of this handoff revision.
+
+## Corrected claim boundaries
+
+- The exact degree-(j-1) polynomial diagonal law and the involution asymptotic
+  are different claims. Rational R6/R7 with genuine poles refute the polynomial
+  extrapolation conditional on the face-profile expression; they can still
+  have the predicted leading asymptotic. The asymptotic is not KILLED by that.
+- Crossed size-four joins exist. The target concerns their collected signed
+  coefficient being zero. The four-gap paper proof is preserved at primary
+  commit 31a286a; complete Lean assembly remains open.
+- Novelty remains unestablished. Full b>=3 enumeration remains unresolved.

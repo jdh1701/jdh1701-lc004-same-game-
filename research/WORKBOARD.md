@@ -4,6 +4,9 @@ This file is the single shared work-in-progress surface for every agent on
 this repository (Claude, GPT/Codex, and John). Any agent may edit it. Keep it
 current; it outranks older journals and notes when they disagree.
 
+Latest reconciliation: see **GPT handoff review, 2026-10-29** below. Historical
+entries are retained; corrections there supersede their status summaries.
+
 ## Protocol
 
 1. **Status vocabulary.** Use exactly one per claim:
@@ -115,3 +118,55 @@ current; it outranks older journals and notes when they disagree.
 - Crossing coefficients (my computation): c({0145}{2367}) = 0 at n=8, although it is a join of two certificates. Joins with a crossing and nonzero c first appear at n=10, profile (5,5), total c=-5. So the right statement is about NONZERO coefficients, not about which joins exist (see the Z3 entry above). Extending to n=11,12 running.
 - Crossing-coefficient law (VERIFIED-COMP n<=12 via research/free_cumulants/crossing_profiles.py, CONJECTURE in general): every join x with a crossing and c(x)!=0 has ALL crossed classes of size >=5. Data (crossed-class size profile: sum of c, number of x): n=10 (5,5): -5, 5; n=11 (5,6): -22, 22; n=12 (5,5): -60, 60; (5,7): 60, 48; (6,6): -30, 30; none at n<=9. R2 (Lean) proves only >=4 for joins to exist; the extra step 4 -> 5 is a Mobius cancellation (e.g. c({0145}{2367})=0 at n=8) and is the real target lemma: show c(x)=0 when x has a crossed class of size 4. This is consistent with, and probably the source of, the cumulant vanishing law s<5j.
 - n=13 (same script): crossing_nonzero=585, min crossed class size still 5; profile (sum c, count): (5,5): -65, 65; (5,6): -286, 286; (5,8): 286, 91; (6,7): 117, 143. VERIFIED-COMP n<=13. Note sums like 65 = 5*13, 286 = C(13,3) look structured (unexplained).
+
+## GPT handoff review, 2026-10-29
+
+Owner: GPT/Codex. Scope: handoff revision, provenance review and cyclic-orbit test.
+No new Lean theorem or full novelty search is claimed in this session.
+
+### Discrepancies recorded before correction
+
+| ID | Disagreement | Resolution |
+|---|---|---|
+| G1 | Exact polynomial failure was used to kill the involution asymptotic | RETRACTED that inference. An asymptotic can hold for a nonpolynomial rational function. Universal asymptotic remains a separate paper-proof audit / conjecture, not refuted by these values. |
+| G2 | Handoff requires a CI run ID for every kind of claim | Separate status from evidence. CI acceptance checks code and kernel results; literature and paper reasoning need their own sources. |
+| G3 | Older queue still asks for the already formalized face lemma | Use existing structural proof; focus on crossed-four coefficient assembly. |
+| G4 | Fixed merge order omits current PR base relationships | Inspect ancestry and test a concrete integration commit; do not merge by historical list alone. |
+
+### Current evidence reconciliation
+
+- PROVED-PAPER: four-gap signed cancellation argument and cumulant support derivation,
+  primary repository 31a286a, research/LC004/2026-10-29-four-gap-cancellation/.
+  These are paper arguments, not complete Lean certification or established novelty.
+- VERIFIED-COMP: primary checkpoint 31a286a checks signed support through n=15,
+  including independent length-15 counts. Repeating n<=13 is not the next priority.
+- PR #32, head a2212dc08ca633cb6925208a865493648c237b0a: 31 new Lean theorems;
+  local full build (171 modules) and allowlist audit (2,124 declarations) pass.
+  Hosted run 40890080150 was IN PROGRESS at review, so this workboard does not
+  promote its results to PROVED-LEAN under its hosted-CI rule yet.
+- CONJECTURE / unfinished formal target: universal crossed-four coefficient
+  cancellation in Lean; the checked split-indicator theorem is a prerequisite.
+- Novelty: exact-term web queries were inconclusive. This is NOT evidence of
+  priority. Direct OpenAlex/OEIS response archiving remains a bounded task.
+
+### Cyclic-orbit discrimination
+
+VERIFIED-COMP, n=13, local exact TSV from signed_support.cpp at primary commit
+31a286a. Script and receipt: handoff_review_20261029/cyclic_orbits.py and
+cyclic_orbits_n13.json. Each crossing pattern has an orbit of size 13 and its
+coefficient is constant on that orbit.
+
+| Crossed profile | Orbits | Coefficient distribution by orbit | Total signed sum |
+|---|---:|---|---:|
+| (5,5) | 5 | 5 at -1 | -65 |
+| (5,6) | 22 | 22 at -1 | -286 |
+| (5,8) | 7 | 5 at 2, 2 at 6 | 286 |
+| (6,7) | 11 | 6 at 2, 1 at 1, 4 at -1 | 117 |
+
+This explains the common factor 13. It does not prove a binomial formula or
+explain all orbit counts. The revised handoff asks for orbit and rigid-insertion
+analysis before further sequence fitting.
+
+- 2026-10-29 GPT/Codex: read the handoff and full workboard, verified current PR
+  bases/heads and PR32 CI state, corrected the asymptotic retraction, revised
+  execution gates, and independently resolved the n=13 sums into cyclic orbits.

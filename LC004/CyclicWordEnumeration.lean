@@ -76,7 +76,9 @@ noncomputable def markedRootedWordEquiv {n : Nat}
         (htotal _ ((hrotate w i).mpr hw)) = -i := by
       apply degreeWordRoot_eq
       simpa only [rotateDegreeWord_add, add_neg_cancel, rotateDegreeWord_zero] using hroot
-    simp only [heq, rotateDegreeWord_add, add_neg_cancel, rotateDegreeWord_zero, neg_neg]
+    dsimp only
+    rw [heq]
+    simp only [rotateDegreeWord_add, add_neg_cancel, rotateDegreeWord_zero, neg_neg]
   right_inv w := by
     apply Subtype.ext
     change rotateDegreeWord (rotateDegreeWord w.val _) (-_) = w.val
@@ -93,8 +95,12 @@ theorem marked_rooted_word_card {n : Nat}
       m * Fintype.card {w : CyclicDegreeWord n // P w ∧ RootedDegreeWord w} := by
   classical
   rw [← Fintype.card_congr (markedRootedWordEquiv P htotal hrotate a), Fintype.card_sigma]
-  simp only [hcount _ (Subtype.property _).1, Finset.sum_const, Finset.card_univ,
-    nsmul_eq_mul, Nat.mul_comm]
+  calc
+    _ = ∑ _w : {w : CyclicDegreeWord n // P w ∧ RootedDegreeWord w}, m := by
+      apply Finset.sum_congr rfl
+      intro w _
+      exact hcount w.val w.property.1
+    _ = _ := by simp only [Finset.sum_const, Finset.card_univ, nsmul_eq_mul, Nat.mul_comm]
 
 #print axioms marked_rooted_word_card
 

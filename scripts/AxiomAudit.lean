@@ -8,7 +8,7 @@ run_cmd do
   let mut checked := 0
   for (name, _) in env.constants.toList do
     let some owner ← findModuleOf? name | continue
-    if owner == `LC004 || `LC004.isPrefixOf owner then
+    if owner == `LC004 || (`LC004).isPrefixOf owner then
       let axioms ← collectAxioms name
       for ax in axioms do
         unless ax == `propext || ax == `Classical.choice || ax == `Quot.sound do

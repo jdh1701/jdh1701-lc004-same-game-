@@ -88,3 +88,13 @@ and a one-triple class as well as convolution identities. It is not yet
 shown cheaper than reusing the already formalized degree-word foundation.
 No universal inverse, rotation theorem, refined count, or route-optimality
 claim is asserted here.
+
+## Four-gap convolution reduction
+
+There is a useful simplification for the alternative route. If C(x) is the
+Catalan series, C=1+x*C^2 gives (C-1)^2=x^2*C^4 and C^2=(C-1)/x. Coefficient extraction gives
+F_4(m)=Catalan(m+3)-2*Catalan(m+2). This paper-level identity can be derived
+from repeated binary Catalan convolution; it is not yet a Lean theorem in
+this repository. The finite checker tested m=0 through 7. Thus the gap route
+need not start from a general closed r-fold Catalan convolution theorem.
+The harder partition rotation and gap-equivalence obligations remain.

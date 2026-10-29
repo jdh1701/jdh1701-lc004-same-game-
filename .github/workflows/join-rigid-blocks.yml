@@ -18,6 +18,7 @@ jobs:
           cat > /tmp/A.lean <<'L'
           import LC004.JoinRigidBlocks
           #print axioms LC004.small_class_eq_of_refines
+          #print axioms LC004.join_small_class_no_cross
           L
           lake env lean /tmp/A.lean | tee ax.log
           echo "::notice title=axioms::$(tr '\n' ' ' < ax.log)"

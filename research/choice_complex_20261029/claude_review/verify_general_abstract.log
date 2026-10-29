@@ -1,0 +1,7 @@
+  k=2 done, trials=600 nontrivial=600 failures=0
+  k=3 done, trials=1200 nontrivial=1200 failures=0
+  k=4 done, trials=1800 nontrivial=1800 failures=0
+  k=5 done, trials=2400 nontrivial=2400 failures=0
+  k=6 done, trials=3000 nontrivial=3000 failures=0
+  k=7 done, trials=3600 nontrivial=3600 failures=0
+FINAL trials=3600 nontrivial=3600 failures=0 max|A|=10125

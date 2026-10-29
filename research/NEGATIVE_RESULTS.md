@@ -26,7 +26,7 @@ None of this claims novelty; no OEIS/OpenAlex check was possible from Claude's s
 
 ## Open conjectures that survive (VERIFIED-COMP, not proved)
 
-* Crossing joins x with c(x) != 0 have every crossed class of size >= 5 (n<=13). Mechanism for size-4 crossed classes: a redundant certificate gives a sign-reversing involution, c(x)=0 (checked n<=10 fully, n=11 partly; 10 exceptions at n=10 need another argument).
+* Crossing joins x with c(x) != 0 have every crossed class of size >= 5 (n<=13). The size-4 case is now PROVED-LEAN by GPT (winningJoinCoefficient_crossed_four_zero), independently re-verified, run 40901719494.
 * kappa_s(q) polynomial in q with q^j coefficient 0 for j>=2, s<5j (s<=15).
 
 ## Proved in Lean on CI and used above

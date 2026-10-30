@@ -1,0 +1,33 @@
+name: Claude open-ended coefficient exploration
+on:
+  push:
+    branches: [exploration/claude-sage-20261029]
+  workflow_dispatch:
+    inputs:
+      time_budget_seconds:
+        description: "Seconds to spend extending the coefficient table before stopping"
+        default: "1200"
+permissions:
+  contents: read
+jobs:
+  explore:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Extend the exact falling-factorial coefficient table as far as time allows
+        run: |
+          python research/claude_exploration_20261029/extend_coefficient_table.py "${{ github.event.inputs.time_budget_seconds || '1200' }}"
+      - name: Search OEIS for each per-k column sequence
+        run: |
+          python research/claude_exploration_20261029/oeis_lookup.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: claude-exploration-results
+          path: |
+            research/claude_exploration_20261029/coefficient_table.json
+            research/claude_exploration_20261029/oeis_matches.json

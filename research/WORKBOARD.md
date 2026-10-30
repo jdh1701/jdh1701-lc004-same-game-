@@ -660,3 +660,58 @@ the evidence and supersede prior pending snapshots. Full counting remains OPEN.
 - Still open, per GPT's own honest framing: the cubic (3-letter) correction
   term at n<20, general positive-excess mixed-profile enumeration, and A035617
   itself. Nothing here claims to solve the open problem.
+
+## 2026-10-30 16:19 Claude: local independent rebuild of PR42 -- abandoned for infra reasons, review stands on source-read + hosted-CI check
+
+- Follow-up to the 2026-10-30 13:13 entry (61812f3), which left the local
+  from-scratch rebuild of `LC004.ConnectedCoefficientSupport` in
+  `/home/claude/review-pr42` "in progress". Closing that out now.
+- The rebuild was restarted three times (background tasks `bdyxmxg5p`,
+  `betkdlkye`, `b4m960sp2`), each killed only by hitting the Bash tool's
+  background time limit (30min, 30min, then the 2-hour max) -- never by a
+  compile error. By the third attempt it had reached module [3914/3925+]
+  with zero errors so far, but the module list it was compiling
+  (AlgebraicGeometry.Morphisms.*, ProjectiveSpectrum.*, RingTheory.Bezout,
+  RingTheory.Etale.Kaehler, ...) makes clear what's actually happening:
+  it is rebuilding essentially the ENTIRE Mathlib library (~3900+ of
+  ~3925+ modules), not just the small import closure that
+  `Polynomial Int` basics should need. That's almost certainly because
+  copying the `.lake` directory from my working tree (rather than letting
+  Lake build it in place) didn't preserve whatever hash/mtime metadata
+  Lake's build trace uses to decide a module is up to date, so Lake
+  invalidated and is recompiling close to the whole library from scratch.
+  This is an artifact of the sandbox/copy approach, not evidence of
+  anything wrong with GPT's code.
+- Given (a) the sandbox's network allowlist blocks the real Mathlib olean
+  cache (`lakecache.blob.core.windows.net`, confirmed again this session
+  -- same constraint noted in earlier entries), so there's no fast way to
+  get a properly-seeded `.lake` here, and (b) a full-Mathlib build at this
+  environment's speed is many more hours even if restarted again, and (c)
+  the background-task notification explicitly says not to restart a task
+  that already ran at the maximum allowed timeout -- I'm stopping this
+  rebuild attempt rather than continuing to throw more wall-clock at an
+  infra problem.
+- This does NOT weaken the review conclusion in 61812f3. Independent
+  verification there did not depend on this rebuild succeeding: I already
+  (1) read every line of the new theorems in
+  `LC004/ConnectedClassCrossing.lean` and
+  `LC004/ConnectedCoefficientSupport.lean` and checked the proof logic
+  myself, and (2) independently queried GitHub's check-runs API myself
+  (not just trusted the commit message) and confirmed hosted CI green
+  (lean: success, exact: success) on the exact cited source commit
+  f653c28, plus the PR40 and PR39 predecessor commits. Hosted CI runs in
+  an environment that *does* have the seeded cache and so is the
+  trustworthy build signal here; this local attempt was meant only as an
+  extra belt-and-suspenders check, and its failure to finish is an
+  environment limitation, not a finding.
+- Conclusion: PR42 review (Task: "review GPT's latest pushes") is COMPLETE.
+  `ncConnected_every_class_crossed` and `ncConnected_nonzero_threshold_all_five`
+  are accepted as PROVED-LEAN on the strength of (source read + hosted CI),
+  matching my own open conjecture exactly. My own prior open item (the
+  crossing-graph connectivity bridge) is now closed by GPT's work, credited
+  as such; nothing further to independently prove there.
+- Next for me: since my own standing open item is closed, "pushing what
+  I've worked on" now means picking a genuinely open thread GPT flagged as
+  still open (cubic/3-letter correction term at n<20, or the general
+  positive-excess mixed-profile enumeration) rather than re-deriving
+  ncConnected_every_class_crossed myself. Will scope one of these next.

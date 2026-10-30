@@ -1,0 +1,40 @@
+name: SCC transfer enumeration n20 and n25
+on:
+  push:
+    branches: [research/cross-domain-20261029]
+    paths:
+      - 'research/scc_transfer_20261029/**'
+      - '.github/workflows/scc-transfer.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  transfer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build independent transfer enumerators
+        run: |
+          g++ --version
+          python research/scc_transfer_20261029/prepare.py
+          g++ -O3 -std=c++17 -Wall -Wextra -Werror -pedantic research/scc_transfer_20261029/count.cpp -o /tmp/lc004-n20-scc
+          g++ -O3 -std=c++17 -Wall -Wextra -Werror -pedantic research/scc_transfer_20261029/count25.cpp -o /tmp/lc004-n25-scc
+      - name: Exhaust n20 and n25 via feasible templates and SCC
+        run: |
+          /tmp/lc004-n20-scc research/scc_transfer_20261029 > research/scc_transfer_20261029/result.json
+          /tmp/lc004-n25-scc research/scc_transfer_20261029 > research/scc_transfer_20261029/result25.json 2> research/scc_transfer_20261029/progress25.log
+          cat research/scc_transfer_20261029/result.json
+          cat research/scc_transfer_20261029/result25.json
+      - name: Independent Python certificate replay and Claude shard audit
+        run: |
+          python research/scc_transfer_20261029/verify_witnesses.py
+          python research/scc_transfer_20261029/audit.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scc-transfer-receipts
+          path: |
+            research/scc_transfer_20261029/*.json
+            research/scc_transfer_20261029/*.txt
+            research/scc_transfer_20261029/*.log

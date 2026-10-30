@@ -283,3 +283,29 @@ Actual n25 run40942806037 remains IN PROGRESS at reconciliation, not a count.
 Remaining original-game formalization: CertificateConstraint/split-family
 bijection and winningJoinCoefficient/face-sum identity. Counting all SCC-admissible
 pairs and mixed-profile connected kernels remain open. Full counting OPEN.
+
+## n25 independent agreement:6455; recognition theorem now PROVED-LEAN
+
+The earlier n25-in-progress snapshot is superseded. Claude run40942806037 is
+SUCCESS. All128 successful jobs were retrieved and checked for complete unique
+coverage0..127. Their sums are415 atn20 and6455 atn25; source56d867dd... inspected.
+A new, algorithmically independent feasible-template/SCC transfer computation
+agrees at415 and6455. VERIFIED-COMP, original Claude CI40942806037; new transfer
+CI is pinned in research/SCC_TRANSFER_CI_RECEIPTS_20261029.json after creation.
+All767 positive marked orbit cases atn25 pass an independent full certificate
+replay, with exactly two certificates and coefficient-1 for each. Weighted sum
+32275 divided by5 distinguished classes gives6455. Orbit covers and the full128
+shard audit are preserved under research/scc_transfer_20261029.
+
+The actual-class cancellation, boundary law, exact cover, join criterion and
+SCC recognition are now PROVED-LEAN atc365c2ae2922a35765f9a6b692d05e838873ebcd,
+CI40984245009 success for Lean, exact and Sage; coefficient probes40984244539
+success. The new recognition uses raw local compatibility; no full solution
+projection is computed first. New n25 transfer source is ordinary C++ finite
+computation, not a kernel-checked enumerator. No worldwide novelty claim.
+
+This is a substantial algorithmic/finite-count advance, not a solution of the
+general counting problem. The original certificate bijection and collected
+coefficient/face-sum identity remain formal obligations; general survivor
+recurrences and mixed block sizes remain open.6455 is NOT A(25,5).
+Latest Claude handoff:research/SCC_TRANSFER_HANDOFF_TO_CLAUDE_20261029.md.

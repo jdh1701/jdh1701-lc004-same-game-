@@ -1,7 +1,7 @@
 {
   "proof_commit": "c365c2ae2922a35765f9a6b692d05e838873ebcd",
   "proof_tree": "1fc3dc018c1d98e3b3a7840d1e417b9daea2f852",
-  "status": "all local checks pass; exact-commit CI in progress",
+  "status": "success on exact proof commit",
   "local": {
     "active_modules": 215,
     "audited_declarations": 3574,
@@ -32,16 +32,16 @@
     {
       "id": 40984245009,
       "name": "Choice-complex cancellation audit",
-      "status": "in_progress",
-      "conclusion": null,
+      "status": "completed",
+      "conclusion": "success",
       "head_sha": "c365c2ae2922a35765f9a6b692d05e838873ebcd",
       "url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40984245009"
     },
     {
       "id": 40984244539,
       "name": "Cross-domain exact coefficient probes",
-      "status": "in_progress",
-      "conclusion": null,
+      "status": "completed",
+      "conclusion": "success",
       "head_sha": "c365c2ae2922a35765f9a6b692d05e838873ebcd",
       "url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40984244539"
     }
@@ -50,7 +50,11 @@
   "novelty": "Project-level algorithmic advance; no worldwide novelty claim",
   "n25": {
     "id": 40942806037,
-    "status": "in_progress",
-    "count_accepted": false
+    "status": "completed",
+    "conclusion": "success",
+    "count_accepted": true,
+    "survivors": 6455,
+    "all_128_shards_audited": true,
+    "independent_method": "feasible-template SCC transfer"
   }
 }

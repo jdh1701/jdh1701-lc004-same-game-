@@ -512,3 +512,8 @@ consistent with the codimension-one obstruction, not a refutation of it.
 The deterministic triangle-interval rule performs1438 replayed cancellations
 removing23624 faces, then stalls in all17. It does NOT finish any of these
 collapses. The general rule remains open; no new enumeration claim.
+
+
+PR40 final source c1a61f49e9ee95fad21b8d422ddd3df981b54132, hosted41004479610
+in progress at receipt. Local final236/3987 audit passes. Promotion to PROVED-LEAN
+awaits exact-source hosted success; no universal enumeration solution claimed.

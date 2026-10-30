@@ -212,3 +212,16 @@ The formula is an exact reduction on a given original pattern. It does not
 supply a bounded-state recurrence counting row families over all words, a closed
 form for connectedGameWeight, or a general collapse theorem. Those are still
 open. No worldwide novelty claim is made.
+
+
+Final source checkpoint: c1a61f49e9ee95fad21b8d422ddd3df981b54132, PR40,
+hosted run41004479610 in progress at this receipt. The initial three-module
+source20c0012934187d59f6c5307192455d3b4776e589 has exact replay SUCCESS in
+run41003408625; its Lean job was still running at the final-source submission.
+No PROVED-LEAN promotion is made while exact-source hosted certification is
+pending. Subsequent receipt-only commits change no mathematical or executable
+source. Local final audit:236 modules,3987 declarations; both negative guards and
+archive-input free-interval replay pass.
+
+Final-source hosted exact replay is SUCCESS (job123896139335); the Lean job
+123896139851 remains in progress at the receipt.

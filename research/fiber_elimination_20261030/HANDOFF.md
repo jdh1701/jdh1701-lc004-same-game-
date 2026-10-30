@@ -38,3 +38,8 @@ The larger fixed-alphabet enumeration problem remains OPEN.
 Local git metadata is stale: many untracked files are already remotely committed.
 Do not reset or mass-add. Use the remote base tree plus precisely selected edits.
 No merge to main, no claim of worldwide novelty.
+
+
+Final proof/executable source c1a61f49e9ee95fad21b8d422ddd3df981b54132;
+hosted run41004479610 pending. Reconcile that run before promoting status.
+Initial source20c0012934187d59f6c5307192455d3b4776e589 has run41003408625.

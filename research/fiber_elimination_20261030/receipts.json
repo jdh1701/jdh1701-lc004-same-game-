@@ -40,5 +40,22 @@
     "verified_intervals": 1438,
     "removed_faces": 23624,
     "status": "stalled-inconclusive"
+  },
+  "source_commit": "c1a61f49e9ee95fad21b8d422ddd3df981b54132",
+  "source_tree": "6fdff8de08a3bf90103d7d8eb93f5f9a0f189f75",
+  "hosted_run": 41004479610,
+  "hosted_status": "in_progress",
+  "pr": "https://github.com/jdh1701/jdh1701-lc004-same-game-/pull/40",
+  "archive_input_replay": "pass",
+  "hosted_jobs": {
+    "exact": {
+      "job_id": 123896139335,
+      "conclusion": "success"
+    },
+    "lean": {
+      "job_id": 123896139851,
+      "status": "in_progress",
+      "conclusion": null
+    }
   }
 }

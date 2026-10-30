@@ -426,3 +426,31 @@ Complete proof sourceba744372317983ce26c94e32d7f7cd176c4893ac, hosted run4099446
 exact SUCCESS, Lean IN PROGRESS at receipt. Initial mixed-only source8837755f
 run40994029481 also requires final hosted reconciliation. No new PROVED-LEAN
 promotion until exact source CI is green. Owner: none; resumable handoff saved.
+
+
+## Ten aggressive enumeration attacks,2026-10-30
+
+PR37 full source ba744372 now passes hosted40994461526 SUCCESS; initial source
+8837755f passes40994029481 SUCCESS. The mixed obstruction, complete local5/6
+catalogues and six-point separator result are now PROVED-LEAN.
+
+New isolated branch research/ten-attacks-20261030, from PR37 head482ff9f. Ten
+executed routes and all limits in research/ten_attacks_20261030/REPORT.md.
+General separator deletion/link and elementary-collapse implication for ORIGINAL
+coefficients pass Lean locally:232 modules,3927 declarations, standard axioms
+only, both negative guards. Hosted certification remains pending the new source.
+Finite constructive-collapse lead survives initial and held-out checks; same
+profile+certificate-count, pairwise top-join graphs, undecorated cyclic cores,
+48 bounded analytic ansatz spaces and eight greedy rules are falsified.
+The infinite word-Hankel-rank obstruction is PROVED-PAPER, not Lean-certified.
+Connected(6,10) homology in two degrees kills unrestricted purity even in the
+multi-class connected setting. Zero-coefficient collapsibility remains a
+conjecture, not an enumeration theorem. General A035617 enumeration remains OPEN.
+Full handoff, independently replayable traces and failed attempts are retained.
+Owner:none; completed campaign, resumable handoff saved.
+
+PR38 source f919410e300e724914913e862f551967c989a5f6; hosted40998017137
+in progress at archive.2,336 distinct full-join zero patterns have independently
+replayed collapses. All evidence, failures and manifest are in the campaign
+archive. The(6,10) targeted six-run search finds no zero with nonzero F2 homology
+in159 full-join cases (57 zeros); this is a necessary-condition test only.

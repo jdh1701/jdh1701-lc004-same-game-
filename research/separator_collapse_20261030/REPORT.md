@@ -1,12 +1,24 @@
-# Mixed-profile separator collapse frontier
+# Sparse rescue of separator budget skips and independent collapse census
 
 Research date: 29 October 2026, America/New_York. Objective: the unresolved general Same Game winning-word enumeration problem, including A035617.
 
 ## Reconciliation and scope
 
-This continuation starts from PR37, source branch proof/mixed-kernel-obstructions-20261030 at 482ff9f3e678aaf7cf120a0974613c18fbb5676d. Its mathematical source equals proof commit ba744372317983ce26c94e32d7f7cd176c4893ac: GitHub comparison shows only evidence/documentation changes. Hosted run40994461526 has now completed successfully, superseding the earlier in-progress receipt. The unconditional original-game separator/Euler bridge is therefore available as a checked foundation.
+The active base is PR38, branch research/ten-attacks-20261030 at c6f719c08d519e0656ce6b035c69bbe143d74e46. Its checked mathematical source is f919410e300e724914913e862f551967c989a5f6, hosted run40998017137 SUCCESS; subsequent changes are evidence only. Earlier PR37 source ba744372317983ce26c94e32d7f7cd176c4893ac is also green at run40994461526.
 
-The new isolated branch is research/separator-collapse-census-20261030. No integration branch or existing Lean module is modified. Earlier personal-context summaries of unpublished experiments are not used as verification evidence. The repository already contains a sampled (5,7) Mobius experiment; positive coefficients there are not claimed as a first discovery here.
+This branch preserves both development histories with a merge commit and reuses LC004/SeparatorDeletionLink.lean from PR38. The earlier standalone CollapseCriterion.lean attempts failed elaboration at point_sum (runs40999056173 and40999863015) and are retired as redundant, not counted as proofs. Their source remains in commit history and failure excerpts remain here. No existing Lean theorem is modified.
+
+PR38 already includes overlapping profile experiments and richer topology obstructions. This report does not add the two census totals together or claim their intersection as new progress. Exhaustive (4,6), (4,7), (4,8), and (6,8) coverage extends that reported campaign; other overlapping profiles primarily provide independent reconstruction and trace replay. Worldwide novelty is unassessed.
+
+## Resolution of all 32 source-pipeline budget skips
+
+PR38 deep_holdout.json recorded 32 inputs skipped because their original generator families exceeded 400 (maximum 3,591). The exact inputs were recovered from evidence.tar.gz at the immutable base commit, Git blob 3c87429e67a431f008dfbf2b003d6e893be43c70, and retained in skipped-inputs.json.
+
+All 32 now evaluate without skips. Twenty-six have coefficient zero: nine collapse using certified dominated vertices, and seventeen require elementary free-face collapses after domination. All collapse steps are replayed against their defining conditions. The six survivors have coefficients 8, 10, and -4, twice each. This resolves that source pipeline's budget frontier; some coefficients may already have occurred in other targeted prior experiments.
+
+The method keeps facets sparse. Every facet normalization has an explicit coverage check; every retained facet was an input and every input is contained in a retained facet. Domination removes v only when every maximal facet containing v also contains a distinct w. A separate replay checks every such condition. The reduced core uses exact deletion/link recursion with explicit state/time bounds. Residual faces are expanded only below 300,000 estimated faces, with a checked inverse vertex relabeling. All 32 decision values agree with direct alternating face sums of their reduced cores. Every complete original generator family is compared with the separate global interval-recursion generator, and full generator join is checked anew.
+
+The deterministic compressed receipt contains complete strong and elementary traces, original-facet hashes, residual facets and vertex maps. Reproduction compares all untimed result fields against the committed receipt. These are computational certificates (VERIFIED-COMP), not individual Lean proof terms.
 
 ## Mathematical object
 
@@ -62,11 +74,13 @@ The complete finite census is VERIFIED-COMP. All classwise generator sets agree 
 
 Both homology calculations use the same exact GF2 elimination routine on independently constructed boundary complexes. They are not two independent implementations of linear algebra. The separate raw-game calculation supplies an independent coefficient check, not a separate proof of every Betti number. No floating point, fitted sequence, or learned classifier is used.
 
-CollapseCriterion.lean proposes a reusable formal route: paired-face erasure preserves the alternating sum; so does a finite sequence of actual elementary collapses; a point complex has sum zero; therefore a collapse of the ACTUAL indexed separator complex certifies zero of the ORIGINAL winningJoinCoefficient for any profile. The free-face condition is explicit. This is a sufficient criterion, not a proof that every zero case admits a collapse. Hosted run40999056173 passed the complete exact census and independent checks. The initial Lean attempt failed only in point_sum because the finite-pair sum did not simplify; the axiom guard rejected its incomplete elaboration. The revised source explicitly applies Finset.sum_pair. Its final compiler/axiom status must be taken from the corrected-source hosted run linked in the PR, not inferred from the Python census. It was submitted as a candidate because workspace maintenance removed the prior local Lean installation.
+The reusable formal criterion is already proved in PR38: LC004.winningJoinCoefficient_zero_of_elementary_trace derives vanishing of the original coefficient from a verified trace on the actual complete indexed separator complex. LC004.facetAlternatingSum_deletion_link and LC004.facetFaces_eq_of_mutual_cover justify the sparse operations at the mathematical level. UseExistingCollapse.lean audits five reused declarations and their transitive axiom dependencies, permitting only propext, Classical.choice, and Quot.sound. It introduces no new theorem. The individual Python traces are not imported into Lean in this work.
+
+The earlier exhaustive exact job passed hosted run40999056173. The new merged-source workflow rebuilds the existing formal foundation and audit and reruns the entire census, independent checks, and 32-case rescue. Its exact source SHA and final status belong in CI_RECEIPT.json after verification; pending CI is not reported as a completed Lean pass.
 
 ## Strongest surviving research target
 
-For winning crossing-connected heavy patterns whose original certificate generators have full join, investigate whether zero coefficient forces an elementary collapse of the actual separator complex to a point. The converse is the formal criterion above. The winning/nonvoid qualification matters: a losing word has an empty generator family and a void complex, so Euler zero alone cannot imply a collapse to a point.
+For winning crossing-connected heavy patterns whose original certificate generators have full join, investigate whether zero coefficient forces an elementary collapse of the actual separator complex to a point. The converse follows from the existing formal criterion when its actual-complex assumptions are supplied. The winning/nonvoid qualification matters: a losing word has an empty generator family and a void complex, so Euler zero alone cannot imply a collapse to a point.
 
 A proof must construct a uniform free-pair rule from the geometry. Checking every case of another fixed profile is not a substitute. The next step is to inspect the retained collapse traces for such a rule, then test it on a new three-class or larger-class family. Separately, the surviving nonzero patterns still need an enumeration law. Even a complete zero classification would not by itself solve A035617.
 
@@ -74,7 +88,17 @@ A proof must construct a uniform free-pair rule from the geometry. Checking ever
 
     python3 research/separator_collapse_20261030/probe.py --profiles '4,6;4,7;4,8;5,6;5,7;5,8;6,6;6,7;6,8;7,7' --output research/separator_collapse_20261030/census.json
     python3 research/separator_collapse_20261030/independent.py
-    lake build LC004.IncidenceFaceSum
-    lake env lean research/separator_collapse_20261030/CollapseCriterion.lean
+    python3 research/separator_collapse_20261030/rescue_skips.py
+    lake build LC004.SeparatorDeletionLink
+    lake env lean research/separator_collapse_20261030/UseExistingCollapse.lean
 
 The committed archive is deterministic gzip JSON with timing fields removed. Full traces for representative zeros and hashes for all zero-case traces are included. Recompute traces with the source to verify every hash. Standard-library Python suffices. No local Sage or Lean pass is claimed in this continuation, and no worldwide novelty claim is made.
+
+## Research queue and remaining obstruction
+
+1. Extract a geometry-dependent free-pair rule from the retained traces, including the cases where domination stalls. Reject rules on explicit counterexamples before formalization.
+2. Test candidate rules on crossing-connected three-class inputs, with explicit budgets and independent original-generator checks.
+3. If a uniform rule survives, prove existence of its trace in Lean; the generic trace-to-zero theorem is already available.
+4. Classify and enumerate the nonzero coefficient families, then sum their contributions in the exact counting polynomial.
+
+There is no justified percentage solved or fixed count of mathematical steps remaining. The new result is a finite, reproducible elimination of all 32 recorded budget skips, not a general recurrence for A035617.

@@ -1,10 +1,10 @@
 {
   "status": "VERIFIED-COMP",
-  "base_proof_source": "ba744372317983ce26c94e32d7f7cd176c4893ac",
-  "verified_base_run": 40994461526,
-  "active_base_evidence": "482ff9f3e678aaf7cf120a0974613c18fbb5676d",
-  "new_source_commit": "7cbbce0413c012d0e64fdf95a13624978d3d5985",
-  "new_lean_status": "Initial point_sum elaboration rejected; explicit finite-pair rewrite submitted for verification",
+  "base_proof_source": "f919410e300e724914913e862f551967c989a5f6",
+  "verified_base_run": 40998017137,
+  "active_base_evidence": "c6f719c08d519e0656ce6b035c69bbe143d74e46",
+  "new_source_commit": null,
+  "new_lean_status": "Reuses checked PR38 infrastructure; merged-source audit pending",
   "total_distinct_patterns": 10473,
   "total_crossing": 10364,
   "genuine_full_join_zeros": 1156,
@@ -220,7 +220,29 @@
   ],
   "archive_sha256": "3fdca508f501ac079e6732f8722feb4d1da2a13a7ea9128840ddfc2b34addb29",
   "uncompressed_sha256": "9b726a58b2fd348c9da7b5c5e9cf960a81726bef9570a437725dc8f1640e31f3",
-  "novelty": "Not established. Prior repository (5,7) sample already contains positive coefficients. This extends finite coverage and topological verification.",
+  "novelty": "No global novelty claim. Overlapping PR38 results are reused; source-pipeline budget skips are resolved; census totals must not be added.",
   "exact_hosted_run": 40999056173,
-  "exact_hosted_status": "success"
+  "exact_hosted_status": "success",
+  "retired_candidates": {
+    "commits": [
+      "7cbbce0413c012d0e64fdf95a13624978d3d5985",
+      "3c38dd36535a8a15b00a42f5706191bdb8f5dbf3"
+    ],
+    "reason": "point_sum elaboration failures, then superseded by already checked PR38 theorem"
+  },
+  "resolved_source_skips": {
+    "patterns": 32,
+    "zero_replayed_collapses": 26,
+    "nonzero_histogram": {
+      "8": 2,
+      "10": 2,
+      "-4": 2
+    },
+    "max_original_generators": 3591,
+    "histogram": {
+      "zero-with-replayed-elementary-collapse": 17,
+      "zero-with-replayed-strong-collapse": 9,
+      "coefficient-resolved-collapse-not-asserted": 6
+    }
+  }
 }

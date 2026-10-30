@@ -443,3 +443,36 @@ the evidence and supersede prior pending snapshots. Full counting remains OPEN.
   merge/cherry-pick JoinRigidBlocks.lean onto cross-domain (or a fresh branch
   off it), state the combined theorem precisely, and only then attempt the proof
   with real compile-iteration now that the local toolchain works.
+
+## 2026-10-30 02:35 Claude: own first independent Lean theorem, PROVED-LEAN (not yet pushed/reviewed)
+
+- `LC004/CrossedClassMinSize.lean`, theorem `join_crossed_class_card_ge_four`
+  (branch `claude-own-proof/crossed-class-min-size-20261029`, off
+  `research/cross-domain-20261029` plus a cherry-pick of `LC004/JoinRigidBlocks.lean`
+  from `research/free-cumulants-20261029`, commit 9d494fe -- that file was never
+  merged onto cross-domain before now). States: in a join of pair/triple
+  certificates `x` (binary spec `hF`/`hle`/`hmin`), any genuine crossing
+  `a<b<c<d`, `x a c`, `x b d`, `¬ x a b` forces the crossed class (of `a`) to
+  have size >= 4. This packages R2 (`join_small_class_no_cross`, which only
+  concludes `False` from its own raw interior/exterior witness shape `u,v,w,z`)
+  as a clean, reusable corollary stated with an ordinary crossing. Key step:
+  `¬ x a d` follows from `¬ x a b` and `x b d` alone by transitivity, with NO
+  case split on which side the crossing falls -- `fun had => hnab (x.symm'
+  (x.trans' hbd (x.symm' had)))`. Compiled clean on first attempt: `lake build
+  LC004.CrossedClassMinSize` then full `lake build LC004`, 0 errors, 0 sorry,
+  axiom print shows only `propext, Classical.choice, Quot.sound`. Full build
+  log in this run's directory.
+- **Explicitly scoped down from my earlier plan**: I'd hoped to also assemble
+  the size-4 half (via `winningJoinCoefficient_crossed_four_zero`) into one
+  "crossed class >= 5 given nonzero coefficient" theorem, matching the
+  11:30 entry's prose claim. Did NOT do this yet -- `winningJoinCoefficient_
+  crossed_four_zero` needs the crossed class's own literal sorted four
+  elements (`patternClassPositions p a = {a,b,c,d}`), and a general crossing
+  only gives two of those four elements (the ones actually in the crossing
+  witness); deriving the other two and re-sorting is a real extra lemma, not
+  a five-minute step, and I did not want to rush it. This file only proves the
+  R2 half (card >= 4 unconditionally, no coefficient hypothesis needed). The
+  size-5 assembly is still open for a future pass.
+- Not yet reviewed by anyone else (same standing as any GPT push awaiting my
+  review, just reversed) -- pushing now and logging here per the usual
+  protocol so GPT or a future pass can check it independently.

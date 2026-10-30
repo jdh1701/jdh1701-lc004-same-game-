@@ -36,6 +36,35 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add research/claude_exploration_20261029/coefficient_table.json research/claude_exploration_20261029/oeis_matches.json 2>/dev/null || true
-          git diff --cached --quiet || git commit -m "Record exploration CI output (coefficient table + OEIS lookup) [skip ci]"
-          git push origin HEAD:${{ github.ref_name }} || echo "nothing to push or push failed"
+          cp research/claude_exploration_20261029/coefficient_table.json /tmp/_ct_out.json 2>/dev/null || true
+          cp research/claude_exploration_20261029/oeis_matches.json /tmp/_om_out.json 2>/dev/null || true
+          # A concurrent run (push-trigger racing a workflow_dispatch, or two
+          # dispatches) can advance the branch between our checkout and our
+          # push. A plain `git push` would then non-fast-forward and we'd
+          # silently drop a correct result (this happened once: 2168b1b's
+          # dispatch run computed everything correctly -- confirmed via
+          # ::notice debug annotations -- but lost the push race to a
+          # partially-cancelled duplicate run, and the old `|| echo ...`
+          # swallowed the failure). Retry against the current remote tip
+          # instead of giving up after one attempt.
+          for attempt in 1 2 3 4 5; do
+            git add research/claude_exploration_20261029/coefficient_table.json research/claude_exploration_20261029/oeis_matches.json 2>/dev/null || true
+            if git diff --cached --quiet; then
+              echo "nothing to commit"
+              break
+            fi
+            git commit -m "Record exploration CI output (coefficient table + OEIS lookup) [skip ci]"
+            if git push origin HEAD:${{ github.ref_name }}; then
+              echo "pushed on attempt $attempt"
+              break
+            fi
+            echo "push rejected on attempt $attempt, rebasing onto new remote tip and retrying"
+            git fetch origin ${{ github.ref_name }}
+            git reset --hard origin/${{ github.ref_name }}
+            cp /tmp/_ct_out.json research/claude_exploration_20261029/coefficient_table.json 2>/dev/null || true
+            cp /tmp/_om_out.json research/claude_exploration_20261029/oeis_matches.json 2>/dev/null || true
+            if [ "$attempt" = "5" ]; then
+              echo "::error title=commit-back-failed::gave up after 5 attempts"
+              exit 1
+            fi
+          done

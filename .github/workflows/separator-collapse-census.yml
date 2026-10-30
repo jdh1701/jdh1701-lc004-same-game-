@@ -1,0 +1,52 @@
+name: Separator sparse rescue and independent census
+on:
+  push:
+    branches: [research/separator-collapse-census-20261030]
+    paths:
+      - 'research/separator_collapse_20261030/*.py'
+      - 'research/separator_collapse_20261030/*.lean'
+      - '.github/workflows/separator-collapse-census.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+      - uses: leanprover/lean-action@434f25c2f80ded67bba02502ad3a86f25db50709
+        with:
+          auto-config: false
+          build: false
+          use-mathlib-cache: true
+      - name: Build imported original-game Euler foundation
+        run: lake build LC004.SeparatorDeletionLink
+      - name: Audit reused collapse infrastructure and transitive axioms
+        shell: bash
+        run: |
+          set -euo pipefail
+          lake env lean research/separator_collapse_20261030/UseExistingCollapse.lean | tee separator-collapse-lean.log
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: separator-collapse-lean
+          path: separator-collapse-lean.log
+  exact:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+      - name: Complete catalogue, Euler, collapse and independent replay
+        run: |
+          python3 research/separator_collapse_20261030/probe.py --profiles '4,6;4,7;4,8;5,6;5,7;5,8;6,6;6,7;6,8;7,7' --output research/separator_collapse_20261030/census.json
+          python3 research/separator_collapse_20261030/independent.py
+          python3 research/separator_collapse_20261030/rescue_skips.py
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: separator-collapse-exact
+          path: |
+            research/separator_collapse_20261030/census.json
+            research/separator_collapse_20261030/independent-results.json
+            research/separator_collapse_20261030/rescued-results.json

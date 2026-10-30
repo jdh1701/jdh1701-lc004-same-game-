@@ -1,0 +1,877 @@
+{
+  "source_commit": "c6f719c08d519e0656ce6b035c69bbe143d74e46",
+  "archive_blob": "3c87429e67a431f008dfbf2b003d6e893be43c70",
+  "rows": [
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "profile": [
+        9,
+        9
+      ],
+      "generators": 2616,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "profile": [
+        9,
+        9
+      ],
+      "generators": 1472,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "profile": [
+        9,
+        9
+      ],
+      "generators": 1648,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "profile": [
+        8,
+        9
+      ],
+      "generators": 1482,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "profile": [
+        9,
+        9
+      ],
+      "generators": 1648,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "profile": [
+        8,
+        9
+      ],
+      "generators": 850,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "profile": [
+        9,
+        9
+      ],
+      "generators": 1648,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "profile": [
+        8,
+        9
+      ],
+      "generators": 776,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "profile": [
+        8,
+        9
+      ],
+      "generators": 1257,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "profile": [
+        8,
+        9
+      ],
+      "generators": 1182,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "profile": [
+        6,
+        10
+      ],
+      "generators": 696,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "profile": [
+        9,
+        9
+      ],
+      "generators": 1648,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "profile": [
+        9,
+        9
+      ],
+      "generators": 1820,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "profile": [
+        8,
+        9
+      ],
+      "generators": 764,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "profile": [
+        6,
+        10
+      ],
+      "generators": 594,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "profile": [
+        6,
+        10
+      ],
+      "generators": 540,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "profile": [
+        6,
+        10
+      ],
+      "generators": 696,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "profile": [
+        8,
+        9
+      ],
+      "generators": 1257,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "profile": [
+        9,
+        9
+      ],
+      "generators": 694,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "profile": [
+        8,
+        9
+      ],
+      "generators": 497,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "profile": [
+        9,
+        9
+      ],
+      "generators": 512,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "profile": [
+        9,
+        9
+      ],
+      "generators": 3591,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "profile": [
+        6,
+        10
+      ],
+      "generators": 696,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "profile": [
+        8,
+        9
+      ],
+      "generators": 497,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "profile": [
+        9,
+        9
+      ],
+      "generators": 713,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "profile": [
+        9,
+        9
+      ],
+      "generators": 981,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "profile": [
+        9,
+        9
+      ],
+      "generators": 512,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "profile": [
+        8,
+        9
+      ],
+      "generators": 446,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "profile": [
+        6,
+        10
+      ],
+      "generators": 594,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "profile": [
+        8,
+        9
+      ],
+      "generators": 1040,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "profile": [
+        9,
+        9
+      ],
+      "generators": 3591,
+      "status": "SKIPPED-generator-budget"
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "profile": [
+        6,
+        10
+      ],
+      "generators": 696,
+      "status": "SKIPPED-generator-budget"
+    }
+  ]
+}

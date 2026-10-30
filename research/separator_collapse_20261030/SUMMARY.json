@@ -3,8 +3,8 @@
   "base_proof_source": "f919410e300e724914913e862f551967c989a5f6",
   "verified_base_run": 40998017137,
   "active_base_evidence": "c6f719c08d519e0656ce6b035c69bbe143d74e46",
-  "new_source_commit": null,
-  "new_lean_status": "Reuses checked PR38 infrastructure; merged-source audit pending",
+  "new_source_commit": "81bca891be8f9f7534444a3fb3cbc9073171af4a",
+  "new_lean_status": "Hosted Lean4.19.0 build and five-declaration transitive axiom audit passed; existing PR38 theorems reused",
   "total_distinct_patterns": 10473,
   "total_crossing": 10364,
   "genuine_full_join_zeros": 1156,
@@ -244,5 +244,13 @@
       "zero-with-replayed-strong-collapse": 9,
       "coefficient-resolved-collapse-not-asserted": 6
     }
-  }
+  },
+  "post_domination_obstruction": {
+    "cores_without_free_vertices_or_edges": 17,
+    "cores_without_free_faces_dimension_at_most_2": 3,
+    "status": "VERIFIED-COMP locally; full code in REPORT.md; not a new Lean theorem"
+  },
+  "new_hosted_run": 41002449977,
+  "new_hosted_status": "success",
+  "new_exact_status": "Hosted complete census, independent raw-game checks and 32-case rescue passed with deterministic receipt equality"
 }

@@ -76,11 +76,11 @@ Both homology calculations use the same exact GF2 elimination routine on indepen
 
 The reusable formal criterion is already proved in PR38: LC004.winningJoinCoefficient_zero_of_elementary_trace derives vanishing of the original coefficient from a verified trace on the actual complete indexed separator complex. LC004.facetAlternatingSum_deletion_link and LC004.facetFaces_eq_of_mutual_cover justify the sparse operations at the mathematical level. UseExistingCollapse.lean audits five reused declarations and their transitive axiom dependencies, permitting only propext, Classical.choice, and Quot.sound. It introduces no new theorem. The individual Python traces are not imported into Lean in this work.
 
-The earlier exhaustive exact job passed hosted run40999056173. The new merged-source workflow rebuilds the existing formal foundation and audit and reruns the entire census, independent checks, and 32-case rescue. Its exact source SHA and final status belong in CI_RECEIPT.json after verification; pending CI is not reported as a completed Lean pass.
+The earlier exhaustive exact job passed hosted run40999056173. The new merged-source workflow rebuilds the existing formal foundation and audit and reruns the entire census, independent checks, and 32-case rescue. The merged-source run41002449977 PASSED both jobs at exact source81bca891be8f9f7534444a3fb3cbc9073171af4a. CI_RECEIPT.json and the lean-verified.log/exact-verified.log excerpts record this completed verification. Subsequent checkpoint edits affect evidence and documentation only.
 
 ## Strongest surviving research target
 
-For winning crossing-connected heavy patterns whose original certificate generators have full join, investigate whether zero coefficient forces an elementary collapse of the actual separator complex to a point. The converse follows from the existing formal criterion when its actual-complex assumptions are supplied. The winning/nonvoid qualification matters: a losing word has an empty generator family and a void complex, so Euler zero alone cannot imply a collapse to a point.
+For winning crossing-connected patterns with at least two classes, every class of size at least five, and whose original certificate generators have full join, investigate whether zero coefficient forces an elementary collapse of the actual separator complex to a point. The converse follows from the existing formal criterion when its actual-complex assumptions are supplied. The winning/nonvoid qualification matters: a losing word has an empty generator family and a void complex, so Euler zero alone cannot imply a collapse to a point.
 
 A proof must construct a uniform free-pair rule from the geometry. Checking every case of another fixed profile is not a substitute. The next step is to inspect the retained collapse traces for such a rule, then test it on a new three-class or larger-class family. Separately, the surviving nonzero patterns still need an enumeration law. Even a complete zero classification would not by itself solve A035617.
 
@@ -104,3 +104,50 @@ The committed archive is deterministic gzip JSON with timing fields removed. Ful
 There is no justified percentage solved or fixed count of mathematical steps remaining. The new result is a finite, reproducible elimination of all 32 recorded budget skips, not a general recurrence for A035617.
 
 Reproducibility correction: the first archive comparison compared an in-memory tuple pattern with its JSON list representation. It rejected equal serialized data. The comparison now canonicalizes tuples and lists identically; arithmetic and trace replay were unaffected. This failure is retained in the CI history rather than silently treated as a pass.
+
+## Post-domination strategy obstruction (local exact computation)
+
+Among the 17 rescued zeros requiring elementary collapses after the recorded domination sequence, 14 resulting cores have minimum free-face dimension 2 and three have minimum dimension 3. In particular, none of these cores has a free vertex or edge. The three stronger examples are 000011111000001111 (1,820 generators), 001100000001111111 and 001111111000000011 (3,591 generators each), all of profile (9,9). A rule restricted to deleting free vertices, edges, or triangles cannot even start on these three specific cores.
+
+This claim concerns the recorded residual complexes. It does not assert that every domination order gives the same core, that these are globally minimal counterexamples, or that no different higher-level decomposition exists. All three cores do collapse by the retained higher-dimensional traces. Their full complexes have 18,972, 54,528 and 54,528 faces, respectively. An independent global coface-intersection check examined all 1,737, 3,231 and 3,231 nonempty faces of dimension at most two and found none free. A free tetrahedron/four-simplex pair is supplied in core-obstructions.json for each, proving the stated minimum is attained.
+
+The following standalone diagnostic reproduces the low-face obstruction from the immutable receipt. It imports no collapse-search helper. This diagnostic is VERIFIED-COMP locally; it is not a new Lean theorem or part of the hosted source audit.
+
+```python
+import gzip, json
+from pathlib import Path
+rows = json.loads(gzip.decompress(Path("rescued-results.json.gz").read_bytes()))["rows"]
+for r in rows:
+    if not r["elementary_trace"]:
+        continue
+    fs = r["strong_core_facets"]
+    free = []
+    for t in fs:
+        bits = t
+        while bits:
+            v = bits & -bits
+            bits -= v
+            s = t ^ v
+            if s and all(s & f != s for f in fs if f != t):
+                free.append(s)
+    minimum = min(s.bit_count() - 1 for s in free)
+    if minimum < 3:
+        continue
+    vertex_map = r["elementary_vertex_map"]
+    compact = lambda f: sum(1 << i for i, v in enumerate(vertex_map) if f >> v & 1)
+    F = {0}
+    for f in map(compact, fs):
+        s = f
+        while s:
+            F.add(s)
+            s = (s - 1) & f
+    low = [s for s in F if s and s.bit_count() <= 3]
+    # Independent incidence intersection gives ALL cofaces, not only facets.
+    incidence = {1 << i: {f for f in F if f >> i & 1} for i in range(len(vertex_map))}
+    for s in low:
+        cofaces = set.intersection(*(incidence[1 << i] for i in range(len(vertex_map)) if s >> i & 1))
+        assert len(cofaces) != 2
+    print("".join(map(str, r["pattern"])), minimum, len(F), len(low))
+```
+
+Final verification checkpoint: [hosted run41002449977](https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/41002449977) is SUCCESS at source81bca891be8f9f7534444a3fb3cbc9073171af4a. The exact job reproduces all ten census rows and all32 rescued inputs with no errors. The five audited Lean declarations are reused proofs, while the per-pattern traces and core-obstruction diagnostic remain computational certificates.

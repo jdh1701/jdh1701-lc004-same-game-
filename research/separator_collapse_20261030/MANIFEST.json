@@ -3,8 +3,8 @@
   "base": "c6f719c08d519e0656ce6b035c69bbe143d74e46",
   "checked_base_proof": "f919410e300e724914913e862f551967c989a5f6",
   "checked_base_run": 40998017137,
-  "merged_source_commit": null,
-  "merged_ci_run": null,
+  "merged_source_commit": "81bca891be8f9f7534444a3fb3cbc9073171af4a",
+  "merged_ci_run": 41002449977,
   "source_sha256": {
     "research/separator_collapse_20261030/probe.py": "0276f144c9ee10ce091fa303f66351a416b966d37dff073b9db6c4faee36b158",
     "research/separator_collapse_20261030/independent.py": "3daaa55a16a9b4bdfc9cb3b03a0e951a94f386a4e84dbdd61f4595dada5d6409",
@@ -15,14 +15,18 @@
     "research/separator_collapse_20261030/rescued-results.json.gz": "96c07cc43b5e449da01b22cd7f516a030dc79580d82528bff1e3ecf28d292600",
     "research/separator_collapse_20261030/independent-results.json": "8dccc366ea427a0e3efb54a96d846a4a8719837cb1735ab307dbce6866fc58b5",
     "research/separator_collapse_20261030/homology-controls.json": "340dbe3b9d6f491b68522276d10a14458eb68c5dd7d0280f7fda47f890166f04",
-    "research/separator_collapse_20261030/REPORT.md": "e6484e4d8fb325c8b8aeee93b48541eab2bfd4e2d28868ba2d044f0050b6b7bb",
-    "research/separator_collapse_20261030/SUMMARY.json": "02e6a72f91745c05ff531e542ddcbf97e09648ffb36806185fa3378b59687489",
+    "research/separator_collapse_20261030/REPORT.md": "925f1ba9d33e9199bb6a2dba99a2071432da0f6c055330bc5ae7e9da0bdb3279",
+    "research/separator_collapse_20261030/SUMMARY.json": "e5f06cdd26d69b1ec43c4433a9241d185db9121bd2b6178c1be5f775a1e9923f",
     "research/separator_collapse_20261030/census.log": "b4a896bfb7902bcea2e74a0a784a26ce5ffb94479562c8cad02a87fe0fdf267b",
     "research/separator_collapse_20261030/independent.log": "9f4f5e3aef4e6d73d375deb4149830d6d1532707cae25d318a67dba0c8f7ec4f",
     "research/separator_collapse_20261030/rescue.log": "a571f3f9fe9be62213d09fade2042c43bb8e1ed3e73fdb31c8b9f6c4e57d18f5",
     "research/separator_collapse_20261030/lean-attempt-1.log": "1807b754cf03aea850fbbb59285d2c8f7d8554f41c660f7e8dcf1a249bafac79",
     "research/separator_collapse_20261030/lean-attempt-2.log": "0c4668cffa9ead8b5a5fecd3126e9b04b36a0ebb158f8e804a7e7bf272018b3d",
-    ".github/workflows/separator-collapse-census.yml": "ac7c638d0901ad2732196f0bfca6f391967d2fe0abd20adb81ad2e9dda3e7c34"
+    ".github/workflows/separator-collapse-census.yml": "ac7c638d0901ad2732196f0bfca6f391967d2fe0abd20adb81ad2e9dda3e7c34",
+    "research/separator_collapse_20261030/core-obstructions.json": "17cf2067375ff565a88c73b7fc84620f864f798717b6742ba720c5248008bfbe",
+    "research/separator_collapse_20261030/lean-verified.log": "7184b75617b6ba864b6b4e36dcdc9c20a81c60c8b16126ea756c3f606aca61da",
+    "research/separator_collapse_20261030/CI_RECEIPT.json": "befc74a2d44f9380dbc03b0393d85678125fefedc8357c54e33e4461147a9841",
+    "research/separator_collapse_20261030/exact-verified.log": "7c54dbe06c46aa86f0def861ad643479b626427eb18a5888d7e04a4ec03f0dea"
   },
-  "status": "VERIFIED-COMP locally; merged hosted audit pending; no new Lean theorem or general counting solution"
+  "status": "Hosted Lean build/axiom audit and complete exact checks PASSED at merged_source_commit; no new Lean theorem or general counting solution"
 }

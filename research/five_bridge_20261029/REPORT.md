@@ -74,7 +74,7 @@ c365c2ae2922a35765f9a6b692d05e838873ebcd, CI 40984245009 SUCCESS.
 
 ## Independent finite replay
 
-`verify_original_bridge.py` constructs global noncrossing certificates recursively
+`verify_global_nc_bridge.py` constructs global noncrossing certificates recursively
 by interval decomposition. It does not use the ten-split compatibility table to
 construct these original generators. It compares that catalogue with independent
 classwise split construction, then computes signed joins on ACTUAL board-position
@@ -92,13 +92,13 @@ equivalence relations, rather than the compressed split-label coefficient DP.
 - The n5 one-class exclusion control has coefficient -4, not -1 or 0.
   Thus dropping the at-least-two-classes hypothesis is **KILLED** by this example.
 
-Saved result: `verify_original_bridge.json`; raw output:
-`original-bridge-replay.log`. This replay is finite evidence, not the general proof.
+Saved result: `verify_global_nc_bridge.json`; raw output:
+`global-nc-bridge-replay.log`. This replay is finite evidence, not the general proof.
 
 ## Verification and unsuccessful attempts
 
 Local full root build PASS; all 225 active modules reachable; axiom audit PASS
-for 3726 declarations, only propext, Classical.choice, Quot.sound. Both negative
+for 3729 declarations, only propext, Classical.choice, Quot.sound. Both negative
 coverage/axiom guards PASS. Source guard rejects proof placeholders, custom
 axioms, native_decide, unsafe/partial project source. Final theorem's printed
 axioms contain only those three standard axioms.
@@ -132,3 +132,12 @@ survives. Do not presume the all-five proof transfers. A general recurrence for
 S_j = 5,35,415,6455 would also be useful, but these four finite values alone cannot
 justify one. Statistical-mechanics/biochemistry/finance analogies supplied no
 proved equivalence and are not inputs to this proof.
+
+Supplemental replay distinction: `verify_original_bridge.py` is the separate
+554-case position-join replay (548 connected,47 coefficients -1,501 zero),
+including random cases and a disconnected coefficient16 exclusion control.
+The global NC-catalogue replay above is `verify_global_nc_bridge.py`; the two
+finite checks have different scopes and neither is an exhaustive n15 count.
+The final two simple original coefficient corollaries add range {-1,0} and
+cancellation with at least three original generators. Final audit3729 includes
+those corollaries. The initial audit3726 predates them.

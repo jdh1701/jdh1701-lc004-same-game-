@@ -65,7 +65,7 @@ jobs:
           python research/five_kernel_20261029/generate_cases.py --check
           python research/five_actual_20261029/verify_implication.py
           python research/five_actual_20261029/count_by_implication.py
-          python research/five_bridge_20261029/verify_original_bridge.py
+          python research/five_bridge_20261029/verify_global_nc_bridge.py
           python research/five_geometry_20261029/claude_review/verify_ten_split_closure.py > /tmp/five-claude-review.log
           diff -u research/five_geometry_20261029/claude_review/verify_ten_split_closure.log /tmp/five-claude-review.log
           python research/choice_complex_20261029/verify_collapse.py

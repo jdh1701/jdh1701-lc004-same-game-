@@ -363,3 +363,12 @@ research/five_bridge_20261029. Full counting remains OPEN: mixed profiles and
 general survivor recurrences are not solved. No novelty claim. Previous finite
 count6455 is unchanged and is NOT A(25,5). No unsupported cross-domain analogy
 was used in the proof.
+
+Bridge verification supplement: final audit3729 declarations includes the new
+range and >=3-original-generator corollaries (earlier audit3726 preceded them).
+Two finite replays are distinct: verify_original_bridge.py checks554 cases,548
+connected (47 at-1,501 zero); verify_global_nc_bridge.py independently constructs
+global NC certificate catalogues and checks381 patterns,375 connected (40 at-1,
+335 zero). Original global replay was temporarily named verify_original_bridge.py
+before the scripts were separated; preserved logs retain their original names.
+The n10 disconnected coefficient16 control kills omitting connectivity.

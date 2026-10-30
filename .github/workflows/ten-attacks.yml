@@ -1,0 +1,67 @@
+name: Ten attacks proof and exact replay
+on:
+  push:
+    branches: [research/ten-attacks-20261030]
+    paths:
+      - 'LC004/**'
+      - 'LC004.lean'
+      - 'research/ten_attacks_20261030/**'
+      - '.github/workflows/ten-attacks.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.elan
+            .lake
+          key: ${{ runner.os }}-lean-v4.19.0-${{ hashFiles('lean-toolchain', 'lakefile.toml', 'lake-manifest.json') }}
+          restore-keys: |
+            ${{ runner.os }}-lean-v4.19.0-
+      - name: Install pinned Lean
+        run: |
+          if [ ! -x "$HOME/.elan/bin/elan" ]; then
+            curl https://elan.lean-lang.org/elan-init.sh -sSf | sh -s -- -y
+          fi
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Build and audit
+        run: |
+          set -eo pipefail
+          python scripts/check_lean_coverage.py
+          lake exe cache get
+          lake build LC004 2>&1 | tee ten-build.log
+          lake env lean scripts/AxiomAudit.lean 2>&1 | tee ten-axiom-audit.log
+          python scripts/test_verification_guards.py
+          git diff --exit-code -- lake-manifest.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ten-attacks-lean
+          path: ten-*.log
+  exact:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run ten-route experiments and independent structural replay
+        run: |
+          set -eo pipefail
+          python research/ten_attacks_20261030/analytic.py
+          python research/ten_attacks_20261030/language.py
+          python research/ten_attacks_20261030/topology.py
+          python research/ten_attacks_20261030/holdout.py
+          python research/ten_attacks_20261030/decision.py
+          python research/ten_attacks_20261030/deep_holdout.py
+          python research/ten_attacks_20261030/homology_search.py
+          python research/ten_attacks_20261030/replay.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ten-attacks-exact
+          path: research/ten_attacks_20261030/*.json

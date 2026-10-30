@@ -257,3 +257,5 @@ import LC004.FiveOriginalCoefficientLaw
 import LC004.MixedFiveSixCoefficient
 
 import LC004.SixClassSeparatorFacets
+
+import LC004.SeparatorDeletionLink

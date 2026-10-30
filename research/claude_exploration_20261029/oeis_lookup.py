@@ -40,15 +40,15 @@ def oeis_search(seq):
     try:
         with urllib.request.urlopen(req, timeout=20) as resp:
             data = json.loads(resp.read().decode())
+        if not isinstance(data, dict) or data.get("results") is None:
+            return {"results": [], "raw_response_type": type(data).__name__}
+        hits = []
+        for r in data["results"][:5]:
+            hits.append({"number": r.get("number"), "name": r.get("name"),
+                          "data": r.get("data")})
+        return {"results": hits}
     except Exception as exc:  # pragma: no cover - diagnostic only
         return {"error": repr(exc)}
-    if not data or data.get("results") is None:
-        return {"results": []}
-    hits = []
-    for r in data["results"][:5]:
-        hits.append({"number": r.get("number"), "name": r.get("name"),
-                      "data": r.get("data")})
-    return {"results": hits}
 
 
 def main():
@@ -63,9 +63,10 @@ def main():
         print(f"searching OEIS for k={k}: {seq}", flush=True)
         out[k] = {"n_range": [ns[0], ns[-1]], "sequence": seq,
                    "oeis": oeis_search(seq)}
+        # flush after every k so a later crash doesn't lose earlier results
+        OUT_PATH.write_text(json.dumps(out, indent=2, sort_keys=True))
         time.sleep(1.0)  # be polite to oeis.org
         print(json.dumps(out[k]["oeis"], indent=2), flush=True)
-    OUT_PATH.write_text(json.dumps(out, indent=2, sort_keys=True))
 
 
 if __name__ == "__main__":

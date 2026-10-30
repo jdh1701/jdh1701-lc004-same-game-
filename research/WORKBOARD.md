@@ -475,3 +475,58 @@ the evidence and supersede prior pending snapshots. Full counting remains OPEN.
   survives" half, for arbitrary n. The ">= 5" bound itself, not a full
   characterization of which size->=5 profiles actually give nonzero
   coefficients, remains open (that's the real counting problem).
+
+## 2026-10-30 04:32 Claude: abandoned a misdirected empirical check; scoped (not yet attempted) a boundary consequence of the crossed>=5 theorem
+
+- Killed a backgrounded independent Python sanity-check (`verify_boundary_profile.py`,
+  n=10, all 2-class size profiles, fresh Mobius-transform code) that I had started
+  to probe whether only the (5,5) profile ever yields a nonzero coefficient. It
+  never produced output (timed out/was killed, exit 144) -- naive partition
+  enumeration blows up for the large-block profiles (e.g. (1,9), (2,8) have huge
+  Bell-number sub-lattices). Not optimizing it: on reflection the check was
+  mistargeted (see next point), so there is no reason to re-run a faster version
+  of it.
+- The actual question I wanted to answer -- "at the n=5j boundary (j classes,
+  total 5j), does my new `winningJoinCoefficient_ne_zero_crossed_class_card_ge_five`
+  theorem plus arithmetic force every class to size exactly 5?" -- needs one more
+  ingredient that is NOT what the Python script was testing: my theorem only
+  fires on a class that is actually CROSSED (witnessed by a literal a<b<c<d with
+  a,c in one class, b,d in another, a,b in different classes). To reach "every
+  class is crossed" from "the pattern is NCConnected" (`noncrossingClosure p = T`,
+  the project's existing closure-based connectivity) is itself a nontrivial claim,
+  not a numerical one: a naive first guess ("merge one class with the complement;
+  if that 2-block coarsening is noncrossing, NCConnected fails") does NOT
+  immediately give "that one class is crossed by some single other class" -- the
+  2-block merge can be forced non-noncrossing by interleaving among several OTHER
+  classes with no single other class crossing the one in question. So "NCConnected
+  with >=2 classes implies every class is crossed by at least one other class" is
+  an open graph-theoretic lemma about the crossing-graph of classes, not yet
+  checked here either empirically or in Lean. Until that lemma is settled, the
+  "only (5,5)-type profiles survive at the boundary" consequence has a real gap
+  and I should not state it as even a CONJECTURE here without computational
+  support -- scoping it as an open next step for myself, explicitly not claiming
+  progress on it this entry.
+- Existing relevant infrastructure already in the repo (found this entry, not
+  previously flagged): `winningJoinCoefficient_noncrossing_product`
+  (`LC004/NoncrossingCoefficientProduct.lean`) shows the collected coefficient
+  of ANY pattern factors as a product over the blocks of its noncrossing
+  closure of the coefficient restricted to each block -- i.e. a non-NC-connected
+  pattern's coefficient is nonzero iff every one of its noncrossing-closure
+  components has nonzero coefficient on its own. This confirms standalone
+  size-2/3 certificates (coefficient 1, trivially) are not counterexamples to
+  anything -- they just aren't NC-connected with anything else, so my theorem's
+  "crossed" hypothesis correctly never fires on them. No new work done with this
+  fact beyond citing it; it's the reason the empirical check needed `NCConnected`
+  as a filter and not just "any pattern," which the killed script also got wrong
+  (it checked every 2-class partition, not just NC-connected ones -- another
+  reason to drop it rather than fix it).
+- Next step for myself if I pick this back up: either (a) find/prove the
+  crossing-graph connectivity lemma directly (classes of an NCConnected pattern
+  with >=2 classes form a connected graph under "literally crosses"), checking
+  `LC004/NoncrossingConnectedFiber.lean` and `LC004/WeightedConnectedFibers.lean`
+  first since they already touch NCConnected + fibers and may have the pieces, or
+  (b) run a corrected, NCConnected-filtered, smaller-n empirical check (e.g. n=8
+  or n=9, not n=10, to stay fast) before investing more Lean effort. Not started.
+- PR #41 (`winningJoinCoefficient_ne_zero_crossed_class_card_ge_five`) is still
+  open, unreviewed. No new GPT commits observed on `research/cross-domain-20261029`
+  since the last check (watcher task `bl4250v8y` still running).

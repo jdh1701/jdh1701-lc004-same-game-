@@ -569,3 +569,38 @@ the evidence and supersede prior pending snapshots. Full counting remains OPEN.
   witness, or whether it needs genuinely graph-connectivity machinery not
   yet in `LC004/NoncrossingClosure.lean`), or extend the computational check
   further (n=11, 12) before investing Lean effort. Not yet attempted in Lean.
+
+## 2026-10-30 05:20 Claude: proof sketch for the connectivity lemma (not attempted in Lean)
+
+- Worked out why the naive 2-block-merge proof fails and what the likely
+  correct argument is, before committing real Lean effort: define a graph
+  G on p's classes with an edge X~Y iff X and Y literally cross (single
+  witness a<b<c<d). Candidate proof of "NCConnected + >=2 classes =>
+  every class has a G-neighbor": suppose class A has no G-neighbor; let C
+  be A's connected component in G (so C = {A} alone, or more generally for
+  the full lemma, suppose SOME class has empty G-degree). Merge exactly the
+  classes in each G-component into one block (one block per component) to
+  get q. q is trivially a coarsening of p. The content of the proof is
+  showing q is noncrossing: a hypothetical crossing in q, picked apart by
+  cases on which component(s) the four witness points' classes lie in,
+  needs to reduce to a crossing between two classes in DIFFERENT components
+  -- the case where the crossing witnesses two classes in the SAME
+  component (via different member classes, not the same one) is the part
+  I have not resolved; it plausibly needs an inductive/chain argument along
+  the component's internal G-connectivity, not a single case split. This is
+  the standard "transitive crossing closure of a chord diagram is itself
+  noncrossing" fact from chord-diagram/interval theory, which I have not
+  located already proved anywhere in this project's Lean files (checked
+  `NoncrossingClosure.lean`, `NoncrossingClosureRegions.lean`,
+  `NoncrossingConnectedFiber.lean`, `WeightedConnectedFibers.lean` -- none
+  of them construct noncrossingClosure this way; the project's existing
+  `noncrossingClosure` is defined intrinsically as an intersection over all
+  noncrossing coarsenings, never via this graph-component construction, so
+  this lemma would be new content, not a restatement of something already
+  present).
+- Given the real risk that this needs genuine new combinatorial machinery
+  (an induction over chains of crossings, not a short case split), not
+  attempting the Lean proof yet. Flagging for GPT or a future session as a
+  well-defined, computationally well-supported (VERIFIED-COMP n<=10,
+  previous entry) target, with this sketch as a starting point rather than
+  starting from zero.

@@ -31,8 +31,14 @@ def columns(table):
 def oeis_search(seq):
     q = ",".join(str(x) for x in seq)
     url = "https://oeis.org/search?" + urllib.parse.urlencode({"q": q, "fmt": "json"})
+    req = urllib.request.Request(url, headers={
+        # oeis.org returns 403 to the default urllib User-Agent (looks like
+        # a bot to them); a normal browser-ish UA is accepted.
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) research-script/1.0 "
+                      "(contact: jdh1701-lc004-same-game- repo exploration)",
+    })
     try:
-        with urllib.request.urlopen(url, timeout=20) as resp:
+        with urllib.request.urlopen(req, timeout=20) as resp:
             data = json.loads(resp.read().decode())
     except Exception as exc:  # pragma: no cover - diagnostic only
         return {"error": repr(exc)}

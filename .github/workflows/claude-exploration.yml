@@ -21,14 +21,9 @@ jobs:
       - name: Extend the exact falling-factorial coefficient table as far as time allows
         run: |
           python research/claude_exploration_20261029/extend_coefficient_table.py "${{ github.event.inputs.time_budget_seconds || '1200' }}"
-      - name: Search OEIS for each per-k column sequence
+      - name: Search OEIS offline (bulk dump; /search 403s every CI query, dump doesn't)
         run: |
-          python research/claude_exploration_20261029/oeis_lookup.py
-      - name: One-shot test -- is OEIS's bulk dump reachable even though /search 403s
-        run: |
-          python research/claude_exploration_20261029/test_bulk_download.py | while IFS= read -r line; do
-            echo "::notice title=oeis-bulk-test::$line"
-          done
+          python research/claude_exploration_20261029/oeis_offline_lookup.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:

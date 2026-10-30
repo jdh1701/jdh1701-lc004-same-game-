@@ -58,7 +58,19 @@ project's already-established NC-matching/Catalan correspondence
 with the existing theory at the boundary where the two overlap -- it is not
 itself new information.
 
-## CI results and a genuine negative finding: OEIS is unreachable from here
+## Update: OEIS unblocked via the bulk dump
+
+The "negative finding" below is now **superseded**: oeis.org blocks its
+live `/search` endpoint for CI runners, but not the domain itself or the
+bulk data dump (`oeis.org/stripped.gz`) -- confirmed by a one-shot test,
+both returned HTTP 200. `oeis_offline_lookup.py` replaces the dead
+`oeis_lookup.py`: fetches the dump once per run and greps it in memory
+instead of live-querying, fully restoring automated lookup. It also checks
+the all-five connected-kernel survivor sequence (5, 35, 415, 6455)
+directly, not just the coefficient-table columns. The section below is
+kept for the record of how the dead end was diagnosed.
+
+## CI results and a genuine negative finding: OEIS is unreachable from here (superseded above)
 
 Extended the table to n=17 on a CI runner (vs n=15 reached locally in the
 same wall-clock budget -- some runs reached only n=15 too; GH Actions

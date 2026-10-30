@@ -1,0 +1,48 @@
+{
+  "status": "VERIFIED-COMP",
+  "cuts": 31,
+  "certificate_facets": [
+    [
+      3
+    ],
+    [
+      17
+    ],
+    [
+      1,
+      7,
+      25
+    ],
+    [
+      1,
+      13,
+      19
+    ],
+    [
+      4,
+      7,
+      28
+    ],
+    [
+      24
+    ],
+    [
+      16,
+      19,
+      28
+    ],
+    [
+      16,
+      22,
+      25
+    ]
+  ],
+  "face_histogram": {
+    "0": 1,
+    "1": 12,
+    "2": 15,
+    "3": 5
+  },
+  "alternating_sum": -1,
+  "original_partition_join_coefficient": -1
+}

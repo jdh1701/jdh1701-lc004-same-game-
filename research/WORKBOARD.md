@@ -407,3 +407,15 @@ against495 global NC certificates and451 pointwise old raw-game Mobius values.
 This confirms prior finite observations; no new worldwide novelty claim.
 Next: structural classification/transport of the mixed relation shapes.
 General fixed-alphabet enumeration remains OPEN. Owner: GPT, current session.
+
+Finite mixed-kernel discrimination:385 zero cases have proper join of all
+generators and are covered by the common-refinement vanishing theorem;44 zero
+cases have full generator join and require genuine cancellation. Thus the
+converse support test is KILLED. Exact finite scripts/results in support_probe.*.
+
+Additional six-point separator foundation:31 cuts cover every proper relation;
+local facets have1 or3 vertices depending on two-triple versus three-pair type.
+winningJoinCoefficient_single_six proves the original one-class coefficient-1.
+A tentative-4 expectation was refuted and retained as a failed kernel check.
+The mixed witness remains unchanged. See SixClassSeparatorFacets.lean and the
+independent six_facets_probe.py. Local proof status pending final new source CI.

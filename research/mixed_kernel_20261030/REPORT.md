@@ -97,3 +97,33 @@ from arbitrary disjoint ordered classes, and transport that classification to
 original coefficients. The sample does not justify extending all-five majority
 closure, nor fitting a recurrence from the four survivor values. Mixed larger
 classes and general survivor enumeration remain open. A035617 remains open.
+
+## Discriminating follow-up: proper joins versus real cancellation
+
+The general common-refinement obstruction explains385 of the429 zero-coefficient
+crossing(5,6) cases in the finite census: the join of every original generator
+is still a proper refinement of p. The remaining44 zero cases DO have full
+generator join. Thus the converse, full generator join implies nonzero
+coefficient, is KILLED by explicit saved examples. The remaining work cannot
+be replaced by a support/connectivity test alone. The44 genuine-cancellation
+cases have7,12 or16 generators; the22 nonzero cases have3.
+Reproducible script: support_probe.py; results: support_probe.json.
+These385+44+22 cases exhaust the451 crossing inputs of this finite profile.
+
+## Six-point separating complex: positive reusable extension
+
+SixClassSeparatorFacets proves a complete separating family of31 nontrivial
+unordered two-part cuts of six positions. All8 original noncrossing2/3
+certificates are accounted for. A two-triple certificate lies below exactly1
+cut; a three-pair certificate lies below exactly3. Thus local facets are
+singletons or triangles, not uniformly single choice vertices.
+The actual local complex has face counts1,12,15,5 in sizes0,1,2,3; its alternating
+sum is1-12+15-5=-1. Through the general original-game separator identity,
+winningJoinCoefficient_single_six proves the ORIGINAL coefficient at the one-class
+six-point pattern is-1. A recalled tentative value-4 was rejected by Lean and
+by independent original-partition joins; the failed attempt is retained.
+No incorrect value was used by the successful mixed witness proof.
+The local cut-cardinality and original-coefficient proofs provide a positive
+foundation for a future mixed-profile complex with correct local incidence.
+Independent replay: six_facets_probe.py/json, with both bit-mask faces and
+actual position-partition signed joins.

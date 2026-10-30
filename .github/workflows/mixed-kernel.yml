@@ -51,7 +51,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Exhaust all five-versus-six interleavings
-        run: python research/mixed_kernel_20261030/probe.py
+        run: |
+          python research/mixed_kernel_20261030/probe.py
+          python research/mixed_kernel_20261030/support_probe.py
+          python research/mixed_kernel_20261030/six_facets_probe.py
       - uses: actions/upload-artifact@v4
         with:
           name: mixed-kernel-finite-checks

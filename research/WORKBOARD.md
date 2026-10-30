@@ -222,3 +222,31 @@ PROVED-PAPER pending new exact-commit CI. See research/five_geometry_20261029.
 The finite local relation itself is not yet proved in Lean. Full counting is
 OPEN: game-certificate/coefficient assembly, surviving pair enumeration, and
 mixed-profile connected weights remain. No percentage or step count to solution.
+
+## Kernel-checked finite five-class geometry
+
+PROVED-PAPER with local Lean verification pending exact new-commit CI:
+all252 sorted five-versus-five rank interleavings now satisfy local majority
+closure and a row/column cover when the original classes cross. The formal
+inventory is checked against List.sublistsLen; the ten pair choices are complete,
+valid and injective. Increasing placements preserve the local properties.
+See LC004/FiveClassGeometryExhaustive.lean and FiveClassGeometryApplication.lean,
+plus research/five_kernel_20261029 for sources, failures, checks and handoff.
+The earlier transport proof is PROVED-LEAN: commit2d8f0e7, CI40977784940 success;
+probe40977784898 success.
+
+Reviewed Claude PR36 head6cc82bcca69bb956156e1604a4bd9b4c4d1961bb. Its independent
+ten-split implementation was copied unchanged and replayed, matching all252
+cases (242 crossing,140 nonempty crossing). VERIFIED-COMP. Scope disagreement:
+its older3600-trial script does not filter/test cut-connectivity and forces only
+a fan as its designated small edge; do not describe all3600 as independently
+verified instances satisfying every abstract-theorem hypothesis. The raw review,
+script and log are preserved, with the correction in the new REPORT.md.
+
+Remaining: actual five-class rank normal forms and consistent split-label
+transport; certificate-family binary specification and crossing cuts; original
+winningJoinCoefficient/face-sum bridge and boundary cases. Surviving-pair counting
+and mixed-profile connected coefficients remain unresolved. Full counting OPEN.
+
+Final local verification:207 modules,3480 audited declarations, standard axioms
+only; both negative guards and Python/Claude/generator checks pass.

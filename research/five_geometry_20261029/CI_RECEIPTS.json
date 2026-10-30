@@ -1,5 +1,5 @@
 {
-  "status": "all local checks pass; exact-commit CI queued",
+  "status": "success on exact proof commit",
   "baseline": {
     "proof_commit": "c799420d1412535d3a56e8061882a6f6770182eb",
     "lean_exact_sage_run": 40973071008,
@@ -19,20 +19,16 @@
   "proof_commit": "2d8f0e78a4407f491681eda7dae2fcd54af839b9",
   "runs": [
     {
-      "id": 40977784898,
-      "name": "Cross-domain exact coefficient probes",
-      "status": "queued",
-      "conclusion": null,
-      "head_sha": "2d8f0e78a4407f491681eda7dae2fcd54af839b9",
-      "url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40977784898"
-    },
-    {
       "id": 40977784940,
       "name": "Choice-complex cancellation audit",
-      "status": "queued",
-      "conclusion": null,
-      "head_sha": "2d8f0e78a4407f491681eda7dae2fcd54af839b9",
-      "url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40977784940"
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 40977784898,
+      "name": "Cross-domain exact coefficient probes",
+      "status": "completed",
+      "conclusion": "success"
     }
   ]
 }

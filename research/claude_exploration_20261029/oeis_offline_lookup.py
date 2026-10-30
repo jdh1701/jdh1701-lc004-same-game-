@@ -62,8 +62,11 @@ def search_dump(dump_text, seq):
 
 
 def main():
+    print(f"::notice title=oeis-debug::CWD={Path.cwd()} OUT_PATH={OUT_PATH.resolve()}", flush=True)
     table = json.loads(TABLE_PATH.read_text())
     cols = columns(table)
+    print(f"::notice title=oeis-debug::cols sizes: "
+          f"{ {k: len(v) for k, v in sorted(cols.items())} }", flush=True)
     print("fetching OEIS bulk dump (oeis.org/stripped.gz)...", flush=True)
     dump_text = fetch_dump()
     print(f"dump fetched: {len(dump_text)} chars, "
@@ -78,15 +81,25 @@ def main():
     out["all_five_survivors"] = {"sequence": all_five, "oeis_ids": hits}
     print(f"all-five survivor sequence {all_five} -> OEIS matches: "
           f"{hits or 'NONE'}", flush=True)
+    # Write immediately so all_five_survivors is on disk even if a later
+    # per-k iteration throws (previously this key only existed in-memory
+    # until the first loop write, so an empty/short cols dict meant it was
+    # silently dropped -- this is almost certainly why it never landed).
+    OUT_PATH.write_text(json.dumps(out, indent=2))
+    print(f"::notice title=oeis-debug::wrote {OUT_PATH.resolve()} after all_five_survivors, "
+          f"{OUT_PATH.stat().st_size} bytes", flush=True)
     for k in sorted(cols):
         ns = sorted(cols[k])
         seq = [cols[k][n] for n in ns]
         if len(seq) < MIN_TERMS:
+            print(f"::notice title=oeis-debug::skipping k={k}, only {len(seq)} terms "
+                  f"(< MIN_TERMS={MIN_TERMS})", flush=True)
             continue
         hits = search_dump(dump_text, seq)
         out[k] = {"n_range": [ns[0], ns[-1]], "sequence": seq, "oeis_ids": hits}
         OUT_PATH.write_text(json.dumps(out, indent=2))  # sort_keys=True crashes: out mixes str ("all_five_survivors") and int keys
         print(f"k={k} seq={seq} -> OEIS matches: {hits or 'NONE'}", flush=True)
+    print(f"::notice title=oeis-debug::final out keys: {list(out.keys())}", flush=True)
     print("done.", flush=True)
 
 

@@ -555,3 +555,17 @@ contiguous-prefix Boolean-interval compression gives ZERO gain. Finite barrier
 rows are exact in1231 patterns/6155 fibers, with no general bounded-state rule.
 A035617 remains OPEN. Focus next on all-j all-five survivor enumeration and
 the first mixed positive-excess layer (5,5,6), preserving separator incidence.
+
+Final repository recheck: PR35 advanced to documentation-only
+da553f659a2238dd30e9f65da5de324444f06f63. It identifies NCConnected => every class
+crossed as the missing boundary bridge; the new ConnectedClassCrossing theorem
+closes precisely that gap. The prior abandoned n10 test there contributes no
+numerical evidence. No proof changes were missed. PR42 contains this work.
+
+
+PR42 verification: PROVED-LEAN on exact source
+f653c28b15697dd6b9a4b53771fe46beeeb83986, run41029475200. Lean job
+123975457884 and exact job123975457523 both SUCCESS. Hosted coverage241
+active modules, axiom audit4065 declarations, standard axioms only, negative
+guards PASS. This supersedes the pending status above. The source commit is
+frozen; the following receipt commit changes only documentation/evidence.

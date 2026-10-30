@@ -23,6 +23,11 @@ head `c685723815658cf6a3f195cef09450168f58dfeb`.
   coefficient and supplies the noncrossing-connectivity bridge.
 - PR39's 32 resolved budget skips and 17 hard collapse cores are prior results.
   They are inputs here, not new discoveries or additional census cases.
+- A final recheck found PR35 documentation commit
+  `da553f659a2238dd30e9f65da5de324444f06f63`. It explicitly identifies
+  NCConnected implying every class is crossed as the missing boundary bridge.
+  `ConnectedClassCrossing.lean` closes that exact gap. This subsequent commit
+  changes no proof source and contributes no additional numerical result.
 
 ## The new general theorem
 
@@ -153,3 +158,14 @@ unknown contributions. A successful rule must retain local separator incidence:
 the spectrum and class-deletion counterexamples show that discarding it loses
 the actual coefficient. Even a complete first-excess result would be a partial
 resolution, not a solution for all lengths and all excesses.
+
+
+## Final hosted verification
+
+**PROVED-LEAN** on exact source `f653c28b15697dd6b9a4b53771fe46beeeb83986`,
+[run 41029475200](https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/41029475200).
+Lean job **123975457884** and exact job **123975457523** both passed. The hosted
+logs confirm 241 active modules, 4,065 audited declarations, standard axioms
+only, and passing negative guards. The independent original-certificate
+replay and all ten route scripts also pass on this exact source. This receipt
+supersedes the earlier pending status; no proof source changed after the run.

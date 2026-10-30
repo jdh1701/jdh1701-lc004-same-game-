@@ -1,5 +1,5 @@
 {
-  "status": "LOCAL-LEAN-VERIFIED; HOSTED-PENDING",
+  "status": "PROVED-LEAN",
   "branch": "proof/class-cut-five-row-20261030",
   "base": "c6f719c08d519e0656ce6b035c69bbe143d74e46",
   "previous_source": "f919410e300e724914913e862f551967c989a5f6",
@@ -44,7 +44,7 @@
   "source_commit": "c1a61f49e9ee95fad21b8d422ddd3df981b54132",
   "source_tree": "6fdff8de08a3bf90103d7d8eb93f5f9a0f189f75",
   "hosted_run": 41004479610,
-  "hosted_status": "in_progress",
+  "hosted_status": "success",
   "pr": "https://github.com/jdh1701/jdh1701-lc004-same-game-/pull/40",
   "archive_input_replay": "pass",
   "hosted_jobs": {
@@ -55,7 +55,8 @@
     "lean": {
       "job_id": 123896139851,
       "status": "in_progress",
-      "conclusion": null
+      "conclusion": "success"
     }
-  }
+  },
+  "reconciled_on": "2026-10-30"
 }

@@ -1,0 +1,172 @@
+{
+  "status": "VERIFIED-COMP",
+  "reconstructed_through": 15,
+  "used_all_five_cubic_at_15": -35,
+  "mixed_cubic_at_16": -312,
+  "ambiguity_at_b_0_1_2_3": [
+    0,
+    0,
+    0,
+    6
+  ],
+  "coefficients": [
+    {
+      "n": 1,
+      "coefficients": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "n": 2,
+      "coefficients": [
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "n": 3,
+      "coefficients": [
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "n": 4,
+      "coefficients": [
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "n": 5,
+      "coefficients": [
+        0,
+        -4,
+        0,
+        0
+      ]
+    },
+    {
+      "n": 6,
+      "coefficients": [
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "n": 7,
+      "coefficients": [
+        0,
+        15,
+        0,
+        0
+      ]
+    },
+    {
+      "n": 8,
+      "coefficients": [
+        0,
+        23,
+        0,
+        0
+      ]
+    },
+    {
+      "n": 9,
+      "coefficients": [
+        0,
+        -41,
+        0,
+        0
+      ]
+    },
+    {
+      "n": 10,
+      "coefficients": [
+        0,
+        -161,
+        -5,
+        0
+      ]
+    },
+    {
+      "n": 11,
+      "coefficients": [
+        0,
+        12,
+        -22,
+        0
+      ]
+    },
+    {
+      "n": 12,
+      "coefficients": [
+        0,
+        827,
+        30,
+        0
+      ]
+    },
+    {
+      "n": 13,
+      "coefficients": [
+        0,
+        807,
+        403,
+        0
+      ]
+    },
+    {
+      "n": 14,
+      "coefficients": [
+        0,
+        -3599,
+        546,
+        0
+      ]
+    },
+    {
+      "n": 15,
+      "coefficients": [
+        0,
+        -7625,
+        -3285,
+        -35
+      ]
+    }
+  ],
+  "moments": [
+    1,
+    0,
+    3,
+    3,
+    15,
+    33,
+    105,
+    297,
+    879,
+    2631,
+    7833,
+    23697,
+    71385,
+    216765,
+    657849,
+    2003151
+  ],
+  "sources": [
+    "https://oeis.org/A035615",
+    "https://oeis.org/A035617"
+  ],
+  "conclusion": "Support plus binary counts reconstructs through n14; the all-five n15 count extends to n15. Binary specialization alone cannot determine cubic terms at n16."
+}

@@ -1,0 +1,7 @@
+{
+  "status": "NO-COUNTEREXAMPLE-IN-SCOPE",
+  "patterns_checked": 1227,
+  "spectral_classes": 54,
+  "witness": null,
+  "conclusion": "Exact characteristic polynomials tested, without numerical eigenvalue tolerances."
+}

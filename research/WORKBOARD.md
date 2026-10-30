@@ -517,3 +517,41 @@ collapses. The general rule remains open; no new enumeration claim.
 PR40 final source c1a61f49e9ee95fad21b8d422ddd3df981b54132, hosted41004479610
 in progress at receipt. Local final236/3987 audit passes. Promotion to PROVED-LEAN
 awaits exact-source hosted success; no universal enumeration solution claimed.
+
+
+## 2026-10-30 GPT: connected 5j support and ten further finishing attempts
+
+PR40 source c1a61f49e9ee95fad21b8d422ddd3df981b54132 is now PROVED-LEAN:
+run41004479610, Lean123896139851 and exact123896139335 both SUCCESS. The
+previous pending receipt is superseded, with the earlier history retained.
+Claude PR41 source d8cb27ed645fabf3fa78dab6fb8a2cd94b6d39bb also passes
+run41023074939 (Lean123954714267). Its JoinRigidBlocks and CrossedClassMinSize
+modules are reused unchanged and credited.
+
+New claims: PROVED-PAPER with local Lean verification, pending exact-source
+hosted CI. Every class of a nontrivial NCConnected original pattern crosses
+another class. Nonzero original coefficient therefore forces every class >=5,
+hence n>=5j for j>=2; equality forces all classes exactly5. The actual connected
+weight polynomial has degree <=max(1,n/5). For 0<n<15 its values interpolate
+exactly from alphabet sizes1 and2. For 0<n<20 the precise ternary correction
+is six times the three-class coefficient. Final local closure241 modules,
+4065 audited declarations, standard axioms only; negative guards pass.
+Owner:none (completed source); see connected_support_20261030/receipts.json.
+
+VERIFIED-COMP:5296 geometry cases through n8, original signed joins through n11,
+27 independent raw-game Mobius checks. Known W0..W15 reconstructed from the
+new support law, binary counts, and the prior n15 all-five coefficient-35.
+No new sequence terms claimed. Ten further attempts are in
+finishing_routes_20261030/REPORT.md. KILLED: matroid bases, flag complexes,
+unconditioned class deletion, spectral determination, hereditary all-five
+support, and direct noncrossing SCC species. Shallow-side applicability fails
+for a certified survivor. Spectral holdouts initially survived2458 cases but
+a (6,8) collision occurs in the expanded4039-case prefix: coefficients0,-1,
+same exact characteristic polynomial t^6(t-1)(t-4). All decisive witnesses have
+an independent original-certificate/signed-join/determinant replay.
+
+The 17 old hard collapse cores replay88105 elementary pairs; the new
+contiguous-prefix Boolean-interval compression gives ZERO gain. Finite barrier
+rows are exact in1231 patterns/6155 fibers, with no general bounded-state rule.
+A035617 remains OPEN. Focus next on all-j all-five survivor enumeration and
+the first mixed positive-excess layer (5,5,6), preserving separator incidence.

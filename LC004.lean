@@ -266,3 +266,6 @@ import LC004.FiveClassSeparatorElimination
 import LC004.ClassCutSeparators
 
 import LC004.FreeIntervalElimination
+
+import LC004.ConnectedCoefficientSupport
+import LC004.ConnectedCoefficientInterpolation

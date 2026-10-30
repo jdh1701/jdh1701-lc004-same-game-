@@ -9,7 +9,7 @@
     "research/separator_collapse_20261030/probe.py": "0276f144c9ee10ce091fa303f66351a416b966d37dff073b9db6c4faee36b158",
     "research/separator_collapse_20261030/independent.py": "3daaa55a16a9b4bdfc9cb3b03a0e951a94f386a4e84dbdd61f4595dada5d6409",
     "research/separator_collapse_20261030/rescue_skips.py": "63b08282e6ce9aab2eeaa5ef7d56aadcc3b3ebbfa59f370a17e546cc204eacfa",
-    "research/separator_collapse_20261030/UseExistingCollapse.lean": "0093611ecbbaa62c5929ff4afbcf2043db12612bc0c8f9092479857d33cc630b",
+    "research/separator_collapse_20261030/UseExistingCollapse.lean": "a8ed01c5d79afddc5be87c85e6db63bb1f766408510becd6d480e679478fe5b8",
     "research/separator_collapse_20261030/skipped-inputs.json": "178cb7aa3241d1e0dc6f5f3df2dc042546509ec56bb3ca8d558844afd6665eeb",
     "research/separator_collapse_20261030/census.json.gz": "3fdca508f501ac079e6732f8722feb4d1da2a13a7ea9128840ddfc2b34addb29",
     "research/separator_collapse_20261030/rescued-results.json.gz": "96c07cc43b5e449da01b22cd7f516a030dc79580d82528bff1e3ecf28d292600",

@@ -1,7 +1,7 @@
 import LC004.SeparatorDeletionLink
 import Lean.Util.CollectAxioms
 
-/-- Reuse the already established PR38 infrastructure. No duplicate
+/- Reuse the already established PR38 infrastructure. No duplicate
 collapse theorem or universal collapsibility assertion is introduced here. -/
 open Lean Elab Command in
 run_cmd do

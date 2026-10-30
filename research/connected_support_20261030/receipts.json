@@ -1,0 +1,62 @@
+{
+  "status": "PROVED-LEAN",
+  "branch": "proof/connected-support-20261030",
+  "base": "c685723815658cf6a3f195cef09450168f58dfeb",
+  "local_modules": 241,
+  "local_audited_declarations": 4065,
+  "standard_axioms_only": true,
+  "negative_guards": "pass",
+  "independent_counterexample_replay": "pass",
+  "open_problem_solved": false,
+  "source_sha256": {
+    "LC004.lean": "113c485b8488a69f321694cb113b8ae4ff18640875a9f9b3109a1861f2f24b77",
+    "LC004/ConnectedClassCrossing.lean": "b93354a9b49ee72cfea57d21ee3128a2ac75618e50e103d1e92c027a1c0369e3",
+    "LC004/ConnectedCoefficientSupport.lean": "582151992334589398e625a9e88f4fd42ec7665efdf6c608ee71c225c886d129",
+    "LC004/ConnectedCoefficientInterpolation.lean": "af892c32392ab342690ee4535ffd3d95dd7f0c90fc9f68a3fd72b6906e6f4b10",
+    "LC004/JoinRigidBlocks.lean": "6878ab9cdcecec0356feb6a8606449a2321d428e6458431b2071d1bdd3e28af1",
+    "LC004/CrossedClassMinSize.lean": "ef1c075c2029ca5add3e32f856c8e64a9cc9a479c74ca9d99e5dbce6ad8dd597"
+  },
+  "borrowed_modules": {
+    "source": "d8cb27ed645fabf3fa78dab6fb8a2cd94b6d39bb",
+    "pr": 41,
+    "run": 41023074939,
+    "lean_job": 123954714267,
+    "conclusion": "success",
+    "files": [
+      "LC004/JoinRigidBlocks.lean",
+      "LC004/CrossedClassMinSize.lean"
+    ]
+  },
+  "source_commit": "f653c28b15697dd6b9a4b53771fe46beeeb83986",
+  "source_tree": "3bcca84ab6f5ef2aadade84d8294ae4e79491671",
+  "pr": "https://github.com/jdh1701/jdh1701-lc004-same-game-/pull/42",
+  "hosted_run": 41029475200,
+  "hosted_jobs": {
+    "exact": {
+      "job_id": 123975457523,
+      "conclusion": "success"
+    },
+    "lean": {
+      "job_id": 123975457884,
+      "conclusion": "success"
+    }
+  },
+  "subsequent_repository_note": {
+    "pr": 35,
+    "head": "da553f659a2238dd30e9f65da5de324444f06f63",
+    "effect": "Documentation only; identifies NCConnected implies every class crossed as missing. ConnectedClassCrossing.lean closes this exact gap."
+  },
+  "borrowed_files_byte_identical_verified": true,
+  "spectral_matrices_independently_regenerated": true,
+  "hosted_status": "success",
+  "hosted_modules": 241,
+  "hosted_audited_declarations": 4065,
+  "hosted_evidence": {
+    "archive_sha256": "6cb1734872708ebb25f0608bff21e0b086a7a2da35623271fb0099ef3ca4ddd3",
+    "files": {
+      "research/connected_support_20261030/hosted-exact.log": "0a2b96e31df435b245fcb4ee24dd30f96fea341875b3688f18f7365573548618",
+      "research/connected_support_20261030/hosted-lean.log": "65df9a98a9be7cf151ca0b9a4733acfa90cb2837c3e2e209225510954e05081d",
+      "research/connected_support_20261030/spectral-extra-replay.json": "48940cadffebb2eeda7f7bfce45f8ec9e18929e276ca2886db7397ac87a30266"
+    }
+  }
+}

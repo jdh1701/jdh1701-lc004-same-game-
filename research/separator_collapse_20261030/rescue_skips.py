@@ -159,9 +159,11 @@ def main():
  archive=ROOT/'rescued-results.json.gz'
  def untimed(x):
   if isinstance(x,dict):return {k:untimed(v) for k,v in x.items() if k!='seconds'}
-  if isinstance(x,list):return [untimed(v) for v in x]
+  if isinstance(x,(list,tuple)):return [untimed(v) for v in x]
   return x
  if archive.exists():
-  assert untimed(result)==json.loads(gzip.decompress(archive.read_bytes())), 'Committed receipt differs'
+  if untimed(result)!=json.loads(gzip.decompress(archive.read_bytes())):
+   (ROOT/'rescued-recheck-diff.json').write_text(json.dumps(untimed(result),sort_keys=True))
+   raise AssertionError('Committed receipt differs')
  (ROOT/'rescued-results.json').write_text(json.dumps(result,indent=2)+'\n')
 if __name__=='__main__':main()

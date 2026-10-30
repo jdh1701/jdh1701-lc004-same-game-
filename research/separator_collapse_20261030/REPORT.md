@@ -102,3 +102,5 @@ The committed archive is deterministic gzip JSON with timing fields removed. Ful
 4. Classify and enumerate the nonzero coefficient families, then sum their contributions in the exact counting polynomial.
 
 There is no justified percentage solved or fixed count of mathematical steps remaining. The new result is a finite, reproducible elimination of all 32 recorded budget skips, not a general recurrence for A035617.
+
+Reproducibility correction: the first archive comparison compared an in-memory tuple pattern with its JSON list representation. It rejected equal serialized data. The comparison now canonicalizes tuples and lists identically; arithmetic and trace replay were unaffected. This failure is retained in the CI history rather than silently treated as a pass.

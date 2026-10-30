@@ -1,0 +1,37 @@
+{
+  "status": "VERIFIED-COMP",
+  "source_fixture_sha256": "72520caa95c0f37931bd8aa81975f56f5eb33626d2b8e5d7cd550c343a7071e5",
+  "rows": [
+    {
+      "j": 2,
+      "parent_representatives": 5,
+      "parent_patterns": 5,
+      "distinct_inflations_replayed": 20,
+      "inflated_patterns": 22,
+      "coefficient": -1,
+      "generators": 3,
+      "count_formula_verified": true
+    },
+    {
+      "j": 3,
+      "parent_representatives": 35,
+      "parent_patterns": 35,
+      "distinct_inflations_replayed": 210,
+      "inflated_patterns": 224,
+      "coefficient": -1,
+      "generators": 3,
+      "count_formula_verified": true
+    },
+    {
+      "j": 5,
+      "parent_representatives": 767,
+      "parent_patterns": 6455,
+      "distinct_inflations_replayed": 7670,
+      "inflated_patterns": 67132,
+      "coefficient": -1,
+      "generators": 3,
+      "count_formula_verified": true
+    }
+  ],
+  "scope": "Complete inflation images of the certified n10, n15 and n25 all-five survivor families; NOT a complete n26 first-excess census or universal preservation theorem."
+}

@@ -569,3 +569,59 @@ f653c28b15697dd6b9a4b53771fe46beeeb83986, run41029475200. Lean job
 active modules, axiom audit4065 declarations, standard axioms only, negative
 guards PASS. This supersedes the pending status above. The source commit is
 frozen; the following receipt commit changes only documentation/evidence.
+
+
+## 2026-10-30 GPT: first-excess layer and complete (5,5,6) census
+
+Owner: none (ConnectedFirstExcess and SmallGeneratorCoefficients completed).
+Base PR42 receipt b04947b4de92115b7caf8e17f5a0195e5efc15be; its proof source
+f653c28b15697dd6b9a4b53771fe46beeeb83986 remains green in run41029475200.
+Rechecked PR35 head2f62dfe02dda3073ef0f238da847020dd91d8ac5: it adds finite
+crossing-lemma checks/sketches, not a replacement for the general PR42 proof.
+
+VERIFIED-COMP: all1009008 patterns of profile(5,5,6);999736 are NCConnected,
+109720 have certificates,3384 have full certificate join. Exactly312 have
+nonzero coefficient, all-1:88 two-generator and224 three-generator families.
+Independent global enumeration uses34944 original NC certificates and611520
+pattern incidences, reproducing the full nonzero set and sum-312. This verifies
+a known coefficient directly; it is not a new ternary sequence term.
+
+New Lean targets (not yet verified): the excess sum identity, exactly one
+six-class at n=5j+1, and original coefficient lemmas for two generators or
+three generators with exactly two top-joining pairs. Local Lean runtime is
+unavailable in this restored environment; hosted compilation is required.
+
+KILLED: all first-excess survivors reduce to all-five survivors by deleting a
+point from the six-class. All88 two-generator cases fail all six deletions.
+All224 three-generator cases have exactly three successful deletions, each
+adjacent to another occurrence of the six-class in the cyclic order. The312
+survivors form22 cyclic orbits and12 dihedral orbits. See first_excess_20261030.
+
+First hosted source7fb686483e0cb4c6d8b9b1f37e897b2da1a8bba1, run41097517330:
+exact job124206998443 SUCCESS, Lean job124206997870 FAILED in the last negative
+class-count branch only (Nat.card/Fintype.card simp mismatch). The main excess
+and first-excess profile theorems and both generator lemmas compiled, but no
+full audit completed. Failure map/log retained; restricted simplification fixes
+the mismatch. Do not promote until the corrected exact source is green.
+
+Additional lead: a complete paper orbit-counting argument gives
+|inflation image|=2(5j+1)|A|/5 for ANY rotation-invariant family A whose classes
+have cyclic runs1,2,2. This is a conditional combinatorial theorem, not a
+universal game-preservation theorem. Complete certificate tests on the n25
+survivor fixtures verify7670 representative inflations, yielding67132 distinct
+n26 patterns with coefficient-1 and three generators. This is a family, NOT
+the full n26 layer. All88 irreducible n16 cases remain outside this construction.
+
+
+PR43 verification: hosted proof checks passed, final job status pending on source
+9656d7b90554fb736388e6c14d92f2d73060e470, run41099342084. Lean job124213325344
+has complete successful build/audit/guard logs but API status in_progress;
+exact job124213324550 reports SUCCESS. PROVED-LEAN promotion awaits final
+job metadata. Full hosted closure243 active modules,
+4082 audited declarations, standard axioms only; negative guards pass. The
+first-excess profile theorem and both small-generator coefficient rules are
+verified. Exact replay also verifies the entire312-pattern556 census and
+the67132-pattern n26 cyclic-inflation family. These counts concern connected
+coefficient patterns, not a complete all-length winning-word enumeration.
+The conditional cyclic-inflation counting identity remains PROVED-PAPER; its
+game-specific hypotheses for arbitrary j remain CONJECTURES.

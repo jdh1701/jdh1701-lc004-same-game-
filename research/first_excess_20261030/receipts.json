@@ -1,0 +1,90 @@
+{
+  "status": "HOSTED-PROOF-CHECKS-PASSED; FINAL-JOB-STATUS-PENDING",
+  "base": "b04947b4de92115b7caf8e17f5a0195e5efc15be",
+  "branch": "proof/first-excess-20261030",
+  "local_exact": "pass",
+  "independent_global_census": "pass",
+  "local_lean_runtime": "unavailable",
+  "open_problem_solved": false,
+  "source_sha256": {
+    "LC004.lean": "257f3aeb1a9322969964c89a30aace2634c4d50c8a6ccd3c09428b29a70b5997",
+    "LC004/ConnectedFirstExcess.lean": "6b1791a4b781b1854fb989112b6615f2f5c0ff11374a0b821f8382c1f18ec67f",
+    "LC004/SmallGeneratorCoefficients.lean": "9f3cda0d16a1ddb6ab7523afa02e4bfc08dca674ccc02d9172c6877d53a73686"
+  },
+  "initial_source": "7fb686483e0cb4c6d8b9b1f37e897b2da1a8bba1",
+  "initial_run": 41097517330,
+  "initial_jobs": {
+    "lean": {
+      "id": 124206997870,
+      "conclusion": "failure"
+    },
+    "exact": {
+      "id": 124206998443,
+      "conclusion": "success"
+    }
+  },
+  "initial_failure": "Nat.card/Fintype.card simp mismatch in final negative class-count branch; complete failure log retained",
+  "inflation": {
+    "status": "VERIFIED-COMP",
+    "source_fixture_sha256": "72520caa95c0f37931bd8aa81975f56f5eb33626d2b8e5d7cd550c343a7071e5",
+    "rows": [
+      {
+        "j": 2,
+        "parent_representatives": 5,
+        "parent_patterns": 5,
+        "distinct_inflations_replayed": 20,
+        "inflated_patterns": 22,
+        "coefficient": -1,
+        "generators": 3,
+        "count_formula_verified": true
+      },
+      {
+        "j": 3,
+        "parent_representatives": 35,
+        "parent_patterns": 35,
+        "distinct_inflations_replayed": 210,
+        "inflated_patterns": 224,
+        "coefficient": -1,
+        "generators": 3,
+        "count_formula_verified": true
+      },
+      {
+        "j": 5,
+        "parent_representatives": 767,
+        "parent_patterns": 6455,
+        "distinct_inflations_replayed": 7670,
+        "inflated_patterns": 67132,
+        "coefficient": -1,
+        "generators": 3,
+        "count_formula_verified": true
+      }
+    ],
+    "scope": "Complete inflation images of the certified n10, n15 and n25 all-five survivor families; NOT a complete n26 first-excess census or universal preservation theorem."
+  },
+  "source_commit": "9656d7b90554fb736388e6c14d92f2d73060e470",
+  "hosted_run": 41099342084,
+  "hosted_modules": 243,
+  "hosted_audited_declarations": 4082,
+  "standard_axioms_only": true,
+  "negative_guards": "pass",
+  "hosted_jobs": {
+    "lean": {
+      "id": 124213325344,
+      "conclusion": null,
+      "api_status": "in_progress",
+      "log_result": "build, axiom audit, negative guards, and cleanup completed successfully"
+    },
+    "exact": {
+      "id": 124213324550,
+      "conclusion": "success"
+    }
+  },
+  "pr": "https://github.com/jdh1701/jdh1701-lc004-same-game-/pull/43",
+  "hosted_evidence": {
+    "archive_sha256": "ec524e2d4be8796c0afd97a2454cde4707ca68f78afae46241b0dc8cc826de6a",
+    "files": {
+      "research/first_excess_20261030/hosted-exact-final.log": "61a485dee9f4e85bb3f61cf88c16dc0cdc58877cf53491d149aa71e5c80e4727",
+      "research/first_excess_20261030/hosted-lean-final.log": "c5bba983452d9b1294e3e9840018929e7b611cb5a8ecbe912b60afefc075d9e5"
+    }
+  }
+}

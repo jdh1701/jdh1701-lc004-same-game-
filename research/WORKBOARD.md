@@ -604,3 +604,59 @@ the evidence and supersede prior pending snapshots. Full counting remains OPEN.
   well-defined, computationally well-supported (VERIFIED-COMP n<=10,
   previous entry) target, with this sketch as a starting point rather than
   starting from zero.
+
+## 2026-10-30 13:13 Claude: review of GPT's PR42 (proof/connected-support-20261030) -- my open conjecture now PROVED-LEAN
+
+- GPT closed exactly the gap I flagged on 2026-10-30 04:32/05:20 (da553f6,
+  2f62dfe): whether `NCConnected` with >=2 classes forces every class to be
+  crossed by a single other class. New theorem `ncConnected_every_class_crossed`
+  (`LC004/ConnectedClassCrossing.lean`) proves it directly, with a cleaner
+  technique than the graph-component merge I had sketched: find the nearest
+  points of the class on either side of some unrelated point, and use the
+  OPEN GAP between them (or the closed [min,max] interval, in the other case)
+  as a saturated, convex "interval cut" that would be a proper noncrossing
+  coarsening if the class were truly uncrossed -- contradicting NCConnected
+  directly via `ncConnected_iff_no_proper_noncrossing_coarsening`. I read the
+  full proof line by line; the case split (point inside vs. outside the
+  class's [min,max] span) and the "gap" saturation argument both check out
+  mathematically. This also independently confirms (by actual proof, not
+  sampling) my own 2026-10-30 04:32 VERIFIED-COMP n<=10 exhaustive check --
+  GPT's WORKBOARD note only cites da553f6 by hash, so it likely predates my
+  follow-up aa8c62f/2f62dfe pushes; no discrepancy, since the Lean proof is
+  strictly stronger evidence than my finite check anyway.
+- Combined with my `winningJoinCoefficient_ne_zero_crossed_class_card_ge_five`
+  (PR #41, reused byte-for-byte and credited), `ConnectedCoefficientSupport.lean`
+  now proves exactly the consequence I had flagged as open and unproven:
+  `ncConnected_nonzero_threshold_all_five` -- at the n=5j boundary (j classes,
+  NCConnected, nonzero original coefficient), every class has size EXACTLY 5.
+  It also proves the general support bound (every class >=5, hence n>=5j for
+  j>=2) and `connectedClassCoefficient_zero_below_five_mul`: the q^j
+  coefficient of the connected weight vanishes for n<5j, j>=2 -- this is the
+  previously-CONJECTURE "cumulant vanishing law" from the 2026-10-29 free-
+  cumulant entries, now PROVED-LEAN (not just VERIFIED-COMP s<=15).
+- Independent verification: hosted CI green on the exact cited source
+  f653c28b15697dd6b9a4b53771fe46beeeb83986, confirmed myself via
+  `gh api .../commits/f653c28.../check-runs` (lean: success, exact: success),
+  not just taken from the commit message. Checked the same for the PR40
+  predecessor source (c1a61f4...) and PR39's exact source (81bca89...): both
+  green. Local independent rebuild in a fresh isolated clone
+  (`/home/claude/review-pr42`) in progress (copying the already-built .lake
+  cache from my own working tree rather than rebuilding Mathlib from scratch,
+  since the project's remote olean cache is blocked by this sandbox's network
+  allowlist, same constraint as always) -- will report the result once it
+  finishes building `LC004.ConnectedCoefficientSupport` locally.
+- Lighter-touch pass over the rest of GPT's day (PRs #37-#40, mixed-kernel
+  and ten-attacks campaigns): read `research/finishing_routes_20261030/REPORT.md`,
+  `research/mixed_kernel_20261030/REPORT.md`, and `LC004/ClassCutSeparators.lean`
+  directly. All read as careful, honestly-scoped work -- explicit "A035617 is
+  not solved" disclaimer up front, ten finishing-route attempts reported with
+  six clearly KILLED (matroid bases, flag complexes, naive recursive deletion,
+  Gram-spectrum determination, hereditary support, direct SCC species) rather
+  than glossed over, and the mixed (5,6) coefficient example (-2+1=-1, generator
+  family {A,B,C}) proved as an actual Lean theorem rather than just asserted
+  from the earlier computational observation. Did not attempt a full
+  independent rebuild of this wider campaign (out of scope for this review
+  given time); no red flags found in what I read.
+- Still open, per GPT's own honest framing: the cubic (3-letter) correction
+  term at n<20, general positive-excess mixed-profile enumeration, and A035617
+  itself. Nothing here claims to solve the open problem.

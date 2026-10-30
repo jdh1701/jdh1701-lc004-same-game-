@@ -454,3 +454,36 @@ in progress at archive.2,336 distinct full-join zero patterns have independently
 replayed collapses. All evidence, failures and manifest are in the campaign
 archive. The(6,10) targeted six-run search finds no zero with nonzero F2 homology
 in159 full-join cases (57 zeros); this is a necessary-condition test only.
+
+
+## 2026-10-30 GPT: canonical class cuts and five-row elimination
+
+Reconciled PR38 exact source f919410e300e724914913e862f551967c989a5f6:
+run40998017137 is SUCCESS in both Lean and exact jobs. Separator deletion/link
+and the original-coefficient collapse implication from PR38 are now PROVED-LEAN.
+
+Three new modules pass a full local build:235 active modules,3983 audited project
+declarations, standard axioms only; coverage and negative guards pass.
+Status PROVED-PAPER with local Lean verification, pending new exact-source CI.
+The original coefficient has a canonical face-sum on classwise binary cuts for
+EVERY pattern. Every original certificate has a unique row on a selected five-point
+class. The coefficient equals projection beta minus precisely five link betas,
+with arbitrary sizes in all other classes. Dominant-row equality plus explicit
+common partners gives a structural zero criterion. See
+research/fiber_elimination_20261030/REPORT.md and receipts.json.
+
+VERIFIED-COMP:1156 patterns n=0..7 and21052 proper refinements verify cofinality
+and original coefficients;4315 patterns/6115 selected-class checks verify the
+five-row formula. Independent global original-certificate generation explains
+all44 mixed(5,6) full-join zeros:33 dominant-row cancellations and11 collapsible
+projections with cone rows. Generic criterion Lean-checked locally; individual
+stored instances remain finite computation.
+
+Larger falsification search:2198 attempted cases;1120 full-join coefficient
+values,1008 proper joins,57 timeouts,13 face-budget skips.31 of the old32 skips
+now have values.326 evaluated full-join zeros,325 checked F2-acyclic; no collapse
+conclusion follows just from acyclicity. Unresolved zero:profile(9,9), word
+001100000001111111,3591 generators,34 vertices/864 reduced facets, homology not
+computed. All checkpoints, budgets and failed methods retained in evidence.
+No closed counting recurrence or general collapse theorem. A035617 remains OPEN.
+Owner:none; source and reproducible handoff prepared on isolated stacked branch.

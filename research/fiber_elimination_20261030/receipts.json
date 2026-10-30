@@ -1,0 +1,23 @@
+{
+  "status": "LOCAL-LEAN-VERIFIED; HOSTED-PENDING",
+  "branch": "proof/class-cut-five-row-20261030",
+  "base": "c6f719c08d519e0656ce6b035c69bbe143d74e46",
+  "previous_source": "f919410e300e724914913e862f551967c989a5f6",
+  "previous_run": 40998017137,
+  "previous_jobs": {
+    "lean": "success",
+    "exact": "success"
+  },
+  "local_modules": 235,
+  "local_audited_declarations": 3983,
+  "standard_axioms_only": true,
+  "negative_guards": "pass",
+  "exact_replay": "pass",
+  "open_problem_solved": false,
+  "source_sha256": {
+    "LC004.lean": "e7d7ff87464e2b7fb9ac6730c3ee97351c882cc89e55616e8e4764747223f279",
+    "LC004/ClassCutSeparators.lean": "aed1f9b303ce6f8d4195ebe2d235019f4b0f5683cc1a5e3f93ddd9f68f05792f",
+    "LC004/ExclusiveSeparatorElimination.lean": "651d5a537cd4e6b347065fd88423626f4a9f12575b12a3f2a4656751aa47a43c",
+    "LC004/FiveClassSeparatorElimination.lean": "c5b1d5a6df690875b3cd423e0a06c29d62147b2dc5266ef7f8e933623f4ecba2"
+  }
+}

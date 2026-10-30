@@ -447,4 +447,10 @@ Connected(6,10) homology in two degrees kills unrestricted purity even in the
 multi-class connected setting. Zero-coefficient collapsibility remains a
 conjecture, not an enumeration theorem. General A035617 enumeration remains OPEN.
 Full handoff, independently replayable traces and failed attempts are retained.
-Owner:GPT, current campaign.
+Owner:none; completed campaign, resumable handoff saved.
+
+PR38 source f919410e300e724914913e862f551967c989a5f6; hosted40998017137
+in progress at archive.2,336 distinct full-join zero patterns have independently
+replayed collapses. All evidence, failures and manifest are in the campaign
+archive. The(6,10) targeted six-run search finds no zero with nonzero F2 homology
+in159 full-join cases (57 zeros); this is a necessary-condition test only.

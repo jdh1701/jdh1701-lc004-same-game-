@@ -10,5 +10,9 @@
   "standard_axioms_only": true,
   "negative_guards": "pass",
   "source_sha256": "d435aa9f3afb938a344894081741ef11e9b6b4c09950143c2389afe24d49a1b0",
-  "open_problem_solved": false
+  "open_problem_solved": false,
+  "source_commit": "f919410e300e724914913e862f551967c989a5f6",
+  "hosted_run": 40998017137,
+  "hosted_status": "in_progress",
+  "pr": "https://github.com/jdh1701/jdh1701-lc004-same-game-/pull/38"
 }

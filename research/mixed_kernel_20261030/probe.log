@@ -1,0 +1,59 @@
+{
+  "status": "VERIFIED-COMP",
+  "patterns": 462,
+  "connected": 451,
+  "global_nc_catalogue_size": 495,
+  "independent_generator_comparisons": 462,
+  "prior_raw_maximal_run_mobius_agreements": 451,
+  "connected_histogram": {
+    "0": 429,
+    "-1": 22
+  },
+  "relation_properties": {
+    "(True, True, 0, 0)": 165,
+    "(True, False, 10, 0)": 22,
+    "(True, True, 5, 0)": 11,
+    "(True, True, 8, 0)": 22,
+    "(True, True, 2, 0)": 77,
+    "(True, True, 1, 0)": 77,
+    "(False, False, 16, 0)": 22,
+    "(True, True, 6, 0)": 11,
+    "(True, True, 12, 0)": 11,
+    "(False, True, 3, -1)": 22,
+    "(False, False, 7, 0)": 11
+  },
+  "witness": {
+    "pattern": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    "connected": true,
+    "generators": 3,
+    "coefficient": -1,
+    "majority_closed": false,
+    "covered": true,
+    "relation": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        6
+      ]
+    ]
+  }
+}

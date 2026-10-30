@@ -253,3 +253,5 @@ import LC004.FiveClassGeometryApplication
 import LC004.FiveClassSurvivorRecognition
 
 import LC004.FiveOriginalCoefficientLaw
+
+import LC004.MixedFiveSixCoefficient

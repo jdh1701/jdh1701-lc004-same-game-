@@ -372,3 +372,38 @@ global NC certificate catalogues and checks381 patterns,375 connected (40 at-1,
 335 zero). Original global replay was temporarily named verify_original_bridge.py
 before the scripts were separated; preserved logs retain their original names.
 The n10 disconnected coefficient16 control kills omitting connectivity.
+
+## Final original-bridge CI promotion: PROVED-LEAN
+
+Exact proof commit ba0357def8d61dcbc9f92a10690927a4d568f91f passes Lean/exact/Sage
+CI40992099928 and probes40992100056. Verification supplement
+c51b75abed5953bd7d940a6153c3598a58cdde86 passes Lean/exact/Sage40992346166
+(all3 jobs SUCCESS) and probes40992346252 SUCCESS. Thus the original generator
+bijection, arbitrary-pattern separator/Euler identity, positional and join
+transport, connected original all-five coefficient law, SCC recognition and
+range/three-generator corollaries are now PROVED-LEAN. Final CI axiom audit3729
+declarations across225 modules, standard axioms only, both negative guards pass.
+Both independent original-position finite replays are VERIFIED-COMP in the exact
+job. Source and all failed/passing local attempt logs, plus hashed archive, are
+pushed. Root research/FIVE_BRIDGE_CI_RECEIPTS_20261029.json and full CI logs pin
+the evidence and supersede prior pending snapshots. Full counting remains OPEN.
+
+
+## Original mixed (5,6) obstruction and local coefficient transfer
+
+Baseline original all-five bridge is now PROVED-LEAN at ba0357def8d61dcbc9f92a10690927a4d568f91f,
+Lean/exact/Sage run40992099928 SUCCESS; probes40992100056 SUCCESS.
+New isolated work: proof/mixed-kernel-obstructions-20261030, based on cc038da1.
+General local-generator transfer and common-refinement vanishing theorems compile.
+Complete five- and six-point NC2/3 catalogues compile, including the inverse
+from arbitrary original equivalence patterns. The original pattern00100110111
+has exactly3 certificate refinements and coefficient-1, proved in Lean.
+Its actual local relation is covered but fails conservative-majority closure.
+Thus extending >=3 cancellation unchanged beyond all-five is KILLED.
+New claims are PROVED-PAPER/local Lean verified pending exact new-commit CI;
+see research/mixed_kernel_20261030/REPORT.md. Independent finite census VERIFIED-COMP:
+all462(5,6) patterns,451 crossing,22 at-1 and429 zero, all generator lists checked
+against495 global NC certificates and451 pointwise old raw-game Mobius values.
+This confirms prior finite observations; no new worldwide novelty claim.
+Next: structural classification/transport of the mixed relation shapes.
+General fixed-alphabet enumeration remains OPEN. Owner: GPT, current session.

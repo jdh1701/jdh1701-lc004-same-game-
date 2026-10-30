@@ -1,0 +1,58 @@
+name: Mixed kernel original coefficient audit
+on:
+  push:
+    branches: [proof/mixed-kernel-obstructions-20261030]
+    paths:
+      - 'LC004/**'
+      - 'LC004.lean'
+      - 'research/mixed_kernel_20261030/**'
+      - '.github/workflows/mixed-kernel.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.elan
+            .lake
+          key: ${{ runner.os }}-lean-v4.19.0-${{ hashFiles('lean-toolchain', 'lakefile.toml', 'lake-manifest.json') }}
+          restore-keys: |
+            ${{ runner.os }}-lean-v4.19.0-
+      - name: Install pinned Lean
+        run: |
+          if [ ! -x "$HOME/.elan/bin/elan" ]; then
+            curl https://elan.lean-lang.org/elan-init.sh -sSf | sh -s -- -y
+          fi
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Build and audit complete project
+        run: |
+          set -o pipefail
+          python scripts/check_lean_coverage.py
+          lake exe cache get
+          lake build LC004 2>&1 | tee mixed-build.log
+          lake env lean scripts/AxiomAudit.lean 2>&1 | tee mixed-axiom-audit.log
+          python scripts/test_verification_guards.py
+          git diff --exit-code -- lake-manifest.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mixed-kernel-lean-logs
+          path: |
+            mixed-build.log
+            mixed-axiom-audit.log
+  exact:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Exhaust all five-versus-six interleavings
+        run: python research/mixed_kernel_20261030/probe.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mixed-kernel-finite-checks
+          path: research/mixed_kernel_20261030/results.json

@@ -314,7 +314,279 @@ Final CI confirmation for the independent transfer computation: source69122bcf,
 run40986874442 SUCCESS, including full n20/n25 re-enumeration and the independent
 767-witness replay; probes40986874357 SUCCESS. CI n25 runtime about61.7 seconds,
 count6455. Full job log and exact pins are in research/SCC_TRANSFER_CI_JOB_20261029.log
-and research/SCC_TRCž¸òÚ$z{-®éÜj×ctly one
+and research/SCC_TRANSFER_CI_RECEIPTS_20261029.json. The finite count is now
+VERIFIED-COMP by two independently implemented methods, each with successful CI.
+
+
+## Original-game coefficient bridge: local verification complete
+
+The formerly open CertificateConstraint/split-tuple bijection and original
+winningJoinCoefficient/face-sum identity are now discharged in ten new Lean
+modules, culminating in FiveOriginalCoefficientLaw. The original connected
+all-five coefficient is -1 for exactly two certificate refinements joining to
+p, otherwise 0; the raw SCC law now applies to the original coefficient.
+New range and >=3-generator cancellation corollaries also compile.
+Status: PROVED-PAPER with local Lean verification until exact new-commit CI
+is green. See research/five_bridge_20261029/REPORT.md and retained logs.
+554 actual position-partition join checks pass, with singleton -4 and
+disconnected 16 controls. These are VERIFIED-COMP, finite only.
+General survivor enumeration and mixed-profile kernels remain OPEN; no claim
+of solving A035617 or of worldwide novelty. Owner: none (session completed).
+
+## Original all-five coefficient law: both bridge obligations discharged
+
+New source status at submission: PROVED-PAPER with complete local Lean verification;
+promote only after exact proof-commit CI, pinned in
+research/FIVE_BRIDGE_CI_RECEIPTS_20261029.json. The two formal gaps listed above
+are now closed: original CertificateConstraint generators have a complete unique
+split-tuple bijection, and ORIGINAL winningJoinCoefficient equals the resulting
+choice-complex alternating sum. Positional noncrossing and lattice joins are
+proved to agree with the actual class/rank model, not assumed equivalent.
+
+Main theorem winningJoinCoefficient_five_original_law: original pattern p with
+all classes size5, at least2 classes and raw crossing-cut connectivity has
+coefficient -1 exactly when its entire original certificate-generator set is
+{c,d} with c join d=p, and0 otherwise. New original-coefficient SCC theorem
+recognizes this using a valid separated pair and its raw implication graph.
+PROVED-PAPER/local Lean pass pending new CI. Universal indexed separator/Euler
+identity also applies to arbitrary original patterns, including boundary cases.
+
+Independent original-position replay VERIFIED-COMP locally:126/126 n10 generator
+bijections,121 connected n10 coefficient checks;254 saved n15 fixture patterns;
+40 coefficients -1,335 zero. This does not add an exhaustive n15 count. n5 has
+five certificates and coefficient -4: removing the >=2-class hypothesis is KILLED.
+All failures and successes saved under research/five_bridge_20261029.
+
+Full local verification225 active modules,3726 audited declarations, standard
+axioms only; both negative guards pass. New report and Claude handoff are in
+research/five_bridge_20261029. Full counting remains OPEN: mixed profiles and
+general survivor recurrences are not solved. No novelty claim. Previous finite
+count6455 is unchanged and is NOT A(25,5). No unsupported cross-domain analogy
+was used in the proof.
+
+Bridge verification supplement: final audit3729 declarations includes the new
+range and >=3-original-generator corollaries (earlier audit3726 preceded them).
+Two finite replays are distinct: verify_original_bridge.py checks554 cases,548
+connected (47 at-1,501 zero); verify_global_nc_bridge.py independently constructs
+global NC certificate catalogues and checks381 patterns,375 connected (40 at-1,
+335 zero). Original global replay was temporarily named verify_original_bridge.py
+before the scripts were separated; preserved logs retain their original names.
+The n10 disconnected coefficient16 control kills omitting connectivity.
+
+## Final original-bridge CI promotion: PROVED-LEAN
+
+Exact proof commit ba0357def8d61dcbc9f92a10690927a4d568f91f passes Lean/exact/Sage
+CI40992099928 and probes40992100056. Verification supplement
+c51b75abed5953bd7d940a6153c3598a58cdde86 passes Lean/exact/Sage40992346166
+(all3 jobs SUCCESS) and probes40992346252 SUCCESS. Thus the original generator
+bijection, arbitrary-pattern separator/Euler identity, positional and join
+transport, connected original all-five coefficient law, SCC recognition and
+range/three-generator corollaries are now PROVED-LEAN. Final CI axiom audit3729
+declarations across225 modules, standard axioms only, both negative guards pass.
+Both independent original-position finite replays are VERIFIED-COMP in the exact
+job. Source and all failed/passing local attempt logs, plus hashed archive, are
+pushed. Root research/FIVE_BRIDGE_CI_RECEIPTS_20261029.json and full CI logs pin
+the evidence and supersede prior pending snapshots. Full counting remains OPEN.
+
+
+## Original mixed (5,6) obstruction and local coefficient transfer
+
+Baseline original all-five bridge is now PROVED-LEAN at ba0357def8d61dcbc9f92a10690927a4d568f91f,
+Lean/exact/Sage run40992099928 SUCCESS; probes40992100056 SUCCESS.
+New isolated work: proof/mixed-kernel-obstructions-20261030, based on cc038da1.
+General local-generator transfer and common-refinement vanishing theorems compile.
+Complete five- and six-point NC2/3 catalogues compile, including the inverse
+from arbitrary original equivalence patterns. The original pattern00100110111
+has exactly3 certificate refinements and coefficient-1, proved in Lean.
+Its actual local relation is covered but fails conservative-majority closure.
+Thus extending >=3 cancellation unchanged beyond all-five is KILLED.
+New claims are PROVED-PAPER/local Lean verified pending exact new-commit CI;
+see research/mixed_kernel_20261030/REPORT.md. Independent finite census VERIFIED-COMP:
+all462(5,6) patterns,451 crossing,22 at-1 and429 zero, all generator lists checked
+against495 global NC certificates and451 pointwise old raw-game Mobius values.
+This confirms prior finite observations; no new worldwide novelty claim.
+Next: structural classification/transport of the mixed relation shapes.
+General fixed-alphabet enumeration remains OPEN. Owner: GPT, current session.
+
+Finite mixed-kernel discrimination:385 zero cases have proper join of all
+generators and are covered by the common-refinement vanishing theorem;44 zero
+cases have full generator join and require genuine cancellation. Thus the
+converse support test is KILLED. Exact finite scripts/results in support_probe.*.
+
+Additional six-point separator foundation:31 cuts cover every proper relation;
+local facets have1 or3 vertices depending on two-triple versus three-pair type.
+winningJoinCoefficient_single_six proves the original one-class coefficient-1.
+A tentative-4 expectation was refuted and retained as a failed kernel check.
+The mixed witness remains unchanged. See SixClassSeparatorFacets.lean and the
+independent six_facets_probe.py. Local proof status pending final new source CI.
+
+Final local verification of six-module addition:231 active modules,3895 audited
+declarations, only the three standard axioms; both negative guards pass.
+Complete proof sourceba744372317983ce26c94e32d7f7cd176c4893ac, hosted run40994461526
+exact SUCCESS, Lean IN PROGRESS at receipt. Initial mixed-only source8837755f
+run40994029481 also requires final hosted reconciliation. No new PROVED-LEAN
+promotion until exact source CI is green. Owner: none; resumable handoff saved.
+
+
+## Ten aggressive enumeration attacks,2026-10-30
+
+PR37 full source ba744372 now passes hosted40994461526 SUCCESS; initial source
+8837755f passes40994029481 SUCCESS. The mixed obstruction, complete local5/6
+catalogues and six-point separator result are now PROVED-LEAN.
+
+New isolated branch research/ten-attacks-20261030, from PR37 head482ff9f. Ten
+executed routes and all limits in research/ten_attacks_20261030/REPORT.md.
+General separator deletion/link and elementary-collapse implication for ORIGINAL
+coefficients pass Lean locally:232 modules,3927 declarations, standard axioms
+only, both negative guards. Hosted certification remains pending the new source.
+Finite constructive-collapse lead survives initial and held-out checks; same
+profile+certificate-count, pairwise top-join graphs, undecorated cyclic cores,
+48 bounded analytic ansatz spaces and eight greedy rules are falsified.
+The infinite word-Hankel-rank obstruction is PROVED-PAPER, not Lean-certified.
+Connected(6,10) homology in two degrees kills unrestricted purity even in the
+multi-class connected setting. Zero-coefficient collapsibility remains a
+conjecture, not an enumeration theorem. General A035617 enumeration remains OPEN.
+Full handoff, independently replayable traces and failed attempts are retained.
+Owner:none; completed campaign, resumable handoff saved.
+
+PR38 source f919410e300e724914913e862f551967c989a5f6; hosted40998017137
+in progress at archive.2,336 distinct full-join zero patterns have independently
+replayed collapses. All evidence, failures and manifest are in the campaign
+archive. The(6,10) targeted six-run search finds no zero with nonzero F2 homology
+in159 full-join cases (57 zeros); this is a necessary-condition test only.
+
+
+## 2026-10-30 GPT: canonical class cuts and five-row elimination
+
+Reconciled PR38 exact source f919410e300e724914913e862f551967c989a5f6:
+run40998017137 is SUCCESS in both Lean and exact jobs. Separator deletion/link
+and the original-coefficient collapse implication from PR38 are now PROVED-LEAN.
+
+Three new modules pass a full local build:235 active modules,3983 audited project
+declarations, standard axioms only; coverage and negative guards pass.
+Status PROVED-PAPER with local Lean verification, pending new exact-source CI.
+The original coefficient has a canonical face-sum on classwise binary cuts for
+EVERY pattern. Every original certificate has a unique row on a selected five-point
+class. The coefficient equals projection beta minus precisely five link betas,
+with arbitrary sizes in all other classes. Dominant-row equality plus explicit
+common partners gives a structural zero criterion. See
+research/fiber_elimination_20261030/REPORT.md and receipts.json.
+
+VERIFIED-COMP:1156 patterns n=0..7 and21052 proper refinements verify cofinality
+and original coefficients;4315 patterns/6115 selected-class checks verify the
+five-row formula. Independent global original-certificate generation explains
+all44 mixed(5,6) full-join zeros:33 dominant-row cancellations and11 collapsible
+projections with cone rows. Generic criterion Lean-checked locally; individual
+stored instances remain finite computation.
+
+Larger falsification search:2198 attempted cases;1120 full-join coefficient
+values,1008 proper joins,57 timeouts,13 face-budget skips.31 of the old32 skips
+now have values.326 evaluated full-join zeros,325 checked F2-acyclic; no collapse
+conclusion follows just from acyclicity. Unresolved zero:profile(9,9), word
+001100000001111111,3591 generators,34 vertices/864 reduced facets, homology not
+computed. All checkpoints, budgets and failed methods retained in evidence.
+No closed counting recurrence or general collapse theorem. A035617 remains OPEN.
+Owner:none; source and reproducible handoff prepared on isolated stacked branch.
+
+
+Repository reconciliation before finalizing PR40:PR39 was created during this
+continuation. Exact source81bca891be8f9f7534444a3fb3cbc9073171af4a has both jobs
+SUCCESS in run41002449977 (job API checked). It resolves all32 old budget skips,
+including the just-listed(9,9) zero; that finite topology target is no longer
+open.26 zeros have replayed collapses, six nonzeros are8,10,-4 twice each.
+These results belong to PR39 and overlap ours; do not add census totals.
+The specific54528-face core requires an elementary lower face of dimension>=3
+at the recorded starting point. Uniform construction and enumeration remain
+open. New canonical class-cut and five-row Lean source is separate, PR40.
+
+
+Further proof after PR39 reconciliation:FreeIntervalElimination.lean proves
+whole-interval sign cancellation, the exact sparse facet replacement, and their
+application to the original coefficient with canonical class cuts. Four new
+modules now pass locally:236 active modules,3987 audited declarations, standard
+axioms only. Hosted status for the final source is in PR40 receipts.json.
+
+VERIFIED-COMP:all17 retained hard PR39 cores have generalized free triangles;
+the attempted stronger no-free-triangle assertion failed (preserved). This is
+consistent with the codimension-one obstruction, not a refutation of it.
+The deterministic triangle-interval rule performs1438 replayed cancellations
+removing23624 faces, then stalls in all17. It does NOT finish any of these
+collapses. The general rule remains open; no new enumeration claim.
+
+
+PR40 final source c1a61f49e9ee95fad21b8d422ddd3df981b54132, hosted41004479610
+in progress at receipt. Local final236/3987 audit passes. Promotion to PROVED-LEAN
+awaits exact-source hosted success; no universal enumeration solution claimed.
+
+
+## 2026-10-30 GPT: connected 5j support and ten further finishing attempts
+
+PR40 source c1a61f49e9ee95fad21b8d422ddd3df981b54132 is now PROVED-LEAN:
+run41004479610, Lean123896139851 and exact123896139335 both SUCCESS. The
+previous pending receipt is superseded, with the earlier history retained.
+Claude PR41 source d8cb27ed645fabf3fa78dab6fb8a2cd94b6d39bb also passes
+run41023074939 (Lean123954714267). Its JoinRigidBlocks and CrossedClassMinSize
+modules are reused unchanged and credited.
+
+New claims: PROVED-PAPER with local Lean verification, pending exact-source
+hosted CI. Every class of a nontrivial NCConnected original pattern crosses
+another class. Nonzero original coefficient therefore forces every class >=5,
+hence n>=5j for j>=2; equality forces all classes exactly5. The actual connected
+weight polynomial has degree <=max(1,n/5). For 0<n<15 its values interpolate
+exactly from alphabet sizes1 and2. For 0<n<20 the precise ternary correction
+is six times the three-class coefficient. Final local closure241 modules,
+4065 audited declarations, standard axioms only; negative guards pass.
+Owner:none (completed source); see connected_support_20261030/receipts.json.
+
+VERIFIED-COMP:5296 geometry cases through n8, original signed joins through n11,
+27 independent raw-game Mobius checks. Known W0..W15 reconstructed from the
+new support law, binary counts, and the prior n15 all-five coefficient-35.
+No new sequence terms claimed. Ten further attempts are in
+finishing_routes_20261030/REPORT.md. KILLED: matroid bases, flag complexes,
+unconditioned class deletion, spectral determination, hereditary all-five
+support, and direct noncrossing SCC species. Shallow-side applicability fails
+for a certified survivor. Spectral holdouts initially survived2458 cases but
+a (6,8) collision occurs in the expanded4039-case prefix: coefficients0,-1,
+same exact characteristic polynomial t^6(t-1)(t-4). All decisive witnesses have
+an independent original-certificate/signed-join/determinant replay.
+
+The 17 old hard collapse cores replay88105 elementary pairs; the new
+contiguous-prefix Boolean-interval compression gives ZERO gain. Finite barrier
+rows are exact in1231 patterns/6155 fibers, with no general bounded-state rule.
+A035617 remains OPEN. Focus next on all-j all-five survivor enumeration and
+the first mixed positive-excess layer (5,5,6), preserving separator incidence.
+
+Final repository recheck: PR35 advanced to documentation-only
+da553f659a2238dd30e9f65da5de324444f06f63. It identifies NCConnected => every class
+crossed as the missing boundary bridge; the new ConnectedClassCrossing theorem
+closes precisely that gap. The prior abandoned n10 test there contributes no
+numerical evidence. No proof changes were missed. PR42 contains this work.
+
+
+PR42 verification: PROVED-LEAN on exact source
+f653c28b15697dd6b9a4b53771fe46beeeb83986, run41029475200. Lean job
+123975457884 and exact job123975457523 both SUCCESS. Hosted coverage241
+active modules, axiom audit4065 declarations, standard axioms only, negative
+guards PASS. This supersedes the pending status above. The source commit is
+frozen; the following receipt commit changes only documentation/evidence.
+
+
+## 2026-10-30 GPT: first-excess layer and complete (5,5,6) census
+
+Owner: none (ConnectedFirstExcess and SmallGeneratorCoefficients completed).
+Base PR42 receipt b04947b4de92115b7caf8e17f5a0195e5efc15be; its proof source
+f653c28b15697dd6b9a4b53771fe46beeeb83986 remains green in run41029475200.
+Rechecked PR35 head2f62dfe02dda3073ef0f238da847020dd91d8ac5: it adds finite
+crossing-lemma checks/sketches, not a replacement for the general PR42 proof.
+
+VERIFIED-COMP: all1009008 patterns of profile(5,5,6);999736 are NCConnected,
+109720 have certificates,3384 have full certificate join. Exactly312 have
+nonzero coefficient, all-1:88 two-generator and224 three-generator families.
+Independent global enumeration uses34944 original NC certificates and611520
+pattern incidences, reproducing the full nonzero set and sum-312. This verifies
+a known coefficient directly; it is not a new ternary sequence term.
+
+New Lean targets (not yet verified): the excess sum identity, exactly one
 six-class at n=5j+1, and original coefficient lemmas for two generators or
 three generators with exactly two top-joining pairs. Local Lean runtime is
 unavailable in this restored environment; hosted compilation is required.

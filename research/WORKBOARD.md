@@ -316,3 +316,50 @@ run40986874442 SUCCESS, including full n20/n25 re-enumeration and the independen
 count6455. Full job log and exact pins are in research/SCC_TRANSFER_CI_JOB_20261029.log
 and research/SCC_TRANSFER_CI_RECEIPTS_20261029.json. The finite count is now
 VERIFIED-COMP by two independently implemented methods, each with successful CI.
+
+
+## Original-game coefficient bridge: local verification complete
+
+The formerly open CertificateConstraint/split-tuple bijection and original
+winningJoinCoefficient/face-sum identity are now discharged in ten new Lean
+modules, culminating in FiveOriginalCoefficientLaw. The original connected
+all-five coefficient is -1 for exactly two certificate refinements joining to
+p, otherwise 0; the raw SCC law now applies to the original coefficient.
+New range and >=3-generator cancellation corollaries also compile.
+Status: PROVED-PAPER with local Lean verification until exact new-commit CI
+is green. See research/five_bridge_20261029/REPORT.md and retained logs.
+554 actual position-partition join checks pass, with singleton -4 and
+disconnected 16 controls. These are VERIFIED-COMP, finite only.
+General survivor enumeration and mixed-profile kernels remain OPEN; no claim
+of solving A035617 or of worldwide novelty. Owner: none (session completed).
+
+## Original all-five coefficient law: both bridge obligations discharged
+
+New source status at submission: PROVED-PAPER with complete local Lean verification;
+promote only after exact proof-commit CI, pinned in
+research/FIVE_BRIDGE_CI_RECEIPTS_20261029.json. The two formal gaps listed above
+are now closed: original CertificateConstraint generators have a complete unique
+split-tuple bijection, and ORIGINAL winningJoinCoefficient equals the resulting
+choice-complex alternating sum. Positional noncrossing and lattice joins are
+proved to agree with the actual class/rank model, not assumed equivalent.
+
+Main theorem winningJoinCoefficient_five_original_law: original pattern p with
+all classes size5, at least2 classes and raw crossing-cut connectivity has
+coefficient -1 exactly when its entire original certificate-generator set is
+{c,d} with c join d=p, and0 otherwise. New original-coefficient SCC theorem
+recognizes this using a valid separated pair and its raw implication graph.
+PROVED-PAPER/local Lean pass pending new CI. Universal indexed separator/Euler
+identity also applies to arbitrary original patterns, including boundary cases.
+
+Independent original-position replay VERIFIED-COMP locally:126/126 n10 generator
+bijections,121 connected n10 coefficient checks;254 saved n15 fixture patterns;
+40 coefficients -1,335 zero. This does not add an exhaustive n15 count. n5 has
+five certificates and coefficient -4: removing the >=2-class hypothesis is KILLED.
+All failures and successes saved under research/five_bridge_20261029.
+
+Full local verification225 active modules,3726 audited declarations, standard
+axioms only; both negative guards pass. New report and Claude handoff are in
+research/five_bridge_20261029. Full counting remains OPEN: mixed profiles and
+general survivor recurrences are not solved. No novelty claim. Previous finite
+count6455 is unchanged and is NOT A(25,5). No unsupported cross-domain analogy
+was used in the proof.

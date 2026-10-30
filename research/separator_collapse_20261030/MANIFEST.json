@@ -1,0 +1,20 @@
+{
+  "schema": "lc004-separator-collapse-frontier/1",
+  "base": "482ff9f3e678aaf7cf120a0974613c18fbb5676d",
+  "source_commit": "7cbbce0413c012d0e64fdf95a13624978d3d5985",
+  "ci_run": 40999056173,
+  "source_sha256": {
+    "research/separator_collapse_20261030/probe.py": "0276f144c9ee10ce091fa303f66351a416b966d37dff073b9db6c4faee36b158",
+    "research/separator_collapse_20261030/independent.py": "3daaa55a16a9b4bdfc9cb3b03a0e951a94f386a4e84dbdd61f4595dada5d6409",
+    "research/separator_collapse_20261030/CollapseCriterion.lean": "bb789394b9d7d2231861f091bbea2d2e88daa4d84d24c228f48c3f757c67b275",
+    ".github/workflows/separator-collapse-census.yml": "590edf7ed42151b4b3f55bba18a561c449a1f826e1b9a2f4ebbad89518c2a01a",
+    "research/separator_collapse_20261030/census.json.gz": "3fdca508f501ac079e6732f8722feb4d1da2a13a7ea9128840ddfc2b34addb29",
+    "research/separator_collapse_20261030/independent-results.json": "8dccc366ea427a0e3efb54a96d846a4a8719837cb1735ab307dbce6866fc58b5",
+    "research/separator_collapse_20261030/homology-controls.json": "340dbe3b9d6f491b68522276d10a14458eb68c5dd7d0280f7fda47f890166f04",
+    "research/separator_collapse_20261030/REPORT.md": "231f4f2ae9f908da4c1cb8ce63d632dc3bceadf0a36f633219a22ada98f0570a",
+    "research/separator_collapse_20261030/census.log": "b4a896bfb7902bcea2e74a0a784a26ce5ffb94479562c8cad02a87fe0fdf267b",
+    "research/separator_collapse_20261030/independent.log": "9f4f5e3aef4e6d73d375deb4149830d6d1532707cae25d318a67dba0c8f7ec4f",
+    "research/separator_collapse_20261030/lean-attempt-1.log": "1807b754cf03aea850fbbb59285d2c8f7d8554f41c660f7e8dcf1a249bafac79"
+  },
+  "status": "Full exact census and independent checks pass locally and hosted at run40999056173; corrected formal candidate pending new hosted run"
+}

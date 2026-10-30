@@ -42,7 +42,9 @@ theorem path_preserves {α : Type*} [DecidableEq α]
 theorem point_sum {α : Type*} [DecidableEq α] (v : α) :
     faceAlternatingSum ({∅, {v}} : Finset (Finset α)) = 0 := by
   classical
-  simp [faceAlternatingSum]
+  unfold faceAlternatingSum
+  rw [Finset.sum_pair (by simp : (∅ : Finset α) ≠ {v})]
+  simp
 
 /-- A collapse of the actual indexed separator complex certifies zero for
 its ORIGINAL Same Game coefficient, without restrictions on class sizes. -/

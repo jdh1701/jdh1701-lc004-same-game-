@@ -1,0 +1,264 @@
+{
+  "roots": [
+    "LC004.CertificateConstraintJoins",
+    "LC004.CertificateJoinIteration",
+    "LC004.WinningJoinCount",
+    "LC004.FaceRestriction",
+    "LC004.FaceJoinPaths",
+    "LC004.FaceInternalPaths",
+    "LC004.FacePathFactorization",
+    "LC004.HeavyFaceReconstruction"
+  ],
+  "module_count": 41,
+  "modules": {
+    "LC004.BlockCrossingInsertion": {
+      "imports": [
+        "LC004.NoncrossingInsertionIndex"
+      ],
+      "sha256": "6cd47bfe2ab3096974e5ebc919abab0b1f7bf547ff4684726706ceb742dfd213"
+    },
+    "LC004.CertificateConstraintJoins": {
+      "imports": [
+        "LC004.ColorPatternSpace"
+      ],
+      "sha256": "2d1ff68153185fc46a17881d858a8909e71fbd55c45a65200aabed173a214e76"
+    },
+    "LC004.CertificateConverse": {
+      "imports": [
+        "LC004.CertificateDeletion"
+      ],
+      "sha256": "813691b819b4ffb8d2f28d0415b56c58f0f025c7f4706d4deb800fb025d85ef6"
+    },
+    "LC004.CertificateDeletion": {
+      "imports": [
+        "LC004.CertificateFirstErase"
+      ],
+      "sha256": "fa4352d5dd54455593846ee7dc18bb45750972ff1bd9a797ecc97034107c52ac"
+    },
+    "LC004.CertificateFirstErase": {
+      "imports": [
+        "LC004.InnermostBlock"
+      ],
+      "sha256": "10fff4dcb3304e632b5cac7cbdeb69d41ce9ff03e432a90f6eb56c54ad7777e9"
+    },
+    "LC004.CertificateInsertion": {
+      "imports": [
+        "LC004.TypedInsertionPositions"
+      ],
+      "sha256": "f0d22d2b50035fb7ed583f05a2e8f675d40198472c96d80c4af5fdcb157b886c"
+    },
+    "LC004.CertificateJoinIteration": {
+      "imports": [
+        "LC004.CertificateConstraintJoins"
+      ],
+      "sha256": "3de47cd2ab3d139c73c4ead4cf5a55b726eb94ead4ad4734c0bbdf32e3327ae3"
+    },
+    "LC004.CertificatePairRefinement": {
+      "imports": [
+        "LC004.FourfoldCertificatePairs"
+      ],
+      "sha256": "bd6bacf1ced6fd57e000689cceda2a703e535be3a61e274bb649974c4660a3b9"
+    },
+    "LC004.ColorPatternSpace": {
+      "imports": [
+        "LC004.RawCertificateEquivalence"
+      ],
+      "sha256": "525708efd3918411e419f63a435aa7acfd13a82c7089513177137080f88de0d5"
+    },
+    "LC004.ConditionalGrammarBridge": {
+      "imports": [
+        "LC004.GrammarErase"
+      ],
+      "sha256": "5103d013aa75f6730e7484866ff805fa0d2b88a126e8d4d765a2d05a1eb8c476"
+    },
+    "LC004.FaceInternalPaths": {
+      "imports": [
+        "LC004.FaceJoinPaths"
+      ],
+      "sha256": "3d642d3d7ba222010d773887bbac2fc38902ef266cacab8c3f692b4c633eaaf8"
+    },
+    "LC004.FaceJoinPaths": {
+      "imports": [
+        "LC004.FaceRestriction"
+      ],
+      "sha256": "d0735ff9def72bd38ff0a080af4fb58558e651d05235b1cfa852501f656da76a"
+    },
+    "LC004.FacePathFactorization": {
+      "imports": [
+        "LC004.FaceInternalPaths"
+      ],
+      "sha256": "21b36c826e64db2460f4414c3a96c6eb3d1dfe454c77bbf632d934d9635d04e7"
+    },
+    "LC004.FaceRestriction": {
+      "imports": [
+        "LC004.CertificateConstraintJoins"
+      ],
+      "sha256": "e1b0e6da33b86c6a1884622df2f80d3fd42c46a1fbbc0923925015e132516d0d"
+    },
+    "LC004.FourBlockCrossing": {
+      "imports": [],
+      "sha256": "581849bd81aeb9c7c64c03eb57f49e85c0517e819d304197e004b0edc46b271d"
+    },
+    "LC004.FourfoldCertificatePairs": {
+      "imports": [
+        "LC004.PairPatternCertificate"
+      ],
+      "sha256": "56446b63b8805cfc1ba0533d85fe67a869445d887617ee780638147b50b28214"
+    },
+    "LC004.FullRunErasure": {
+      "imports": [
+        "LC004.GrammarErase",
+        "LC004.RunLengthTwoThree"
+      ],
+      "sha256": "e48f07c692fb877000bcc3831a726c2b887df764e4307643148e4bfeb459137a"
+    },
+    "LC004.GrammarErase": {
+      "imports": [
+        "LC004.GrammarLength"
+      ],
+      "sha256": "95e09f72cf28e5e75bd57ce367b6e0710df687f5b880197e6935938f4657d457"
+    },
+    "LC004.GrammarLength": {
+      "imports": [],
+      "sha256": "bee19c962aad38fc6f2a200836e49bf346ee0fd5cfdfb5e5371c6e0e5e3fc021"
+    },
+    "LC004.HeavyFaceReconstruction": {
+      "imports": [
+        "LC004.HeavyFaceRestriction",
+        "LC004.RigidFaceArcCriterion"
+      ],
+      "sha256": "f3e17b9e8c907722f300638b6bc3293434076d5b3c4a041a635069d518459450"
+    },
+    "LC004.HeavyFaceRestriction": {
+      "imports": [
+        "LC004.RigidFaceGeometry",
+        "LC004.WinningConstraintGenerators"
+      ],
+      "sha256": "9273308aa24dbe97567fa1574a00d0be3a03a8ba79daa645600166c0e33d7da2"
+    },
+    "LC004.HistoryCertificate": {
+      "imports": [
+        "LC004.CertificateInsertion",
+        "LC004.ReverseInsertionHistory"
+      ],
+      "sha256": "21cca6a70c944f58bba5bcf74c9c36f800ea421bc1cccbaeb5a2349592c74275"
+    },
+    "LC004.InnermostBlock": {
+      "imports": [
+        "LC004.HistoryCertificate"
+      ],
+      "sha256": "4498cb149f5a8049d09463a99bfa793c337ad6f2d1bb5b4cac095b984fc51f2f"
+    },
+    "LC004.MatchingMergeProfile": {
+      "imports": [
+        "LC004.MatchingPatternMerge"
+      ],
+      "sha256": "597d461e4a161d53a47167eaaaa9ed86f22957528da1540a128b49898c9c1656"
+    },
+    "LC004.MatchingPatternMerge": {
+      "imports": [
+        "LC004.ColorPatternSpace"
+      ],
+      "sha256": "c59d3095ff40d5823ae10ab57947b6159cbd1048e9f15e2a7c4ddfa24c62b62f"
+    },
+    "LC004.NoncrossingBlockFamily": {
+      "imports": [
+        "LC004.BlockCrossingInsertion"
+      ],
+      "sha256": "3ee1cbc4d20112f3d70dd0ba9542a06cec8dd7b420b621f2c42b3cad5187c396"
+    },
+    "LC004.NoncrossingInsertionIndex": {
+      "imports": [
+        "LC004.FourBlockCrossing"
+      ],
+      "sha256": "28f8be0ecb675327707371b27199a9167d1e17bffb48f8e2127a821197271fb5"
+    },
+    "LC004.PairPatternCertificate": {
+      "imports": [
+        "LC004.MatchingMergeProfile"
+      ],
+      "sha256": "08e4994a45ec649825e951d957b7de11a063192de0b9bc8f4f2deab0cd2da595"
+    },
+    "LC004.PatternCoarseningCorrespondence": {
+      "imports": [
+        "LC004.ColorPatternSpace"
+      ],
+      "sha256": "652583807d5ef474235c04c0061b12e127768612e20e0243779c3ba590bf27a1"
+    },
+    "LC004.RawCertificateEquivalence": {
+      "imports": [
+        "LC004.RawRunInflation",
+        "LC004.CertificateConverse",
+        "LC004.ConditionalGrammarBridge"
+      ],
+      "sha256": "ce6ccfb1df198be5d2a28cc9c13b0f19c08419c22956187a01ee2778a0706bc5"
+    },
+    "LC004.RawIsolatedInsertion": {
+      "imports": [
+        "LC004.RawMaxSemanticsBridge"
+      ],
+      "sha256": "ff6f97c573821a5256b75934990514a9ea98d8cd89fefd4bafe64a7fbed3d76a"
+    },
+    "LC004.RawMaxSemanticsBridge": {
+      "imports": [
+        "LC004.FullRunErasure"
+      ],
+      "sha256": "e847a93c75f0be2a650ed41f3367b8883f6004b560951fbf9c1d9476cc9ab8bc"
+    },
+    "LC004.RawRunInflation": {
+      "imports": [
+        "LC004.RawIsolatedInsertion"
+      ],
+      "sha256": "21027b42327aba7c2754a55548bc0d055c498d52a371dcfa28f127a6bfbfcf2a"
+    },
+    "LC004.ReverseInsertionHistory": {
+      "imports": [
+        "LC004.RawMaxSemanticsBridge"
+      ],
+      "sha256": "b5e1302e2c76603f69b2aaff4830ded61fd1f8c7671a0ed306224ba1a0e31ff4"
+    },
+    "LC004.RigidFaceArcCriterion": {
+      "imports": [
+        "LC004.RigidFaceGeometry"
+      ],
+      "sha256": "bd37291f05b1cba08ac19a112988f0c1f8255cfd5e8f208a35da6275856c7a55"
+    },
+    "LC004.RigidFaceGeometry": {
+      "imports": [
+        "LC004.SmallPatternCorrespondence",
+        "LC004.FacePathFactorization"
+      ],
+      "sha256": "19a4c630874ab723d2bacc820ff2e6d8584c384ef698ef97f4bc06b702db6a2c"
+    },
+    "LC004.RunLengthTwoThree": {
+      "imports": [],
+      "sha256": "f50b7faaf27fd1ae621ceca91c39181e84ff580e7c3c23af595d40f8f8cc1c30"
+    },
+    "LC004.SmallPatternCorrespondence": {
+      "imports": [
+        "LC004.CertificatePairRefinement"
+      ],
+      "sha256": "f7c6265d9f5b688e4def379e0113c176b01855590c6bcd2cc4cd8dd788ed6759"
+    },
+    "LC004.TypedInsertionPositions": {
+      "imports": [
+        "LC004.NoncrossingBlockFamily"
+      ],
+      "sha256": "05a41bbaab101cb3bc4eef808f148d791061e5b77318f9af9fcf90f05856aeab"
+    },
+    "LC004.WinningConstraintGenerators": {
+      "imports": [
+        "LC004.CertificateJoinIteration",
+        "LC004.SmallPatternCorrespondence"
+      ],
+      "sha256": "eed51ac79a2608a4e443d2c187e271608241408acdd70ac15c63d83afa48150c"
+    },
+    "LC004.WinningJoinCount": {
+      "imports": [
+        "LC004.WinningConstraintGenerators",
+        "LC004.PatternCoarseningCorrespondence"
+      ],
+      "sha256": "fe721ba6cbef4087a4b53600f764869fa36745be351934b137057f7ff7c99d21"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+name: LC004 equivalence path Lean verification
+on:
+  push:
+    branches:
+      - integration/alexandria-face-lemma-20261029
+    paths:
+      - 'LC004/FaceJoinPaths.lean'
+      - 'LC004/FaceInternalPaths.lean'
+      - 'LC004/FacePathFactorization.lean'
+      - '.github/workflows/face-join-paths.yml'
+  workflow_dispatch:
+jobs:
+  lean-paths:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          build: true
+      - name: Build restriction dependency and path theorem
+        run: |
+          lake env lean -o .lake/build/lib/lean/LC004/FaceRestriction.olean LC004/FaceRestriction.lean
+          lake env lean -o .lake/build/lib/lean/LC004/FaceJoinPaths.olean LC004/FaceJoinPaths.lean
+          lake env lean -o .lake/build/lib/lean/LC004/FaceInternalPaths.olean LC004/FaceInternalPaths.lean
+          lake env lean LC004/FacePathFactorization.lean
+      - name: Reject proof placeholders
+        run: |
+          if grep -nE '\b(sorry|admit)\b' LC004/FaceJoinPaths.lean LC004/FaceInternalPaths.lean LC004/FacePathFactorization.lean; then exit 1; fi

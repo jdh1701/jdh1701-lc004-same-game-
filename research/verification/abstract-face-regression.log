@@ -1,0 +1,9 @@
+{'n': 0, 'cases': 1, 'failures': 0, 'witness': None}
+{'n': 1, 'cases': 2, 'failures': 0, 'witness': None}
+{'n': 2, 'cases': 16, 'failures': 0, 'witness': None}
+{'n': 3, 'cases': 200, 'failures': 6, 'witness': ([0, 0, 2], [0, 1, 0], (1, 2))}
+n=0 selected-pairs=0 external-bridge-pairs=0
+n=1 selected-pairs=0 external-bridge-pairs=0
+n=2 selected-pairs=4 external-bridge-pairs=0
+n=3 selected-pairs=150 external-bridge-pairs=6
+n=4 selected-pairs=5400 external-bridge-pairs=432

@@ -74,6 +74,9 @@ jobs:
       - name: Check proposed refined partition degree encoding
         run: python research/check_partition_degree_encoding.py
 
+      - name: Check signed certificate joins against maximal-run deletion
+        run: python research/certificate_join_count.py
+
       - name: Preserve verification logs
         if: always()
         uses: actions/upload-artifact@v4

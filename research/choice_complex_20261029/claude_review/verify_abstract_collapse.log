@@ -1,0 +1,26 @@
+  done k=2 d=2 trials_so_far=100 nontrivial=52 failures=0 t=0.0s
+  done k=2 d=3 trials_so_far=200 nontrivial=102 failures=0 t=0.0s
+  done k=2 d=4 trials_so_far=300 nontrivial=147 failures=0 t=0.0s
+  done k=2 d=5 trials_so_far=400 nontrivial=186 failures=0 t=0.0s
+  done k=3 d=2 trials_so_far=500 nontrivial=244 failures=0 t=0.0s
+  done k=3 d=3 trials_so_far=600 nontrivial=276 failures=0 t=0.0s
+  done k=3 d=4 trials_so_far=700 nontrivial=309 failures=0 t=0.0s
+  done k=3 d=5 trials_so_far=800 nontrivial=333 failures=0 t=0.0s
+  done k=4 d=2 trials_so_far=900 nontrivial=367 failures=0 t=0.0s
+  done k=4 d=3 trials_so_far=1000 nontrivial=383 failures=0 t=0.0s
+  done k=4 d=4 trials_so_far=1100 nontrivial=391 failures=0 t=0.0s
+  done k=4 d=5 trials_so_far=1200 nontrivial=401 failures=0 t=0.1s
+  done k=5 d=2 trials_so_far=1300 nontrivial=417 failures=0 t=0.1s
+  done k=5 d=3 trials_so_far=1400 nontrivial=423 failures=0 t=0.1s
+  done k=5 d=4 trials_so_far=1500 nontrivial=423 failures=0 t=0.1s
+  done k=5 d=5 trials_so_far=1600 nontrivial=424 failures=0 t=0.2s
+  done k=6 d=2 trials_so_far=1700 nontrivial=431 failures=0 t=0.2s
+  done k=6 d=3 trials_so_far=1800 nontrivial=432 failures=0 t=0.2s
+  done k=6 d=4 trials_so_far=1900 nontrivial=432 failures=0 t=0.3s
+  done k=6 d=5 trials_so_far=2000 nontrivial=432 failures=0 t=0.6s
+  done k=7 d=2 trials_so_far=2100 nontrivial=438 failures=0 t=0.6s
+  done k=7 d=3 trials_so_far=2200 nontrivial=438 failures=0 t=0.7s
+  done k=7 d=4 trials_so_far=2300 nontrivial=438 failures=0 t=1.0s
+  done k=8 d=2 trials_so_far=2400 nontrivial=438 failures=0 t=1.0s
+  done k=8 d=3 trials_so_far=2500 nontrivial=438 failures=0 t=1.2s
+FINAL trials=2500 two_cases=292 two_fail=0 nontrivial=438 failures=0 max|A|=65

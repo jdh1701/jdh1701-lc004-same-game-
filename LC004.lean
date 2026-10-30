@@ -211,3 +211,16 @@ import LC004.SingleExceptionalWordCount
 import LC004.NoncrossingProfileEnumeration
 import LC004.DoubleExceptionalWordCount
 import LC004.SecondDiagonalClosedForm
+
+import LC004.CertificateConstraintJoins
+import LC004.CertificateJoinIteration
+import LC004.PatternCoarseningCorrespondence
+import LC004.WinningConstraintGenerators
+import LC004.WinningJoinCount
+import LC004.FaceBoundaryJoinPrelim
+import LC004.FaceJoinConditional
+import LC004.FaceJoinOrder
+import LC004.HeavyFaceReconstruction
+import LC004.HeavyFaceDecomposition
+import LC004.HeavyFaceCertificateProduct
+import LC004.JoinRigidBlocks

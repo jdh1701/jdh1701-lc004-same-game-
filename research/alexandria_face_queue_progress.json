@@ -1,0 +1,45 @@
+{
+  "campaign": "lc004-face-continuation-20261029",
+  "original_queue": "research/alexandria_face_queue.json",
+  "proof_commit": "3446f6313f1f8a35a3c7891d5deece19c4599855",
+  "hosted_run_id": 40831342439,
+  "status_source": "Lean and GitHub evidence; not native Core executor counters",
+  "targets": [
+    {
+      "id": "gluing",
+      "status": "verified",
+      "declarations": [
+        "LC004.winning_of_heavy_faces",
+        "LC004.exists_partition_of_noncrossing_regions"
+      ]
+    },
+    {
+      "id": "face-iff",
+      "status": "verified",
+      "declarations": [
+        "LC004.winning_iff_heavy_face_decomposition",
+        "LC004.raw_win_iff_heavy_face_decomposition"
+      ]
+    },
+    {
+      "id": "partition-equivalence",
+      "status": "verified",
+      "declarations": [
+        "LC004.heavyFaceCertificateEquiv",
+        "LC004.certificate_partition_count_product"
+      ]
+    },
+    {
+      "id": "slot-count",
+      "status": "open"
+    },
+    {
+      "id": "profile-count",
+      "status": "open"
+    },
+    {
+      "id": "general-enumeration",
+      "status": "open"
+    }
+  ]
+}

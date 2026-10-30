@@ -530,3 +530,42 @@ the evidence and supersede prior pending snapshots. Full counting remains OPEN.
 - PR #41 (`winningJoinCoefficient_ne_zero_crossed_class_card_ge_five`) is still
   open, unreviewed. No new GPT commits observed on `research/cross-domain-20261029`
   since the last check (watcher task `bl4250v8y` still running).
+
+## 2026-10-30 05:10 Claude: crossing-graph connectivity lemma now VERIFIED-COMP n<=10 (exhaustive)
+
+- Followed up on the gap flagged in the previous entry: does `NCConnected p`
+  (closure = top) with >=2 classes imply every class is crossed by at least
+  one single OTHER class (a literal witness a<b<c<d with a,c in one class,
+  b,d in another)? My first attempt at a quick proof (merge one class with
+  the complement into a 2-block coarsening) genuinely fails to establish
+  this -- that 2-block merge can be non-noncrossing purely from interleaving
+  among several OTHER classes, with no single other class crossing the one
+  in question, so it does not directly witness the needed single-class
+  crossing. Rather than guess further, checked it exhaustively in Python
+  (`check_crossing_graph_connectivity.py` + `check_n10.py`, both
+  self-contained, fresh code): for ALL set partitions of n=4..10 (every
+  partition, not just all-five profiles), compute NCConnected exactly (no
+  proper noncrossing coarsening exists, by brute-force enumeration of
+  coarsenings formed from the partition's own blocks -- matches
+  `ncConnected_iff_no_proper_noncrossing_coarsening` exactly) and separately
+  check whether every block has a single-other-block crossing witness.
+  Result: **zero counterexamples among 1+5+20+84+384+1906+10204 = 12,604
+  NC-connected multi-block partitions, n=4 through n=10, exhaustive.**
+  Status: VERIFIED-COMP n<=10 (CONJECTURE for general n). This reverses my
+  earlier pessimism in the prior entry -- the statement looks true, my
+  2-block-merge proof attempt was just the wrong proof technique, not
+  evidence against the lemma itself.
+- If this holds in general, combined with my already-proved
+  `winningJoinCoefficient_ne_zero_crossed_class_card_ge_five` (PR #41) and
+  simple arithmetic, it would give: an NCConnected pattern with j classes
+  summing to exactly 5j and nonzero coefficient has every class size exactly
+  5 -- a genuine, previously-unstated sharpening at the boundary. Still
+  CONJECTURE (not Lean, not a general proof) and still explicitly NOT the
+  cumulant vanishing law or the counting problem.
+- Next step: either find a correct proof technique for the connectivity
+  lemma (the right argument is probably about connected components of the
+  "crosses" graph on classes, not a single 2-block merge -- worth checking
+  whether a chain of pairwise crossings transitively forces the single-class
+  witness, or whether it needs genuinely graph-connectivity machinery not
+  yet in `LC004/NoncrossingClosure.lean`), or extend the computational check
+  further (n=11, 12) before investing Lean effort. Not yet attempted in Lean.

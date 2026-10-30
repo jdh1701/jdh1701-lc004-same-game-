@@ -1,0 +1,14 @@
+{
+  "status": "HOSTED-PENDING; NOT-LOCALLY-LEAN-COMPILED",
+  "base": "b04947b4de92115b7caf8e17f5a0195e5efc15be",
+  "branch": "proof/first-excess-20261030",
+  "local_exact": "pass",
+  "independent_global_census": "pass",
+  "local_lean_runtime": "unavailable",
+  "open_problem_solved": false,
+  "source_sha256": {
+    "LC004.lean": "257f3aeb1a9322969964c89a30aace2634c4d50c8a6ccd3c09428b29a70b5997",
+    "LC004/ConnectedFirstExcess.lean": "9613885af2b6e4d52d99269a6c698ecd84633bb6a35fae8ac7b67f917da1600f",
+    "LC004/SmallGeneratorCoefficients.lean": "9f3cda0d16a1ddb6ab7523afa02e4bfc08dca674ccc02d9172c6877d53a73686"
+  }
+}

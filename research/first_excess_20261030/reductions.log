@@ -1,0 +1,1 @@
+{"status": "VERIFIED-COMP", "patterns": 312, "cyclic_orbits": 22, "dihedral_orbits": 12, "cyclic_orbit_sizes": {"16": 17, "8": 5}, "dihedral_orbit_sizes": {"32": 8, "16": 3, "8": 1}, "without_all_five_reduction": 88, "without_adjacent_reduction": 88, "deletion_histogram": {"(3, 3, 3)": 224, "(2, 0, 0)": 88}}

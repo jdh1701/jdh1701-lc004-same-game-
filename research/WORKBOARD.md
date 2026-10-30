@@ -569,3 +569,30 @@ f653c28b15697dd6b9a4b53771fe46beeeb83986, run41029475200. Lean job
 active modules, axiom audit4065 declarations, standard axioms only, negative
 guards PASS. This supersedes the pending status above. The source commit is
 frozen; the following receipt commit changes only documentation/evidence.
+
+
+## 2026-10-30 GPT: first-excess layer and complete (5,5,6) census
+
+Owner: GPT/Codex for ConnectedFirstExcess and SmallGeneratorCoefficients.
+Base PR42 receipt b04947b4de92115b7caf8e17f5a0195e5efc15be; its proof source
+f653c28b15697dd6b9a4b53771fe46beeeb83986 remains green in run41029475200.
+Rechecked PR35 head2f62dfe02dda3073ef0f238da847020dd91d8ac5: it adds finite
+crossing-lemma checks/sketches, not a replacement for the general PR42 proof.
+
+VERIFIED-COMP: all1009008 patterns of profile(5,5,6);999736 are NCConnected,
+109720 have certificates,3384 have full certificate join. Exactly312 have
+nonzero coefficient, all-1:88 two-generator and224 three-generator families.
+Independent global enumeration uses34944 original NC certificates and611520
+pattern incidences, reproducing the full nonzero set and sum-312. This verifies
+a known coefficient directly; it is not a new ternary sequence term.
+
+New Lean targets (not yet verified): the excess sum identity, exactly one
+six-class at n=5j+1, and original coefficient lemmas for two generators or
+three generators with exactly two top-joining pairs. Local Lean runtime is
+unavailable in this restored environment; hosted compilation is required.
+
+KILLED: all first-excess survivors reduce to all-five survivors by deleting a
+point from the six-class. All88 two-generator cases fail all six deletions.
+All224 three-generator cases have exactly three successful deletions, each
+adjacent to another occurrence of the six-class in the cyclic order. The312
+survivors form22 cyclic orbits and12 dihedral orbits. See first_excess_20261030.

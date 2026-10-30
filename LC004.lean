@@ -269,3 +269,5 @@ import LC004.FreeIntervalElimination
 
 import LC004.ConnectedCoefficientSupport
 import LC004.ConnectedCoefficientInterpolation
+import LC004.ConnectedFirstExcess
+import LC004.SmallGeneratorCoefficients

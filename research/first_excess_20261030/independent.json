@@ -1,0 +1,25 @@
+{
+  "status": "VERIFIED-COMP",
+  "independent_global_certificate_census": true,
+  "global_catalogue": {
+    "(5, 2)": 24024,
+    "(2, 4)": 10920
+  },
+  "pattern_incidences": 611520,
+  "patterns_with_certificates": 115536,
+  "connected_patterns_with_certificates": 109720,
+  "full_join": 3384,
+  "nonzero": 312,
+  "coefficient_sum": -312,
+  "histogram_with_generators": {
+    "0": 109408,
+    "-1": 312
+  },
+  "nonzero_generator_histogram": {
+    "3": 224,
+    "2": 88
+  },
+  "direct_nonzero_subset_checks": 312,
+  "direct_zero_subset_checks": 500,
+  "seconds": 17.49827855400008
+}

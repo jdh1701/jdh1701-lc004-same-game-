@@ -148,3 +148,50 @@ families for arbitrary j, and determine whether the observed two/three-generator
 classification survives beyond j=3. It is a question, not a theorem. Counting
 the all-five survivors for arbitrary j and every higher-excess layer also remains
 open; the (5,5,6) census does not solve the all-length problem.
+
+## A countable inflation family
+
+There is a more precise surviving part of the inflation idea. In all certified
+all-five survivors at n10, n15, and the saved exhaustive n25 orbit fixtures,
+each class occupies two cyclic runs of length2 and one run of length1. Inflate
+one length2 run to length3. Complete original-certificate regeneration verifies
+that every tested inflation has exactly three generators and coefficient -1.
+The n25 check covers ALL 767 marked orbit fixtures and 7,670 distinct
+representative inflations, not just the initial 200-case probe.
+
+| j | All-five parents S_j | Distinct inflated patterns at length 5j+1 |
+|---|---:|---:|
+| 2 | 5 | 22 |
+| 3 | 35 | 224 |
+| 5 | 6,455 | 67,132 |
+
+The n16 image is exactly the three-generator part of the exhaustive census.
+At n26 this is a verified family of 67,132 distinct connected contributions,
+each -1; it is NOT an exhaustive n26 first-excess census. The rest of the
+n26 contributions, and the total connected coefficient, remain unknown here.
+
+**PROVED-PAPER, conditional counting identity.** Let A be any rotation-invariant
+set of partitions of 5j cyclically ordered positions, j>=2, with each class
+having cyclic run lengths1,2,2. Let I(A) be its image under inflating one
+length2 run. Then
+
+    |I(A)| = 2(5j+1)|A|/5.
+
+Proof: each source has 2j eligible runs. Rotation acts freely on source/run
+pairs because fixing the marked run fixes its starting boundary. Hence there
+are |A|*2j/(5j) marked-source orbits. Every image has exactly one length3 run,
+so rotation acts freely on images as well. Contracting that unique run gives
+a well-defined inverse on marked-source orbits, independent of which of its
+three equal positions is deleted. Therefore each marked-source orbit gives
+one image orbit of size5j+1, proving the formula. This counts inflation images;
+it does not assert that their game coefficients are nonzero.
+
+For the stated finite game families, the run hypothesis and coefficient
+preservation are independently checked by complete local certificate families.
+All rotated/reflected patterns are counted as explicit normalized words.
+Transport preserves coefficients: a dihedral permutation preserves cyclic
+alternation, certificate block sizes, and partition joins, hence bijects every
+signed certificate subfamily. `inflation.py` reproduces these checks and counts.
+Uniform run structure and coefficient preservation for arbitrary j remain
+CONJECTURES, and even proving them would leave the 88 irreducible n16 cases
+and their higher-j analogues to enumerate.

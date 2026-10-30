@@ -87,7 +87,7 @@ theorem connectedClassCoefficient_first_excess (j : Nat) (hj : 2 ≤ j) :
     · simp [hk,hz]
     · have hp := ncConnected_nonzero_first_excess p.val p.property (by omega) hz (by omega)
       simp [hk,hp]
-  · simp [hk]
+  · simp only [hk,false_and,if_false]
 
 #print axioms ncConnected_nonzero_excess_sum
 #print axioms ncConnected_nonzero_first_excess

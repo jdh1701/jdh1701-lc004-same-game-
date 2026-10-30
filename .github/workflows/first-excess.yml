@@ -58,6 +58,7 @@ jobs:
           python research/first_excess_20261030/independent.py
           python research/first_excess_20261030/reductions.py
           python research/first_excess_20261030/classify.py
+          python research/first_excess_20261030/inflation.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:

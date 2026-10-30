@@ -1,5 +1,5 @@
 {
-  "status": "HOSTED-PENDING; NOT-LOCALLY-LEAN-COMPILED",
+  "status": "CORRECTED-SOURCE; HOSTED-PENDING",
   "base": "b04947b4de92115b7caf8e17f5a0195e5efc15be",
   "branch": "proof/first-excess-20261030",
   "local_exact": "pass",
@@ -8,7 +8,57 @@
   "open_problem_solved": false,
   "source_sha256": {
     "LC004.lean": "257f3aeb1a9322969964c89a30aace2634c4d50c8a6ccd3c09428b29a70b5997",
-    "LC004/ConnectedFirstExcess.lean": "9613885af2b6e4d52d99269a6c698ecd84633bb6a35fae8ac7b67f917da1600f",
+    "LC004/ConnectedFirstExcess.lean": "6b1791a4b781b1854fb989112b6615f2f5c0ff11374a0b821f8382c1f18ec67f",
     "LC004/SmallGeneratorCoefficients.lean": "9f3cda0d16a1ddb6ab7523afa02e4bfc08dca674ccc02d9172c6877d53a73686"
+  },
+  "initial_source": "7fb686483e0cb4c6d8b9b1f37e897b2da1a8bba1",
+  "initial_run": 41097517330,
+  "initial_jobs": {
+    "lean": {
+      "id": 124206997870,
+      "conclusion": "failure"
+    },
+    "exact": {
+      "id": 124206998443,
+      "conclusion": "success"
+    }
+  },
+  "initial_failure": "Nat.card/Fintype.card simp mismatch in final negative class-count branch; complete failure log retained",
+  "inflation": {
+    "status": "VERIFIED-COMP",
+    "source_fixture_sha256": "72520caa95c0f37931bd8aa81975f56f5eb33626d2b8e5d7cd550c343a7071e5",
+    "rows": [
+      {
+        "j": 2,
+        "parent_representatives": 5,
+        "parent_patterns": 5,
+        "distinct_inflations_replayed": 20,
+        "inflated_patterns": 22,
+        "coefficient": -1,
+        "generators": 3,
+        "count_formula_verified": true
+      },
+      {
+        "j": 3,
+        "parent_representatives": 35,
+        "parent_patterns": 35,
+        "distinct_inflations_replayed": 210,
+        "inflated_patterns": 224,
+        "coefficient": -1,
+        "generators": 3,
+        "count_formula_verified": true
+      },
+      {
+        "j": 5,
+        "parent_representatives": 767,
+        "parent_patterns": 6455,
+        "distinct_inflations_replayed": 7670,
+        "inflated_patterns": 67132,
+        "coefficient": -1,
+        "generators": 3,
+        "count_formula_verified": true
+      }
+    ],
+    "scope": "Complete inflation images of the certified n10, n15 and n25 all-five survivor families; NOT a complete n26 first-excess census or universal preservation theorem."
   }
 }

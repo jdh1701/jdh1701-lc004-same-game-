@@ -596,3 +596,18 @@ point from the six-class. All88 two-generator cases fail all six deletions.
 All224 three-generator cases have exactly three successful deletions, each
 adjacent to another occurrence of the six-class in the cyclic order. The312
 survivors form22 cyclic orbits and12 dihedral orbits. See first_excess_20261030.
+
+First hosted source7fb686483e0cb4c6d8b9b1f37e897b2da1a8bba1, run41097517330:
+exact job124206998443 SUCCESS, Lean job124206997870 FAILED in the last negative
+class-count branch only (Nat.card/Fintype.card simp mismatch). The main excess
+and first-excess profile theorems and both generator lemmas compiled, but no
+full audit completed. Failure map/log retained; restricted simplification fixes
+the mismatch. Do not promote until the corrected exact source is green.
+
+Additional lead: a complete paper orbit-counting argument gives
+|inflation image|=2(5j+1)|A|/5 for ANY rotation-invariant family A whose classes
+have cyclic runs1,2,2. This is a conditional combinatorial theorem, not a
+universal game-preservation theorem. Complete certificate tests on the n25
+survivor fixtures verify7670 representative inflations, yielding67132 distinct
+n26 patterns with coefficient-1 and three generators. This is a family, NOT
+the full n26 layer. All88 irreducible n16 cases remain outside this construction.

@@ -1,5 +1,5 @@
 {
-  "status": "CORRECTED-SOURCE; HOSTED-PENDING",
+  "status": "HOSTED-PROOF-CHECKS-PASSED; FINAL-JOB-STATUS-PENDING",
   "base": "b04947b4de92115b7caf8e17f5a0195e5efc15be",
   "branch": "proof/first-excess-20261030",
   "local_exact": "pass",
@@ -60,5 +60,31 @@
       }
     ],
     "scope": "Complete inflation images of the certified n10, n15 and n25 all-five survivor families; NOT a complete n26 first-excess census or universal preservation theorem."
+  },
+  "source_commit": "9656d7b90554fb736388e6c14d92f2d73060e470",
+  "hosted_run": 41099342084,
+  "hosted_modules": 243,
+  "hosted_audited_declarations": 4082,
+  "standard_axioms_only": true,
+  "negative_guards": "pass",
+  "hosted_jobs": {
+    "lean": {
+      "id": 124213325344,
+      "conclusion": null,
+      "api_status": "in_progress",
+      "log_result": "build, axiom audit, negative guards, and cleanup completed successfully"
+    },
+    "exact": {
+      "id": 124213324550,
+      "conclusion": "success"
+    }
+  },
+  "pr": "https://github.com/jdh1701/jdh1701-lc004-same-game-/pull/43",
+  "hosted_evidence": {
+    "archive_sha256": "ec524e2d4be8796c0afd97a2454cde4707ca68f78afae46241b0dc8cc826de6a",
+    "files": {
+      "research/first_excess_20261030/hosted-exact-final.log": "61a485dee9f4e85bb3f61cf88c16dc0cdc58877cf53491d149aa71e5c80e4727",
+      "research/first_excess_20261030/hosted-lean-final.log": "c5bba983452d9b1294e3e9840018929e7b611cb5a8ecbe912b60afefc075d9e5"
+    }
   }
 }

@@ -137,6 +137,7 @@ g++ -O3 -std=c++17 -Wall -Wextra -Werror research/first_excess_20261030/count.cp
 python research/first_excess_20261030/independent.py
 python research/first_excess_20261030/reductions.py
 python research/first_excess_20261030/classify.py
+python research/first_excess_20261030/inflation.py
 lake build LC004
 lake env lean scripts/AxiomAudit.lean
 python scripts/check_lean_coverage.py
@@ -172,8 +173,10 @@ n26 contributions, and the total connected coefficient, remain unknown here.
 
 **PROVED-PAPER, conditional counting identity.** Let A be any rotation-invariant
 set of partitions of 5j cyclically ordered positions, j>=2, with each class
-having cyclic run lengths1,2,2. Let I(A) be its image under inflating one
-length2 run. Then
+having cyclic run lengths1,2,2. Let I(A) be the rotation closure of its cyclic
+length2-run inflations, including every choice of the output starting boundary.
+Equivalently, an image contracts at its unique length3 run to a cyclic rotation
+of an element of A. Then
 
     |I(A)| = 2(5j+1)|A|/5.
 
@@ -195,3 +198,38 @@ signed certificate subfamily. `inflation.py` reproduces these checks and counts.
 Uniform run structure and coefficient preservation for arbitrary j remain
 CONJECTURES, and even proving them would leave the 88 irreducible n16 cases
 and their higher-j analogues to enumerate.
+
+
+## Exact exceptional run shapes in the complete n16 census
+
+The saved 12 dihedral representatives and their orbit sizes give the following
+complete refinement. Every five-class has cyclic run lengths1,2,2.
+
+| Six-class cyclic run lengths | Patterns | Complete generators |
+|---|---:|---:|
+| 1,2,3 | 224 | 3 |
+| 1,1,2,2 | 80 | 2 |
+| 1,1,1,1,1,1 | 8 | 2 |
+
+The two exceptional two-generator shapes are finite targets for a general
+first-excess classification. No assertion that these exhaust arbitrary j is made.
+
+
+## Final exact-source verification
+
+**Hosted proof checks passed; final job status pending** on corrected source `9656d7b90554fb736388e6c14d92f2d73060e470`,
+[run41099342084](https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/41099342084):
+Exact job124213324550 reports SUCCESS. The complete Lean job124213325344 logs
+show successful build, audit, negative guards, and cleanup, but the status API
+still reports in_progress with no conclusion. Final PROVED-LEAN promotion is
+therefore pending that metadata confirmation. Hosted coverage confirms
+243 active modules; the audit checks4082 declarations and allows only propext,
+Classical.choice, and Quot.sound. Both negative guards pass. The local Lean
+runtime was unavailable; these are HOSTED results, not a claimed local build.
+The failed first attempt is preserved separately and superseded.
+
+All census, reduction, complete-generator, and inflation checks pass on the
+same source. The final receipt commit changes documentation/evidence only.
+The conditional inflation-image count is a paper theorem; the individual
+computed patterns and general conjectural preservation statement retain their
+separate statuses. The all-length enumeration remains open.

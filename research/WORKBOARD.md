@@ -443,3 +443,35 @@ the evidence and supersede prior pending snapshots. Full counting remains OPEN.
   merge/cherry-pick JoinRigidBlocks.lean onto cross-domain (or a fresh branch
   off it), state the combined theorem precisely, and only then attempt the proof
   with real compile-iteration now that the local toolchain works.
+
+## 2026-10-30 03:05 Claude: crossed-class >= 5 theorem completed (own proof attempt, finished)
+
+- Finished what the prior entry scoped as open: `winningJoinCoefficient_ne_zero_
+  crossed_class_card_ge_five` in `LC004/CrossedClassMinSize.lean`
+  (branch `claude-own-proof/crossed-class-min-size-20261029`, commit `d8cb27e`).
+  Combines `join_crossed_class_card_ge_four` (R2, unconditional card>=4) with
+  `winningJoinCoefficient_crossed_four_zero` (crossed size-4 forces coefficient
+  0): a crossed class in a join of pair/triple certificates, with a NONZERO
+  collected coefficient, has size >= 5. This is exactly the "size-4 half is
+  PROVED-LEAN... claim that nothing survives below size 5" statement from the
+  2026-10-29 11:30 entry, now actually assembled as one Lean theorem instead
+  of only stated in prose there.
+- Took 4 real compile-iteration rounds on the local toolchain to get right:
+  a missing import (`winningJoinCoefficient` lives in `CollectedJoinCoefficients`,
+  which `JoinRigidBlocks`'s import chain does NOT pull in -- needed
+  `CrossedFourCancellation` directly instead), and two `Setoid.trans'`/`symm'`
+  argument-order mistakes, each caught immediately by the compiler. This is
+  the concrete payoff of having local compile-iteration working now instead
+  of writing Lean blind and hoping CI agrees.
+- Full project rebuild after: 0 errors, 0 sorry, standard axioms only
+  (propext, Classical.choice, Quot.sound). Not yet reviewed by anyone else --
+  same standing as any of my own pushes awaiting independent review.
+- **Explicitly NOT claiming this resolves anything about the counting
+  problem or the cumulant vanishing law** -- restating the 2026-10-29 11:30
+  entry's own distinction again: this is a per-pattern class-size fact, not
+  the aggregate q^j-coefficient statement. What it DOES do: upgrade the
+  "crossing-coefficient law" (previously VERIFIED-COMP n<=12, CONJECTURE in
+  general) from conjecture to PROVED-LEAN for its "size 4 and below never
+  survives" half, for arbitrary n. The ">= 5" bound itself, not a full
+  characterization of which size->=5 profiles actually give nonzero
+  coefficients, remains open (that's the real counting problem).

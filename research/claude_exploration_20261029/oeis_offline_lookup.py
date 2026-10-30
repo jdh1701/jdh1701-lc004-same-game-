@@ -85,7 +85,7 @@ def main():
             continue
         hits = search_dump(dump_text, seq)
         out[k] = {"n_range": [ns[0], ns[-1]], "sequence": seq, "oeis_ids": hits}
-        OUT_PATH.write_text(json.dumps(out, indent=2, sort_keys=True))
+        OUT_PATH.write_text(json.dumps(out, indent=2))  # sort_keys=True crashes: out mixes str ("all_five_survivors") and int keys
         print(f"k={k} seq={seq} -> OEIS matches: {hits or 'NONE'}", flush=True)
     print("done.", flush=True)
 

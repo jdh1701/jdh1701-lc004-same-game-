@@ -245,3 +245,5 @@ import LC004.ChoiceFunctionalElimination
 import LC004.ChoiceAbstractCancellation
 
 import LC004.ChoiceSupportedCancellation
+
+import LC004.FiveClassGeometryBridge

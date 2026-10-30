@@ -210,3 +210,15 @@ current; it outranks older journals and notes when they disagree.
 - Next concrete encoding proposal, not implemented: use all ten 2+3 splits per five-class, enforcing internal noncrossing in pair compatibility for j>=2. The normalization theorem can discard unused choices, potentially avoiding a separate adjacent-pair enumeration lemma. The single-class case stays separate.
 - Remaining: actual finite five-class geometry/covered cut connection, order transport and original winningJoinCoefficient/face-sum identity, two-certificate assembly, enumeration of surviving pairs and mixed-profile kernels. Full all-five game theorem remains PROVED-PAPER; fixed-q counting remains open. n25 run 40942806037 remains queued; no new count accepted.
 - Report and targeted handoff: research/choice_support_20261029/. No new novelty claim or change to Claude's branch/PR or main.
+
+## Five-class rank transport and ten-choice check
+
+Baseline support normalization is PROVED-LEAN at c799420, CI40973071008
+success; probe40973070990 success. New finite geometry evidence: all252 labelled
+five-versus-five interleavings pass majority closure; all242 crossing cases
+have a row/column cover (140 nonempty). VERIFIED-COMP pending new CI.
+New order/rank transport and unary-absorption lemmas are locally Lean-verified,
+PROVED-PAPER pending new exact-commit CI. See research/five_geometry_20261029.
+The finite local relation itself is not yet proved in Lean. Full counting is
+OPEN: game-certificate/coefficient assembly, surviving pair enumeration, and
+mixed-profile connected weights remain. No percentage or step count to solution.

@@ -5,6 +5,8 @@ on:
     paths:
       - 'research/choice_complex_20261029/**'
       - 'research/choice_formalization_20261029/**'
+      - 'research/choice_support_20261029/**'
+      - 'research/five_geometry_20261029/**'
       - 'LC004/**'
       - 'LC004.lean'
       - '.github/workflows/choice-complex.yml'
@@ -55,6 +57,7 @@ jobs:
           python research/choice_complex_20261029/structure.py
           python research/choice_support_20261029/normalization_controls.py
           python research/choice_complex_20261029/pair_orbits.py
+          python research/five_geometry_20261029/ten_split_check.py
           python research/choice_complex_20261029/verify_collapse.py
           python research/choice_complex_20261029/eliminate.py
           python research/choice_complex_20261029/abstract_csp.py

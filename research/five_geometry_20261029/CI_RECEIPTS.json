@@ -1,0 +1,19 @@
+{
+  "status": "all local checks pass; exact-commit CI pending",
+  "baseline": {
+    "proof_commit": "c799420d1412535d3a56e8061882a6f6770182eb",
+    "lean_exact_sage_run": 40973071008,
+    "conclusion": "success",
+    "coefficient_probe_run": 40973070990,
+    "probe_conclusion": "success"
+  },
+  "scope": "rank/order transport and unary absorption; exhaustive Python ten-choice geometry; finite geometry Lean proof pending",
+  "local": {
+    "build": "pass",
+    "active_modules": 198,
+    "audited_declarations": 2501,
+    "coverage": "pass",
+    "negative_guards": "pass",
+    "finite_geometry": "252 interleavings; 175980 majority triples; all pass"
+  }
+}

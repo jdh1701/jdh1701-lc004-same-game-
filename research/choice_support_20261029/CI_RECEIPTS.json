@@ -1,5 +1,5 @@
 {
-  "status": "queued at snapshot; local verification passed",
+  "status": "success; exact proof commit verified",
   "local": {
     "modules": 197,
     "audited_declarations": 2494,
@@ -22,16 +22,16 @@
     {
       "id": 40973071008,
       "name": "Choice-complex cancellation audit",
-      "status": "queued",
-      "conclusion": null,
+      "status": "completed",
+      "conclusion": "success",
       "url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40973071008",
       "head_sha": "c799420d1412535d3a56e8061882a6f6770182eb"
     },
     {
       "id": 40973070990,
       "name": "Cross-domain exact coefficient probes",
-      "status": "queued",
-      "conclusion": null,
+      "status": "completed",
+      "conclusion": "success",
       "url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40973070990",
       "head_sha": "c799420d1412535d3a56e8061882a6f6770182eb"
     }

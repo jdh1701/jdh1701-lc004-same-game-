@@ -1,0 +1,115 @@
+{
+  "proof_commit": "ba0357def8d61dcbc9f92a10690927a4d568f91f",
+  "verification_commit": "c51b75abed5953bd7d940a6153c3598a58cdde86",
+  "verification_tree": "38b9e6bd31042788f99b4e8a767d6046d5b0a36d",
+  "archive_commit": "cc038da1a0a68a9a43b05ca2483a8a6a29f26426",
+  "status": "PROVED-LEAN; exact proof and verification commits CI success",
+  "runs": [
+    {
+      "id": 40992099928,
+      "name": "Choice-complex cancellation audit",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "ba0357def8d61dcbc9f92a10690927a4d568f91f",
+      "url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40992099928"
+    },
+    {
+      "id": 40992100056,
+      "name": "Cross-domain exact coefficient probes",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "ba0357def8d61dcbc9f92a10690927a4d568f91f",
+      "url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40992100056"
+    },
+    {
+      "id": 40992346166,
+      "name": "Choice-complex cancellation audit",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "c51b75abed5953bd7d940a6153c3598a58cdde86",
+      "url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40992346166"
+    },
+    {
+      "id": 40992346252,
+      "name": "Cross-domain exact coefficient probes",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "c51b75abed5953bd7d940a6153c3598a58cdde86",
+      "url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40992346252"
+    }
+  ],
+  "jobs": [
+    {
+      "id": 123857483867,
+      "name": "exact",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 123857484033,
+      "name": "lean",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 123857484136,
+      "name": "sage",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "local": {
+    "active_modules": 225,
+    "audited_declarations": 3729,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "build": "pass",
+    "source_coverage_guard": "pass",
+    "negative_guards": "both pass",
+    "proof_files_blob_verified": 11,
+    "supplement_files_blob_verified": 42
+  },
+  "claims": [
+    {
+      "label": "PROVED-LEAN",
+      "claim": "Original CertificateConstraint generator/split-tuple bijection, original coefficient/Euler identity, positional NC and join transport",
+      "ci": 40992346166
+    },
+    {
+      "label": "PROVED-LEAN",
+      "claim": "Original -1/0 coefficient law, SCC recognition, range and >=3-generator cancellation; all classes size5, >=2 classes and raw crossing-cut connectivity",
+      "ci": 40992346166
+    },
+    {
+      "label": "PROVED-LEAN",
+      "claim": "General indexed separating-family Euler identity for arbitrary original patterns, including empty and losing cases",
+      "ci": 40992346166
+    },
+    {
+      "label": "VERIFIED-COMP",
+      "claim": "554 actual-position join cases,548 connected;47 coefficients -1,501 zero",
+      "ci": 40992346166
+    },
+    {
+      "label": "VERIFIED-COMP",
+      "claim": "381 global NC-catalogue generator checks,375 connected;40 coefficients -1,335 zero; no exhaustive n15 claim",
+      "ci": 40992346166
+    },
+    {
+      "label": "KILLED",
+      "claim": "Dropping >=2 classes or raw connectivity from the connected -1/0 law: n5 coefficient -4 and consecutive n10 classes coefficient16",
+      "ci": 40992346166
+    }
+  ],
+  "sage": "Pinned CI image replays existing independent homology/SCC checks; no local Sage run claimed",
+  "remaining": [
+    "General mixed-class connected kernels",
+    "General survivor recurrence/enumeration",
+    "Full fixed-alphabet counting problem"
+  ],
+  "novelty": "No worldwide novelty claim",
+  "handoff": "research/five_bridge_20261029/HANDOFF_TO_CLAUDE.md"
+}

@@ -372,3 +372,18 @@ global NC certificate catalogues and checks381 patterns,375 connected (40 at-1,
 335 zero). Original global replay was temporarily named verify_original_bridge.py
 before the scripts were separated; preserved logs retain their original names.
 The n10 disconnected coefficient16 control kills omitting connectivity.
+
+## Final original-bridge CI promotion: PROVED-LEAN
+
+Exact proof commit ba0357def8d61dcbc9f92a10690927a4d568f91f passes Lean/exact/Sage
+CI40992099928 and probes40992100056. Verification supplement
+c51b75abed5953bd7d940a6153c3598a58cdde86 passes Lean/exact/Sage40992346166
+(all3 jobs SUCCESS) and probes40992346252 SUCCESS. Thus the original generator
+bijection, arbitrary-pattern separator/Euler identity, positional and join
+transport, connected original all-five coefficient law, SCC recognition and
+range/three-generator corollaries are now PROVED-LEAN. Final CI axiom audit3729
+declarations across225 modules, standard axioms only, both negative guards pass.
+Both independent original-position finite replays are VERIFIED-COMP in the exact
+job. Source and all failed/passing local attempt logs, plus hashed archive, are
+pushed. Root research/FIVE_BRIDGE_CI_RECEIPTS_20261029.json and full CI logs pin
+the evidence and supersede prior pending snapshots. Full counting remains OPEN.

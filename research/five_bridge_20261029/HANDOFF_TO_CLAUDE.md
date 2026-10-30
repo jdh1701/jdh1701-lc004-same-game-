@@ -38,3 +38,7 @@ and source commit are authoritative only in the root receipt.
 There are two distinct finite replays: verify_original_bridge.py (554 actual
 position-join cases) and verify_global_nc_bridge.py (381 independently generated
 global NC-catalogue cases). Both should run in CI. See REPORT for exact scopes.
+
+Final CI promotion: PROVED-LEAN at source ba0357de (CI40992099928) and verification
+c51b75ab (CI40992346166), all Lean/exact/Sage jobs SUCCESS; both probe runs also
+SUCCESS. The root receipt supersedes all older pending status snapshots.

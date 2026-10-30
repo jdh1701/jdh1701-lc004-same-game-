@@ -1,0 +1,1029 @@
+﻿2026-10-30T02:33:12.0141923Z Current runner version: '2.338.0'
+2026-10-30T02:33:12.0169502Z ##[group]Runner Image Provisioner
+2026-10-30T02:33:12.0170420Z Hosted Compute Agent
+2026-10-30T02:33:12.0171120Z Version: 20261021.618
+2026-10-30T02:33:12.0171812Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+2026-10-30T02:33:12.0172531Z Build Date: 2026-10-21T00:45:21Z
+2026-10-30T02:33:12.0173735Z Worker ID: {54c1b946-6cd8-4968-84f9-63324a759abf}
+2026-10-30T02:33:12.0174515Z Region: eastus2
+2026-10-30T02:33:12.0175140Z Cloud: Azure
+2026-10-30T02:33:12.0175750Z ##[endgroup]
+2026-10-30T02:33:12.0177265Z ##[group]Operating System
+2026-10-30T02:33:12.0178062Z Ubuntu
+2026-10-30T02:33:12.0178607Z 24.04.5
+2026-10-30T02:33:12.0179168Z LTS
+2026-10-30T02:33:12.0179734Z ##[endgroup]
+2026-10-30T02:33:12.0180281Z ##[group]Runner Image
+2026-10-30T02:33:12.0180950Z Image: ubuntu-24.04
+2026-10-30T02:33:12.0181525Z Version: 20261025.353.1
+2026-10-30T02:33:12.0182905Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-30T02:33:12.0185212Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+2026-10-30T02:33:12.0186345Z ##[endgroup]
+2026-10-30T02:33:12.0187537Z ##[group]GITHUB_TOKEN Permissions
+2026-10-30T02:33:12.0189742Z Contents: read
+2026-10-30T02:33:12.0190370Z Metadata: read
+2026-10-30T02:33:12.0191024Z ##[endgroup]
+2026-10-30T02:33:12.0193500Z Secret source: Actions
+2026-10-30T02:33:12.0195094Z Cache mode: write
+2026-10-30T02:33:12.0196185Z Prepare workflow directory
+2026-10-30T02:33:12.0546222Z Prepare all required actions
+2026-10-30T02:33:12.0613082Z Getting action download info
+2026-10-30T02:33:12.2959472Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-30T02:33:12.4585877Z Download action repository 'actions/cache@v4' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+2026-10-30T02:33:12.6862350Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-30T02:33:12.9073790Z Complete job name: lean
+2026-10-30T02:33:12.9997326Z ##[group]Run actions/checkout@v4
+2026-10-30T02:33:12.9998341Z with:
+2026-10-30T02:33:12.9998904Z   repository: jdh1701/jdh1701-lc004-same-game-
+2026-10-30T02:33:13.0002900Z   token: ***
+2026-10-30T02:33:13.0003613Z   ssh-strict: true
+2026-10-30T02:33:13.0004114Z   ssh-user: git
+2026-10-30T02:33:13.0004618Z   persist-credentials: true
+2026-10-30T02:33:13.0005166Z   clean: true
+2026-10-30T02:33:13.0005660Z   sparse-checkout-cone-mode: true
+2026-10-30T02:33:13.0006236Z   fetch-depth: 1
+2026-10-30T02:33:13.0006716Z   fetch-tags: false
+2026-10-30T02:33:13.0007212Z   show-progress: true
+2026-10-30T02:33:13.0007703Z   lfs: false
+2026-10-30T02:33:13.0008175Z   submodules: false
+2026-10-30T02:33:13.0008682Z   set-safe-directory: true
+2026-10-30T02:33:13.0009241Z   allow-unsafe-pr-checkout: false
+2026-10-30T02:33:13.0010080Z ##[endgroup]
+2026-10-30T02:33:13.3199864Z Syncing repository: jdh1701/jdh1701-lc004-same-game-
+2026-10-30T02:33:13.3202490Z ##[group]Getting Git version info
+2026-10-30T02:33:13.3203956Z Working directory is '/home/runner/work/jdh1701-lc004-same-game-/jdh1701-lc004-same-game-'
+2026-10-30T02:33:13.3205439Z [command]/usr/bin/git version
+2026-10-30T02:33:13.3345269Z git version 2.56.0
+2026-10-30T02:33:13.3373054Z ##[endgroup]
+2026-10-30T02:33:13.3398534Z Temporarily overriding HOME='/home/runner/work/_temp/1e1736e9-56f3-4394-997b-ae96264ecd9a' before making global git config changes
+2026-10-30T02:33:13.3401840Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-30T02:33:13.3406440Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/jdh1701-lc004-same-game-/jdh1701-lc004-same-game-
+2026-10-30T02:33:13.3471825Z Deleting the contents of '/home/runner/work/jdh1701-lc004-same-game-/jdh1701-lc004-same-game-'
+2026-10-30T02:33:13.3479623Z ##[group]Initializing the repository
+2026-10-30T02:33:13.3484891Z [command]/usr/bin/git init /home/runner/work/jdh1701-lc004-same-game-/jdh1701-lc004-same-game-
+2026-10-30T02:33:13.3614534Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-30T02:33:13.3616903Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-30T02:33:13.3620763Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-30T02:33:13.3622661Z hint: call:
+2026-10-30T02:33:13.3624357Z hint:
+2026-10-30T02:33:13.3625463Z hint: 	git config --global init.defaultBranch <name>
+2026-10-30T02:33:13.3626717Z hint:
+2026-10-30T02:33:13.3627871Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-30T02:33:13.3629726Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-30T02:33:13.3631202Z hint:
+2026-10-30T02:33:13.3632025Z hint: 	git branch -m <name>
+2026-10-30T02:33:13.3633691Z hint:
+2026-10-30T02:33:13.3635275Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-30T02:33:13.3644972Z Initialized empty Git repository in /home/runner/work/jdh1701-lc004-same-game-/jdh1701-lc004-same-game-/.git/
+2026-10-30T02:33:13.3650275Z [command]/usr/bin/git remote add origin https://github.com/jdh1701/jdh1701-lc004-same-game-
+2026-10-30T02:33:13.3707552Z ##[endgroup]
+2026-10-30T02:33:13.3709566Z ##[group]Disabling automatic garbage collection
+2026-10-30T02:33:13.3711461Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-30T02:33:13.3751883Z ##[endgroup]
+2026-10-30T02:33:13.3753969Z ##[group]Setting up auth
+2026-10-30T02:33:13.3758983Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-30T02:33:13.3807537Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-30T02:33:13.4362057Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-30T02:33:13.4425575Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-30T02:33:13.4731022Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-30T02:33:13.4767995Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-30T02:33:13.5028101Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-30T02:33:13.5079842Z ##[endgroup]
+2026-10-30T02:33:13.5094279Z ##[group]Fetching the repository
+2026-10-30T02:33:13.5096150Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +c51b75abed5953bd7d940a6153c3598a58cdde86:refs/remotes/origin/research/cross-domain-20261029
+2026-10-30T02:33:13.8140191Z From https://github.com/jdh1701/jdh1701-lc004-same-game-
+2026-10-30T02:33:13.8142018Z  * [new ref]         c51b75abed5953bd7d940a6153c3598a58cdde86 -> origin/research/cross-domain-20261029
+2026-10-30T02:33:13.8146217Z ##[endgroup]
+2026-10-30T02:33:13.8147651Z ##[group]Determining the checkout info
+2026-10-30T02:33:13.8149196Z ##[endgroup]
+2026-10-30T02:33:13.8156863Z [command]/usr/bin/git sparse-checkout disable
+2026-10-30T02:33:13.8221387Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-30T02:33:13.8265488Z ##[group]Checking out the ref
+2026-10-30T02:33:13.8269130Z [command]/usr/bin/git checkout --progress --force -B research/cross-domain-20261029 refs/remotes/origin/research/cross-domain-20261029
+2026-10-30T02:33:13.8738348Z Switched to a new branch 'research/cross-domain-20261029'
+2026-10-30T02:33:13.8742914Z branch 'research/cross-domain-20261029' set up to track 'origin/research/cross-domain-20261029'.
+2026-10-30T02:33:13.8751483Z ##[endgroup]
+2026-10-30T02:33:13.8806492Z [command]/usr/bin/git log -1 --format=%H
+2026-10-30T02:33:13.8840832Z c51b75abed5953bd7d940a6153c3598a58cdde86
+2026-10-30T02:33:13.9856804Z ##[group]Run actions/cache@v4
+2026-10-30T02:33:13.9858006Z with:
+2026-10-30T02:33:13.9858918Z   path: ~/.elan
+.lake
+
+2026-10-30T02:33:13.9860757Z   key: Linux-lean-v4.19.0-1564b0974d1fa9c5b873b7e41a82ba91fc73c20a50dd3a4144f56fe13ac3e788
+2026-10-30T02:33:13.9862923Z   restore-keys: Linux-lean-v4.19.0-
+
+2026-10-30T02:33:13.9864642Z   enableCrossOsArchive: false
+2026-10-30T02:33:13.9865865Z   fail-on-cache-miss: false
+2026-10-30T02:33:13.9866992Z   lookup-only: false
+2026-10-30T02:33:13.9868032Z   save-always: false
+2026-10-30T02:33:13.9869037Z ##[endgroup]
+2026-10-30T02:33:14.0977333Z (node:2342) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-30T02:33:14.0982393Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-30T02:33:14.1865149Z Cache hit for: Linux-lean-v4.19.0-1564b0974d1fa9c5b873b7e41a82ba91fc73c20a50dd3a4144f56fe13ac3e788
+2026-10-30T02:33:14.1970338Z (node:2342) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-30T02:33:15.2447071Z Received 213909504 of 2473069937 (8.6%), 203.2 MBs/sec
+2026-10-30T02:33:16.2453063Z Received 415236096 of 2473069937 (16.8%), 197.5 MBs/sec
+2026-10-30T02:33:17.2516574Z Received 616562688 of 2473069937 (24.9%), 195.7 MBs/sec
+2026-10-30T02:33:18.2511603Z Received 796917760 of 2473069937 (32.2%), 189.7 MBs/sec
+2026-10-30T02:33:19.2493467Z Received 994050048 of 2473069937 (40.2%), 189.3 MBs/sec
+2026-10-30T02:33:20.2684208Z Received 1207959552 of 2473069937 (48.8%), 191.2 MBs/sec
+2026-10-30T02:33:21.2694053Z Received 1379926016 of 2473069937 (55.8%), 187.3 MBs/sec
+2026-10-30T02:33:22.2727946Z Received 1610612736 of 2473069937 (65.1%), 191.2 MBs/sec
+2026-10-30T02:33:23.2731874Z Received 1849688064 of 2473069937 (74.8%), 195.3 MBs/sec
+2026-10-30T02:33:24.2739823Z Received 2067791872 of 2473069937 (83.6%), 196.6 MBs/sec
+2026-10-30T02:33:25.2750865Z Received 2327838720 of 2473069937 (94.1%), 201.2 MBs/sec
+2026-10-30T02:33:25.8059287Z Received 2473069937 of 2473069937 (100.0%), 203.9 MBs/sec
+2026-10-30T02:33:25.8080697Z Cache Size: ~2359 MB (2473069937 B)
+2026-10-30T02:33:25.8143447Z [command]/usr/bin/tar -xf /home/runner/work/_temp/be8ef489-afa7-402b-a0d1-2daf236bc566/cache.tzst -P -C /home/runner/work/jdh1701-lc004-same-game-/jdh1701-lc004-same-game- --use-compress-program unzstd
+2026-10-30T02:33:42.8916598Z Cache restored successfully
+2026-10-30T02:33:43.0603722Z Cache restored from key: Linux-lean-v4.19.0-1564b0974d1fa9c5b873b7e41a82ba91fc73c20a50dd3a4144f56fe13ac3e788
+2026-10-30T02:33:43.1126881Z ##[group]Run if [ ! -x "$HOME/.elan/bin/elan" ]; then
+2026-10-30T02:33:43.1127621Z [36;1mif [ ! -x "$HOME/.elan/bin/elan" ]; then[0m
+2026-10-30T02:33:43.1128540Z [36;1m  curl https://elan.lean-lang.org/elan-init.sh -sSf | sh -s -- -y[0m
+2026-10-30T02:33:43.1129238Z [36;1mfi[0m
+2026-10-30T02:33:43.1129660Z [36;1mecho "$HOME/.elan/bin" >> "$GITHUB_PATH"[0m
+2026-10-30T02:33:43.1161542Z shell: /usr/bin/bash -e {0}
+2026-10-30T02:33:43.1161999Z ##[endgroup]
+2026-10-30T02:33:43.1641070Z ##[group]Run set -o pipefail
+2026-10-30T02:33:43.1641605Z [36;1mset -o pipefail[0m
+2026-10-30T02:33:43.1642103Z [36;1mpython scripts/check_lean_coverage.py[0m
+2026-10-30T02:33:43.1642655Z [36;1mlake exe cache get[0m
+2026-10-30T02:33:43.1643414Z [36;1mlake build LC004 2>&1 | tee choice-lean-build.log[0m
+2026-10-30T02:33:43.1644281Z [36;1mlake env lean scripts/AxiomAudit.lean 2>&1 | tee choice-axiom-audit.log[0m
+2026-10-30T02:33:43.1645171Z [36;1mpython scripts/test_verification_guards.py[0m
+2026-10-30T02:33:43.1645888Z [36;1mgit diff --exit-code -- lake-manifest.json[0m
+2026-10-30T02:33:43.1668412Z shell: /usr/bin/bash -e {0}
+2026-10-30T02:33:43.1668730Z ##[endgroup]
+2026-10-30T02:33:43.5930937Z COVERAGE PASS: 225 active modules all reachable from LC004.lean
+2026-10-30T02:33:43.5932266Z {
+2026-10-30T02:33:43.5932929Z   "root": "LC004",
+2026-10-30T02:33:43.5933774Z   "active_modules": [
+2026-10-30T02:33:43.5934186Z     "LC004.BlockCrossingInsertion",
+2026-10-30T02:33:43.5934711Z     "LC004.BoundaryContextRegression",
+2026-10-30T02:33:43.5935151Z     "LC004.BoundaryLemmas",
+2026-10-30T02:33:43.5935508Z     "LC004.Bridge",
+2026-10-30T02:33:43.5935837Z     "LC004.BridgeAdjacentBoundary",
+2026-10-30T02:33:43.5936251Z     "LC004.BridgeAdjacentLeft",
+2026-10-30T02:33:43.5936654Z     "LC004.BridgeAdjacentLeftClosure",
+2026-10-30T02:33:43.5937097Z     "LC004.BridgeAdjacentLeftConcrete",
+2026-10-30T02:33:43.5937537Z     "LC004.BridgeAdjacentLeftFront",
+2026-10-30T02:33:43.5937981Z     "LC004.BridgeAdjacentPrefixTransport",
+2026-10-30T02:33:43.5938440Z     "LC004.BridgeExchangeAssembly",
+2026-10-30T02:33:43.5938860Z     "LC004.BridgeExchangeFarLeft",
+2026-10-30T02:33:43.5939271Z     "LC004.BridgeExchangeLeftAssembly",
+2026-10-30T02:33:43.5939751Z     "LC004.BridgeExchangeRemaining",
+2026-10-30T02:33:43.5940211Z     "LC004.BridgeExchangeRight",
+2026-10-30T02:33:43.5940639Z     "LC004.BridgeExchangeRightFull",
+2026-10-30T02:33:43.5941079Z     "LC004.BridgeFarLeftConcrete",
+2026-10-30T02:33:43.5941504Z     "LC004.BridgeFarLeftProof",
+2026-10-30T02:33:43.5941920Z     "LC004.BridgeStructuralFinal",
+2026-10-30T02:33:43.5942364Z     "LC004.CertificateConstraintJoins",
+2026-10-30T02:33:43.5942808Z     "LC004.CertificateConverse",
+2026-10-30T02:33:43.5943400Z     "LC004.CertificateDeletion",
+2026-10-30T02:33:43.5943823Z     "LC004.CertificateFirstErase",
+2026-10-30T02:33:43.5944251Z     "LC004.CertificateInsertion",
+2026-10-30T02:33:43.5944694Z     "LC004.CertificateJoinIteration",
+2026-10-30T02:33:43.5945155Z     "LC004.CertificatePairRefinement",
+2026-10-30T02:33:43.5945616Z     "LC004.CertificatePairRegions",
+2026-10-30T02:33:43.5946071Z     "LC004.ChoiceAbstractCancellation",
+2026-10-30T02:33:43.5946538Z     "LC004.ChoiceBijectiveQuotient",
+2026-10-30T02:33:43.5946985Z     "LC004.ChoiceBinaryClosure",
+2026-10-30T02:33:43.5947398Z     "LC004.ChoiceBoundaryClassification",
+2026-10-30T02:33:43.5947851Z     "LC004.ChoiceComplexCancellation",
+2026-10-30T02:33:43.5948329Z     "LC004.ChoiceCoordinateReduction",
+2026-10-30T02:33:43.5948835Z     "LC004.ChoiceFunctionalElimination",
+2026-10-30T02:33:43.5949334Z     "LC004.ChoiceImplicationRecognition",
+2026-10-30T02:33:43.5949979Z     "LC004.ChoiceQuotientFaceSum",
+2026-10-30T02:33:43.5950452Z     "LC004.ChoiceReducedCancellation",
+2026-10-30T02:33:43.5950930Z     "LC004.ChoiceRelationClassification",
+2026-10-30T02:33:43.5951439Z     "LC004.ChoiceSupportedCancellation",
+2026-10-30T02:33:43.5951936Z     "LC004.ChoiceSupportedDomains",
+2026-10-30T02:33:43.5952393Z     "LC004.ChoiceUniversalValue",
+2026-10-30T02:33:43.5952851Z     "LC004.CollectedJoinCoefficients",
+2026-10-30T02:33:43.5953535Z     "LC004.ColorPatternSpace",
+2026-10-30T02:33:43.5953992Z     "LC004.ConditionalGrammarBridge",
+2026-10-30T02:33:43.5954466Z     "LC004.ConditionalInsertion",
+2026-10-30T02:33:43.5954902Z     "LC004.ConditionalMain",
+2026-10-30T02:33:43.5955345Z     "LC004.CrossedFourCancellation",
+2026-10-30T02:33:43.5955807Z     "LC004.CyclicRootLemma",
+2026-10-30T02:33:43.5956576Z     "LC004.CyclicWordEnumeration",
+2026-10-30T02:33:43.5957068Z     "LC004.DegreePrefixArithmetic",
+2026-10-30T02:33:43.5957490Z     "LC004.DeleteSimulation",
+2026-10-30T02:33:43.5957923Z     "LC004.DoubleExceptionalWordCount",
+2026-10-30T02:33:43.5958463Z     "LC004.DoubleFiberCountCorrespondence",
+2026-10-30T02:33:43.5958990Z     "LC004.DoubleFiberGeometry",
+2026-10-30T02:33:43.5959457Z     "LC004.DoubleRepresentationCount",
+2026-10-30T02:33:43.5959931Z     "LC004.EncodingAgreement",
+2026-10-30T02:33:43.5960322Z     "LC004.EndpointMatching",
+2026-10-30T02:33:43.5960748Z     "LC004.EndpointMatchingDyck",
+2026-10-30T02:33:43.5961182Z     "LC004.ErasureColorSymmetry",
+2026-10-30T02:33:43.5961650Z     "LC004.ExceptionalDegreeProfiles",
+2026-10-30T02:33:43.5962108Z     "LC004.ExchangeDominance",
+2026-10-30T02:33:43.5963614Z     "LC004.ExchangeScaffold",
+2026-10-30T02:33:43.5964461Z     "LC004.ExchangeTarget",
+2026-10-30T02:33:43.5965336Z     "LC004.ExecutableCorrespondence",
+2026-10-30T02:33:43.5966008Z     "LC004.ExecutableStep",
+2026-10-30T02:33:43.5966417Z     "LC004.ExecutableUniqueness",
+2026-10-30T02:33:43.5966980Z     "LC004.FaceBoundaryJoinPrelim",
+2026-10-30T02:33:43.5967549Z     "LC004.FaceInternalPaths",
+2026-10-30T02:33:43.5968089Z     "LC004.FaceJoinConditional",
+2026-10-30T02:33:43.5968617Z     "LC004.FaceJoinOrder",
+2026-10-30T02:33:43.5969034Z     "LC004.FaceJoinPaths",
+2026-10-30T02:33:43.5969464Z     "LC004.FacePathFactorization",
+2026-10-30T02:33:43.5970076Z     "LC004.FaceRestriction",
+2026-10-30T02:33:43.5970788Z     "LC004.FinalAssembly",
+2026-10-30T02:33:43.5971214Z     "LC004.FiniteIncidenceSupport",
+2026-10-30T02:33:43.5971725Z     "LC004.FiveCertificateGeneratorEquiv",
+2026-10-30T02:33:43.5972231Z     "LC004.FiveClassActualGeometry",
+2026-10-30T02:33:43.5972834Z     "LC004.FiveClassFiniteGeometry",
+2026-10-30T02:33:43.5973644Z     "LC004.FiveClassGeometryApplication",
+2026-10-30T02:33:43.5974320Z     "LC004.FiveClassGeometryBridge",
+2026-10-30T02:33:43.5974834Z     "LC004.FiveClassGeometryCases0",
+2026-10-30T02:33:43.5975444Z     "LC004.FiveClassGeometryCases1",
+2026-10-30T02:33:43.5975931Z     "LC004.FiveClassGeometryCases2",
+2026-10-30T02:33:43.5976514Z     "LC004.FiveClassGeometryCases3",
+2026-10-30T02:33:43.5977016Z     "LC004.FiveClassGeometryCases4",
+2026-10-30T02:33:43.5977764Z     "LC004.FiveClassGeometryCases5",
+2026-10-30T02:33:43.5978270Z     "LC004.FiveClassGeometryExhaustive",
+2026-10-30T02:33:43.5978783Z     "LC004.FiveClassLocalRefinement",
+2026-10-30T02:33:43.5979274Z     "LC004.FiveClassRankNormalization",
+2026-10-30T02:33:43.5979926Z     "LC004.FiveClassRefinementEquiv",
+2026-10-30T02:33:43.5980426Z     "LC004.FiveClassSeparators",
+2026-10-30T02:33:43.5980872Z     "LC004.FiveClassSplitCancellation",
+2026-10-30T02:33:43.5981337Z     "LC004.FiveClassSplitJoins",
+2026-10-30T02:33:43.5981955Z     "LC004.FiveClassSplitPartitions",
+2026-10-30T02:33:43.5982422Z     "LC004.FiveClassSurvivorRecognition",
+2026-10-30T02:33:43.5982998Z     "LC004.FiveCoefficientChoiceBridge",
+2026-10-30T02:33:43.5983787Z     "LC004.FiveCoordinateGeometry",
+2026-10-30T02:33:43.5984247Z     "LC004.FiveEncodedBlocks",
+2026-10-30T02:33:43.5984700Z     "LC004.FiveOriginalCoefficientLaw",
+2026-10-30T02:33:43.5985193Z     "LC004.FivePatternCoordinates",
+2026-10-30T02:33:43.5985761Z     "LC004.FourBlockCrossing",
+2026-10-30T02:33:43.5986160Z     "LC004.FourBlockOverlapCorollary",
+2026-10-30T02:33:43.5986716Z     "LC004.FourClassLocalPairs",
+2026-10-30T02:33:43.5987341Z     "LC004.FourClassTwoShapes",
+2026-10-30T02:33:43.5987750Z     "LC004.FourGapAssembly",
+2026-10-30T02:33:43.5988365Z     "LC004.FourGapCoefficientSupport",
+2026-10-30T02:33:43.5988832Z     "LC004.FourGapIndicator",
+2026-10-30T02:33:43.5989267Z     "LC004.FourGapRefinementIndicator",
+2026-10-30T02:33:43.5989754Z     "LC004.FourGapWitnessOverlap",
+2026-10-30T02:33:43.5990196Z     "LC004.FourRefinementOverlap",
+2026-10-30T02:33:43.5990636Z     "LC004.FourfoldCertificatePairs",
+2026-10-30T02:33:43.5991081Z     "LC004.FourfoldDoubleFiber",
+2026-10-30T02:33:43.5991803Z     "LC004.FourfoldFiberCount",
+2026-10-30T02:33:43.5992330Z     "LC004.FourfoldMatchingChoices",
+2026-10-30T02:33:43.5992830Z     "LC004.FourfoldRepresentationSurjection",
+2026-10-30T02:33:43.5993573Z     "LC004.FourfoldSplit",
+2026-10-30T02:33:43.5993986Z     "LC004.FullRunErasure",
+2026-10-30T02:33:43.5994363Z     "LC004.FullSimulation",
+2026-10-30T02:33:43.5994759Z     "LC004.GrammarColorSymmetry",
+2026-10-30T02:33:43.5995177Z     "LC004.GrammarErase",
+2026-10-30T02:33:43.5995559Z     "LC004.GrammarLength",
+2026-10-30T02:33:43.5995948Z     "LC004.HeadColorLemmas",
+2026-10-30T02:33:43.5996345Z     "LC004.HeavierLemmas",
+2026-10-30T02:33:43.5996766Z     "LC004.HeavyFaceCertificateProduct",
+2026-10-30T02:33:43.5997234Z     "LC004.HeavyFaceDecomposition",
+2026-10-30T02:33:43.5997902Z     "LC004.HeavyFaceReconstruction",
+2026-10-30T02:33:43.5998360Z     "LC004.HeavyFaceRestriction",
+2026-10-30T02:33:43.5998781Z     "LC004.HistoryCertificate",
+2026-10-30T02:33:43.5999168Z     "LC004.IncidenceFaceSum",
+2026-10-30T02:33:43.5999579Z     "LC004.IndexedDeterminism",
+2026-10-30T02:33:43.5999986Z     "LC004.IndexedMove",
+2026-10-30T02:33:43.6000366Z     "LC004.InnermostBlock",
+2026-10-30T02:33:43.6000752Z     "LC004.InsertedDeletion",
+2026-10-30T02:33:43.6001152Z     "LC004.InsertionRunCases",
+2026-10-30T02:33:43.6001564Z     "LC004.InteriorNoMerge",
+2026-10-30T02:33:43.6001979Z     "LC004.IntrinsicDiagonalProfiles",
+2026-10-30T02:33:43.6002472Z     "LC004.LabeledConnectedExpansion",
+2026-10-30T02:33:43.6002959Z     "LC004.LabeledJoinEnumeration",
+2026-10-30T02:33:43.6003645Z     "LC004.ListSplit",
+2026-10-30T02:33:43.6004045Z     "LC004.MatchingCatalan",
+2026-10-30T02:33:43.6004484Z     "LC004.MatchingDyckEncoding",
+2026-10-30T02:33:43.6004754Z     "LC004.MatchingDyckInjective",
+2026-10-30T02:33:43.6005034Z     "LC004.MatchingMergeProfile",
+2026-10-30T02:33:43.6005285Z     "LC004.MatchingPartner",
+2026-10-30T02:33:43.6005523Z     "LC004.MatchingPatternMerge",
+2026-10-30T02:33:43.6005812Z     "LC004.MatchingRepresentationCardinality",
+2026-10-30T02:33:43.6006117Z     "LC004.Monotonicity",
+2026-10-30T02:33:43.6006349Z     "LC004.MoveClassification",
+2026-10-30T02:33:43.6006597Z     "LC004.NewProofAxiomAudit",
+2026-10-30T02:33:43.6006842Z     "LC004.NoMergeAdjacentLeft",
+2026-10-30T02:33:43.6007115Z     "LC004.NoMergeAdjacentLeftBoundary",
+2026-10-30T02:33:43.6007434Z     "LC004.NoMergeAdjacentLeftBoundaryConcrete",
+2026-10-30T02:33:43.6007760Z     "LC004.NoMergeAdjacentLeftConcrete",
+2026-10-30T02:33:43.6008044Z     "LC004.NoMergeAdjacentRight",
+2026-10-30T02:33:43.6008321Z     "LC004.NoMergeExchangeAssembly",
+2026-10-30T02:33:43.6008590Z     "LC004.NoMergeExchangeInterior",
+2026-10-30T02:33:43.6008853Z     "LC004.NoMergeExchangeLocal",
+2026-10-30T02:33:43.6009106Z     "LC004.NoMergeExchangeRight",
+2026-10-30T02:33:43.6009375Z     "LC004.NoMergeFarLeftProof",
+2026-10-30T02:33:43.6009642Z     "LC004.NoMergeFarRightProof",
+2026-10-30T02:33:43.6009899Z     "LC004.NoMergeFarRightZero",
+2026-10-30T02:33:43.6010156Z     "LC004.NoMergeFull",
+2026-10-30T02:33:43.6010387Z     "LC004.NoMergeSimulation",
+2026-10-30T02:33:43.6010646Z     "LC004.NoMergeStructuralProof",
+2026-10-30T02:33:43.6010912Z     "LC004.NoncrossingBlockFamily",
+2026-10-30T02:33:43.6011171Z     "LC004.NoncrossingClosure",
+2026-10-30T02:33:43.6011428Z     "LC004.NoncrossingClosureRegions",
+2026-10-30T02:33:43.6011729Z     "LC004.NoncrossingCoefficientProduct",
+2026-10-30T02:33:43.6012047Z     "LC004.NoncrossingCoefficientPushforward",
+2026-10-30T02:33:43.6012358Z     "LC004.NoncrossingConnectedFiber",
+2026-10-30T02:33:43.6012634Z     "LC004.NoncrossingDegreeInjective",
+2026-10-30T02:33:43.6012930Z     "LC004.NoncrossingDegreeRealization",
+2026-10-30T02:33:43.6013519Z     "LC004.NoncrossingDegreeWordEquiv",
+2026-10-30T02:33:43.6013827Z     "LC004.NoncrossingInsertionIndex",
+2026-10-30T02:33:43.6014100Z     "LC004.NoncrossingLastBlock",
+2026-10-30T02:33:43.6014372Z     "LC004.NoncrossingProfileEnumeration",
+2026-10-30T02:33:43.6014851Z     "LC004.NoncrossingRegionEquivalence",
+2026-10-30T02:33:43.6015168Z     "LC004.NoncrossingRegionPatternEquiv",
+2026-10-30T02:33:43.6015445Z     "LC004.Normalized",
+2026-10-30T02:33:43.6015678Z     "LC004.NormalizedDirectional",
+2026-10-30T02:33:43.6015956Z     "LC004.NormalizedStepTarget",
+2026-10-30T02:33:43.6016222Z     "LC004.OrderedCertificateAssembly",
+2026-10-30T02:33:43.6016505Z     "LC004.PairFamilyInsertion",
+2026-10-30T02:33:43.6016781Z     "LC004.PairPatternCertificate",
+2026-10-30T02:33:43.6017088Z     "LC004.PartitionExceptionalWordProfiles",
+2026-10-30T02:33:43.6017440Z     "LC004.PartitionIntervalDegrees",
+2026-10-30T02:33:43.6017726Z     "LC004.PartitionIntervalInsertion",
+2026-10-30T02:33:43.6018004Z     "LC004.PartitionOpeningMass",
+2026-10-30T02:33:43.6018294Z     "LC004.PatternCoarseningCorrespondence",
+2026-10-30T02:33:43.6018752Z     "LC004.PrefixIndexed",
+2026-10-30T02:33:43.6019004Z     "LC004.ProductIncidence",
+2026-10-30T02:33:43.6019253Z     "LC004.RawAnywhereHeaviness",
+2026-10-30T02:33:43.6019515Z     "LC004.RawAnywhereRepeat",
+2026-10-30T02:33:43.6019773Z     "LC004.RawCertificateEquivalence",
+2026-10-30T02:33:43.6020037Z     "LC004.RawEncoding",
+2026-10-30T02:33:43.6020282Z     "LC004.RawIsolatedInsertion",
+2026-10-30T02:33:43.6020544Z     "LC004.RawMaxSemanticsBridge",
+2026-10-30T02:33:43.6020809Z     "LC004.RawPrefixHeaviness",
+2026-10-30T02:33:43.6021064Z     "LC004.RawPrefixRepeat",
+2026-10-30T02:33:43.6021311Z     "LC004.RawRunInflation",
+2026-10-30T02:33:43.6021546Z     "LC004.RegionalClassCount",
+2026-10-30T02:33:43.6021804Z     "LC004.ReverseInsertionHistory",
+2026-10-30T02:33:43.6022078Z     "LC004.RigidFaceArcCriterion",
+2026-10-30T02:33:43.6022345Z     "LC004.RigidFaceGeometry",
+2026-10-30T02:33:43.6022584Z     "LC004.RunEncoding",
+2026-10-30T02:33:43.6022813Z     "LC004.RunLengthTwoThree",
+2026-10-30T02:33:43.6023054Z     "LC004.RunState",
+2026-10-30T02:33:43.6023536Z     "LC004.SecondDiagonalArithmetic",
+2026-10-30T02:33:43.6023830Z     "LC004.SecondDiagonalClosedForm",
+2026-10-30T02:33:43.6024118Z     "LC004.SecondDiagonalCountAssembly",
+2026-10-30T02:33:43.6024405Z     "LC004.SecondDiagonalEndpoint",
+2026-10-30T02:33:43.6024673Z     "LC004.SecondDiagonalProfiles",
+2026-10-30T02:33:43.6024930Z     "LC004.Simulation",
+2026-10-30T02:33:43.6025170Z     "LC004.SingleExceptionalWordCount",
+2026-10-30T02:33:43.6025456Z     "LC004.SmallPatternCorrespondence",
+2026-10-30T02:33:43.6025728Z     "LC004.SplitRunLemmas",
+2026-10-30T02:33:43.6025969Z     "LC004.SuccessfulPaths",
+2026-10-30T02:33:43.6026208Z     "LC004.SuffixIndexed",
+2026-10-30T02:33:43.6026433Z     "LC004.Transition",
+2026-10-30T02:33:43.6026664Z     "LC004.TwoTripleCorrespondence",
+2026-10-30T02:33:43.6026943Z     "LC004.TypedInsertionPositions",
+2026-10-30T02:33:43.6027208Z     "LC004.UnconditionalFinal",
+2026-10-30T02:33:43.6027462Z     "LC004.WeightedConnectedFibers",
+2026-10-30T02:33:43.6027744Z     "LC004.WinningConstraintGenerators",
+2026-10-30T02:33:43.6028021Z     "LC004.WinningJoinCount"
+2026-10-30T02:33:43.6028247Z   ]
+2026-10-30T02:33:43.6028422Z }
+2026-10-30T02:33:43.6028733Z SOURCE GUARD PASS: no placeholders, custom axioms, unsafe or partial source
+2026-10-30T02:33:47.1898839Z   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+2026-10-30T02:33:47.1899391Z                                  Dload  Upload   Total   Spent    Left  Speed
+2026-10-30T02:33:47.1899652Z 
+2026-10-30T02:33:47.1899829Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+2026-10-30T02:33:47.1900204Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+2026-10-30T02:33:47.1900425Z 
+2026-10-30T02:33:47.1900593Z 100 1075k  100 1075k    0     0  6630k      0 --:--:-- --:--:-- --:--:-- 6630k
+2026-10-30T02:33:47.1900864Z 
+2026-10-30T02:33:47.2204003Z installing leantar 0.1.15
+2026-10-30T02:33:47.6609754Z Attempting to download 6641 file(s)
+2026-10-30T02:33:48.8640609Z 
+2026-10-30T02:33:48.9637588Z Downloaded: 1 file(s) [attempted 1/6641 = 0%]
+2026-10-30T02:33:49.0660801Z Downloaded: 108 file(s) [attempted 108/6641 = 1%]
+2026-10-30T02:33:49.1663575Z Downloaded: 231 file(s) [attempted 231/6641 = 3%]
+2026-10-30T02:33:49.2662738Z Downloaded: 362 file(s) [attempted 362/6641 = 5%]
+2026-10-30T02:33:49.3659477Z Downloaded: 487 file(s) [attempted 487/6641 = 7%]
+2026-10-30T02:33:49.4666727Z Downloaded: 620 file(s) [attempted 620/6641 = 9%]
+2026-10-30T02:33:49.5686434Z Downloaded: 755 file(s) [attempted 755/6641 = 11%]
+2026-10-30T02:33:49.6698563Z Downloaded: 888 file(s) [attempted 888/6641 = 13%]
+2026-10-30T02:33:49.7708747Z Downloaded: 1031 file(s) [attempted 1031/6641 = 15%]
+2026-10-30T02:33:49.8720339Z Downloaded: 1168 file(s) [attempted 1168/6641 = 17%]
+2026-10-30T02:33:49.9717446Z Downloaded: 1303 file(s) [attempted 1303/6641 = 19%]
+2026-10-30T02:33:50.0715661Z Downloaded: 1440 file(s) [attempted 1440/6641 = 21%]
+2026-10-30T02:33:50.1715125Z Downloaded: 1566 file(s) [attempted 1566/6641 = 23%]
+2026-10-30T02:33:50.2734177Z Downloaded: 1695 file(s) [attempted 1695/6641 = 25%]
+2026-10-30T02:33:50.3756829Z Downloaded: 1827 file(s) [attempted 1827/6641 = 27%]
+2026-10-30T02:33:50.4765405Z Downloaded: 1962 file(s) [attempted 1962/6641 = 29%]
+2026-10-30T02:33:50.5785840Z Downloaded: 2097 file(s) [attempted 2097/6641 = 31%]
+2026-10-30T02:33:50.6788278Z Downloaded: 2239 file(s) [attempted 2239/6641 = 33%]
+2026-10-30T02:33:50.7796470Z Downloaded: 2369 file(s) [attempted 2369/6641 = 35%]
+2026-10-30T02:33:50.8799212Z Downloaded: 2506 file(s) [attempted 2506/6641 = 37%]
+2026-10-30T02:33:50.9795371Z Downloaded: 2641 file(s) [attempted 2641/6641 = 39%]
+2026-10-30T02:33:51.0797535Z Downloaded: 2775 file(s) [attempted 2775/6641 = 41%]
+2026-10-30T02:33:51.1798556Z Downloaded: 2909 file(s) [attempted 2909/6641 = 43%]
+2026-10-30T02:33:51.2795554Z Downloaded: 3044 file(s) [attempted 3044/6641 = 45%]
+2026-10-30T02:33:51.3810411Z Downloaded: 3179 file(s) [attempted 3179/6641 = 47%]
+2026-10-30T02:33:51.4831175Z Downloaded: 3312 file(s) [attempted 3312/6641 = 49%]
+2026-10-30T02:33:51.5845393Z Downloaded: 3449 file(s) [attempted 3449/6641 = 51%]
+2026-10-30T02:33:51.6847900Z Downloaded: 3589 file(s) [attempted 3589/6641 = 54%]
+2026-10-30T02:33:51.7862609Z Downloaded: 3724 file(s) [attempted 3724/6641 = 56%]
+2026-10-30T02:33:51.8859004Z Downloaded: 3859 file(s) [attempted 3859/6641 = 58%]
+2026-10-30T02:33:51.9877803Z Downloaded: 3999 file(s) [attempted 3999/6641 = 60%]
+2026-10-30T02:33:52.0877369Z Downloaded: 4132 file(s) [attempted 4132/6641 = 62%]
+2026-10-30T02:33:52.1895030Z Downloaded: 4264 file(s) [attempted 4264/6641 = 64%]
+2026-10-30T02:33:52.2889581Z Downloaded: 4399 file(s) [attempted 4399/6641 = 66%]
+2026-10-30T02:33:52.3913424Z Downloaded: 4537 file(s) [attempted 4537/6641 = 68%]
+2026-10-30T02:33:52.4906276Z Downloaded: 4665 file(s) [attempted 4665/6641 = 70%]
+2026-10-30T02:33:52.5921572Z Downloaded: 4795 file(s) [attempted 4795/6641 = 72%]
+2026-10-30T02:33:52.6915852Z Downloaded: 4920 file(s) [attempted 4920/6641 = 74%]
+2026-10-30T02:33:52.7921636Z Downloaded: 5050 file(s) [attempted 5050/6641 = 76%]
+2026-10-30T02:33:52.8924489Z Downloaded: 5186 file(s) [attempted 5186/6641 = 78%]
+2026-10-30T02:33:52.9915424Z Downloaded: 5318 file(s) [attempted 5318/6641 = 80%]
+2026-10-30T02:33:53.0916020Z Downloaded: 5454 file(s) [attempted 5454/6641 = 82%]
+2026-10-30T02:33:53.1919643Z Downloaded: 5584 file(s) [attempted 5584/6641 = 84%]
+2026-10-30T02:33:53.2916417Z Downloaded: 5719 file(s) [attempted 5719/6641 = 86%]
+2026-10-30T02:33:53.3920089Z Downloaded: 5842 file(s) [attempted 5842/6641 = 87%]
+2026-10-30T02:33:53.4920736Z Downloaded: 5970 file(s) [attempted 5970/6641 = 89%]
+2026-10-30T02:33:53.5927664Z Downloaded: 6098 file(s) [attempted 6098/6641 = 91%]
+2026-10-30T02:33:53.6927516Z Downloaded: 6230 file(s) [attempted 6230/6641 = 93%]
+2026-10-30T02:33:53.7936493Z Downloaded: 6363 file(s) [attempted 6363/6641 = 95%]
+2026-10-30T02:33:53.8935576Z Downloaded: 6493 file(s) [attempted 6493/6641 = 97%]
+2026-10-30T02:33:53.9722102Z Downloaded: 6624 file(s) [attempted 6624/6641 = 99%]
+2026-10-30T02:33:53.9723084Z Downloaded: 6641 file(s) [attempted 6641/6641 = 100%] (100% success)
+2026-10-30T02:33:54.0994165Z Decompressing 6641 file(s)
+2026-10-30T02:33:54.0994657Z Unpacked in 99 ms
+2026-10-30T02:33:54.0995055Z Completed successfully!
+2026-10-30T02:33:56.0918600Z ⚠ [6656/6879] Replayed LC004.SplitRunLemmas
+2026-10-30T02:33:56.0919595Z warning: ././././LC004/SplitRunLemmas.lean:37:12: try 'simp' instead of 'simpa'
+2026-10-30T02:33:56.0920687Z note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+2026-10-30T02:33:56.0921720Z ⚠ [6667/6879] Replayed LC004.NormalizedDirectional
+2026-10-30T02:33:56.0922659Z warning: ././././LC004/NormalizedDirectional.lean:18:19: try 'simp' instead of 'simpa'
+2026-10-30T02:33:56.0924133Z note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+2026-10-30T02:33:56.0925481Z ⚠ [6671/6879] Replayed LC004.IndexedMove
+2026-10-30T02:33:56.0926398Z warning: ././././LC004/IndexedMove.lean:73:2: try 'simp at hlt' instead of 'simpa using hlt'
+2026-10-30T02:33:56.0927579Z note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+2026-10-30T02:33:56.0928604Z ⚠ [6672/6879] Replayed LC004.SuccessfulPaths
+2026-10-30T02:33:56.0929770Z warning: ././././LC004/SuccessfulPaths.lean:100:8: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+2026-10-30T02:33:56.0931223Z ⚠ [6676/6879] Replayed LC004.ExecutableCorrespondence
+2026-10-30T02:33:56.0932193Z warning: ././././LC004/ExecutableCorrespondence.lean:48:10: try 'simp' instead of 'simpa'
+2026-10-30T02:33:56.0933640Z note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+2026-10-30T02:33:56.0934663Z ⚠ [6678/6879] Replayed LC004.ExchangeScaffold
+2026-10-30T02:33:56.0935810Z warning: ././././LC004/ExchangeScaffold.lean:93:26: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+2026-10-30T02:33:56.0937447Z warning: ././././LC004/ExchangeScaffold.lean:94:28: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+2026-10-30T02:33:56.0938661Z ⚠ [6680/6879] Replayed LC004.ExecutableUniqueness
+2026-10-30T02:33:56.0939767Z warning: ././././LC004/ExecutableUniqueness.lean:93:14: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+2026-10-30T02:33:56.0940935Z ⚠ [6681/6879] Replayed LC004.ConditionalMain
+2026-10-30T02:33:56.0941944Z warning: ././././LC004/ConditionalMain.lean:55:12: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+2026-10-30T02:33:56.0943359Z ⚠ [6699/6879] Replayed LC004.BridgeAdjacentLeftFront
+2026-10-30T02:33:56.0944141Z warning: ././././LC004/BridgeAdjacentLeftFront.lean:26:9: unused variable `d`
+2026-10-30T02:33:56.0945074Z note: this linter can be disabled with `set_option linter.unusedVariables false`
+2026-10-30T02:33:56.0946039Z warning: ././././LC004/BridgeAdjacentLeftFront.lean:26:22: unused variable `bp`
+2026-10-30T02:33:56.0946972Z note: this linter can be disabled with `set_option linter.unusedVariables false`
+2026-10-30T02:33:56.0947907Z warning: ././././LC004/BridgeAdjacentLeftFront.lean:26:25: unused variable `bq`
+2026-10-30T02:33:56.0948837Z note: this linter can be disabled with `set_option linter.unusedVariables false`
+2026-10-30T02:33:56.0949719Z ℹ [6716/6879] Replayed LC004.UnconditionalFinal
+2026-10-30T02:33:56.0950974Z info: ././././LC004/UnconditionalFinal.lean:30:0: 'LC004.unconditional_unique_choice_iff_unique_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.0952939Z info: ././././LC004/UnconditionalFinal.lean:31:0: 'LC004.unconditional_executable_unique_first_iff_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.0954592Z ℹ [6731/6879] Replayed LC004.NewProofAxiomAudit
+2026-10-30T02:33:56.0955499Z info: ././././LC004/NewProofAxiomAudit.lean:17:0: 'LC004.encode_eq_encodeRuns' depends on axioms: [propext]
+2026-10-30T02:33:56.0956774Z info: ././././LC004/NewProofAxiomAudit.lean:18:0: 'LC004.grammar_erases_empty' depends on axioms: [propext]
+2026-10-30T02:33:56.0958345Z info: ././././LC004/NewProofAxiomAudit.lean:19:0: 'LC004.raw_max_path_to_erases' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:33:56.0959776Z info: ././././LC004/NewProofAxiomAudit.lean:20:0: 'LC004.isolated_block_preserves_raw_win' does not depend on any axioms
+2026-10-30T02:33:56.0961191Z info: ././././LC004/NewProofAxiomAudit.lean:21:0: 'LC004.encode_duplicate_anywhere_heavier' depends on axioms: [propext]
+2026-10-30T02:33:56.0962702Z info: ././././LC004/NewProofAxiomAudit.lean:22:0: 'LC004.encoded_duplicate_anywhere_solvable' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:33:56.0964608Z info: ././././LC004/NewProofAxiomAudit.lean:23:0: 'LC004.encoded_repeat_anywhere_solvable' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:33:56.0966082Z info: ././././LC004/NewProofAxiomAudit.lean:24:0: 'LC004.grammar_implies_win_of_one_step_lift' depends on axioms: [propext]
+2026-10-30T02:33:56.0967742Z info: ././././LC004/NewProofAxiomAudit.lean:25:0: 'LC004.win_insert_grammar_of_lift' depends on axioms: [propext]
+2026-10-30T02:33:56.0968812Z ⚠ [6734/6879] Replayed LC004.FourBlockCrossing
+2026-10-30T02:33:56.0969514Z warning: ././././LC004/FourBlockCrossing.lean:26:5: unused variable `hu`
+2026-10-30T02:33:56.0970403Z note: this linter can be disabled with `set_option linter.unusedVariables false`
+2026-10-30T02:33:56.0971385Z ℹ [6736/6879] Replayed LC004.ReverseInsertionHistory
+2026-10-30T02:33:56.0972461Z info: ././././LC004/ReverseInsertionHistory.lean:71:0: 'LC004.insertion_history_iff_erases_empty' does not depend on any axioms
+2026-10-30T02:33:56.0974284Z info: ././././LC004/ReverseInsertionHistory.lean:72:0: 'LC004.raw_max_win_to_insertion_history' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:33:56.0975539Z ⚠ [6737/6879] Replayed LC004.NoncrossingInsertionIndex
+2026-10-30T02:33:56.0976365Z warning: ././././LC004/NoncrossingInsertionIndex.lean:40:19: unused variable `hst`
+2026-10-30T02:33:56.0977356Z note: this linter can be disabled with `set_option linter.unusedVariables false`
+2026-10-30T02:33:56.0978237Z ⚠ [6739/6879] Replayed LC004.BlockCrossingInsertion
+2026-10-30T02:33:56.0978989Z warning: ././././LC004/BlockCrossingInsertion.lean:14:27: unused variable `hs`
+2026-10-30T02:33:56.0979915Z note: this linter can be disabled with `set_option linter.unusedVariables false`
+2026-10-30T02:33:56.0980811Z ℹ [6741/6879] Replayed LC004.TypedInsertionPositions
+2026-10-30T02:33:56.0981878Z info: ././././LC004/TypedInsertionPositions.lean:91:0: 'LC004.oldPosition_injective' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:33:56.0983643Z info: ././././LC004/TypedInsertionPositions.lean:92:0: 'LC004.freshPosition_injective' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:33:56.0985218Z info: ././././LC004/TypedInsertionPositions.lean:93:0: 'LC004.oldPosition_ne_freshPosition' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:33:56.0986802Z info: ././././LC004/TypedInsertionPositions.lean:94:0: 'LC004.insertion_positions_cover' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:33:56.0988530Z info: ././././LC004/TypedInsertionPositions.lean:95:0: 'LC004.four_position_block_crosses_itself' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.0990408Z info: ././././LC004/TypedInsertionPositions.lean:96:0: 'LC004.noncrossing_block_family_insert' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.0991767Z ℹ [6742/6879] Replayed LC004.CertificateInsertion
+2026-10-30T02:33:56.0992919Z info: ././././LC004/CertificateInsertion.lean:99:0: 'LC004.insertion_positions_perm' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.0995007Z info: ././././LC004/CertificateInsertion.lean:100:0: 'LC004.Noncrossing23Certificate.insert' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.0996376Z ℹ [6743/6879] Replayed LC004.HistoryCertificate
+2026-10-30T02:33:56.0997749Z info: ././././LC004/HistoryCertificate.lean:97:0: 'LC004.insertion_history_to_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.0999523Z info: ././././LC004/HistoryCertificate.lean:98:0: 'LC004.erases_empty_to_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1001222Z info: ././././LC004/HistoryCertificate.lean:99:0: 'LC004.raw_max_win_to_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1002430Z ℹ [6744/6879] Replayed LC004.InnermostBlock
+2026-10-30T02:33:56.1003904Z info: ././././LC004/InnermostBlock.lean:169:0: 'LC004.Noncrossing23Certificate.exists_innermost_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1031382Z info: ././././LC004/InnermostBlock.lean:170:0: 'LC004.Noncrossing23Certificate.exists_contiguous_monochromatic_block' depends on axioms: [propext,
+2026-10-30T02:33:56.1032851Z  Classical.choice,
+2026-10-30T02:33:56.1033488Z  Quot.sound]
+2026-10-30T02:33:56.1034051Z ℹ [6745/6879] Replayed LC004.CertificateFirstErase
+2026-10-30T02:33:56.1035305Z info: ././././LC004/CertificateFirstErase.lean:52:0: 'LC004.certificate_has_first_erasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1036631Z ⚠ [6746/6879] Replayed LC004.CertificateDeletion
+2026-10-30T02:33:56.1037570Z warning: ././././LC004/CertificateDeletion.lean:102:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+2026-10-30T02:33:56.1038732Z note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+2026-10-30T02:33:56.1040261Z info: ././././LC004/CertificateDeletion.lean:148:0: 'LC004.Noncrossing23Certificate.deleteInterval' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1041698Z ℹ [6747/6879] Replayed LC004.CertificateConverse
+2026-10-30T02:33:56.1042914Z info: ././././LC004/CertificateConverse.lean:98:0: 'LC004.certificate_has_smaller_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1044992Z info: ././././LC004/CertificateConverse.lean:99:0: 'LC004.certificate_to_erases_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1046763Z info: ././././LC004/CertificateConverse.lean:100:0: 'LC004.certificate_iff_erases_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1048042Z ℹ [6748/6879] Replayed LC004.RawRunInflation
+2026-10-30T02:33:56.1048959Z info: ././././LC004/RawRunInflation.lean:120:0: 'LC004.raw_inflates_step' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:33:56.1050279Z info: ././././LC004/RawRunInflation.lean:121:0: 'LC004.raw_win_inflation' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:33:56.1051346Z ℹ [6749/6879] Replayed LC004.RawCertificateEquivalence
+2026-10-30T02:33:56.1052334Z info: ././././LC004/RawCertificateEquivalence.lean:82:0: 'LC004.raw_win_inflation' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:33:56.1054226Z info: ././././LC004/RawCertificateEquivalence.lean:83:0: 'LC004.monochromatic_insertion_preserves_raw_win' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:33:56.1055940Z info: ././././LC004/RawCertificateEquivalence.lean:84:0: 'LC004.aux_erases_to_raw_max_win' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:33:56.1057630Z info: ././././LC004/RawCertificateEquivalence.lean:85:0: 'LC004.raw_max_win_iff_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1059306Z info: ././././LC004/RawCertificateEquivalence.lean:86:0: 'LC004.grammar_to_raw_max_win' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:33:56.1060505Z ℹ [6750/6879] Replayed LC004.SecondDiagonalProfiles
+2026-10-30T02:33:56.1061652Z info: ././././LC004/SecondDiagonalProfiles.lean:153:0: 'LC004.raw_win_count_ge_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1063664Z info: ././././LC004/SecondDiagonalProfiles.lean:154:0: 'LC004.raw_win_second_diagonal_profiles' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1065784Z info: ././././LC004/SecondDiagonalProfiles.lean:155:0: 'LC004.second_diagonal_profiles_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1067206Z ⚠ [6751/6879] Replayed LC004.FourRefinementOverlap
+2026-10-30T02:33:56.1067963Z warning: ././././LC004/FourRefinementOverlap.lean:44:21: unused variable `hab`
+2026-10-30T02:33:56.1068906Z note: this linter can be disabled with `set_option linter.unusedVariables false`
+2026-10-30T02:33:56.1069844Z warning: ././././LC004/FourRefinementOverlap.lean:59:35: unused variable `hbc`
+2026-10-30T02:33:56.1070765Z note: this linter can be disabled with `set_option linter.unusedVariables false`
+2026-10-30T02:33:56.1072210Z info: ././././LC004/FourRefinementOverlap.lean:164:0: 'LC004.both_refinements_valid_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1074510Z info: ././././LC004/FourRefinementOverlap.lean:165:0: 'LC004.valid_four_refinements_card_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1076429Z info: ././././LC004/FourRefinementOverlap.lean:166:0: 'LC004.valid_four_refinements_card_eq_two_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1077851Z ℹ [6752/6879] Replayed LC004.DoubleRepresentationCount
+2026-10-30T02:33:56.1079100Z info: ././././LC004/DoubleRepresentationCount.lean:60:0: 'LC004.finite_one_or_two_fiber_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1080430Z ℹ [6753/6879] Replayed LC004.ColorPatternSpace
+2026-10-30T02:33:56.1081564Z info: ././././LC004/ColorPatternSpace.lean:158:0: 'LC004.colorPatternOf_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1083355Z info: ././././LC004/ColorPatternSpace.lean:159:0: 'LC004.certificate_iff_same_color_pattern' depends on axioms: [propext]
+2026-10-30T02:33:56.1084951Z info: ././././LC004/ColorPatternSpace.lean:160:0: 'LC004.winning_word_pattern_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1086668Z info: ././././LC004/ColorPatternSpace.lean:161:0: 'LC004.colorPatternClassCount_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1087965Z ℹ [6754/6879] Replayed LC004.MatchingPatternMerge
+2026-10-30T02:33:56.1088974Z info: ././././LC004/MatchingPatternMerge.lean:60:0: 'LC004.mergePatternClasses' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:33:56.1090604Z info: ././././LC004/MatchingPatternMerge.lean:61:0: 'LC004.winning_mergePatternClasses' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1091903Z ℹ [6755/6879] Replayed LC004.MatchingMergeProfile
+2026-10-30T02:33:56.1093339Z info: ././././LC004/MatchingMergeProfile.lean:165:0: 'LC004.fourfold_representation_class_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1095190Z info: ././././LC004/MatchingMergeProfile.lean:166:0: 'LC004.merge_selection_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1097066Z info: ././././LC004/MatchingMergeProfile.lean:167:0: 'LC004.fourfold_representation_unique_four_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1098475Z ⚠ [6756/6879] Replayed LC004.PairPatternCertificate
+2026-10-30T02:33:56.1099240Z warning: ././././LC004/PairPatternCertificate.lean:180:11: unused variable `p`
+2026-10-30T02:33:56.1100178Z note: this linter can be disabled with `set_option linter.unusedVariables false`
+2026-10-30T02:33:56.1101102Z warning: ././././LC004/PairPatternCertificate.lean:181:12: unused variable `p`
+2026-10-30T02:33:56.1102027Z note: this linter can be disabled with `set_option linter.unusedVariables false`
+2026-10-30T02:33:56.1103601Z info: ././././LC004/PairPatternCertificate.lean:183:0: 'LC004.winning_pair_pattern_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1105419Z info: ././././LC004/PairPatternCertificate.lean:184:0: 'LC004.pairWinningPatternEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1107460Z info: ././././LC004/PairPatternCertificate.lean:185:0: 'LC004.patternBlockLists_exact_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1109363Z info: ././././LC004/PairPatternCertificate.lean:186:0: 'LC004.noncrossing_pair_pattern_winning' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1111248Z info: ././././LC004/PairPatternCertificate.lean:187:0: 'LC004.fourfold_representation_winning' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1112647Z ℹ [6757/6879] Replayed LC004.FourfoldCertificatePairs
+2026-10-30T02:33:56.1114281Z info: ././././LC004/FourfoldCertificatePairs.lean:104:0: 'LC004.certificate_even_small_classes_all_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1115735Z info: ././././LC004/FourfoldCertificatePairs.lean:105:0: 'LC004.fourfold_certificate_all_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1116644Z ℹ [6758/6879] Replayed LC004.CertificatePairRefinement
+2026-10-30T02:33:56.1117429Z info: ././././LC004/CertificatePairRefinement.lean:102:0: 'LC004.fourfold_representation_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1118621Z info: ././././LC004/CertificatePairRefinement.lean:103:0: 'LC004.certificateBlockPattern_pair_noncrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1119809Z info: ././././LC004/CertificatePairRefinement.lean:104:0: 'LC004.fourfold_winning_has_pair_refinement' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1120717Z ℹ [6759/6879] Replayed LC004.FourfoldRepresentationSurjection
+2026-10-30T02:33:56.1121561Z info: ././././LC004/FourfoldRepresentationSurjection.lean:105:0: 'LC004.fourfold_winning_has_representation' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1122857Z info: ././././LC004/FourfoldRepresentationSurjection.lean:106:0: 'LC004.fourfoldRepresentationProfileMap_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1123930Z ℹ [6760/6879] Replayed LC004.FourfoldMatchingChoices
+2026-10-30T02:33:56.1124646Z info: ././././LC004/FourfoldMatchingChoices.lean:125:0: 'LC004.four_refinement_two_shapes' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1125723Z info: ././././LC004/FourfoldMatchingChoices.lean:126:0: 'LC004.matching_refinements_eq_of_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1126485Z ℹ [6761/6879] Replayed LC004.FourfoldFiberCount
+2026-10-30T02:33:56.1127191Z info: ././././LC004/FourfoldFiberCount.lean:179:0: 'LC004.fourfold_representation_fiber_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1128244Z info: ././././LC004/FourfoldFiberCount.lean:180:0: 'LC004.fourfold_representation_fiber_one_or_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1129228Z info: ././././LC004/FourfoldFiberCount.lean:181:0: 'LC004.fourfold_winning_count_subtraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1129915Z ℹ [6762/6879] Replayed LC004.FourfoldDoubleFiber
+2026-10-30T02:33:56.1130574Z info: ././././LC004/FourfoldDoubleFiber.lean:71:0: 'LC004.fourfold_double_fiber_iff_both_shapes' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1131293Z ℹ [6763/6879] Replayed LC004.SmallPatternCorrespondence
+2026-10-30T02:33:56.1131981Z info: ././././LC004/SmallPatternCorrespondence.lean:200:0: 'LC004.certificate_small_block_eq_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1133029Z info: ././././LC004/SmallPatternCorrespondence.lean:201:0: 'LC004.winning_small_pattern_iff_noncrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1134188Z ℹ [6764/6879] Replayed LC004.TwoTripleCorrespondence
+2026-10-30T02:33:56.1135059Z info: ././././LC004/TwoTripleCorrespondence.lean:57:0: 'LC004.winning_two_triple_iff_noncrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1136101Z info: ././././LC004/TwoTripleCorrespondence.lean:58:0: 'LC004.two_triple_winning_count_eq_noncrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1136827Z ℹ [6765/6879] Replayed LC004.FourfoldSplit
+2026-10-30T02:33:56.1137410Z info: ././././LC004/FourfoldSplit.lean:170:0: 'LC004.splitPairClass_classes_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1138297Z info: ././././LC004/FourfoldSplit.lean:171:0: 'LC004.splitPairClass_no_alternation' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1138961Z ℹ [6766/6879] Replayed LC004.DoubleFiberGeometry
+2026-10-30T02:33:56.1139718Z info: ././././LC004/DoubleFiberGeometry.lean:162:0: 'LC004.both_global_shapes_noncrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1140696Z info: ././././LC004/DoubleFiberGeometry.lean:163:0: 'LC004.noncrossing_fourfold_has_both_shapes' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1141697Z info: ././././LC004/DoubleFiberGeometry.lean:164:0: 'LC004.fourfold_double_fiber_iff_noncrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1142459Z ℹ [6767/6879] Replayed LC004.DoubleFiberCountCorrespondence
+2026-10-30T02:33:56.1143488Z info: ././././LC004/DoubleFiberCountCorrespondence.lean:48:0: 'LC004.fourfold_double_count_eq_noncrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1144560Z info: ././././LC004/DoubleFiberCountCorrespondence.lean:49:0: 'LC004.fourfold_winning_count_eq_representations_sub_noncrossing' depends on axioms: [propext,
+2026-10-30T02:33:56.1145221Z  Classical.choice,
+2026-10-30T02:33:56.1145428Z  Quot.sound]
+2026-10-30T02:33:56.1145769Z ℹ [6768/6879] Replayed LC004.MatchingRepresentationCardinality
+2026-10-30T02:33:56.1146506Z info: ././././LC004/MatchingRepresentationCardinality.lean:74:0: 'LC004.pair_pattern_position_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1147615Z info: ././././LC004/MatchingRepresentationCardinality.lean:75:0: 'LC004.fourfold_matching_representation_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1148750Z info: ././././LC004/MatchingRepresentationCardinality.lean:76:0: 'LC004.fourfold_second_diagonal_count_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1149549Z ⚠ [6769/6879] Replayed LC004.IntrinsicDiagonalProfiles
+2026-10-30T02:33:56.1150151Z warning: ././././LC004/IntrinsicDiagonalProfiles.lean:176:6: 'change (patternQuotientFiber p q).card = 2' tactic does nothing
+2026-10-30T02:33:56.1150823Z note: this linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-30T02:33:56.1151635Z info: ././././LC004/IntrinsicDiagonalProfiles.lean:183:0: 'LC004.winning_intrinsic_second_diagonal_profiles' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1152698Z info: ././././LC004/IntrinsicDiagonalProfiles.lean:184:0: 'LC004.fourfold_profile_position_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1154063Z info: ././././LC004/IntrinsicDiagonalProfiles.lean:185:0: 'LC004.two_triple_profile_position_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1154842Z ℹ [6770/6879] Replayed LC004.SecondDiagonalCountAssembly
+2026-10-30T02:33:56.1155556Z info: ././././LC004/SecondDiagonalCountAssembly.lean:50:0: 'LC004.second_diagonal_winning_count_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1156589Z info: ././././LC004/SecondDiagonalCountAssembly.lean:51:0: 'LC004.second_diagonal_count_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1157313Z ℹ [6771/6879] Replayed LC004.MatchingPartner
+2026-10-30T02:33:56.1158227Z info: ././././LC004/MatchingPartner.lean:78:0: 'LC004.matchingPartner_twice' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1159881Z info: ././././LC004/MatchingPartner.lean:79:0: 'LC004.matching_closes_before_le_opens' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1161049Z info: ././././LC004/MatchingPartner.lean:80:0: 'LC004.matching_opens_closes_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1161778Z ℹ [6772/6879] Replayed LC004.MatchingDyckEncoding
+2026-10-30T02:33:56.1162415Z info: ././././LC004/MatchingDyckEncoding.lean:100:0: 'LC004.count_take_ofFn_eq_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1163707Z info: ././././LC004/MatchingDyckEncoding.lean:101:0: 'LC004.matchingToDyckWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1165283Z info: ././././LC004/MatchingDyckEncoding.lean:102:0: 'LC004.matchingToDyckWord_semilength' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1166071Z ℹ [6773/6879] Replayed LC004.MatchingDyckInjective
+2026-10-30T02:33:56.1166750Z info: ././././LC004/MatchingDyckInjective.lean:119:0: 'LC004.matchingDyckMap_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1167760Z info: ././././LC004/MatchingDyckInjective.lean:120:0: 'LC004.noncrossing_pair_pattern_count_le_catalan' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1168484Z ℹ [6774/6879] Replayed LC004.EndpointMatching
+2026-10-30T02:33:56.1169143Z info: ././././LC004/EndpointMatching.lean:183:0: 'LC004.EndpointMatching.pattern_noncrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1170039Z info: ././././LC004/EndpointMatching.lean:184:0: 'LC004.EndpointMatching.append' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:33:56.1170825Z info: ././././LC004/EndpointMatching.lean:185:0: 'LC004.EndpointMatching.nest' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:33:56.1171425Z ℹ [6775/6879] Replayed LC004.EndpointMatchingDyck
+2026-10-30T02:33:56.1172075Z info: ././././LC004/EndpointMatchingDyck.lean:75:0: 'LC004.EndpointMatching.toDyck_append' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1173042Z info: ././././LC004/EndpointMatchingDyck.lean:76:0: 'LC004.EndpointMatching.toDyck_nest' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1173977Z ℹ [6776/6879] Replayed LC004.MatchingCatalan
+2026-10-30T02:33:56.1174621Z info: ././././LC004/MatchingCatalan.lean:64:0: 'LC004.second_diagonal_count_reduction_catalan' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1175556Z info: ././././LC004/MatchingCatalan.lean:65:0: 'LC004.matchingDyckMap_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1176574Z info: ././././LC004/MatchingCatalan.lean:66:0: 'LC004.noncrossing_pair_pattern_count_eq_catalan' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1177290Z ℹ [6777/6879] Replayed LC004.SecondDiagonalArithmetic
+2026-10-30T02:33:56.1178005Z info: ././././LC004/SecondDiagonalArithmetic.lean:88:0: 'LC004.second_diagonal_representation_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1179061Z info: ././././LC004/SecondDiagonalArithmetic.lean:89:0: 'LC004.second_diagonal_subtraction_algebra' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1180092Z info: ././././LC004/SecondDiagonalArithmetic.lean:90:0: 'LC004.second_diagonal_two_triple_numerator_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1181148Z info: ././././LC004/SecondDiagonalArithmetic.lean:91:0: 'LC004.second_diagonal_candidate_simplification' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1182347Z info: ././././LC004/SecondDiagonalArithmetic.lean:92:0: 'LC004.second_diagonal_formula_of_refined_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1183324Z ℹ [6778/6879] Replayed LC004.PartitionOpeningMass
+2026-10-30T02:33:56.1184080Z info: ././././LC004/PartitionOpeningMass.lean:207:0: 'LC004.patternOpeningDegree_arity_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1185062Z info: ././././LC004/PartitionOpeningMass.lean:208:0: 'LC004.patternTreeDegrees_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1185989Z info: ././././LC004/PartitionOpeningMass.lean:209:0: 'LC004.patternTreeDegrees_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1186941Z info: ././././LC004/PartitionOpeningMass.lean:211:0: 'LC004.patternClassMinimum_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1188065Z info: ././././LC004/PartitionOpeningMass.lean:212:0: 'LC004.patternOpeningMass_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1188992Z info: ././././LC004/PartitionOpeningMass.lean:213:0: 'LC004.patternOpeningMass_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1189700Z ℹ [6779/6879] Replayed LC004.BoundaryContextRegression
+2026-10-30T02:33:56.1190320Z info: ././././LC004/BoundaryContextRegression.lean:13:0: 'LC004.prefix_boundary_stripping_counterexample' does not depend on any axioms
+2026-10-30T02:33:56.1190996Z ℹ [6780/6879] Replayed LC004.SecondDiagonalEndpoint
+2026-10-30T02:33:56.1191647Z info: ././././LC004/SecondDiagonalEndpoint.lean:41:0: 'LC004.second_diagonal_one_color_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1192612Z info: ././././LC004/SecondDiagonalEndpoint.lean:42:0: 'LC004.second_diagonal_formula_at_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1193658Z ℹ [6781/6879] Replayed LC004.NoncrossingLastBlock
+2026-10-30T02:33:56.1194346Z info: ././././LC004/NoncrossingLastBlock.lean:106:0: 'LC004.last_opened_class_eq_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1195083Z ℹ [6782/6879] Replayed LC004.NoncrossingDegreeInjective
+2026-10-30T02:33:56.1195826Z info: ././././LC004/NoncrossingDegreeInjective.lean:109:0: 'LC004.noncrossing_pattern_eq_of_opening_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1196897Z info: ././././LC004/NoncrossingDegreeInjective.lean:110:0: 'LC004.noncrossing_tree_degrees_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1197662Z ℹ [6783/6879] Replayed LC004.PartitionIntervalInsertion
+2026-10-30T02:33:56.1198376Z info: ././././LC004/PartitionIntervalInsertion.lean:134:0: 'LC004.insertPatternInterval_noncrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1199140Z ℹ [6784/6879] Replayed LC004.PartitionIntervalDegrees
+2026-10-30T02:33:56.1199801Z info: ././././LC004/PartitionIntervalDegrees.lean:154:0: 'LC004.inserted_old_opening_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1200782Z info: ././././LC004/PartitionIntervalDegrees.lean:155:0: 'LC004.inserted_fresh_opening_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1201512Z ℹ [6786/6879] Replayed LC004.NoncrossingDegreeRealization
+2026-10-30T02:33:56.1202215Z info: ././././LC004/NoncrossingDegreeRealization.lean:97:0: 'LC004.noncrossing_degree_realization' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1202921Z ℹ [6787/6879] Replayed LC004.CyclicRootLemma
+2026-10-30T02:33:56.1203828Z info: ././././LC004/CyclicRootLemma.lean:167:0: 'LC004.existsUnique_rooted_rotation' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1204538Z ℹ [6788/6879] Replayed LC004.CyclicWordEnumeration
+2026-10-30T02:33:56.1205311Z info: ././././LC004/CyclicWordEnumeration.lean:108:0: 'LC004.marked_rooted_word_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1206019Z ℹ [6789/6879] Replayed LC004.NoncrossingDegreeWordEquiv
+2026-10-30T02:33:56.1206702Z info: ././././LC004/NoncrossingDegreeWordEquiv.lean:135:0: 'LC004.noncrossingDegreeWordEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1207446Z ℹ [6790/6879] Replayed LC004.ExceptionalDegreeProfiles
+2026-10-30T02:33:56.1208135Z info: ././././LC004/ExceptionalDegreeProfiles.lean:101:0: 'LC004.singleExceptionalWord_arity_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1209170Z info: ././././LC004/ExceptionalDegreeProfiles.lean:102:0: 'LC004.doubleExceptionalWord_arity_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1209946Z ℹ [6791/6879] Replayed LC004.PartitionExceptionalWordProfiles
+2026-10-30T02:33:56.1210857Z info: ././././LC004/PartitionExceptionalWordProfiles.lean:139:0: 'LC004.fourfold_iff_singleExceptionalWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1212025Z info: ././././LC004/PartitionExceptionalWordProfiles.lean:140:0: 'LC004.twoTriple_iff_doubleExceptionalWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1212830Z ℹ [6792/6879] Replayed LC004.SingleExceptionalWordCount
+2026-10-30T02:33:56.1213650Z info: ././././LC004/SingleExceptionalWordCount.lean:111:0: 'LC004.single_anchored_word_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1214396Z ℹ [6793/6879] Replayed LC004.NoncrossingProfileEnumeration
+2026-10-30T02:33:56.1215112Z info: ././././LC004/NoncrossingProfileEnumeration.lean:56:0: 'LC004.fourfold_noncrossing_count_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1215872Z ⚠ [6794/6879] Replayed LC004.DoubleExceptionalWordCount
+2026-10-30T02:33:56.1216502Z warning: ././././LC004/DoubleExceptionalWordCount.lean:92:8: 'change ¬(w.val j.succ).val = 2' tactic does nothing
+2026-10-30T02:33:56.1217127Z note: this linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-30T02:33:56.1217686Z warning: ././././LC004/DoubleExceptionalWordCount.lean:189:16: this tactic is never executed
+2026-10-30T02:33:56.1218253Z note: this linter can be disabled with `set_option linter.unreachableTactic false`
+2026-10-30T02:33:56.1218810Z warning: ././././LC004/DoubleExceptionalWordCount.lean:189:16: 'omega' tactic does nothing
+2026-10-30T02:33:56.1219350Z note: this linter can be disabled with `set_option linter.unusedTactic false`
+2026-10-30T02:33:56.1220142Z info: ././././LC004/DoubleExceptionalWordCount.lean:193:0: 'LC004.double_anchored_word_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1220866Z ℹ [6795/6879] Replayed LC004.SecondDiagonalClosedForm
+2026-10-30T02:33:56.1221555Z info: ././././LC004/SecondDiagonalClosedForm.lean:75:0: 'LC004.two_triple_noncrossing_count_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1222618Z info: ././././LC004/SecondDiagonalClosedForm.lean:76:0: 'LC004.winningColorPatternCount_second_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1223676Z ℹ [6796/6879] Replayed LC004.CertificateConstraintJoins
+2026-10-30T02:33:56.1224493Z info: ././././LC004/CertificateConstraintJoins.lean:41:0: 'LC004.winning_pattern_upward_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1225498Z info: ././././LC004/CertificateConstraintJoins.lean:42:0: 'LC004.constraint_join_union_update' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1226236Z ℹ [6797/6879] Replayed LC004.CertificateJoinIteration
+2026-10-30T02:33:56.1226892Z info: ././././LC004/CertificateJoinIteration.lean:63:0: 'LC004.certificateJoinTerms_score' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1228062Z info: ././././LC004/CertificateJoinIteration.lean:64:0: 'LC004.certificateJoinTerms_winning_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1228875Z ℹ [6798/6879] Replayed LC004.PatternCoarseningCorrespondence
+2026-10-30T02:33:56.1229766Z info: ././././LC004/PatternCoarseningCorrespondence.lean:43:0: 'LC004.patternCoarseningEquiv_class_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1230852Z info: ././././LC004/PatternCoarseningCorrespondence.lean:44:0: 'LC004.patternCoarseningClass_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1231619Z ℹ [6799/6879] Replayed LC004.WinningConstraintGenerators
+2026-10-30T02:33:56.1232316Z info: ././././LC004/WinningConstraintGenerators.lean:55:0: 'LC004.winning_iff_constraint_refinement' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1233772Z info: ././././LC004/WinningConstraintGenerators.lean:56:0: 'LC004.winning_signed_join_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1234511Z ℹ [6800/6879] Replayed LC004.WinningJoinCount
+2026-10-30T02:33:56.1235086Z info: ././././LC004/WinningJoinCount.lean:45:0: 'LC004.sum_joinTermScore' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1235999Z info: ././././LC004/WinningJoinCount.lean:46:0: 'LC004.winningColorPatternCount_signed_joins' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1236715Z ℹ [6801/6879] Replayed LC004.FaceBoundaryJoinPrelim
+2026-10-30T02:33:56.1237380Z info: ././././LC004/FaceBoundaryJoinPrelim.lean:23:0: 'LC004.constraintIndicator_triple_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1238361Z info: ././././LC004/FaceBoundaryJoinPrelim.lean:24:0: 'LC004.constraintIndicator_join_of_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1239052Z ℹ [6802/6879] Replayed LC004.FaceRestriction
+2026-10-30T02:33:56.1239588Z info: ././././LC004/FaceRestriction.lean:27:0: 'LC004.restrictColorPattern_rel' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:33:56.1240368Z info: ././././LC004/FaceRestriction.lean:28:0: 'LC004.restrictColorPattern_mono' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:33:56.1240957Z ℹ [6803/6879] Replayed LC004.FaceJoinConditional
+2026-10-30T02:33:56.1241608Z info: ././././LC004/FaceJoinConditional.lean:27:0: 'LC004.restrictColorPattern_join_of_rel_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1242590Z info: ././././LC004/FaceJoinConditional.lean:28:0: 'LC004.restrictColorPattern_join_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1243535Z ℹ [6804/6879] Replayed LC004.FaceJoinOrder
+2026-10-30T02:33:56.1244159Z info: ././././LC004/FaceJoinOrder.lean:35:0: 'LC004.join_restrictions_le_restrict_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1245122Z info: ././././LC004/FaceJoinOrder.lean:36:0: 'LC004.restrict_join_eq_of_no_external_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1245798Z ℹ [6805/6879] Replayed LC004.FaceJoinPaths
+2026-10-30T02:33:56.1246352Z info: ././././LC004/FaceJoinPaths.lean:36:0: 'LC004.faceJoinPath_le_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1246969Z ℹ [6806/6879] Replayed LC004.FaceInternalPaths
+2026-10-30T02:33:56.1247579Z info: ././././LC004/FaceInternalPaths.lean:32:0: 'LC004.faceInternalPath_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1248250Z ℹ [6807/6879] Replayed LC004.FacePathFactorization
+2026-10-30T02:33:56.1248871Z info: ././././LC004/FacePathFactorization.lean:52:0: 'LC004.faceJoinPath_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1249824Z info: ././././LC004/FacePathFactorization.lean:53:0: 'LC004.restrict_join_eq_of_face_path_locality' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1250544Z ℹ [6808/6879] Replayed LC004.RigidFaceGeometry
+2026-10-30T02:33:56.1251314Z info: ././././LC004/RigidFaceGeometry.lean:221:0: 'LC004.certificate_rigid_block_eq_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1252243Z info: ././././LC004/RigidFaceGeometry.lean:222:0: 'LC004.certificate_heavy_face' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1253288Z info: ././././LC004/RigidFaceGeometry.lean:223:0: 'LC004.rigid_faces_no_alternation' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1254233Z info: ././././LC004/RigidFaceGeometry.lean:224:0: 'LC004.heavy_certificate_face_path_locality' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1255187Z info: ././././LC004/RigidFaceGeometry.lean:225:0: 'LC004.heavy_certificate_restrict_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1256272Z info: ././././LC004/RigidFaceGeometry.lean:226:0: 'LC004.canonical_heavy_face_restrict_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1256974Z ℹ [6809/6879] Replayed LC004.HeavyFaceRestriction
+2026-10-30T02:33:56.1257626Z info: ././././LC004/HeavyFaceRestriction.lean:73:0: 'LC004.certificateConstraint_restrict' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1258583Z info: ././././LC004/HeavyFaceRestriction.lean:74:0: 'LC004.winning_restrict_heavy_face' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1259494Z info: ././././LC004/HeavyFaceRestriction.lean:75:0: 'LC004.raw_win_heavy_face_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1260154Z ℹ [6810/6879] Replayed LC004.RigidFaceArcCriterion
+2026-10-30T02:33:56.1260816Z info: ././././LC004/RigidFaceArcCriterion.lean:43:0: 'LC004.rigid_face_iff_no_rigid_arc_separator' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1261544Z ℹ [6811/6879] Replayed LC004.HeavyFaceReconstruction
+2026-10-30T02:33:56.1262225Z info: ././././LC004/HeavyFaceReconstruction.lean:62:0: 'LC004.certificate_position_rigid_or_heavy' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1263560Z info: ././././LC004/HeavyFaceReconstruction.lean:63:0: 'LC004.certificate_pattern_determined_by_heavy_faces' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1264360Z ℹ [6813/6879] Replayed LC004.HeavyFaceDecomposition
+2026-10-30T02:33:56.1264984Z info: ././././LC004/HeavyFaceDecomposition.lean:226:0: 'LC004.winning_of_heavy_faces' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1265960Z info: ././././LC004/HeavyFaceDecomposition.lean:227:0: 'LC004.winning_iff_heavy_face_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1266971Z info: ././././LC004/HeavyFaceDecomposition.lean:228:0: 'LC004.raw_win_iff_heavy_face_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1267724Z ℹ [6814/6879] Replayed LC004.HeavyFaceCertificateProduct
+2026-10-30T02:33:56.1268410Z info: ././././LC004/HeavyFaceCertificateProduct.lean:157:0: 'LC004.heavyFaceCertificateEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1269445Z info: ././././LC004/HeavyFaceCertificateProduct.lean:158:0: 'LC004.certificate_partition_count_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1270197Z ℹ [6815/6879] Replayed LC004.FiniteIncidenceSupport
+2026-10-30T02:33:56.1270832Z info: ././././LC004/FiniteIncidenceSupport.lean:63:0: 'LC004.lowerIncidence_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1271807Z info: ././././LC004/FiniteIncidenceSupport.lean:64:0: 'LC004.incidence_support_of_meet_invariance' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1272789Z info: ././././LC004/FiniteIncidenceSupport.lean:94:0: 'LC004.lowerIncidence_truncate' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1274248Z info: ././././LC004/FiniteIncidenceSupport.lean:95:0: 'LC004.incidence_support_of_local_meet_invariance' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1275059Z ℹ [6816/6879] Replayed LC004.CollectedJoinCoefficients
+2026-10-30T02:33:56.1275765Z info: ././././LC004/CollectedJoinCoefficients.lean:54:0: 'LC004.collectedJoinCoefficient_incidence' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1276807Z info: ././././LC004/CollectedJoinCoefficients.lean:55:0: 'LC004.winningJoinCoefficient_incidence' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1277819Z info: ././././LC004/CollectedJoinCoefficients.lean:56:0: 'LC004.winningJoinCoefficient_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1278686Z ℹ [6817/6879] Replayed LC004.NoncrossingRegionEquivalence
+2026-10-30T02:33:56.1279416Z info: ././././LC004/NoncrossingRegionEquivalence.lean:29:0: 'LC004.winning_restrict_closed_color_region' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1280470Z info: ././././LC004/NoncrossingRegionEquivalence.lean:30:0: 'LC004.winning_iff_noncrossing_region_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1281206Z ℹ [6818/6879] Replayed LC004.FourClassLocalPairs
+2026-10-30T02:33:56.1281860Z info: ././././LC004/FourClassLocalPairs.lean:60:0: 'LC004.certificate_four_class_block_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1282808Z info: ././././LC004/FourClassLocalPairs.lean:61:0: 'LC004.certificate_four_class_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1283785Z ℹ [6819/6879] Replayed LC004.FourClassTwoShapes
+2026-10-30T02:33:56.1284434Z info: ././././LC004/FourClassTwoShapes.lean:104:0: 'LC004.certificate_four_two_shapes' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1285117Z ℹ [6820/6879] Replayed LC004.CertificatePairRegions
+2026-10-30T02:33:56.1285736Z info: ././././LC004/CertificatePairRegions.lean:93:0: 'LC004.winning_pair_interior' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1286639Z info: ././././LC004/CertificatePairRegions.lean:94:0: 'LC004.winning_pair_exterior' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1287309Z ℹ [6821/6879] Replayed LC004.FourGapWitnessOverlap
+2026-10-30T02:33:56.1287968Z info: ././././LC004/FourGapWitnessOverlap.lean:93:0: 'LC004.two_pairing_witnesses_give_four_gaps' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1288951Z info: ././././LC004/FourGapWitnessOverlap.lean:94:0: 'LC004.winning_iff_two_pairing_witnesses' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1289928Z info: ././././LC004/FourGapWitnessOverlap.lean:95:0: 'LC004.fourPairRegions_noncrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1290607Z ℹ [6822/6879] Replayed LC004.FourGapAssembly
+2026-10-30T02:33:56.1291203Z info: ././././LC004/FourGapAssembly.lean:134:0: 'LC004.four_gaps_give_pairing_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1292113Z info: ././././LC004/FourGapAssembly.lean:135:0: 'LC004.four_gap_overlap_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1292744Z ℹ [6823/6879] Replayed LC004.FourGapIndicator
+2026-10-30T02:33:56.1293500Z info: ././././LC004/FourGapIndicator.lean:74:0: 'LC004.winning_splitOffPair_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1294388Z info: ././././LC004/FourGapIndicator.lean:75:0: 'LC004.four_gap_winning_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1295081Z ℹ [6824/6879] Replayed LC004.FourGapRefinementIndicator
+2026-10-30T02:33:56.1295924Z info: ././././LC004/FourGapRefinementIndicator.lean:75:0: 'LC004.winning_iff_pairing_witnesses_below' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1296935Z info: ././././LC004/FourGapRefinementIndicator.lean:76:0: 'LC004.pairing_overlap_below_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1297897Z info: ././././LC004/FourGapRefinementIndicator.lean:77:0: 'LC004.four_gap_indicator_below' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1298604Z ℹ [6825/6879] Replayed LC004.FourGapCoefficientSupport
+2026-10-30T02:33:56.1299296Z info: ././././LC004/FourGapCoefficientSupport.lean:102:0: 'LC004.fourOverlapCoefficient_incidence' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1300384Z info: ././././LC004/FourGapCoefficientSupport.lean:103:0: 'LC004.winningJoinCoefficient_zero_of_four_gap_separator' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1301305Z ℹ [6826/6879] Replayed LC004.CrossedFourCancellation
+2026-10-30T02:33:56.1301932Z info: ././././LC004/CrossedFourCancellation.lean:78:0: 'LC004.fourGapPattern_gaps' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1302825Z info: ././././LC004/CrossedFourCancellation.lean:79:0: 'LC004.fourGapPattern_separates_crossing' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:33:56.1304097Z info: ././././LC004/CrossedFourCancellation.lean:80:0: 'LC004.winningJoinCoefficient_crossed_four_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1304845Z ℹ [6827/6879] Replayed LC004.NoncrossingClosure
+2026-10-30T02:33:56.1305378Z info: ././././LC004/NoncrossingClosure.lean:73:0: 'LC004.noncrossingClosure_noncrossing' does not depend on any axioms
+2026-10-30T02:33:56.1306149Z info: ././././LC004/NoncrossingClosure.lean:74:0: 'LC004.noncrossingClosure_le_iff' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:33:56.1307081Z info: ././././LC004/NoncrossingClosure.lean:75:0: 'LC004.ncConnected_iff_no_proper_noncrossing_coarsening' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1307882Z ℹ [6828/6879] Replayed LC004.NoncrossingCoefficientPushforward
+2026-10-30T02:33:56.1308625Z info: ././././LC004/NoncrossingCoefficientPushforward.lean:67:0: 'LC004.closurePushforward_incidence' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1309696Z info: ././././LC004/NoncrossingCoefficientPushforward.lean:68:0: 'LC004.closurePushforward_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1310779Z info: ././././LC004/NoncrossingCoefficientPushforward.lean:69:0: 'LC004.winning_closurePushforward_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1311583Z ℹ [6829/6879] Replayed LC004.NoncrossingRegionPatternEquiv
+2026-10-30T02:33:56.1312338Z info: ././././LC004/NoncrossingRegionPatternEquiv.lean:96:0: 'LC004.winning_iff_noncrossing_coarsening_regions' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1313683Z info: ././././LC004/NoncrossingRegionPatternEquiv.lean:97:0: 'LC004.regionPatternEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1314677Z info: ././././LC004/NoncrossingRegionPatternEquiv.lean:98:0: 'LC004.regionPatternEquiv_le_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1315677Z info: ././././LC004/NoncrossingRegionPatternEquiv.lean:106:0: 'LC004.regionPatternOrderIso' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1316385Z ℹ [6830/6879] Replayed LC004.ProductIncidence
+2026-10-30T02:33:56.1316994Z info: ././././LC004/ProductIncidence.lean:42:0: 'LC004.lowerIncidence_eq_on_ideal' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1317889Z info: ././././LC004/ProductIncidence.lean:43:0: 'LC004.lowerIncidence_pi_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1318935Z info: ././././LC004/ProductIncidence.lean:70:0: 'LC004.lowerIncidence_orderIso' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1319807Z info: ././././LC004/ProductIncidence.lean:71:0: 'LC004.lowerIncidence_Iic' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1320519Z ℹ [6831/6879] Replayed LC004.NoncrossingCoefficientProduct
+2026-10-30T02:33:56.1321287Z info: ././././LC004/NoncrossingCoefficientProduct.lean:59:0: 'LC004.winningJoinCoefficient_noncrossing_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1322417Z info: ././././LC004/NoncrossingCoefficientProduct.lean:69:0: 'LC004.winningJoinCoefficient_closure_components' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1323495Z ℹ [6832/6879] Replayed LC004.NoncrossingClosureRegions
+2026-10-30T02:33:56.1324281Z info: ././././LC004/NoncrossingClosureRegions.lean:94:0: 'LC004.assembledPattern_noncrossing' depends on axioms: [propext]
+2026-10-30T02:33:56.1325200Z info: ././././LC004/NoncrossingClosureRegions.lean:95:0: 'LC004.noncrossingClosure_restrict' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1326223Z info: ././././LC004/NoncrossingClosureRegions.lean:96:0: 'LC004.noncrossingClosure_regions_connected' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1326996Z ℹ [6833/6879] Replayed LC004.NoncrossingConnectedFiber
+2026-10-30T02:33:56.1327708Z info: ././././LC004/NoncrossingConnectedFiber.lean:50:0: 'LC004.noncrossingClosure_eq_iff_regions_connected' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1328746Z info: ././././LC004/NoncrossingConnectedFiber.lean:51:0: 'LC004.connectedClosureFiberEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1329446Z ℹ [6834/6879] Replayed LC004.RegionalClassCount
+2026-10-30T02:33:56.1330058Z info: ././././LC004/RegionalClassCount.lean:57:0: 'LC004.regionalQuotientEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1330959Z info: ././././LC004/RegionalClassCount.lean:58:0: 'LC004.pattern_class_count_regions' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1331915Z info: ././././LC004/RegionalClassCount.lean:59:0: 'LC004.weighted_winningJoinCoefficient_regions' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1332642Z ℹ [6835/6879] Replayed LC004.LabeledJoinEnumeration
+2026-10-30T02:33:56.1333349Z info: ././././LC004/LabeledJoinEnumeration.lean:66:0: 'LC004.constraintColoringEquiv' depends on axioms: [Quot.sound]
+2026-10-30T02:33:56.1334192Z info: ././././LC004/LabeledJoinEnumeration.lean:67:0: 'LC004.constraintColoring_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1335146Z info: ././././LC004/LabeledJoinEnumeration.lean:68:0: 'LC004.labeledWinningCount_signed_joins' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1335876Z ℹ [6836/6879] Replayed LC004.WeightedConnectedFibers
+2026-10-30T02:33:56.1336548Z info: ././././LC004/WeightedConnectedFibers.lean:61:0: 'LC004.weighted_connected_fiber_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1337551Z info: ././././LC004/WeightedConnectedFibers.lean:62:0: 'LC004.weighted_game_noncrossing_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1338290Z ℹ [6837/6879] Replayed LC004.LabeledConnectedExpansion
+2026-10-30T02:33:56.1338960Z info: ././././LC004/LabeledConnectedExpansion.lean:38:0: 'LC004.labeledWinningCount_collected' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:56.1339996Z info: ././././LC004/LabeledConnectedExpansion.lean:39:0: 'LC004.labeledWinningCount_connected_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:58.7958588Z ⚠ [6838/6879] Built LC004.ChoiceComplexCancellation
+2026-10-30T02:33:58.7960312Z warning: ././././LC004/ChoiceComplexCancellation.lean:22:4: try 'simp' instead of 'simpa'
+2026-10-30T02:33:58.7961851Z note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+2026-10-30T02:33:58.7963866Z info: ././././LC004/ChoiceComplexCancellation.lean:149:0: 'LC004.faceAlternatingSum_delete_dominated' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:58.7966075Z info: ././././LC004/ChoiceComplexCancellation.lean:150:0: 'LC004.facetAlternatingSum_erase_dominated' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:33:58.7968089Z info: ././././LC004/ChoiceComplexCancellation.lean:151:0: 'LC004.twoFan_closed_choiceMajority' depends on axioms: [propext]
+2026-10-30T02:33:58.7969753Z info: ././././LC004/ChoiceComplexCancellation.lean:152:0: 'LC004.choiceMajority_closed_row_all' depends on axioms: [propext]
+2026-10-30T02:34:00.6992227Z ℹ [6839/6879] Built LC004.ChoiceRelationClassification
+2026-10-30T02:34:00.6994918Z info: ././././LC004/ChoiceRelationClassification.lean:125:0: 'LC004.choiceRelation_classification' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:00.6997025Z info: ././././LC004/ChoiceRelationClassification.lean:126:0: 'LC004.choiceRelation_bijective_of_isolated_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:02.7030967Z ℹ [6840/6879] Built LC004.ChoiceUniversalValue
+2026-10-30T02:34:02.7033362Z info: ././././LC004/ChoiceUniversalValue.lean:125:0: 'LC004.choicePairProjection_closed' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:34:02.7035367Z info: ././././LC004/ChoiceUniversalValue.lean:126:0: 'LC004.choice_exists_universal_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:02.7037352Z info: ././././LC004/ChoiceUniversalValue.lean:127:0: 'LC004.choiceBinaryDetermined_of_binary_constraints' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:34:02.7039315Z info: ././././LC004/ChoiceUniversalValue.lean:128:0: 'LC004.choice_universal_value_replace' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:34:03.1036887Z ℹ [6841/6879] Built LC004.IncidenceFaceSum
+2026-10-30T02:34:03.1037915Z info: ././././LC004/IncidenceFaceSum.lean:144:0: 'LC004.separating_map_powerset_incidence' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:03.1039109Z info: ././././LC004/IncidenceFaceSum.lean:145:0: 'LC004.winningJoinCoefficient_eq_proper_refinement_face_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:05.9074727Z ⚠ [6842/6879] Built LC004.ChoiceReducedCancellation
+2026-10-30T02:34:05.9076265Z warning: ././././LC004/ChoiceReducedCancellation.lean:105:40: `Function.update_same` has been deprecated: use `Function.update_self` instead
+2026-10-30T02:34:05.9077867Z warning: ././././LC004/ChoiceReducedCancellation.lean:118:10: try 'simp' instead of 'simpa'
+2026-10-30T02:34:05.9079096Z note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+2026-10-30T02:34:05.9080746Z info: ././././LC004/ChoiceReducedCancellation.lean:179:0: 'LC004.facetAlternatingSum_delete_set' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:05.9082928Z info: ././././LC004/ChoiceReducedCancellation.lean:180:0: 'LC004.choiceAlternatingSum_zero_of_replace_and_force' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:05.9085441Z info: ././././LC004/ChoiceReducedCancellation.lean:181:0: 'LC004.choiceAlternatingSum_zero_of_reduced_system' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:05.9087651Z info: ././././LC004/ChoiceReducedCancellation.lean:182:0: 'LC004.binaryChoiceFan_alternatingSum_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:08.6124880Z ℹ [6843/6879] Built LC004.ChoiceFunctionalElimination
+2026-10-30T02:34:08.6154773Z info: ././././LC004/ChoiceFunctionalElimination.lean:71:0: 'LC004.facetAlternatingSum_delete_set_varying' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:08.6157336Z info: ././././LC004/ChoiceFunctionalElimination.lean:72:0: 'LC004.choiceAlternatingSum_delete_determined_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:08.6159586Z info: ././././LC004/ChoiceFunctionalElimination.lean:73:0: 'LC004.choiceAlternatingSum_delete_bijective_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:10.3147318Z ℹ [6844/6879] Built LC004.ChoiceBinaryClosure
+2026-10-30T02:34:10.3148792Z info: ././././LC004/ChoiceBinaryClosure.lean:38:0: 'LC004.choiceSolutionsClosed_of_binary_spec' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:34:10.3150832Z info: ././././LC004/ChoiceBinaryClosure.lean:39:0: 'LC004.choiceSolutionsClosed_and_binaryDetermined_of_binary_spec' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:34:10.9155201Z ℹ [6845/6879] Built LC004.ChoiceCoordinateReduction
+2026-10-30T02:34:10.9157191Z info: ././././LC004/ChoiceCoordinateReduction.lean:153:0: 'LC004.choiceReducedFamily_binary' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:10.9159392Z info: ././././LC004/ChoiceCoordinateReduction.lean:154:0: 'LC004.choiceReducedFamily_connected' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:10.9161509Z info: ././././LC004/ChoiceCoordinateReduction.lean:155:0: 'LC004.choiceReducedFamily_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:13.3164074Z ℹ [6846/6879] Built LC004.ChoiceBijectiveQuotient
+2026-10-30T02:34:13.3165244Z info: ././././LC004/ChoiceBijectiveQuotient.lean:224:0: 'LC004.choiceBijectiveSetoid' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:34:13.3166914Z info: ././././LC004/ChoiceBijectiveQuotient.lean:225:0: 'LC004.choiceQuotient_covers' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:13.3168178Z info: ././././LC004/ChoiceBijectiveQuotient.lean:226:0: 'LC004.choiceQuotientFamily_binary' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:13.3169453Z info: ././././LC004/ChoiceBijectiveQuotient.lean:227:0: 'LC004.choiceQuotientFamily_connected' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:13.3170665Z info: ././././LC004/ChoiceBijectiveQuotient.lean:228:0: 'LC004.choiceQuotientFamily_no_bijections' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:13.3171845Z info: ././././LC004/ChoiceBijectiveQuotient.lean:229:0: 'LC004.choiceQuotientFamily_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:13.3173055Z info: ././././LC004/ChoiceBijectiveQuotient.lean:230:0: 'LC004.choiceQuotientFamily_alternatingSum_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:15.8206135Z ℹ [6847/6879] Built LC004.ChoiceQuotientFaceSum
+2026-10-30T02:34:15.8207181Z info: ././././LC004/ChoiceQuotientFaceSum.lean:179:0: 'LC004.choiceAlternatingSum_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:15.8208484Z info: ././././LC004/ChoiceQuotientFaceSum.lean:180:0: 'LC004.choiceAlternatingSum_zero_of_nontrivial_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:19.1267470Z ℹ [6848/6879] Built LC004.ChoiceAbstractCancellation
+2026-10-30T02:34:19.1268883Z info: ././././LC004/ChoiceAbstractCancellation.lean:152:0: 'LC004.choiceQuotient_nontrivial_of_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:19.1270919Z info: ././././LC004/ChoiceAbstractCancellation.lean:153:0: 'LC004.choiceAlternatingSum_zero_of_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:19.1272931Z info: ././././LC004/ChoiceAbstractCancellation.lean:154:0: 'LC004.choiceAlternatingSum_zero_of_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:19.1275280Z info: ././././LC004/ChoiceAbstractCancellation.lean:155:0: 'LC004.choiceAlternatingSum_zero_of_binary_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:19.1277753Z info: ././././LC004/ChoiceAbstractCancellation.lean:156:0: 'LC004.choiceAlternatingSum_zero_of_local_constraints' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:19.1279907Z info: ././././LC004/ChoiceAbstractCancellation.lean:157:0: 'LC004.binaryChoiceFan_abstract_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:21.5302629Z ℹ [6849/6879] Built LC004.ChoiceSupportedDomains
+2026-10-30T02:34:21.5303746Z info: ././././LC004/ChoiceSupportedDomains.lean:169:0: 'LC004.choiceSupportedFamily_binary' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:21.5304847Z info: ././././LC004/ChoiceSupportedDomains.lean:170:0: 'LC004.choiceSupportedFamily_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:21.5305916Z info: ././././LC004/ChoiceSupportedDomains.lean:171:0: 'LC004.choiceSupportedFamily_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:21.5307218Z info: ././././LC004/ChoiceSupportedDomains.lean:172:0: 'LC004.choiceAlternatingSum_supported' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:24.5343522Z ℹ [6850/6879] Built LC004.ChoiceSupportedCancellation
+2026-10-30T02:34:24.5344900Z info: ././././LC004/ChoiceSupportedCancellation.lean:173:0: 'LC004.choiceSupportedFamily_connected_of_covers' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:24.5346586Z info: ././././LC004/ChoiceSupportedCancellation.lean:174:0: 'LC004.choiceAlternatingSum_zero_of_covered_cuts' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:24.5348264Z info: ././././LC004/ChoiceSupportedCancellation.lean:175:0: 'LC004.choiceAlternatingSum_zero_of_covered_binary_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:24.5349930Z info: ././././LC004/ChoiceSupportedCancellation.lean:176:0: 'LC004.ambientThreeChoiceFan_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:27.5384361Z ℹ [6851/6879] Built LC004.FiveClassGeometryBridge
+2026-10-30T02:34:27.5385640Z info: ././././LC004/FiveClassGeometryBridge.lean:98:0: 'LC004.blocksCross_map_strictMono_iff' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:34:27.5387407Z info: ././././LC004/FiveClassGeometryBridge.lean:99:0: 'LC004.noncrossingBlockFamily_map_strictMono_iff' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:34:27.5389205Z info: ././././LC004/FiveClassGeometryBridge.lean:100:0: 'LC004.unary_binary_spec_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:34:30.7430247Z ✔ [6852/6879] Built LC004.FiveClassFiniteGeometry
+2026-10-30T02:35:13.6877495Z ✔ [6853/6879] Built LC004.FiveClassGeometryCases0
+2026-10-30T02:35:41.8209112Z ✔ [6854/6879] Built LC004.FiveClassGeometryCases1
+2026-10-30T02:36:10.8487236Z ✔ [6855/6879] Built LC004.FiveClassGeometryCases2
+2026-10-30T02:36:39.5809436Z ✔ [6856/6879] Built LC004.FiveClassGeometryCases3
+2026-10-30T02:37:07.5109691Z ✔ [6857/6879] Built LC004.FiveClassGeometryCases4
+2026-10-30T02:37:50.8565524Z ✔ [6858/6879] Built LC004.FiveClassGeometryCases5
+2026-10-30T02:38:03.1714040Z ℹ [6859/6879] Built LC004.FiveClassGeometryExhaustive
+2026-10-30T02:38:03.1714977Z info: ././././LC004/FiveClassGeometryExhaustive.lean:34:0: 'LC004.fiveClass_finite_geometry' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:38:06.2751705Z ℹ [6860/6879] Built LC004.FiveClassGeometryApplication
+2026-10-30T02:38:06.2753034Z info: ././././LC004/FiveClassGeometryApplication.lean:43:0: 'LC004.fiveClass_placed_geometry' depends on axioms: [propext, Quot.sound]
+2026-10-30T02:38:09.4779222Z ℹ [6861/6879] Built LC004.FiveClassRankNormalization
+2026-10-30T02:38:09.4782478Z info: ././././LC004/FiveClassRankNormalization.lean:101:0: 'LC004.five_classes_rank_normal_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:38:12.6814117Z ℹ [6862/6879] Built LC004.FiveClassActualGeometry
+2026-10-30T02:38:12.6815415Z info: ././././LC004/FiveClassActualGeometry.lean:71:0: 'LC004.fiveSplitBlocks_map' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:38:12.6817577Z info: ././././LC004/FiveClassActualGeometry.lean:72:0: 'LC004.fiveClass_actual_geometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:38:16.0851502Z ℹ [6863/6879] Built LC004.FiveClassSplitCancellation
+2026-10-30T02:38:16.0852878Z info: ././././LC004/FiveClassSplitCancellation.lean:102:0: 'LC004.fiveClassSplitFamily_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:38:16.0855213Z info: ././././LC004/FiveClassSplitCancellation.lean:103:0: 'LC004.fiveClassSplitFamily_alternatingSum_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:38:19.7897319Z ℹ [6864/6879] Built LC004.ChoiceBoundaryClassification
+2026-10-30T02:38:19.7898791Z info: ././././LC004/ChoiceBoundaryClassification.lean:137:0: 'LC004.choiceAlternatingSum_classification' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:38:19.7901667Z info: ././././LC004/ChoiceBoundaryClassification.lean:138:0: 'LC004.fiveClassSplitFamily_alternatingSum_classification' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:38:25.4986798Z ℹ [6865/6879] Built LC004.FiveClassSplitJoins
+2026-10-30T02:38:25.4988579Z info: ././././LC004/FiveClassSplitJoins.lean:104:0: 'LC004.fiveLocalSplit_join_eq_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:38:25.4990830Z info: ././././LC004/FiveClassSplitJoins.lean:105:0: 'LC004.fiveAssignmentSetoid_join_eq_base_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:38:29.2027767Z ℹ [6866/6879] Built LC004.FiveClassSplitPartitions
+2026-10-30T02:38:29.2029337Z info: ././././LC004/FiveClassSplitPartitions.lean:86:0: 'LC004.fiveClassAssignmentBlocks_exactCover' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:38:29.2031531Z info: ././././LC004/FiveClassSplitPartitions.lean:87:0: 'LC004.fiveClassSplitFamily_join_survival_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:38:32.3065973Z ℹ [6867/6879] Built LC004.ChoiceImplicationRecognition
+2026-10-30T02:38:32.3067667Z info: ././././LC004/ChoiceImplicationRecognition.lean:130:0: 'LC004.choice_pair_rigid_iff_implication_strong' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:38:35.3098734Z ℹ [6868/6879] Built LC004.FiveClassSurvivorRecognition
+2026-10-30T02:38:35.3099715Z info: ././././LC004/FiveClassSurvivorRecognition.lean:53:0: 'LC004.fiveClass_survivor_pair_iff_strong' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:38:47.4222429Z ℹ [6869/6879] Built LC004.FiveClassLocalRefinement
+2026-10-30T02:38:47.4224371Z info: ././././LC004/FiveClassLocalRefinement.lean:47:0: 'LC004.five_small_pattern_unique_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:38:50.8262778Z ℹ [6870/6879] Built LC004.FiveClassRefinementEquiv
+2026-10-30T02:38:50.8264863Z info: ././././LC004/FiveClassRefinementEquiv.lean:106:0: 'LC004.fiveSmallRefinementEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:38:54.1292283Z ℹ [6871/6879] Built LC004.FivePatternCoordinates
+2026-10-30T02:38:54.1293893Z info: ././././LC004/FivePatternCoordinates.lean:123:0: 'LC004.fivePatternCoordinates_base' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:38:54.1295830Z info: ././././LC004/FivePatternCoordinates.lean:124:0: 'LC004.five_original_small_refinement_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:38:57.3341026Z ℹ [6872/6879] Built LC004.FiveCertificateGeneratorEquiv
+2026-10-30T02:38:57.3342488Z info: ././././LC004/FiveCertificateGeneratorEquiv.lean:73:0: 'LC004.fiveCertificateGeneratorEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:38:57.3345009Z info: ././././LC004/FiveCertificateGeneratorEquiv.lean:74:0: 'LC004.winning_below_five_iff_encoded_tuple' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:39:01.3387169Z ℹ [6873/6879] Built LC004.FiveClassSeparators
+2026-10-30T02:39:01.3388723Z info: ././././LC004/FiveClassSeparators.lean:141:0: 'LC004.fiveCutSeparators_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:39:05.1428129Z ℹ [6874/6879] Built LC004.FiveCoefficientChoiceBridge
+2026-10-30T02:39:05.1429618Z info: ././././LC004/FiveCoefficientChoiceBridge.lean:90:0: 'LC004.winningJoinCoefficient_five_eq_choice_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:39:08.5472502Z ℹ [6875/6879] Built LC004.FiveEncodedBlocks
+2026-10-30T02:39:08.5474035Z info: ././././LC004/FiveEncodedBlocks.lean:101:0: 'LC004.fivePositionBlocks_noncrossing_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:39:11.7506140Z ℹ [6876/6879] Built LC004.FiveCoordinateGeometry
+2026-10-30T02:39:11.7507902Z info: ././././LC004/FiveCoordinateGeometry.lean:81:0: 'LC004.fiveEncodedNCTuples_eq_splitFamily' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:39:16.3552264Z ℹ [6877/6879] Built LC004.FiveOriginalCoefficientLaw
+2026-10-30T02:39:16.3553970Z info: ././././LC004/FiveOriginalCoefficientLaw.lean:177:0: 'LC004.winningJoinCoefficient_five_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:39:16.3556121Z info: ././././LC004/FiveOriginalCoefficientLaw.lean:178:0: 'LC004.winningJoinCoefficient_five_zero_of_three_generators' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:39:16.3558232Z info: ././././LC004/FiveOriginalCoefficientLaw.lean:179:0: 'LC004.winningJoinCoefficient_five_scc_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:39:16.3560284Z info: ././././LC004/FiveOriginalCoefficientLaw.lean:180:0: 'LC004.winningJoinCoefficient_five_original_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-30T02:39:19.2585804Z ✔ [6878/6879] Built LC004
+2026-10-30T02:39:19.2681175Z Build completed successfully.
+2026-10-30T02:41:04.0554837Z Unsafe compiler runtime helpers excluded: 1522
+2026-10-30T02:41:04.0620441Z AXIOM AUDIT PASS: 3729 project declarations; only propext, Classical.choice, Quot.sound permitted
+2026-10-30T02:41:04.3462090Z NEGATIVE COVERAGE CHECK PASS: unimported active module rejected
+2026-10-30T02:41:10.2913719Z NEGATIVE AXIOM CHECK PASS: disallowed dependency rejected
+2026-10-30T02:41:10.3061177Z ##[group]Run actions/upload-artifact@v4
+2026-10-30T02:41:10.3061505Z with:
+2026-10-30T02:41:10.3061719Z   name: choice-lean-receipt
+2026-10-30T02:41:10.3062030Z   path: choice-lean-build.log
+choice-axiom-audit.log
+
+2026-10-30T02:41:10.3062364Z   if-no-files-found: warn
+2026-10-30T02:41:10.3062607Z   compression-level: 6
+2026-10-30T02:41:10.3062827Z   overwrite: false
+2026-10-30T02:41:10.3063052Z   include-hidden-files: false
+2026-10-30T02:41:10.3063634Z ##[endgroup]
+2026-10-30T02:41:10.4784778Z (node:3329) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-30T02:41:10.4785501Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-30T02:41:10.4840737Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-10-30T02:41:10.4853984Z The least common ancestor is /home/runner/work/jdh1701-lc004-same-game-/jdh1701-lc004-same-game-. This will be the root directory of the artifact
+2026-10-30T02:41:10.4855689Z With the provided path, there will be 2 files uploaded
+2026-10-30T02:41:10.4857351Z Artifact name is valid!
+2026-10-30T02:41:10.4857813Z Root directory input is valid!
+2026-10-30T02:41:10.7013879Z Beginning upload of artifact content to blob storage
+2026-10-30T02:41:10.7247286Z (node:3329) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-30T02:41:10.7693546Z Uploaded bytes 8155
+2026-10-30T02:41:10.7887800Z Finished uploading artifact content to blob storage!
+2026-10-30T02:41:10.7888917Z SHA256 digest of uploaded artifact zip is ac734517bd78d3a41bf8bcfda080f6409493a3f98fdb48e994c04065c0de51e3
+2026-10-30T02:41:10.7890917Z Finalizing artifact upload
+2026-10-30T02:41:11.2447976Z Artifact choice-lean-receipt.zip successfully finalized. Artifact ID 12950151150
+2026-10-30T02:41:11.2449339Z Artifact choice-lean-receipt has been successfully uploaded! Final size is 8155 bytes. Artifact ID is 12950151150
+2026-10-30T02:41:11.2456085Z Artifact download URL: https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40992346166/artifacts/12950151150
+2026-10-30T02:41:11.3254306Z Post job cleanup.
+2026-10-30T02:41:11.4352943Z Cache hit occurred on the primary key Linux-lean-v4.19.0-1564b0974d1fa9c5b873b7e41a82ba91fc73c20a50dd3a4144f56fe13ac3e788, not saving cache.
+2026-10-30T02:41:11.4355027Z (node:3354) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-30T02:41:11.4356347Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-30T02:41:11.4489717Z Post job cleanup.
+2026-10-30T02:41:11.5363862Z [command]/usr/bin/git version
+2026-10-30T02:41:11.5411063Z git version 2.56.0
+2026-10-30T02:41:11.5455701Z Temporarily overriding HOME='/home/runner/work/_temp/60eedfae-9b08-430a-b885-250802d0c89e' before making global git config changes
+2026-10-30T02:41:11.5457603Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-30T02:41:11.5462866Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/jdh1701-lc004-same-game-/jdh1701-lc004-same-game-
+2026-10-30T02:41:11.5509528Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-30T02:41:11.5549960Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-30T02:41:11.5905884Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-30T02:41:11.5956856Z http.https://github.com/.extraheader
+2026-10-30T02:41:11.5969609Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-30T02:41:11.6010356Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-30T02:41:11.6323628Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-30T02:41:11.6369362Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-30T02:41:11.6841610Z Cleaning up orphan processes
+2026-10-30T02:41:11.7244617Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/cache@v4, actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+

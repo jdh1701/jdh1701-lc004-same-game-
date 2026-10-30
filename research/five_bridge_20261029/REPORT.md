@@ -1,8 +1,9 @@
 # Original-game all-five coefficient bridge
 
-Status at source submission: **PROVED-PAPER**, with full local Lean verification.
-Promotion to **PROVED-LEAN** requires successful CI on this exact source commit;
-see `research/FIVE_BRIDGE_CI_RECEIPTS_20261029.json` for the final commit/run pins.
+Final status: **PROVED-LEAN**. Exact proof commit ba0357de passes CI40992099928;
+verification commit c51b75ab passes Lean/exact/Sage CI40992346166 and coefficient
+probes CI40992346252. See `research/FIVE_BRIDGE_CI_RECEIPTS_20261029.json` for
+full commit, job, and run pins.
 No global novelty claim. The general counting problem remains **CONJECTURE / OPEN**.
 
 ## Main result
@@ -17,7 +18,7 @@ Then the original collected join coefficient satisfies
         exactly when C(p) = {c,d} and c join d = p;
     winningJoinCoefficient n p = 0 otherwise.
 
-**PROVED-PAPER, local Lean pass**:
+**PROVED-LEAN, CI40992346166 SUCCESS**:
 `winningJoinCoefficient_five_original_law` in
 `LC004/FiveOriginalCoefficientLaw.lean`. This no longer assumes a correspondence
 between original generators and split tuples, nor an original coefficient/Euler
@@ -29,7 +30,7 @@ A second theorem, `winningJoinCoefficient_five_scc_law`, replaces enumeration of
 C(p) by a valid separated pair plus strong connectivity of its forbidden-mix
 implication graph. The graph uses raw pairwise compatibility. This is a
 recognition criterion given a pair, not a polynomial-time counting theorem.
-**PROVED-PAPER, local Lean pass**, same CI receipt requirement.
+**PROVED-LEAN, CI40992346166 SUCCESS**, same CI receipt requirement.
 
 ## How the gap was closed
 
@@ -68,8 +69,7 @@ recognition criterion given a pair, not a polynomial-time counting theorem.
    law, and translate the result back to original certificate patterns. Add the
    original-coefficient SCC criterion using the prior recognition theorem.
 
-All steps above: **PROVED-PAPER with local Lean verification**, new CI pin pending
-at submission. Previous actual-geometry/recognition proof was **PROVED-LEAN** at
+All steps above: **PROVED-LEAN, CI40992346166 SUCCESS**. Previous actual-geometry/recognition proof was **PROVED-LEAN** at
 c365c2ae2922a35765f9a6b692d05e838873ebcd, CI 40984245009 SUCCESS.
 
 ## Independent finite replay
@@ -80,7 +80,7 @@ construct these original generators. It compares that catalogue with independent
 classwise split construction, then computes signed joins on ACTUAL board-position
 equivalence relations, rather than the compressed split-label coefficient DP.
 
-**VERIFIED-COMP (local; same new CI exact job required)**:
+**VERIFIED-COMP (local and CI40992346166 exact job SUCCESS)**:
 
 - All 126 n10 all-five partitions have identical original and split generators;
   all 121 raw-crossing-connected cases satisfy the coefficient law.
@@ -141,3 +141,9 @@ finite checks have different scopes and neither is an exhaustive n15 count.
 The final two simple original coefficient corollaries add range {-1,0} and
 cancellation with at least three original generators. Final audit3729 includes
 those corollaries. The initial audit3726 predates them.
+
+Final CI confirmation: proof ba0357de and verification c51b75ab both pass all
+Lean/exact/Sage and coefficient-probe workflows. Full latest job logs are saved
+at root research/FIVE_BRIDGE_CI_{LEAN,EXACT,SAGE}_20261029.log; exact pins and
+claim scopes in research/FIVE_BRIDGE_CI_RECEIPTS_20261029.json. Earlier pending
+status snapshots in this directory are superseded by that root receipt.

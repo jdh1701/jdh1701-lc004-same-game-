@@ -58,10 +58,34 @@ project's already-established NC-matching/Catalan correspondence
 with the existing theory at the boundary where the two overlap -- it is not
 itself new information.
 
+## CI results and a genuine negative finding: OEIS is unreachable from here
+
+Extended the table to n=17 on a CI runner (vs n=15 reached locally in the
+same wall-clock budget -- some runs reached only n=15 too; GH Actions
+runner throughput for this workload varied noticeably run to run,
+consistent with this project's own prior note about shared/contended
+runners). No closed form or pattern beyond the already-known Catalan
+boundary turned up in the rows computed so far.
+
+The OEIS search step itself failed cleanly every time it ran (3 CI
+attempts, after fixing two of my own bugs along the way -- an uncaught
+`AttributeError` when OEIS's JSON response wasn't shaped as expected, and
+a first guess that the default `urllib` User-Agent was being blocked):
+**every single query returns HTTP 403 Forbidden**, for every per-k column,
+across every attempt, including after sending a normal browser-style
+User-Agent. This looks like oeis.org blocking the GitHub Actions runner IP
+ranges outright (a common anti-scraping measure against major cloud
+providers), not a request-shape problem on this script's end -- there is
+nothing further to fix here from this side. **OEIS lookups are not
+reachable from this project's CI, the same as they are not reachable from
+the sandbox** (for a different reason: the sandbox's own proxy blocks it;
+CI's outbound network is unrestricted but oeis.org itself blocks it back).
+
 ## Status
 
-VERIFIED-COMP (oracle behavior only). No OEIS match or closed-form pattern
-beyond the already-known Catalan boundary identified yet; the CI run with a
-larger time budget and the OEIS search pass had not completed as of this
-writing. This is genuinely open-ended exploration and may turn up nothing
-further -- reporting that plainly if so, rather than reaching for a claim.
+VERIFIED-COMP (oracle behavior and CI runner mechanics only). No OEIS
+match or closed-form pattern found in the rows computed (n up to 17). The
+automated-OEIS-lookup idea specifically is a dead end in this environment;
+a future pass wanting OEIS cross-reference will need a human to run the
+lookup outside CI, or a different lookup source. Reporting this plainly as
+a negative result rather than retrying further.

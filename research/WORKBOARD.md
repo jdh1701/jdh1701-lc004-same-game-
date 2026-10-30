@@ -250,3 +250,36 @@ and mixed-profile connected coefficients remain unresolved. Full counting OPEN.
 
 Final local verification:207 modules,3480 audited declarations, standard axioms
 only; both negative guards and Python/Claude/generator checks pass.
+
+## Actual five-class law and SCC survivor recognition
+
+New project-level algorithmic advance, PROVED-PAPER with complete local Lean
+verification pending exact new-commit CI: a proposed pair of noncrossing split
+certificates differing in every class is the entire family iff its RAW forbidden-
+mix implication graph is strongly connected. No exact-projection/full-family
+computation is needed. Both directions are proved in ChoiceImplicationRecognition,
+with the actual-geometry specialization in FiveClassSurvivorRecognition. The
+non-strong direction constructs a third certificate. This is not a claim of
+polynomial-time counting or worldwide novelty.
+
+Completed actual-class normal forms, split-label transport, global binary spec,
+>=3 cancellation, all boundary cases, exact pair/triple cover and join survival
+criterion in the class/rank model. Complete face-sum law:-1 for exactly two
+coordinatewise-separated certificates,0 otherwise. Source8 new modules; see
+research/five_actual_20261029 for theorem statements, all failures and handoff.
+
+VERIFIED-COMP: all2619 three-variable covered majority-closed networks over the
+14 eligible ternary-domain relations,459 rigid;330 geometric separated pairs,
+10 labelled rigid; four hypothesis-removal controls. New two-search/SCC counting
+recovers5 survivors among126 partitions atn10 and35 among126126 partitions atn15.
+All268 candidate graphs exported;228 rejected pairs have a third valid certificate.
+Pinned Sage CI independently replays graphs and small full families; no local
+Sage pass claimed. No new n20/n25 count.
+
+Full local build215 active modules, axiom audit3574 declarations with only the
+three standard axioms; both negative guards pass. Baseline finite geometry is
+PROVED-LEAN at9f536753, CI40980791072 success; probes40980790895 success.
+Actual n25 run40942806037 remains IN PROGRESS at reconciliation, not a count.
+Remaining original-game formalization: CertificateConstraint/split-family
+bijection and winningJoinCoefficient/face-sum identity. Counting all SCC-admissible
+pairs and mixed-profile connected kernels remain open. Full counting OPEN.

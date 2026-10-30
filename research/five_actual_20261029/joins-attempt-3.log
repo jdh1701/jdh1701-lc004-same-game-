@@ -1,0 +1,106 @@
+⚠ [6653/6683] Replayed LC004.FourBlockCrossing
+warning: ././././LC004/FourBlockCrossing.lean:26:5: unused variable `hu`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [6654/6683] Replayed LC004.NoncrossingInsertionIndex
+warning: ././././LC004/NoncrossingInsertionIndex.lean:40:19: unused variable `hst`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [6655/6683] Replayed LC004.BlockCrossingInsertion
+warning: ././././LC004/BlockCrossingInsertion.lean:14:27: unused variable `hs`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [6657/6683] Replayed LC004.ChoiceComplexCancellation
+warning: ././././LC004/ChoiceComplexCancellation.lean:22:4: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+info: ././././LC004/ChoiceComplexCancellation.lean:149:0: 'LC004.faceAlternatingSum_delete_dominated' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceComplexCancellation.lean:150:0: 'LC004.facetAlternatingSum_erase_dominated' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceComplexCancellation.lean:151:0: 'LC004.twoFan_closed_choiceMajority' depends on axioms: [propext]
+info: ././././LC004/ChoiceComplexCancellation.lean:152:0: 'LC004.choiceMajority_closed_row_all' depends on axioms: [propext]
+ℹ [6658/6683] Replayed LC004.ChoiceRelationClassification
+info: ././././LC004/ChoiceRelationClassification.lean:125:0: 'LC004.choiceRelation_classification' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceRelationClassification.lean:126:0: 'LC004.choiceRelation_bijective_of_isolated_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6659/6683] Replayed LC004.ChoiceUniversalValue
+info: ././././LC004/ChoiceUniversalValue.lean:125:0: 'LC004.choicePairProjection_closed' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/ChoiceUniversalValue.lean:126:0: 'LC004.choice_exists_universal_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceUniversalValue.lean:127:0: 'LC004.choiceBinaryDetermined_of_binary_constraints' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/ChoiceUniversalValue.lean:128:0: 'LC004.choice_universal_value_replace' depends on axioms: [propext, Quot.sound]
+⚠ [6660/6683] Replayed LC004.ChoiceReducedCancellation
+warning: ././././LC004/ChoiceReducedCancellation.lean:105:40: `Function.update_same` has been deprecated: use `Function.update_self` instead
+warning: ././././LC004/ChoiceReducedCancellation.lean:118:10: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+info: ././././LC004/ChoiceReducedCancellation.lean:179:0: 'LC004.facetAlternatingSum_delete_set' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceReducedCancellation.lean:180:0: 'LC004.choiceAlternatingSum_zero_of_replace_and_force' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceReducedCancellation.lean:181:0: 'LC004.choiceAlternatingSum_zero_of_reduced_system' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceReducedCancellation.lean:182:0: 'LC004.binaryChoiceFan_alternatingSum_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6661/6683] Replayed LC004.ChoiceFunctionalElimination
+info: ././././LC004/ChoiceFunctionalElimination.lean:71:0: 'LC004.facetAlternatingSum_delete_set_varying' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceFunctionalElimination.lean:72:0: 'LC004.choiceAlternatingSum_delete_determined_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceFunctionalElimination.lean:73:0: 'LC004.choiceAlternatingSum_delete_bijective_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6662/6683] Replayed LC004.ChoiceCoordinateReduction
+info: ././././LC004/ChoiceCoordinateReduction.lean:153:0: 'LC004.choiceReducedFamily_binary' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceCoordinateReduction.lean:154:0: 'LC004.choiceReducedFamily_connected' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceCoordinateReduction.lean:155:0: 'LC004.choiceReducedFamily_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6663/6683] Replayed LC004.ChoiceBijectiveQuotient
+info: ././././LC004/ChoiceBijectiveQuotient.lean:224:0: 'LC004.choiceBijectiveSetoid' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/ChoiceBijectiveQuotient.lean:225:0: 'LC004.choiceQuotient_covers' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceBijectiveQuotient.lean:226:0: 'LC004.choiceQuotientFamily_binary' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceBijectiveQuotient.lean:227:0: 'LC004.choiceQuotientFamily_connected' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceBijectiveQuotient.lean:228:0: 'LC004.choiceQuotientFamily_no_bijections' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceBijectiveQuotient.lean:229:0: 'LC004.choiceQuotientFamily_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceBijectiveQuotient.lean:230:0: 'LC004.choiceQuotientFamily_alternatingSum_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6664/6683] Replayed LC004.ChoiceQuotientFaceSum
+info: ././././LC004/ChoiceQuotientFaceSum.lean:179:0: 'LC004.choiceAlternatingSum_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceQuotientFaceSum.lean:180:0: 'LC004.choiceAlternatingSum_zero_of_nontrivial_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6665/6683] Replayed LC004.ChoiceBinaryClosure
+info: ././././LC004/ChoiceBinaryClosure.lean:38:0: 'LC004.choiceSolutionsClosed_of_binary_spec' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/ChoiceBinaryClosure.lean:39:0: 'LC004.choiceSolutionsClosed_and_binaryDetermined_of_binary_spec' depends on axioms: [propext, Quot.sound]
+ℹ [6666/6683] Replayed LC004.ChoiceAbstractCancellation
+info: ././././LC004/ChoiceAbstractCancellation.lean:152:0: 'LC004.choiceQuotient_nontrivial_of_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceAbstractCancellation.lean:153:0: 'LC004.choiceAlternatingSum_zero_of_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceAbstractCancellation.lean:154:0: 'LC004.choiceAlternatingSum_zero_of_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceAbstractCancellation.lean:155:0: 'LC004.choiceAlternatingSum_zero_of_binary_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceAbstractCancellation.lean:156:0: 'LC004.choiceAlternatingSum_zero_of_local_constraints' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceAbstractCancellation.lean:157:0: 'LC004.binaryChoiceFan_abstract_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6667/6683] Replayed LC004.ChoiceSupportedDomains
+info: ././././LC004/ChoiceSupportedDomains.lean:169:0: 'LC004.choiceSupportedFamily_binary' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceSupportedDomains.lean:170:0: 'LC004.choiceSupportedFamily_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceSupportedDomains.lean:171:0: 'LC004.choiceSupportedFamily_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceSupportedDomains.lean:172:0: 'LC004.choiceAlternatingSum_supported' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6668/6683] Replayed LC004.ChoiceSupportedCancellation
+info: ././././LC004/ChoiceSupportedCancellation.lean:173:0: 'LC004.choiceSupportedFamily_connected_of_covers' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceSupportedCancellation.lean:174:0: 'LC004.choiceAlternatingSum_zero_of_covered_cuts' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceSupportedCancellation.lean:175:0: 'LC004.choiceAlternatingSum_zero_of_covered_binary_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceSupportedCancellation.lean:176:0: 'LC004.ambientThreeChoiceFan_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6669/6683] Replayed LC004.FiveClassGeometryBridge
+info: ././././LC004/FiveClassGeometryBridge.lean:98:0: 'LC004.blocksCross_map_strictMono_iff' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/FiveClassGeometryBridge.lean:99:0: 'LC004.noncrossingBlockFamily_map_strictMono_iff' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/FiveClassGeometryBridge.lean:100:0: 'LC004.unary_binary_spec_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6677/6683] Replayed LC004.FiveClassGeometryExhaustive
+info: ././././LC004/FiveClassGeometryExhaustive.lean:34:0: 'LC004.fiveClass_finite_geometry' depends on axioms: [propext, Quot.sound]
+ℹ [6678/6683] Replayed LC004.FiveClassGeometryApplication
+info: ././././LC004/FiveClassGeometryApplication.lean:43:0: 'LC004.fiveClass_placed_geometry' depends on axioms: [propext, Quot.sound]
+ℹ [6679/6683] Replayed LC004.FiveClassRankNormalization
+info: ././././LC004/FiveClassRankNormalization.lean:101:0: 'LC004.five_classes_rank_normal_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6680/6683] Replayed LC004.FiveClassActualGeometry
+info: ././././LC004/FiveClassActualGeometry.lean:71:0: 'LC004.fiveSplitBlocks_map' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FiveClassActualGeometry.lean:72:0: 'LC004.fiveClass_actual_geometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6681/6683] Replayed LC004.FiveClassSplitCancellation
+info: ././././LC004/FiveClassSplitCancellation.lean:102:0: 'LC004.fiveClassSplitFamily_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FiveClassSplitCancellation.lean:103:0: 'LC004.fiveClassSplitFamily_alternatingSum_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6682/6683] Replayed LC004.ChoiceBoundaryClassification
+info: ././././LC004/ChoiceBoundaryClassification.lean:137:0: 'LC004.choiceAlternatingSum_classification' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceBoundaryClassification.lean:138:0: 'LC004.fiveClassSplitFamily_alternatingSum_classification' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [6683/6683] Building LC004.FiveClassSplitJoins
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /tmp/lean-4.19.0-linux/bin/lean ././././LC004/FiveClassSplitJoins.lean -R ./././. -o ././.lake/build/lib/lean/LC004/FiveClassSplitJoins.olean -i ././.lake/build/lib/lean/LC004/FiveClassSplitJoins.ilean -c ././.lake/build/ir/LC004/FiveClassSplitJoins.c --json
+error: ././././LC004/FiveClassSplitJoins.lean:56:26: application type mismatch
+  congrArg Prod.fst h
+argument
+  h
+has type
+  (u.1, fiveSplitBit (a u.1) u.2) = (v.1, fiveSplitBit (a v.1) v.2) : Prop
+but is expected to have type
+  u = v : Prop
+info: ././././LC004/FiveClassSplitJoins.lean:104:0: 'LC004.fiveLocalSplit_join_eq_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FiveClassSplitJoins.lean:105:0: 'LC004.fiveAssignmentSetoid_join_eq_base_iff' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required builds logged failures:
+- LC004.FiveClassSplitJoins
+error: build failed

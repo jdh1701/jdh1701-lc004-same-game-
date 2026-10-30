@@ -249,3 +249,5 @@ import LC004.ChoiceSupportedCancellation
 import LC004.FiveClassGeometryBridge
 
 import LC004.FiveClassGeometryApplication
+
+import LC004.FiveClassSurvivorRecognition

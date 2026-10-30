@@ -1,0 +1,28 @@
+{
+  "core_source": "8837755fa941466fe371ca9df9543adafca182b3",
+  "core_run": 40994029481,
+  "full_source": "ba744372317983ce26c94e32d7f7cd176c4893ac",
+  "full_run": 40994461526,
+  "hosted_exact": "success",
+  "hosted_lean": "in_progress",
+  "local": {
+    "build": "pass",
+    "active_modules": 231,
+    "audited_declarations": 3895,
+    "standard_axioms_only": true,
+    "negative_coverage_guard": "pass",
+    "negative_axiom_guard": "pass"
+  },
+  "finite": {
+    "patterns": 462,
+    "crossing": 451,
+    "proper_generator_join_zeros": 385,
+    "genuine_full_join_zeros": 44,
+    "minus_one": 22
+  },
+  "baseline": {
+    "source": "ba0357def8d61dcbc9f92a10690927a4d568f91f",
+    "run": 40992099928,
+    "status": "success"
+  }
+}

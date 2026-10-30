@@ -1,0 +1,112 @@
+[
+  {
+    "file": "catalogues-attempt-1.log",
+    "sha256": "7f56676e6b335f5cb6ff2788eb23cab0af92cdc01b4030197e81ea82f26efd29",
+    "bytes": 17330
+  },
+  {
+    "file": "catalogues-attempt-2.log",
+    "sha256": "e26ad0e5ab81ec47caf35ed4f03ccb9493ad83b474cb0f021784b7e8773d395b",
+    "bytes": 15590
+  },
+  {
+    "file": "catalogues-attempt-3.log",
+    "sha256": "ed6016abd6b8d46d5fa966bb5b5fcb88e4032f774c8c86b47175797009d9c71f",
+    "bytes": 17295
+  },
+  {
+    "file": "catalogues-attempt-4.log",
+    "sha256": "430504894a2224bedec6d46072a90cff1931a01b51a88e764de54289e83a2228",
+    "bytes": 15020
+  },
+  {
+    "file": "final-axiom-audit.log",
+    "sha256": "dca4fa8aa9f2f85f0af07a070220f86d493b46e53ba7be1c955b34ce17c47cf2",
+    "bytes": 145
+  },
+  {
+    "file": "final-build.log",
+    "sha256": "e0d238a969914bdbca46472d376603c8abf654e295ae3adfdf11455a6aacda4e",
+    "bytes": 61992
+  },
+  {
+    "file": "final-coverage.log",
+    "sha256": "ae28e5ee68bd8db91bcfd25a9346f66e9736493a7c928116d6b254038c326b87",
+    "bytes": 8226
+  },
+  {
+    "file": "final-negative-guards.log",
+    "sha256": "cdf2a8b0097fbfafd3e2d3cc17d0625b9232cc654dc24c69f8b8a56d368c472e",
+    "bytes": 122
+  },
+  {
+    "file": "full-build-attempt-1.log",
+    "sha256": "0cab6107a15e86cd40c4bd633d86cd8dbd8766a9f0e26f92351a7992e4635b15",
+    "bytes": 61885
+  },
+  {
+    "file": "geometry-attempt-1.log",
+    "sha256": "f626a2b2a776e68ac8d9b6b0e2bfc65130d758bdf1cee9fa069d921e0a794d1e",
+    "bytes": 16778
+  },
+  {
+    "file": "mixed-coefficient-attempt-1.log",
+    "sha256": "4deb0a241497bd55b03e41212898f061891debb2606f5c1a983e06d6ba87da67",
+    "bytes": 20799
+  },
+  {
+    "file": "mixed-coefficient-attempt-2.log",
+    "sha256": "c140e441e1c4c04e68477255b5137d32a9aa9b506b6c1f64ba459077a382f8b3",
+    "bytes": 20395
+  },
+  {
+    "file": "probe.log",
+    "sha256": "ecb5ccecd948e927e3ef671911bb65f8453ebca7f7d571e6c7319543894c1d05",
+    "bytes": 1028
+  },
+  {
+    "file": "six-extension-axiom-audit.log",
+    "sha256": "dd68ef0e9b3b3e5f33889a36bd5b50ddca20f7aefc01454641224a178f930d6d",
+    "bytes": 145
+  },
+  {
+    "file": "six-extension-coverage.log",
+    "sha256": "ab64661fa3cb324ad1ee6b469e81a47fb43d09f7937891fbf7036d0daac354c9",
+    "bytes": 8263
+  },
+  {
+    "file": "six-extension-full-build.log",
+    "sha256": "ded3b0deef8921579c8919101e4237be04adb5cf21ffcef51fce36c46f1d9045",
+    "bytes": 62364
+  },
+  {
+    "file": "six-extension-negative-guards.log",
+    "sha256": "cdf2a8b0097fbfafd3e2d3cc17d0625b9232cc654dc24c69f8b8a56d368c472e",
+    "bytes": 122
+  },
+  {
+    "file": "six-facets-probe.log",
+    "sha256": "73674c6f79bcf5eeb25cd7b44d0f0a277ef53d248dc8d64cdbf3d8ba2301aa58",
+    "bytes": 492
+  },
+  {
+    "file": "six-separators-attempt-1.log",
+    "sha256": "94012aa5cc2bed7bf308f9f9568816a541b5ad144b89973b557379f7d0dcda85",
+    "bytes": 19724
+  },
+  {
+    "file": "six-separators-attempt-2.log",
+    "sha256": "8e5eeaa1b416b2033e27d7afe68a04423843dced9bc9457c6f5cb03d4280eff7",
+    "bytes": 17744
+  },
+  {
+    "file": "support-probe.log",
+    "sha256": "fcdd618f30f760bc9d82b0c373bb6e2bc0fc0ae0dceac5f8c204bf68639dacea",
+    "bytes": 476
+  },
+  {
+    "file": "transfer-attempt-1.log",
+    "sha256": "bc4ca0c8d561e810149c4fc918c92545063e3a393a73a5cb690b31f8439764cb",
+    "bytes": 12942
+  }
+]

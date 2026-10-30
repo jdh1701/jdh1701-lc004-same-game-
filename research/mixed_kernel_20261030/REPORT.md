@@ -127,3 +127,18 @@ The local cut-cardinality and original-coefficient proofs provide a positive
 foundation for a future mixed-profile complex with correct local incidence.
 Independent replay: six_facets_probe.py/json, with both bit-mask faces and
 actual position-partition signed joins.
+
+## Final local verification receipt
+
+The six-module addition is in the full root build:231 active modules reachable.
+The expanded axiom audit passes3895 declarations with only propext,
+Classical.choice and Quot.sound; both negative guards pass. Exact final logs
+are six-extension-full-build.log, six-extension-axiom-audit.log,
+six-extension-coverage.log and six-extension-negative-guards.log.
+All successful/failed attempts are preserved in proof_attempts_and_verification.tar.gz
+with SHA256 checksums in log_manifest.json. The memory controller records two
+OOM kills during the early broad catalogue attempts; the bounded tuple proof
+passes. Source8837755f is the core mixed proof; sourceba744372 is the complete
+six-point extension. Hosted run40994461526 has a successful exact job; its Lean
+job is still in progress at this receipt. This is local Lean verification,
+not a claim that the new exact source has completed hosted verification.

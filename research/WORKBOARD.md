@@ -454,3 +454,66 @@ in progress at archive.2,336 distinct full-join zero patterns have independently
 replayed collapses. All evidence, failures and manifest are in the campaign
 archive. The(6,10) targeted six-run search finds no zero with nonzero F2 homology
 in159 full-join cases (57 zeros); this is a necessary-condition test only.
+
+
+## 2026-10-30 GPT: canonical class cuts and five-row elimination
+
+Reconciled PR38 exact source f919410e300e724914913e862f551967c989a5f6:
+run40998017137 is SUCCESS in both Lean and exact jobs. Separator deletion/link
+and the original-coefficient collapse implication from PR38 are now PROVED-LEAN.
+
+Three new modules pass a full local build:235 active modules,3983 audited project
+declarations, standard axioms only; coverage and negative guards pass.
+Status PROVED-PAPER with local Lean verification, pending new exact-source CI.
+The original coefficient has a canonical face-sum on classwise binary cuts for
+EVERY pattern. Every original certificate has a unique row on a selected five-point
+class. The coefficient equals projection beta minus precisely five link betas,
+with arbitrary sizes in all other classes. Dominant-row equality plus explicit
+common partners gives a structural zero criterion. See
+research/fiber_elimination_20261030/REPORT.md and receipts.json.
+
+VERIFIED-COMP:1156 patterns n=0..7 and21052 proper refinements verify cofinality
+and original coefficients;4315 patterns/6115 selected-class checks verify the
+five-row formula. Independent global original-certificate generation explains
+all44 mixed(5,6) full-join zeros:33 dominant-row cancellations and11 collapsible
+projections with cone rows. Generic criterion Lean-checked locally; individual
+stored instances remain finite computation.
+
+Larger falsification search:2198 attempted cases;1120 full-join coefficient
+values,1008 proper joins,57 timeouts,13 face-budget skips.31 of the old32 skips
+now have values.326 evaluated full-join zeros,325 checked F2-acyclic; no collapse
+conclusion follows just from acyclicity. Unresolved zero:profile(9,9), word
+001100000001111111,3591 generators,34 vertices/864 reduced facets, homology not
+computed. All checkpoints, budgets and failed methods retained in evidence.
+No closed counting recurrence or general collapse theorem. A035617 remains OPEN.
+Owner:none; source and reproducible handoff prepared on isolated stacked branch.
+
+
+Repository reconciliation before finalizing PR40:PR39 was created during this
+continuation. Exact source81bca891be8f9f7534444a3fb3cbc9073171af4a has both jobs
+SUCCESS in run41002449977 (job API checked). It resolves all32 old budget skips,
+including the just-listed(9,9) zero; that finite topology target is no longer
+open.26 zeros have replayed collapses, six nonzeros are8,10,-4 twice each.
+These results belong to PR39 and overlap ours; do not add census totals.
+The specific54528-face core requires an elementary lower face of dimension>=3
+at the recorded starting point. Uniform construction and enumeration remain
+open. New canonical class-cut and five-row Lean source is separate, PR40.
+
+
+Further proof after PR39 reconciliation:FreeIntervalElimination.lean proves
+whole-interval sign cancellation, the exact sparse facet replacement, and their
+application to the original coefficient with canonical class cuts. Four new
+modules now pass locally:236 active modules,3987 audited declarations, standard
+axioms only. Hosted status for the final source is in PR40 receipts.json.
+
+VERIFIED-COMP:all17 retained hard PR39 cores have generalized free triangles;
+the attempted stronger no-free-triangle assertion failed (preserved). This is
+consistent with the codimension-one obstruction, not a refutation of it.
+The deterministic triangle-interval rule performs1438 replayed cancellations
+removing23624 faces, then stalls in all17. It does NOT finish any of these
+collapses. The general rule remains open; no new enumeration claim.
+
+
+PR40 final source c1a61f49e9ee95fad21b8d422ddd3df981b54132, hosted41004479610
+in progress at receipt. Local final236/3987 audit passes. Promotion to PROVED-LEAN
+awaits exact-source hosted success; no universal enumeration solution claimed.

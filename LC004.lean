@@ -259,3 +259,10 @@ import LC004.MixedFiveSixCoefficient
 import LC004.SixClassSeparatorFacets
 
 import LC004.SeparatorDeletionLink
+
+import LC004.ExclusiveSeparatorElimination
+import LC004.FiveClassSeparatorElimination
+
+import LC004.ClassCutSeparators
+
+import LC004.FreeIntervalElimination

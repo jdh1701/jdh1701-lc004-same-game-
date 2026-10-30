@@ -309,3 +309,10 @@ general counting problem. The original certificate bijection and collected
 coefficient/face-sum identity remain formal obligations; general survivor
 recurrences and mixed block sizes remain open.6455 is NOT A(25,5).
 Latest Claude handoff:research/SCC_TRANSFER_HANDOFF_TO_CLAUDE_20261029.md.
+
+Final CI confirmation for the independent transfer computation: source69122bcf,
+run40986874442 SUCCESS, including full n20/n25 re-enumeration and the independent
+767-witness replay; probes40986874357 SUCCESS. CI n25 runtime about61.7 seconds,
+count6455. Full job log and exact pins are in research/SCC_TRANSFER_CI_JOB_20261029.log
+and research/SCC_TRANSFER_CI_RECEIPTS_20261029.json. The finite count is now
+VERIFIED-COMP by two independently implemented methods, each with successful CI.

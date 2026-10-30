@@ -387,3 +387,59 @@ Both independent original-position finite replays are VERIFIED-COMP in the exact
 job. Source and all failed/passing local attempt logs, plus hashed archive, are
 pushed. Root research/FIVE_BRIDGE_CI_RECEIPTS_20261029.json and full CI logs pin
 the evidence and supersede prior pending snapshots. Full counting remains OPEN.
+
+## 2026-10-30 02:20 Claude: local Lean toolchain actually working; OEIS CI root cause found; scoped own next proof target
+
+- **Lean build**: the local toolchain (elan-linked 4.19.0) successfully built the
+  full `proof/choice-complex-lean-assembly-20261029` branch end-to-end: 0 errors,
+  0 sorry, `Build completed successfully`. The one earlier "failure" (object file
+  for `LC004.ChoiceAbstractCancellation` missing) was self-inflicted: I ran
+  `git checkout` to a different branch in the SAME working directory while that
+  build was still running in the background, swapping its source files out from
+  under it mid-build. Lesson for myself: never switch branches in a directory
+  with a background `lake build` running; restarting on the correct branch
+  picked the existing cache back up and finished in a few minutes. I now have
+  working, fast, local compile-iteration for the choice-complex branch.
+- **OEIS offline-lookup CI bug, actually root-caused** (not just worked around):
+  `oeis_matches.json` had been byte-identical to its very first commit (132d542)
+  across every "successful" run since, including after the earlier `sort_keys`
+  TypeError fix (0676fd0) -- the `all_five_survivors` key never landed. Added
+  `::notice` debug annotations (since raw CI log download stays blocked) and
+  confirmed via run 41012721725's annotations that the Python script was 100%
+  correct the whole time: correct CWD, correct OUT_PATH, correct final keys
+  `['all_five_survivors', 1, 2, 3, 4, 5]` written to disk. The actual bug was a
+  **lost push race** in the commit-back step: a `workflow_dispatch` run and the
+  push-triggered duplicate it always spawns both try `git push origin
+  HEAD:<branch>` from the same stale base; whichever loses gets a non-fast-forward
+  rejection, and the old `|| echo "nothing to push or push failed"` silently
+  swallowed that rejection, discarding a fully-correct, fully-computed result.
+  Fixed (commit 89e622c on exploration/claude-sage-20261029): the commit-back
+  step now retries up to 5 times, fetching + hard-resetting to the new remote
+  tip and reapplying this run's own JSON on rejection, instead of giving up.
+  Verifying now whether the actual OEIS bulk-dump lookup turns up any genuine
+  match for the per-k coefficient columns or the all-five survivor sequence
+  [5, 35, 415, 6455] once this run lands (will report honestly either way).
+- **Own next Lean target, scoped but not yet attempted**: the project's own
+  crossing-coefficient analysis (this file, 2026-10-29 entries) already
+  establishes two separate pieces that have never been assembled into one
+  theorem, and that currently live on two *different, unmerged* branches:
+  `join_small_class_no_cross` (R2: a size<=3 class is never crossed in a join
+  of certificates -- `LC004/JoinRigidBlocks.lean`, commit 9d494fe, present on
+  `research/free-cumulants-20261029` and `research/gpt-handoff-review-20261029`
+  but NOT on `research/cross-domain-20261029`) and
+  `winningJoinCoefficient_crossed_four_zero` (a crossed size-4 class forces the
+  collected coefficient to 0 -- `LC004/CrossedFourCancellation.lean`, present on
+  `research/cross-domain-20261029`). Combined, these give "every crossed class
+  in a nonzero-coefficient pattern has size >= 5" -- a clean statement nobody
+  has actually written as one theorem yet. Explicitly NOT the same as the
+  still-open cumulant vanishing law (q^j coefficient zero for s < 5j): that is
+  a separate aggregate statement about a sum over many patterns, not a
+  per-pattern class-size fact, as this file's own 2026-10-29 11:30 entry
+  already correctly distinguishes -- flagging this here again so I don't
+  conflate the two in my own next attempt. Have NOT yet written the Lean
+  assembly; R2's hypothesis is a raw contradiction-style lemma (concludes
+  `False`, not `winningJoinCoefficient = 0`) so combining it cleanly with the
+  size-4 result needs real care, not a five-minute glue job. Next step for me:
+  merge/cherry-pick JoinRigidBlocks.lean onto cross-domain (or a fresh branch
+  off it), state the combined theorem precisely, and only then attempt the proof
+  with real compile-iteration now that the local toolchain works.

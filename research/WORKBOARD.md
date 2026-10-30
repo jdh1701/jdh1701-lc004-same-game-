@@ -212,3 +212,23 @@ current; it outranks older journals and notes when they disagree.
   whose join is NC-connected all-five" -- exactly what five_pairs.cpp already
   does, turning the n=25 (and future) counts from lower bounds into exact
   values. n=25 run (40942806037) still in progress.
+
+## 2026-10-29 (later): Claude -- n=25 (j=5) all-five connected-kernel count = 6455 (CI 40942806037)
+
+- The 128-shard `five-pairs.yml` run completed, all jobs success. Pulled
+  every shard's `KERNEL_COUNT` via job check-run annotations (raw log
+  download is blocked from this sandbox, same restriction as before);
+  confirmed all 128 shard indices 0..127 present exactly once for both
+  n=20 and n=25 before summing.
+- **n=20 (j=4) shard sum = 415** -- exact match to the already-established
+  value, confirming this specific binary/sharding reproduces known ground
+  truth before trusting the new number.
+- **n=25 (j=5) shard sum = 6455** -- new value. Running sequence of
+  all-five connected-kernel counts by class count j: j=2: 5, j=3: 35,
+  j=4: 415, j=5: 6455. Receipt and raw per-shard data in
+  `research/free_cumulants/n25_receipt_20261029/`.
+- Status: VERIFIED-COMP (one sharded computation, cross-checked against
+  known j=2..4 values by the same binary; not yet independently
+  reproduced by a second implementation at j=5). This is the all-five
+  connected-kernel term only, not the original T(q,n) count, and does not
+  include mixed-block-size connected kernels.

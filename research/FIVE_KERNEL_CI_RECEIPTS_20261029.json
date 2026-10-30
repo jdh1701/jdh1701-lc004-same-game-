@@ -1,0 +1,36 @@
+{
+  "proof_commit": "9f53675350823a9b5a4770600e7b1b8efd083ad7",
+  "proof_tree": "d257dec2f85e7e77906cdc739b1630bfcd899062",
+  "status": "local verification passed; exact-commit CI pending",
+  "local": {
+    "active_modules": 207,
+    "audited_declarations": 3480,
+    "full_build": "pass",
+    "coverage": "pass",
+    "negative_guards": "both pass",
+    "python_geometry": "pass",
+    "claude_finite_replay": "pass",
+    "generator_check": "pass",
+    "remote_files_verified": 44
+  },
+  "runs": [
+    {
+      "id": 40980790895,
+      "name": "Cross-domain exact coefficient probes",
+      "status": "in_progress",
+      "conclusion": null,
+      "head_sha": "9f53675350823a9b5a4770600e7b1b8efd083ad7",
+      "url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40980790895"
+    },
+    {
+      "id": 40980791072,
+      "name": "Choice-complex cancellation audit",
+      "status": "queued",
+      "conclusion": null,
+      "head_sha": "9f53675350823a9b5a4770600e7b1b8efd083ad7",
+      "url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40980791072"
+    }
+  ],
+  "scope": "Finite rank-interleaving geometry and increasing placement transport; actual game certificate/coefficient identification and full counting remain open",
+  "claude_review_source": "6cc82bcca69bb956156e1604a4bd9b4c4d1961bb"
+}

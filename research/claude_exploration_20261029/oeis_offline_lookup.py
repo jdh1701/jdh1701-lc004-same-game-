@@ -34,8 +34,14 @@ def columns(table):
 
 def fetch_dump():
     req = urllib.request.Request(DUMP_URL, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=120) as resp:
-        raw = gzip.decompress(resp.read())
+    with urllib.request.urlopen(req, timeout=180) as resp:
+        chunks = []
+        while True:
+            chunk = resp.read(1 << 20)
+            if not chunk:
+                break
+            chunks.append(chunk)
+        raw = gzip.decompress(b"".join(chunks))
     return raw.decode("ascii", errors="replace")
 
 
@@ -85,4 +91,14 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    import traceback
+    try:
+        main()
+    except Exception:
+        # Raw log download is blocked from the sandbox, so print the
+        # traceback as a notice annotation instead of just dying quietly.
+        tb = traceback.format_exc()
+        for line in tb.splitlines():
+            print(f"::notice title=oeis-offline-error::{line}", flush=True)
+        sys.exit(1)

@@ -10,6 +10,8 @@ New formal entry points:
 - `winningJoinCoefficient_five_rows_class_cuts`: projection minus five links,
   arbitrary sizes in the other classes.
 - `faceAlternatingSum_zero_of_dominant_row`: structural cancellation certificate.
+- `winningJoinCoefficient_remove_free_interval`: cancel a whole free Boolean
+  interval; `facetFaces_remove_free_interval` proves the sparse facet update.
 
 Next substantive proof target: characterize row families produced by actual
 mixed-pattern geometry, especially when a projection equals a row or collapses.
@@ -18,10 +20,16 @@ transported through cyclic symmetries or formalized as finite original cases.
 The larger ambition is a counting recurrence on these row families that avoids
 merely restating the full pattern enumeration. No such closure theorem yet.
 
-Adversarial target: profile (9,9), word 001100000001111111, coefficient zero,
-3591 certificates, 34 vertices/864 facets after strong reductions. Exact Euler
-is known, homology/collapse not established. This is the sole untested-homology
-zero in the new search. See stress.json inside evidence.tar.gz.
+Repository reconciliation: PR39, source81bca891be8f9f7534444a3fb3cbc9073171af4a,
+run41002449977 SUCCESS, already resolves all32 former skips. Do not re-propose
+profile(9,9) word001100000001111111 as unresolved: it has a verified collapse.
+Its 34-vertex/864-facet core has54528 faces and no elementary free pair with a
+lower face of dimension<=2. Use this as a constraint on proposed uniform rules.
+The other branch's counts overlap ours and must not be added. See REPORT.md.
+All17 post-domination cores do have generalized free triangles. The lexicographic
+triangle-interval rule makes1438 verified reductions and then stalls on all17.
+Do not confuse generalized free faces with codimension-one elementary pairs.
+The failed stronger diagnostic and failed completion rule are preserved.
 
 All prior flawed guesses remain recorded. Homology zero is not a collapse proof;
 57 timeout and13 face-budget cases are not evidence of cancellation or failure.

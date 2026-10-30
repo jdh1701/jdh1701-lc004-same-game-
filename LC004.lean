@@ -264,3 +264,5 @@ import LC004.ExclusiveSeparatorElimination
 import LC004.FiveClassSeparatorElimination
 
 import LC004.ClassCutSeparators
+
+import LC004.FreeIntervalElimination

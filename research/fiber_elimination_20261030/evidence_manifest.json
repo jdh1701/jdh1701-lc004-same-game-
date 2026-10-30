@@ -1,6 +1,6 @@
 {
-  "archive_sha256": "ea4f22e6a78d8089d33200e9f1d713b74b4997afdb4e138d380fda260d4ac3eb",
-  "archive_bytes": 111835,
+  "archive_sha256": "496223f7c393d198f251b60155db8213eee45b5e17ec548c5de7f9f61cc7323f",
+  "archive_bytes": 1047173,
   "files": {
     "research/fiber_elimination_20261030/attempt01-decision-first.py.txt": {
       "bytes": 2461,
@@ -40,7 +40,7 @@
     },
     "research/fiber_elimination_20261030/axiom-audit.log": {
       "bytes": 145,
-      "sha256": "82155e70502be2ebb19d0aa3473229d6091cdb2d9b74c25781d6512c24d9d21d"
+      "sha256": "387b2e7f31f5021c0ff8b7b8e546de14f25012f98d9d7402be50e89994fe3be9"
     },
     "research/fiber_elimination_20261030/class_cut_check.json": {
       "bytes": 170429,
@@ -51,8 +51,8 @@
       "sha256": "8db49abac93c1ed495a1574ce402be7a527da026f05f79489f89f3e179c74cc4"
     },
     "research/fiber_elimination_20261030/coverage.log": {
-      "bytes": 8416,
-      "sha256": "f8949164c1caffe5c7a1a78a64e89a7424c4e0eb48948e7f6aefcd6dd7018c54"
+      "bytes": 8453,
+      "sha256": "38de430304ea69061099f45ceab6f1c2ce84cf67034b75f5fc45e292f2f36418"
     },
     "research/fiber_elimination_20261030/exclusive-build.log": {
       "bytes": 13803,
@@ -70,9 +70,41 @@
       "bytes": 244,
       "sha256": "3a267d5202d0f0c0f4b6fa4c09142f24df38cc21baf9f6ff5cdd07ce615e103a"
     },
+    "research/fiber_elimination_20261030/free-interval-archive-replay.log": {
+      "bytes": 1198,
+      "sha256": "24e48882143ba32137af403ed8bf178a4a6cdec0e7c5b5726abfe9ffcb2e6ad0"
+    },
+    "research/fiber_elimination_20261030/free-interval-probe.json": {
+      "bytes": 9713,
+      "sha256": "7bffc39b0cdef1b2f967f0fdcb4ca34b5ee1af9c9f8ff4f9c259098dcde2685c"
+    },
+    "research/fiber_elimination_20261030/free-interval-summary.json": {
+      "bytes": 110,
+      "sha256": "7d9df98f6e7be42c14e17bb78db5bac179f24fe27587920b3e224f400fbcd6e1"
+    },
+    "research/fiber_elimination_20261030/free_intervals.json": {
+      "bytes": 423525,
+      "sha256": "906abd0feb3a26b0ecd052be6c6cd72951bbdf5c49ffa6a7749447ef648ed27d"
+    },
+    "research/fiber_elimination_20261030/free_intervals.log": {
+      "bytes": 1198,
+      "sha256": "558d13be9ecca9ae533a5a5918f1ad401da6c21683c15f3aae405b73345bf30b"
+    },
     "research/fiber_elimination_20261030/full-build.log": {
-      "bytes": 64892,
-      "sha256": "d57e45f06527abedf4d9f4f11d48e5d0734e67330663280527b3bab434c2607b"
+      "bytes": 65437,
+      "sha256": "284aba706706596a9da60d2ceb65f72407848afc6d1b1b96b084af3c5509ed6c"
+    },
+    "research/fiber_elimination_20261030/interval-attempt01.log": {
+      "bytes": 212,
+      "sha256": "cd50137baa398a08038a9f2c1367e598b98e7aa9c698430fa4cb8422de032664"
+    },
+    "research/fiber_elimination_20261030/interval-attempt02.log": {
+      "bytes": 2034,
+      "sha256": "d86a0735e934fd2a1f53c1f0a72840ae3de729b32e500eaf17d9076f0391b091"
+    },
+    "research/fiber_elimination_20261030/interval-attempt03.log": {
+      "bytes": 323,
+      "sha256": "acaaf30c977542c7c6aad6fd8f26509b9ee970191c5804bb32f54bb385dedd82"
     },
     "research/fiber_elimination_20261030/lean-attempt01.log": {
       "bytes": 428,
@@ -126,6 +158,58 @@
       "bytes": 122,
       "sha256": "cdf2a8b0097fbfafd3e2d3cc17d0625b9232cc654dc24c69f8b8a56d368c472e"
     },
+    "research/fiber_elimination_20261030/pr39-CI_RECEIPT.json": {
+      "bytes": 2930,
+      "sha256": "1f1223d36ccfad413f1d14512e40e6a629972f56451077c650cd352bf9f4ea2b"
+    },
+    "research/fiber_elimination_20261030/pr39-REPORT.md.txt": {
+      "bytes": 15655,
+      "sha256": "f0fe1702fadfa77829b44c380e542d5988a4d9dfe3a53b9a3e1f48fad8f66c24"
+    },
+    "research/fiber_elimination_20261030/pr39-core-crosscheck.log": {
+      "bytes": 298,
+      "sha256": "4455fe1fc4fca6343d99af83f971030cdfa8471068652b20feb3b2eb3c094513"
+    },
+    "research/fiber_elimination_20261030/pr39-core-crosscheck.py.txt": {
+      "bytes": 867,
+      "sha256": "c13234701913e75797767cfdb89c52ca6c4ce7584fa5c0527fc64d2dbbb20b32"
+    },
+    "research/fiber_elimination_20261030/pr39-core-obstructions.json": {
+      "bytes": 7030,
+      "sha256": "84b214ef8b87b8b74d40acb9de891393cc0774253dd88bfceebabe4ef754e34c"
+    },
+    "research/fiber_elimination_20261030/pr39-local-replay.log": {
+      "bytes": 1758,
+      "sha256": "a5f9e976b68435a7cd2d7bbce0124c6badec75a4b2dd352cd083558e56c3f9bc"
+    },
+    "research/fiber_elimination_20261030/pr39-local-results.json": {
+      "bytes": 6491659,
+      "sha256": "8d6564f8789f9221686f1314ff2f808eba1e753bdc1614539fa587c3130885f3"
+    },
+    "research/fiber_elimination_20261030/pr39-replay-source-hashes.json": {
+      "bytes": 598,
+      "sha256": "1c49b6a03986718f77953c6718eb6c9ca23b5c05ed2d84b91a06dcc45a242e82"
+    },
+    "research/fiber_elimination_20261030/pr39-rescue.log": {
+      "bytes": 1754,
+      "sha256": "b2f83d4565bd44e953ee3aa4f811f491aed8a9d06086a3251272eb2245dac437"
+    },
+    "research/fiber_elimination_20261030/pr39-source-independent.py.txt": {
+      "bytes": 3603,
+      "sha256": "3daaa55a16a9b4bdfc9cb3b03a0e951a94f386a4e84dbdd61f4595dada5d6409"
+    },
+    "research/fiber_elimination_20261030/pr39-source-probe.py.txt": {
+      "bytes": 7513,
+      "sha256": "0276f144c9ee10ce091fa303f66351a416b966d37dff073b9db6c4faee36b158"
+    },
+    "research/fiber_elimination_20261030/pr39-source-rescue_skips.py.txt": {
+      "bytes": 7470,
+      "sha256": "63b08282e6ce9aab2eeaa5ef7d56aadcc3b3ebbfa59f370a17e546cc204eacfa"
+    },
+    "research/fiber_elimination_20261030/pr39-source-skipped-inputs.json.txt": {
+      "bytes": 11058,
+      "sha256": "178cb7aa3241d1e0dc6f5f3df2dc042546509ec56bb3ca8d558844afd6665eeb"
+    },
     "research/fiber_elimination_20261030/pre-active-cuts-audit.log": {
       "bytes": 145,
       "sha256": "cb636d90fdfaf948c80d3474c414c21e04024afc990dc263c66db3d4324a6eae"
@@ -133,6 +217,14 @@
     "research/fiber_elimination_20261030/pre-active-cuts-build.log": {
       "bytes": 64027,
       "sha256": "774a873fc29f2756bd6d053c80afcdba39fc44d2ae00387e0ab7955e8c625cd9"
+    },
+    "research/fiber_elimination_20261030/pre-interval-audit.log": {
+      "bytes": 145,
+      "sha256": "82155e70502be2ebb19d0aa3473229d6091cdb2d9b74c25781d6512c24d9d21d"
+    },
+    "research/fiber_elimination_20261030/pre-interval-build.log": {
+      "bytes": 64892,
+      "sha256": "d57e45f06527abedf4d9f4f11d48e5d0734e67330663280527b3bab434c2607b"
     },
     "research/fiber_elimination_20261030/restore-baseline.log": {
       "bytes": 162,

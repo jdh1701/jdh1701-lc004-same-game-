@@ -487,3 +487,28 @@ conclusion follows just from acyclicity. Unresolved zero:profile(9,9), word
 computed. All checkpoints, budgets and failed methods retained in evidence.
 No closed counting recurrence or general collapse theorem. A035617 remains OPEN.
 Owner:none; source and reproducible handoff prepared on isolated stacked branch.
+
+
+Repository reconciliation before finalizing PR40:PR39 was created during this
+continuation. Exact source81bca891be8f9f7534444a3fb3cbc9073171af4a has both jobs
+SUCCESS in run41002449977 (job API checked). It resolves all32 old budget skips,
+including the just-listed(9,9) zero; that finite topology target is no longer
+open.26 zeros have replayed collapses, six nonzeros are8,10,-4 twice each.
+These results belong to PR39 and overlap ours; do not add census totals.
+The specific54528-face core requires an elementary lower face of dimension>=3
+at the recorded starting point. Uniform construction and enumeration remain
+open. New canonical class-cut and five-row Lean source is separate, PR40.
+
+
+Further proof after PR39 reconciliation:FreeIntervalElimination.lean proves
+whole-interval sign cancellation, the exact sparse facet replacement, and their
+application to the original coefficient with canonical class cuts. Four new
+modules now pass locally:236 active modules,3987 audited declarations, standard
+axioms only. Hosted status for the final source is in PR40 receipts.json.
+
+VERIFIED-COMP:all17 retained hard PR39 cores have generalized free triangles;
+the attempted stronger no-free-triangle assertion failed (preserved). This is
+consistent with the codimension-one obstruction, not a refutation of it.
+The deterministic triangle-interval rule performs1438 replayed cancellations
+removing23624 faces, then stalls in all17. It does NOT finish any of these
+collapses. The general rule remains open; no new enumeration claim.

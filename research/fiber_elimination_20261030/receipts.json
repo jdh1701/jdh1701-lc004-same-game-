@@ -8,16 +8,37 @@
     "lean": "success",
     "exact": "success"
   },
-  "local_modules": 235,
-  "local_audited_declarations": 3983,
+  "local_modules": 236,
+  "local_audited_declarations": 3987,
   "standard_axioms_only": true,
   "negative_guards": "pass",
   "exact_replay": "pass",
   "open_problem_solved": false,
   "source_sha256": {
-    "LC004.lean": "e7d7ff87464e2b7fb9ac6730c3ee97351c882cc89e55616e8e4764747223f279",
+    "LC004.lean": "25cbc7f3af202b4bb7ab27a23ec35cfb8693c7980dc74020ffefb231d42d32f3",
     "LC004/ClassCutSeparators.lean": "aed1f9b303ce6f8d4195ebe2d235019f4b0f5683cc1a5e3f93ddd9f68f05792f",
     "LC004/ExclusiveSeparatorElimination.lean": "651d5a537cd4e6b347065fd88423626f4a9f12575b12a3f2a4656751aa47a43c",
-    "LC004/FiveClassSeparatorElimination.lean": "c5b1d5a6df690875b3cd423e0a06c29d62147b2dc5266ef7f8e933623f4ecba2"
+    "LC004/FiveClassSeparatorElimination.lean": "c5b1d5a6df690875b3cd423e0a06c29d62147b2dc5266ef7f8e933623f4ecba2",
+    "LC004/FreeIntervalElimination.lean": "ee2f58f300df20cba98da21225810705d7a336f999d0d869efef98f14e379627"
+  },
+  "initial_source_commit": "20c0012934187d59f6c5307192455d3b4776e589",
+  "initial_hosted_run": 41003408625,
+  "initial_hosted_exact": "success",
+  "initial_hosted_lean": "in_progress",
+  "parallel_pr39": {
+    "source": "81bca891be8f9f7534444a3fb3cbc9073171af4a",
+    "head": "495dce2e54aed507394c5e55707dee9e11de8668",
+    "run": 41002449977,
+    "lean": "success",
+    "exact": "success",
+    "local_rescues_replayed": 32,
+    "overlap_coefficients_matched": 31
+  },
+  "free_interval_rule": {
+    "cases": 17,
+    "complete_collapses": 0,
+    "verified_intervals": 1438,
+    "removed_faces": 23624,
+    "status": "stalled-inconclusive"
   }
 }

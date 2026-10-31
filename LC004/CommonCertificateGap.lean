@@ -72,7 +72,7 @@ theorem ncConnected_pair_join_gap_adjacent {n : Nat}
     hgap
   by_contra h
   let x : Fin n := ⟨u.val+1, by omega⟩
-  exact he x (by dsimp [x]; constructor <;> omega)
+  exact he x (by change u.val < u.val + 1 ∧ u.val + 1 < v.val; omega)
 
 /-- The complementary circular gap: the closed interval is saturated when
 its endpoints share a certificate block and their color is absent outside. -/

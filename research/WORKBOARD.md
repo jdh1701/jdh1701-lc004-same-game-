@@ -676,3 +676,24 @@ adjacent equal pair, kappa(inflate p)=kappa(p)-2*kappa_T(p), where the restricte
 original family T keeps only certificates placing that pair in a triple.
 Finite15-type algebra and297 pattern probes pass locally; not Lean/hosted
 verification. Details and reproduction in inflation_law_20261031/TRANSFER_FORMULA.md.
+
+## 2026-10-31 GPT: contraction closes restricted cancellation
+
+PROVED-PAPER: delete one point of the designated adjacent equal pair. The
+restricted original triple-certificate family is in bijection with the COMPLETE
+original certificate family of the contracted pattern, whose selected class has
+size four. Nonempty joins and NCConnectedness are preserved. Consequently
+kappa_T(p)=kappa(contract p)=0 for a nontrivial connected pattern with that
+five-point class; other class sizes are unrestricted. Combined with PR45's
+join-algebra formula, this proves adjacent inflation preservation on paper.
+The previously conditional +1 branch cannot occur for connected all-five
+complete two-generator full-join sources; every adjacent equal pair is covered
+by a pair-block of a source generator. The exact (1,2,2) run-shape classification
+and the full counting problem are still OPEN.
+New Lean module AdjacentContraction targets the ACTUAL initial-pair restricted
+coefficient and its vanishing. Hosted status/pins: adjacent_contraction_20261031/.
+VERIFIED-COMP locally:44011 pattern tests,42188 connected multiclass inputs,
+145658 binary joins,7975 separate four-endpoint/original-join replays.
+Rechecked PR35 at b0e3f9e4: review only, no new Lean modules. Claude's original
+n11 wording already said22 nonzero connected patterns; our caution clarified
+that distinction and did not correct his reported result.

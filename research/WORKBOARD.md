@@ -670,7 +670,8 @@ run41175791540, Lean124462965007 and exact124462964843 both SUCCESS.
 pass. Local/context transfer and four-generator coefficient rule PROVED-LEAN.
 The original-position inflation theorem and no-three-run corollary remain
 PROVED-PAPER; the formal geometric bridge is not silently promoted.
-Supplementary paper identity: for connected all-five p with a designated
+Supplementary paper identity: for connected all-five p with at least two classes
+and a designated
 adjacent equal pair, kappa(inflate p)=kappa(p)-2*kappa_T(p), where the restricted
 original family T keeps only certificates placing that pair in a triple.
 Finite15-type algebra and297 pattern probes pass locally; not Lean/hosted

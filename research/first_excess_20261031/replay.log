@@ -1,0 +1,3 @@
+positive representatives 50
+positive representatives 100
+{"status": "VERIFIED-COMP", "scope": "All full-join representatives replayed; independent positive signed joins; census completeness relies on the exhaustive C++ construction.", "full_join_representatives": 5816, "nonzero_representatives": 142, "explicit_patterns": 5607, "shape_histogram": {"(3, (1, 2, 3), ((1, 2, 2), (1, 2, 2), (1, 2, 2)))": 3486, "(2, (1, 1, 2, 2), ((1, 2, 2), (1, 2, 2), (1, 2, 2)))": 1974, "(2, (1, 1, 1, 1, 1, 1), ((1, 2, 2), (1, 2, 2), (1, 2, 2)))": 147}, "class_deletion_histogram": {"(3, 0)": 588, "(3, 1)": 1596, "(2, 1)": 672, "(2, 0)": 126, "(3, 2)": 1092, "(2, 2)": 1071, "(2, 3)": 252, "(3, 3)": 210}, "source_sha256": "7a591ac22197c5fe77c7fb2b728038afe5a6d653df2716f9ade529aeab43a867"}

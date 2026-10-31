@@ -1,0 +1,13 @@
+{
+  "status": "VERIFIED-COMP",
+  "local_checks": "pass",
+  "hosted_status": "pending",
+  "base_commit": "67443747efd0a27551006c1927f7404949fe41f0",
+  "source_sha256": {
+    "count.cpp": "7a591ac22197c5fe77c7fb2b728038afe5a6d653df2716f9ade529aeab43a867",
+    "prepare.py": "d601a238b9a1653bac7c2b7d034db556cc2fe4a37a5d916d48f9e414e08df44c",
+    "replay.py": "aae2a36dfb6823a7e1abf03b842303884e5d485d29ac7aa222fdebf9b5edf7e7",
+    "structure.py": "d9bd0ee68b846d4e98dd3aeb3cdc71813873a8e5281b76def4fa51ecb92bb5ee"
+  },
+  "open_problem_solved": false
+}

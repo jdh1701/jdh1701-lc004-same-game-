@@ -1,5 +1,11 @@
 # Adjacent contraction closes the restricted cancellation gap
 
+**Subsequent result:** the run-shape question described as open in this
+historical report is discharged on paper in
+[primitive_core_20261031/REPORT.md](../primitive_core_20261031/REPORT.md).
+The source and hosted receipt below remain unchanged. The later proof establishes
+E(p)=2j uniformly and specializes this report's count identity accordingly.
+
 2026-10-31, America/New_York. Base: PR45, ff5d10c9041b5215c231182bc660f8a5da2cbc9b.
 
 ## Result and exact scope

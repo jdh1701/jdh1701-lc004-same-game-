@@ -720,3 +720,35 @@ PROVED-LEAN. Full arbitrary-position inflation and the new counting consequences
 remain PROVED-PAPER. All44011 checks reproduce at the same source. Exact pins,
 full logs, source hashes and both failed elaboration attempts are retained in
 research/adjacent_contraction_20261031/. Full counting remains OPEN.
+
+## 2026-10-31 GPT: common gaps finish the all-five run shape
+
+PROVED-PAPER: a shared chord of a family of noncrossing refinements whose join
+is NCConnected cannot enclose a nonempty gap between consecutive occurrences
+of its own class. Applying this to the original two-generator all-five law,
+overlapping local pair blocks would create an adjacent edge in both triples,
+contradicting PR46 restricted cancellation. Disjoint pair blocks become two
+actual adjacent pairs. PR46 no-three-run then gives exactly (1,2,2) in EVERY
+five-class, for all j>=2. This supersedes the earlier open run-shape statements.
+Thus E(p)=2j, and the entire three-run first-excess layer satisfies
+H_j=2(5j+1)A_j/5 unconditionally on paper.
+
+Compress the two-runs: each class is a root and two weighted endpoints, with
+one noncrossing arc in each of two layers. The original SCC criterion exactly
+recognizes the complete two-certificate family. Orbit stabilizers are retained,
+giving A_j=5N_j/3 for rooted compressed cores. Canonical exhaustive search and
+COMPLETE original-family replay extend A_j to118195 at j6 and2413185 at j7.
+These are NOT A035617 terms. Corresponding three-run layers are1465618 and
+34749864, not full first-excess censuses. All1522974 accepted cores through j7
+are independently replayed against their complete original five-choice families.
+Certificate-first ORIGINAL signed-join censuses agree as sets at j2,j3;
+explicit expansion/rotation unions agree through j5.
+
+Failed shortcut retained: connected proper cores can have a third certificate;
+the SCC test is essential. CommonCertificateGap targets both ordinary and
+wraparound gap lemmas and the finite local catalogue facts. The complete
+run-shape, compression and orbit-counting assembly remains PROVED-PAPER.
+Hosted formal status and exact receipts: primitive_core_20261031/.
+Reconciled PR35 at c88cc090: review of PR45 only, not independent review of
+these new results. Exceptional no-three-run first-excess and general higher
+excess remain OPEN, as does the full winning-word problem.

@@ -1,0 +1,7805 @@
+{
+  "status": "VERIFIED-COMP",
+  "scope": "All full-join representatives replayed; independent positive signed joins; census completeness relies on the exhaustive C++ construction.",
+  "full_join_representatives": 5816,
+  "nonzero_representatives": 142,
+  "explicit_patterns": 5607,
+  "shape_histogram": {
+    "(3, (1, 2, 3), ((1, 2, 2), (1, 2, 2), (1, 2, 2)))": 3486,
+    "(2, (1, 1, 2, 2), ((1, 2, 2), (1, 2, 2), (1, 2, 2)))": 1974,
+    "(2, (1, 1, 1, 1, 1, 1), ((1, 2, 2), (1, 2, 2), (1, 2, 2)))": 147
+  },
+  "class_deletion_histogram": {
+    "(3, 0)": 588,
+    "(3, 1)": 1596,
+    "(2, 1)": 672,
+    "(2, 0)": 126,
+    "(3, 2)": 1092,
+    "(2, 2)": 1071,
+    "(2, 3)": 252,
+    "(3, 3)": 210
+  },
+  "rows": [
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        1,
+        3,
+        3,
+        1,
+        1,
+        2,
+        3,
+        3,
+        2,
+        2,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        1,
+        3,
+        3,
+        1,
+        1,
+        3,
+        2,
+        2,
+        3,
+        3,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        1,
+        3,
+        2,
+        2,
+        3,
+        3,
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        1,
+        3,
+        3,
+        2,
+        2,
+        3,
+        1,
+        1,
+        3,
+        3,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        3,
+        1,
+        1,
+        3,
+        3,
+        1,
+        2,
+        2,
+        3,
+        3,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        3,
+        1,
+        1,
+        3,
+        3,
+        2,
+        2,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        3,
+        3,
+        1,
+        2,
+        2,
+        3,
+        3,
+        1,
+        1,
+        3,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        3,
+        3,
+        1,
+        1,
+        3,
+        2,
+        2,
+        3,
+        3,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        3,
+        3,
+        2,
+        1,
+        1,
+        3,
+        3,
+        2,
+        2,
+        3,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        3,
+        3,
+        2,
+        2,
+        1,
+        3,
+        3,
+        1,
+        1,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        3,
+        3,
+        2,
+        2,
+        3,
+        1,
+        1,
+        3,
+        3,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        3,
+        2,
+        2,
+        3,
+        3,
+        2,
+        1,
+        1,
+        3,
+        3,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        2,
+        3,
+        3,
+        1,
+        1,
+        3,
+        2,
+        2,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        3,
+        3,
+        2,
+        1,
+        1,
+        3,
+        3,
+        2,
+        2,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        2,
+        3,
+        3,
+        2,
+        2,
+        3,
+        1,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        3,
+        2,
+        2,
+        3,
+        3,
+        2,
+        1,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        3,
+        1,
+        1,
+        3,
+        3,
+        2,
+        2,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        3,
+        3,
+        1,
+        1,
+        3,
+        2,
+        2,
+        3,
+        3,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        3,
+        3,
+        2,
+        2,
+        1,
+        3,
+        3,
+        1,
+        1,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        3,
+        3,
+        2,
+        2,
+        3,
+        1,
+        1,
+        3,
+        3,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        3,
+        3,
+        1,
+        1,
+        3,
+        2,
+        2,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        3,
+        3,
+        2,
+        1,
+        1,
+        3,
+        3,
+        2,
+        2,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        3,
+        3,
+        2,
+        2,
+        3,
+        1,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        3,
+        2,
+        2,
+        3,
+        3,
+        2,
+        1,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        3,
+        1,
+        1,
+        3,
+        3,
+        2,
+        2,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        3,
+        3,
+        1,
+        1,
+        3,
+        2,
+        2,
+        3,
+        3,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        3,
+        3,
+        2,
+        2,
+        1,
+        3,
+        3,
+        1,
+        1,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        3,
+        3,
+        2,
+        2,
+        3,
+        1,
+        1,
+        3,
+        3,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        3,
+        3,
+        1,
+        1,
+        3,
+        2,
+        2,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        3,
+        3,
+        2,
+        1,
+        1,
+        3,
+        3,
+        2,
+        2,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        3,
+        3,
+        2,
+        2,
+        3,
+        1,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        3,
+        2,
+        2,
+        3,
+        3,
+        2,
+        1,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        3,
+        3,
+        0,
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        1,
+        1,
+        3,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        3,
+        3,
+        0,
+        0,
+        3,
+        2,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        3,
+        3,
+        0,
+        0,
+        3,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        2,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        3,
+        3,
+        0,
+        0,
+        2,
+        1,
+        3,
+        3,
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        3,
+        3,
+        0,
+        0,
+        2,
+        1,
+        1,
+        3,
+        3,
+        2,
+        2,
+        3,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 21,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        3,
+        3,
+        0,
+        0,
+        3,
+        1,
+        2,
+        2,
+        1,
+        1,
+        3,
+        3,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 21,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        2,
+        2,
+        3,
+        3,
+        0,
+        1,
+        1,
+        0,
+        3,
+        2,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        3,
+        3,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        3,
+        2,
+        2,
+        3,
+        3,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        3,
+        3,
+        0,
+        2,
+        2,
+        0,
+        3,
+        1,
+        1,
+        2,
+        2,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        0,
+        0,
+        3,
+        3,
+        0,
+        1,
+        1,
+        0,
+        3,
+        2,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        0,
+        0,
+        3,
+        3,
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        2,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        3,
+        3,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        3,
+        2,
+        2,
+        3,
+        3,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        3,
+        3,
+        0,
+        0,
+        2,
+        2,
+        0,
+        3,
+        1,
+        1,
+        2,
+        2,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        0,
+        0,
+        1,
+        1,
+        0,
+        3,
+        2,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        3,
+        0,
+        0,
+        3,
+        3,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        3,
+        3,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        3,
+        3,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        3,
+        3,
+        1,
+        1,
+        3,
+        2,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        3,
+        3,
+        0,
+        0,
+        2,
+        2,
+        0,
+        3,
+        1,
+        1,
+        3,
+        3,
+        1,
+        2,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        3,
+        0,
+        0,
+        3,
+        3,
+        0,
+        3,
+        3,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        3,
+        0,
+        0,
+        3,
+        3,
+        0,
+        3,
+        3,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        3,
+        3,
+        0,
+        0,
+        2,
+        2,
+        0,
+        3,
+        2,
+        2,
+        1,
+        1,
+        3,
+        3,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        0,
+        0,
+        0,
+        3,
+        3,
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3,
+        2,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        3,
+        3,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        3,
+        2,
+        2,
+        3,
+        3,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        3,
+        3,
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        3,
+        1,
+        1,
+        2,
+        2,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        3,
+        2,
+        1,
+        1,
+        2,
+        2,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        3,
+        3,
+        2,
+        0,
+        0,
+        1,
+        3,
+        3,
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        3,
+        3,
+        2,
+        2,
+        0,
+        0,
+        1,
+        3,
+        3,
+        1,
+        1,
+        3,
+        2,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        3,
+        3,
+        2,
+        2,
+        0,
+        0,
+        3,
+        1,
+        1,
+        3,
+        3,
+        1,
+        2,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        3,
+        3,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        3,
+        3,
+        1,
+        1,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        3,
+        3,
+        2,
+        0,
+        0,
+        2,
+        2,
+        3,
+        1,
+        1,
+        3,
+        3,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        3,
+        3,
+        2,
+        2,
+        0,
+        0,
+        3,
+        2,
+        2,
+        1,
+        1,
+        3,
+        3,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        3,
+        3,
+        0,
+        0,
+        1,
+        1,
+        2,
+        3,
+        3,
+        2,
+        2,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        3,
+        3,
+        0,
+        0,
+        1,
+        1,
+        3,
+        2,
+        2,
+        3,
+        3,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        3,
+        3,
+        0,
+        0,
+        3,
+        2,
+        2,
+        3,
+        3,
+        1,
+        1,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        0,
+        3,
+        3,
+        0,
+        0,
+        2,
+        1,
+        1,
+        3,
+        3,
+        2,
+        2,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        0,
+        3,
+        3,
+        0,
+        0,
+        2,
+        3,
+        3,
+        2,
+        2,
+        3,
+        1,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        0,
+        3,
+        3,
+        0,
+        0,
+        3,
+        2,
+        2,
+        3,
+        3,
+        2,
+        1,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        3,
+        3,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        3,
+        2,
+        2,
+        1,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        3,
+        3,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        3,
+        2,
+        2,
+        3,
+        3,
+        1,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        3,
+        0,
+        0,
+        3,
+        3,
+        2,
+        2,
+        0,
+        1,
+        1,
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        3,
+        0,
+        0,
+        3,
+        3,
+        2,
+        2,
+        0,
+        3,
+        3,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        2,
+        3,
+        0,
+        0,
+        3,
+        3,
+        1,
+        1,
+        0,
+        3,
+        3,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        3,
+        3,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        3,
+        2,
+        2,
+        1,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        2,
+        3,
+        0,
+        0,
+        3,
+        3,
+        1,
+        1,
+        0,
+        2,
+        2,
+        3,
+        3,
+        2,
+        1,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        3,
+        3,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        3,
+        2,
+        2,
+        3,
+        3,
+        1,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        3,
+        0,
+        0,
+        0,
+        3,
+        3,
+        2,
+        2,
+        0,
+        1,
+        1,
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        3,
+        0,
+        0,
+        0,
+        3,
+        3,
+        2,
+        2,
+        0,
+        3,
+        3,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        3,
+        0,
+        0,
+        0,
+        3,
+        3,
+        1,
+        1,
+        0,
+        3,
+        3,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        3,
+        3,
+        0,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        3,
+        2,
+        2,
+        1,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        3,
+        0,
+        0,
+        0,
+        3,
+        3,
+        1,
+        1,
+        0,
+        2,
+        2,
+        3,
+        3,
+        2,
+        1,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        3,
+        3,
+        0,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        3,
+        2,
+        2,
+        3,
+        3,
+        1,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        2,
+        2,
+        3,
+        3,
+        2,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        3,
+        1,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        2,
+        3,
+        3,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        3,
+        2,
+        2,
+        1,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        3,
+        0,
+        0,
+        3,
+        3,
+        0,
+        2,
+        2,
+        3,
+        3,
+        1,
+        1,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        3,
+        0,
+        0,
+        3,
+        3,
+        0,
+        2,
+        2,
+        3,
+        3,
+        2,
+        1,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        3,
+        1,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        3,
+        3,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        3,
+        2,
+        2,
+        1,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        3,
+        0,
+        0,
+        3,
+        3,
+        0,
+        3,
+        3,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 21,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        3,
+        3,
+        0,
+        0,
+        2,
+        2,
+        0,
+        3,
+        2,
+        2,
+        1,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 21,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        3,
+        0,
+        0,
+        3,
+        3,
+        0,
+        2,
+        2,
+        3,
+        3,
+        2,
+        1,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 21,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        3,
+        3,
+        0,
+        0,
+        2,
+        2,
+        0,
+        3,
+        2,
+        2,
+        3,
+        3,
+        1,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 21,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        3,
+        0,
+        0,
+        3,
+        3,
+        0,
+        2,
+        2,
+        3,
+        3,
+        1,
+        1,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 21,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        3,
+        0,
+        0,
+        3,
+        3,
+        0,
+        3,
+        3,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 21,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        3,
+        0,
+        0,
+        0,
+        3,
+        3,
+        0,
+        2,
+        2,
+        3,
+        3,
+        1,
+        1,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        3,
+        0,
+        0,
+        0,
+        3,
+        3,
+        0,
+        2,
+        2,
+        3,
+        3,
+        2,
+        1,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        3,
+        1,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        3,
+        3,
+        2,
+        2,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        3,
+        2,
+        2,
+        1,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        1,
+        1,
+        3,
+        3,
+        0,
+        0,
+        2,
+        3,
+        3,
+        2,
+        2,
+        3,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        1,
+        1,
+        3,
+        3,
+        0,
+        0,
+        3,
+        2,
+        2,
+        3,
+        3,
+        2,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        3,
+        3,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        3,
+        3,
+        1,
+        1,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        3,
+        3,
+        2,
+        2,
+        0,
+        0,
+        2,
+        3,
+        1,
+        1,
+        3,
+        3,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        3,
+        3,
+        0,
+        0,
+        2,
+        3,
+        3,
+        2,
+        2,
+        3,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 21,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        3,
+        3,
+        0,
+        0,
+        3,
+        2,
+        2,
+        3,
+        3,
+        2,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 21,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        3,
+        3,
+        0,
+        3,
+        3,
+        0,
+        0,
+        3,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 21,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        3,
+        3,
+        0,
+        3,
+        3,
+        0,
+        0,
+        3,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 21,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        3,
+        0,
+        0,
+        3,
+        3,
+        2,
+        2,
+        1,
+        1,
+        0,
+        3,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        3,
+        0,
+        0,
+        3,
+        3,
+        2,
+        2,
+        0,
+        3,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        1,
+        0,
+        3,
+        3,
+        0,
+        1,
+        1,
+        0,
+        2,
+        3,
+        3,
+        2,
+        2,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 21,
+      "pattern_orbit_size": 21,
+      "six_runs": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        1,
+        0,
+        3,
+        3,
+        0,
+        1,
+        1,
+        0,
+        3,
+        2,
+        2,
+        3,
+        3,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 21,
+      "pattern_orbit_size": 21,
+      "six_runs": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        0,
+        0,
+        3,
+        3,
+        0,
+        2,
+        2,
+        3,
+        3,
+        2,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        2,
+        3,
+        3,
+        0,
+        0,
+        2,
+        2,
+        0,
+        3,
+        2,
+        2,
+        3,
+        3,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        3,
+        1,
+        1,
+        0,
+        0,
+        3,
+        3,
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        3,
+        3,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        3,
+        2,
+        2,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        1,
+        3,
+        3,
+        1,
+        1,
+        0,
+        0,
+        2,
+        3,
+        3,
+        2,
+        2,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        1,
+        3,
+        3,
+        1,
+        1,
+        0,
+        0,
+        3,
+        2,
+        2,
+        3,
+        3,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        3,
+        2,
+        2,
+        3,
+        3,
+        0,
+        0,
+        2,
+        1,
+        1,
+        3,
+        3,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        3,
+        3,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        3,
+        2,
+        2,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        0,
+        0,
+        3,
+        3,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        3,
+        1,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        0,
+        0,
+        1,
+        1,
+        3,
+        3,
+        1,
+        0,
+        2,
+        2,
+        3,
+        3,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        3,
+        3,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        3,
+        2,
+        2,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        0,
+        0,
+        2,
+        2,
+        3,
+        3,
+        2,
+        0,
+        1,
+        1,
+        3,
+        3,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2,
+        3,
+        3,
+        0,
+        0,
+        3,
+        2,
+        2,
+        3,
+        3,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        3,
+        1,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        0,
+        0,
+        3,
+        1,
+        1,
+        3,
+        3,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 3,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        2,
+        3
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        3,
+        3,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        3,
+        1,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        3,
+        0,
+        0,
+        3,
+        3,
+        0,
+        3,
+        3,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        3,
+        0,
+        0,
+        3,
+        3,
+        0,
+        3,
+        3,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        2,
+        3,
+        0,
+        0,
+        3,
+        3,
+        2,
+        2,
+        0,
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        3,
+        0,
+        0,
+        3,
+        3,
+        2,
+        2,
+        0,
+        3,
+        3,
+        1,
+        2,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        3,
+        1,
+        1,
+        0,
+        0,
+        3,
+        3,
+        2,
+        2,
+        0,
+        1,
+        3,
+        3,
+        2,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        0,
+        1,
+        1,
+        0,
+        0,
+        3,
+        3,
+        1,
+        0,
+        2,
+        2,
+        3,
+        3,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        3,
+        3,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        0,
+        3,
+        2,
+        2,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        0,
+        2,
+        2,
+        0,
+        0,
+        3,
+        3,
+        2,
+        0,
+        1,
+        1,
+        3,
+        3,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        3,
+        3,
+        0,
+        3,
+        3,
+        0,
+        0,
+        3,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        3,
+        1,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        3,
+        3,
+        0,
+        3,
+        3,
+        0,
+        0,
+        3,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        3,
+        3,
+        2,
+        2,
+        3,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        3,
+        3,
+        1
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 21,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        1
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        3,
+        3,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        3,
+        1,
+        1,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 21,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        2,
+        3,
+        3,
+        0,
+        1,
+        1,
+        0,
+        3,
+        2,
+        2,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        3,
+        3,
+        2,
+        0,
+        1,
+        1,
+        0,
+        3,
+        3,
+        2,
+        2,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 42,
+      "pattern_orbit_size": 42,
+      "six_runs": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        0,
+        2,
+        2,
+        3,
+        3,
+        0,
+        1,
+        1,
+        0,
+        3,
+        2,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        3,
+        3
+      ],
+      "coefficient": -1,
+      "generators": 2,
+      "six_subset_orbit_weight": 21,
+      "pattern_orbit_size": 21,
+      "six_runs": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "five_runs": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "successful_class_deletions": [
+        2,
+        3
+      ]
+    }
+  ],
+  "source_sha256": "7a591ac22197c5fe77c7fb2b728038afe5a6d653df2716f9ade529aeab43a867"
+}

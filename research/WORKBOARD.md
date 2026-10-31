@@ -625,3 +625,22 @@ the67132-pattern n26 cyclic-inflation family. These counts concern connected
 coefficient patterns, not a complete all-length winning-word enumeration.
 The conditional cyclic-inflation counting identity remains PROVED-PAPER; its
 game-specific hypotheses for arbitrary j remain CONJECTURES.
+
+
+## 2026-10-31 GPT: complete first-excess n21 census
+
+PR43 final status is now PROVED-LEAN: source9656d7b9, run41099342084,
+Lean124213325344 and exact124213324550 both completed/SUCCESS.
+New finite result: exhaust all6844101264 patterns of profile(5,5,5,6).
+Exactly5607 connected nonzero coefficients, all-1:2121 two-generator and
+3486 three-generator survivors. Independent Euler replay checks all5816
+full-join representatives, original signed joins check all142 positive
+completion representatives, and expanded pattern orbits independently count5607.
+All276746400 certificate incidences match the independent factorial checksum.
+Three-generator survivors equal the complete cyclic inflation image of415
+n20 all-five parents. Whole-five-class deletion is NOT a general recursion:
+72 n16 and714 n21 survivors have no successful deletion.
+Run shapes persist finitely; general classification remains conjectural.
+Rechecked PR35 at352d5b54: reviews and n11 check, no new Lean modules.
+Details, reproducible sources, failures and scope: research/first_excess_20261031/.
+Owner: none. General all-length counting remains OPEN.

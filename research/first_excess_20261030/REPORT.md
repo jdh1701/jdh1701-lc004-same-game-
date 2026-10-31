@@ -233,3 +233,9 @@ same source. The final receipt commit changes documentation/evidence only.
 The conditional inflation-image count is a paper theorem; the individual
 computed patterns and general conjectural preservation statement retain their
 separate statuses. The all-length enumeration remains open.
+
+## Final status confirmation (2026-10-31)
+
+Both jobs in run 41099342084 now report completed/SUCCESS, including all
+Lean build, audit, and guard steps. The metadata delay is resolved.
+The exact source 9656d7b90554fb736388e6c14d92f2d73060e470 is PROVED-LEAN.

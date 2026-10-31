@@ -117,6 +117,29 @@ class labels, and duplicating one position beside an equal-labelled position
 does not change the existence of an alternating pair of distinct labels.
 This observation is a paper argument, not a newly claimed Lean bridge.
 
+## A further unbounded run restriction
+
+Under the same complete two-generator/full-join hypotheses, EVERY adjacent
+equal pair belongs to the same certificate block in BOTH generators. To see
+this, rotate that adjacent pair to ranks0,1. The only local five-point states
+that separate them are states3 and4, and the universal-state argument above
+excludes both. This statement is weaker than the desired assertion that the
+pair itself is a two-point block in one generator. Both generators might
+still place it inside different triples.
+
+Consequently a surviving all-five pattern with these hypotheses cannot have
+a cyclic run of three equal positions. If it did, the two adjacent pairs
+would force all three positions into the same block of each generator. Each
+block must then be exactly that triple, and the other two positions form the
+same pair in both generators. Their local join would stay split, contradicting
+a join b = p. Longer runs contain such a triple and are also excluded.
+
+Thus each five-class has one of only three possible cyclic run multisets:
+(2,2,1), (2,1,1,1), or (1,1,1,1,1). This is PROVED-PAPER for the stated source
+families. Excluding the latter two shapes remains open; the finite censuses
+have exhibited only (2,2,1). No additional Lean theorem for this original-game
+run statement is claimed in this source commit.
+
 ## Formalization scope
 
 AdjacentInflationKernel.lean proves the finite chord identity directly from

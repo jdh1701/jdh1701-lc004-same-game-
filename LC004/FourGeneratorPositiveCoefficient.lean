@@ -39,7 +39,7 @@ theorem winningJoinCoefficient_four_generators_two_disjoint_top_pairs {n : Nat}
       _ = p := by rw [hcb,sup_eq_left.mpr hD]
   have hdcba : ((d ⊔ c) ⊔ b) ⊔ a = p := by rw [hdcb,sup_eq_left.mpr hA]
   simp [certificateJoinTerms,collectedJoinCoefficient,ha,hb,hc,hd,
-    hba,hca,hda,hcb,hdb,hdc,hcba,hdba,hdca,hdcb,hdcba]
+    hba,hca,hda,hcb,hdb,hdc,hcba,hdba,hdca,hdcb,hdcba,hA]
 
 #print axioms winningJoinCoefficient_four_generators_two_disjoint_top_pairs
 end LC004

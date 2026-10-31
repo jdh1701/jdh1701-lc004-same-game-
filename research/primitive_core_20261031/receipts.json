@@ -1,0 +1,103 @@
+{
+  "status": "PROVED-LEAN common gaps and local catalogue; PROVED-PAPER run shape and core/count assembly",
+  "base_commit": "243b4eaece18df07e205bcd31df22a1c536aee10",
+  "source_commit": "464f98e0996dfea5e9c79bb98bccfb0daa03521b",
+  "source_tree": "5a43522045ebc6400f310a0eec2601f75a88bb6f",
+  "run": 41222379964,
+  "jobs": {
+    "lean": {
+      "id": 124599458558,
+      "conclusion": "success"
+    },
+    "exact": {
+      "id": 124599458416,
+      "conclusion": "success"
+    }
+  },
+  "modules": 247,
+  "audited_declarations": 4164,
+  "standard_axioms_only": true,
+  "negative_coverage_guard": "pass",
+  "negative_axiom_guard": "pass",
+  "source_sha256": {
+    "LC004/CommonCertificateGap.lean": "a07153c64eda037475ff600a77017a98660a7c0bb10c563627c415f302c4a287",
+    "LC004.lean": "1400d8c74d0854ae8ebeccf1a6bafb841a714d4c11653fabbd92f64974447f55",
+    ".github/workflows/primitive-core.yml": "88d153b0dcfc755edc6cf887a5f245273194eba3ce2b7d5010f5879b67e79434",
+    "research/primitive_core_20261031/star_search.cpp": "6bcdb892a44bc3fb88bac07c7af4fdced76000cbc378b32d03004c90298fbc3e",
+    "research/primitive_core_20261031/replay.cpp": "57e13603346317c16ca405e7b2423827f666ec511d7a4026ddd53c9c5c7f541a",
+    "research/primitive_core_20261031/check.py": "7f23d377478a87c6ff9d2e39c0ed983ea736fbb04d6466a6bfd675a9da83e7fa",
+    "research/primitive_core_20261031/checks.json": "2b230cb645fafa0fe34e1b4bb09d9954454cdeb1ee7365e6db20e6c1c18568cc"
+  },
+  "log_sha256": {
+    "lean": "363738b21ebaf88c7f50921b81c1904c57db423a18e76f86431385743af78279",
+    "exact": "c76e38981c839424782535edac398a7498e4af531f87ffd0462b31ba0a5b417c"
+  },
+  "archive_sha256": {
+    "hosted-final-evidence.tar.gz": "15aa931fc9416d234d5e94dbb1f139ffea0e66dc2588a82a5e6b23c169f6f343",
+    "failed-attempt-evidence.tar.gz": "0e89541a3ee92234e055636933d3bd66222ae6dfe23566a0026701e3573855a2"
+  },
+  "formal_scope": [
+    "ordinary common-generator class gap is empty",
+    "pair-join shared gap implies adjacency",
+    "wraparound common-generator class gap is empty",
+    "finite five-pair cardinality, overlap and disjointness facts"
+  ],
+  "paper_scope": [
+    "uniform (1,2,2) all-five run-shape theorem",
+    "same five-class shape for any complete two-generator full-join connected source",
+    "bijection with strong two-layer star cores",
+    "orbit weighting with stabilizers A_j=5N_j/3",
+    "uniform three-run first-excess count H_j=2(5j+1)A_j/5"
+  ],
+  "computational_scope": {
+    "complete_original_family_replays": 1522974,
+    "all_five_survivor_counts": [
+      5,
+      35,
+      415,
+      6455,
+      118195,
+      2413185
+    ],
+    "classes_range": [
+      2,
+      7
+    ],
+    "certificate_first_census_classes": [
+      2,
+      3
+    ],
+    "explicit_rotation_union_classes": [
+      2,
+      5
+    ],
+    "circular_gap_checks": {
+      "certificate_pairs": 30201,
+      "connected_nontrivial_pairs": 328,
+      "shared_cyclic_class_edges": 714,
+      "wraparound_edges": 72
+    }
+  },
+  "failed_attempts": [
+    {
+      "source": "637968a7f8bc544eeac71cffcd04a673beea2a1e",
+      "run": 41221730803,
+      "lean_job": 124597513011,
+      "exact_job": 124597512746,
+      "lean": "failure",
+      "exact": "success",
+      "reason": "omega did not reduce Fin constructor values in the adjacency corollary; explicit numeric change repairs it"
+    }
+  ],
+  "local_lean_runtime": "unavailable; verification is hosted",
+  "repository_reconciliation": {
+    "PR35_head": "c88cc0906591ad2b79cdeb168f04a77bf5950553",
+    "scope": "WORKBOARD review of PR45; no new Lean modules; not a review of PR46/47"
+  },
+  "open_problem_solved": false,
+  "remaining": [
+    "full exceptional first-excess classification",
+    "higher-excess connected coefficient families",
+    "all-length winning-word counting"
+  ]
+}

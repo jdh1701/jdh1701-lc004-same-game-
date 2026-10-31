@@ -275,3 +275,4 @@ import LC004.SmallGeneratorCoefficients
 import LC004.AdjacentInflationKernel
 import LC004.FourGeneratorPositiveCoefficient
 import LC004.AdjacentContraction
+import LC004.CommonCertificateGap

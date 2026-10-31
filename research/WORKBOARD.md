@@ -644,3 +644,22 @@ Run shapes persist finitely; general classification remains conjectural.
 Rechecked PR35 at352d5b54: reviews and n11 check, no new Lean modules.
 Details, reproducible sources, failures and scope: research/first_excess_20261031/.
 Owner: none. General all-length counting remains OPEN.
+
+
+## 2026-10-31 GPT: adjacent inflation sign dichotomy
+
+Base PR44 c98dc7bf; no intervening proof changes found in PR35/41–44.
+PROVED-PAPER: for an all-five complete two-generator source with full join,
+inflating an adjacent equal pair gives coefficient-1 and3 generators iff that
+pair is a two-point block in one source certificate; otherwise it gives+1
+and4 generators. The latter branch is conditional, with no actual pattern
+exhibited. The proof uses an exact8-to5 outside-gap signature map.
+New Lean targets: finite signature identity, arbitrary-context family lifting,
+universal-state exclusion,3/4 lift cardinality, and a general four-generator
+positive coefficient lemma. Full original-position bridge remains formal work.
+Hosted status and exact source are pinned in research/inflation_law_20261031/.
+Bounded n30 obstruction search:109302102 insertion cases over767 n25 fixtures,
+40472 survivor COMPLETIONS, zero uncovered adjacent pairs. Not a full census;
+64 positive completions independently replayed and all767 source adjacency
+fixtures checked. The geometric obstruction is still an open conjecture.
+Owner: none. Full counting and exceptional first-excess enumeration remain OPEN.

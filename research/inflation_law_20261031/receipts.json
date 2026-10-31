@@ -1,0 +1,16 @@
+{
+  "status": "PROVED-PAPER; LEAN SOURCE AWAITING HOSTED VERIFICATION",
+  "base_commit": "c98dc7bfb5b4f12f5b2f1d1d4283f9bd3b23be12",
+  "local_lean_runtime": "unavailable",
+  "hosted_status": "pending",
+  "source_sha256": {
+    "LC004/AdjacentInflationKernel.lean": "f097f4701f4db0ed92419ee0de140d80da885018ce77356fb6e2b8339668d207",
+    "LC004/FourGeneratorPositiveCoefficient.lean": "213b1a4f17c99ebce3ea44f7486d7411c9d9508253d15074c98726b44ff2ab77",
+    "research/inflation_law_20261031/check.py": "100c8bebbd62a887ed8f34ae109c4722e7d9ec9a4ecf791292ce93682b929bef",
+    "research/inflation_law_20261031/search30.cpp": "77123500fa0d53db65a91008ded933b7822a2a9e559881341d484b5b64c793d1",
+    "research/inflation_law_20261031/replay30.py": "a3c5c572ccfab7be725378906c89b4a2c14dd69463caf00e438232b7bd46bfb0"
+  },
+  "full_original_gap_bridge_formalized": false,
+  "positive_first_excess_example_found": false,
+  "open_problem_solved": false
+}

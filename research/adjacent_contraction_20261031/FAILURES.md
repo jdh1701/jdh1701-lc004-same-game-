@@ -25,3 +25,11 @@ The fixes use explicit relation types, a forward indicator-sum calculation,
 typed sup maps, and an explicit final coefficient equality. The complete failed
 log is retained. The full axiom audit did not run; failure diagnostics mentioning
 sorryAx are compiler placeholders, not accepted proof dependencies.
+
+Hosted attempt 2: source36558c8316616b208277b8bf2c9ab843620ace03,
+run41210798354. Exact job124565158736 SUCCESS; Lean job124565158731 FAILURE.
+Only successor inequalities and unfolding Function.onFun in the class-cardinality
+calculation remained. Omega treated the successor values as opaque atoms; use
+explicit Nat.add_lt_add_right/Nat.add_le_add_right proofs. All other new
+declarations elaborated, but inherited failed-declaration placeholders, so
+the source was still NOT verified. The complete log is retained.

@@ -76,7 +76,8 @@ theorem duplicateInitial_noncrossing_iff {n : Nat} (p : ColorPattern (n + 1)) :
     PatternNoncrossing (duplicateInitial p) ↔ PatternNoncrossing p := by
   constructor
   · intro h a b c d hab hbc hcd hac hbd
-    have he := h a.succ b.succ c.succ d.succ (by omega) (by omega) (by omega)
+    have he := h a.succ b.succ c.succ d.succ
+      (Nat.add_lt_add_right hab 1) (Nat.add_lt_add_right hbc 1) (Nat.add_lt_add_right hcd 1)
     simpa [duplicateInitial, Setoid.comap] using he hac hbd
   · exact patternNoncrossing_monotone_comap p _ adjacentProjection_mono
 
@@ -95,7 +96,8 @@ theorem duplicateInitial_connected_iff {n : Nat} (p : ColorPattern (n + 1)) :
     simpa [duplicateInitial, Setoid.comap] using he
   · intro h q hpq hq
     have hc : PatternNoncrossing (contractInitial q) :=
-      patternNoncrossing_monotone_comap q Fin.succ (by intro a b hab; omega) hq
+      patternNoncrossing_monotone_comap q Fin.succ
+        (fun _ _ hab => Nat.add_le_add_right hab 1) hq
     have ht := h (contractInitial q) (by
       intro a b hab
       apply hpq
@@ -118,7 +120,7 @@ theorem duplicateInitial_class_card {n : Nat} (p : ColorPattern (n + 1))
       (Finset.sum_boole _ _).symm
     _ = _ := by
       rw [Fin.sum_univ_succ]
-      simp only [duplicateInitial, Setoid.comap, adjacentProjection_zero,
+      simp only [duplicateInitial, Setoid.comap, Function.onFun, adjacentProjection_zero,
         adjacentProjection_succ, Finset.sum_boole, patternClassPositions, Nat.cast_id]
 
 theorem certificateConstraint_four_class_pair {n : Nat} (p c : ColorPattern n)

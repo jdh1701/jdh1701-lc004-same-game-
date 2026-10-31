@@ -107,6 +107,14 @@ four-point class has kappa=-1. Disconnected patterns can also have nonzero
 restricted terms and universal corrections. The executable checks retain such
 examples instead of dropping them.
 
+The extension beyond all-five also preserves positive coefficients. Two exact
+examples included in the exhaustive two-class checks are:
+
+| Source | Profile | Inflated source | Preserved coefficient |
+|---|---|---|---:|
+| 001001101111 | (5,7) | 0001001101111 | 2 |
+| 0010011011111 | (5,8) | 00010011011111 | 6 |
+
 ## Consequences that now follow
 
 1. In every nontrivial connected all-five complete two-generator full-join
@@ -202,6 +210,14 @@ the unsigned formula specializes to 2*(5j+1)/5 * |S_j| and reproduces
 22,224,3486,67132 for j=2,3,4,5. The last figure is the verified n26 inflation
 family, not a full n26 first-excess census. Turning this identity into a closed
 formula still requires enumerating all-five sources and their two-runs.
+
+Since each five-class has at most two two-runs, the count relation also gives
+
+    |H_j| <= 2*(5j+1)/5 * |S_j|.
+
+Equality holds exactly when every source in S_j has two two-runs in every
+class (vacuously if S_j is empty). Thus the conjectured (1,2,2) run-shape law is
+equivalent to saturation of this bound, once the all-five source count is known.
 
 ## Verification and reconciliation
 

@@ -1,5 +1,11 @@
 # Adjacent inflation: an exact local rule and a sign obstruction
 
+Follow-up (PR46): [adjacent contraction](../adjacent_contraction_20261031/REPORT.md)
+now proves inflation preservation for nontrivial connected sources with a
+five-point distinguished class. It excludes this report's conditional +1
+branch for those connected two-generator full-join sources. The original
+dichotomy and historical open questions below are retained as provenance.
+
 2026-10-31. The all-length Same Game enumeration remains OPEN.
 Base: PR44 receipt c98dc7bfb5b4f12f5b2f1d1d4283f9bd3b23be12. A repository
 recheck found no intervening proof changes in PR35 or PR41–44.

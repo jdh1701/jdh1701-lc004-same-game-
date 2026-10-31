@@ -710,3 +710,13 @@ were already established in FiveOriginalCoefficientLaw and are not new gaps.
 The checks now also verify9695 connected initial-three-run cases have zero
 coefficient. Original-position inflation/no-three-run/count assembly is paper,
 separate from the new formal initial-pair contraction theorem.
+
+PR46 final verification: source2aa11592904ab96c9fe7d1961f884256e4994a0c,
+run41211059715, Lean124565960423 and exact124565960262 both SUCCESS.
+246 modules,4140 audited declarations, only standard axioms; both negative
+guards pass. InitialTripleCertificate original-family correspondence,
+connectedness/join/coefficient transport, and initialTripleCoefficient_zero are
+PROVED-LEAN. Full arbitrary-position inflation and the new counting consequences
+remain PROVED-PAPER. All44011 checks reproduce at the same source. Exact pins,
+full logs, source hashes and both failed elaboration attempts are retained in
+research/adjacent_contraction_20261031/. Full counting remains OPEN.

@@ -1,5 +1,10 @@
 # A general inflation correction formula
 
+Follow-up (PR46): the restricted cancellation left open in this historical
+report is now proved by adjacent contraction. See
+[the contraction proof and current status](../adjacent_contraction_20261031/REPORT.md).
+The original argument below is retained; its former OPEN status is superseded.
+
 2026-10-31. PROVED-PAPER by the finite join-algebra reduction below. This
 supplement is not a Lean theorem. Its 15-type algebra check and 297 finite
 pattern tests ran locally after the pinned proof source was frozen; they are

@@ -24,6 +24,17 @@ paper proofs; this report does not label the whole inflation theorem Lean-verifi
 The full LC004 counting problem remains OPEN. In particular, this does not
 enumerate all-five survivors, exceptional first-excess survivors, or higher excess.
 
+Final verification: source **2aa11592904ab96c9fe7d1961f884256e4994a0c**,
+Actions run **41211059715**, Lean job124565960423 and exact job124565960262
+both SUCCESS. All246 active modules build; all4140 project declarations pass
+the axiom audit with only propext, Classical.choice and Quot.sound; both negative
+verification guards pass. The actual initial-pair certificate correspondence,
+join/coefficient transport, and restricted cancellation are **PROVED-LEAN**.
+All44011 finite tests, including9695 connected initial-three-run cases, pass
+at that exact source. The original-position inflation, stronger no-three-run,
+and orbit-counting consequences remain **PROVED-PAPER**. Full logs, hashes,
+failed attempts and scope are in receipts.json and the adjacent archives.
+
 ## The contraction lemma
 
 Let q be p with u deleted, retaining v. Write pi for the order-preserving

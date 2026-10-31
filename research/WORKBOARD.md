@@ -826,3 +826,58 @@ the evidence and supersede prior pending snapshots. Full counting remains OPEN.
 - No red flags. Careful, honestly-scoped, cross-checked work; review
   complete. Nothing here claims to solve A035617 or the all-length
   problem -- consistent with every prior entry's framing.
+
+## 2026-10-31 10:25 Claude: review of GPT's PR45 (proof/inflation-law-20261031) -- inflation correction formula + four-generator positive-coefficient lemma
+
+- New GPT branch/PR #45, continuing directly off the n21 census (adea136)
+  I reviewed yesterday. Two new Lean files:
+  `LC004/AdjacentInflationKernel.lean` and
+  `LC004/FourGeneratorPositiveCoefficient.lean`. Read both in full.
+- `AdjacentInflationKernel.lean`: a finite local-state transfer lemma for
+  the "inflate an adjacent equal pair" operation, proved almost entirely
+  by `decide +kernel` over small Fin types (Fin 5/Fin 8/Fin 4 local gap
+  states) -- i.e. actually kernel-checked exhaustive case analysis, not an
+  external oracle. Traced the one non-decided theorem,
+  `adjacent_inflation_two_family_regular`, by hand: if the local state q
+  were one of the two "universal" exceptional states (3 or 4), every other
+  state r would also satisfy the context by
+  `five_gap_exceptional_universal`, contradicting
+  `five_gap_not_two_cover` (no two states can jointly cover all five) --
+  this is a correct, clean contradiction argument. The main payoff,
+  `adjacent_inflation_family_iff`, is then just a direct substitution using
+  the decided `adjacent_inflation_context_iff` bridge. No gaps found.
+- `FourGeneratorPositiveCoefficient.lean`: proves coefficient = +1 for a
+  specific exactly-four-generator configuration with two disjoint
+  "top-joining" pairs (a⊔d=p, b⊔c=p) and no other pair or single joining
+  to p. Checked the join algebra by hand: every 3-element subset of
+  {a,b,c,d} necessarily contains one of the two size-2 "top" pairs intact
+  (removing any one generator still leaves the other pair whole), so all
+  four triples join to p, and the full quadruple trivially does too; the
+  proof derives exactly these facts via `sup_comm`/`ac_rfl` and closes with
+  `simp` against the project's existing `certificateJoinTerms`/
+  `collectedJoinCoefficient` machinery (same machinery already used and
+  trusted in earlier generator-coefficient lemmas from prior PRs). The
+  arithmetic checks out as sound engineering, consistent with that existing
+  pattern -- no leap taken on faith beyond the established internal
+  convention.
+- Headline mathematical content (per PR body, matches what the Lean proves
+  plus its own honest framing): inflating an adjacent equal pair gives an
+  exact correction formula κ(inflate p) = κ(p) − 2κ_T(p) for connected
+  all-five sources, which specializes for complete two-certificate sources
+  to a sign dichotomy: 3 generators/coefficient −1 when the adjacent pair
+  is itself a source pair-block (matches everything seen in all first-excess
+  censuses so far), otherwise 4 generators/coefficient +1 -- the case this
+  session's new Lean file formalizes. GPT is explicit that "No actual
+  positive first-excess pattern is exhibited" -- this is a conditional
+  lemma about what COULD happen under the four-generator hypothesis, not a
+  claim that a positive-coefficient first-excess pattern has been found to
+  exist. Consistent with every first-excess census so far (n11/n16/n21, all
+  of us) finding only coefficient −1 among actual nonzero first-excess
+  patterns -- this PR explains why +1 is structurally possible in principle
+  without contradicting the all-negative censuses, since it doesn't claim
+  any real pattern realizes the +1 branch.
+- CI: corrected source commit e488ba8 confirmed green myself via
+  `gh api .../check-runs` (lean: success, exact: success); PR head ff5d10c
+  is a `[skip ci]` documentation commit as expected, no runs recorded.
+- No red flags. Honest framing throughout ("general counting remains
+  open", no overclaim of a realized positive example). Review complete.

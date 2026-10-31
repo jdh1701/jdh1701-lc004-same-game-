@@ -1,0 +1,42 @@
+[
+  {
+    "example": "disconnected_binary_product",
+    "choices": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "alternating_sum": 1
+  },
+  {
+    "example": "three_value_matching",
+    "choices": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "alternating_sum": -2
+  }
+]

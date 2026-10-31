@@ -1,0 +1,8 @@
+LC004/FiveClassFiniteGeometry.lean:20:20: error: tactic 'cases' failed, nested error:
+dependent elimination failed, failed to solve equation
+  (List.map (fun a => List.map (Prod.mk a) xs) xs).flatten = (u, v) :: as✝
+at case List.Mem.head
+LC004/FiveClassFiniteGeometry.lean:25:19: error: invalid constructor ⟨...⟩, expected type must be an inductive type with only one constructor 
+  List.Mem (u, v) (xs.product xs)
+LC004/FiveClassFiniteGeometry.lean:25:42: error: invalid constructor ⟨...⟩, expected type must be an inductive type with only one constructor 
+  List.Mem (x, y) (ys.product ys)

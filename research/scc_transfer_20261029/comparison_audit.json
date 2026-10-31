@@ -1,0 +1,10 @@
+{
+  "status": "VERIFIED-COMP",
+  "independent_counts": {
+    "20": 415,
+    "25": 6455
+  },
+  "claude_run": 40942806037,
+  "claude_shards_checked": 128,
+  "failures": 0
+}

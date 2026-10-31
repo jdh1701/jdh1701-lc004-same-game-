@@ -1,0 +1,8 @@
+{
+  "status": "VERIFIED-COMP",
+  "scope": "independent arithmetic audit of Claude supplied logs, NOT independent enumeration",
+  "shards": 48,
+  "candidate_total": 488864376,
+  "nonzero_total": 415,
+  "fuss_catalan_prediction": 285
+}

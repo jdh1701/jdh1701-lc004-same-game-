@@ -1,0 +1,180 @@
+﻿2026-10-30T02:33:11.9099488Z Current runner version: '2.338.0'
+2026-10-30T02:33:11.9117016Z ##[group]Runner Image Provisioner
+2026-10-30T02:33:11.9117539Z Hosted Compute Agent
+2026-10-30T02:33:11.9117987Z Version: 20261021.618
+2026-10-30T02:33:11.9118357Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+2026-10-30T02:33:11.9118794Z Build Date: 2026-10-21T00:45:21Z
+2026-10-30T02:33:11.9119251Z Worker ID: {ae426ba7-da21-4ee5-acbe-9edf3dcaad1b}
+2026-10-30T02:33:11.9119668Z Region: centralus
+2026-10-30T02:33:11.9120021Z Cloud: Azure
+2026-10-30T02:33:11.9120355Z ##[endgroup]
+2026-10-30T02:33:11.9121125Z ##[group]Operating System
+2026-10-30T02:33:11.9121523Z Ubuntu
+2026-10-30T02:33:11.9121836Z 24.04.5
+2026-10-30T02:33:11.9122193Z LTS
+2026-10-30T02:33:11.9122513Z ##[endgroup]
+2026-10-30T02:33:11.9122893Z ##[group]Runner Image
+2026-10-30T02:33:11.9123271Z Image: ubuntu-24.04
+2026-10-30T02:33:11.9123609Z Version: 20261025.353.1
+2026-10-30T02:33:11.9124380Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-30T02:33:11.9125258Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+2026-10-30T02:33:11.9125834Z ##[endgroup]
+2026-10-30T02:33:11.9126477Z ##[group]GITHUB_TOKEN Permissions
+2026-10-30T02:33:11.9127875Z Contents: read
+2026-10-30T02:33:11.9128252Z Metadata: read
+2026-10-30T02:33:11.9128572Z ##[endgroup]
+2026-10-30T02:33:11.9129909Z Secret source: Actions
+2026-10-30T02:33:11.9130773Z Cache mode: write
+2026-10-30T02:33:11.9131288Z Prepare workflow directory
+2026-10-30T02:33:11.9330786Z Prepare all required actions
+2026-10-30T02:33:11.9361856Z Getting action download info
+2026-10-30T02:33:12.1414643Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-30T02:33:12.2968356Z Complete job name: exact
+2026-10-30T02:33:12.3609627Z ##[group]Run actions/checkout@v4
+2026-10-30T02:33:12.3610043Z with:
+2026-10-30T02:33:12.3610327Z   repository: jdh1701/jdh1701-lc004-same-game-
+2026-10-30T02:33:12.3612527Z   token: ***
+2026-10-30T02:33:12.3612764Z   ssh-strict: true
+2026-10-30T02:33:12.3613005Z   ssh-user: git
+2026-10-30T02:33:12.3613250Z   persist-credentials: true
+2026-10-30T02:33:12.3613516Z   clean: true
+2026-10-30T02:33:12.3613765Z   sparse-checkout-cone-mode: true
+2026-10-30T02:33:12.3614053Z   fetch-depth: 1
+2026-10-30T02:33:12.3614291Z   fetch-tags: false
+2026-10-30T02:33:12.3614535Z   show-progress: true
+2026-10-30T02:33:12.3614781Z   lfs: false
+2026-10-30T02:33:12.3615009Z   submodules: false
+2026-10-30T02:33:12.3615260Z   set-safe-directory: true
+2026-10-30T02:33:12.3615539Z   allow-unsafe-pr-checkout: false
+2026-10-30T02:33:12.3615884Z ##[endgroup]
+2026-10-30T02:33:12.5876970Z Syncing repository: jdh1701/jdh1701-lc004-same-game-
+2026-10-30T02:33:12.5878444Z ##[group]Getting Git version info
+2026-10-30T02:33:12.5879227Z Working directory is '/home/runner/work/jdh1701-lc004-same-game-/jdh1701-lc004-same-game-'
+2026-10-30T02:33:12.5880157Z [command]/usr/bin/git version
+2026-10-30T02:33:12.5966126Z git version 2.56.0
+2026-10-30T02:33:12.5986593Z ##[endgroup]
+2026-10-30T02:33:12.5992001Z Temporarily overriding HOME='/home/runner/work/_temp/c46c9456-1c30-42cb-9d6a-956b8827e05d' before making global git config changes
+2026-10-30T02:33:12.5993057Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-30T02:33:12.5997634Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/jdh1701-lc004-same-game-/jdh1701-lc004-same-game-
+2026-10-30T02:33:12.6057136Z Deleting the contents of '/home/runner/work/jdh1701-lc004-same-game-/jdh1701-lc004-same-game-'
+2026-10-30T02:33:12.6058267Z ##[group]Initializing the repository
+2026-10-30T02:33:12.6058748Z [command]/usr/bin/git init /home/runner/work/jdh1701-lc004-same-game-/jdh1701-lc004-same-game-
+2026-10-30T02:33:12.6147467Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-30T02:33:12.6148210Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-30T02:33:12.6148919Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-30T02:33:12.6149313Z hint: call:
+2026-10-30T02:33:12.6149536Z hint:
+2026-10-30T02:33:12.6149828Z hint: 	git config --global init.defaultBranch <name>
+2026-10-30T02:33:12.6150169Z hint:
+2026-10-30T02:33:12.6150484Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-30T02:33:12.6150981Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-30T02:33:12.6151375Z hint:
+2026-10-30T02:33:12.6151604Z hint: 	git branch -m <name>
+2026-10-30T02:33:12.6151867Z hint:
+2026-10-30T02:33:12.6152206Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-30T02:33:12.6164352Z Initialized empty Git repository in /home/runner/work/jdh1701-lc004-same-game-/jdh1701-lc004-same-game-/.git/
+2026-10-30T02:33:12.6173008Z [command]/usr/bin/git remote add origin https://github.com/jdh1701/jdh1701-lc004-same-game-
+2026-10-30T02:33:12.6214117Z ##[endgroup]
+2026-10-30T02:33:12.6214567Z ##[group]Disabling automatic garbage collection
+2026-10-30T02:33:12.6217676Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-30T02:33:12.6246080Z ##[endgroup]
+2026-10-30T02:33:12.6246486Z ##[group]Setting up auth
+2026-10-30T02:33:12.6251978Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-30T02:33:12.6281677Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-30T02:33:12.6621406Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-30T02:33:12.6659595Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-30T02:33:12.6848325Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-30T02:33:12.6883384Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-30T02:33:12.7069708Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-30T02:33:12.7110339Z ##[endgroup]
+2026-10-30T02:33:12.7110972Z ##[group]Fetching the repository
+2026-10-30T02:33:12.7118998Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +c51b75abed5953bd7d940a6153c3598a58cdde86:refs/remotes/origin/research/cross-domain-20261029
+2026-10-30T02:33:13.1925877Z From https://github.com/jdh1701/jdh1701-lc004-same-game-
+2026-10-30T02:33:13.1926649Z  * [new ref]         c51b75abed5953bd7d940a6153c3598a58cdde86 -> origin/research/cross-domain-20261029
+2026-10-30T02:33:13.1929952Z ##[endgroup]
+2026-10-30T02:33:13.1930624Z ##[group]Determining the checkout info
+2026-10-30T02:33:13.1931862Z ##[endgroup]
+2026-10-30T02:33:13.1936180Z [command]/usr/bin/git sparse-checkout disable
+2026-10-30T02:33:13.1987152Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-30T02:33:13.2020602Z ##[group]Checking out the ref
+2026-10-30T02:33:13.2029839Z [command]/usr/bin/git checkout --progress --force -B research/cross-domain-20261029 refs/remotes/origin/research/cross-domain-20261029
+2026-10-30T02:33:13.2344651Z Switched to a new branch 'research/cross-domain-20261029'
+2026-10-30T02:33:13.2351137Z branch 'research/cross-domain-20261029' set up to track 'origin/research/cross-domain-20261029'.
+2026-10-30T02:33:13.2355981Z ##[endgroup]
+2026-10-30T02:33:13.2395107Z [command]/usr/bin/git log -1 --format=%H
+2026-10-30T02:33:13.2422463Z c51b75abed5953bd7d940a6153c3598a58cdde86
+2026-10-30T02:33:13.2595802Z ##[group]Run python research/five_bridge_20261029/verify_original_bridge.py
+2026-10-30T02:33:13.2596405Z [36;1mpython research/five_bridge_20261029/verify_original_bridge.py[0m
+2026-10-30T02:33:13.2597283Z [36;1mpython research/choice_complex_20261029/structure.py[0m
+2026-10-30T02:33:13.2597758Z [36;1mpython research/choice_support_20261029/normalization_controls.py[0m
+2026-10-30T02:33:13.2598243Z [36;1mpython research/choice_complex_20261029/pair_orbits.py[0m
+2026-10-30T02:33:13.2598694Z [36;1mpython research/five_geometry_20261029/ten_split_check.py[0m
+2026-10-30T02:33:13.2599170Z [36;1mpython research/five_kernel_20261029/generate_cases.py --check[0m
+2026-10-30T02:33:13.2599656Z [36;1mpython research/five_actual_20261029/verify_implication.py[0m
+2026-10-30T02:33:13.2600128Z [36;1mpython research/five_actual_20261029/count_by_implication.py[0m
+2026-10-30T02:33:13.2600638Z [36;1mpython research/five_bridge_20261029/verify_global_nc_bridge.py[0m
+2026-10-30T02:33:13.2601326Z [36;1mpython research/five_geometry_20261029/claude_review/verify_ten_split_closure.py > /tmp/five-claude-review.log[0m
+2026-10-30T02:33:13.2602142Z [36;1mdiff -u research/five_geometry_20261029/claude_review/verify_ten_split_closure.log /tmp/five-claude-review.log[0m
+2026-10-30T02:33:13.2602780Z [36;1mpython research/choice_complex_20261029/verify_collapse.py[0m
+2026-10-30T02:33:13.2603231Z [36;1mpython research/choice_complex_20261029/eliminate.py[0m
+2026-10-30T02:33:13.2603669Z [36;1mpython research/choice_complex_20261029/abstract_csp.py[0m
+2026-10-30T02:33:13.2604150Z [36;1mpython research/choice_complex_20261029/boolean_exhaustive.py[0m
+2026-10-30T02:33:13.2622166Z shell: /usr/bin/bash -e {0}
+2026-10-30T02:33:13.2622462Z ##[endgroup]
+2026-10-30T02:33:21.7146259Z {
+2026-10-30T02:33:21.7146859Z   "status": "VERIFIED-COMP",
+2026-10-30T02:33:21.7147166Z   "original_position_join_cases": 554,
+2026-10-30T02:33:21.7147488Z   "connected_cases": 548,
+2026-10-30T02:33:21.7147832Z   "connected_histogram": {
+2026-10-30T02:33:21.7148083Z     "0": 501,
+2026-10-30T02:33:21.7148325Z     "-1": 47
+2026-10-30T02:33:21.7148523Z   },
+2026-10-30T02:33:21.7148748Z   "original_generator_count_histogram": {
+2026-10-30T02:33:21.7149067Z     "25": 5,
+2026-10-30T02:33:21.7149463Z     "0": 183,
+2026-10-30T02:33:21.7150025Z     "5": 28,
+2026-10-30T02:33:21.7150325Z     "1": 48,
+2026-10-30T02:33:21.7150772Z     "9": 24,
+2026-10-30T02:33:21.7151039Z     "2": 47,
+2026-10-30T02:33:21.7151249Z     "13": 111,
+2026-10-30T02:33:21.7151483Z     "6": 72,
+2026-10-30T02:33:21.7151677Z     "29": 36
+2026-10-30T02:33:21.7151886Z   },
+2026-10-30T02:33:21.7152098Z   "exhaustive_n10_partitions": 126,
+2026-10-30T02:33:21.7152404Z   "existing_fixtures": 268,
+2026-10-30T02:33:21.7152642Z   "random_cases": 160,
+2026-10-30T02:33:21.7152898Z   "seed": 20261029,
+2026-10-30T02:33:21.7153140Z   "singleton_coefficient": -4,
+2026-10-30T02:33:21.7153416Z   "disconnected_coefficient": 16,
+2026-10-30T02:33:21.7153675Z   "failures": 0
+2026-10-30T02:33:21.7153910Z }
+2026-10-30T02:33:21.7580949Z {'cases': 38, 'collapsed': 38, 'pair_types': {'noncrossing': 5, 'empty': 51, 'frozen': 55, 'bistar': 10, 'two_matching': 5}, 'bad': 0}
+2026-10-30T02:33:21.7796915Z VERIFIED-COMP: 2 normalization counterexamples; all 38 nonconstant geometric examples have connected cover graphs
+2026-10-30T02:33:21.8019604Z VERIFIED-COMP: 13 disjoint orbits cover all 126 patterns; table and majority closure agree
+2026-10-30T02:33:21.8884091Z {"status": "VERIFIED-COMP", "interleavings": 252, "crossing_interleavings": 242, "nonempty_crossing_relations": 140, "majority_triples_checked": 175980}
+2026-10-30T02:33:21.9091295Z {"rows": 252, "shards": 6, "shapes": {"rectangle": 120, "empty": 102, "fan": 20, "two_points": 10}}
+2026-10-30T02:33:21.9582218Z {"status": "VERIFIED-COMP", "majority_closed_relations": 14, "exhaustive_three_variable_systems": 2619, "rigid_systems": 459, "geometric_separated_pairs": 330, "geometric_rigid_pairs": 10, "hypothesis_removal_controls": 4, "failures": 0}
+2026-10-30T02:33:23.0289083Z {"status": "VERIFIED-COMP", "method": "first solution, separated second solution, raw-constraint SCC", "rows": [{"classes": 2, "positions": 10, "patterns": 126, "connected": 121, "feasible": 70, "separated_pair_found": 14, "support": 5, "search_nodes": 2094}, {"classes": 3, "positions": 15, "patterns": 126126, "connected": 124276, "feasible": 12270, "separated_pair_found": 254, "support": 35, "search_nodes": 1242848}]}
+2026-10-30T02:33:24.3461859Z {"cases": {"n10_bijections": 126, "n10_connected_coefficients": 121, "n15_bijections": 254, "n15_connected_coefficients": 254, "n5_bijections": 1, "single_class_exclusion_control": 1}, "coefficient_histogram": {"-1": 40, "0": 335}, "global_nc_certificate_catalogue": {"n10": 180, "n15": 10010, "n5": 5}, "method": "global NC interval decomposition; actual position-partition signed joins", "scope": "n10 all 126 partitions; n15 saved separated-pair fixtures; n5 exclusion control", "status": "VERIFIED-COMP"}
+2026-10-30T02:33:24.4233350Z VERIFIED-COMP: replayed 38 collapse certificates
+2026-10-30T02:33:24.4534249Z VERIFIED-COMP: constructed and replayed 38 paper-proof collapse certificates
+2026-10-30T02:33:26.2206294Z {'tested': 6000, 'nontrivial': 1911, 'paper_construction_verified': 1911, 'coefficient_0': 1911}
+2026-10-30T02:33:26.2206945Z counterexamples 0
+2026-10-30T02:33:26.8509253Z {'status': 'VERIFIED-COMP', 'j': 4, 'presentations': 117649, 'stats': {'connected_presentations': 116208, 'distinct_nontrivial_relations': 2640, 'paper_construction_verified': 2640}, 'distinct_relations': 3681, 'counterexamples': []}
+2026-10-30T02:33:26.8646003Z Post job cleanup.
+2026-10-30T02:33:26.9203573Z [command]/usr/bin/git version
+2026-10-30T02:33:26.9236910Z git version 2.56.0
+2026-10-30T02:33:26.9260659Z Temporarily overriding HOME='/home/runner/work/_temp/8e81dca5-65b1-439b-9aaa-ef3eb0434006' before making global git config changes
+2026-10-30T02:33:26.9261326Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-30T02:33:26.9264526Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/jdh1701-lc004-same-game-/jdh1701-lc004-same-game-
+2026-10-30T02:33:26.9297031Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-30T02:33:26.9326008Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-30T02:33:26.9527514Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-30T02:33:26.9641259Z http.https://github.com/.extraheader
+2026-10-30T02:33:26.9645777Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-30T02:33:26.9647659Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-30T02:33:26.9826242Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-30T02:33:26.9863102Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-30T02:33:27.0175542Z Cleaning up orphan processes
+2026-10-30T02:33:27.0426632Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+

@@ -32,3 +32,11 @@ certificate family.
 No j=8 completion is claimed. No closed formula is inferred from the six counts.
 The successful original-family replay validates positives; the paper bijection
 and search traversal, plus smaller certificate-first censuses, address completeness.
+
+Hosted formal attempt637968a7 (run41221730803) failed in the adjacency
+corollary: omega treated the value of a constructed Fin index as an opaque
+variable. The ordinary and wraparound gap lemmas and finite catalogue facts
+compiled. Replacing that tactic step with an explicit change to natural-number
+inequalities fixed the elaboration. Corrected source464f98e0 passes the entire
+build and axiom audit. The failed log is preserved, including its error-generated
+sorryAx report; no failed declaration is accepted as a proof.

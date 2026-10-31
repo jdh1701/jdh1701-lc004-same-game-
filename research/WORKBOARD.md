@@ -752,3 +752,15 @@ Hosted formal status and exact receipts: primitive_core_20261031/.
 Reconciled PR35 at c88cc090: review of PR45 only, not independent review of
 these new results. Exceptional no-three-run first-excess and general higher
 excess remain OPEN, as does the full winning-word problem.
+
+PR47 final verification: source464f98e0996dfea5e9c79bb98bccfb0daa03521b,
+run41222379964, Lean124599458558 and exact124599458416 both SUCCESS.
+247 modules,4164 declarations, standard axioms only, both negative guards pass.
+Common gaps (ordinary and wraparound), adjacency, and finite five-state facts
+are PROVED-LEAN. Full run-shape, core bijection and counting remain PROVED-PAPER.
+All1522974 original-family replays reproduce; complete logs and the one failed
+arithmetic elaboration are preserved in primitive_core_20261031/receipts.json.
+The paper run-shape proof also applies to every five-class in an arbitrary
+connected complete TWO-generator full-join source, with other class sizes
+unrestricted. This is the next first-excess enumeration's premise, not a claim
+that all first-excess survivors have two generators.

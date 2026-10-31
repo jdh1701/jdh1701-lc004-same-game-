@@ -30,6 +30,15 @@ proof. Formal status and exact hosted pins are recorded separately; no local
 Lean runtime is available. Neither the complete paper assembly nor the C++
 search is being labeled a kernel-checked theorem.
 
+**Final hosted verification:** source
+464f98e0996dfea5e9c79bb98bccfb0daa03521b, run41222379964, Lean124599458558
+and exact124599458416 both completed/SUCCESS. All247 modules build and all4164
+project declarations pass the standard-axiom audit; both negative guards pass.
+The common-gap lemmas, adjacency corollary and finite catalogue facts are now
+**PROVED-LEAN**. All1,522,974 complete original-family replays and all recorded
+hashes reproduce at that source. The first failed arithmetic elaboration and
+both complete final job logs are archived with hashes in receipts.json.
+
 ## 1. A common chord forces an empty class gap
 
 Let F be a finite family of noncrossing partitions refining p, with join p.
@@ -96,6 +105,14 @@ Dependencies are explicit: the original two-generator law and restricted
 cancellation have certified Lean versions; the arbitrary-position transport
 and no-three-run assembly in PR46 remain paper proofs. The new finite catalogue
 and common-gap lemmas do not by themselves formalize this entire assembly.
+
+The same argument has a useful stronger conditional form: in ANY nontrivial
+connected pattern whose complete original family consists of two generators
+with full join, every five-class has shape (1,2,2), irrespective of the sizes
+of its other classes. The all-five hypothesis above was used only to obtain
+the two-generator family. Restricted cancellation and the no-three-run theorem
+already allow arbitrary other class sizes. This extension supports the separate
+two-generator first-excess enumeration begun in the following research folder.
 
 ## 3. The compressed objects and their exact recognition
 

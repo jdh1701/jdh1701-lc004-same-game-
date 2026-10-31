@@ -644,3 +644,35 @@ Run shapes persist finitely; general classification remains conjectural.
 Rechecked PR35 at352d5b54: reviews and n11 check, no new Lean modules.
 Details, reproducible sources, failures and scope: research/first_excess_20261031/.
 Owner: none. General all-length counting remains OPEN.
+
+
+## 2026-10-31 GPT: adjacent inflation sign dichotomy
+
+Base PR44 c98dc7bf; no intervening proof changes found in PR35/41–44.
+PROVED-PAPER: for an all-five complete two-generator source with full join,
+inflating an adjacent equal pair gives coefficient-1 and3 generators iff that
+pair is a two-point block in one source certificate; otherwise it gives+1
+and4 generators. The latter branch is conditional, with no actual pattern
+exhibited. The proof uses an exact8-to5 outside-gap signature map.
+New Lean targets: finite signature identity, arbitrary-context family lifting,
+universal-state exclusion,3/4 lift cardinality, and a general four-generator
+positive coefficient lemma. Full original-position bridge remains formal work.
+Hosted status and exact source are pinned in research/inflation_law_20261031/.
+Bounded n30 obstruction search:109302102 insertion cases over767 n25 fixtures,
+40472 survivor COMPLETIONS, zero uncovered adjacent pairs. Not a full census;
+64 positive completions independently replayed and all767 source adjacency
+fixtures checked. The geometric obstruction is still an open conjecture.
+Owner: none. Full counting and exceptional first-excess enumeration remain OPEN.
+
+PR45 final verification: corrected source e488ba8696e069061711295dedd7947b31a3c964,
+run41175791540, Lean124462965007 and exact124462964843 both SUCCESS.
+245 modules,4101 audited declarations, standard axioms only; negative guards
+pass. Local/context transfer and four-generator coefficient rule PROVED-LEAN.
+The original-position inflation theorem and no-three-run corollary remain
+PROVED-PAPER; the formal geometric bridge is not silently promoted.
+Supplementary paper identity: for connected all-five p with at least two classes
+and a designated
+adjacent equal pair, kappa(inflate p)=kappa(p)-2*kappa_T(p), where the restricted
+original family T keeps only certificates placing that pair in a triple.
+Finite15-type algebra and297 pattern probes pass locally; not Lean/hosted
+verification. Details and reproduction in inflation_law_20261031/TRANSFER_FORMULA.md.

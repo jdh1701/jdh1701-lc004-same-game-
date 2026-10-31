@@ -271,3 +271,6 @@ import LC004.ConnectedCoefficientSupport
 import LC004.ConnectedCoefficientInterpolation
 import LC004.ConnectedFirstExcess
 import LC004.SmallGeneratorCoefficients
+
+import LC004.AdjacentInflationKernel
+import LC004.FourGeneratorPositiveCoefficient

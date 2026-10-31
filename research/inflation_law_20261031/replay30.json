@@ -1,0 +1,7 @@
+{
+  "status": "VERIFIED-COMP",
+  "parent_adjacency_fixtures_checked": 767,
+  "positive_completions_independently_replayed": 64,
+  "fixture_sha256": "72520caa95c0f37931bd8aa81975f56f5eb33626d2b8e5d7cd550c343a7071e5",
+  "scope": "All fixture adjacency properties; first 64 positive completions only. No independent exhaustive replay of the bounded search."
+}

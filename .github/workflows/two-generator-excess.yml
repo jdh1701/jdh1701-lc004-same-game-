@@ -1,0 +1,26 @@
+name: Complete two-generator first-excess cores
+on:
+  push:
+    branches: [research/two-generator-excess-20261031]
+    paths:
+      - 'research/two_generator_excess_20261031/**'
+      - '.github/workflows/two-generator-excess.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  exact:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Exhaustive two-generator search and complete original-family replay
+        run: |
+          set -eo pipefail
+          python research/two_generator_excess_20261031/check.py 2>&1 | tee two-generator-exact.log
+          git diff --exit-code -- research/two_generator_excess_20261031/checks.json research/two_generator_excess_20261031/preparation.json research/two_generator_excess_20261031/catalogues.txt research/two_generator_excess_20261031/types.txt research/two_generator_excess_20261031/sample_*.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: two-generator-excess-exact
+          path: two-generator-exact.log

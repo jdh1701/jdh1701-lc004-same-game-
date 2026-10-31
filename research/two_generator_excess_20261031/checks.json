@@ -1,0 +1,267 @@
+{
+  "n26_disjoint_proved_families": {
+    "combined_lower_bound": 116857,
+    "exhausts_all_nonzero_first_excess_patterns": "NOT PROVED",
+    "two_generators": 49725,
+    "unique_three_run": 67132
+  },
+  "not_full_first_excess_census": true,
+  "scope": "complete two-generator full-join connected first-excess family",
+  "sizes": [
+    {
+      "accepted_by_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "classes": 2,
+      "csp_nodes": 0,
+      "explicit_rotation_union": 0,
+      "failures": 0,
+      "layers": [
+        {
+          "accepted": 0,
+          "connected": 28,
+          "nodes": 378,
+          "original_patterns": 0,
+          "pairs": 28,
+          "six_core_vertices": 4
+        },
+        {
+          "accepted": 0,
+          "connected": 9,
+          "nodes": 597,
+          "original_patterns": 0,
+          "pairs": 9,
+          "six_core_vertices": 6
+        }
+      ],
+      "original_complete_family_replays": 0,
+      "python_original_samples": 0,
+      "six_run_shapes": [],
+      "two_generator_first_excess": 0,
+      "witness_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "accepted_by_type": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        2,
+        2,
+        8,
+        6,
+        0,
+        4,
+        7,
+        7,
+        0,
+        6,
+        4,
+        8
+      ],
+      "classes": 3,
+      "csp_nodes": 580,
+      "explicit_rotation_union": 88,
+      "failures": 0,
+      "layers": [
+        {
+          "accepted": 50,
+          "connected": 810,
+          "nodes": 12582,
+          "original_patterns": 80,
+          "pairs": 1410,
+          "six_core_vertices": 4
+        },
+        {
+          "accepted": 6,
+          "connected": 414,
+          "nodes": 16407,
+          "original_patterns": 8,
+          "pairs": 918,
+          "six_core_vertices": 6
+        }
+      ],
+      "original_complete_family_replays": 56,
+      "python_original_samples": 11,
+      "six_run_shapes": [
+        {
+          "core_witnesses": 6,
+          "shape": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "core_witnesses": 50,
+          "shape": [
+            1,
+            1,
+            2,
+            2
+          ]
+        }
+      ],
+      "two_generator_first_excess": 88,
+      "witness_sha256": "b3df5594a4209bfe973c568456befee0065e295dfa59537639bbbdb831027c2d"
+    },
+    {
+      "accepted_by_type": [
+        0,
+        0,
+        0,
+        39,
+        0,
+        33,
+        33,
+        187,
+        156,
+        0,
+        91,
+        156,
+        198,
+        0,
+        156,
+        91,
+        187
+      ],
+      "classes": 4,
+      "csp_nodes": 17384,
+      "explicit_rotation_union": 2121,
+      "failures": 0,
+      "layers": [
+        {
+          "accepted": 1222,
+          "connected": 19500,
+          "nodes": 558856,
+          "original_patterns": 1974,
+          "pairs": 32760,
+          "six_core_vertices": 4
+        },
+        {
+          "accepted": 105,
+          "connected": 9340,
+          "nodes": 639061,
+          "original_patterns": 147,
+          "pairs": 18700,
+          "six_core_vertices": 6
+        }
+      ],
+      "original_complete_family_replays": 1327,
+      "python_original_samples": 11,
+      "six_run_shapes": [
+        {
+          "core_witnesses": 105,
+          "shape": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "core_witnesses": 1222,
+          "shape": [
+            1,
+            1,
+            2,
+            2
+          ]
+        }
+      ],
+      "two_generator_first_excess": 2121,
+      "witness_sha256": "460f2081ea2e53fb7c6a87f720847b4a506d8c7555d298ff2b24218d4599c737"
+    },
+    {
+      "accepted_by_type": [
+        0,
+        0,
+        0,
+        757,
+        0,
+        589,
+        589,
+        4336,
+        3790,
+        0,
+        2034,
+        3509,
+        5051,
+        0,
+        3790,
+        2034,
+        4336
+      ],
+      "classes": 5,
+      "csp_nodes": 482716,
+      "explicit_rotation_union": 49725,
+      "failures": 0,
+      "layers": [
+        {
+          "accepted": 28880,
+          "connected": 517872,
+          "nodes": 24641432,
+          "original_patterns": 46930,
+          "pairs": 937520,
+          "six_core_vertices": 4
+        },
+        {
+          "accepted": 1935,
+          "connected": 238419,
+          "nodes": 26395274,
+          "original_patterns": 2795,
+          "pairs": 528111,
+          "six_core_vertices": 6
+        }
+      ],
+      "original_complete_family_replays": 30815,
+      "python_original_samples": 11,
+      "six_run_shapes": [
+        {
+          "core_witnesses": 1935,
+          "shape": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "core_witnesses": 28880,
+          "shape": [
+            1,
+            1,
+            2,
+            2
+          ]
+        }
+      ],
+      "two_generator_first_excess": 49725,
+      "witness_sha256": "bd3c54ea05677176ceab6d9f17746ad88db2b57719b23f064659f96228c784a5"
+    }
+  ]
+}

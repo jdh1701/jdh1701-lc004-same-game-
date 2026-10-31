@@ -764,3 +764,41 @@ The paper run-shape proof also applies to every five-class in an arbitrary
 connected complete TWO-generator full-join source, with other class sizes
 unrestricted. This is the next first-excess enumeration's premise, not a claim
 that all first-excess survivors have two generators.
+
+## 2026-10-31 GPT: complete two-generator first-excess cores
+
+PROVED-PAPER enumeration of the complete TWO-generator/full-join connected
+first-excess stratum, for arbitrary j>=2. Every five-class compresses by the
+conditional extension of PR47. The unique six-class has22 possible unordered
+local full-join pairs. Contract only their shared cyclic edges, whose global
+adjacency is proved by the common-gap lemma:17 compressed types remain,
+10 on4 vertices and7 on6 vertices. No conjectural six-class run shape is used.
+Canonical search visits every candidate; SCC is only a necessary filter,
+and acceptance always regenerates the COMPLETE original family.
+Orbit weighting retains stabilizers: T_(j,k)=(5j+1)N_(j,k)/(3(j-1)+k).
+
+VERIFIED-COMP local: two-generator totals0,88,2121,49725 at j2..5.
+The new n26 count is46930+2795 from the two core-size strata. Every positive
+core is replayed with separately regenerated original catalogues and crossing
+tests, and all original rotations are explicitly unioned. Earlier full n16
+and n21 census strata agree as explicit pattern sets. Removing SCC reproduces
+the positive streams; the initial n26 unfiltered discovery is archived.
+The n26 two-generator stratum and the67132 proved three-run survivors are
+disjoint, giving116857 known surviving patterns. This is a LOWER BOUND on the
+full first-excess population, not a full census or an A035617 term.
+
+Remaining finishing obligation for this layer: rule out a nonzero connected
+first-excess pattern with no three-run and at least3 original certificates.
+No new Lean code is introduced. The enumeration assembly is PROVED-PAPER;
+hosted exact-source computational status is in two_generator_excess_20261031/.
+General higher excess and the full counting problem remain OPEN.
+
+PR48 final verification: sourceb0b0288d68b1671fab092be9c638e203e149beca,
+run41223523261, exact124602808734 completed/SUCCESS. All32198 complete original
+family replays, rotation unions, old-census set equalities and witness hashes
+reproduce. The length26 count is49725 for the complete two-generator stratum;
+the combined116857 remains a population LOWER BOUND for all first-excess.
+No new Lean files; the formal tree is unchanged from PR47's audited source.
+Full log and hashes: two_generator_excess_20261031/receipts.json. Its HANDOFF.md
+states the precise remaining first-excess theorem and the separate higher-
+excess obligations. PR35 was rechecked and remains at c88cc090.

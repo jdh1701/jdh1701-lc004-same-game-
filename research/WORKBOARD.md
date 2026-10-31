@@ -663,3 +663,15 @@ Bounded n30 obstruction search:109302102 insertion cases over767 n25 fixtures,
 64 positive completions independently replayed and all767 source adjacency
 fixtures checked. The geometric obstruction is still an open conjecture.
 Owner: none. Full counting and exceptional first-excess enumeration remain OPEN.
+
+PR45 final verification: corrected source e488ba8696e069061711295dedd7947b31a3c964,
+run41175791540, Lean124462965007 and exact124462964843 both SUCCESS.
+245 modules,4101 audited declarations, standard axioms only; negative guards
+pass. Local/context transfer and four-generator coefficient rule PROVED-LEAN.
+The original-position inflation theorem and no-three-run corollary remain
+PROVED-PAPER; the formal geometric bridge is not silently promoted.
+Supplementary paper identity: for connected all-five p with a designated
+adjacent equal pair, kappa(inflate p)=kappa(p)-2*kappa_T(p), where the restricted
+original family T keeps only certificates placing that pair in a triple.
+Finite15-type algebra and297 pattern probes pass locally; not Lean/hosted
+verification. Details and reproduction in inflation_law_20261031/TRANSFER_FORMULA.md.

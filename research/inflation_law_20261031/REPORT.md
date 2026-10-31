@@ -193,3 +193,18 @@ settle uniform adjacent-inflation preservation for these survivors. It would
 NOT classify all first-excess survivors: the exceptional two-generator cases
 from the n16/n21 censuses and higher excess remain outside that construction.
 The original full counting problem is still open.
+
+## Final exact-source verification
+
+Corrected source e488ba8696e069061711295dedd7947b31a3c964 passes both jobs in
+run41175791540: exact124462964843 and Lean124462965007 SUCCESS. Full coverage
+245 modules; axiom audit4101 declarations, standard axioms only; negative
+verification guards pass. The local/context results and general four-generator
+coefficient rule are PROVED-LEAN. The original-game inflation assembly and
+no-three-run consequence remain PROVED-PAPER.
+
+The supplementary TRANSFER_FORMULA.md derives a broader correction identity
+for arbitrary connected all-five source families. It has a full paper argument,
+a15-type local algebra check and297 finite original-position checks, recorded
+with reproduction code. These supplemental checks are LOCAL, not part of the
+pinned hosted workflow. The global formula is not claimed Lean-certified.

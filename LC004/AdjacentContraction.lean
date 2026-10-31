@@ -44,7 +44,9 @@ theorem duplicate_contractInitial {n : Nat} (p : ColorPattern (n + 2))
   have hx (x : Fin (n + 2)) : p x (adjacentProjection x).succ := by
     induction x using Fin.cases with
     | zero => simpa using h
-    | succ i => simpa using p.refl i.succ
+    | succ i =>
+      change p i.succ i.succ
+      exact p.refl _
   ext x y
   change p (adjacentProjection x).succ (adjacentProjection y).succ ↔ p x y
   exact ⟨fun hxy => p.trans (p.trans (hx x) hxy) (p.symm (hx y)),
@@ -63,7 +65,6 @@ theorem patternNoncrossing_monotone_comap {n m : Nat} (p : ColorPattern n)
   change p (f a) (f b)
   by_cases h : f a = f b
   · rw [h]
-    exact p.refl _
   by_cases k : f b = f c
   · simpa only [k] using hac
   by_cases l : f c = f d
@@ -75,7 +76,7 @@ theorem duplicateInitial_noncrossing_iff {n : Nat} (p : ColorPattern (n + 1)) :
     PatternNoncrossing (duplicateInitial p) ↔ PatternNoncrossing p := by
   constructor
   · intro h a b c d hab hbc hcd hac hbd
-    have he := h a.succ b.succ c.succ d.succ hab hbc hcd
+    have he := h a.succ b.succ c.succ d.succ (by omega) (by omega) (by omega)
     simpa [duplicateInitial, Setoid.comap] using he hac hbd
   · exact patternNoncrossing_monotone_comap p _ adjacentProjection_mono
 
@@ -94,14 +95,14 @@ theorem duplicateInitial_connected_iff {n : Nat} (p : ColorPattern (n + 1)) :
     simpa [duplicateInitial, Setoid.comap] using he
   · intro h q hpq hq
     have hc : PatternNoncrossing (contractInitial q) :=
-      patternNoncrossing_monotone_comap q Fin.succ (fun _ _ hab => hab) hq
+      patternNoncrossing_monotone_comap q Fin.succ (by intro a b hab; omega) hq
     have ht := h (contractInitial q) (by
       intro a b hab
       apply hpq
       simpa [duplicateInitial, Setoid.comap] using hab) hc
     have hpair : q 0 (Fin.succ 0) := hpq (by
-      change p (adjacentProjection 0) (adjacentProjection (Fin.succ 0))
-      simpa using p.refl 0)
+      change p 0 0
+      exact p.refl 0)
     rw [← duplicate_contractInitial q hpair, ht]
     rfl
 
@@ -112,9 +113,13 @@ theorem duplicateInitial_class_card {n : Nat} (p : ColorPattern (n + 1))
       (if p (adjacentProjection x) 0 then 1 else 0) +
         (patternClassPositions p (adjacentProjection x)).card := by
   classical
-  simp only [patternClassPositions, ← Finset.sum_boole]
-  rw [Fin.sum_univ_succ]
-  simp [duplicateInitial, Setoid.comap]
+  calc
+    _ = ∑ i : Fin (n + 2), if duplicateInitial p x i then (1 : Nat) else 0 :=
+      (Finset.sum_boole _ _).symm
+    _ = _ := by
+      rw [Fin.sum_univ_succ]
+      simp only [duplicateInitial, Setoid.comap, adjacentProjection_zero,
+        adjacentProjection_succ, Finset.sum_boole, patternClassPositions, Nat.cast_id]
 
 theorem certificateConstraint_four_class_pair {n : Nat} (p c : ColorPattern n)
     (hc : CertificateConstraint c) (hle : c ≤ p) (i : Fin n)
@@ -131,7 +136,11 @@ theorem duplicateInitial_certificate_iff {n : Nat} (c : ColorPattern (n + 1)) :
     (CertificateConstraint c ∧ (patternClassPositions c 0).card = 2) := by
   have hzero : (patternClassPositions (duplicateInitial c) 0).card =
       1 + (patternClassPositions c 0).card := by
-    simpa [c.refl 0] using duplicateInitial_class_card c 0
+    have h := duplicateInitial_class_card c 0
+    change (patternClassPositions (duplicateInitial c) 0).card =
+      (if c 0 0 then 1 else 0) + (patternClassPositions c 0).card at h
+    rw [if_pos (show c 0 0 from c.refl 0)] at h
+    exact h
   constructor
   · rintro ⟨hc, hcard⟩
     have htwo : (patternClassPositions c 0).card = 2 := by omega
@@ -179,29 +188,30 @@ theorem initialTripleCertificate_iff {n : Nat} (p : ColorPattern (n + 1))
     have htwo := certificateConstraint_four_class_pair p d hd hle 0 hp
     have hcert := (duplicateInitial_certificate_iff d).mpr ⟨hd, htwo⟩
     refine ⟨hcert.1, fun _ _ hab => hle hab, ?_, hcert.2⟩
-    change d (adjacentProjection 0) (adjacentProjection (Fin.succ 0))
-    simpa using d.refl 0
+    change d 0 0
+    exact d.refl 0
 
 /-- Pullback along the adjacent contraction preserves binary joins. -/
 theorem duplicateInitial_sup {n : Nat} (p q : ColorPattern (n + 1)) :
     duplicateInitial (p ⊔ q) = duplicateInitial p ⊔ duplicateInitial q := by
   apply le_antisymm
   · let r := duplicateInitial p ⊔ duplicateInitial q
+    have hp : duplicateInitial p ≤ r := le_sup_left
+    have hq : duplicateInitial q ≤ r := le_sup_right
     have hle : p ⊔ q ≤ contractInitial r := sup_le (by
       intro a b hab
-      apply le_sup_left
-      simpa [duplicateInitial, Setoid.comap] using hab) (by
+      exact hp (show duplicateInitial p a.succ b.succ from hab)) (by
       intro a b hab
-      apply le_sup_right
-      simpa [duplicateInitial, Setoid.comap] using hab)
+      exact hq (show duplicateInitial q a.succ b.succ from hab))
     have hx (x : Fin (n + 2)) : r x (adjacentProjection x).succ := by
-      apply le_sup_left
-      change p (adjacentProjection x) (adjacentProjection (adjacentProjection x).succ)
-      simp only [adjacentProjection_succ]
+      apply hp
+      change p (adjacentProjection x) (adjacentProjection x)
       exact p.refl _
     intro a b hab
     exact r.trans (r.trans (hx a) (hle hab)) (r.symm (hx b))
-  · exact sup_le (fun _ _ hab => le_sup_left hab) (fun _ _ hab => le_sup_right hab)
+  · exact sup_le
+      (fun _ _ hab => (show p ≤ p ⊔ q from le_sup_left) hab)
+      (fun _ _ hab => (show q ≤ p ⊔ q from le_sup_right) hab)
 
 theorem certificateJoinTerms_duplicateInitial {n : Nat}
     (cs : List (ColorPattern (n + 1))) :
@@ -267,7 +277,8 @@ theorem initialTripleCoefficient_zero {n : Nat} (p : ColorPattern (n + 2))
   have hfour : (patternClassPositions q 0).card = 4 := by
     have hcard := duplicateInitial_class_card q 0
     rw [he, hfive] at hcard
-    simp only [adjacentProjection_zero, q.refl 0, if_true] at hcard
+    change 5 = (if q 0 0 then 1 else 0) + (patternClassPositions q 0).card at hcard
+    rw [if_pos (show q 0 0 from q.refl 0)] at hcard
     omega
   have hqc : NCConnected q := (duplicateInitial_connected_iff q).mp (he.symm ▸ hc)
   have hqt : q ≠ ⊤ := by
@@ -275,10 +286,15 @@ theorem initialTripleCoefficient_zero {n : Nat} (p : ColorPattern (n + 2))
     apply hntop
     rw [← he, h]
     rfl
-  rw [← he, initialTripleCoefficient_eq_contracted q hfour]
-  by_contra hne
-  have hge := ncConnected_nonzero_every_class_min_five q hqc hqt hne 0
-  omega
+  have hz : winningJoinCoefficient (n + 1) q = 0 := by
+    by_contra hne
+    have hge := ncConnected_nonzero_every_class_min_five q hqc hqt hne 0
+    omega
+  calc
+    initialTripleCoefficient p = initialTripleCoefficient (duplicateInitial q) :=
+      congrArg initialTripleCoefficient he.symm
+    _ = winningJoinCoefficient (n + 1) q := initialTripleCoefficient_eq_contracted q hfour
+    _ = 0 := hz
 
 #print axioms duplicateInitial_connected_iff
 #print axioms initialTripleCertificate_iff

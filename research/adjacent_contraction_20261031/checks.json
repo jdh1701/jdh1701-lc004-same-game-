@@ -2,6 +2,7 @@
   "status": "VERIFIED-COMP",
   "counts": {
     "binary_join_checks": 145658,
+    "connected_initial_three_run_zero": 9695,
     "connected_multiclass": 42188,
     "connected_nonzero": 42,
     "four_endpoint_and_original_join_replays": 7975,

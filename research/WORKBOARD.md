@@ -697,3 +697,16 @@ VERIFIED-COMP locally:44011 pattern tests,42188 connected multiclass inputs,
 Rechecked PR35 at b0e3f9e4: review only, no new Lean modules. Claude's original
 n11 wording already said22 nonzero connected patterns; our caution clarified
 that distinction and did not correct his reported result.
+
+Further PROVED-PAPER consequences in the same report: any five-point class in
+ANY nonzero nontrivial connected pattern has no three-run, with arbitrary other
+class sizes and no certificate-count premise. Together with the already proved
+all-five survival law, every nonzero first-excess pattern with a three-run has
+a unique triple-run, exactly3 certificates, and coefficient-1. For n=5j,j>=2,
+the number of such labeled cyclic patterns is (n+1)/n times the sum of E(p)
+over nonzero all-five sources, where E counts equal adjacent edges. E(p)=2j
+remains open; the source coefficient -1 and two-generator survival criterion
+were already established in FiveOriginalCoefficientLaw and are not new gaps.
+The checks now also verify9695 connected initial-three-run cases have zero
+coefficient. Original-position inflation/no-three-run/count assembly is paper,
+separate from the new formal initial-pair contraction theorem.

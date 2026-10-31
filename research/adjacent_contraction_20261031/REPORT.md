@@ -123,15 +123,85 @@ examples instead of dropping them.
    classes, and a three-run in its six-class, deleting one point of the run gives
    a connected all-five source with exactly the same coefficient. This identifies
    its nonzero triple-run layer with the inflation image of nonzero all-five
-   sources. The three-generator conclusion applies when the contracted source
-   has the established two-generator hypotheses; no unproved universal
-   classification is substituted here.
+   sources. The previously certified all-five law identifies every such nonzero
+   source with a complete two-generator full-join family. Thus every nonzero
+   first-excess target with a three-run has exactly three generators and
+   coefficient -1, uniformly in the number of classes.
 
 The stronger assertion that every five-class in every survivor has cyclic run
-multiset (1,2,2) is STILL OPEN. The current proof only gives runs of length at
-most two for two-generator full-join sources and covers each existing two-run.
+multiset (1,2,2) is STILL OPEN. The argument below gives runs of length at
+most two for arbitrary nonzero connected sources; the pair-block coverage above
+applies to complete two-generator full-join sources.
 It does not prove that there are two such runs per class. Consequently an
 all-length count using a constant 2j number of inflations remains conditional.
+
+## Stronger no-three-run theorem
+
+**PROVED-PAPER.** In ANY nontrivial connected pattern with nonzero original
+coefficient, a five-point class cannot contain three consecutive positions.
+Other class sizes and certificate-family cardinality are unrestricted.
+
+Rotate the circle so the three-run is the first three occurrences a,b,c of
+the selected class, followed by d,e. Only three gaps can contain outside
+positions: G0 between c,d, G1 between d,e, and G2 between e,a. An outside
+certificate chord between G0,G1 isolates d, and one between G1,G2 isolates e;
+both prohibit every local 2/3 certificate because a singleton cannot be covered.
+A chord between G0,G2 allows exactly the local certificate s={a,b,c}|{d,e}.
+An outside configuration with no chord joining distinct gaps allows all five
+local certificates. Thus every feasible outside configuration has local family
+either {s} or the entire five-state family F.
+
+Use the idempotent join algebra from PR45, with U(F)=1-product(1-E_t).
+Since s belongs to F, E_s U(F)=E_s; also E_s^2=E_s and U(F)^2=U(F).
+Consequently an outside-subset term involving at least one {s}-type configuration
+has local product E_s and contributes zero to the full selected class.
+Every nonempty subset consisting entirely of F-type configurations has local
+product U(F). Distinct five-state certificates each have two blocks, so every
+pair of distinct ones joins to the full five-class. Hence its top coefficient
+is sum(k=2..5) (-1)^(k+1)*binom(5,k)=1-5=-4.
+
+It follows exactly that kappa(p)=-4*gamma_U. Every outside block represented in
+gamma_U stays in one of G0,G1,G2. Nontrivial NCConnectedness supplies a color
+class crossing the distinguished one and therefore meeting distinct gaps.
+No join of those gap-contained outside configurations reaches the outside
+pattern, so gamma_U=0. This proves the theorem without any two-generator
+assumption. The executable check explicitly tests all initial three-runs among
+its connected inputs. This original-position argument is not yet a Lean theorem.
+
+## An exact all-length count relation for the three-run layer
+
+Let n=5j with j>=2, let S_j be the finite set of nonzero connected all-five
+patterns on the labeled cyclic positions, and let E(p) count its equal-color
+adjacent edges. By the preceding theorem, each such edge belongs to a two-run.
+Let H_j be the nonzero connected patterns of profile (6,5,...,5) having a run
+of length at least three in the six-class.
+
+Every member of H_j has exactly one run of length three and no longer run.
+Indeed, deletion from a longer run, or deletion from one of two three-runs,
+would give a connected all-five source with a three-run. Inflation preservation
+and the no-three-run theorem would force its coefficient, and the target's, to
+vanish. Each other five-class also has no three-run by that same general theorem.
+
+Inflation therefore gives a bijection between CYCLIC ORBITS of sources p in S_j
+with a marked equal adjacent edge and cyclic orbits in H_j. Contraction of the
+unique triple-run is the inverse. Coefficients are preserved. A marked source
+edge has trivial rotation stabilizer; so does a target with its unique triple-run.
+If an unmarked source orbit has stabilizer order h, it has n/h labeled members,
+and its E(p) edges form E(p)/h marked orbits. Each target orbit has n+1 members.
+Orbit-by-orbit counting proves the unconditional identities
+
+    |H_j| = (n+1)/n * sum_(p in S_j) E(p),
+
+    sum_(q in H_j) kappa(q)
+      = (n+1)/n * sum_(p in S_j) E(p)*kappa(p).
+
+These are PROVED-PAPER for every j>=2. The known all-five law already gives
+kappa(p)=-1 on S_j, so the signed sum equals -|H_j|. The still-open assertion is
+E(p)=2j. In the finite ranges where it has been verified,
+the unsigned formula specializes to 2*(5j+1)/5 * |S_j| and reproduces
+22,224,3486,67132 for j=2,3,4,5. The last figure is the verified n26 inflation
+family, not a full n26 first-excess census. Turning this identity into a closed
+formula still requires enumerating all-five sources and their two-runs.
 
 ## Verification and reconciliation
 
@@ -153,3 +223,16 @@ the reconciliation check.
 
 No local Lean runtime is available. Only a green hosted full build and complete
 axiom audit at the exact recorded source can promote a claim to PROVED-LEAN.
+
+An additional source-level reconciliation recovered the already certified
+`FiveOriginalCoefficientLaw.lean`, in particular
+`winningJoinCoefficient_five_original_law` and `winningJoinCoefficient_five_range`.
+The original all-five two-generator/full-join survival law is NOT an open
+classification problem. Its enumeration and the exact run-shape assertion are
+open. The old law is formally stated using connectivity of the class-crossing
+graph. Its equivalence to intrinsic NCConnectedness has the usual elementary
+paper justification: a connected collection of blocks not crossing a fixed
+block lies in one of its gaps; applying this twice shows distinct crossing-graph
+components have noncrossing unions. Their union partition is therefore the
+noncrossing closure. This report does not invent a new Lean theorem for that
+connectivity equivalence.

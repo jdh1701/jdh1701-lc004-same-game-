@@ -102,6 +102,9 @@ def check(p, independent=False):
     if cp and len(set(p)) >= 2:
         assert kt == 0
         assert new == old
+        if p[2] == 0:
+            assert old == 0
+            counts['connected_initial_three_run_zero'] += 1
         counts['connected_multiclass'] += 1
         counts['connected_nonzero'] += int(old != 0)
         if len(cs) == 2 and old == -1:

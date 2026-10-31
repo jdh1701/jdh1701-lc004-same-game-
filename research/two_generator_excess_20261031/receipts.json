@@ -1,0 +1,59 @@
+{
+  "status": "VERIFIED-COMP hosted; enumeration/compression theorem PROVED-PAPER",
+  "base_commit": "093d3fba9ce9133b196cd36cd50c9cf96b69e23d",
+  "source_commit": "b0b0288d68b1671fab092be9c638e203e149beca",
+  "source_tree": "280d2f02d92f745fb0bcd1792c2fae270ff48c15",
+  "run": 41223523261,
+  "exact_job": 124602808734,
+  "hosted_conclusion": "success",
+  "source_sha256": {
+    "research/two_generator_excess_20261031/search.cpp": "6de9608a14866815401287735f8b61385d7ead74015d9d460497e9d819859f2e",
+    "research/two_generator_excess_20261031/replay.cpp": "7862d5532751b5f1d5e961511d764b3b4aceca4cbf44e2cfe0a9cc4ddcd5ac9b",
+    "research/two_generator_excess_20261031/prepare.py": "da21ea0ca645536b2ff8688cff6ab24fb4905949a17c9708fd1cd33b6e4902b1",
+    "research/two_generator_excess_20261031/check.py": "21a243bc3e94a366121d2379535351f384c1184cc7a2842a4ce14273f26ba146",
+    "research/two_generator_excess_20261031/checks.json": "1f8a02f658003d6ae88b6498593004ba6a17401f4a66fb6504210ed1cc015f0b",
+    "research/two_generator_excess_20261031/preparation.json": "f0bdbeb796925ad54c4a56b2b0b0b7f62b0fd3a4c73a97471e4a6279fde7de35",
+    "research/two_generator_excess_20261031/catalogues.txt": "3888335efb8c0627194a3d0cffe2a7918ed0a0c28c35746de0f737463521e3ec",
+    "research/two_generator_excess_20261031/types.txt": "ecf2e0bf54544c08fb5d980b8d01f0d1b94d1ef1558f4abff1d7fabcc1172a9a",
+    "research/two_generator_excess_20261031/initial-unfiltered-probe.json": "10b143a9538f5deae73cda4c323fe6fd60293a2779c41cc505423c6fcfe357ab",
+    ".github/workflows/two-generator-excess.yml": "fa098d12776ce3ed27efa73b577b30a1ccae582b693892f7f9efe26054f91746"
+  },
+  "hosted_log_sha256": "30f174e1d27500418088e94787f22043125edc21f73083adc43983cddac90a9b",
+  "hosted_archive_sha256": "984910bbd93398bc73e43c669a2d9bc16cba9163bf4c8d320f1af2d9e3b8ba29",
+  "initial_unfiltered_archive_sha256": "9f67b71bba61272fd6fc7baba6ec10ff54b6ccdd5c6aca9c72be60075f43d857",
+  "classes_range": [
+    2,
+    5
+  ],
+  "original_complete_family_replays": 32198,
+  "two_generator_counts": [
+    0,
+    88,
+    2121,
+    49725
+  ],
+  "explicit_rotation_unions": "all four sizes",
+  "prior_complete_census_set_comparison": "n16 and n21 two-generator strata; n11 empty stratum",
+  "filtered_unfiltered_stream_equality": "all sizes through j5; initial unfiltered j5 stream hash independently retained",
+  "new_lean_files": false,
+  "supporting_formal_source": "464f98e0996dfea5e9c79bb98bccfb0daa03521b",
+  "supporting_formal_modules": 247,
+  "supporting_audited_declarations": 4164,
+  "formal_tree_unchanged": true,
+  "n26_two_generator_count": 49725,
+  "n26_three_run_count": 67132,
+  "n26_combined_population_lower_bound": 116857,
+  "full_n26_first_excess_census": false,
+  "open_problem_solved": false,
+  "remaining": [
+    "exclude nonzero no-three-run first-excess patterns with at least three original certificates",
+    "higher-excess connected families",
+    "full all-length winning-word enumeration"
+  ],
+  "reconciliation": {
+    "PR35_head": "c88cc0906591ad2b79cdeb168f04a77bf5950553",
+    "unchanged_at_final_check": true,
+    "review_scope": "PR45 only; not independent review of the new results"
+  },
+  "failed_hosted_attempts": []
+}

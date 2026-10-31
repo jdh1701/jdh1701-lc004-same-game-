@@ -42,6 +42,16 @@ certified at source464f98e0996dfea5e9c79bb98bccfb0daa03521b, with247 modules
 and4164 audited declarations. The present enumeration theorem is a paper proof,
 and the finite counts have separate computational receipts.
 
+**Final hosted verification:** source
+b0b0288d68b1671fab092be9c638e203e149beca, run41223523261, job124602808734
+completed/SUCCESS. All32198 positive original-family replays, all explicit
+rotation unions, previous-census pattern-set comparisons and witness hashes
+reproduce. The n26 stream agrees with the initial unfiltered discovery hash.
+No Lean source changed from the supporting certified source. Full hosted log,
+source hashes, the initial probe and exact scope are retained in receipts.json
+and the adjacent archives. The final receipt commit changes documentation and
+evidence only. PR35 remains at c88cc090, with no new proof to integrate.
+
 ## 1. Why the five-classes still compress
 
 Suppose the complete original family is {c,d} and c join d=p. On every

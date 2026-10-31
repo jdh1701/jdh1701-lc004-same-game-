@@ -792,3 +792,13 @@ first-excess pattern with no three-run and at least3 original certificates.
 No new Lean code is introduced. The enumeration assembly is PROVED-PAPER;
 hosted exact-source computational status is in two_generator_excess_20261031/.
 General higher excess and the full counting problem remain OPEN.
+
+PR48 final verification: sourceb0b0288d68b1671fab092be9c638e203e149beca,
+run41223523261, exact124602808734 completed/SUCCESS. All32198 complete original
+family replays, rotation unions, old-census set equalities and witness hashes
+reproduce. The length26 count is49725 for the complete two-generator stratum;
+the combined116857 remains a population LOWER BOUND for all first-excess.
+No new Lean files; the formal tree is unchanged from PR47's audited source.
+Full log and hashes: two_generator_excess_20261031/receipts.json. Its HANDOFF.md
+states the precise remaining first-excess theorem and the separate higher-
+excess obligations. PR35 was rechecked and remains at c88cc090.

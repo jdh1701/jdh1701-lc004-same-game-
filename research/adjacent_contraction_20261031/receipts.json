@@ -1,0 +1,90 @@
+{
+  "status": "PROVED-LEAN initial-pair original restricted cancellation; PROVED-PAPER inflation and enumeration consequences",
+  "base_commit": "ff5d10c9041b5215c231182bc660f8a5da2cbc9b",
+  "source_commit": "2aa11592904ab96c9fe7d1961f884256e4994a0c",
+  "source_tree": "53b3c317df0a7ee931822cc5452502a81fcd5674",
+  "run": 41211059715,
+  "source_sha256": {
+    "LC004/AdjacentContraction.lean": "bc371ce3c4762bd4ce6f11eaa2c50d9eb1c49e976239a0dc593187650845df1b",
+    "LC004.lean": "0fd04991d349254aa7e87175adccb38f1999b56835ed7827bb6f9bae908e0efc",
+    ".github/workflows/adjacent-contraction.yml": "5b153055c21ec804e12cd0ac7e60ef04e41f3b5319092beaf44e554b3d4300f1",
+    "research/adjacent_contraction_20261031/check.py": "f0de0ec4e9984777d0a6df4cb5f260a07cb0347b77766c7c3bd92cd79d38c3e4",
+    "research/adjacent_contraction_20261031/checks.json": "1b8c8a279f087597ddcc45fcd0ddc51f0b9bc647289b0f770aa31894b41127eb"
+  },
+  "log_sha256": {
+    "lean": "e1856bce8227697095275d7602dd0d82dea251a8906cf6ad542b0c0aca40588f",
+    "exact": "4a62a8d067396efd46d3c786cbfaef056f5a2740a0496601a549ef69c9a84e1d"
+  },
+  "hosted_status": "success",
+  "hosted_jobs": {
+    "lean": {
+      "id": 124565960423,
+      "conclusion": "success"
+    },
+    "exact": {
+      "id": 124565960262,
+      "conclusion": "success"
+    }
+  },
+  "modules": 246,
+  "audited_declarations": 4140,
+  "standard_axioms_only": true,
+  "negative_coverage_guard": "pass",
+  "negative_axiom_guard": "pass",
+  "local_lean_runtime": "unavailable",
+  "archive_sha256": "ce636af3b26640d71465ec260281e74f13953b72acfe22414b2a7037842276b3",
+  "formal_scope": [
+    "actual initial triple-certificate family bijection",
+    "connectedness preservation in both directions",
+    "nonempty join and signed coefficient transport",
+    "initialTripleCoefficient_eq_contracted",
+    "initialTripleCoefficient_zero for any other class sizes"
+  ],
+  "paper_scope": [
+    "cyclic arbitrary-adjacent-pair transport",
+    "uniform adjacent inflation preservation",
+    "five-class no-three-run theorem for arbitrary other class sizes",
+    "unique three-run first-excess layer: coefficient -1 and exactly three generators",
+    "orbit counting identity and upper bound for the three-run layer"
+  ],
+  "open_problem_solved": false,
+  "remaining": [
+    "enumeration of all-five survivor pairs",
+    "universal (1,2,2) five-class run-shape assertion",
+    "exceptional first-excess families without a three-run",
+    "higher-excess and all-length winning-word enumeration"
+  ],
+  "attempts": [
+    {
+      "source": "15c87b88e652f7cb654456aecb0a9532a3376963",
+      "run": 41209707304,
+      "lean_job": 124561923620,
+      "lean_result": "failure",
+      "exact_job": 124561923934,
+      "exact_result": "success"
+    },
+    {
+      "source": "36558c8316616b208277b8bf2c9ab843620ace03",
+      "run": 41210798354,
+      "lean_job": 124565158731,
+      "lean_result": "failure",
+      "exact_job": 124565158736,
+      "exact_result": "success"
+    }
+  ],
+  "finite_checks": {
+    "binary_join_checks": 145658,
+    "connected_initial_three_run_zero": 9695,
+    "connected_multiclass": 42188,
+    "connected_nonzero": 42,
+    "four_endpoint_and_original_join_replays": 7975,
+    "nonzero_restricted_outside_hypotheses": 161,
+    "pattern_tests": 44011,
+    "two_to_three_survivors": 16
+  },
+  "repository_reconciliation": {
+    "PR35_head": "b0e3f9e4982edf374cc64574b2c8bd7867094903",
+    "PR35_changes": "WORKBOARD review only; no new Lean modules",
+    "all_five_survival_law": "already certified in FiveOriginalCoefficientLaw; not a new open gap"
+  }
+}

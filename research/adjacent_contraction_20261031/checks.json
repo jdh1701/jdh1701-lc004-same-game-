@@ -1,0 +1,105 @@
+{
+  "status": "VERIFIED-COMP",
+  "counts": {
+    "binary_join_checks": 145658,
+    "connected_initial_three_run_zero": 9695,
+    "connected_multiclass": 42188,
+    "connected_nonzero": 42,
+    "four_endpoint_and_original_join_replays": 7975,
+    "nonzero_restricted_outside_hypotheses": 161,
+    "pattern_tests": 44011,
+    "two_to_three_survivors": 16
+  },
+  "profiles": {
+    "5": 1,
+    "5,1": 4,
+    "5,2": 10,
+    "5,3": 20,
+    "5,4": 35,
+    "5,5": 56,
+    "5,6": 84,
+    "5,7": 120,
+    "5,8": 165,
+    "5,2,2": 105,
+    "5,2,3": 560,
+    "5,3,3": 840,
+    "5,4,4": 5775,
+    "5,5,5": 36036,
+    "5,4,5 seeded probes": 40,
+    "5,6,5 seeded probes": 40,
+    "5,5,5,5 seeded probes": 40,
+    "5,7,3 seeded probes": 40,
+    "5,4,4,4 seeded probes": 40
+  },
+  "nonzero_restricted_examples": [
+    {
+      "pattern": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "restricted": -1,
+      "old": -4,
+      "inflated": -1
+    },
+    {
+      "pattern": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "restricted": -1,
+      "old": -4,
+      "inflated": -1
+    },
+    {
+      "pattern": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "restricted": -1,
+      "old": -4,
+      "inflated": -1
+    },
+    {
+      "pattern": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "restricted": -1,
+      "old": -4,
+      "inflated": -1
+    },
+    {
+      "pattern": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "restricted": -1,
+      "old": -4,
+      "inflated": -1
+    }
+  ],
+  "scope": "Exhaustive distinguished initial-pair profiles as listed, plus seeded probes. No full first-excess or all-length census. Fast compatibility and four-endpoint replays share local catalogue generation; independence is partial."
+}

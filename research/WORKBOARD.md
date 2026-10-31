@@ -676,3 +676,47 @@ adjacent equal pair, kappa(inflate p)=kappa(p)-2*kappa_T(p), where the restricte
 original family T keeps only certificates placing that pair in a triple.
 Finite15-type algebra and297 pattern probes pass locally; not Lean/hosted
 verification. Details and reproduction in inflation_law_20261031/TRANSFER_FORMULA.md.
+
+## 2026-10-31 GPT: contraction closes restricted cancellation
+
+PROVED-PAPER: delete one point of the designated adjacent equal pair. The
+restricted original triple-certificate family is in bijection with the COMPLETE
+original certificate family of the contracted pattern, whose selected class has
+size four. Nonempty joins and NCConnectedness are preserved. Consequently
+kappa_T(p)=kappa(contract p)=0 for a nontrivial connected pattern with that
+five-point class; other class sizes are unrestricted. Combined with PR45's
+join-algebra formula, this proves adjacent inflation preservation on paper.
+The previously conditional +1 branch cannot occur for connected all-five
+complete two-generator full-join sources; every adjacent equal pair is covered
+by a pair-block of a source generator. The exact (1,2,2) run-shape classification
+and the full counting problem are still OPEN.
+New Lean module AdjacentContraction targets the ACTUAL initial-pair restricted
+coefficient and its vanishing. Hosted status/pins: adjacent_contraction_20261031/.
+VERIFIED-COMP locally:44011 pattern tests,42188 connected multiclass inputs,
+145658 binary joins,7975 separate four-endpoint/original-join replays.
+Rechecked PR35 at b0e3f9e4: review only, no new Lean modules. Claude's original
+n11 wording already said22 nonzero connected patterns; our caution clarified
+that distinction and did not correct his reported result.
+
+Further PROVED-PAPER consequences in the same report: any five-point class in
+ANY nonzero nontrivial connected pattern has no three-run, with arbitrary other
+class sizes and no certificate-count premise. Together with the already proved
+all-five survival law, every nonzero first-excess pattern with a three-run has
+a unique triple-run, exactly3 certificates, and coefficient-1. For n=5j,j>=2,
+the number of such labeled cyclic patterns is (n+1)/n times the sum of E(p)
+over nonzero all-five sources, where E counts equal adjacent edges. E(p)=2j
+remains open; the source coefficient -1 and two-generator survival criterion
+were already established in FiveOriginalCoefficientLaw and are not new gaps.
+The checks now also verify9695 connected initial-three-run cases have zero
+coefficient. Original-position inflation/no-three-run/count assembly is paper,
+separate from the new formal initial-pair contraction theorem.
+
+PR46 final verification: source2aa11592904ab96c9fe7d1961f884256e4994a0c,
+run41211059715, Lean124565960423 and exact124565960262 both SUCCESS.
+246 modules,4140 audited declarations, only standard axioms; both negative
+guards pass. InitialTripleCertificate original-family correspondence,
+connectedness/join/coefficient transport, and initialTripleCoefficient_zero are
+PROVED-LEAN. Full arbitrary-position inflation and the new counting consequences
+remain PROVED-PAPER. All44011 checks reproduce at the same source. Exact pins,
+full logs, source hashes and both failed elaboration attempts are retained in
+research/adjacent_contraction_20261031/. Full counting remains OPEN.

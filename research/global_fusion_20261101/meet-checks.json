@@ -1,0 +1,250 @@
+{
+  "status": "VERIFIED-COMP",
+  "method": "explicit half-word support incidence, independent of forward horizon DP",
+  "replays": [
+    {
+      "n": 0,
+      "status": "complete",
+      "count": 1,
+      "left_support_orbits": 1,
+      "right_words": 1,
+      "total_postings": 1,
+      "dense_postings": 0
+    },
+    {
+      "n": 1,
+      "status": "complete",
+      "count": 0,
+      "left_support_orbits": 1,
+      "right_words": 3,
+      "total_postings": 3,
+      "dense_postings": 0
+    },
+    {
+      "n": 2,
+      "status": "complete",
+      "count": 3,
+      "left_support_orbits": 1,
+      "right_words": 3,
+      "total_postings": 3,
+      "dense_postings": 0
+    },
+    {
+      "n": 3,
+      "status": "complete",
+      "count": 3,
+      "left_support_orbits": 1,
+      "right_words": 9,
+      "total_postings": 12,
+      "dense_postings": 0
+    },
+    {
+      "n": 4,
+      "status": "complete",
+      "count": 15,
+      "left_support_orbits": 2,
+      "right_words": 9,
+      "total_postings": 12,
+      "dense_postings": 0
+    },
+    {
+      "n": 5,
+      "status": "complete",
+      "count": 33,
+      "left_support_orbits": 2,
+      "right_words": 27,
+      "total_postings": 42,
+      "dense_postings": 0
+    },
+    {
+      "n": 6,
+      "status": "complete",
+      "count": 105,
+      "left_support_orbits": 5,
+      "right_words": 27,
+      "total_postings": 42,
+      "dense_postings": 0
+    },
+    {
+      "n": 7,
+      "status": "complete",
+      "count": 297,
+      "left_support_orbits": 5,
+      "right_words": 81,
+      "total_postings": 156,
+      "dense_postings": 0
+    },
+    {
+      "n": 8,
+      "status": "complete",
+      "count": 879,
+      "left_support_orbits": 14,
+      "right_words": 81,
+      "total_postings": 156,
+      "dense_postings": 0
+    },
+    {
+      "n": 9,
+      "status": "complete",
+      "count": 2631,
+      "left_support_orbits": 14,
+      "right_words": 243,
+      "total_postings": 564,
+      "dense_postings": 0
+    },
+    {
+      "n": 10,
+      "status": "complete",
+      "count": 7833,
+      "left_support_orbits": 40,
+      "right_words": 243,
+      "total_postings": 564,
+      "dense_postings": 0
+    },
+    {
+      "n": 11,
+      "status": "complete",
+      "count": 23697,
+      "left_support_orbits": 40,
+      "right_words": 729,
+      "total_postings": 2058,
+      "dense_postings": 0
+    },
+    {
+      "n": 12,
+      "status": "complete",
+      "count": 71385,
+      "left_support_orbits": 114,
+      "right_words": 729,
+      "total_postings": 2058,
+      "dense_postings": 0
+    },
+    {
+      "n": 13,
+      "status": "complete",
+      "count": 216765,
+      "left_support_orbits": 114,
+      "right_words": 2187,
+      "total_postings": 7470,
+      "dense_postings": 0
+    },
+    {
+      "n": 14,
+      "status": "complete",
+      "count": 657849,
+      "left_support_orbits": 319,
+      "right_words": 2187,
+      "total_postings": 7470,
+      "dense_postings": 0
+    },
+    {
+      "n": 15,
+      "status": "complete",
+      "count": 2003151,
+      "left_support_orbits": 319,
+      "right_words": 6561,
+      "total_postings": 27096,
+      "dense_postings": 0
+    },
+    {
+      "n": 16,
+      "status": "complete",
+      "count": 6103743,
+      "left_support_orbits": 886,
+      "right_words": 6561,
+      "total_postings": 27096,
+      "dense_postings": 0
+    },
+    {
+      "n": 17,
+      "status": "complete",
+      "count": 18624693,
+      "left_support_orbits": 886,
+      "right_words": 19683,
+      "total_postings": 98094,
+      "dense_postings": 22
+    },
+    {
+      "n": 18,
+      "status": "complete",
+      "count": 56870385,
+      "left_support_orbits": 2438,
+      "right_words": 19683,
+      "total_postings": 98094,
+      "dense_postings": 22
+    },
+    {
+      "n": 19,
+      "status": "complete",
+      "count": 173760513,
+      "left_support_orbits": 2438,
+      "right_words": 59049,
+      "total_postings": 354558,
+      "dense_postings": 94
+    },
+    {
+      "n": 20,
+      "status": "complete",
+      "count": 531128349,
+      "left_support_orbits": 6680,
+      "right_words": 59049,
+      "total_postings": 354558,
+      "dense_postings": 94
+    },
+    {
+      "n": 21,
+      "status": "complete",
+      "count": 1623881889,
+      "left_support_orbits": 6680,
+      "right_words": 177147,
+      "total_postings": 1279806,
+      "dense_postings": 190
+    },
+    {
+      "n": 22,
+      "status": "complete",
+      "count": 4965695331,
+      "left_support_orbits": 18227,
+      "right_words": 177147,
+      "total_postings": 1279806,
+      "dense_postings": 190
+    },
+    {
+      "n": 23,
+      "status": "complete",
+      "count": 15185222199,
+      "left_support_orbits": 18227,
+      "right_words": 531441,
+      "total_postings": 4613616,
+      "dense_postings": 766
+    },
+    {
+      "n": 24,
+      "status": "complete",
+      "count": 46435889601,
+      "left_support_orbits": 49617,
+      "right_words": 531441,
+      "total_postings": 4613616,
+      "dense_postings": 766
+    },
+    {
+      "n": 25,
+      "status": "complete",
+      "count": 141985777503,
+      "left_support_orbits": 49617,
+      "right_words": 1594323,
+      "total_postings": 16613802,
+      "dense_postings": 1534
+    },
+    {
+      "n": 26,
+      "status": "complete",
+      "count": 434087233947,
+      "left_support_orbits": 134793,
+      "right_words": 1594323,
+      "total_postings": 16613802,
+      "dense_postings": 1534
+    }
+  ],
+  "scope": "N<=25 match OEIS; N=26 independently matches forward DP. No closed scalar all-length formula."
+}

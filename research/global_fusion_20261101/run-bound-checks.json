@@ -1,0 +1,79 @@
+{
+  "status": "VERIFIED-COMP",
+  "word_support_checks": 53416,
+  "series_replays": [
+    {
+      "q": 2,
+      "max_n": 10,
+      "majorant_coefficients": [
+        1,
+        0,
+        2,
+        2,
+        6,
+        12,
+        28,
+        64,
+        152,
+        364,
+        884
+      ]
+    },
+    {
+      "q": 3,
+      "max_n": 9,
+      "majorant_coefficients": [
+        1,
+        0,
+        3,
+        3,
+        15,
+        33,
+        111,
+        315,
+        1005,
+        3111
+      ]
+    },
+    {
+      "q": 4,
+      "max_n": 7,
+      "majorant_coefficients": [
+        1,
+        0,
+        4,
+        4,
+        28,
+        64,
+        280,
+        880
+      ]
+    }
+  ],
+  "involution_counterexample": [
+    0,
+    1,
+    1,
+    0,
+    2,
+    2,
+    0
+  ],
+  "run_majorant_overcount_word": [
+    0,
+    0,
+    1,
+    1,
+    0,
+    0
+  ],
+  "five_color_certificate": {
+    "r": "41/200",
+    "P": "1328281561/1600000000",
+    "Q": "328538189/400000000",
+    "gap": "2588189/400000000",
+    "P_over_gap": "1328281561/10352756",
+    "density_rate": "40/41"
+  },
+  "scope": "Finite checks supporting a paper proof; no Lean proof of the generating function or asymptotic bound."
+}

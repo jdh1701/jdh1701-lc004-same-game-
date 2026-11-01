@@ -41,3 +41,21 @@ Prior literature already gives a context-free recognition algorithm: Biedl et al
 ## Repository reconciliation
 
 PR35 advanced from c88cc09 to e51bbcb by a WORKBOARD review, without new proof sources. That review overstates PR51 by omitting its universal-certificate hypothesis: nonzero (7,5,...) classes without a universal certificate need not be singleton triplings. PR50's +1 witness already contradicts the overstatement. The present work preserves the hypothesis and does not count a documentation review as an independent proof check.
+
+## Further attack: run-normalized majorant
+
+RUN_BOUND.md derives an algebraic series that removes redundant choices inside each original maximal run. Its coefficients still overcount winning words, with a first ternary discrepancy at length six. It gives the explicit paper bound W_5(n)/5^n <= 129 (40/41)^n, hence exponential density decay for every alphabet size at least five. This does not resolve b=3 or b=4. The proof and exact finite checks are separate from the Lean semantic bridge.
+
+The C++ recurrence also computes W_26=434,087,233,947, beyond the term range displayed in A035617 on November 1, 2026. The independent half-word incidence replay described below now agrees exactly.
+
+## Independent half-word incidence count
+
+Each color's fusion transition matrix is symmetric on proper stacks: a push and its reverse pop have the same color, and a stay is a loop. Therefore a path reading v from stack s to empty exists iff a path reading reverse(v) from empty to s exists. Splitting a word uv gives
+
+    wins(uv) iff support(u) intersects support(reverse(v)).
+
+For fixed half lengths l+r=N, reversal permutes all r-letter words. Thus the total winning count equals the number of pairs (u,t), |u|=l, |t|=r, whose supports intersect.
+
+fusion_meet.cpp explicitly enumerates every right half-word, recording for each stack the set of half-word IDs that reach it. It separately records the multiplicity of each left support orbit under global color permutations. For a left support S, the union of its stack postings is exactly the right words intersecting S; its cardinality times the left multiplicity contributes to the total. The right universe contains all labeled words, so global color permutations of a left support preserve this cardinality. Sparse lists and dense bit vectors only change how this union is computed.
+
+This implementation uses top-first strings, explicit half-word enumeration, and incidence unions. It shares neither the forward program's bit-encoded stack representation nor its horizon pruning or state-distribution recurrence. It independently reproduces every count through length 26. In particular W_26=434,087,233,947 agrees between both methods; the independent replay takes about 31 seconds and peaks at 385,956 KiB for the batch through N=26.

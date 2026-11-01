@@ -1,0 +1,86 @@
+{
+  "status": "HOSTED_VERIFIED",
+  "source_commit": "06fda9d2ef080a44853a4b851d3eebb6c2419273",
+  "source_tree": "d51bd49b95d1a6b79e7808ccb68c232ca8a3ee9f",
+  "pull_request": 51,
+  "run": 41323752649,
+  "run_url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/41323752649",
+  "jobs": {
+    "lean": {
+      "id": 124899253513,
+      "conclusion": "success"
+    },
+    "exact": {
+      "id": 124899253713,
+      "conclusion": "success"
+    }
+  },
+  "lean": {
+    "active_modules": 249,
+    "audited_declarations": 4211,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "negative_guards": "both passed",
+    "new_module": "LC004/SmallRefinementGap.lean",
+    "new_theorems": 7,
+    "full_recurrence_classification_or_multiplier_formalized": false
+  },
+  "finite": {
+    "connected_cases": 4961,
+    "direct_original_replays": 3920,
+    "fast_all_five_checks": 4556,
+    "fast_universal_seven_checks": 269,
+    "iterated_tripling_s2_checks": 72,
+    "iterated_tripling_s3_checks": 8,
+    "nonadjacent_corrections_zero": 17949,
+    "nonuniversal_branch": 4156,
+    "nonzero": 749,
+    "nonzero_relabeling_guards": 6,
+    "pair_correction_checks": 34727,
+    "singleton_tripling_checks": 96,
+    "tripling_family_original_replays": 24,
+    "universal_branch": 805,
+    "universal_seven_exhaustiveness_checks": 108,
+    "wraparound_pair_checks": 1535
+  },
+  "previous_checks_replayed": {
+    "seven_boundary_order_types": 792,
+    "composed_relations": 114244,
+    "original_join_replays": 672,
+    "zero_target_canonicalization": "repaired; original zero value confirmed"
+  },
+  "initial_success": {
+    "source_commit": "eac176f2e84f129897c7ea57bfd3bb03711c109c",
+    "source_tree": "3c00227a76a98505f6072aa9832fdf6e00a893df",
+    "run": 41322587595,
+    "lean_job": 124895768264,
+    "exact_job": 124895768355,
+    "conclusion": "success",
+    "formal_sources_unchanged_in_final": true
+  },
+  "proof_status": "Small-refinement gap/adjacency/zero lemmas are PROVED-LEAN. The arbitrary-outside-profile seven-pair recurrence, universal otherwise-five seven classification, singleton-tripling multiplier, iterated family count, and explicit unbounded sources are PROVED-PAPER. Python is not kernel-certified. Full LC004/A035617 remains open.",
+  "logs": {
+    "lean-initial": {
+      "sha256": "ae4c478511a370d70f51a0b84dfe3c324d1a52b9f1182820d6538abd6fc3ea3e",
+      "bytes": 137921
+    },
+    "exact-initial": {
+      "sha256": "b2a128f64acc526373f3d5e809ac952e30d1bf9a630bbf7e465aec9ac5915e44",
+      "bytes": 27260
+    },
+    "lean-final": {
+      "sha256": "bf7a820b88ed02dd7a2b69e160db7565a65972cceebccf3ae6ccde6b636ce869",
+      "bytes": 127231
+    },
+    "exact-final": {
+      "sha256": "ee4cb4458c05fc879a93c3b2b674a8fde8de5e3c4660221433362d481a5707a5",
+      "bytes": 27338
+    }
+  },
+  "archive_sha256": "1acc7bd0f884618ce9044c69e32ef9bb5a78f1e823ffba6937e077c106c36467",
+  "failed_hosted_attempts": [],
+  "verified_utc": "2026-11-01T16:00:43.773076+00:00"
+}

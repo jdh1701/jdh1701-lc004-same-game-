@@ -4,6 +4,14 @@ Base is PR50 at a67850cafbf958447f9d8f58104bc349f6ae0061. PR35 was rechecked
 at c88cc0906591ad2b79cdeb168f04a77bf5950553; no newer source was missed.
 LC004/A035617 remains OPEN. Read REPORT.md and receipts.json for scope.
 
+Final verified source: 06fda9d2ef080a44853a4b851d3eebb6c2419273, run
+41323752649. Lean124899253513 and exact124899253713 both SUCCESS. All249
+modules build, all4211 declarations pass the standard-axiom audit, and both
+negative guards pass. Seven new SmallRefinementGap theorems are PROVED-LEAN;
+the recurrence/classification/multiplier assembly is PROVED-PAPER. Logs and
+hashes are archived in this folder. The later receipt commit changes only
+documentation and verification artifacts.
+
 New uniform paper results:
 
 1. For ANY nontrivial NCConnected p and distinguished seven-class H,

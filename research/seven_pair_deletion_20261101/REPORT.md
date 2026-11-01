@@ -195,8 +195,8 @@ relations by the displayed endpoints. This also proves the assertion for j=3.
 
 The lower-to-upper crossing graph contains the directed Hamiltonian cycle
 
-    0,2,4,...,(all even indices increasingly),
-    (all odd indices decreasingly),1,0.
+    all even indices increasingly, then all odd indices decreasingly,
+    then 0 to close the cycle.
 
 For example, an interior even i has lower interval [3i+2,3i+4], which crosses
 the next even upper interval [3i+3,3i+8]. An interior odd i>=3 has lower
@@ -386,3 +386,19 @@ does classify the universal-seven survivors when all other classes have size
 five; it does not classify arbitrary outside profiles. Multiple six-classes,
 the no-universal seven branch, arbitrary higher profiles, and all-length
 enumeration remain open.
+
+## Hosted verification receipt
+
+Final source **06fda9d2ef080a44853a4b851d3eebb6c2419273**, tree
+**d51bd49b95d1a6b79e7808ccb68c232ca8a3ee9f**, passed run **41323752649**.
+Lean job **124899253513** and exact job **124899253713** both succeeded.
+All **249** active modules build, all **4211** project declarations pass the
+axiom audit with only propext, Classical.choice and Quot.sound, and both
+negative guards pass. The seven new small-refinement lemmas are **PROVED-LEAN**.
+The recurrence, classification, multiplier and counting assembly remain
+**PROVED-PAPER**. The finite checks include **4961** connected patterns,
+**3920** original signed-join replays, and **108** nonzero universal-seven
+classification checks; see checks.json for the full, overlapping test scope.
+The repaired previous boundary checks also reproduce. Full logs from both
+successful source revisions and their hashes are in hosted-verification.tar.gz
+and receipts.json. No hosted failure was omitted.

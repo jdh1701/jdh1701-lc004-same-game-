@@ -165,3 +165,8 @@ is only a finite regression budget, not a premise of the uniform identity.
 This folder has no new Lean theorem. Its status is a computer-assisted paper
 reduction plus exact finite checks. The new ternary system's nonzero Euler
 classification, multiple six-classes, and arbitrary higher excess remain open.
+
+Hosted exact verification passed at source b67d938aeed992c06aeaf7f975ac827f8b30d0da,
+run 41267556436, job 124733423229. The log and hashes are retained in
+receipts.json. The Lean source and audit scripts are byte-for-byte unchanged
+from PR49's audited formal source 80e6c8dc3df62ada6721b0b8544cecace24b9d1c.

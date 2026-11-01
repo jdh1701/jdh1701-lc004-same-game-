@@ -881,3 +881,85 @@ the evidence and supersede prior pending snapshots. Full counting remains OPEN.
   is a `[skip ci]` documentation commit as expected, no runs recorded.
 - No red flags. Honest framing throughout ("general counting remains
   open", no overclaim of a realized positive example). Review complete.
+
+## 2026-11-01 11:05 Claude: review of GPT's PR46-51 campaign (adjacent-contraction through universal-seven classification)
+
+Six new branches/PRs since my last review (c88cc09), building on each other
+in sequence. Read PR46's Lean file in full (the one load-bearing new proof);
+read PR47-51's bodies/claims carefully and cross-checked CI for every cited
+commit across all six, rather than re-deriving every supporting lemma from
+scratch for the four paper-proof PRs (consistent with how I've scoped prior
+reviews of large campaigns).
+
+- **PR46 (`AdjacentContraction.lean`, 305 lines, PROVED-LEAN) -- the main
+  event.** This closes the kappa_T(p)=0 gap that PR45's inflation-correction
+  formula left open. Read the whole file line by line. The construction:
+  `duplicateInitial`/`contractInitial` (comap along `adjacentProjection`/
+  `Fin.succ`) give an exact correspondence between a pattern with a 4-point
+  class and one with a 5-point class containing an adjacent duplicated pair;
+  proved as genuine mutual inverses (`contract_duplicateInitial` always,
+  `duplicate_contractInitial` conditional on the pair being related, which
+  is exactly right -- duplicating always creates that relation, so only the
+  reverse direction needs the hypothesis). Noncrossing and NCConnected are
+  both shown to transfer in BOTH directions (`duplicateInitial_noncrossing_iff`,
+  `duplicateInitial_connected_iff`), the harder one being the forward
+  direction, which goes through a correctly-argued monotone-comap-preserves-
+  noncrossing lemma. The certificate-family correspondence
+  (`initialTripleCertificate_iff`) and coefficient-transport lemmas
+  (`duplicateInitial_sup`, `certificateJoinTerms_duplicateInitial`,
+  `collectedJoinCoefficient_duplicateInitial`) build up to
+  `initialTripleCoefficient_eq_contracted`: the restricted triple-certificate
+  coefficient of the duplicated pattern equals the plain `winningJoinCoefficient`
+  of the pre-duplication pattern. The payoff, `initialTripleCoefficient_zero`:
+  for a connected pattern with the duplicated-pair class at size 5, contract
+  it to a class of size 4; by the ALREADY-PROVEN support theorem
+  (`ncConnected_nonzero_every_class_min_five`, from PR42/43's chain), a
+  connected multi-class pattern with any class below 5 must have
+  winningJoinCoefficient 0 -- so the restricted coefficient must be 0 too.
+  This is a clean, correct chaining of the new duplication machinery onto
+  already-verified support infrastructure; no logic gap found. CI confirmed
+  green myself on the cited source 2aa1159 (lean: success, exact: success).
+  Consequence (per PR46's own paper-proof claims, not re-derived by me from
+  scratch): the three-run first-excess layer's coefficient is now
+  UNCONDITIONALLY -1 (the kappa_T cancellation that used to be an open
+  assumption is now proved), matching everything every census (n11/16/21)
+  has found.
+- **PR47 (primitive cores through j=7, mostly PAPER/VERIFIED-COMP, two small
+  Lean lemmas PROVED-LEAN)**: run-shape uniqueness (1,2,2) for all-five
+  patterns, extending core counts to A_6=118195, A_7=2413185 (explicitly NOT
+  A035617 terms). CI green on cited source 464f98e.
+- **PR48 (two-generator enumeration through n26, PROVED-PAPER + VERIFIED-COMP,
+  no new Lean)**: two-generator stratum counts 0,88,2121,49725 at j=2..5;
+  combined with the three-run family gives 116857 total first-excess
+  survivors at n26 as a LOWER BOUND, explicitly not a full census. Cites
+  PR47's Lean source (unchanged); CI green.
+- **PR49 (first-excess exhaustiveness, PROVED-PAPER, small new Lean lemmas)**:
+  claims the first-excess strata 22/312/5607/116857 (j=2..5) are now
+  EXHAUSTIVE (not just lower bounds) at the paper+exact-computation level,
+  via a six-boundary elimination argument. CI green on cited source 80e6c8d.
+- **PR50 (seven-class boundary, PAPER + exact counterexamples, explicitly NO
+  Lean changes)**: shows the first-excess binary-cancellation trick does NOT
+  extend unchanged to seven-point classes (an explicit (5,5,7) counterexample
+  with coefficient +1 is exhibited -- genuinely useful negative result, not
+  hidden), reduces seven-class corrections to an Euler identity over
+  all-five coefficients, leaves the "projected ternary constraint complex"
+  open. CI green on cited exact-verification commit b67d938.
+- **PR51 (universal-seven classification, PAPER + VERIFIED-COMP, one small
+  Lean lemma)**: claims every nonzero connected (7,5,...,5) pattern is a
+  singleton-tripling of an all-five survivor with coefficient +2, giving
+  stratum count (5j+2)*A_j/5. Explicitly flags a repaired bug (a
+  noncanonical-target zero-witness assertion) in FAILURES-equivalent text
+  and says "Full CI is rerunning... Lean sources are unchanged" as of
+  posting -- I checked that rerun (06fda9d2) myself just now and it has
+  since completed, both lean and exact green. Small-refinement lemma's own
+  source (eac176f) also independently confirmed green.
+- All six PRs are consistent in honest framing: every one explicitly
+  restates that LC004/A035617 (the actual winning-word counting problem)
+  remains open, and distinguishes PROVED-LEAN from PROVED-PAPER/
+  VERIFIED-COMP without blurring the line. No red flags found in this pass.
+- Not independently re-run: the Python/exact census computations themselves
+  (hosted CI's `exact` job is the independent-of-me verification there,
+  confirmed green on every cited commit). Not attempted: re-deriving PR47-51's
+  paper arguments from scratch by hand -- out of scope for this pass given
+  the volume (six PRs); PR46, the one actual new load-bearing Lean proof in
+  this batch, got the full line-by-line read.

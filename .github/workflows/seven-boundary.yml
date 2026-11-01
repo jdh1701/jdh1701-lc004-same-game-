@@ -1,0 +1,21 @@
+name: Seven-class boundary reduction
+on:
+  push:
+    branches: [research/seven-boundary-20261101]
+    paths:
+      - 'research/seven_boundary_20261101/**'
+      - '.github/workflows/seven-boundary.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  exact:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify boundary Helly, Euler reduction and original counterexamples
+        run: |
+          set -eo pipefail
+          python research/seven_boundary_20261101/check.py
+          git diff --exit-code -- research/seven_boundary_20261101/checks.json

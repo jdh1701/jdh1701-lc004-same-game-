@@ -67,7 +67,7 @@ cs,fs,ch=generators(p);A=sorted({a[:2] for a in ch})
 w=[(4,0),(4,3),(2,4),(4,4)]
 assert all(a in A for a in w[:3]) and w[3] not in A
 assert tuple(w[0][i] if w[0][i]==w[1][i] else w[2][i] for i in range(2))==w[3]
-assert join_value(cs,p)==0
+assert join_value(cs,canonical(blocks(p),len(p)))==0
 real={'pattern':p,'choices':ch,'outside_projection':A,'witness':w,'coefficient':0}
 # Stronger original obstruction: nonzero coefficient, connected, complete
 # seven-generator family. State coordinate order is numeric color order 0,1,2.

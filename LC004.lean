@@ -278,3 +278,5 @@ import LC004.AdjacentContraction
 import LC004.CommonCertificateGap
 
 import LC004.SixBoundaryLists
+
+import LC004.SmallRefinementGap

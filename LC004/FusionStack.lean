@@ -247,7 +247,38 @@ theorem fusionReach_eq_iff_winning_continuations {q : Nat} (u v : List (Fin q)) 
       exact (raw_max_win_append_proper_iff u s hp).mp
         ((h s).mpr ((raw_max_win_append_proper_iff v s hp).mpr hs))
 
+/-- Reverse a computation on proper stacks and reverse its input word.
+Each push reverses to a pop, each pop to a push, and each stay to itself. -/
+theorem fusionEval_reverse {q : Nat} {s w t : List (Fin q)}
+    (h : FusionEval s w t) (hs : FusionProper s) : FusionEval t w.reverse s := by
+  induction h with
+  | done _ => exact FusionEval.done _
+  | push a hn hr ih =>
+      simpa only [List.reverse_cons] using
+        fusionEval_append (ih ⟨hn,hs⟩) (FusionEval.pop a (FusionEval.done _))
+  | pop a hr ih =>
+      simpa only [List.reverse_cons] using
+        fusionEval_append (ih hs.2) (FusionEval.push a hs.1 (FusionEval.done _))
+  | stay a hr ih =>
+      simpa only [List.reverse_cons] using
+        fusionEval_append (ih hs) (FusionEval.stay a (FusionEval.done _))
+
+/-- The exact original-game test behind half-word incidence counting. -/
+theorem raw_max_win_append_iff_common_fusion_stack {q : Nat}
+    (u v : List (Fin q)) :
+    RawMaxErases (u ++ v) [] ↔
+      ∃ s, s ∈ fusionReach [] u ∧ s ∈ fusionReach [] v.reverse := by
+  rw [raw_max_win_append_iff_fusion_stack]
+  constructor
+  · rintro ⟨s,hs,hv⟩
+    exact ⟨s,hs,(mem_fusionReach_iff [] v.reverse s).mpr
+      (fusionEval_reverse hv (fusionReach_proper hs))⟩
+  · rintro ⟨s,hs,hv⟩
+    have he := fusionEval_reverse ((mem_fusionReach_iff [] v.reverse s).mp hv) trivial
+    exact ⟨s,hs,by simpa only [List.reverse_reverse] using he⟩
+
 #print axioms raw_max_win_iff_fusionEval
 #print axioms raw_max_win_iff_fusionReach
 #print axioms fusionReach_eq_iff_winning_continuations
+#print axioms raw_max_win_append_iff_common_fusion_stack
 end LC004

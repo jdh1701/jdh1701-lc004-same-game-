@@ -1,0 +1,523 @@
+{
+  "status": "VERIFIED-COMP",
+  "cpp_counts": [
+    {
+      "n": 0,
+      "status": "complete",
+      "count": 1,
+      "edges": 0,
+      "states": [
+        1
+      ]
+    },
+    {
+      "n": 1,
+      "status": "complete",
+      "count": 0,
+      "edges": 0,
+      "states": [
+        1,
+        0
+      ]
+    },
+    {
+      "n": 2,
+      "status": "complete",
+      "count": 3,
+      "edges": 4,
+      "states": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "n": 3,
+      "status": "complete",
+      "count": 3,
+      "edges": 5,
+      "states": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "n": 4,
+      "status": "complete",
+      "count": 15,
+      "edges": 12,
+      "states": [
+        1,
+        1,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "n": 5,
+      "status": "complete",
+      "count": 33,
+      "edges": 17,
+      "states": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "n": 6,
+      "status": "complete",
+      "count": 105,
+      "edges": 28,
+      "states": [
+        1,
+        1,
+        2,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "n": 7,
+      "status": "complete",
+      "count": 297,
+      "edges": 50,
+      "states": [
+        1,
+        1,
+        2,
+        4,
+        6,
+        5,
+        3,
+        1
+      ]
+    },
+    {
+      "n": 8,
+      "status": "complete",
+      "count": 879,
+      "edges": 87,
+      "states": [
+        1,
+        1,
+        2,
+        4,
+        9,
+        10,
+        6,
+        4,
+        1
+      ]
+    },
+    {
+      "n": 9,
+      "status": "complete",
+      "count": 2631,
+      "edges": 151,
+      "states": [
+        1,
+        1,
+        2,
+        4,
+        9,
+        15,
+        16,
+        9,
+        4,
+        1
+      ]
+    },
+    {
+      "n": 10,
+      "status": "complete",
+      "count": 7833,
+      "edges": 248,
+      "states": [
+        1,
+        1,
+        2,
+        4,
+        9,
+        20,
+        25,
+        20,
+        11,
+        4,
+        1
+      ]
+    },
+    {
+      "n": 11,
+      "status": "complete",
+      "count": 23697,
+      "edges": 443,
+      "states": [
+        1,
+        1,
+        2,
+        4,
+        9,
+        20,
+        39,
+        45,
+        31,
+        15,
+        4,
+        1
+      ]
+    },
+    {
+      "n": 12,
+      "status": "complete",
+      "count": 71385,
+      "edges": 752,
+      "states": [
+        1,
+        1,
+        2,
+        4,
+        9,
+        20,
+        47,
+        67,
+        63,
+        43,
+        19,
+        5,
+        1
+      ]
+    },
+    {
+      "n": 13,
+      "status": "complete",
+      "count": 216765,
+      "edges": 1368,
+      "states": [
+        1,
+        1,
+        2,
+        4,
+        9,
+        20,
+        47,
+        94,
+        131,
+        108,
+        63,
+        21,
+        5,
+        1
+      ]
+    },
+    {
+      "n": 14,
+      "status": "complete",
+      "count": 657849,
+      "edges": 2355,
+      "states": [
+        1,
+        1,
+        2,
+        4,
+        9,
+        20,
+        47,
+        108,
+        173,
+        191,
+        166,
+        92,
+        29,
+        6,
+        1
+      ]
+    },
+    {
+      "n": 15,
+      "status": "complete",
+      "count": 2003151,
+      "edges": 4387,
+      "states": [
+        1,
+        1,
+        2,
+        4,
+        9,
+        20,
+        47,
+        108,
+        233,
+        350,
+        357,
+        274,
+        130,
+        34,
+        6,
+        1
+      ]
+    },
+    {
+      "n": 16,
+      "status": "complete",
+      "count": 6103743,
+      "edges": 7691,
+      "states": [
+        1,
+        1,
+        2,
+        4,
+        9,
+        20,
+        47,
+        108,
+        256,
+        442,
+        555,
+        592,
+        432,
+        189,
+        42,
+        6,
+        1
+      ]
+    },
+    {
+      "n": 17,
+      "status": "complete",
+      "count": 18624693,
+      "edges": 14609,
+      "states": [
+        1,
+        1,
+        2,
+        4,
+        9,
+        20,
+        47,
+        108,
+        256,
+        560,
+        927,
+        1116,
+        1063,
+        694,
+        267,
+        47,
+        6,
+        1
+      ]
+    },
+    {
+      "n": 18,
+      "status": "complete",
+      "count": 56870385,
+      "edges": 26452,
+      "states": [
+        1,
+        1,
+        2,
+        4,
+        9,
+        20,
+        47,
+        108,
+        256,
+        601,
+        1106,
+        1584,
+        1960,
+        1831,
+        1136,
+        409,
+        55,
+        6,
+        1
+      ]
+    },
+    {
+      "n": 19,
+      "status": "complete",
+      "count": 173760513,
+      "edges": 51275,
+      "states": [
+        1,
+        1,
+        2,
+        4,
+        9,
+        20,
+        47,
+        108,
+        256,
+        601,
+        1353,
+        2423,
+        3352,
+        3788,
+        3241,
+        1849,
+        579,
+        60,
+        6,
+        1
+      ]
+    },
+    {
+      "n": 20,
+      "status": "complete",
+      "count": 531128349,
+      "edges": 96390,
+      "states": [
+        1,
+        1,
+        2,
+        4,
+        9,
+        20,
+        47,
+        108,
+        256,
+        601,
+        1424,
+        2791,
+        4425,
+        6201,
+        7020,
+        5881,
+        3169,
+        856,
+        65,
+        6,
+        1
+      ]
+    }
+  ],
+  "independent_python_counts_through": 14,
+  "arbitrary_support_sets": 1024,
+  "arbitrary_suffix_max_length": 5,
+  "word_reversal_support_checks": 9841,
+  "proper_basis_trace_checks": 100,
+  "not_strongly_lumpable_witness": {
+    "word": [
+      0,
+      0,
+      1
+    ],
+    "support": [
+      [
+        0,
+        1
+      ],
+      [
+        1
+      ]
+    ],
+    "reversed_support": [
+      [
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "successors": [
+      [
+        [
+          [],
+          [
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1
+          ]
+        ],
+        1
+      ],
+      [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        1
+      ],
+      [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        1
+      ]
+    ],
+    "reversed_successors": [
+      [
+        [
+          [],
+          [
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        1
+      ],
+      [
+        [
+          [
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        1
+      ],
+      [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ],
+        1
+      ]
+    ]
+  },
+  "scope": "Exact finite checks. The reversal averaging theorem is proved on paper; Lean formalizes horizon soundness and individual-continuation minimality."
+}

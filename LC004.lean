@@ -1,5 +1,6 @@
 import LC004.RunState
 import LC004.FusionStack
+import LC004.FusionHorizon
 import LC004.HeavierLemmas
 import LC004.BoundaryLemmas
 import LC004.SplitRunLemmas

@@ -1,0 +1,22 @@
+[
+  {
+    "n": 27,
+    "status": "complete",
+    "count": 1326879233787,
+    "left_support_orbits": 134793,
+    "right_words": 4782969,
+    "total_postings": 59767194,
+    "dense_postings": 3070,
+    "elapsed_seconds": 86.45352491499943
+  },
+  {
+    "n": 28,
+    "status": "complete",
+    "count": 4055050431933,
+    "left_support_orbits": 365702,
+    "right_words": 4782969,
+    "total_postings": 59767194,
+    "dense_postings": 3070,
+    "elapsed_seconds": 200.32956142400053
+  }
+]

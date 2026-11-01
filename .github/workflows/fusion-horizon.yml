@@ -64,4 +64,9 @@ jobs:
           set -eo pipefail
           g++ -O3 -std=c++17 research/fusion_horizon_20261101/fusion_reversal_count.cpp -o /tmp/fusion-reversal
           python research/fusion_horizon_20261101/check.py /tmp/fusion-reversal
-          git diff --exit-code -- research/fusion_horizon_20261101/checks.json
+          g++ -O3 -std=c++17 research/fusion_horizon_20261101/orientation_policies.cpp -o /tmp/fusion-policies
+          g++ -O3 -std=c++17 research/fusion_horizon_20261101/greedy_count.cpp -o /tmp/fusion-greedy
+          g++ -O3 -march=native -std=c++17 research/fusion_horizon_20261101/fusion_meet_smaller_right.cpp -o /tmp/fusion-meet-small-right
+          python research/fusion_horizon_20261101/policy_check.py /tmp/fusion-policies /tmp/fusion-greedy /tmp/fusion-meet-small-right
+          python research/fusion_horizon_20261101/long_check.py /tmp/fusion-reversal
+          git diff --exit-code -- research/fusion_horizon_20261101/checks.json research/fusion_horizon_20261101/policy-checks.json research/fusion_horizon_20261101/long-checks.json

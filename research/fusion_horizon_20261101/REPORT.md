@@ -45,3 +45,30 @@ The new C++ counter extends the prior forward DP with this representative choice
 The Python implementation separately checks counts through N=14 and the C++ version through N=20. Tests include all 1024 subsets of the ten proper ternary stacks of length at most two, with every continuation of length at most five; 9841 word/reversal support identities; and proper-basis trace pairings. The first failure of strong transition lumpability is recorded rather than hidden.
 
 PR52 remains green at source 293cdb9766aa386963f59e33db54d43c48317171: 250 modules and 4266 declarations audited. PR35 advanced to ecb6dcd5 with a concrete re-enumeration of the prior (5,5,7) counterexample: coefficient +1, seven certificates, NCConnected. Its algorithm uses targeted class decompositions and the same signed-join recurrence; this is additional computational corroboration, not a new general theorem or independent verification of every prior proof. It adds no Lean source.
+
+## Discriminating tests of representative choice
+
+The same potential-sum proof allows the representative at each layer to depend on the remaining horizon or on earlier choices in that layer. We tested eight deterministic choices at N=22. Every choice returned 4,965,695,331, but their peak state counts differed:
+
+| Choice | Peak states |
+|---|---:|
+| Lexicographic minimum | 25,834 |
+| Lexicographic maximum | 46,519 |
+| Minimum total successor cardinality | 25,588 |
+| Minimum maximum successor cardinality | 25,578 |
+| Maximum total successor cardinality | 47,389 |
+| Maximum maximum successor cardinality | 48,616 |
+| Minimum total successor stack length | 25,376 |
+| Maximum total successor stack length | 47,491 |
+
+The extra one-step scoring cost outweighed its small reduction on this instance. The production experiment retains lexicographic minimum. This does not establish an asymptotically optimal policy.
+
+A separate greedy algorithm sorts current states by decreasing weight, tries both orientations, and chooses the one introducing fewer new successor classes, breaking ties by total successor cardinality. Its validity still follows from the same potential invariant, but its performance was worse: at N=14,18,22 it peaked at 201,2204,29538 states versus 191,1960,25834 for the simple policy. Both the code and this negative result are preserved.
+
+## Independent larger replays
+
+The reversal-averaged forward counter reproduces W_27=1,326,879,233,787 and W_28=4,055,050,431,933. These agree with the separately implemented half-word incidence method from PR52, extending agreement between two algorithms through N=28. Its N=27 run peaked at 887,545 states (about 84 seconds, 572,548 KiB maximum RSS); N=28 peaked at 1,882,322 states (about 196 seconds, 1,308,888 KiB). Timings are machine-specific, not complexity guarantees.
+
+The asymmetric half-word variant stores the shorter half on the right, keeping its incidence bit vectors smaller for odd lengths. It is checked through N=18 and supports N<=29. This is a memory-layout choice within the already justified half-word identity, not a third independent counting theory.
+
+Claude's committed seven-class script was rerun locally and returned all three advertised results. It uses the same signed-join principle as our earlier work, so the corroboration should not be inflated into independent foundations.

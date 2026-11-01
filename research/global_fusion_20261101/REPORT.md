@@ -1,6 +1,6 @@
 # Global Boolean fusion route (2026-11-01)
 
-Status: research toward LC004/A035617, **not a solution of the open enumeration problem**. The Lean bridge and exact residual-language theorem passed the full build, declaration axiom audit and negative guards at source 66acdf532a39a7759bcf80576fa30610438a8881, run 41328980684. See the final verification receipt for the complete source and checks.
+Status: research toward LC004/A035617, **not a solution of the open enumeration problem**. The Lean bridge and exact residual-language theorem passed the full build, declaration axiom audit and negative guards at source 293cdb9766aa386963f59e33db54d43c48317171, run 41329698273. See the final verification receipt for the complete source and checks.
 
 ## Exact global model
 
@@ -18,7 +18,7 @@ The C++ executable implements ternary counts with checked uint64 arithmetic, a s
 
 ## A precise obstruction to compressing the boundary
 
-For proper words s,t, a stack s accepts the proper suffix reverse(t) iff s=t. Every accepting step must pop: a first push or stay forces the remaining proper letters to push, leaving a nonempty stack. Hence every two distinct support sets have different future languages, distinguished by reverse(t) for a stack in their symmetric difference. The same conclusion holds for truncated supports and suffixes of length *at most* the horizon; it is not a claim of minimality for suffixes of exactly the horizon.
+For proper words s,t, a stack s accepts the proper suffix reverse(t) iff s=t. Every accepting step must pop: a first push or stay forces the remaining proper letters to push, leaving a nonempty stack. Hence every two distinct support sets have different future languages, distinguished by reverse(t) for a stack in their symmetric difference. The equality-of-supports/equality-of-winning-continuations statement is now Lean proved. The same paper conclusion holds for truncated supports and suffixes of length *at most* the horizon; it is not a claim of minimality for suffixes of exactly the horizon.
 
 For b colors and proper words of length m, the matrix H(s,reverse(t)) is the identity of order b(b-1)^(m-1). Its rank over every field is that order. This rules out a polynomial-dimensional exact linear representation of all word boundaries. It does not rule out an algebraic scalar length generating function, or a way of summing many residual states without enumerating them. The observation strengthens the earlier identity-submatrix obstruction, rather than constituting a solution.
 
@@ -32,7 +32,7 @@ Three binary projections do not determine the ternary indicator. The word 010012
 
 ## Evidence and limitations
 
-check.py exhaustively compares the support against the original maximal-run solver on binary words through length 12, ternary words through length 10, and four-color words through length 7 (118,609 original-word replays). It also checks the split intersection criterion, proper-suffix separators, positive-parameter support, identity boundary matrices, Python/C++ state distributions through N=14 and counts through N=18. The machine-readable receipt is checks.json.
+check.py exhaustively compares the support against the original maximal-run solver on binary words through length 12, ternary words through length 10, and four-color words through length 7 (118,609 original-word replays). It also checks the split intersection criterion, proper-suffix separators, positive-parameter support, identity boundary matrices, Python/C++ state distributions through N=14 and counts through N=18. The machine-readable receipt is checks.json. Final hosted verification replayed all half-word counts through N=28, the run-majorant checks and the exact scalar-template exclusions.
 
 Separate local C++ runs reproduce W_24=46,435,889,601 and W_25=141,985,777,503, both already published OEIS terms. N=25 peaks at 3,216,015 support states and took about 141 seconds / 2,076,268 KiB maximum resident memory on this machine. This growth is a real unresolved obstacle, not evidence of a finished formula.
 
@@ -67,3 +67,7 @@ RUN_BOUND.md also supplies a separate elementary argument using blocks of three:
 ## Small scalar-formula attacks, with held-out terms
 
 scalar_search.py uses exact rational Gaussian elimination. It fits the old coefficients through N=25 and tests the new N=26..28 terms, keeping the *entire* training nullspace rather than testing only individual basis vectors. No nonzero homogeneous recurrence of order at most 13/9/6/5/4 and coefficient degree at most 0/1/2/3/4, respectively, survives when required from n=0. It also excludes polynomial equations P(z,W(z))=0 with degree bounds (degree in W, degree in z) equal to (1,13), (2,8), (3,6), (4,4), or (5,3). Several templates fit the old terms and fail the new ones. These are finite exclusions of specified templates, not proofs that the sequence is nonalgebraic or non-D-finite, and not exclusions of recurrences that start later.
+
+The all-length half-word identity above is now Lean proved as raw_max_win_append_iff_common_fusion_stack. The formal build and all-declaration audit pass at the final tested source recorded in receipts.json.
+
+A further local averaging experiment compared complete continuation-count vectors through suffix length m+8 for all support orbits at prefix lengths m=0..6. It found 1,1,2,4,10,25,67 distinct vectors, respectively; each equality class was exactly one color-and-reversal orbit. This is finite exploratory evidence against an additional small averaging quotient, not an all-length impossibility theorem. The script, result and log are preserved in the verification archive separately from hosted checks.

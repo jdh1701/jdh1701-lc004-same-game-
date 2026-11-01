@@ -1,0 +1,89 @@
+{
+  "status": "VERIFIED-LEAN and VERIFIED-COMP; full enumeration remains unresolved",
+  "repository": "jdh1701/jdh1701-lc004-same-game-",
+  "pull_request": 52,
+  "tested_source_sha": "293cdb9766aa386963f59e33db54d43c48317171",
+  "tested_tree_sha": "bd425c7d3e0019dd5ea53816771343f219680f9f",
+  "workflow_run": 41329698273,
+  "conclusion": "success",
+  "jobs": {
+    "lean": 124917000821,
+    "exact": 124917000625
+  },
+  "lean": {
+    "active_modules": 250,
+    "audited_project_declarations": 4266,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "source_guard": "PASS",
+    "negative_coverage_guard": "PASS",
+    "negative_axiom_guard": "PASS",
+    "pinned_manifest_unchanged": true
+  },
+  "exact": {
+    "original_game_words": 118609,
+    "capped_run_support_words": 53416,
+    "half_word_counts_through": 28,
+    "independent_forward_half_word_agreement_through": 26,
+    "recurrence_templates_excluded": 37,
+    "algebraic_templates_excluded": 5
+  },
+  "paper_only": [
+    "Run-normalized algebraic majorant",
+    "Five-color density bounds",
+    "Exponential boundary rank and horizon-minimality extension"
+  ],
+  "source_sha256": {
+    "LC004/FusionStack.lean": "10c6e86535ea3d58305d141509df5e3f988b331d7041bd69992781de209cfbc1",
+    "LC004.lean": "5242e8fc8e03a44d5abe535275ef0bc8f3728f6eaf8a9ad101600ab71bf9a39f",
+    ".github/workflows/global-fusion.yml": "4a83847bcb4149acd536927afbbdce6bf1c4fe2de1da39d8b3781a5d78bf032b",
+    "research/global_fusion_20261101/fusion.py": "479fca9eb1e0bed0c1c7a93bf15aefd9f831443e2dd45aa9a72f8f0a31f6ccae",
+    "research/global_fusion_20261101/fusion_count.cpp": "c0df6c6213f67fe5ea15bab9da6faa444b5841f762ffd02535844554d577cbf9",
+    "research/global_fusion_20261101/fusion_meet.cpp": "acbcfa73fbe604ea031a10d204b7e9023f6fe0af95066e0b8710062923acacc4",
+    "research/global_fusion_20261101/check.py": "165eb953d1ef89b5bb9ee7e69eb43f922a424dbdce3f0d00862687fea1121c5d",
+    "research/global_fusion_20261101/run_bound.py": "959f4897a3d6fb410e76affdf13882a2e254e4b8e287ac25d1ddd88ceadb775f",
+    "research/global_fusion_20261101/meet_check.py": "5ed108f0bb96cfd94c9cd489a6e1fc51fe13b7faa87390260ddd5b816fddb8b7",
+    "research/global_fusion_20261101/scalar_search.py": "cee49a1c947b35944f1551cc26ed8645a7e552d45d0be753730af2a3d30fea76",
+    "research/global_fusion_20261101/checks.json": "125e98bcd10df454f18996c94456c84cc518cf0bcc5290b601e7059701f402ea",
+    "research/global_fusion_20261101/run-bound-checks.json": "16fbd9e16cfed91e5d2c3c6804488f2f71f305448edd159bbaa3a4ba305bed1c",
+    "research/global_fusion_20261101/meet-checks.json": "ad1e8bdac97f09af41327deb01092cd8891196fd7d4071e4a3719b93a60abefc",
+    "research/global_fusion_20261101/scalar-checks.json": "c15dfe8571705008e05f3f4d6d7833038dd2d5394a928d32fb0e29ebe72d1af8"
+  },
+  "archive_sha256": "2106c59ad5400e4043938292cc61cecc5e9fad91487b0a8c8036869f958f7b5c",
+  "archived_files_sha256": {
+    "exact-passed-293cdb97.log": "aa94eb62ad8e54afbe07cfdee10ab4486d440474c2286fb1405a3b76c0e04c09",
+    "exact-passed-66acdf53.log": "dbfedd71d59dc4fef22ac21c7c2742c69022c8a1d66c62cad570090dc3f832c9",
+    "lean-failed-3979abff.log": "3874f6755237a9f7c0235562a50b26adb4e136c8d6032d2077c37bf372bad4da",
+    "lean-failed-da2a83b0.log": "95f172e528b449794c51caa446eed21ddbee3a777de727b429e09c67116cd966",
+    "lean-passed-293cdb97.log": "a18557898690390c36573ebecdab7365bf68c90369e2893c8cad2a03dbc7a6f0",
+    "lean-passed-66acdf53.log": "df9d197c0cd07c8611824d1afc810dbf0c0565af25ed2e81b9354a291b4bd18b",
+    "local-average-residual.json": "9c3762336e5908ca2f1739548e94873221a90447b3d581fd9bdfe22a02c38d7b",
+    "local-average-residual.log": "2c6e39dba6c362337c6038e5c00774c5ad5d8728c574256f95bf31d6fef33b5d",
+    "local-average-residual.py": "01742b89f896a20f8f83022018c29eb59b006621161c28cafabf6ef0ae56704c"
+  },
+  "prior_failed_sources": [
+    {
+      "source": "3979abffbfd729261670e18f9f4fe541bdc1f807",
+      "run": 41327666543,
+      "lean_job": 124910917433,
+      "failure": "Finset membership simplification left an if True expression; repaired explicitly."
+    },
+    {
+      "source": "da2a83b01b226eb95945f97f36651f863f9719b7",
+      "run": 41328707863,
+      "lean_job": 124914032014,
+      "failure": "Substitution removed the named word binder; replaced by inferred stack."
+    }
+  ],
+  "first_full_pass": {
+    "source": "66acdf532a39a7759bcf80576fa30610438a8881",
+    "run": 41328980684,
+    "lean_job": 124914863982,
+    "exact_job": 124914863833
+  },
+  "local_exploration": "Archived average-residual experiment covers prefix lengths 0..6 and suffix lengths through prefix length+8; not a theorem for arbitrary suffixes.",
+  "receipt_commit_scope": "Documentation and archived evidence only; all hashed tested sources unchanged."
+}

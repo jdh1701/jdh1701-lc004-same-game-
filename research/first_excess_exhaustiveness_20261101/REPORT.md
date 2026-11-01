@@ -32,6 +32,15 @@ NOT a Lean theorem. In particular, the new 462-interleaving geometry and its
 23,716 composed relations are exhaustive Python checks, not Lean-certified
 geometry transport. Do not describe the full result as kernel checked.
 
+**Hosted verification passed:** source 80e6c8dc3df62ada6721b0b8544cecace24b9d1c,
+run 41266402544, Lean job 124730005486 and exact job 124730005601 both SUCCESS.
+All 248 modules build; all 4189 project declarations pass the standard-axiom
+audit; both negative guards pass. The new SixBoundaryLists lemmas are now
+PROVED-LEAN. All 462 geometry cases, 23716 compositions and 5816 original-case
+regressions reproduce at that exact source. Full job logs are archived with
+hashes in receipts.json. The whole first-excess assembly remains PROVED-PAPER,
+with its exhaustive finite inputs; no stronger formal status is claimed.
+
 ## 1. Notation and exact finite boundary geometry
 
 Number the six-class H cyclically by 0,...,5. Use the Lean catalogue order:

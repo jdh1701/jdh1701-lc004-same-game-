@@ -1,6 +1,6 @@
 # Global Boolean fusion route (2026-11-01)
 
-Status: research toward LC004/A035617, **not a solution of the open enumeration problem**. The Lean bridge is submitted for verification; do not promote it until the exact source passes the full build, declaration axiom audit and negative guards.
+Status: research toward LC004/A035617, **not a solution of the open enumeration problem**. The Lean bridge and exact residual-language theorem passed the full build, declaration axiom audit and negative guards at source 66acdf532a39a7759bcf80576fa30610438a8881, run 41328980684. See the final verification receipt for the complete source and checks.
 
 ## Exact global model
 
@@ -59,3 +59,11 @@ For fixed half lengths l+r=N, reversal permutes all r-letter words. Thus the tot
 fusion_meet.cpp explicitly enumerates every right half-word, recording for each stack the set of half-word IDs that reach it. It separately records the multiplicity of each left support orbit under global color permutations. For a left support S, the union of its stack postings is exactly the right words intersecting S; its cardinality times the left multiplicity contributes to the total. The right universe contains all labeled words, so global color permutations of a left support preserve this cardinality. Sparse lists and dense bit vectors only change how this union is computed.
 
 This implementation uses top-first strings, explicit half-word enumeration, and incidence unions. It shares neither the forward program's bit-encoded stack representation nor its horizon pruning or state-distribution recurrence. It independently reproduces every count through length 26. In particular W_26=434,087,233,947 agrees between both methods; the independent replay takes about 31 seconds and peaks at 385,956 KiB for the batch through N=26.
+
+The half-word computation further gives W_27=1,326,879,233,787 and W_28=4,055,050,431,933 (counts27-28.json). These two terms have this one algorithmic replay, unlike W_26's two-method agreement. The runs took about 86 and 200 seconds; the batch peaked at 2,070,404 KiB. No OEIS submission has been made.
+
+RUN_BOUND.md also supplies a separate elementary argument using blocks of three: W_5(n)/5^n <= (24/25)^floor(n/3). It avoids analytic continuation and independently confirms five-color exponential decay. These bounds are paper proofs, not Lean theorems.
+
+## Small scalar-formula attacks, with held-out terms
+
+scalar_search.py uses exact rational Gaussian elimination. It fits the old coefficients through N=25 and tests the new N=26..28 terms, keeping the *entire* training nullspace rather than testing only individual basis vectors. No nonzero homogeneous recurrence of order at most 13/9/6/5/4 and coefficient degree at most 0/1/2/3/4, respectively, survives when required from n=0. It also excludes polynomial equations P(z,W(z))=0 with degree bounds (degree in W, degree in z) equal to (1,13), (2,8), (3,6), (4,4), or (5,3). Several templates fit the old terms and fail the new ones. These are finite exclusions of specified templates, not proofs that the sequence is nonalgebraic or non-D-finite, and not exclusions of recurrences that start later.

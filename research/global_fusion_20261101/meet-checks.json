@@ -244,7 +244,25 @@
       "right_words": 1594323,
       "total_postings": 16613802,
       "dense_postings": 1534
+    },
+    {
+      "n": 27,
+      "status": "complete",
+      "count": 1326879233787,
+      "left_support_orbits": 134793,
+      "right_words": 4782969,
+      "total_postings": 59767194,
+      "dense_postings": 3070
+    },
+    {
+      "n": 28,
+      "status": "complete",
+      "count": 4055050431933,
+      "left_support_orbits": 365702,
+      "right_words": 4782969,
+      "total_postings": 59767194,
+      "dense_postings": 3070
     }
   ],
-  "scope": "N<=25 match OEIS; N=26 independently matches forward DP. No closed scalar all-length formula."
+  "scope": "N<=25 match OEIS; N=26 independently matches forward DP; N=27,28 computed with the half-word algorithm. No closed scalar all-length formula."
 }

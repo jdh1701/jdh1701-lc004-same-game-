@@ -67,4 +67,5 @@ jobs:
           python research/global_fusion_20261101/run_bound.py
           g++ -O3 -march=native -std=c++17 research/global_fusion_20261101/fusion_meet.cpp -o /tmp/fusion-meet
           python research/global_fusion_20261101/meet_check.py /tmp/fusion-meet
-          git diff --exit-code -- research/global_fusion_20261101/checks.json research/global_fusion_20261101/run-bound-checks.json research/global_fusion_20261101/meet-checks.json
+          python research/global_fusion_20261101/scalar_search.py
+          git diff --exit-code -- research/global_fusion_20261101/checks.json research/global_fusion_20261101/run-bound-checks.json research/global_fusion_20261101/meet-checks.json research/global_fusion_20261101/scalar-checks.json

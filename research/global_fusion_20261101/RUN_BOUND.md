@@ -66,3 +66,23 @@ For b>=6 the earlier unnormalized bound already gives exponential decay, since 1
 run_bound.py exhaustively compares capped-run support with full fusion support for binary words through length 10, ternary through length 9, and four colors through length 7. It independently expands the formula using integer power-series arithmetic and compares all the resulting coefficients. The five-color endpoint inequalities use exact rational arithmetic.
 
 Replacing Fibonacci fusion by ordinary involutions X_a^2=I is not valid even after capping runs. The word abbacca wins by deleting bb, then cc, then aaa. Its three a's prevent an empty product in the proposed involution model. This failure is recorded explicitly in the checks.
+
+## A second proof of decay for five colors, without analytic continuation
+
+Group a word into blocks of three letters and a final block of length r<3. Within a triple, the only duplicate normal-form coefficient occurs for aaa: X_a^3=I+2X_a. Replacing this by I+X_a preserves its positive support on every input stack. Summing these modified operators over all b^3 triples gives the entrywise nonnegative operator B=T^3-T. Consequently the empty coefficient of B^k T^r is an integer upper bound on W_b(3k+r).
+
+For the same h and lambda as above, write Th=lambda h-delta e, where e is the root indicator and delta=lambda-b/sqrt(b-1)>=0. Expanding exactly,
+
+    Bh = (lambda^3-lambda)h
+         - delta[(lambda^2-1)e + lambda T e + T^2 e]
+       <= (lambda^3-lambda)h.
+
+Both B and T have nonnegative entries; also e<=h and h(root)=1. Induction therefore gives
+
+    W_b(3k+r) <= (lambda^3-lambda)^k lambda^r,  0<=r<3.
+
+In particular,
+
+    W_5(n)/5^n <= (24/25)^floor(n/3).
+
+This elementary bound is weaker asymptotically than the run-normalized 129(40/41)^n bound, but proves the same five-color decay conclusion without Pringsheim's theorem or spectral theory. It still does not prove decay, or a scalar counting formula, for three or four colors.

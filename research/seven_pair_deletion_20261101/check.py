@@ -99,7 +99,22 @@ def check(p,source):
    stats['fast_all_five_checks']+=1
   fast=universal_seven_coefficient(p)
   assert fast==(kp if u else None)
-  if u:stats['fast_universal_seven_checks']+=1
+  if u:
+   stats['fast_universal_seven_checks']+=1
+   if kp:
+    assert kp==2
+    runs=[]
+    for start in H:
+     if p[(start-1)%len(p)]==p[start]:continue
+     run=[];pos=start
+     while p[pos]==p[start]:run.append(pos);pos=(pos+1)%len(p)
+     runs.append(tuple(run))
+    assert sorted(map(len,runs))==[2,2,3]
+    triple=next(run for run in runs if len(run)==3)
+    contracted=tuple(x for i,x in enumerate(p) if i not in triple[:2])
+    assert connected(contracted) and all_five_coefficient(contracted)==-1
+    assert u==1
+    stats['universal_seven_exhaustiveness_checks']+=1
  if kp:
   stats['nonzero']+=1
   key=f"u={u},v={v},sign={'positive' if kp>0 else 'negative'},outside_classes={len(others)}"

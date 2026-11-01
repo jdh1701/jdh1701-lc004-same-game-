@@ -15,6 +15,7 @@
     "singleton_tripling_checks": 96,
     "tripling_family_original_replays": 24,
     "universal_branch": 805,
+    "universal_seven_exhaustiveness_checks": 108,
     "wraparound_pair_checks": 1535
   },
   "profiles": {

@@ -20,6 +20,14 @@ New uniform paper results:
    s classes of an all-five survivor gives (-1)^(s+1)*2^s. The image family
    has ((5j+2s)/(5j))*binom(j,s)*A_j rooted patterns; this is not an exhaustive
    mixed-profile census or an A035617 term.
+4. The entire universal connected (7,5,...,5) nonzero stratum IS now proved
+   on paper to be exactly singleton triplings. Every coefficient is +2 and
+   its count is (5j+2)*A_j/5. REPORT section 5 treats every universal T-block
+   placement, and excludes the last alternative by a forbidden third
+   complete certificate. Other outside profiles are not classified.
+5. The explicit alternating-star construction in REPORT section 4 gives
+   all-five survivors for EVERY j>=3, so the iterated family is nonvacuous
+   at arbitrary excess, and all-seven coefficients have unbounded magnitude.
 
 New formal file `LC004/SmallRefinementGap.lean` concerns small blocks in a
 one-class refinement: nonzero coefficient forces consecutive original
@@ -32,6 +40,9 @@ Exact regression: 4961 connected cases; 3920 direct original replays;
 34727 pair correction checks; 4556 fast all-five checks; 269 fast universal
 seven checks; 96 one-step tripling fixtures, 72 two-step and 8 three-step;
 24 direct original replays of the complete j=2 constructed family.
+All 108 nonzero universal-seven/otherwise-five cases also pass the exact
+run-shape, unique universal state, +2 coefficient, and contraction recognition
+checks for the new exhaustiveness theorem.
 These groups overlap and must not be added as independent patterns.
 There are 805 universal cases and 4156 no-universal cases.
 
@@ -45,9 +56,12 @@ Next useful targets:
   complex for otherwise-five classes. PR50's +1 connected witness has all
   deletion terms zero, so the new recurrence alone cannot remove this term.
   Projected majority closure is false even when kappa is nonzero.
-* Determine whether universal-seven nonzero cases are exactly singleton
-  triplings, or find a counterexample. The recurrence evaluates them without
-  needing this stronger assertion; exhaustiveness is NOT established here.
+* Adversarially review/formalize REPORT section 5's new exhaustiveness proof.
+  Key ingredients: universal crossed five-class vanishing; deleting an
+  adjacent pair outside the universal triple gives such a five-state;
+  deleting inside the triple preserves ALL full-class crossing relations;
+  the two complete all-five certificates prohibit the remaining insertion
+  site by mixing outside states across a universal chord.
 * Use the arbitrary-outside-size recurrence to remove universal seven-classes
   iteratively, factoring disconnected deletion targets. Mixed six-classes and
   no-universal sevens remain genuine residual cases.

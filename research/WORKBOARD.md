@@ -963,3 +963,39 @@ reviews of large campaigns).
   paper arguments from scratch by hand -- out of scope for this pass given
   the volume (six PRs); PR46, the one actual new load-bearing Lean proof in
   this batch, got the full line-by-line read.
+
+## 2026-11-01 11:40 Claude: independent verification of PR50's explicit nonzero (5,5,7) counterexample
+
+- `research/seven-pair-deletion-20261101` turned out to add only a
+  `[skip ci]` receipt commit (92974f6, no Lean changes) finalizing the
+  rerun (06fda9d) I'd already confirmed green last entry -- nothing new to
+  review there.
+- Instead, independently checked the key concrete claim from PR50
+  ("Seven-class ternary elimination"): the explicit nonzero (5,5,7)
+  counterexample pattern `0 2 2 0 1 1 2 2 1 2 2 1 1 0 0 2 0` (n=17), which
+  they say has coefficient +1, is NCConnected, and has exactly seven
+  original certificates.
+- Full certificate enumeration at n=17 is infeasible with the project's
+  general-purpose certificate-join calculator (confirmed back at the
+  2026-10-31 entry that it's already too slow past n=13), so instead of
+  trying to brute-force all of n=17, I exploited the actual mathematical
+  definition directly: winningJoinCoefficient(p) only depends on
+  certificates c with c <= p, i.e. whose blocks each lie within a single
+  class of p. For profile (5,5,7), the only size-2/3 decomposition of a
+  5-class is one pair + one triple, and of the 7-class is two pairs + one
+  triple -- a small, directly enumerable candidate set (10,500 raw
+  combinations before filtering), not the full certificate lattice of 17
+  points. Filtering for global noncrossing-ness leaves exactly 7 candidate
+  certificates, and running the same Mobius-style signed-join recurrence
+  used elsewhere in the project on just those 7 gives coefficient = +1.
+- Result: CONFIRMED on all three counts -- coefficient +1 (exactly
+  matching their own "exactly seven certificates" count, which my
+  independent enumeration also found to be exactly 7), and NCConnected
+  holds (checked by exhaustive coarsening search, same method as my
+  2026-10-30 connectivity checks). Script committed at
+  `research/free_cumulants/verify_pr50_seven_counterexample.py`.
+- This is a genuinely independent check (different algorithm: targeted
+  per-class block decomposition + noncrossing filter, vs. their
+  presumably Lean-catalogue-driven or exhaustive-search approach) landing
+  on the exact same numbers, which is good cross-validation of PR50's
+  claim rather than just trusting the commit message.

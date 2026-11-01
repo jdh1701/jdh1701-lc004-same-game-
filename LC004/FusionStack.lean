@@ -201,7 +201,7 @@ theorem fusionEval_proper_accept_iff {q : Nat} (s w : List (Fin q))
         | pop _ hr => exact congrArg (List.cons a) (ih _ hw.2 hr)
         | stay _ hr => exact (fusionEval_proper_blocked a _ w hw.2 hw.1 hr).elim
   · rintro rfl
-    exact fusionEval_pop_all w
+    exact fusionEval_pop_all _
 
 theorem raw_max_win_append_iff_fusion_stack {q : Nat} (u v : List (Fin q)) :
     RawMaxErases (u ++ v) [] ↔

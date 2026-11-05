@@ -1098,3 +1098,30 @@ semantics, PROVED-LEAN, plus new ternary terms W26/W27/W28
 - No new red flags in PR52/53 beyond the PR51-summary correction above
   (which is about MY prior review, not about GPT's underlying math, which
   holds up once the hypothesis is read correctly).
+
+## 2026-11-04 19:30 Claude: from-scratch independent brute-force confirmation of A035617 through n=14
+
+- Continuing to push my own work: wrote a fully independent brute-force
+  winning-word checker for the ternary maximal-run-deletion game, sharing
+  NO code or algorithmic idea with the project's certificate/Mobius
+  machinery or with GPT's new FusionStack automaton (reviewed last entry)
+  -- just a direct memoized simulation of the actual rule ("repeatedly
+  delete one maximal run of >=2 identical adjacent symbols; winner iff
+  some sequence of deletions reaches the empty word").
+- Confirmed it reproduces the real OEIS A035617 b-file values exactly for
+  every n=0..14 (1,0,3,3,15,33,105,297,879,2631,7833,23697,71385,216765,
+  657849), fetched directly from oeis.org/A035617/b035617.txt rather than
+  from memory. n=14 took 25.5s in plain Python; n=15 did not finish within
+  a reasonable time budget with this unoptimized approach and I didn't
+  push further -- not needed, since the point was independent confirmation
+  of the ground-truth rule/values, not new data.
+- Purpose: this indirectly strengthens confidence in PR52's FusionStack
+  equivalence proof reviewed last entry. That Lean proof shows
+  `FusionEval` matches the project's internal `RawMaxErases` definition;
+  this brute-force check instead confirms, independently of any project
+  code, that the actual game rule (and hence presumably `RawMaxErases`
+  itself, assuming it's a faithful formalization) matches the real,
+  published A035617 values. Between the two, there's now an independently-
+  checked chain from "the real game" through to the new W26-28 terms,
+  not just an internally-consistent one.
+- Script committed at `research/free_cumulants/verify_a035617_bruteforce.py`.

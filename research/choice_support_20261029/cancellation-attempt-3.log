@@ -1,0 +1,74 @@
+⚠ [2793/2804] Replayed LC004.ChoiceComplexCancellation
+warning: ././././LC004/ChoiceComplexCancellation.lean:22:4: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+info: ././././LC004/ChoiceComplexCancellation.lean:149:0: 'LC004.faceAlternatingSum_delete_dominated' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceComplexCancellation.lean:150:0: 'LC004.facetAlternatingSum_erase_dominated' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceComplexCancellation.lean:151:0: 'LC004.twoFan_closed_choiceMajority' depends on axioms: [propext]
+info: ././././LC004/ChoiceComplexCancellation.lean:152:0: 'LC004.choiceMajority_closed_row_all' depends on axioms: [propext]
+ℹ [2794/2804] Replayed LC004.ChoiceRelationClassification
+info: ././././LC004/ChoiceRelationClassification.lean:125:0: 'LC004.choiceRelation_classification' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceRelationClassification.lean:126:0: 'LC004.choiceRelation_bijective_of_isolated_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2795/2804] Replayed LC004.ChoiceUniversalValue
+info: ././././LC004/ChoiceUniversalValue.lean:125:0: 'LC004.choicePairProjection_closed' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/ChoiceUniversalValue.lean:126:0: 'LC004.choice_exists_universal_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceUniversalValue.lean:127:0: 'LC004.choiceBinaryDetermined_of_binary_constraints' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/ChoiceUniversalValue.lean:128:0: 'LC004.choice_universal_value_replace' depends on axioms: [propext, Quot.sound]
+⚠ [2796/2804] Replayed LC004.ChoiceReducedCancellation
+warning: ././././LC004/ChoiceReducedCancellation.lean:105:40: `Function.update_same` has been deprecated: use `Function.update_self` instead
+warning: ././././LC004/ChoiceReducedCancellation.lean:118:10: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+info: ././././LC004/ChoiceReducedCancellation.lean:179:0: 'LC004.facetAlternatingSum_delete_set' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceReducedCancellation.lean:180:0: 'LC004.choiceAlternatingSum_zero_of_replace_and_force' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceReducedCancellation.lean:181:0: 'LC004.choiceAlternatingSum_zero_of_reduced_system' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceReducedCancellation.lean:182:0: 'LC004.binaryChoiceFan_alternatingSum_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2797/2804] Replayed LC004.ChoiceFunctionalElimination
+info: ././././LC004/ChoiceFunctionalElimination.lean:71:0: 'LC004.facetAlternatingSum_delete_set_varying' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceFunctionalElimination.lean:72:0: 'LC004.choiceAlternatingSum_delete_determined_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceFunctionalElimination.lean:73:0: 'LC004.choiceAlternatingSum_delete_bijective_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2798/2804] Replayed LC004.ChoiceCoordinateReduction
+info: ././././LC004/ChoiceCoordinateReduction.lean:153:0: 'LC004.choiceReducedFamily_binary' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceCoordinateReduction.lean:154:0: 'LC004.choiceReducedFamily_connected' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceCoordinateReduction.lean:155:0: 'LC004.choiceReducedFamily_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2799/2804] Replayed LC004.ChoiceBijectiveQuotient
+info: ././././LC004/ChoiceBijectiveQuotient.lean:224:0: 'LC004.choiceBijectiveSetoid' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/ChoiceBijectiveQuotient.lean:225:0: 'LC004.choiceQuotient_covers' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceBijectiveQuotient.lean:226:0: 'LC004.choiceQuotientFamily_binary' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceBijectiveQuotient.lean:227:0: 'LC004.choiceQuotientFamily_connected' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceBijectiveQuotient.lean:228:0: 'LC004.choiceQuotientFamily_no_bijections' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceBijectiveQuotient.lean:229:0: 'LC004.choiceQuotientFamily_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceBijectiveQuotient.lean:230:0: 'LC004.choiceQuotientFamily_alternatingSum_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2800/2804] Replayed LC004.ChoiceQuotientFaceSum
+info: ././././LC004/ChoiceQuotientFaceSum.lean:179:0: 'LC004.choiceAlternatingSum_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceQuotientFaceSum.lean:180:0: 'LC004.choiceAlternatingSum_zero_of_nontrivial_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2801/2804] Replayed LC004.ChoiceBinaryClosure
+info: ././././LC004/ChoiceBinaryClosure.lean:38:0: 'LC004.choiceSolutionsClosed_of_binary_spec' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/ChoiceBinaryClosure.lean:39:0: 'LC004.choiceSolutionsClosed_and_binaryDetermined_of_binary_spec' depends on axioms: [propext, Quot.sound]
+ℹ [2802/2804] Replayed LC004.ChoiceAbstractCancellation
+info: ././././LC004/ChoiceAbstractCancellation.lean:152:0: 'LC004.choiceQuotient_nontrivial_of_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceAbstractCancellation.lean:153:0: 'LC004.choiceAlternatingSum_zero_of_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceAbstractCancellation.lean:154:0: 'LC004.choiceAlternatingSum_zero_of_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceAbstractCancellation.lean:155:0: 'LC004.choiceAlternatingSum_zero_of_binary_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceAbstractCancellation.lean:156:0: 'LC004.choiceAlternatingSum_zero_of_local_constraints' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceAbstractCancellation.lean:157:0: 'LC004.binaryChoiceFan_abstract_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2803/2804] Built LC004.ChoiceSupportedDomains
+info: ././././LC004/ChoiceSupportedDomains.lean:169:0: 'LC004.choiceSupportedFamily_binary' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceSupportedDomains.lean:170:0: 'LC004.choiceSupportedFamily_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceSupportedDomains.lean:171:0: 'LC004.choiceSupportedFamily_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceSupportedDomains.lean:172:0: 'LC004.choiceAlternatingSum_supported' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2804/2804] Building LC004.ChoiceSupportedCancellation
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /tmp/lean-4.19.0-linux/bin/lean ././././LC004/ChoiceSupportedCancellation.lean -R ./././. -o ././.lake/build/lib/lean/LC004/ChoiceSupportedCancellation.olean -i ././.lake/build/lib/lean/LC004/ChoiceSupportedCancellation.ilean -c ././.lake/build/ir/LC004/ChoiceSupportedCancellation.c --json
+error: ././././LC004/ChoiceSupportedCancellation.lean:63:0: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+Use `set_option maxHeartbeats <num>` to set the limit.
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: ././././LC004/ChoiceSupportedCancellation.lean:87:8: (kernel) unknown constant 'LC004.choiceAlternatingSum_zero_of_nonconstant_covered_cuts'
+info: ././././LC004/ChoiceSupportedCancellation.lean:130:0: 'LC004.choiceSupportedFamily_connected_of_covers' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceSupportedCancellation.lean:131:0: 'LC004.choiceAlternatingSum_zero_of_covered_cuts' depends on axioms: [LC004.choiceAlternatingSum_zero_of_covered_cuts]
+info: ././././LC004/ChoiceSupportedCancellation.lean:132:0: 'LC004.choiceAlternatingSum_zero_of_covered_binary_spec' depends on axioms: [propext,
+ Classical.choice,
+ LC004.choiceAlternatingSum_zero_of_covered_cuts,
+ Quot.sound]
+error: Lean exited with code 1
+Some required builds logged failures:
+- LC004.ChoiceSupportedCancellation
+error: build failed

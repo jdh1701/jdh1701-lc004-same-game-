@@ -1,0 +1,156 @@
+{
+  "status": "VERIFIED-COMP",
+  "hypergraph_examples": [
+    {
+      "pattern": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "certificates": 9,
+      "minimal_generator_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      "partition_polynomial": [
+        1,
+        9,
+        22,
+        17,
+        6,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Z_at_minus_one": 2,
+      "memoized_recursion_states": 29,
+      "subsets_used_to_construct_hypergraph": 512
+    },
+    {
+      "pattern": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "certificates": 12,
+      "minimal_generator_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "partition_polynomial": [
+        1,
+        12,
+        52,
+        123,
+        210,
+        252,
+        210,
+        120,
+        45,
+        10,
+        1,
+        0,
+        0
+      ],
+      "Z_at_minus_one": 2,
+      "memoized_recursion_states": 46,
+      "subsets_used_to_construct_hypergraph": 4096
+    },
+    {
+      "pattern": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "certificates": 4,
+      "minimal_generator_sizes": [],
+      "partition_polynomial": [
+        1,
+        4,
+        6,
+        4,
+        1
+      ],
+      "Z_at_minus_one": 0,
+      "memoized_recursion_states": 5,
+      "subsets_used_to_construct_hypergraph": 16
+    }
+  ],
+  "nonconfluent_game_example": {
+    "word": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "terminal_words": [
+      [],
+      [
+        0
+      ]
+    ]
+  },
+  "scope": "finite witnesses; constructing hyperedges still enumerates subsets; no global speedup claimed"
+}

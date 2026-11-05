@@ -1,0 +1,60 @@
+{
+  "proof_commit": "c365c2ae2922a35765f9a6b692d05e838873ebcd",
+  "proof_tree": "1fc3dc018c1d98e3b3a7840d1e417b9daea2f852",
+  "status": "success on exact proof commit",
+  "local": {
+    "active_modules": 215,
+    "audited_declarations": 3574,
+    "full_build": "pass",
+    "coverage": "pass",
+    "negative_guards": "both pass",
+    "exhaustive_csp_systems": 2619,
+    "geometric_candidate_pairs": 330,
+    "negative_controls": 4,
+    "finite_counts": [
+      {
+        "n": 10,
+        "patterns": 126,
+        "survivors": 5
+      },
+      {
+        "n": 15,
+        "patterns": 126126,
+        "survivors": 35
+      }
+    ],
+    "exported_candidate_graphs": 268,
+    "third_certificate_witnesses": 228,
+    "remote_files_verified": 46,
+    "sage": "independent new replay configured in CI; not run locally"
+  },
+  "runs": [
+    {
+      "id": 40984245009,
+      "name": "Choice-complex cancellation audit",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "c365c2ae2922a35765f9a6b692d05e838873ebcd",
+      "url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40984245009"
+    },
+    {
+      "id": 40984244539,
+      "name": "Cross-domain exact coefficient probes",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "c365c2ae2922a35765f9a6b692d05e838873ebcd",
+      "url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40984244539"
+    }
+  ],
+  "scope": "Actual noncrossing five-class split-family law and raw-compatibility SCC survivor recognition; original CertificateConstraint/coefficient bridge and full counting open",
+  "novelty": "Project-level algorithmic advance; no worldwide novelty claim",
+  "n25": {
+    "id": 40942806037,
+    "status": "completed",
+    "conclusion": "success",
+    "count_accepted": true,
+    "survivors": 6455,
+    "all_128_shards_audited": true,
+    "independent_method": "feasible-template SCC transfer"
+  }
+}

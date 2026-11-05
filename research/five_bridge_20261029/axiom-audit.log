@@ -1,0 +1,2 @@
+Unsafe compiler runtime helpers excluded: 1522
+AXIOM AUDIT PASS: 3726 project declarations; only propext, Classical.choice, Quot.sound permitted

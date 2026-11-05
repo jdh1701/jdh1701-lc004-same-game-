@@ -1,0 +1,10 @@
+[
+  {
+    "query": "simplicial complex constraint satisfaction Euler characteristic",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "query": "noncrossing partitions five blocks cumulants",
+    "error": "HTTP Error 429: Too Many Requests"
+  }
+]

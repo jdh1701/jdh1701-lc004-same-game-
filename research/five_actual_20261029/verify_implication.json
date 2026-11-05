@@ -1,0 +1,10 @@
+{
+  "status": "VERIFIED-COMP",
+  "majority_closed_relations": 14,
+  "exhaustive_three_variable_systems": 2619,
+  "rigid_systems": 459,
+  "geometric_separated_pairs": 330,
+  "geometric_rigid_pairs": 10,
+  "hypothesis_removal_controls": 4,
+  "failures": 0
+}

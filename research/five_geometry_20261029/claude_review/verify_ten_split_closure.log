@@ -1,0 +1,5 @@
+total arrangements: 252
+crossing original classes: 242
+nonempty AND crossing: 140
+not majority-closed (CORRECT test): 0
+crossing but NOT covered-by-row-or-col: 0

@@ -1,0 +1,55 @@
+{
+  "status": "success; independently confirmed finite count",
+  "enumeration_commit": "69122bcf2f71e62a4a852c5c5c06a46bc6b8419b",
+  "enumeration_tree": "d74b52ec745087383e28999dd4965e231fbf6f0c",
+  "enumeration_run": {
+    "id": 40986874442,
+    "conclusion": "success",
+    "job_id": 123839836376,
+    "url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40986874442"
+  },
+  "coefficient_probes": {
+    "id": 40986874357,
+    "conclusion": "success"
+  },
+  "formal_recognition": {
+    "commit": "c365c2ae2922a35765f9a6b692d05e838873ebcd",
+    "run_id": 40984245009,
+    "conclusion": "success",
+    "jobs": [
+      "lean",
+      "exact",
+      "sage"
+    ],
+    "active_modules": 215,
+    "audited_declarations": 3574
+  },
+  "counts": {
+    "n20": {
+      "survivors": 415,
+      "weighted": 1660
+    },
+    "n25": {
+      "survivors": 6455,
+      "weighted": 32275,
+      "first_block_orbits": 1096,
+      "orbit_weight_sum": 53130,
+      "feasible_four_class_templates": 3769195,
+      "certificate_incidences": 16279200,
+      "template_cases": 4131037720,
+      "candidate_pairs": 22743,
+      "positive_orbit_witnesses": 767,
+      "independent_full_family_replays": 767
+    }
+  },
+  "independent_claude": {
+    "run_id": 40942806037,
+    "source_commit": "56d867dd07e781fe1565e8ab3761bb1c647e3009",
+    "conclusion": "success",
+    "successful_shards": 128,
+    "sum_n20": 415,
+    "sum_n25": 6455
+  },
+  "remote_files_verified": 35,
+  "scope": "Connected all-five surviving split patterns; not A(25,5), not full winning-word counts. Original CertificateConstraint/coefficient identity remains a formal obligation. No general counting formula or worldwide novelty claim."
+}

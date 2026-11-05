@@ -1,0 +1,22 @@
+{
+  "status": "VERIFIED-COMP",
+  "cases": {
+    "n5_bijections": 1,
+    "single_class_exclusion_control": 1,
+    "n10_bijections": 126,
+    "n10_connected_coefficients": 121,
+    "n15_bijections": 254,
+    "n15_connected_coefficients": 254
+  },
+  "coefficient_histogram": {
+    "0": 335,
+    "-1": 40
+  },
+  "global_nc_certificate_catalogue": {
+    "n5": 5,
+    "n10": 180,
+    "n15": 10010
+  },
+  "scope": "n10 all 126 partitions; n15 saved separated-pair fixtures; n5 exclusion control",
+  "method": "global NC interval decomposition; actual position-partition signed joins"
+}

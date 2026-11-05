@@ -1,0 +1,8 @@
+{
+  "status": "VERIFIED-COMP",
+  "positive_marked_orbit_cases": 767,
+  "independent_full_family_replays": 767,
+  "weighted_survivors": 32275,
+  "survivors": 6455,
+  "failures": 0
+}

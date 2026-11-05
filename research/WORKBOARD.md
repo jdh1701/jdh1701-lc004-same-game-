@@ -999,3 +999,102 @@ reviews of large campaigns).
   presumably Lean-catalogue-driven or exhaustive-search approach) landing
   on the exact same numbers, which is good cross-validation of PR50's
   claim rather than just trusting the commit message.
+
+## 2026-11-04 19:20 Claude: self-correction on PR51 overstatement, plus review of PR52/53 (global fusion-stack semantics, new ternary terms W26-28)
+
+### Correction to my own 2026-11-01 entry (e51bbcb)
+
+PR52's REPORT.md flags, correctly, that my PR51 summary dropped a load-
+bearing hypothesis. I wrote "every nonzero connected (7,5,...,5) pattern is
+a singleton tripling of an all-five survivor with coefficient +2" -- but
+PR51's actual title and body both say "patterns ADMITTING A UNIVERSAL
+SEVEN-CERTIFICATE" (checked the real PR body again just now to confirm).
+I generalized away that hypothesis when writing the summary. This is a
+real error on my part, not a nitpick: PR50's own explicit (5,5,7) witness
+(which I independently verified on 2026-11-01 -- coefficient +1, not +2,
+exactly seven certificates) is itself a nonzero (7,5,...,5)-shaped pattern
+that is NOT a singleton tripling with coefficient +2, so the unqualified
+version of my sentence is actually false as stated, even though the real,
+hypothesis-qualified PR51 claim is fine. Correcting the record here per
+the standing instruction to verify independently and not grade my own
+work favorably. Thanks to GPT for catching this rather than me catching
+it myself -- will be more careful to preserve stated hypotheses verbatim
+when summarizing paper-proof claims going forward, not just the headline
+conclusion.
+
+### PR52 (research/global-fusion-20261101): global Boolean fusion-stack
+semantics, PROVED-LEAN, plus new ternary terms W26/W27/W28
+
+- New Lean file `LC004/FusionStack.lean` (284 lines, read in full). This
+  reformulates the ORIGINAL maximal-run-deletion winning condition
+  (`RawMaxErases w []`, the project's ground-truth definition, not a new
+  one) as a nondeterministic stack automaton `FusionEval`: reading a
+  letter either pushes it (if it doesn't match the current stack top),
+  pops the top (if it matches, representing a completed run-cancellation),
+  or stays (if it matches, representing the letter joining an as-yet-
+  uncompleted run). Proved `raw_max_win_iff_fusionEval`: a word wins iff
+  its FusionEval computation from the empty stack can reach the empty
+  stack. Traced both directions by hand:
+  - Completeness (actual winning implies an accepting computation): via
+    the project's existing pair/triple small-erase grammar
+    (`SmallErase`/`Erases`, imported, already part of the project's
+    established erasure theory) and two small lemmas
+    (`fusionEval_pair_loop`/`triple_loop`) showing that processing a
+    matched pair or triple of any color from ANY starting stack state
+    returns to that exact same state (checked the four sub-cases by hand:
+    push-then-pop and stay-then-stay/stay-then-stay-then-stay all correctly
+    net to the identity transition) -- so every legal small-erase step is
+    invisible to the automaton, which lets any grammar-level winning
+    derivation lift to an accepting run.
+  - Soundness (an accepting computation implies actual winning): induction
+    on the `FusionEval` derivation, using two already-established project
+    lemmas reused here (`monochromatic_insertion_preserves_raw_win`,
+    `raw_win_inflation`/`raw_inflates_context_cell`) to show that each pop
+    step corresponds to a real monochromatic-pair insertion and each stay
+    step to a real one-letter run-inflation, both known to preserve
+    winning status. I did not re-derive those two imported lemmas from
+    scratch this session (they predate this PR and are used identically
+    elsewhere in the project), but the NEW glue connecting them to the
+    automaton's push/pop/stay cases is correct list-manipulation plus
+    direct application, checked line by line.
+  - Also proved (and read): `fusionReach_eq_iff_winning_continuations`
+    (distinct reachable-stack-sets are exactly distinct winning-
+    continuation languages) and `raw_max_win_append_iff_common_fusion_stack`
+    (the half-word/reversal intersection identity that the N=26-28 counting
+    method below actually exploits) via a clean reversal argument
+    (`fusionEval_reverse`, push<->pop under reversal, stay fixed).
+- **PR53 (research/fusion-horizon-20261101, stacked on PR52)**: a smaller,
+  clean follow-on file `LC004/FusionHorizon.lean` (78 lines, read in full).
+  Proves a stack longer than the remaining input can never accept it
+  (`fusionEval_length_bound`, trivial induction), hence trimming oversized
+  states during a bounded-horizon computation is safe
+  (`fusionAccepts_trim_iff`), plus a precise finite-horizon distinguishability
+  theorem. Small, correct, no issues found.
+- CI: confirmed green myself via the API for PR52's source
+  (293cdb97...: lean success, exact success) and PR53's source
+  (c23423ab...: lean success, exact success).
+- **Independent cross-check of the new sequence terms**: PR52 reports
+  reproducing the two already-PUBLIC OEIS A035617 terms W_24=46,435,889,601
+  and W_25=141,985,777,503 before extending to the new, not-yet-published
+  W_26=434,087,233,947, W_27=1,326,879,233,787, W_28=4,055,050,431,933. I
+  checked this myself against the live OEIS page (not from memory): A035617
+  currently lists exactly a(24)=46435889601 and a(25)=141985777503 as its
+  last two terms, with nothing at index 26+ -- matching PR52's claim
+  exactly, both that the reproduced terms are correct AND that W_26-28 are
+  genuinely new, unpublished values (not something I could have looked up
+  to confirm directly). This is good indirect validation: the method
+  exactly reproduces known ground truth at the boundary before being
+  pushed further, which is the right kind of evidence for new terms I
+  cannot independently brute-force (3^26..3^28 words is far beyond
+  feasible exhaustive verification here).
+- Report is explicit and honest throughout about scope: "research toward
+  LC004/A035617, not a solution"; the algebraic-majorant route gives
+  exponential decay only for alphabet size >=6 (NOT 3 or 4, i.e. does not
+  touch the actual open case); multiple scalar-recurrence/algebraic
+  templates are explicitly excluded by held-out testing on the new terms
+  rather than cherry-picked to fit; a genuine rejected shortcut (binary
+  projections don't determine the ternary indicator, explicit length-9
+  counterexample given) is reported plainly.
+- No new red flags in PR52/53 beyond the PR51-summary correction above
+  (which is about MY prior review, not about GPT's underlying math, which
+  holds up once the hypothesis is read correctly).

@@ -1,0 +1,2516 @@
+{
+  "source_commit": "d4fa2d79e9e7410bd35655c25ce69ccee6acd039",
+  "test_count": 333,
+  "tests": [
+    {
+      "test_id": "test_abstraction_lab.BridgeTests.test_universal_spectral_entropy_claim_has_counterexample",
+      "source_sha256": "d1065ce765780917db649d78164144590ad068d82b44ae9103a9b007d229a329",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_abstraction_lab.BridgeTests.test_survival_is_never_promoted_to_a_theorem",
+      "source_sha256": "d1065ce765780917db649d78164144590ad068d82b44ae9103a9b007d229a329",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_abstraction_lab.BridgeTests.test_missing_premise_does_not_become_false",
+      "source_sha256": "d1065ce765780917db649d78164144590ad068d82b44ae9103a9b007d229a329",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_abstraction_lab.BridgeTests.test_duplicate_ids_and_invalid_types_rejected",
+      "source_sha256": "d1065ce765780917db649d78164144590ad068d82b44ae9103a9b007d229a329",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_abstraction_lab.BridgeTests.test_invalid_metadata_and_conclusion_are_rejected",
+      "source_sha256": "d1065ce765780917db649d78164144590ad068d82b44ae9103a9b007d229a329",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_abstraction_lab.BridgeTests.test_only_out_of_scope_cases_do_not_support_implication",
+      "source_sha256": "d1065ce765780917db649d78164144590ad068d82b44ae9103a9b007d229a329",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_abstraction_lab.GibbsTests.test_partition_curvature_and_independent_finite_difference",
+      "source_sha256": "d1065ce765780917db649d78164144590ad068d82b44ae9103a9b007d229a329",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_abstraction_lab.GibbsTests.test_zero_beta_symmetry",
+      "source_sha256": "d1065ce765780917db649d78164144590ad068d82b44ae9103a9b007d229a329",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_abstraction_lab.GibbsTests.test_gibbs_entropy_energy_identity_and_extreme_beta",
+      "source_sha256": "d1065ce765780917db649d78164144590ad068d82b44ae9103a9b007d229a329",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_abstraction_lab.GibbsTests.test_duplicate_traces_rejected",
+      "source_sha256": "d1065ce765780917db649d78164144590ad068d82b44ae9103a9b007d229a329",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_abstraction_lab.GibbsTests.test_unbounded_parameter_rejected",
+      "source_sha256": "d1065ce765780917db649d78164144590ad068d82b44ae9103a9b007d229a329",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_abstraction_lab.GibbsTests.test_invalid_candidate_and_profile_contracts",
+      "source_sha256": "d1065ce765780917db649d78164144590ad068d82b44ae9103a9b007d229a329",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_alexandria_principles_ablation.PrinciplesAblationTests.test_coherence_ablation_loses_conflict_and_dependency_checks",
+      "source_sha256": "fa6da9a7c80d86ad36353d9f1e25c7a5e7d4568c6367bdaa3d48250c7bf90ccb",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_alexandria_principles_ablation.PrinciplesAblationTests.test_legacy_label_entropy_does_not_detect_contradiction",
+      "source_sha256": "fa6da9a7c80d86ad36353d9f1e25c7a5e7d4568c6367bdaa3d48250c7bf90ccb",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_alexandria_principles_ablation.PrinciplesAblationTests.test_counterexample_blocks_tagged_universal_claim",
+      "source_sha256": "fa6da9a7c80d86ad36353d9f1e25c7a5e7d4568c6367bdaa3d48250c7bf90ccb",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_alexandria_principles_ablation.PrinciplesAblationTests.test_weighted_only_control_still_selects_universal_claim",
+      "source_sha256": "fa6da9a7c80d86ad36353d9f1e25c7a5e7d4568c6367bdaa3d48250c7bf90ccb",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_alexandria_principles_ablation.PrinciplesAblationTests.test_finite_bridge_screen_and_novelty_limit",
+      "source_sha256": "fa6da9a7c80d86ad36353d9f1e25c7a5e7d4568c6367bdaa3d48250c7bf90ccb",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_alexandria_principles_stress.StressRegressionTests.test_circular_dependencies_rejected_at_input_boundary",
+      "source_sha256": "14ea9dfee964cd7bdd4ae2aac59f7ff9e3ccb87774663787cb473bbdaeae54a6",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_alexandria_principles_stress.StressRegressionTests.test_beam_adds_prerequisite_closure",
+      "source_sha256": "14ea9dfee964cd7bdd4ae2aac59f7ff9e3ccb87774663787cb473bbdaeae54a6",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_alexandria_principles_stress.StressRegressionTests.test_beam_does_not_add_ineligible_dependency",
+      "source_sha256": "14ea9dfee964cd7bdd4ae2aac59f7ff9e3ccb87774663787cb473bbdaeae54a6",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_alexandria_principles_stress.StressRegressionTests.test_development_and_separate_holdout_invariants",
+      "source_sha256": "14ea9dfee964cd7bdd4ae2aac59f7ff9e3ccb87774663787cb473bbdaeae54a6",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_alexandria_principles_stress.StressRegressionTests.test_metadata_changes_do_not_establish_discovery_novelty",
+      "source_sha256": "14ea9dfee964cd7bdd4ae2aac59f7ff9e3ccb87774663787cb473bbdaeae54a6",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_alexandria_principles_stress.StressRegressionTests.test_declared_shared_hash_requires_provenance_review",
+      "source_sha256": "14ea9dfee964cd7bdd4ae2aac59f7ff9e3ccb87774663787cb473bbdaeae54a6",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_benchmark.BenchmarkTests.test_bundled_smoke_benchmark_passes",
+      "source_sha256": "42320d65454d5785e848f39ddc1621400cb796160937dc316de61825b3dc701c",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_benchmark.BenchmarkTests.test_wrong_expectation_fails_case",
+      "source_sha256": "42320d65454d5785e848f39ddc1621400cb796160937dc316de61825b3dc701c",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_benchmark.BenchmarkTests.test_unknown_schema_is_rejected",
+      "source_sha256": "42320d65454d5785e848f39ddc1621400cb796160937dc316de61825b3dc701c",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_bounded_session.BoundedSessionTests.test_another_valid_report_cannot_be_reused_under_request_key",
+      "source_sha256": "a506bba32b544306341fb8735f6390fd0620f821c77c667f8f4c3d5ea0207de3",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_bounded_session.BoundedSessionTests.test_resume_is_not_fresh_verification_and_reverify_spends_work",
+      "source_sha256": "a506bba32b544306341fb8735f6390fd0620f821c77c667f8f4c3d5ea0207de3",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_bounded_session.BoundedSessionTests.test_runtime_and_source_changes_invalidate_completion",
+      "source_sha256": "a506bba32b544306341fb8735f6390fd0620f821c77c667f8f4c3d5ea0207de3",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_bounded_session.BoundedSessionTests.test_oversized_input_is_not_executed",
+      "source_sha256": "a506bba32b544306341fb8735f6390fd0620f821c77c667f8f4c3d5ea0207de3",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_bounded_session.BoundedSessionTests.test_resume_and_changed_input",
+      "source_sha256": "a506bba32b544306341fb8735f6390fd0620f821c77c667f8f4c3d5ea0207de3",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_bounded_session.BoundedSessionTests.test_both_adapters_keep_theorem_unproven",
+      "source_sha256": "a506bba32b544306341fb8735f6390fd0620f821c77c667f8f4c3d5ea0207de3",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_bounded_session.BoundedSessionTests.test_step_and_process_deadlines",
+      "source_sha256": "a506bba32b544306341fb8735f6390fd0620f821c77c667f8f4c3d5ea0207de3",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_bounded_session.BoundedSessionTests.test_invalid_proposal_is_recorded_and_stops",
+      "source_sha256": "a506bba32b544306341fb8735f6390fd0620f821c77c667f8f4c3d5ea0207de3",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_campaign.CampaignTests.test_repository_campaign_expands_hundreds_without_claiming_execution",
+      "source_sha256": "32d9fa2949b0b87f72dfa2fa68d460bf0741c290058ec6f6103203e7efd73a14",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_campaign.CampaignTests.test_plan_is_deterministic_and_canonicalizes_definition_order",
+      "source_sha256": "32d9fa2949b0b87f72dfa2fa68d460bf0741c290058ec6f6103203e7efd73a14",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_campaign.CampaignTests.test_tasks_are_unique_bounded_and_dependency_ordered",
+      "source_sha256": "32d9fa2949b0b87f72dfa2fa68d460bf0741c290058ec6f6103203e7efd73a14",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_campaign.CampaignTests.test_manifest_validation_rejects_structural_failures",
+      "source_sha256": "32d9fa2949b0b87f72dfa2fa68d460bf0741c290058ec6f6103203e7efd73a14",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_campaign.CampaignTests.test_nested_unknown_and_missing_fields_fail_closed",
+      "source_sha256": "32d9fa2949b0b87f72dfa2fa68d460bf0741c290058ec6f6103203e7efd73a14",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_campaign.CampaignTests.test_empty_and_malformed_string_lists_fail_closed",
+      "source_sha256": "32d9fa2949b0b87f72dfa2fa68d460bf0741c290058ec6f6103203e7efd73a14",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_campaign.CampaignTests.test_campaign_file_errors_fail_closed",
+      "source_sha256": "32d9fa2949b0b87f72dfa2fa68d460bf0741c290058ec6f6103203e7efd73a14",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_campaign.CampaignTests.test_plan_digest_detects_tampering",
+      "source_sha256": "32d9fa2949b0b87f72dfa2fa68d460bf0741c290058ec6f6103203e7efd73a14",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_campaign.CampaignTests.test_plan_verifier_rejects_non_objects_and_field_drift",
+      "source_sha256": "32d9fa2949b0b87f72dfa2fa68d460bf0741c290058ec6f6103203e7efd73a14",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_campaign.CampaignTests.test_plan_verifier_rejects_false_execution_claims",
+      "source_sha256": "32d9fa2949b0b87f72dfa2fa68d460bf0741c290058ec6f6103203e7efd73a14",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_campaign.CampaignTests.test_plan_verifier_rejects_invalid_task_rows",
+      "source_sha256": "32d9fa2949b0b87f72dfa2fa68d460bf0741c290058ec6f6103203e7efd73a14",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_campaign.CampaignTests.test_plan_verifier_rejects_invalid_batches_and_budget",
+      "source_sha256": "32d9fa2949b0b87f72dfa2fa68d460bf0741c290058ec6f6103203e7efd73a14",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_circuits.CircuitTests.test_gate_shape_is_strict",
+      "source_sha256": "c73127040d80eae93c8325cf582381b276f9e4510bbaff471e76da96c71d9c37",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "CircuitCNF"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_circuits.CircuitTests.test_circuit_rejects_forward_references_and_bad_output",
+      "source_sha256": "c73127040d80eae93c8325cf582381b276f9e4510bbaff471e76da96c71d9c37",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "CircuitCNF"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_circuits.CircuitTests.test_mapping_round_trip_is_canonical",
+      "source_sha256": "c73127040d80eae93c8325cf582381b276f9e4510bbaff471e76da96c71d9c37",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "CircuitCNF"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_circuits.CircuitTests.test_evaluation_covers_all_gate_kinds",
+      "source_sha256": "c73127040d80eae93c8325cf582381b276f9e4510bbaff471e76da96c71d9c37",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "CircuitCNF"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_circuits.CircuitTests.test_input_shape_is_strict",
+      "source_sha256": "c73127040d80eae93c8325cf582381b276f9e4510bbaff471e76da96c71d9c37",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "CircuitCNF"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_circuits.CircuitTests.test_cnf_encoding_has_exact_witness_semantics",
+      "source_sha256": "c73127040d80eae93c8325cf582381b276f9e4510bbaff471e76da96c71d9c37",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "CircuitCNF"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_circuits.CircuitTests.test_encoding_size_bounds_are_explicit",
+      "source_sha256": "c73127040d80eae93c8325cf582381b276f9e4510bbaff471e76da96c71d9c37",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "CircuitCNF"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_circuits.CircuitTests.test_output_may_be_an_input_wire",
+      "source_sha256": "c73127040d80eae93c8325cf582381b276f9e4510bbaff471e76da96c71d9c37",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "CircuitCNF"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_circuits.CircuitTests.test_exhaustive_audit_fails_closed_above_bound",
+      "source_sha256": "c73127040d80eae93c8325cf582381b276f9e4510bbaff471e76da96c71d9c37",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "CircuitCNF"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_circuits.CircuitTests.test_digest_is_stable_and_structure_sensitive",
+      "source_sha256": "c73127040d80eae93c8325cf582381b276f9e4510bbaff471e76da96c71d9c37",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "CircuitCNF"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_cli.CliTests.test_demo_command",
+      "source_sha256": "c1e3cc38c7efaadd762ca6c99833fb878723d1a2b6718064b8d90300e3017d22",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cli.CliTests.test_validate_command",
+      "source_sha256": "c1e3cc38c7efaadd762ca6c99833fb878723d1a2b6718064b8d90300e3017d22",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cli.CliTests.test_invalid_scenario_returns_two",
+      "source_sha256": "c1e3cc38c7efaadd762ca6c99833fb878723d1a2b6718064b8d90300e3017d22",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cli.CliTests.test_output_and_audit_are_written",
+      "source_sha256": "c1e3cc38c7efaadd762ca6c99833fb878723d1a2b6718064b8d90300e3017d22",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cli.CliTests.test_verify_report_command",
+      "source_sha256": "c1e3cc38c7efaadd762ca6c99833fb878723d1a2b6718064b8d90300e3017d22",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cli.CliTests.test_benchmark_command",
+      "source_sha256": "c1e3cc38c7efaadd762ca6c99833fb878723d1a2b6718064b8d90300e3017d22",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cli.CliTests.test_seal_protocol_command",
+      "source_sha256": "c1e3cc38c7efaadd762ca6c99833fb878723d1a2b6718064b8d90300e3017d22",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cli.CliTests.test_remember_command",
+      "source_sha256": "c1e3cc38c7efaadd762ca6c99833fb878723d1a2b6718064b8d90300e3017d22",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cli.CliTests.test_claim_digest_command",
+      "source_sha256": "c1e3cc38c7efaadd762ca6c99833fb878723d1a2b6718064b8d90300e3017d22",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cli.CliTests.test_checker_digest_command",
+      "source_sha256": "c1e3cc38c7efaadd762ca6c99833fb878723d1a2b6718064b8d90300e3017d22",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cli.CliTests.test_proof_bundle_digest_command",
+      "source_sha256": "c1e3cc38c7efaadd762ca6c99833fb878723d1a2b6718064b8d90300e3017d22",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cli.CliTests.test_lean_benchmark_digest_command",
+      "source_sha256": "c1e3cc38c7efaadd762ca6c99833fb878723d1a2b6718064b8d90300e3017d22",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cli.CliTests.test_lean_synthesis_digest_command",
+      "source_sha256": "c1e3cc38c7efaadd762ca6c99833fb878723d1a2b6718064b8d90300e3017d22",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cli.CliTests.test_campaign_plan_command_is_explicitly_nonexecuting",
+      "source_sha256": "c1e3cc38c7efaadd762ca6c99833fb878723d1a2b6718064b8d90300e3017d22",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cli.CliTests.test_campaign_plan_command_fails_closed_on_budget_overflow",
+      "source_sha256": "c1e3cc38c7efaadd762ca6c99833fb878723d1a2b6718064b8d90300e3017d22",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cli.CliTests.test_cnf_check_command",
+      "source_sha256": "c1e3cc38c7efaadd762ca6c99833fb878723d1a2b6718064b8d90300e3017d22",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cli.CliTests.test_circuit_to_cnf_command",
+      "source_sha256": "c1e3cc38c7efaadd762ca6c99833fb878723d1a2b6718064b8d90300e3017d22",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cli.CliTests.test_circuit_to_cnf_audit_limit_fails_closed",
+      "source_sha256": "c1e3cc38c7efaadd762ca6c99833fb878723d1a2b6718064b8d90300e3017d22",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cli.CliTests.test_machine_run_command",
+      "source_sha256": "c1e3cc38c7efaadd762ca6c99833fb878723d1a2b6718064b8d90300e3017d22",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cli.CliTests.test_machine_profile_command",
+      "source_sha256": "c1e3cc38c7efaadd762ca6c99833fb878723d1a2b6718064b8d90300e3017d22",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cli.CliTests.test_machine_runtime_table_command_and_persistence",
+      "source_sha256": "c1e3cc38c7efaadd762ca6c99833fb878723d1a2b6718064b8d90300e3017d22",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cli.CliTests.test_machine_cli_rejects_bad_input_and_profile_bound",
+      "source_sha256": "c1e3cc38c7efaadd762ca6c99833fb878723d1a2b6718064b8d90300e3017d22",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cli.CliTests.test_symbolic_depth_audit_command",
+      "source_sha256": "c1e3cc38c7efaadd762ca6c99833fb878723d1a2b6718064b8d90300e3017d22",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cli.CliTests.test_symbolic_depth_audit_rejects_recursive_grammar",
+      "source_sha256": "c1e3cc38c7efaadd762ca6c99833fb878723d1a2b6718064b8d90300e3017d22",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cli.CliTests.test_run_can_use_trusted_external_formal_verifier",
+      "source_sha256": "c1e3cc38c7efaadd762ca6c99833fb878723d1a2b6718064b8d90300e3017d22",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_compact_cubic8_obstruction.CompactCubicEightTests.test_valid_compact_basis_and_controls",
+      "source_sha256": "b65ca57bcd3722fad8d50de022e26d1b33702371761053c7cdbae38f74773e28",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "WidthClosedInvariant"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_compact_cubic8_obstruction.CompactCubicEightTests.test_missing_witness_is_not_silently_accepted",
+      "source_sha256": "b65ca57bcd3722fad8d50de022e26d1b33702371761053c7cdbae38f74773e28",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "WidthClosedInvariant"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_compact_cubic8_obstruction.CompactCubicEightTests.test_wrong_subsumption_witness_rejected",
+      "source_sha256": "b65ca57bcd3722fad8d50de022e26d1b33702371761053c7cdbae38f74773e28",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "WidthClosedInvariant"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_compact_cubic8_obstruction.CompactCubicEightTests.test_empty_clause_and_wrong_formula_rejected",
+      "source_sha256": "b65ca57bcd3722fad8d50de022e26d1b33702371761053c7cdbae38f74773e28",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "WidthClosedInvariant"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_compact_cubic8_obstruction.CompactCubicEightTests.test_duplicate_witness_is_rejected",
+      "source_sha256": "b65ca57bcd3722fad8d50de022e26d1b33702371761053c7cdbae38f74773e28",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "WidthClosedInvariant"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_complexity.ComplexityTests.test_literal_semantics",
+      "source_sha256": "85f50a99f97418be3a7d5d9021b25ec325f1bab22d47438969e18966ead6252c",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "CNF"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_complexity.ComplexityTests.test_cnf_witness_semantics",
+      "source_sha256": "85f50a99f97418be3a7d5d9021b25ec325f1bab22d47438969e18966ead6252c",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "CNF"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_complexity.ComplexityTests.test_empty_conjunction_and_empty_clause",
+      "source_sha256": "85f50a99f97418be3a7d5d9021b25ec325f1bab22d47438969e18966ead6252c",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "CNF"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_complexity.ComplexityTests.test_dimacs_round_trip_preserves_formula",
+      "source_sha256": "85f50a99f97418be3a7d5d9021b25ec325f1bab22d47438969e18966ead6252c",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "CNF"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_complexity.ComplexityTests.test_dimacs_supports_empty_clause",
+      "source_sha256": "85f50a99f97418be3a7d5d9021b25ec325f1bab22d47438969e18966ead6252c",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "CNF"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_complexity.ComplexityTests.test_unique_assignment_is_computed_by_bounded_reference_search",
+      "source_sha256": "85f50a99f97418be3a7d5d9021b25ec325f1bab22d47438969e18966ead6252c",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "CNF"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_complexity.ComplexityTests.test_non_unique_or_unsatisfiable_formula_has_no_unique_model",
+      "source_sha256": "85f50a99f97418be3a7d5d9021b25ec325f1bab22d47438969e18966ead6252c",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "CNF"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_complexity.ComplexityTests.test_reference_search_fails_closed_above_bound",
+      "source_sha256": "85f50a99f97418be3a7d5d9021b25ec325f1bab22d47438969e18966ead6252c",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "CNF"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_complexity.ComplexityTests.test_assignment_shape_is_strict",
+      "source_sha256": "85f50a99f97418be3a7d5d9021b25ec325f1bab22d47438969e18966ead6252c",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "CNF"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_complexity.ComplexityTests.test_out_of_range_literal_is_rejected",
+      "source_sha256": "85f50a99f97418be3a7d5d9021b25ec325f1bab22d47438969e18966ead6252c",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "CNF"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_complexity.ComplexityTests.test_malformed_dimacs_is_rejected",
+      "source_sha256": "85f50a99f97418be3a7d5d9021b25ec325f1bab22d47438969e18966ead6252c",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "CNF"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_complexity.ComplexityTests.test_digest_is_canonical_and_semantics_sensitive",
+      "source_sha256": "85f50a99f97418be3a7d5d9021b25ec325f1bab22d47438969e18966ead6252c",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "CNF"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_cubic8_claim_contract.CubicEightClaimContractTests.test_success_path_is_only_a_simulation",
+      "source_sha256": "342573c52021b9cefc3ccb8675ff95ac883d586c3aba19a7b58803fe46893987",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cubic8_claim_contract.CubicEightClaimContractTests.test_same_named_weaker_theorem_blocks_before_subprocess",
+      "source_sha256": "342573c52021b9cefc3ccb8675ff95ac883d586c3aba19a7b58803fe46893987",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cubic8_claim_contract.CubicEightClaimContractTests.test_removed_target_cannot_reuse_contract",
+      "source_sha256": "342573c52021b9cefc3ccb8675ff95ac883d586c3aba19a7b58803fe46893987",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cubic8_claim_contract.CubicEightClaimContractTests.test_missing_contract_blocks",
+      "source_sha256": "342573c52021b9cefc3ccb8675ff95ac883d586c3aba19a7b58803fe46893987",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cubic8_claim_contract.CubicEightClaimContractTests.test_malformed_auditor_output_fails_closed",
+      "source_sha256": "342573c52021b9cefc3ccb8675ff95ac883d586c3aba19a7b58803fe46893987",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cubic8_claim_contract.CubicEightClaimContractTests.test_input_change_during_replay_blocks_promotion",
+      "source_sha256": "342573c52021b9cefc3ccb8675ff95ac883d586c3aba19a7b58803fe46893987",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_cubic8_elimination_candidates.CubicEightEliminationTests.test_elimination_candidates_independent_replay_and_mutation",
+      "source_sha256": "0e0784f1db372451cc6f2cb4d08ea236d0224956e0f0254f6e7d69591f595eae",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "CubeQ3ResolutionCandidate",
+        "WagnerM8ResolutionCandidate"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_cubic8_elimination_candidates.CubicEightEliminationTests.test_generator_byte_determinism",
+      "source_sha256": "0e0784f1db372451cc6f2cb4d08ea236d0224956e0f0254f6e7d69591f595eae",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "CubeQ3ResolutionCandidate",
+        "WagnerM8ResolutionCandidate"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_cubic8_family.CubicEightTests.test_graphs_match_frozen_profiles",
+      "source_sha256": "745021512b9d2a59c35becc9d74b347ade63c6e3d4a4e4ff04b83ffa9420885b",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "WidthClosedInvariant"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_cubic8_family.CubicEightTests.test_width_four_fixed_points_are_exact",
+      "source_sha256": "745021512b9d2a59c35becc9d74b347ade63c6e3d4a4e4ff04b83ffa9420885b",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "WidthClosedInvariant"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_cubic8_family.CubicEightTests.test_frozen_width_five_exhaustion_is_not_promoted",
+      "source_sha256": "745021512b9d2a59c35becc9d74b347ade63c6e3d4a4e4ff04b83ffa9420885b",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "WidthClosedInvariant"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_cubic8_width_audit.CubicEightWidthAuditTests.test_all_two_variable_pairs_and_both_pivot_orientations",
+      "source_sha256": "6ac54839f7885502fdba1b030894e98eca76f9725d290b8000841d26eb053472",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "WidthBoundedSetResolution",
+        "CubeQ3ResolutionCandidate",
+        "WagnerM8ResolutionCandidate"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_cubic8_width_audit.CubicEightWidthAuditTests.test_missing_required_resolvent_is_rejected",
+      "source_sha256": "6ac54839f7885502fdba1b030894e98eca76f9725d290b8000841d26eb053472",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "WidthBoundedSetResolution",
+        "CubeQ3ResolutionCandidate",
+        "WagnerM8ResolutionCandidate"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_cubic8_width_audit.CubicEightWidthAuditTests.test_empty_or_missing_axiom_invalidates_lower_bound",
+      "source_sha256": "6ac54839f7885502fdba1b030894e98eca76f9725d290b8000841d26eb053472",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "WidthBoundedSetResolution",
+        "CubeQ3ResolutionCandidate",
+        "WagnerM8ResolutionCandidate"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_cubic8_width_audit.CubicEightWidthAuditTests.test_normalization_keeps_both_literals_in_tautology",
+      "source_sha256": "6ac54839f7885502fdba1b030894e98eca76f9725d290b8000841d26eb053472",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "WidthBoundedSetResolution",
+        "CubeQ3ResolutionCandidate",
+        "WagnerM8ResolutionCandidate"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_cubic8_width_audit.CubicEightWidthAuditTests.test_missing_lean_cannot_pass_formal_gate",
+      "source_sha256": "6ac54839f7885502fdba1b030894e98eca76f9725d290b8000841d26eb053472",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "WidthBoundedSetResolution",
+        "CubeQ3ResolutionCandidate",
+        "WagnerM8ResolutionCandidate"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_engine.EngineTests.test_demo_selects_supported_claim_and_math",
+      "source_sha256": "f0a62a6708787b2582e8c079ebbb7de8e1f3d396e0c70701d422eef746b620db",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_engine.EngineTests.test_demo_rejects_null_claim",
+      "source_sha256": "f0a62a6708787b2582e8c079ebbb7de8e1f3d396e0c70701d422eef746b620db",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_engine.EngineTests.test_run_is_deterministic",
+      "source_sha256": "f0a62a6708787b2582e8c079ebbb7de8e1f3d396e0c70701d422eef746b620db",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_engine.EngineTests.test_fingerprint_changes_when_evidence_changes",
+      "source_sha256": "f0a62a6708787b2582e8c079ebbb7de8e1f3d396e0c70701d422eef746b620db",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_engine.EngineTests.test_lineage_contains_evidence_to_claim_edge",
+      "source_sha256": "f0a62a6708787b2582e8c079ebbb7de8e1f3d396e0c70701d422eef746b620db",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_engine.EngineTests.test_war_mode_is_stricter",
+      "source_sha256": "f0a62a6708787b2582e8c079ebbb7de8e1f3d396e0c70701d422eef746b620db",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_engine.EngineTests.test_attacks_are_linked_to_claims",
+      "source_sha256": "f0a62a6708787b2582e8c079ebbb7de8e1f3d396e0c70701d422eef746b620db",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_engine.EngineTests.test_selected_demo_claims_have_no_blocking_attack",
+      "source_sha256": "f0a62a6708787b2582e8c079ebbb7de8e1f3d396e0c70701d422eef746b620db",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_engine.EngineTests.test_every_selected_claim_receives_adversarial_review",
+      "source_sha256": "f0a62a6708787b2582e8c079ebbb7de8e1f3d396e0c70701d422eef746b620db",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_external.ExternalVerifierTests.test_successful_json_contract",
+      "source_sha256": "9e3391dd067a7f4fc6a0bfcfa0ec30d3d33170251f8dacf58f56d943cf8e2214",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_external.ExternalVerifierTests.test_failure_verdict_is_blocking",
+      "source_sha256": "9e3391dd067a7f4fc6a0bfcfa0ec30d3d33170251f8dacf58f56d943cf8e2214",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_external.ExternalVerifierTests.test_invalid_json_returns_error",
+      "source_sha256": "9e3391dd067a7f4fc6a0bfcfa0ec30d3d33170251f8dacf58f56d943cf8e2214",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_external.ExternalVerifierTests.test_timeout_returns_error",
+      "source_sha256": "9e3391dd067a7f4fc6a0bfcfa0ec30d3d33170251f8dacf58f56d943cf8e2214",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_external.ExternalVerifierTests.test_executable_digest_mismatch_is_detected",
+      "source_sha256": "9e3391dd067a7f4fc6a0bfcfa0ec30d3d33170251f8dacf58f56d943cf8e2214",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_external.ExternalVerifierTests.test_execution_bundle_binds_file_arguments",
+      "source_sha256": "9e3391dd067a7f4fc6a0bfcfa0ec30d3d33170251f8dacf58f56d943cf8e2214",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_external.ExternalVerifierTests.test_execution_bundle_digest_mismatch_is_detected",
+      "source_sha256": "9e3391dd067a7f4fc6a0bfcfa0ec30d3d33170251f8dacf58f56d943cf8e2214",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_external.ExternalVerifierTests.test_war_requires_container_and_pinned_binary",
+      "source_sha256": "9e3391dd067a7f4fc6a0bfcfa0ec30d3d33170251f8dacf58f56d943cf8e2214",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_external.ExternalVerifierTests.test_memory_limit_supports_bounded_lean_replay",
+      "source_sha256": "9e3391dd067a7f4fc6a0bfcfa0ec30d3d33170251f8dacf58f56d943cf8e2214",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_external.ExternalVerifierTests.test_required_tag_controls_applicability",
+      "source_sha256": "9e3391dd067a7f4fc6a0bfcfa0ec30d3d33170251f8dacf58f56d943cf8e2214",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_external.ExternalVerifierTests.test_registry_builds_explicit_formal_authority",
+      "source_sha256": "9e3391dd067a7f4fc6a0bfcfa0ec30d3d33170251f8dacf58f56d943cf8e2214",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_external.ExternalVerifierTests.test_formal_authority_requires_pinned_execution_bundle",
+      "source_sha256": "9e3391dd067a7f4fc6a0bfcfa0ec30d3d33170251f8dacf58f56d943cf8e2214",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_external.ExternalVerifierTests.test_registry_rejects_relative_executable",
+      "source_sha256": "9e3391dd067a7f4fc6a0bfcfa0ec30d3d33170251f8dacf58f56d943cf8e2214",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_external.ExternalVerifierTests.test_registry_rejects_duplicate_names",
+      "source_sha256": "9e3391dd067a7f4fc6a0bfcfa0ec30d3d33170251f8dacf58f56d943cf8e2214",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_external.ExternalVerifierTests.test_registry_rejects_malformed_trust_configuration",
+      "source_sha256": "9e3391dd067a7f4fc6a0bfcfa0ec30d3d33170251f8dacf58f56d943cf8e2214",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_failure_memory.FailureMemoryTests.test_report_failures_are_persisted",
+      "source_sha256": "d522c17635abea9fa79e82af371d2ed51c94eadeb73e0a9a756c24754f189bd3",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_failure_memory.FailureMemoryTests.test_same_run_is_idempotent",
+      "source_sha256": "d522c17635abea9fa79e82af371d2ed51c94eadeb73e0a9a756c24754f189bd3",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_failure_memory.FailureMemoryTests.test_recurring_failure_across_distinct_runs",
+      "source_sha256": "d522c17635abea9fa79e82af371d2ed51c94eadeb73e0a9a756c24754f189bd3",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_failure_memory.FailureMemoryTests.test_report_requires_identity",
+      "source_sha256": "d522c17635abea9fa79e82af371d2ed51c94eadeb73e0a9a756c24754f189bd3",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_formal.FormalProofGateTests.test_strong_evidence_cannot_substitute_for_proof",
+      "source_sha256": "0464d62b8bb220318d628244400966527ef5ccfc23a336576eef0d1abebca5c8",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_formal.FormalProofGateTests.test_war_hashes_cannot_bypass_formal_gate",
+      "source_sha256": "0464d62b8bb220318d628244400966527ef5ccfc23a336576eef0d1abebca5c8",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_formal.FormalProofGateTests.test_trusted_claim_bound_receipt_selects_theorem",
+      "source_sha256": "0464d62b8bb220318d628244400966527ef5ccfc23a336576eef0d1abebca5c8",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_formal.FormalProofGateTests.test_valid_looking_receipt_from_untrusted_verifier_is_rejected",
+      "source_sha256": "0464d62b8bb220318d628244400966527ef5ccfc23a336576eef0d1abebca5c8",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_formal.FormalProofGateTests.test_receipt_for_different_claim_is_rejected",
+      "source_sha256": "0464d62b8bb220318d628244400966527ef5ccfc23a336576eef0d1abebca5c8",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_formal.FormalProofGateTests.test_checker_digest_mismatch_is_rejected",
+      "source_sha256": "0464d62b8bb220318d628244400966527ef5ccfc23a336576eef0d1abebca5c8",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_formal.FormalProofGateTests.test_theorem_without_pinned_formalization_cannot_pass",
+      "source_sha256": "0464d62b8bb220318d628244400966527ef5ccfc23a336576eef0d1abebca5c8",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_formal.FormalProofGateTests.test_open_proof_goal_is_rejected",
+      "source_sha256": "0464d62b8bb220318d628244400966527ef5ccfc23a336576eef0d1abebca5c8",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_formal.FormalProofGateTests.test_unresolved_assumption_is_rejected",
+      "source_sha256": "0464d62b8bb220318d628244400966527ef5ccfc23a336576eef0d1abebca5c8",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_formal.FormalProofGateTests.test_reserved_gate_identity_cannot_be_injected_at_construction",
+      "source_sha256": "0464d62b8bb220318d628244400966527ef5ccfc23a336576eef0d1abebca5c8",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_formal.FormalProofGateTests.test_misdirected_authority_result_is_rejected",
+      "source_sha256": "0464d62b8bb220318d628244400966527ef5ccfc23a336576eef0d1abebca5c8",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_formal.FormalProofGateTests.test_theorem_kind_round_trips",
+      "source_sha256": "0464d62b8bb220318d628244400966527ef5ccfc23a336576eef0d1abebca5c8",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_formal.FormalProofGateTests.test_receipt_validator_rejects_every_incomplete_proof_dimension",
+      "source_sha256": "0464d62b8bb220318d628244400966527ef5ccfc23a336576eef0d1abebca5c8",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_formal_scope_binding.FormalScopeBindingTests.test_finite_domain_receipt_cannot_bind_all_graphs",
+      "source_sha256": "75d7846ae49dd517cc0a44362280d4920b01213b3987ed275e0a8f1720f84e2d",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_graph_invariants.GraphInvariantTests.test_boundary_rejects_noncanonical_subsets",
+      "source_sha256": "bfcf7d1ee7e73b6ef53efc77f8ff4163d482d20288bc0a07b4bf69d666963aa2",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_graph_invariants.GraphInvariantTests.test_exact_profiles_and_expansion",
+      "source_sha256": "bfcf7d1ee7e73b6ef53efc77f8ff4163d482d20288bc0a07b4bf69d666963aa2",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_graph_invariants.GraphInvariantTests.test_frozen_report_matches_exact_recomputation",
+      "source_sha256": "bfcf7d1ee7e73b6ef53efc77f8ff4163d482d20288bc0a07b4bf69d666963aa2",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_invariants.InvariantTests.test_input_order_does_not_change_report",
+      "source_sha256": "561ceca5d39083dfed697252c7ae32e187bd4ee204d2a0ad0daafc67af24231d",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_invariants.InvariantTests.test_evidence_permutations_are_stable",
+      "source_sha256": "561ceca5d39083dfed697252c7ae32e187bd4ee204d2a0ad0daafc67af24231d",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_invariants.InvariantTests.test_restricted_arithmetic_matches_constructed_truth",
+      "source_sha256": "561ceca5d39083dfed697252c7ae32e187bd4ee204d2a0ad0daafc67af24231d",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_invariants.InvariantTests.test_receipt_mutations_are_detected",
+      "source_sha256": "561ceca5d39083dfed697252c7ae32e187bd4ee204d2a0ad0daafc67af24231d",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean4_adapter.Lean4BundleTests.test_committed_identity_bundle_is_valid_and_stable",
+      "source_sha256": "33bcbd9a932695de7731960bb00260dff74839794f8221ab338aa452796edf47",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean4_adapter.Lean4BundleTests.test_source_tampering_is_rejected",
+      "source_sha256": "33bcbd9a932695de7731960bb00260dff74839794f8221ab338aa452796edf47",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean4_adapter.Lean4BundleTests.test_unlisted_source_is_rejected",
+      "source_sha256": "33bcbd9a932695de7731960bb00260dff74839794f8221ab338aa452796edf47",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean4_adapter.Lean4BundleTests.test_manifest_shape_failures_are_rejected",
+      "source_sha256": "33bcbd9a932695de7731960bb00260dff74839794f8221ab338aa452796edf47",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean4_adapter.Lean4BundleTests.test_source_row_failures_are_rejected",
+      "source_sha256": "33bcbd9a932695de7731960bb00260dff74839794f8221ab338aa452796edf47",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean4_adapter.Lean4BundleTests.test_project_configuration_failures_are_rejected",
+      "source_sha256": "33bcbd9a932695de7731960bb00260dff74839794f8221ab338aa452796edf47",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean4_adapter.Lean4BundleTests.test_dependency_requires_lake_manifest",
+      "source_sha256": "33bcbd9a932695de7731960bb00260dff74839794f8221ab338aa452796edf47",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean4_adapter.Lean4BundleTests.test_request_contract_failures_are_rejected",
+      "source_sha256": "33bcbd9a932695de7731960bb00260dff74839794f8221ab338aa452796edf47",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean4_adapter.Lean4BundleTests.test_manifest_loader_fails_closed",
+      "source_sha256": "33bcbd9a932695de7731960bb00260dff74839794f8221ab338aa452796edf47",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean4_adapter.Lean4BundleTests.test_process_launch_failure_is_wrapped",
+      "source_sha256": "33bcbd9a932695de7731960bb00260dff74839794f8221ab338aa452796edf47",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean4_adapter.Lean4BundleTests.test_process_environment_is_deterministic_and_single_threaded",
+      "source_sha256": "33bcbd9a932695de7731960bb00260dff74839794f8221ab338aa452796edf47",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean4_adapter.Lean4BundleTests.test_replay_emits_v2_receipt_with_fake_processes",
+      "source_sha256": "33bcbd9a932695de7731960bb00260dff74839794f8221ab338aa452796edf47",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean4_adapter.Lean4BundleTests.test_replay_failure_paths_are_explicit",
+      "source_sha256": "33bcbd9a932695de7731960bb00260dff74839794f8221ab338aa452796edf47",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean4_adapter.Lean4BundleTests.test_replay_rejects_non_absolute_checker_path",
+      "source_sha256": "33bcbd9a932695de7731960bb00260dff74839794f8221ab338aa452796edf47",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean4_adapter.Lean4BundleTests.test_formalization_mismatch_fails_before_execution",
+      "source_sha256": "33bcbd9a932695de7731960bb00260dff74839794f8221ab338aa452796edf47",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean4_adapter.Lean4BundleTests.test_adapter_main_returns_machine_readable_error",
+      "source_sha256": "33bcbd9a932695de7731960bb00260dff74839794f8221ab338aa452796edf47",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_benchmark.LeanReplayBenchmarkTests.test_committed_benchmark_and_bundles_are_valid_and_stable",
+      "source_sha256": "ab2e360662677f2651e95c7450daca2cd0276fb368044392ad683a8721e5e4a5",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_benchmark.LeanReplayBenchmarkTests.test_content_address_mismatch_is_rejected",
+      "source_sha256": "ab2e360662677f2651e95c7450daca2cd0276fb368044392ad683a8721e5e4a5",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_benchmark.LeanReplayBenchmarkTests.test_path_escape_is_rejected",
+      "source_sha256": "ab2e360662677f2651e95c7450daca2cd0276fb368044392ad683a8721e5e4a5",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_benchmark.LeanReplayBenchmarkTests.test_inconsistent_expectation_is_rejected",
+      "source_sha256": "ab2e360662677f2651e95c7450daca2cd0276fb368044392ad683a8721e5e4a5",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_benchmark.LeanReplayBenchmarkTests.test_case_ids_must_be_sorted_and_unique",
+      "source_sha256": "ab2e360662677f2651e95c7450daca2cd0276fb368044392ad683a8721e5e4a5",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_benchmark.LeanReplayBenchmarkTests.test_deterministic_replay_budget_is_enforced",
+      "source_sha256": "ab2e360662677f2651e95c7450daca2cd0276fb368044392ad683a8721e5e4a5",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_benchmark.LeanReplayBenchmarkTests.test_resource_budget_bounds_are_enforced",
+      "source_sha256": "ab2e360662677f2651e95c7450daca2cd0276fb368044392ad683a8721e5e4a5",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_benchmark.LeanReplayBenchmarkTests.test_case_identifiers_tiers_and_tags_are_strict",
+      "source_sha256": "ab2e360662677f2651e95c7450daca2cd0276fb368044392ad683a8721e5e4a5",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_benchmark.LeanReplayBenchmarkTests.test_benchmark_requires_positive_and_negative_cases",
+      "source_sha256": "ab2e360662677f2651e95c7450daca2cd0276fb368044392ad683a8721e5e4a5",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_benchmark.LeanReplayBenchmarkTests.test_matching_observations_produce_perfect_decision_metrics",
+      "source_sha256": "ab2e360662677f2651e95c7450daca2cd0276fb368044392ad683a8721e5e4a5",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_benchmark.LeanReplayBenchmarkTests.test_false_acceptance_is_visible_and_fails_the_report",
+      "source_sha256": "ab2e360662677f2651e95c7450daca2cd0276fb368044392ad683a8721e5e4a5",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_benchmark.LeanReplayBenchmarkTests.test_verifier_and_receipt_failures_are_counted",
+      "source_sha256": "ab2e360662677f2651e95c7450daca2cd0276fb368044392ad683a8721e5e4a5",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_benchmark.LeanReplayBenchmarkTests.test_observation_set_must_exactly_match_the_corpus",
+      "source_sha256": "ab2e360662677f2651e95c7450daca2cd0276fb368044392ad683a8721e5e4a5",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_benchmark.LeanReplayBenchmarkTests.test_unknown_fields_are_rejected",
+      "source_sha256": "ab2e360662677f2651e95c7450daca2cd0276fb368044392ad683a8721e5e4a5",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_benchmark.LeanReplayBenchmarkTests.test_repository_root_must_be_discoverable",
+      "source_sha256": "ab2e360662677f2651e95c7450daca2cd0276fb368044392ad683a8721e5e4a5",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_synthesis.PropositionTests.test_recursive_proposition_round_trip",
+      "source_sha256": "0cae734a0d4de33e0bacf069326fba544b0dd90f4730df1b163c7157708e9b4a",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_synthesis.PropositionTests.test_malformed_propositions_are_rejected",
+      "source_sha256": "0cae734a0d4de33e0bacf069326fba544b0dd90f4730df1b163c7157708e9b4a",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_synthesis.SynthesisBenchmarkTests.test_committed_benchmark_is_valid_stable_and_solved",
+      "source_sha256": "0cae734a0d4de33e0bacf069326fba544b0dd90f4730df1b163c7157708e9b4a",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_synthesis.SynthesisBenchmarkTests.test_unprovable_goal_is_unsolved_and_tiny_budget_exhausts",
+      "source_sha256": "0cae734a0d4de33e0bacf069326fba544b0dd90f4730df1b163c7157708e9b4a",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_synthesis.SynthesisBenchmarkTests.test_top_level_contract_fields_are_strict",
+      "source_sha256": "0cae734a0d4de33e0bacf069326fba544b0dd90f4730df1b163c7157708e9b4a",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_synthesis.SynthesisBenchmarkTests.test_budget_contract_is_strict",
+      "source_sha256": "0cae734a0d4de33e0bacf069326fba544b0dd90f4730df1b163c7157708e9b4a",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_synthesis.SynthesisBenchmarkTests.test_case_contract_is_strict",
+      "source_sha256": "0cae734a0d4de33e0bacf069326fba544b0dd90f4730df1b163c7157708e9b4a",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_synthesis.SynthesisBenchmarkTests.test_case_and_limitation_ordering_are_enforced",
+      "source_sha256": "0cae734a0d4de33e0bacf069326fba544b0dd90f4730df1b163c7157708e9b4a",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_synthesis.GeneratorProtocolTests.test_request_round_trip_contains_no_proof",
+      "source_sha256": "0cae734a0d4de33e0bacf069326fba544b0dd90f4730df1b163c7157708e9b4a",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_synthesis.GeneratorProtocolTests.test_request_rejects_bad_bindings_and_limits",
+      "source_sha256": "0cae734a0d4de33e0bacf069326fba544b0dd90f4730df1b163c7157708e9b4a",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_synthesis.GeneratorProtocolTests.test_candidate_round_trip_and_digest",
+      "source_sha256": "0cae734a0d4de33e0bacf069326fba544b0dd90f4730df1b163c7157708e9b4a",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_synthesis.GeneratorProtocolTests.test_oversize_result_is_reported_as_unsolved",
+      "source_sha256": "0cae734a0d4de33e0bacf069326fba544b0dd90f4730df1b163c7157708e9b4a",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_synthesis.GeneratorProtocolTests.test_unsolved_candidate_response_is_valid",
+      "source_sha256": "0cae734a0d4de33e0bacf069326fba544b0dd90f4730df1b163c7157708e9b4a",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_synthesis.GeneratorProtocolTests.test_candidate_response_rejects_unsafe_or_invalid_values",
+      "source_sha256": "0cae734a0d4de33e0bacf069326fba544b0dd90f4730df1b163c7157708e9b4a",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_synthesis.SynthesisReportTests.test_perfect_report_is_tamper_evident_and_proof_free",
+      "source_sha256": "0cae734a0d4de33e0bacf069326fba544b0dd90f4730df1b163c7157708e9b4a",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_synthesis.SynthesisReportTests.test_failures_are_counted_without_false_success",
+      "source_sha256": "0cae734a0d4de33e0bacf069326fba544b0dd90f4730df1b163c7157708e9b4a",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lean_synthesis.SynthesisReportTests.test_observations_and_component_digests_are_strict",
+      "source_sha256": "0cae734a0d4de33e0bacf069326fba544b0dd90f4730df1b163c7157708e9b4a",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lineage.LineageTests.test_ancestors",
+      "source_sha256": "ef5295258bc25f27257ea9f1165ba0158bf6fe61e27d61e4ad063ec95e4337d0",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lineage.LineageTests.test_cycle_is_rejected_and_rolled_back",
+      "source_sha256": "ef5295258bc25f27257ea9f1165ba0158bf6fe61e27d61e4ad063ec95e4337d0",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lineage.LineageTests.test_missing_node_edge_is_rejected",
+      "source_sha256": "ef5295258bc25f27257ea9f1165ba0158bf6fe61e27d61e4ad063ec95e4337d0",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_lineage.LineageTests.test_redefinition_is_rejected",
+      "source_sha256": "ef5295258bc25f27257ea9f1165ba0158bf6fe61e27d61e4ad063ec95e4337d0",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_linked_k4_pair.LinkedK4PairTests.test_profile_has_preregistered_two_edge_balanced_cut",
+      "source_sha256": "67d86a5d4e123afa7a8a7d71d5fca7cba55084ad70e5a32409930343a780e6bc",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "LinkedK4PairResolutionCertificate"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_linked_k4_pair.LinkedK4PairTests.test_exact_minimum_resolution_width_is_four",
+      "source_sha256": "67d86a5d4e123afa7a8a7d71d5fca7cba55084ad70e5a32409930343a780e6bc",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "LinkedK4PairResolutionCertificate"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_linked_k4_pair.LinkedK4PairTests.test_frozen_receipt_preserves_global_search_failure",
+      "source_sha256": "67d86a5d4e123afa7a8a7d71d5fca7cba55084ad70e5a32409930343a780e6bc",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "LinkedK4PairResolutionCertificate"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_local_parity.LocalParityTests.test_identities_are_nonvacuous_and_mutations_are_killed",
+      "source_sha256": "728409a6aa425c2fec73c8627edbff3fcd9e60e8c8f677e3a432ecc78425cd33",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "LocalParity"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_machines.MachineTests.test_mapping_round_trip_and_digest_are_canonical",
+      "source_sha256": "f7c619a5c0728cfcabebfb3f3f796167a5d12ee07ecf64c762df50a4d794bcf9",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "Machine"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_machines.MachineTests.test_accept_and_reject_have_exact_step_counts",
+      "source_sha256": "f7c619a5c0728cfcabebfb3f3f796167a5d12ee07ecf64c762df50a4d794bcf9",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "Machine"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_machines.MachineTests.test_empty_input_blank_is_distinct_from_an_encoded_zero",
+      "source_sha256": "f7c619a5c0728cfcabebfb3f3f796167a5d12ee07ecf64c762df50a4d794bcf9",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "Machine"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_machines.MachineTests.test_zero_fuel_is_a_step_limit_and_trace_is_deterministic",
+      "source_sha256": "f7c619a5c0728cfcabebfb3f3f796167a5d12ee07ecf64c762df50a4d794bcf9",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "Machine"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_machines.MachineTests.test_halting_configuration_is_absorbing",
+      "source_sha256": "f7c619a5c0728cfcabebfb3f3f796167a5d12ee07ecf64c762df50a4d794bcf9",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "Machine"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_machines.MachineTests.test_write_and_head_movements_are_explicit",
+      "source_sha256": "f7c619a5c0728cfcabebfb3f3f796167a5d12ee07ecf64c762df50a4d794bcf9",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "Machine"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_machines.MachineTests.test_nonhalting_loop_stops_exactly_at_fuel_bound",
+      "source_sha256": "f7c619a5c0728cfcabebfb3f3f796167a5d12ee07ecf64c762df50a4d794bcf9",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "Machine"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_machines.MachineTests.test_transition_table_must_be_total_and_deterministic",
+      "source_sha256": "f7c619a5c0728cfcabebfb3f3f796167a5d12ee07ecf64c762df50a4d794bcf9",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "Machine"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_machines.MachineTests.test_state_constraints_fail_closed",
+      "source_sha256": "f7c619a5c0728cfcabebfb3f3f796167a5d12ee07ecf64c762df50a4d794bcf9",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "Machine"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_machines.MachineTests.test_mapping_is_strict_and_symbols_are_explicit",
+      "source_sha256": "f7c619a5c0728cfcabebfb3f3f796167a5d12ee07ecf64c762df50a4d794bcf9",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "Machine"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_machines.MachineTests.test_input_and_configuration_shapes_are_strict",
+      "source_sha256": "f7c619a5c0728cfcabebfb3f3f796167a5d12ee07ecf64c762df50a4d794bcf9",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "Machine"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_machines.MachineTests.test_bounded_profile_counts_a_finite_input_slice",
+      "source_sha256": "f7c619a5c0728cfcabebfb3f3f796167a5d12ee07ecf64c762df50a4d794bcf9",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "Machine"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_machines.MachineTests.test_zero_fuel_profile_reports_only_step_limits",
+      "source_sha256": "f7c619a5c0728cfcabebfb3f3f796167a5d12ee07ecf64c762df50a4d794bcf9",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "Machine"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_machines.MachineTests.test_runtime_table_certifies_each_complete_finite_width",
+      "source_sha256": "f7c619a5c0728cfcabebfb3f3f796167a5d12ee07ecf64c762df50a4d794bcf9",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "Machine"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_machines.MachineTests.test_runtime_table_never_certifies_a_fuel_exhausted_row",
+      "source_sha256": "f7c619a5c0728cfcabebfb3f3f796167a5d12ee07ecf64c762df50a4d794bcf9",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "Machine"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_machines.MachineTests.test_runtime_table_validation_and_safety_bound_fail_closed",
+      "source_sha256": "f7c619a5c0728cfcabebfb3f3f796167a5d12ee07ecf64c762df50a4d794bcf9",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "Machine"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_machines.MachineTests.test_profile_bound_and_integrity_fail_closed",
+      "source_sha256": "f7c619a5c0728cfcabebfb3f3f796167a5d12ee07ecf64c762df50a4d794bcf9",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "Machine"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_models.ModelTests.test_generated_claim_id_is_stable",
+      "source_sha256": "7f73f5164bf7eb714fc8d6d00ba4c16e36e3b1b31dc73c66cdb2d7a03c3566b1",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_models.ModelTests.test_empty_question_is_rejected",
+      "source_sha256": "7f73f5164bf7eb714fc8d6d00ba4c16e36e3b1b31dc73c66cdb2d7a03c3566b1",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_models.ModelTests.test_duplicate_claim_ids_are_rejected",
+      "source_sha256": "7f73f5164bf7eb714fc8d6d00ba4c16e36e3b1b31dc73c66cdb2d7a03c3566b1",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_models.ModelTests.test_unknown_evidence_claim_is_rejected",
+      "source_sha256": "7f73f5164bf7eb714fc8d6d00ba4c16e36e3b1b31dc73c66cdb2d7a03c3566b1",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_models.ModelTests.test_arithmetic_claim_requires_predicate",
+      "source_sha256": "7f73f5164bf7eb714fc8d6d00ba4c16e36e3b1b31dc73c66cdb2d7a03c3566b1",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_models.ModelTests.test_mode_override_wins",
+      "source_sha256": "7f73f5164bf7eb714fc8d6d00ba4c16e36e3b1b31dc73c66cdb2d7a03c3566b1",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_models.ModelTests.test_invalid_unit_interval_is_rejected",
+      "source_sha256": "7f73f5164bf7eb714fc8d6d00ba4c16e36e3b1b31dc73c66cdb2d7a03c3566b1",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_models.ModelTests.test_self_dependency_is_rejected",
+      "source_sha256": "7f73f5164bf7eb714fc8d6d00ba4c16e36e3b1b31dc73c66cdb2d7a03c3566b1",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_models.ModelTests.test_invalid_content_hash_is_rejected",
+      "source_sha256": "7f73f5164bf7eb714fc8d6d00ba4c16e36e3b1b31dc73c66cdb2d7a03c3566b1",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_models.ModelTests.test_non_string_falsifier_is_rejected",
+      "source_sha256": "7f73f5164bf7eb714fc8d6d00ba4c16e36e3b1b31dc73c66cdb2d7a03c3566b1",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_models.ModelTests.test_theorem_formalization_is_typed",
+      "source_sha256": "7f73f5164bf7eb714fc8d6d00ba4c16e36e3b1b31dc73c66cdb2d7a03c3566b1",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_models.ModelTests.test_non_theorem_cannot_pin_formalization",
+      "source_sha256": "7f73f5164bf7eb714fc8d6d00ba4c16e36e3b1b31dc73c66cdb2d7a03c3566b1",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_models.ModelTests.test_malformed_formalization_is_rejected",
+      "source_sha256": "7f73f5164bf7eb714fc8d6d00ba4c16e36e3b1b31dc73c66cdb2d7a03c3566b1",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_obligations.ObligationTests.test_selected_claims_have_no_blocking_unsatisfied_obligations",
+      "source_sha256": "5a35d0b19d41813c8a9ede2d565c6f134972a1da78bee1d1ef2955f7a115f209",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_obligations.ObligationTests.test_arithmetic_claim_has_machine_verification_obligation",
+      "source_sha256": "5a35d0b19d41813c8a9ede2d565c6f134972a1da78bee1d1ef2955f7a115f209",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_obligations.ObligationTests.test_rejected_null_claim_is_highest_pressure",
+      "source_sha256": "5a35d0b19d41813c8a9ede2d565c6f134972a1da78bee1d1ef2955f7a115f209",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_obligations.ObligationTests.test_war_mode_without_protocol_has_blocking_preregistration",
+      "source_sha256": "5a35d0b19d41813c8a9ede2d565c6f134972a1da78bee1d1ef2955f7a115f209",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_obligations.ObligationTests.test_obligations_are_in_lineage",
+      "source_sha256": "5a35d0b19d41813c8a9ede2d565c6f134972a1da78bee1d1ef2955f7a115f209",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_proof_complexity.ProofComplexityTests.test_k4_tseitin_is_unsatisfiable",
+      "source_sha256": "c8c4357bc580a08c8c583728bc2352630f4ae7220965745afefed2a227cd2b31",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "TseitinCNF",
+        "K4ResolutionCertificate",
+        "SetResolution"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_proof_complexity.ProofComplexityTests.test_k4_exact_minimum_resolution_width_is_four",
+      "source_sha256": "c8c4357bc580a08c8c583728bc2352630f4ae7220965745afefed2a227cd2b31",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "TseitinCNF",
+        "K4ResolutionCertificate",
+        "SetResolution"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_proof_complexity.ProofComplexityTests.test_refutation_replay_rejects_wrong_width_or_parent",
+      "source_sha256": "c8c4357bc580a08c8c583728bc2352630f4ae7220965745afefed2a227cd2b31",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "TseitinCNF",
+        "K4ResolutionCertificate",
+        "SetResolution"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_protocol.ProtocolTests.test_demo_protocol_passes",
+      "source_sha256": "5530fd0b0df72732e1c097165f0bf3d87b25f4502acb3e874a43c39d87576312",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_protocol.ProtocolTests.test_tampering_breaks_seal",
+      "source_sha256": "5530fd0b0df72732e1c097165f0bf3d87b25f4502acb3e874a43c39d87576312",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_protocol.ProtocolTests.test_missing_protocol_is_nonblocking_in_research",
+      "source_sha256": "5530fd0b0df72732e1c097165f0bf3d87b25f4502acb3e874a43c39d87576312",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_protocol.ProtocolTests.test_missing_protocol_blocks_war_mode",
+      "source_sha256": "5530fd0b0df72732e1c097165f0bf3d87b25f4502acb3e874a43c39d87576312",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_protocol.ProtocolTests.test_scenario_binding_detects_question_change",
+      "source_sha256": "5530fd0b0df72732e1c097165f0bf3d87b25f4502acb3e874a43c39d87576312",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_protocol.ProtocolTests.test_seal_replaces_old_digest",
+      "source_sha256": "5530fd0b0df72732e1c097165f0bf3d87b25f4502acb3e874a43c39d87576312",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_protocol.ProtocolTests.test_resealed_criteria_drift_is_detected",
+      "source_sha256": "5530fd0b0df72732e1c097165f0bf3d87b25f4502acb3e874a43c39d87576312",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_protocol.ProtocolTests.test_invalid_dataset_digest_is_rejected",
+      "source_sha256": "5530fd0b0df72732e1c097165f0bf3d87b25f4502acb3e874a43c39d87576312",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_pvsnp_route_audit.RouteAuditTests.test_replay_all_frozen_routes_without_promoting_lean",
+      "source_sha256": "da52aabf7c434b7138ecb66afc10b7980345ede33b56a903ed42069a9d57b717",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "SetResolution"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_pvsnp_route_audit.RouteAuditTests.test_changed_pivot_and_changed_closure_are_rejected",
+      "source_sha256": "da52aabf7c434b7138ecb66afc10b7980345ede33b56a903ed42069a9d57b717",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "SetResolution"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_receipts.ReceiptTests.test_generated_report_verifies",
+      "source_sha256": "f400cc19ce324c4f89fe5b182ec3c76b1f380d9524f0c07339179ae4c8c78adb",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_receipts.ReceiptTests.test_claim_tampering_breaks_report_fingerprint",
+      "source_sha256": "f400cc19ce324c4f89fe5b182ec3c76b1f380d9524f0c07339179ae4c8c78adb",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_receipts.ReceiptTests.test_receipt_payload_tampering_is_detected",
+      "source_sha256": "f400cc19ce324c4f89fe5b182ec3c76b1f380d9524f0c07339179ae4c8c78adb",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_receipts.ReceiptTests.test_chain_predecessor_tampering_is_detected",
+      "source_sha256": "f400cc19ce324c4f89fe5b182ec3c76b1f380d9524f0c07339179ae4c8c78adb",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_receipts.ReceiptTests.test_empty_receipt_ledger_is_invalid",
+      "source_sha256": "f400cc19ce324c4f89fe5b182ec3c76b1f380d9524f0c07339179ae4c8c78adb",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_receipts.ReceiptTests.test_ledger_is_deterministic",
+      "source_sha256": "f400cc19ce324c4f89fe5b182ec3c76b1f380d9524f0c07339179ae4c8c78adb",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_receipts.ReceiptTests.test_run_id_tampering_is_detected",
+      "source_sha256": "f400cc19ce324c4f89fe5b182ec3c76b1f380d9524f0c07339179ae4c8c78adb",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_research_cycle.ScopeAndProvenanceTests.test_untagged_scoped_logic_with_refutation_is_blocked",
+      "source_sha256": "26fbae77febd8cdf349647b8e1af66e0406f15f0c020abccaa4925ab79357ee0",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_research_cycle.ScopeAndProvenanceTests.test_missing_scope_is_blocking_in_research",
+      "source_sha256": "26fbae77febd8cdf349647b8e1af66e0406f15f0c020abccaa4925ab79357ee0",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_research_cycle.ScopeAndProvenanceTests.test_quantifier_tag_disagreement_and_unknown_quantifier",
+      "source_sha256": "26fbae77febd8cdf349647b8e1af66e0406f15f0c020abccaa4925ab79357ee0",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_research_cycle.ScopeAndProvenanceTests.test_shared_declared_artifact_blocks_until_review",
+      "source_sha256": "26fbae77febd8cdf349647b8e1af66e0406f15f0c020abccaa4925ab79357ee0",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_research_cycle.CandidateRevisionTests.test_frozen_receipt_triad_preserves_negative_and_unresolved",
+      "source_sha256": "26fbae77febd8cdf349647b8e1af66e0406f15f0c020abccaa4925ab79357ee0",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_research_cycle.CandidateRevisionTests.test_holdout_outcome_cannot_rewrite_development_candidates",
+      "source_sha256": "26fbae77febd8cdf349647b8e1af66e0406f15f0c020abccaa4925ab79357ee0",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_scoring.ScoringTests.test_same_group_uses_max_not_sum",
+      "source_sha256": "a5096b1dc74bf63e12d757f0db373f93dde9e6c68f12f1052cc7392e0739a382",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_scoring.ScoringTests.test_independent_groups_accumulate",
+      "source_sha256": "a5096b1dc74bf63e12d757f0db373f93dde9e6c68f12f1052cc7392e0739a382",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_scoring.ScoringTests.test_refutation_lowers_score",
+      "source_sha256": "a5096b1dc74bf63e12d757f0db373f93dde9e6c68f12f1052cc7392e0739a382",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_scoring.ScoringTests.test_blocking_result_makes_claim_ineligible",
+      "source_sha256": "a5096b1dc74bf63e12d757f0db373f93dde9e6c68f12f1052cc7392e0739a382",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_self_update.SelfUpdateTests.test_positive_development_and_holdout_can_update_in_memory",
+      "source_sha256": "1fea008aa87b21efcc6ae5c6f883e4de8f26a6430c55ce13e219753474f0ee17",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_self_update.SelfUpdateTests.test_unseen_negative_blocks_update_and_retains_rollback",
+      "source_sha256": "1fea008aa87b21efcc6ae5c6f883e4de8f26a6430c55ce13e219753474f0ee17",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_self_update.SelfUpdateTests.test_positive_only_holdout_cannot_activate_policy",
+      "source_sha256": "1fea008aa87b21efcc6ae5c6f883e4de8f26a6430c55ce13e219753474f0ee17",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_self_update.SelfUpdateTests.test_preexisting_false_acceptance_is_not_carried_into_update",
+      "source_sha256": "1fea008aa87b21efcc6ae5c6f883e4de8f26a6430c55ce13e219753474f0ee17",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_self_update.SelfUpdateTests.test_adversarial_negative_strength_sweep",
+      "source_sha256": "1fea008aa87b21efcc6ae5c6f883e4de8f26a6430c55ce13e219753474f0ee17",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_self_update.SelfUpdateTests.test_smoke_has_no_development_gain_and_no_update",
+      "source_sha256": "1fea008aa87b21efcc6ae5c6f883e4de8f26a6430c55ce13e219753474f0ee17",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_self_update.SelfUpdateTests.test_reject_duplicate_or_leaked_cases",
+      "source_sha256": "1fea008aa87b21efcc6ae5c6f883e4de8f26a6430c55ce13e219753474f0ee17",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_subsumption_lifting.SubsumptionLiftingTests.test_all_two_variable_bases",
+      "source_sha256": "269b45a2146d9feba2dd55bf99a33796754db80bb6758815cbe14a6325463362",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "WidthClosedInvariant"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_subsumption_lifting.SubsumptionLiftingTests.test_fresh_variables_in_weakenings",
+      "source_sha256": "269b45a2146d9feba2dd55bf99a33796754db80bb6758815cbe14a6325463362",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "WidthClosedInvariant"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_subsumption_lifting.SubsumptionLiftingTests.test_hypotheses_are_not_optional",
+      "source_sha256": "269b45a2146d9feba2dd55bf99a33796754db80bb6758815cbe14a6325463362",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "WidthClosedInvariant"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_symbolic_depth.SymbolicDepthTests.test_padding_depth_requires_one_nonterminal_per_step",
+      "source_sha256": "75223e76c53babcec238c9c99373bbcb5b19118284963826ae6a7758c971fa16",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_symbolic_depth.SymbolicDepthTests.test_sibling_depths_take_maximum_not_sum",
+      "source_sha256": "75223e76c53babcec238c9c99373bbcb5b19118284963826ae6a7758c971fa16",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_symbolic_depth.SymbolicDepthTests.test_alternatives_have_exact_minimum_and_maximum_depths",
+      "source_sha256": "75223e76c53babcec238c9c99373bbcb5b19118284963826ae6a7758c971fa16",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_symbolic_depth.SymbolicDepthTests.test_cycle_is_rejected",
+      "source_sha256": "75223e76c53babcec238c9c99373bbcb5b19118284963826ae6a7758c971fa16",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_symbolic_depth.SymbolicDepthTests.test_self_recursion_is_rejected",
+      "source_sha256": "75223e76c53babcec238c9c99373bbcb5b19118284963826ae6a7758c971fa16",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_symbolic_depth.SymbolicDepthTests.test_undefined_nonterminal_is_rejected",
+      "source_sha256": "75223e76c53babcec238c9c99373bbcb5b19118284963826ae6a7758c971fa16",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_symbolic_depth.SymbolicDepthTests.test_mapping_round_trip_is_exact",
+      "source_sha256": "75223e76c53babcec238c9c99373bbcb5b19118284963826ae6a7758c971fa16",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_symbolic_depth.SymbolicDepthTests.test_unreachable_rules_do_not_inflate_start_bound",
+      "source_sha256": "75223e76c53babcec238c9c99373bbcb5b19118284963826ae6a7758c971fa16",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_symbolic_depth.SymbolicDepthTests.test_large_chain_uses_iterative_dag_analysis",
+      "source_sha256": "75223e76c53babcec238c9c99373bbcb5b19118284963826ae6a7758c971fa16",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_symbolic_depth.SymbolicDepthTests.test_invalid_padding_depth_is_rejected",
+      "source_sha256": "75223e76c53babcec238c9c99373bbcb5b19118284963826ae6a7758c971fa16",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_symbolic_depth.SymbolicDepthTests.test_duplicate_production_is_rejected",
+      "source_sha256": "75223e76c53babcec238c9c99373bbcb5b19118284963826ae6a7758c971fa16",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_symbolic_depth.SymbolicDepthTests.test_mapping_rejects_unknown_fields_and_malformed_symbols",
+      "source_sha256": "75223e76c53babcec238c9c99373bbcb5b19118284963826ae6a7758c971fa16",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_task_leakage.TaskLeakageTests.test_renamed_labels_cannot_promote",
+      "source_sha256": "a20ace015920041c6cac91a12b54d1ed2dac0dbded42147d06df0110b9763601",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_task_leakage.TaskLeakageTests.test_record_renaming_and_order_do_not_change_identity",
+      "source_sha256": "a20ace015920041c6cac91a12b54d1ed2dac0dbded42147d06df0110b9763601",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_task_leakage.TaskLeakageTests.test_changed_counterevidence_is_not_suppressed",
+      "source_sha256": "a20ace015920041c6cac91a12b54d1ed2dac0dbded42147d06df0110b9763601",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_theory.TheoryTests.test_conflicting_claims_are_not_both_selected",
+      "source_sha256": "58207932efe3c7f3a414b0590e78407159129ffa406f75cd14326bbfadaf3404",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_theory.TheoryTests.test_dependency_is_selected_with_dependent",
+      "source_sha256": "58207932efe3c7f3a414b0590e78407159129ffa406f75cd14326bbfadaf3404",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_theory.TheoryTests.test_ineligible_dependency_excludes_dependent",
+      "source_sha256": "58207932efe3c7f3a414b0590e78407159129ffa406f75cd14326bbfadaf3404",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_theory.TheoryTests.test_beam_search_path_is_available",
+      "source_sha256": "58207932efe3c7f3a414b0590e78407159129ffa406f75cd14326bbfadaf3404",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_triangle_free_basis_panel.TriangleFreePanelTests.test_fixed_panel_and_constructed_bridge",
+      "source_sha256": "ca5a72805d5e2485a2ab56f8091d1f33181a1e7c449e756255af512722632c34",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "LocalParity",
+        "WidthClosedInvariant"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_triangle_free_basis_panel.TriangleFreePanelTests.test_frozen_charge_panel_replayed",
+      "source_sha256": "ca5a72805d5e2485a2ab56f8091d1f33181a1e7c449e756255af512722632c34",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "LocalParity",
+        "WidthClosedInvariant"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_triangle_free_basis_panel.TriangleFreePanelTests.test_rejected_resolvents_really_lack_basis_witnesses",
+      "source_sha256": "ca5a72805d5e2485a2ab56f8091d1f33181a1e7c449e756255af512722632c34",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "LocalParity",
+        "WidthClosedInvariant"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_tseitin_family.TseitinFamilyTests.test_graph_contract_rejects_non_cubic_and_even_charge",
+      "source_sha256": "448454649490d075be3ee1b4ca5f6b9ba60875fcd34a19010ccd9286569d8adb",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "Tseitin",
+        "TseitinCNF",
+        "TseitinFamilyCertificate",
+        "K33ResolutionCertificate"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_tseitin_family.TseitinFamilyTests.test_k4_worklist_matches_existing_exact_width_result",
+      "source_sha256": "448454649490d075be3ee1b4ca5f6b9ba60875fcd34a19010ccd9286569d8adb",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "Tseitin",
+        "TseitinCNF",
+        "TseitinFamilyCertificate",
+        "K33ResolutionCertificate"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_tseitin_family.TseitinFamilyTests.test_prism_is_exact_and_k33_exhaustion_is_not_a_lower_bound",
+      "source_sha256": "448454649490d075be3ee1b4ca5f6b9ba60875fcd34a19010ccd9286569d8adb",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "Tseitin",
+        "TseitinCNF",
+        "TseitinFamilyCertificate",
+        "K33ResolutionCertificate"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_tseitin_family.TseitinFamilyTests.test_frozen_k33_width_five_certificate_replays",
+      "source_sha256": "448454649490d075be3ee1b4ca5f6b9ba60875fcd34a19010ccd9286569d8adb",
+      "category": "mixed_mathematics_and_implementation",
+      "related_lean_modules": [
+        "Tseitin",
+        "TseitinCNF",
+        "TseitinFamilyCertificate",
+        "K33ResolutionCertificate"
+      ],
+      "coverage": "related statements only; not a proof of the Python implementation"
+    },
+    {
+      "test_id": "test_verifiers.SafeEvaluationTests.test_arithmetic_and_comparison",
+      "source_sha256": "cf55873c8ca76c93d45ea39e561044dc67565e1cd7ed1187f942ff86e1af6752",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_verifiers.SafeEvaluationTests.test_chained_comparison",
+      "source_sha256": "cf55873c8ca76c93d45ea39e561044dc67565e1cd7ed1187f942ff86e1af6752",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_verifiers.SafeEvaluationTests.test_boolean_expression",
+      "source_sha256": "cf55873c8ca76c93d45ea39e561044dc67565e1cd7ed1187f942ff86e1af6752",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_verifiers.SafeEvaluationTests.test_calls_are_rejected",
+      "source_sha256": "cf55873c8ca76c93d45ea39e561044dc67565e1cd7ed1187f942ff86e1af6752",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_verifiers.SafeEvaluationTests.test_names_are_rejected",
+      "source_sha256": "cf55873c8ca76c93d45ea39e561044dc67565e1cd7ed1187f942ff86e1af6752",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_verifiers.SafeEvaluationTests.test_large_exponent_is_rejected",
+      "source_sha256": "cf55873c8ca76c93d45ea39e561044dc67565e1cd7ed1187f942ff86e1af6752",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_verifiers.VerifierTests.test_true_arithmetic_passes",
+      "source_sha256": "cf55873c8ca76c93d45ea39e561044dc67565e1cd7ed1187f942ff86e1af6752",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_verifiers.VerifierTests.test_false_arithmetic_fails_closed",
+      "source_sha256": "cf55873c8ca76c93d45ea39e561044dc67565e1cd7ed1187f942ff86e1af6752",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_verifiers.VerifierTests.test_research_requires_two_support_groups",
+      "source_sha256": "cf55873c8ca76c93d45ea39e561044dc67565e1cd7ed1187f942ff86e1af6752",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_verifiers.VerifierTests.test_duplicate_verifier_registration_is_rejected",
+      "source_sha256": "cf55873c8ca76c93d45ea39e561044dc67565e1cd7ed1187f942ff86e1af6752",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_verifiers.VerifierTests.test_research_requires_falsifier_and_acceptance_criteria",
+      "source_sha256": "cf55873c8ca76c93d45ea39e561044dc67565e1cd7ed1187f942ff86e1af6752",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_verifiers.VerifierTests.test_war_requires_evidence_content_hash",
+      "source_sha256": "cf55873c8ca76c93d45ea39e561044dc67565e1cd7ed1187f942ff86e1af6752",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    },
+    {
+      "test_id": "test_verifiers.VerifierTests.test_duplicate_refutations_do_not_outvote_one_independence_group",
+      "source_sha256": "cf55873c8ca76c93d45ea39e561044dc67565e1cd7ed1187f942ff86e1af6752",
+      "category": "software_or_empirical_protocol",
+      "related_lean_modules": [],
+      "coverage": "no direct Lean replacement claimed"
+    }
+  ]
+}

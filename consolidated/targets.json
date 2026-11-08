@@ -1,0 +1,406 @@
+[
+  {
+    "module": "AlexandriaComplexity.CNF",
+    "declaration": "AlexandriaComplexity.verifier_sound"
+  },
+  {
+    "module": "AlexandriaComplexity.CNF",
+    "declaration": "AlexandriaComplexity.verifier_complete"
+  },
+  {
+    "module": "AlexandriaComplexity.CNF",
+    "declaration": "AlexandriaComplexity.empty_cnf_is_true"
+  },
+  {
+    "module": "AlexandriaComplexity.CNF",
+    "declaration": "AlexandriaComplexity.empty_clause_is_false"
+  },
+  {
+    "module": "AlexandriaComplexity.CircuitCNF",
+    "declaration": "AlexandriaComplexity.notGateCNF_correct"
+  },
+  {
+    "module": "AlexandriaComplexity.CircuitCNF",
+    "declaration": "AlexandriaComplexity.andGateCNF_correct"
+  },
+  {
+    "module": "AlexandriaComplexity.CircuitCNF",
+    "declaration": "AlexandriaComplexity.orGateCNF_correct"
+  },
+  {
+    "module": "AlexandriaComplexity.CubeQ3ResolutionCandidate",
+    "declaration": "AlexandriaComplexity.cube_q3_width_five_certificate"
+  },
+  {
+    "module": "AlexandriaComplexity.CubeQ3ResolutionCandidate",
+    "declaration": "AlexandriaComplexity.cube_q3_width_five_certificate_unsat"
+  },
+  {
+    "module": "AlexandriaComplexity.GeneralResolution",
+    "declaration": "AlexandriaComplexity.evalClause_erase_false"
+  },
+  {
+    "module": "AlexandriaComplexity.GeneralResolution",
+    "declaration": "AlexandriaComplexity.general_resolution_step_sound"
+  },
+  {
+    "module": "AlexandriaComplexity.GeneralResolution",
+    "declaration": "AlexandriaComplexity.general_resolution_derivation_sound"
+  },
+  {
+    "module": "AlexandriaComplexity.GeneralResolution",
+    "declaration": "AlexandriaComplexity.general_resolution_refutation_unsat"
+  },
+  {
+    "module": "AlexandriaComplexity.K33ResolutionCertificate",
+    "declaration": "AlexandriaComplexity.k33_set_resolution_certificate"
+  },
+  {
+    "module": "AlexandriaComplexity.K33ResolutionCertificate",
+    "declaration": "AlexandriaComplexity.k33_set_resolution_certificate_unsat"
+  },
+  {
+    "module": "AlexandriaComplexity.K4ResolutionCertificate",
+    "declaration": "AlexandriaComplexity.k4_set_resolution_certificate"
+  },
+  {
+    "module": "AlexandriaComplexity.K4ResolutionCertificate",
+    "declaration": "AlexandriaComplexity.k4_set_resolution_certificate_unsat"
+  },
+  {
+    "module": "AlexandriaComplexity.LinkedK4PairResolutionCertificate",
+    "declaration": "AlexandriaComplexity.linked_k4_pair_set_resolution_certificate"
+  },
+  {
+    "module": "AlexandriaComplexity.LinkedK4PairResolutionCertificate",
+    "declaration": "AlexandriaComplexity.linked_k4_pair_set_resolution_certificate_unsat"
+  },
+  {
+    "module": "AlexandriaComplexity.LocalParity",
+    "declaration": "AlexandriaComplexity.LocalParity.adjacent_vertices_wrong_parity"
+  },
+  {
+    "module": "AlexandriaComplexity.LocalParity",
+    "declaration": "AlexandriaComplexity.LocalParity.contained_vertex_wrong_parity"
+  },
+  {
+    "module": "AlexandriaComplexity.Machine",
+    "declaration": "AlexandriaComplexity.writeTape_at"
+  },
+  {
+    "module": "AlexandriaComplexity.Machine",
+    "declaration": "AlexandriaComplexity.decodeWord_encodeWord"
+  },
+  {
+    "module": "AlexandriaComplexity.Machine",
+    "declaration": "AlexandriaComplexity.encodeWord_injective"
+  },
+  {
+    "module": "AlexandriaComplexity.Machine",
+    "declaration": "AlexandriaComplexity.writeTape_away"
+  },
+  {
+    "module": "AlexandriaComplexity.Machine",
+    "declaration": "AlexandriaComplexity.step_halted"
+  },
+  {
+    "module": "AlexandriaComplexity.Machine",
+    "declaration": "AlexandriaComplexity.runFor_halted"
+  },
+  {
+    "module": "AlexandriaComplexity.Machine",
+    "declaration": "AlexandriaComplexity.acceptsWithin_succ"
+  },
+  {
+    "module": "AlexandriaComplexity.Machine",
+    "declaration": "AlexandriaComplexity.acceptsWithin_add"
+  },
+  {
+    "module": "AlexandriaComplexity.ReplaySafety",
+    "declaration": "AlexandriaReplay.rechecked_counterexample_refutes"
+  },
+  {
+    "module": "AlexandriaComplexity.Resolution",
+    "declaration": "AlexandriaComplexity.evalClause_append"
+  },
+  {
+    "module": "AlexandriaComplexity.Resolution",
+    "declaration": "AlexandriaComplexity.resolution_step_sound"
+  },
+  {
+    "module": "AlexandriaComplexity.ResolutionProof",
+    "declaration": "AlexandriaComplexity.evalCNF_member_true"
+  },
+  {
+    "module": "AlexandriaComplexity.ResolutionProof",
+    "declaration": "AlexandriaComplexity.resolution_derivation_sound"
+  },
+  {
+    "module": "AlexandriaComplexity.ResolutionProof",
+    "declaration": "AlexandriaComplexity.resolution_refutation_unsat"
+  },
+  {
+    "module": "AlexandriaComplexity.SetResolution",
+    "declaration": "AlexandriaComplexity.bool_and_left_true"
+  },
+  {
+    "module": "AlexandriaComplexity.SetResolution",
+    "declaration": "AlexandriaComplexity.bool_and_right_true"
+  },
+  {
+    "module": "AlexandriaComplexity.SetResolution",
+    "declaration": "AlexandriaComplexity.evalClause_containsLiteral_true"
+  },
+  {
+    "module": "AlexandriaComplexity.SetResolution",
+    "declaration": "AlexandriaComplexity.evalClause_clauseSubset_true"
+  },
+  {
+    "module": "AlexandriaComplexity.SetResolution",
+    "declaration": "AlexandriaComplexity.evalCNF_containsClause_true"
+  },
+  {
+    "module": "AlexandriaComplexity.SetResolution",
+    "declaration": "AlexandriaComplexity.set_resolution_derivation_sound"
+  },
+  {
+    "module": "AlexandriaComplexity.SetResolution",
+    "declaration": "AlexandriaComplexity.set_resolution_refutation_unsat"
+  },
+  {
+    "module": "AlexandriaComplexity.Tseitin",
+    "declaration": "AlexandriaComplexity.length_zeroBits"
+  },
+  {
+    "module": "AlexandriaComplexity.Tseitin",
+    "declaration": "AlexandriaComplexity.xor_zeroBits"
+  },
+  {
+    "module": "AlexandriaComplexity.Tseitin",
+    "declaration": "AlexandriaComplexity.length_toggleAt"
+  },
+  {
+    "module": "AlexandriaComplexity.Tseitin",
+    "declaration": "AlexandriaComplexity.xorList_toggleAt"
+  },
+  {
+    "module": "AlexandriaComplexity.Tseitin",
+    "declaration": "AlexandriaComplexity.xorList_togglePair"
+  },
+  {
+    "module": "AlexandriaComplexity.Tseitin",
+    "declaration": "AlexandriaComplexity.length_applyEdgesFrom"
+  },
+  {
+    "module": "AlexandriaComplexity.Tseitin",
+    "declaration": "AlexandriaComplexity.xor_applyEdgesFrom"
+  },
+  {
+    "module": "AlexandriaComplexity.Tseitin",
+    "declaration": "AlexandriaComplexity.boundary_even"
+  },
+  {
+    "module": "AlexandriaComplexity.Tseitin",
+    "declaration": "AlexandriaComplexity.odd_charge_unsatisfiable"
+  },
+  {
+    "module": "AlexandriaComplexity.TseitinCNF",
+    "declaration": "AlexandriaComplexity.evalCNF_append"
+  },
+  {
+    "module": "AlexandriaComplexity.TseitinCNF",
+    "declaration": "AlexandriaComplexity.eval_parity3CNF"
+  },
+  {
+    "module": "AlexandriaComplexity.TseitinCNF",
+    "declaration": "AlexandriaComplexity.parity3CNF_correct"
+  },
+  {
+    "module": "AlexandriaComplexity.TseitinCNF",
+    "declaration": "AlexandriaComplexity.k4OddTseitinCNF_unsat"
+  },
+  {
+    "module": "AlexandriaComplexity.TseitinFamilyCertificate",
+    "declaration": "AlexandriaComplexity.triangular_prism_set_resolution_certificate"
+  },
+  {
+    "module": "AlexandriaComplexity.TseitinFamilyCertificate",
+    "declaration": "AlexandriaComplexity.triangular_prism_set_resolution_certificate_unsat"
+  },
+  {
+    "module": "AlexandriaComplexity.WagnerM8ResolutionCandidate",
+    "declaration": "AlexandriaComplexity.wagner_m8_width_five_certificate"
+  },
+  {
+    "module": "AlexandriaComplexity.WagnerM8ResolutionCandidate",
+    "declaration": "AlexandriaComplexity.wagner_m8_width_five_certificate_unsat"
+  },
+  {
+    "module": "AlexandriaComplexity.WidthBoundedSetResolution",
+    "declaration": "AlexandriaComplexity.width_bounded_set_resolution_forget"
+  },
+  {
+    "module": "AlexandriaComplexity.WidthBoundedSetResolution",
+    "declaration": "AlexandriaComplexity.width_bounded_set_resolution_refutation_unsat"
+  },
+  {
+    "module": "AlexandriaComplexity.WidthClosedInvariant",
+    "declaration": "AlexandriaComplexity.width_closed_invariant_preserved"
+  },
+  {
+    "module": "AlexandriaComplexity.WidthClosedInvariant",
+    "declaration": "AlexandriaComplexity.width_closed_invariant_no_refutation"
+  },
+  {
+    "module": "AlexandriaComplexity.RowElimination",
+    "declaration": "AlexandriaComplexity.RowElimination.bool_row_operation"
+  },
+  {
+    "module": "AlexandriaComplexity.RowElimination",
+    "declaration": "AlexandriaComplexity.RowElimination.row_operation"
+  },
+  {
+    "module": "AlexandriaComplexity.RowElimination",
+    "declaration": "AlexandriaComplexity.RowElimination.system_operation"
+  },
+  {
+    "module": "AlexandriaComplexity.RowElimination",
+    "declaration": "AlexandriaComplexity.RowElimination.satisfiability_preserved"
+  },
+  {
+    "module": "AlexandriaComplexity.RowElimination",
+    "declaration": "AlexandriaComplexity.RowElimination.dropping_pivot_is_unsound"
+  },
+  {
+    "module": "AlexandriaComplexity.AffineProjection",
+    "declaration": "AlexandriaComplexity.AffineProjection.select_xor"
+  },
+  {
+    "module": "AlexandriaComplexity.AffineProjection",
+    "declaration": "AlexandriaComplexity.AffineProjection.generated_project"
+  },
+  {
+    "module": "AlexandriaComplexity.AffineProjection",
+    "declaration": "AlexandriaComplexity.AffineProjection.generated_lift"
+  },
+  {
+    "module": "AlexandriaComplexity.AffineProjection",
+    "declaration": "AlexandriaComplexity.AffineProjection.projected_search_complete"
+  },
+  {
+    "module": "AlexandriaComplexity.SpanReduction",
+    "declaration": "AlexandriaComplexity.SpanReduction.substitute_generators"
+  },
+  {
+    "module": "AlexandriaComplexity.SpanReduction",
+    "declaration": "AlexandriaComplexity.SpanReduction.mutual_coverage"
+  },
+  {
+    "module": "AlexandriaComplexity.SpanReduction",
+    "declaration": "AlexandriaComplexity.SpanReduction.drop_dependent"
+  },
+  {
+    "module": "AlexandriaComplexity.SpanReduction",
+    "declaration": "AlexandriaComplexity.SpanReduction.drop_zero"
+  },
+  {
+    "module": "AlexandriaComplexity.SpanReduction",
+    "declaration": "AlexandriaComplexity.SpanReduction.predicate_preserved"
+  },
+  {
+    "module": "AlexandriaComplexity.CoefficientChecker",
+    "declaration": "AlexandriaComplexity.CoefficientChecker.evaluate_span"
+  },
+  {
+    "module": "AlexandriaComplexity.CoefficientChecker",
+    "declaration": "AlexandriaComplexity.CoefficientChecker.checkCombination_sound"
+  },
+  {
+    "module": "AlexandriaComplexity.CoefficientChecker",
+    "declaration": "AlexandriaComplexity.CoefficientChecker.checkRows_sound"
+  },
+  {
+    "module": "AlexandriaComplexity.CoefficientChecker",
+    "declaration": "AlexandriaComplexity.CoefficientChecker.checkMutual_sound"
+  },
+  {
+    "module": "AlexandriaComplexity.CoefficientChecker",
+    "declaration": "AlexandriaComplexity.CoefficientChecker.checked_predicate_preserved"
+  },
+  {
+    "module": "AlexandriaComplexity.CoefficientCertificateExample",
+    "declaration": "AlexandriaComplexity.CoefficientCertificateExample.projected_accepted"
+  },
+  {
+    "module": "AlexandriaComplexity.CoefficientCertificateExample",
+    "declaration": "AlexandriaComplexity.CoefficientCertificateExample.lifts_accepted"
+  },
+  {
+    "module": "AlexandriaComplexity.CoefficientCertificateExample",
+    "declaration": "AlexandriaComplexity.CoefficientCertificateExample.corrupted_rejected"
+  },
+  {
+    "module": "AlexandriaComplexity.CoefficientCertificateExample",
+    "declaration": "AlexandriaComplexity.CoefficientCertificateExample.projected_span"
+  },
+  {
+    "module": "AlexandriaComplexity.CoefficientCertificateExample",
+    "declaration": "AlexandriaComplexity.CoefficientCertificateExample.lifted_span"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.zeros_length"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.xor_length"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.xor_zero_right"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.xor_zero_left"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.xor_associative"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.run_iff_generated"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.evaluate_width"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.run_evaluate"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.zero_run_evaluate"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.coefficients_iff_generated"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.generated_in_span"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.evaluate_cons"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.ragged_span_not_generated"
+  },
+  {
+    "module": "AlexandriaComplexity.EnumerationBridge",
+    "declaration": "AlexandriaComplexity.EnumerationBridge.wrong_zero_width_counterexample"
+  }
+]

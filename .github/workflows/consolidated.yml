@@ -1,0 +1,28 @@
+name: Consolidated mathematical Lean audit
+on:
+  push:
+    branches: [research/consolidated-333-lean]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  mathematical-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned Lean toolchain
+        run: |
+          curl -sSf https://elan.lean-lang.org/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.34.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Build all inventoried modules and audit all named theorems
+        run: python consolidated/run.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: consolidated-lean-report
+          path: consolidated/lean-report.json
+          if-no-files-found: error

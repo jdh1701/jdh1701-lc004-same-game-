@@ -1,0 +1,6 @@
+name = "alexandria-pvsnp-foundation"
+version = "0.1.0"
+defaultTargets = ["AlexandriaComplexity"]
+
+[[lean_lib]]
+name = "AlexandriaComplexity"

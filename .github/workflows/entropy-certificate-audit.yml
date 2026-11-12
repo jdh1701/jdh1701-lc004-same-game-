@@ -1,0 +1,21 @@
+name: Exact entropy certificate audit
+on:
+  push:
+    branches: [audit/entropy-certificate-20261112]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  exact-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check pinned certificate hashes
+        working-directory: research/entropy_certificate_20261111
+        run: |
+          echo '9e2b870282b506b1e730d96faf57179cf54b719ee7d1b2cbebfb058cc37500cb  prefix9-1.txt' | sha256sum -c
+          echo 'b9d9be10365446af286adbec4534511fcbfd4e681de39b25de17c4d1d05dec6b  tilted10-9.certificate.txt' | sha256sum -c
+      - name: Recheck every semantic edge and exact drift inequality
+        working-directory: research/entropy_certificate_20261111
+        run: python3 audit_certificate.py prefix9-1.txt tilted10-9.certificate.txt

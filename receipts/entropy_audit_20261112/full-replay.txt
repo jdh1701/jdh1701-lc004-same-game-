@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "full": true,
+  "checks": [
+    "all semantic witnesses and rational drift inequalities",
+    "regeneration failure certificate",
+    "295240 exhaustive prefix/window cases"
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "source_sha256": {
+    "audit_certificate.py": "e793e488719d40e86845c05e936eebca3ee3809225fd998efa3128c72c52e673",
+    "check_model.py": "0c2e4c5e20142085350165f14f0d37e7221cc491c5a36a23504ff8336afe11c4",
+    "check_trial.py": "38c67b03a044f44df8b96e267c5131b01afd7398e159523a51f57867b6d0a064",
+    "check_weighted.py": "9cb546e86ddc27fa6c0f6799fe14dca4bc287e6bde87479dc8c76b5aefbb6a4b",
+    "reproduce.py": "723c79054d4d209d45713b6e1035c10cd105b29175cbc43b73cf1d1bf2f98c85",
+    "solve_model.py": "f9bafca55fee1185dc44e42afadc64a933b94e8a8c9d5d8e4d98c09431f49bfc",
+    "weighted_certificate.py": "336ef95d9e2305c43d56ed0de8890a1276b5968592566e89e42957ec54792870"
+  },
+  "no_new_lean_compilation": true,
+  "no_new_github_ci": true,
+  "canonical_github_changes": false
+}

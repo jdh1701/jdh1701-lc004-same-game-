@@ -1,0 +1,16 @@
+{
+ "certificate_bias_1_over_9_fixed": -0.0010868006950770503,
+ "certified_delta_for_comparison": 0.0010864042857142858,
+ "uniform_fixed": 0.046095957211810146,
+ "uniform_free": 0.046095957211810035,
+ "threshold_fixed": [
+  0.10834294509887694,
+  0.10834305114746093
+ ],
+ "rate_ceiling_fixed": 2.9963976392536695,
+ "threshold_free": [
+  0.1080357223510742,
+  0.10803582839965818
+ ],
+ "rate_ceiling_free": 2.996417216705315
+}

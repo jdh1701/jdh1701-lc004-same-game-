@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "states": 23129,
+  "suffix_height": 9,
+  "semantic_edges_checked": 138774,
+  "integer_inequalities_checked": 46258,
+  "scale": 100000000,
+  "weights": [
+    111028731,
+    100000000,
+    100000000
+  ],
+  "weight_denominator": 311028731,
+  "max_drift_numerator": -304542622,
+  "drift_denominator": 31102873100000000,
+  "max_absolute_increment_numerator": 811948960,
+  "potential_extrema_numerators": [
+    -305399957,
+    928680070
+  ],
+  "growth_expression": "311028731/(111028731^111028731*100000000^200000000)^(1/311028731)",
+  "growth_decimal_display_only": 2.996272612782311,
+  "model_sha256": "9e2b870282b506b1e730d96faf57179cf54b719ee7d1b2cbebfb058cc37500cb",
+  "certificate_sha256": "b19695cb999793d4fbf457db574de85b65642cdeed71c31d16f5f0b24272e35d",
+  "checker_sha256": "e793e488719d40e86845c05e936eebca3ee3809225fd998efa3128c72c52e673",
+  "no_optimizer_or_third_party_packages": true,
+  "scope": "Finite semantic and integer checks; probability argument is a paper proof, not Lean."
+}

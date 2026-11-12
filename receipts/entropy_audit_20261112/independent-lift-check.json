@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "controls": 23129,
+  "semantic_checks": 416322,
+  "extra_three_letter_base_checks": 277548,
+  "rational_inequalities": 46258,
+  "worst_drift": "-760483/700000000",
+  "maximum_absolute_increment": "5074681/625000",
+  "model_sha256": "9e2b870282b506b1e730d96faf57179cf54b719ee7d1b2cbebfb058cc37500cb",
+  "certificate_sha256": "b9d9be10365446af286adbec4534511fcbfd4e681de39b25de17c4d1d05dec6b",
+  "scope": "Independent implementation on same certificate; longer-base finite tests are not a formal arbitrary-base proof."
+}

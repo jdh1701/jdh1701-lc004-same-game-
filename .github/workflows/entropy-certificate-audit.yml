@@ -19,3 +19,12 @@ jobs:
       - name: Recheck every semantic edge and exact drift inequality
         working-directory: research/entropy_certificate_20261111
         run: python3 audit_certificate.py prefix9-1.txt tilted10-9.certificate.txt
+      - name: Independently verify original and refined certificates
+        working-directory: research/entropy_certificate_20261111
+        run: |
+          python3 independent_lift_check.py
+          python3 refine_bias.py
+          git diff --exit-code -- refined-bias.certificate.txt
+          python3 audit_certificate.py prefix9-1.txt refined-bias.certificate.txt
+          python3 independent_lift_check.py refined-bias.certificate.txt
+          python3 check_rate_interval.py

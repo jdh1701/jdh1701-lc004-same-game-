@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "strict_lower_bound": "2.99627261278230836",
+  "strict_upper_bound": "2.99627261278230838",
+  "terms": 12,
+  "method": "Exact rational atanh-series logarithm bounds; positive geometric tail bound; no floating point."
+}

@@ -52,7 +52,7 @@ current; it outranks older journals and notes when they disagree.
 | K6 | Second coefficients of T(b,m) (A323844) | PROVED-PAPER, VERIFIED-COMP k ≤ 39 | NOTE.md | open |
 | P16 | A323844 conjectured polynomials m = 12..16 are correct | VERIFIED-COMP (exact brute force) | `bf.c`, `audit/prof16.txt` | — |
 | D1 | A(n,2) = 2^(n−1) − n·F(n−2) − (3+(−1)^n)/2 | published (Burns–Purcell 2007) | matches brute force n ≤ 15 | — |
-| H1 | Binary content counts B(a,b) polynomial in b of degree a for b > a | CONJECTURE | a ≤ 6, words ≤ 22 (`audit/kappa2.c`) | open |
+| H1 | Binary content counts B(a,b) polynomial in b of degree a for b > a | PROVED-PAPER for a ≥ 2, b ≥ a+2 (degree exactly a, leading 1/a!); VERIFIED-COMP at b = a+1 for a ≤ 7; B(1,b) = 0 | a ≤ 6, words ≤ 22 (`audit/kappa2.c`); `fixed_content_333_20261117/` (2026-11-17) | b = a+1 boundary open in general |
 | H4 | Periodic ternary losers are trivial | KILLED | aabcaabc | — |
 | H5 | Ternary losers reduce to one letter | KILLED | residues of every length occur, n ≤ 13 | — |
 | OPEN | Closed form for fixed q ≥ 3 (A035617) | open problem | reduced to heavy kernel (all classes ≥ 4) | open |
@@ -816,6 +816,18 @@ excess obligations. PR35 was rechecked and remains at c88cc090.
 - New VERIFIED-COMP: in the fixed-policy H = 9 model, the uniform average drift lies in [138287869, 138287874] / 3·10⁹. In the extra-base-color model it lies in [132338197, 132338202] / 3·10⁹.
 - Both are strictly positive, so neither model can certify positive uniform density.
 - This supersedes the floating-point qualifier on the Nov 12 game value, for H = 9 only.
+
+## 2026-11-17 Claude: fixed-content counts W(3,3,r); H1 binary polynomiality
+
+This answers R-2026-11-14 point 4. Everything is in `research/fixed_content_333_20261117/`.
+
+- **The (3,3,r) formula is KILLED.** (2^(r−3)+1)(r+6)(r+5) matches the labeled counts only at r = 4…6. It gives 2652 and 6006 against the true 2340 and 4368 at r = 7 and 8.
+- **New VERIFIED-COMP.** W(3,3,r) is known for r ≤ 40 by the type sum, and brute force agrees for r ≤ 11.
+- **New PROVED-PAPER.** For r ≥ 6, W(3,3,r) = (r⁶ + r⁵ + 15r⁴ + 395r³ − 376r² − 3636r + 18720)/120.
+  - Cap lemma: run lengths matter only through min(ℓ, 2), and this is preserved when runs merge.
+  - A gap-type sum then gives multiplicities C(r − s − k − 1, k − 1), which are polynomial in r for r ≥ 8. The polynomial also checks at r = 6 and 7.
+- **H1 upgraded.** H1 is PROVED-PAPER for a ≥ 2 and b ≥ a + 2, with degree exactly a and leading coefficient 1/a!. The b = a + 1 case is VERIFIED-COMP for a ≤ 7.
+- Neither result is in Lean, and novelty has not been checked.
 
 ## Side-branch session entries merged 2026-11-17
 

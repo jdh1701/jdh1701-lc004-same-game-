@@ -23,3 +23,7 @@ jobs:
         run: |
           for d in research/*/; do n=$(basename "$d"); grep -q "\`$n\`" docs/RESEARCH_INDEX.md || { echo "missing from index: $n"; exit 1; }; done
           echo "index ok"
+      - name: Fixed-content counts (3,3,r) and binary H1 replay
+        run: |
+          python3 -I research/fixed_content_333_20261117/fixed_content_333.py 11 40 | diff research/fixed_content_333_20261117/results.json -
+          python3 -I research/fixed_content_333_20261117/binary_content.py 7 | diff research/fixed_content_333_20261117/binary_results.json -

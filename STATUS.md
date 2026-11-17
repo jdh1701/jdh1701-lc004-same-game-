@@ -1,6 +1,6 @@
 # LC004 status
 
-Snapshot as of 2026-11-17, including PR #57. This page summarizes the records; it does not certify anything. The canonical claim registry is [`research/WORKBOARD.md`](research/WORKBOARD.md). Each line below points to the folder whose REPORT, HANDOFF or receipts carry the evidence.
+Snapshot as of 2026-11-17, including PR #57 and the fixed-content work. This page summarizes the records; it does not certify anything. The canonical claim registry is [`research/WORKBOARD.md`](research/WORKBOARD.md). Each line below points to the folder whose REPORT, HANDOFF or receipts carry the evidence.
 
 **The problem.** In one-dimensional Same Game you may delete any maximal run of two or more equal letters, and the pieces on either side then join. A word *wins* if it can be erased completely. The open target is an all-length counting law for W_q(n), the number of winning words of length n over q colors. For q = 3 this is OEIS A035617, which OEIS lists as unsolved. **The target is still open.**
 
@@ -31,6 +31,9 @@ All of these are in the build closure of `LC004.lean`: 251 modules, no `sorry`, 
 - **Growth rate.** liminf W₃(n)^{1/n} ≥ 2.99622…, refined to ≥ 2.996273. Exhaustively checked integer certificate; see `entropy_certificate_20261111/`, R20261111C.
 - **Five colors.** W₅(n)/5ⁿ ≤ 129·(40/41)ⁿ, so the five-color winning density decays exponentially (`global_fusion_20261101/RUN_BOUND.md`).
 - **Face-decomposition counting.** Theorem T, the one-heavy-class Kreweras formula and the j = 1..7 diagonal closed forms (`face_decomposition/`).
+- **Fixed content (3,3,r).** For r ≥ 6, W(3,3,r) = (r⁶ + r⁵ + 15r⁴ + 395r³ − 376r² − 3636r + 18720)/120. Verified for r ≤ 40; brute force agrees for r ≤ 11 (`fixed_content_333_20261117/`, 2026-11-17).
+  - The proof is the cap lemma (run lengths matter only up to 2) plus a sum over the types of the gaps between letters.
+- **Binary content counts (WORKBOARD H1).** For every a ≥ 2 and b ≥ a + 2, B(a,b) is a polynomial in b of degree exactly a, with leading coefficient 1/a!. It holds at b = a + 1 as well for a ≤ 7, by computation (same folder).
 - **First-excess layer.**
   - The two-generator stratum is enumerated in full.
   - The universal (7,5,…,5) stratum is classified as singleton triplings, with count (5j+2)·A_j/5 (`two_generator_excess_20261031/`, `seven_pair_deletion_20261101/`).
@@ -51,15 +54,15 @@ All of these are in the build closure of `LC004.lean`: 251 modules, no `sorry`, 
 - **Extra base color.** Remembering one more base color lowers the drift to [132338197, 132338202] / 3·10⁹ ≈ +0.044113, which is still positive (PR #57, exact).
   - The obvious idea, that one stored color removes all adversarial uncertainty, is false: pops expose an older color that the finite state does not retain.
   - Both results hold only for the fixed lexicographic witness policy in these finite max-adversary models.
-- **Fixed-content formula.** (2^(r−3)+1)(r+6)(r+5) disagrees with the fixed-label counts for (3,3,7) and (3,3,8): it predicts 2652 and 6006, the counts are 2340 and 4368.
-  - The check was reported but not preserved as code (`coordination/BRANCH_MAP_SNAPSHOT_2026-11-14.md`).
+- **Fixed-content formula.** (2^(r−3)+1)(r+6)(r+5) matches the labeled W(3,3,r) only at r = 4, 5, 6. It fails at r = 7, 8, giving 2652 and 6006 against 2340 and 4368.
+  - The true count is the degree-6 polynomial given above (`fixed_content_333_20261117/`).
 
 ## Open conjectures
 
 - **Positive uniform density.** W₃(n)/3ⁿ is positive in the limit and the growth rate is exactly 3.
   - Evidence: the density rises at every computed length from n = 10 to 28.
   - Falsifier: a persistent decline at n = 29–32.
-- **Binary content counts.** B(a,b) is a polynomial in b of degree a for b > a. Checked for a ≤ 6.
+- **Binary content counts, boundary case.** H1's polynomial also holds at b = a + 1 for every a. Proved for b ≥ a + 2; checked at b = a + 1 for a ≤ 7.
 - **Cumulant vanishing.** The q^j coefficient of κ_s is zero for s < 5j. Checked for s ≤ 15.
 
 ## Open obligations

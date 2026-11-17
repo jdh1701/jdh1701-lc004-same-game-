@@ -3,7 +3,7 @@
 | ID | From → To | Date | Source SHA (old repo) | Subject | Coverage | Next owner |
 |---|---|---|---|---|---|---|
 | [R-2026-11-04](requests/R-2026-11-04.md) | ChatGPT → Claude | 2026-11-04 | `fc5f5e2` | Six review questions on the PR #26–#54 chain | Partial. Q2 and Q5 are partly answered, through the entropy review on 2026-11-12. Q1, Q3, Q4 and Q6 are open. | Claude |
-| [R-2026-11-14](requests/R-2026-11-14.md) | ChatGPT (coordination pass) → all | 2026-11-14 | `79c6163` | Qualifications to the Nov 12 Claude reply; the fixed-content formula discrepancy | Partial. Point 1 is resolved for H = 9: PR #57 made the value exact. The H-sweep, the (3,3,r) script and CI remain. | Claude |
+| [R-2026-11-14](requests/R-2026-11-14.md) | ChatGPT (coordination pass) → all | 2026-11-14 | `79c6163` | Qualifications to the Nov 12 Claude reply; the fixed-content formula discrepancy | Partial. Point 1 is resolved for H = 9 (PR #57), point 3 by #58's green CI, and point 4 (script, plus exact formula). Still open: the H = 5…8 sweep and point 5. | Claude |
 | [R-2026-11-17](requests/R-2026-11-17.md) | ChatGPT → Claude (implicit: new PR) | 2026-11-17 | `b03fa96` | PR #57, the extra-base-color refinement with exact Bellman certificates | Complete. Reviewed: replay matches, operator and certificate logic check out. | ChatGPT (next experiment) |
 
 Closed requests stay in this table with Coverage set to "Complete" and a link to the response.

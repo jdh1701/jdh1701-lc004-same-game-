@@ -1,0 +1,45 @@
+{
+  "status": "PROVED-LEAN local/context and coefficient components; PROVED-PAPER original-game assembly",
+  "base_commit": "c98dc7bfb5b4f12f5b2f1d1d4283f9bd3b23be12",
+  "local_lean_runtime": "unavailable",
+  "hosted_status": "success",
+  "source_sha256": {
+    "LC004/AdjacentInflationKernel.lean": "f097f4701f4db0ed92419ee0de140d80da885018ce77356fb6e2b8339668d207",
+    "LC004/FourGeneratorPositiveCoefficient.lean": "6b0e701d3257d7222fa66ee19fcee6830d6847aea85811ed3fd4c42b39e749d1",
+    "research/inflation_law_20261031/check.py": "100c8bebbd62a887ed8f34ae109c4722e7d9ec9a4ecf791292ce93682b929bef",
+    "research/inflation_law_20261031/search30.cpp": "77123500fa0d53db65a91008ded933b7822a2a9e559881341d484b5b64c793d1",
+    "research/inflation_law_20261031/replay30.py": "a3c5c572ccfab7be725378906c89b4a2c14dd69463caf00e438232b7bd46bfb0"
+  },
+  "full_original_gap_bridge_formalized": false,
+  "positive_first_excess_example_found": false,
+  "open_problem_solved": false,
+  "initial_source": "71825b76e8d4ab6dab4979cc5bed79915c46f18e",
+  "initial_run": 41175205459,
+  "initial_lean_job": 124461212856,
+  "initial_lean_result": "failure",
+  "initial_exact_job": 124461212726,
+  "initial_exact_result": "success",
+  "no_three_run_corollary": "PROVED-PAPER; original-position formal bridge pending",
+  "source_commit": "e488ba8696e069061711295dedd7947b31a3c964",
+  "hosted_run": 41175791540,
+  "hosted_jobs": {
+    "exact": {
+      "id": 124462964843,
+      "conclusion": "success"
+    },
+    "lean": {
+      "id": 124462965007,
+      "conclusion": "success"
+    }
+  },
+  "modules": 245,
+  "audited_declarations": 4101,
+  "standard_axioms_only": true,
+  "negative_guards": "pass",
+  "archive_sha256": "9e26c97a9b53bc624e32d1ef78183d34258f5f1380bb0f36fe2c724c1295a473",
+  "hosted_log_sha256": {
+    "lean": "9ba7b710cd79ff4bfc2549e972c9d7c9f92b5fdd60944e7f9cc49467e7ac235e",
+    "exact": "27e645f6e4d09caa5453ec0051c46fbeec3269d4bf79b3cc74002d73fa53bcd1"
+  },
+  "supplementary_transfer_formula": "PROVED-PAPER; local 15-type algebra and 297-pattern probes; not Lean or hosted-check claimed"
+}

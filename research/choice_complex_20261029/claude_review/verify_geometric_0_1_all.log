@@ -1,0 +1,10 @@
+total arrangements checked: 252
+  empty: 102
+  matching(size=1): 70
+  forced-col(x1): 20
+  forced-row(x1): 20
+  two-fan: 20
+  universal: 10
+  matching(size=2): 10
+distinct matching sizes seen: [1, 2]
+OTHER-SHAPE (violates 0/1/All) count: 0

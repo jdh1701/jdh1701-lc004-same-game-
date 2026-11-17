@@ -1,0 +1,27 @@
+brute 1 0
+brute 2 3
+brute 3 3
+brute 4 15
+brute 5 33
+brute 6 105
+brute 7 297
+brute 8 879
+brute 9 2631
+brute 10 7833
+brute 11 23697
+brute 12 71385
+fusion 1 0 orbits 1
+fusion 2 3 orbits 2
+fusion 3 3 orbits 5
+fusion 4 15 orbits 14
+fusion 5 33 orbits 40
+fusion 6 105 orbits 114
+fusion 7 297 orbits 319
+fusion 8 879 orbits 886
+fusion 9 2631 orbits 2438
+fusion 10 7833 orbits 6680
+fusion 11 23697 orbits 18227
+fusion 12 71385 orbits 49617
+fusion 13 216765 orbits 134793
+fusion 14 657849 orbits 365702
+fusion 15 2003151 orbits 991125

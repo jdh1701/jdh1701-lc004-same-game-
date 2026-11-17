@@ -1,0 +1,19 @@
+name: z3-pair-join
+on:
+  push:
+    branches: [research/free-cumulants-20261029]
+    paths: ['research/free_cumulants/z3_pair_join.py', '.github/workflows/z3-pair-join.yml']
+  workflow_dispatch:
+jobs:
+  z3:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install z3-solver==4.13.4.0
+      - run: |
+          cd research/free_cumulants
+          for S in 3 4 5; do
+            timeout 900 python3 z3_pair_join.py $S 14 | tee z$S.log || true
+            echo "::notice title=z3 S<=$S::$(tr '\n' ' ' < z$S.log | cut -c1-600)"
+          done

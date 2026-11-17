@@ -1,0 +1,43 @@
+{
+  "schema": "alexandria-core-source-audit/1",
+  "repository": "jdh1701/Alexandria_Omega_New",
+  "commit": "fb413043cb0f4369615132e014691782a344af8a",
+  "assurance": "Source inspection only; no new Core execution or formal certification in this publication cycle",
+  "files": [
+    {
+      "source_path": "docs/ARCHITECTURE.md",
+      "archived_path": "publication/evidence/core-docs--ARCHITECTURE.md",
+      "sha256": "e8b4f2307131b2c62b52ba7b5cbcbe9e17abd5fd8c803b930b9e9799666fd23c"
+    },
+    {
+      "source_path": "alexandria_core/formal.py",
+      "archived_path": "publication/evidence/core-alexandria_core--formal.py",
+      "sha256": "4da056edc2aaa71b5bdedf0706cac5c3014759140974eea6953b28126e2eda7c"
+    },
+    {
+      "source_path": "alexandria_core/external.py",
+      "archived_path": "publication/evidence/core-alexandria_core--external.py",
+      "sha256": "a99c15dc3b009df2f4efd516c8211053a7e6532889a430d6b0eb1b5e3578873c"
+    },
+    {
+      "source_path": "alexandria_core/receipts.py",
+      "archived_path": "publication/evidence/core-alexandria_core--receipts.py",
+      "sha256": "53794c40e04ae5bffcb0aa3df4cb05bfa4217a90262b11bed603d01c2616c162"
+    },
+    {
+      "source_path": "alexandria_core/failure_memory.py",
+      "archived_path": "publication/evidence/core-alexandria_core--failure_memory.py",
+      "sha256": "853979de22170585e6fdec03c3681a95a80634a1c4e256f87be35197199a7a52"
+    },
+    {
+      "source_path": "alexandria_core/lean4_adapter.py",
+      "archived_path": "publication/evidence/core-alexandria_core--lean4_adapter.py",
+      "sha256": "068627c23004dfbf04ff61e73b11e4dbde92eda13d3546881f0db270f05bb367"
+    },
+    {
+      "source_path": "tools/bounded_session.py",
+      "archived_path": "publication/evidence/core-tools--bounded_session.py",
+      "sha256": "842b38cb7ee73b34e4d6af3346557f4958da60a2ad5990a884f58008e892d31a"
+    }
+  ]
+}

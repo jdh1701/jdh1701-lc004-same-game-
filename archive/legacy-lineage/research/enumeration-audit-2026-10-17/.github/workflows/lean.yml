@@ -1,0 +1,110 @@
+name: Lean Proof Check
+on:
+  push:
+    branches: [main, research/enumeration-audit-2026-10-17]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Cache Lean and Lake
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.elan
+            .lake
+          key: ${{ runner.os }}-lean-v4.19.0-${{ hashFiles('lean-toolchain', 'lakefile.toml', 'lake-manifest.json') }}
+
+      - name: Install Lean
+        run: |
+          if [ ! -x "$HOME/.elan/bin/elan" ]; then
+            curl https://elan.lean-lang.org/elan-init.sh -sSf | sh -s -- -y
+          fi
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Fetch pinned dependency cache
+        run: |
+          export PATH="$HOME/.elan/bin:$PATH"
+          lake exe cache get
+
+      - name: Build LC004
+        run: |
+          export PATH="$HOME/.elan/bin:$PATH"
+          lake build
+
+      - name: Cross-check independent Same Game solvers
+        run: |
+          python3 research/checkpoint_2026_10_17/experiments.py
+          python3 research/checkpoint_2026_10_17/orbit_experiments.py
+
+      - name: Audit canonical paths and finite counterexample certificates
+        run: |
+          lake env lean research/checkpoint_2026_10_17/canonical/PrintAxioms.lean
+          python3 research/checkpoint_2026_10_17/canonical/unique_weighted.py --q 3 --nmax 14
+          python3 research/checkpoint_2026_10_17/canonical/unique_weighted.py --q 4 --nmax 14
+
+      - name: Audit ordinary-word transfer and higher-order interactions
+        run: |
+          lake env lean research/checkpoint_2026_10_17/semantics/PrintAxioms.lean
+          python3 research/checkpoint_2026_10_17/semantics/check_witnesses.py
+          python3 research/checkpoint_2026_10_17/semantics/chain_family.py --kmax 5
+          python3 research/checkpoint_2026_10_17/semantics/audit.py
+
+      - name: Audit partition counting and overlap controls
+        run: |
+          lake env lean research/checkpoint_2026_10_18/PrintAxioms.lean
+          python3 research/checkpoint_2026_10_18/partition_count.py --max-n 12 --word-check-n 8
+          python3 research/checkpoint_2026_10_18/join_controls.py
+          python3 research/checkpoint_2026_10_18/audit.py
+
+      - name: Audit raw grammar bridge and connected coefficient hypotheses
+        run: |
+          lake env lean research/checkpoint_2026_10_18/bridge/PrintAxioms.lean
+          python3 research/checkpoint_2026_10_18/bridge/connected_weights.py
+          python3 research/checkpoint_2026_10_18/bridge/audit_progress.py
+          c++ -std=c++17 -O2 -Wall -Wextra -pedantic research/checkpoint_2026_10_18/bridge/raw_counter.cpp -o /tmp/samegame-raw-counter
+          /tmp/samegame-raw-counter 3 13 > research/checkpoint_2026_10_18/bridge/logs/raw_q3_n13.log
+          /tmp/samegame-raw-counter 4 13 > research/checkpoint_2026_10_18/bridge/logs/raw_q4_n13.log
+          python3 research/checkpoint_2026_10_18/bridge/check_raw_counts.py
+
+      - name: Audit factorization lemmas and threshold predictions
+        run: |
+          lake env lean research/checkpoint_2026_10_18/factorization/PrintAxioms.lean
+          python3 research/checkpoint_2026_10_18/factorization/audit.py
+          c++ -std=c++17 -O3 -Wall -Wextra -pedantic research/checkpoint_2026_10_18/factorization/partition_counter.cpp -o /tmp/samegame-partition-counter
+          python3 research/checkpoint_2026_10_18/factorization/test_engine.py
+          c++ -std=c++17 -O3 -Wall -Wextra -pedantic research/checkpoint_2026_10_18/factorization/raw_counter15.cpp -o /tmp/samegame-raw-counter15
+          /tmp/samegame-raw-counter15 3 15 > research/checkpoint_2026_10_18/factorization/logs/raw_q3_n15.log
+          /tmp/samegame-raw-counter15 4 14 > research/checkpoint_2026_10_18/factorization/logs/raw_q4_n14.log
+          python3 research/checkpoint_2026_10_18/factorization/check_raw.py
+
+      - name: Audit small-block cancellation machinery
+        run: |
+          lake env lean research/checkpoint_2026_10_18/cancellation/PrintAxioms.lean
+          python3 research/checkpoint_2026_10_18/cancellation/test_small_blocks.py
+          python3 research/checkpoint_2026_10_18/cancellation/audit.py
+
+      - name: Audit four-gap witness construction and regional cancellation
+        run: |
+          lake env lean research/checkpoint_2026_10_18/gaps/PrintAxioms.lean > /tmp/samegame-gaps-axioms.log
+          cat /tmp/samegame-gaps-axioms.log
+          python3 research/checkpoint_2026_10_18/gaps/audit.py --axioms-log /tmp/samegame-gaps-axioms.log
+
+      - name: Audit coefficient transport and prior-art correction
+        run: |
+          lake env lean research/checkpoint_2026_10_18/transport/PrintAxioms.lean > /tmp/samegame-transport-axioms.log
+          cat /tmp/samegame-transport-axioms.log
+          python3 research/checkpoint_2026_10_18/transport/check_prior_art.py
+          python3 research/checkpoint_2026_10_18/transport/audit.py --axioms-log /tmp/samegame-transport-axioms.log
+
+      - name: Audit complete witness coverage and unconditional cancellation
+        run: |
+          lake env lean research/checkpoint_2026_10_18/coverage/PrintAxioms.lean > /tmp/samegame-coverage-axioms.log
+          cat /tmp/samegame-coverage-axioms.log
+          lake env lean research/checkpoint_2026_10_18/coverage/Nonvacuity.lean
+          python3 research/checkpoint_2026_10_18/coverage/audit.py --axioms-log /tmp/samegame-coverage-axioms.log

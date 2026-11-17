@@ -1,0 +1,90 @@
+{
+  "status": "VERIFIED-COMP",
+  "n21_three_generator_patterns": 3486,
+  "n21_inflation_image": 3486,
+  "n20_parents": 415,
+  "n21_two_generator_patterns": 2121,
+  "n21_no_five_class_deletion": 714,
+  "n16_class_deletion_histogram": {
+    "(3, 1)": 128,
+    "(3, 0)": 64,
+    "(3, 2)": 32,
+    "(2, 2)": 48,
+    "(2, 1)": 32,
+    "(2, 0)": 8
+  },
+  "n16_no_five_class_deletion": 72,
+  "n16_deletion_counterexamples": [
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "orbit_size": 32,
+      "generators": 3
+    },
+    {
+      "p": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "orbit_size": 32,
+      "generators": 3
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        0,
+        1,
+        2,
+        2,
+        1
+      ],
+      "orbit_size": 8,
+      "generators": 2
+    }
+  ],
+  "n11_connected_coefficient_histogram": {
+    "0": 429,
+    "-1": 22
+  },
+  "scope": "Finite identities only; all-length run structure, inflation preservation and enumeration remain unproved."
+}

@@ -1,0 +1,501 @@
+{
+  "status": "VERIFIED-COMP",
+  "statistics": {
+    "original_word_replays": 118609,
+    "split_intersection_checks": 24604,
+    "stack_separator_positive_checks": 2836,
+    "proper_identity_entries": 3069,
+    "stack_separator_all_checks": 50278,
+    "positive_parameter_support_checks": 29523,
+    "python_cpp_full_state_level_replays": 15
+  },
+  "direct_counts": {
+    "2": [
+      1,
+      0,
+      2,
+      2,
+      6,
+      12,
+      26,
+      58,
+      126,
+      278,
+      602,
+      1300,
+      2774
+    ],
+    "3": [
+      1,
+      0,
+      3,
+      3,
+      15,
+      33,
+      105,
+      297,
+      879,
+      2631,
+      7833
+    ],
+    "4": [
+      1,
+      0,
+      4,
+      4,
+      28,
+      64,
+      268,
+      844
+    ]
+  },
+  "first_binary_projection_failure": {
+    "word": [
+      0,
+      0,
+      1,
+      0,
+      2,
+      0,
+      0,
+      2,
+      1
+    ],
+    "length": 9,
+    "words_examined": 10740,
+    "all_shorter_words_exhausted": true
+  },
+  "explicit_projection_witness": [
+    0,
+    1,
+    0,
+    0,
+    1,
+    2,
+    0,
+    0,
+    2
+  ],
+  "radial_prefixes": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      2
+    ]
+  ],
+  "radial_continuation_counts": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      12,
+      12
+    ],
+    [
+      40,
+      40
+    ],
+    [
+      131,
+      132
+    ]
+  ],
+  "witness_multiplicity_counterexample": {
+    "word": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "coefficient": 2,
+    "winning_indicator": 1
+  },
+  "scalar_witness_totals": [
+    1,
+    0,
+    3,
+    3,
+    18,
+    39,
+    153,
+    444,
+    1563,
+    5067,
+    17502,
+    59367,
+    206049,
+    714600,
+    2503731,
+    8800515,
+    31115082,
+    110411943,
+    393401769
+  ],
+  "cpp_replays": [
+    {
+      "n": 0,
+      "status": "complete",
+      "count": 1,
+      "edges": 0,
+      "states": [
+        1
+      ]
+    },
+    {
+      "n": 1,
+      "status": "complete",
+      "count": 0,
+      "edges": 0,
+      "states": [
+        1,
+        0
+      ]
+    },
+    {
+      "n": 2,
+      "status": "complete",
+      "count": 3,
+      "edges": 4,
+      "states": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "n": 3,
+      "status": "complete",
+      "count": 3,
+      "edges": 5,
+      "states": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "n": 4,
+      "status": "complete",
+      "count": 15,
+      "edges": 12,
+      "states": [
+        1,
+        1,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "n": 5,
+      "status": "complete",
+      "count": 33,
+      "edges": 20,
+      "states": [
+        1,
+        1,
+        2,
+        3,
+        3,
+        1
+      ]
+    },
+    {
+      "n": 6,
+      "status": "complete",
+      "count": 105,
+      "edges": 37,
+      "states": [
+        1,
+        1,
+        2,
+        5,
+        5,
+        3,
+        1
+      ]
+    },
+    {
+      "n": 7,
+      "status": "complete",
+      "count": 297,
+      "edges": 78,
+      "states": [
+        1,
+        1,
+        2,
+        5,
+        10,
+        11,
+        5,
+        1
+      ]
+    },
+    {
+      "n": 8,
+      "status": "complete",
+      "count": 879,
+      "edges": 144,
+      "states": [
+        1,
+        1,
+        2,
+        5,
+        14,
+        18,
+        14,
+        5,
+        1
+      ]
+    },
+    {
+      "n": 9,
+      "status": "complete",
+      "count": 2631,
+      "edges": 312,
+      "states": [
+        1,
+        1,
+        2,
+        5,
+        14,
+        32,
+        42,
+        26,
+        5,
+        1
+      ]
+    },
+    {
+      "n": 10,
+      "status": "complete",
+      "count": 7833,
+      "edges": 579,
+      "states": [
+        1,
+        1,
+        2,
+        5,
+        14,
+        40,
+        62,
+        59,
+        35,
+        5,
+        1
+      ]
+    },
+    {
+      "n": 11,
+      "status": "complete",
+      "count": 23697,
+      "edges": 1249,
+      "states": [
+        1,
+        1,
+        2,
+        5,
+        14,
+        40,
+        98,
+        147,
+        124,
+        45,
+        5,
+        1
+      ]
+    },
+    {
+      "n": 12,
+      "status": "complete",
+      "count": 71385,
+      "edges": 2348,
+      "states": [
+        1,
+        1,
+        2,
+        5,
+        14,
+        40,
+        114,
+        199,
+        233,
+        191,
+        59,
+        6,
+        1
+      ]
+    },
+    {
+      "n": 13,
+      "status": "complete",
+      "count": 216765,
+      "edges": 5158,
+      "states": [
+        1,
+        1,
+        2,
+        5,
+        14,
+        40,
+        114,
+        287,
+        489,
+        524,
+        350,
+        67,
+        6,
+        1
+      ]
+    },
+    {
+      "n": 14,
+      "status": "complete",
+      "count": 657849,
+      "edges": 9797,
+      "states": [
+        1,
+        1,
+        2,
+        5,
+        14,
+        40,
+        114,
+        319,
+        614,
+        842,
+        897,
+        555,
+        78,
+        6,
+        1
+      ]
+    },
+    {
+      "n": 15,
+      "status": "complete",
+      "count": 2003151,
+      "edges": 21486,
+      "states": [
+        1,
+        1,
+        2,
+        5,
+        14,
+        40,
+        114,
+        319,
+        822,
+        1535,
+        1988,
+        1836,
+        897,
+        84,
+        6,
+        1
+      ]
+    },
+    {
+      "n": 16,
+      "status": "complete",
+      "count": 6103743,
+      "edges": 42016,
+      "states": [
+        1,
+        1,
+        2,
+        5,
+        14,
+        40,
+        114,
+        319,
+        886,
+        1830,
+        2861,
+        3648,
+        3360,
+        1437,
+        94,
+        6,
+        1
+      ]
+    },
+    {
+      "n": 17,
+      "status": "complete",
+      "count": 18624693,
+      "edges": 91341,
+      "states": [
+        1,
+        1,
+        2,
+        5,
+        14,
+        40,
+        114,
+        319,
+        886,
+        2310,
+        4658,
+        6945,
+        8008,
+        6402,
+        2034,
+        101,
+        6,
+        1
+      ]
+    },
+    {
+      "n": 18,
+      "status": "complete",
+      "count": 56870385,
+      "edges": 183651,
+      "states": [
+        1,
+        1,
+        2,
+        5,
+        14,
+        40,
+        114,
+        319,
+        886,
+        2438,
+        5336,
+        9239,
+        13500,
+        15719,
+        12263,
+        2929,
+        108,
+        6,
+        1
+      ]
+    }
+  ],
+  "scope": "Exact finite checks of the global support bridge and failed counting closures; no all-length scalar formula or polynomial state bound."
+}

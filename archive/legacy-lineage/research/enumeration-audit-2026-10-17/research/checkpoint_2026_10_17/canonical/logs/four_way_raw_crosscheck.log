@@ -1,0 +1,133 @@
+{
+  "cases": [
+    {
+      "heavy": [],
+      "raw_word": "010212212010",
+      "path_count": 1
+    },
+    {
+      "heavy": [
+        1
+      ],
+      "raw_word": "0110212212010",
+      "path_count": 1
+    },
+    {
+      "heavy": [
+        3
+      ],
+      "raw_word": "0102212212010",
+      "path_count": 1
+    },
+    {
+      "heavy": [
+        5
+      ],
+      "raw_word": "0102122112010",
+      "path_count": 1
+    },
+    {
+      "heavy": [
+        7
+      ],
+      "raw_word": "0102122120010",
+      "path_count": 1
+    },
+    {
+      "heavy": [
+        1,
+        3
+      ],
+      "raw_word": "01102212212010",
+      "path_count": 1
+    },
+    {
+      "heavy": [
+        1,
+        5
+      ],
+      "raw_word": "01102122112010",
+      "path_count": 1
+    },
+    {
+      "heavy": [
+        1,
+        7
+      ],
+      "raw_word": "01102122120010",
+      "path_count": 1
+    },
+    {
+      "heavy": [
+        3,
+        5
+      ],
+      "raw_word": "01022122112010",
+      "path_count": 1
+    },
+    {
+      "heavy": [
+        3,
+        7
+      ],
+      "raw_word": "01022122120010",
+      "path_count": 1
+    },
+    {
+      "heavy": [
+        5,
+        7
+      ],
+      "raw_word": "01021221120010",
+      "path_count": 1
+    },
+    {
+      "heavy": [
+        1,
+        3,
+        5
+      ],
+      "raw_word": "011022122112010",
+      "path_count": 1
+    },
+    {
+      "heavy": [
+        1,
+        3,
+        7
+      ],
+      "raw_word": "011022122120010",
+      "path_count": 1
+    },
+    {
+      "heavy": [
+        1,
+        5,
+        7
+      ],
+      "raw_word": "011021221120010",
+      "path_count": 1
+    },
+    {
+      "heavy": [
+        3,
+        5,
+        7
+      ],
+      "raw_word": "010221221120010",
+      "path_count": 1
+    },
+    {
+      "heavy": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "raw_word": "0110221221120010",
+      "path_count": 91
+    }
+  ],
+  "failures": 0
+}
+EXIT_CODE=0

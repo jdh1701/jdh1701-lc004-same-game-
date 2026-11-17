@@ -1,0 +1,9 @@
+{
+  "toolchain": "leanprover/lean4:v4.19.0",
+  "lean_binary_sha256": "92c3d35b5bfaa5e0fea413a775d504cf46cd95e1345df61c2274f76779e7e023",
+  "kernel_library_sha256": "2ab605c74c78f9ba4431a7b5305a4b28a9071d8a826f223eb14fe5530f78e14d",
+  "shim_sha256": "2cc46aa8c60478c0fb7093aba55f24c99d6d81eed9d2424abd15f5c6243df91c",
+  "shim_scope": "Executable-path lookup only; no compiler or kernel libraries modified",
+  "full_local_build": "interrupted_resource_contention",
+  "negative_guard_initial_invocation": "coverage negative control passed; lake executable not on PATH for subsequent guard"
+}

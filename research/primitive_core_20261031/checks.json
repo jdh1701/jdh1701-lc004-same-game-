@@ -1,0 +1,179 @@
+{
+  "common_circular_gap": {
+    "certificate_pairs": 30201,
+    "connected_nontrivial_pairs": 328,
+    "shared_cyclic_class_edges": 714,
+    "wraparound_edges": 72
+  },
+  "independent_small_census": [
+    {
+      "classes": 2,
+      "coefficient_distribution": {
+        "-1": 5,
+        "0": 65
+      },
+      "connected_patterns": 70,
+      "feasible_patterns": 75,
+      "incidences": 360,
+      "nc_certificates": 180
+    },
+    {
+      "classes": 3,
+      "coefficient_distribution": {
+        "-1": 35,
+        "0": 12235
+      },
+      "connected_patterns": 12270,
+      "feasible_patterns": 13355,
+      "incidences": 60060,
+      "nc_certificates": 10010
+    }
+  ],
+  "local_catalogue": {
+    "disjoint_cases": 10,
+    "overlap_cases": 10
+  },
+  "rejected_shortcut": {
+    "choices": [
+      [
+        2,
+        0,
+        0,
+        3
+      ],
+      [
+        4,
+        2,
+        0,
+        3
+      ],
+      [
+        4,
+        2,
+        2,
+        0
+      ]
+    ],
+    "coefficient": 0,
+    "generators": 3,
+    "pattern": [
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      2,
+      2,
+      1,
+      1,
+      3,
+      3,
+      2,
+      3,
+      3,
+      2,
+      2,
+      3
+    ]
+  },
+  "scope": "connected all-five survivor cores; NOT A035617 terms",
+  "search_and_complete_replay": [
+    {
+      "all_five_survivors": 5,
+      "classes": 2,
+      "complete_original_family_replays": 3,
+      "connected_proper_star_pairs": 3,
+      "csp_nodes": 24,
+      "explicit_rotation_union": 5,
+      "failures": 0,
+      "nodes": 7,
+      "orbit_weight_integral": true,
+      "proper_star_pairs": 3,
+      "python_original_samples": 3,
+      "strong_star_pairs": 3,
+      "three_run_first_excess_layer": 22,
+      "witness_sha256": "3d09680a6256f98805d1cf289b37ce1d9aac890fa4fe946e63e2fd71003d82cb"
+    },
+    {
+      "all_five_survivors": 35,
+      "classes": 3,
+      "complete_original_family_replays": 21,
+      "connected_proper_star_pairs": 21,
+      "csp_nodes": 228,
+      "explicit_rotation_union": 35,
+      "failures": 0,
+      "nodes": 237,
+      "orbit_weight_integral": true,
+      "proper_star_pairs": 21,
+      "python_original_samples": 8,
+      "strong_star_pairs": 21,
+      "three_run_first_excess_layer": 224,
+      "witness_sha256": "dfb197656f7e178a182c5572a6028972ca0c4e1d4fcecaba1c9fc137b653a200"
+    },
+    {
+      "all_five_survivors": 415,
+      "classes": 4,
+      "complete_original_family_replays": 249,
+      "connected_proper_star_pairs": 357,
+      "csp_nodes": 3342,
+      "explicit_rotation_union": 415,
+      "failures": 0,
+      "nodes": 7624,
+      "orbit_weight_integral": true,
+      "proper_star_pairs": 465,
+      "python_original_samples": 8,
+      "strong_star_pairs": 249,
+      "three_run_first_excess_layer": 3486,
+      "witness_sha256": "8e2f2036305d6388f2ff3e749745aa3412c9782f76c4b5752569e15ac8588cf2"
+    },
+    {
+      "all_five_survivors": 6455,
+      "classes": 5,
+      "complete_original_family_replays": 3873,
+      "connected_proper_star_pairs": 7473,
+      "csp_nodes": 61467,
+      "explicit_rotation_union": 6455,
+      "failures": 0,
+      "nodes": 273453,
+      "orbit_weight_integral": true,
+      "proper_star_pairs": 10443,
+      "python_original_samples": 8,
+      "strong_star_pairs": 3873,
+      "three_run_first_excess_layer": 67132,
+      "witness_sha256": "8bb522d13ef8dd47b04f114f2c80bd133459d3c6184b4f7dbb913f85d0cec21d"
+    },
+    {
+      "all_five_survivors": 118195,
+      "classes": 6,
+      "complete_original_family_replays": 70917,
+      "connected_proper_star_pairs": 176337,
+      "csp_nodes": 1295445,
+      "failures": 0,
+      "nodes": 10225375,
+      "orbit_weight_integral": true,
+      "proper_star_pairs": 265059,
+      "python_original_samples": 8,
+      "strong_star_pairs": 70917,
+      "three_run_first_excess_layer": 1465618,
+      "witness_sha256": "a36aafc7bf216a433b95468d51986f95f04fa752b6bda44210e4728f1a756fea"
+    },
+    {
+      "all_five_survivors": 2413185,
+      "classes": 7,
+      "complete_original_family_replays": 1447911,
+      "connected_proper_star_pairs": 4501479,
+      "csp_nodes": 29874162,
+      "failures": 0,
+      "nodes": 395520767,
+      "orbit_weight_integral": true,
+      "proper_star_pairs": 7143951,
+      "python_original_samples": 8,
+      "strong_star_pairs": 1447911,
+      "three_run_first_excess_layer": 34749864,
+      "witness_sha256": "e5b50a624283afdb0e9ebc323ac1fff3a251756ec2c08ecb08219e75742c9b12"
+    }
+  ]
+}

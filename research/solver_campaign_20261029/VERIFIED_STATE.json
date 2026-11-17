@@ -1,0 +1,24 @@
+{
+  "source_commit": "e6dbea580447aae5b8d87a4095a186dc26107bb0",
+  "new_theorems": 11,
+  "local_build_modules": 174,
+  "local_axiom_audit_declarations": 2240,
+  "source_hashes": {
+    "LC004/FourGapRefinementIndicator.lean": "4e337a777793a9dd022e3778d910d49117de2a6da9f0fb747781d29a744b5621",
+    "LC004/FourGapCoefficientSupport.lean": "8264d84e465f7312bab4ae321561a6dfc5f3e9144930083b6b2a0af5f91526ee",
+    "LC004/CrossedFourCancellation.lean": "1e498b129b4a6cccd671b90620e90517ece6481b5c05c438677e7102d836abeb"
+  },
+  "hosted_run": 40895249874,
+  "sage_job": {
+    "id": 123522462820,
+    "conclusion": "success",
+    "version": "10.10"
+  },
+  "lean_job_status_at_receipt": "in_progress; inspect run before PROVED-LEAN promotion",
+  "remaining": [
+    "NC closure/component coefficient formalization",
+    "universal cumulant support theorem in Lean",
+    "nonzero connected kernel enumeration"
+  ],
+  "claude_delivery": "repository handoff only, no direct invocation or response claimed"
+}

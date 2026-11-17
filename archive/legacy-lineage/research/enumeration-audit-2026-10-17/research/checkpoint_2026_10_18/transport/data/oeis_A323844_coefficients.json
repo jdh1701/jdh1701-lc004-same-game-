@@ -1,0 +1,14 @@
+{
+  "source_url": "https://oeis.org/A323844",
+  "access_date": "2026-10-18",
+  "attribution": "Petros Hadjicostas; entry author date Aug 31 2019, not a revision-history audit of individual formulas",
+  "source_status": "Listed as conjectured polynomials",
+  "format": "polynomials[n][exponent] = integer coefficient of b^exponent; omitted coefficients are zero",
+  "polynomials": {
+    "12": {"1": 827, "2": -3384, "3": 5066, "4": -3135, "5": 495, "6": 132},
+    "13": {"1": 807, "2": -2392, "3": 585, "4": 4004, "5": -4290, "6": 1287},
+    "14": {"1": -3599, "2": 18095, "3": -38402, "4": 40495, "5": -20020, "6": 3003, "7": 429},
+    "15": {"1": -7625, "2": 36495, "3": -62455, "4": 38500, "5": 7098, "6": -17017, "7": 5005},
+    "16": {"1": 14159, "2": -73376, "3": 197440, "4": -308660, "5": 266560, "6": -113568, "7": 16016, "8": 1430}
+  }
+}

@@ -1,0 +1,50 @@
+name: Independent LC004 verification
+on:
+  push:
+    branches:
+      - verify/independent-lean-audit-20261029
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - name: Identify exactly what is being checked
+        run: |
+          echo "::notice title=commit::HEAD=$(git rev-parse HEAD) lean_files=$(git ls-files 'LC004/*.lean' | wc -l) toolchain=$(cat lean-toolchain)"
+      - name: Install elan
+        run: |
+          curl -sSfL https://elan.lean-lang.org/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Fetch pinned mathlib build cache only
+        run: |
+          lake --version
+          lake exe cache get
+          rm -rf .lake/build
+          git diff --exit-code -- lake-manifest.json
+      - name: Clean build of every LC004 module from source
+        run: |
+          set -o pipefail
+          lake build LC004 2>&1 | tee build.log
+          echo "::notice title=clean build::lake build LC004 succeeded; sorry_warnings=$(grep -c "declaration uses 'sorry'" build.log || true); error_lines=$(grep -c 'error:' build.log || true); log_lines=$(wc -l < build.log)"
+      - name: Source guard and build-closure coverage
+        run: |
+          python3 scripts/check_lean_coverage.py > cov.log
+          grep -E 'PASS' cov.log | while IFS= read -r l; do echo "::notice title=guard::$l"; done
+      - name: Project-wide axiom allowlist (imports root LC004)
+        run: |
+          set -o pipefail
+          lake env lean scripts/AxiomAudit.lean 2>&1 | tee axiom.log
+          grep -E 'AXIOM AUDIT PASS|helpers excluded' axiom.log | while IFS= read -r l; do echo "::notice title=axiom audit::$l"; done
+      - name: Headline statements as the kernel sees them
+        run: |
+          set -o pipefail
+          lake env lean scripts/IndependentStatements.lean 2>&1 | tee stmt.log
+          grep 'IA_STMT' stmt.log | while IFS= read -r l; do echo "::notice title=statement::$(printf '%s' "$l" | cut -c1-1800)"; done
+      - name: Existing negative-case regression for the guards
+        run: python3 scripts/test_verification_guards.py
+      - name: Mutation gauntlet (planted failures)
+        run: bash scripts/independent_mutation_gauntlet.sh

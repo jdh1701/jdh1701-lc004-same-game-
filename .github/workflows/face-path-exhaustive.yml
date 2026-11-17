@@ -1,0 +1,19 @@
+name: LC004 finite face path regression
+on:
+  push:
+    branches:
+      - integration/alexandria-face-lemma-20261029
+    paths:
+      - 'research/face_path_exhaustive.py'
+      - '.github/workflows/face-path-exhaustive.yml'
+  workflow_dispatch:
+jobs:
+  finite:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python research/face_path_exhaustive.py

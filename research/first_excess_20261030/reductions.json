@@ -1,0 +1,13041 @@
+{
+  "status": "VERIFIED-COMP",
+  "patterns": 312,
+  "cyclic_orbits": 22,
+  "dihedral_orbits": 12,
+  "cyclic_orbit_sizes": {
+    "16": 17,
+    "8": 5
+  },
+  "dihedral_orbit_sizes": {
+    "32": 8,
+    "16": 3,
+    "8": 1
+  },
+  "without_all_five_reduction": [
+    {
+      "p": [
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    }
+  ],
+  "without_adjacent_reduction": [
+    {
+      "p": [
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    }
+  ],
+  "deletion_histogram": {
+    "(3, 3, 3)": 224,
+    "(2, 0, 0)": 88
+  },
+  "rows": [
+    {
+      "p": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        2
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        2
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        7,
+        8,
+        9
+      ],
+      "adjacent_all_five_deletions": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        7,
+        8,
+        9
+      ],
+      "adjacent_all_five_deletions": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        2
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        2
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        5,
+        6,
+        7
+      ],
+      "adjacent_all_five_deletions": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        5,
+        6,
+        7
+      ],
+      "adjacent_all_five_deletions": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        3,
+        4,
+        5
+      ],
+      "adjacent_all_five_deletions": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        3,
+        4,
+        5
+      ],
+      "adjacent_all_five_deletions": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        1,
+        2,
+        3
+      ],
+      "adjacent_all_five_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        1,
+        2,
+        3
+      ],
+      "adjacent_all_five_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        8,
+        9,
+        10
+      ],
+      "adjacent_all_five_deletions": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        8,
+        9,
+        10
+      ],
+      "adjacent_all_five_deletions": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        8,
+        9,
+        10
+      ],
+      "adjacent_all_five_deletions": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        8,
+        9,
+        10
+      ],
+      "adjacent_all_five_deletions": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        2
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        4,
+        5,
+        6
+      ],
+      "adjacent_all_five_deletions": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        1,
+        2,
+        3
+      ],
+      "adjacent_all_five_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        1,
+        2,
+        3
+      ],
+      "adjacent_all_five_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        6,
+        7,
+        8
+      ],
+      "adjacent_all_five_deletions": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        6,
+        7,
+        8
+      ],
+      "adjacent_all_five_deletions": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        4,
+        5,
+        6
+      ],
+      "adjacent_all_five_deletions": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        4,
+        5,
+        6
+      ],
+      "adjacent_all_five_deletions": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        2,
+        3,
+        4
+      ],
+      "adjacent_all_five_deletions": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        2,
+        3,
+        4
+      ],
+      "adjacent_all_five_deletions": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        5,
+        6,
+        7
+      ],
+      "adjacent_all_five_deletions": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        9,
+        10,
+        11
+      ],
+      "adjacent_all_five_deletions": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        9,
+        10,
+        11
+      ],
+      "adjacent_all_five_deletions": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        9,
+        10,
+        11
+      ],
+      "adjacent_all_five_deletions": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        9,
+        10,
+        11
+      ],
+      "adjacent_all_five_deletions": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        9,
+        10,
+        11
+      ],
+      "adjacent_all_five_deletions": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        1,
+        2,
+        3
+      ],
+      "adjacent_all_five_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        5,
+        6,
+        7
+      ],
+      "adjacent_all_five_deletions": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        2,
+        3,
+        4
+      ],
+      "adjacent_all_five_deletions": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        2,
+        3,
+        4
+      ],
+      "adjacent_all_five_deletions": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        7,
+        8,
+        9
+      ],
+      "adjacent_all_five_deletions": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        7,
+        8,
+        9
+      ],
+      "adjacent_all_five_deletions": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        2
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        2
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        5,
+        6,
+        7
+      ],
+      "adjacent_all_five_deletions": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        5,
+        6,
+        7
+      ],
+      "adjacent_all_five_deletions": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        2
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        2
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        3,
+        4,
+        5
+      ],
+      "adjacent_all_five_deletions": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        3,
+        4,
+        5
+      ],
+      "adjacent_all_five_deletions": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        6,
+        7,
+        8
+      ],
+      "adjacent_all_five_deletions": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        10,
+        11,
+        12
+      ],
+      "adjacent_all_five_deletions": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        10,
+        11,
+        12
+      ],
+      "adjacent_all_five_deletions": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        10,
+        11,
+        12
+      ],
+      "adjacent_all_five_deletions": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        10,
+        11,
+        12
+      ],
+      "adjacent_all_five_deletions": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        10,
+        11,
+        12
+      ],
+      "adjacent_all_five_deletions": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        10,
+        11,
+        12
+      ],
+      "adjacent_all_five_deletions": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        10,
+        11,
+        12
+      ],
+      "adjacent_all_five_deletions": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        10,
+        11,
+        12
+      ],
+      "adjacent_all_five_deletions": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        10,
+        11,
+        12
+      ],
+      "adjacent_all_five_deletions": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        2
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        2
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        5,
+        6,
+        7
+      ],
+      "adjacent_all_five_deletions": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        5,
+        6,
+        7
+      ],
+      "adjacent_all_five_deletions": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        2,
+        3,
+        4
+      ],
+      "adjacent_all_five_deletions": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        6,
+        7,
+        8
+      ],
+      "adjacent_all_five_deletions": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        2
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        2
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        3,
+        4,
+        5
+      ],
+      "adjacent_all_five_deletions": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        3,
+        4,
+        5
+      ],
+      "adjacent_all_five_deletions": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        8,
+        9,
+        10
+      ],
+      "adjacent_all_five_deletions": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        8,
+        9,
+        10
+      ],
+      "adjacent_all_five_deletions": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        8,
+        9,
+        10
+      ],
+      "adjacent_all_five_deletions": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        8,
+        9,
+        10
+      ],
+      "adjacent_all_five_deletions": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        3,
+        4,
+        5
+      ],
+      "adjacent_all_five_deletions": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        3,
+        4,
+        5
+      ],
+      "adjacent_all_five_deletions": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        1,
+        2,
+        3
+      ],
+      "adjacent_all_five_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        1,
+        2,
+        3
+      ],
+      "adjacent_all_five_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        2
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        6,
+        7,
+        8
+      ],
+      "adjacent_all_five_deletions": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        6,
+        7,
+        8
+      ],
+      "adjacent_all_five_deletions": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        6,
+        7,
+        8
+      ],
+      "adjacent_all_five_deletions": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        6,
+        7,
+        8
+      ],
+      "adjacent_all_five_deletions": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        1,
+        2,
+        3
+      ],
+      "adjacent_all_five_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        1,
+        2,
+        3
+      ],
+      "adjacent_all_five_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        4,
+        5,
+        6
+      ],
+      "adjacent_all_five_deletions": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        4,
+        5,
+        6
+      ],
+      "adjacent_all_five_deletions": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        7,
+        8,
+        9
+      ],
+      "adjacent_all_five_deletions": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        11,
+        12,
+        13
+      ],
+      "adjacent_all_five_deletions": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        11,
+        12,
+        13
+      ],
+      "adjacent_all_five_deletions": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        11,
+        12,
+        13
+      ],
+      "adjacent_all_five_deletions": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        2,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        11,
+        12,
+        13
+      ],
+      "adjacent_all_five_deletions": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        11,
+        12,
+        13
+      ],
+      "adjacent_all_five_deletions": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        11,
+        12,
+        13
+      ],
+      "adjacent_all_five_deletions": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        11,
+        12,
+        13
+      ],
+      "adjacent_all_five_deletions": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        11,
+        12,
+        13
+      ],
+      "adjacent_all_five_deletions": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        11,
+        12,
+        13
+      ],
+      "adjacent_all_five_deletions": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        11,
+        12,
+        13
+      ],
+      "adjacent_all_five_deletions": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        11,
+        12,
+        13
+      ],
+      "adjacent_all_five_deletions": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        11,
+        12,
+        13
+      ],
+      "adjacent_all_five_deletions": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        1,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        11,
+        12,
+        13
+      ],
+      "adjacent_all_five_deletions": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        11,
+        12,
+        13
+      ],
+      "adjacent_all_five_deletions": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        1,
+        2,
+        3
+      ],
+      "adjacent_all_five_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        1,
+        2,
+        3
+      ],
+      "adjacent_all_five_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        6,
+        7,
+        8
+      ],
+      "adjacent_all_five_deletions": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        6,
+        7,
+        8
+      ],
+      "adjacent_all_five_deletions": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        3,
+        4,
+        5
+      ],
+      "adjacent_all_five_deletions": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        7,
+        8,
+        9
+      ],
+      "adjacent_all_five_deletions": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        1,
+        2,
+        3
+      ],
+      "adjacent_all_five_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        1,
+        2,
+        3
+      ],
+      "adjacent_all_five_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        4,
+        5,
+        6
+      ],
+      "adjacent_all_five_deletions": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        4,
+        5,
+        6
+      ],
+      "adjacent_all_five_deletions": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        9,
+        10,
+        11
+      ],
+      "adjacent_all_five_deletions": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        9,
+        10,
+        11
+      ],
+      "adjacent_all_five_deletions": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        9,
+        10,
+        11
+      ],
+      "adjacent_all_five_deletions": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        9,
+        10,
+        11
+      ],
+      "adjacent_all_five_deletions": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        4,
+        5,
+        6
+      ],
+      "adjacent_all_five_deletions": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        4,
+        5,
+        6
+      ],
+      "adjacent_all_five_deletions": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        2,
+        3,
+        4
+      ],
+      "adjacent_all_five_deletions": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        2,
+        3,
+        4
+      ],
+      "adjacent_all_five_deletions": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        1,
+        2,
+        3
+      ],
+      "adjacent_all_five_deletions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        7,
+        8,
+        9
+      ],
+      "adjacent_all_five_deletions": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        7,
+        8,
+        9
+      ],
+      "adjacent_all_five_deletions": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        7,
+        8,
+        9
+      ],
+      "adjacent_all_five_deletions": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        7,
+        8,
+        9
+      ],
+      "adjacent_all_five_deletions": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        2,
+        3,
+        4
+      ],
+      "adjacent_all_five_deletions": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        2,
+        3,
+        4
+      ],
+      "adjacent_all_five_deletions": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        5,
+        6,
+        7
+      ],
+      "adjacent_all_five_deletions": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        5,
+        6,
+        7
+      ],
+      "adjacent_all_five_deletions": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        8,
+        9,
+        10
+      ],
+      "adjacent_all_five_deletions": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        12,
+        13,
+        14
+      ],
+      "adjacent_all_five_deletions": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        12,
+        13,
+        14
+      ],
+      "adjacent_all_five_deletions": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        2,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        12,
+        13,
+        14
+      ],
+      "adjacent_all_five_deletions": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        12,
+        13,
+        14
+      ],
+      "adjacent_all_five_deletions": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        12,
+        13,
+        14
+      ],
+      "adjacent_all_five_deletions": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        12,
+        13,
+        14
+      ],
+      "adjacent_all_five_deletions": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        12,
+        13,
+        14
+      ],
+      "adjacent_all_five_deletions": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        12,
+        13,
+        14
+      ],
+      "adjacent_all_five_deletions": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        12,
+        13,
+        14
+      ],
+      "adjacent_all_five_deletions": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        12,
+        13,
+        14
+      ],
+      "adjacent_all_five_deletions": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        12,
+        13,
+        14
+      ],
+      "adjacent_all_five_deletions": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        12,
+        13,
+        14
+      ],
+      "adjacent_all_five_deletions": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2,
+        1
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        12,
+        13,
+        14
+      ],
+      "adjacent_all_five_deletions": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2,
+        2,
+        0
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        12,
+        13,
+        14
+      ],
+      "adjacent_all_five_deletions": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        15
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        15
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        6,
+        7,
+        8
+      ],
+      "adjacent_all_five_deletions": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        6,
+        7,
+        8
+      ],
+      "adjacent_all_five_deletions": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        15
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        15
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        4,
+        5,
+        6
+      ],
+      "adjacent_all_five_deletions": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        4,
+        5,
+        6
+      ],
+      "adjacent_all_five_deletions": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        2,
+        3,
+        4
+      ],
+      "adjacent_all_five_deletions": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        2,
+        3,
+        4
+      ],
+      "adjacent_all_five_deletions": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        7,
+        8,
+        9
+      ],
+      "adjacent_all_five_deletions": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        7,
+        8,
+        9
+      ],
+      "adjacent_all_five_deletions": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        15
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        3,
+        4,
+        5
+      ],
+      "adjacent_all_five_deletions": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        4,
+        5,
+        6
+      ],
+      "adjacent_all_five_deletions": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        8,
+        9,
+        10
+      ],
+      "adjacent_all_five_deletions": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        15
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        15
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        15
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        15
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        9,
+        10,
+        11
+      ],
+      "adjacent_all_five_deletions": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        9,
+        10,
+        11
+      ],
+      "adjacent_all_five_deletions": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        9,
+        10,
+        11
+      ],
+      "adjacent_all_five_deletions": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        9,
+        10,
+        11
+      ],
+      "adjacent_all_five_deletions": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        15
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        15
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        4,
+        5,
+        6
+      ],
+      "adjacent_all_five_deletions": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        4,
+        5,
+        6
+      ],
+      "adjacent_all_five_deletions": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        15
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        15
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        7,
+        8,
+        9
+      ],
+      "adjacent_all_five_deletions": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        7,
+        8,
+        9
+      ],
+      "adjacent_all_five_deletions": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        2,
+        3,
+        4
+      ],
+      "adjacent_all_five_deletions": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        2,
+        3,
+        4
+      ],
+      "adjacent_all_five_deletions": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "p": [
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        1,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        1,
+        15
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        5,
+        6,
+        7
+      ],
+      "adjacent_all_five_deletions": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        5,
+        6,
+        7
+      ],
+      "adjacent_all_five_deletions": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        10,
+        11,
+        12
+      ],
+      "adjacent_all_five_deletions": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        10,
+        11,
+        12
+      ],
+      "adjacent_all_five_deletions": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        10,
+        11,
+        12
+      ],
+      "adjacent_all_five_deletions": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        10,
+        11,
+        12
+      ],
+      "adjacent_all_five_deletions": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        10,
+        11,
+        12
+      ],
+      "adjacent_all_five_deletions": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        5,
+        6,
+        7
+      ],
+      "adjacent_all_five_deletions": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        5,
+        6,
+        7
+      ],
+      "adjacent_all_five_deletions": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        3,
+        4,
+        5
+      ],
+      "adjacent_all_five_deletions": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        3,
+        4,
+        5
+      ],
+      "adjacent_all_five_deletions": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        2,
+        3,
+        4
+      ],
+      "adjacent_all_five_deletions": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        8,
+        9,
+        10
+      ],
+      "adjacent_all_five_deletions": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        8,
+        9,
+        10
+      ],
+      "adjacent_all_five_deletions": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        8,
+        9,
+        10
+      ],
+      "adjacent_all_five_deletions": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        8,
+        9,
+        10
+      ],
+      "adjacent_all_five_deletions": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        3,
+        4,
+        5
+      ],
+      "adjacent_all_five_deletions": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        3,
+        4,
+        5
+      ],
+      "adjacent_all_five_deletions": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        6,
+        7,
+        8
+      ],
+      "adjacent_all_five_deletions": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        6,
+        7,
+        8
+      ],
+      "adjacent_all_five_deletions": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "p": [
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        0,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        0,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        9,
+        10,
+        11
+      ],
+      "adjacent_all_five_deletions": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "generators": 2,
+      "all_five_deletions": [],
+      "adjacent_all_five_deletions": []
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        13,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        13,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        13,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        13,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        2,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        13,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        0,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        13,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        2,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        0,
+        2,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        13,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        2,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        13,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        2,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        13,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        2,
+        2,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        13,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        13,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        0,
+        0,
+        2,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        13,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        2,
+        2,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        13,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "p": [
+        0,
+        0,
+        1,
+        1,
+        2,
+        0,
+        0,
+        1,
+        1,
+        2,
+        2,
+        1,
+        0,
+        2,
+        2,
+        2
+      ],
+      "generators": 3,
+      "all_five_deletions": [
+        13,
+        14,
+        15
+      ],
+      "adjacent_all_five_deletions": [
+        13,
+        14,
+        15
+      ]
+    }
+  ]
+}

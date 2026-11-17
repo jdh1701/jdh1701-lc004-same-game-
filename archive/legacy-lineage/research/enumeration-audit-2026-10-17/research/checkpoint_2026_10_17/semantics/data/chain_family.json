@@ -1,0 +1,363 @@
+[
+  {
+    "k": 1,
+    "runs": 5,
+    "arity": 2,
+    "half": [
+      0,
+      1,
+      0
+    ],
+    "actual_run_indices": [
+      1,
+      3
+    ],
+    "base_capped_count": 1,
+    "full_capped_count": 2,
+    "maximal_proper_capped_counts": [
+      1,
+      1
+    ],
+    "minimal": true,
+    "seconds": 5.899700045119971e-05,
+    "two_paths": [
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ]
+    ]
+  },
+  {
+    "k": 2,
+    "runs": 11,
+    "arity": 4,
+    "half": [
+      0,
+      1,
+      0,
+      2,
+      1,
+      2
+    ],
+    "actual_run_indices": [
+      1,
+      3,
+      6,
+      8
+    ],
+    "base_capped_count": 1,
+    "full_capped_count": 2,
+    "maximal_proper_capped_counts": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "minimal": true,
+    "seconds": 0.0009187870018649846,
+    "two_paths": [
+      [
+        1,
+        1,
+        3,
+        2,
+        2,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        3,
+        3,
+        2,
+        1,
+        0
+      ]
+    ]
+  },
+  {
+    "k": 3,
+    "runs": 17,
+    "arity": 6,
+    "half": [
+      0,
+      1,
+      0,
+      2,
+      1,
+      2,
+      0,
+      1,
+      0
+    ],
+    "actual_run_indices": [
+      1,
+      3,
+      6,
+      9,
+      11,
+      14
+    ],
+    "base_capped_count": 1,
+    "full_capped_count": 2,
+    "maximal_proper_capped_counts": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "minimal": true,
+    "seconds": 0.00656415300181834,
+    "two_paths": [
+      [
+        1,
+        1,
+        3,
+        5,
+        4,
+        4,
+        3,
+        2,
+        2,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        3,
+        5,
+        4,
+        4,
+        3,
+        3,
+        2,
+        1,
+        0
+      ]
+    ]
+  },
+  {
+    "k": 4,
+    "runs": 23,
+    "arity": 8,
+    "half": [
+      0,
+      1,
+      0,
+      2,
+      1,
+      2,
+      0,
+      1,
+      0,
+      2,
+      1,
+      2
+    ],
+    "actual_run_indices": [
+      1,
+      3,
+      6,
+      9,
+      12,
+      14,
+      17,
+      20
+    ],
+    "base_capped_count": 1,
+    "full_capped_count": 2,
+    "maximal_proper_capped_counts": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "minimal": true,
+    "seconds": 0.05346731300232932
+  },
+  {
+    "k": 5,
+    "runs": 29,
+    "arity": 10,
+    "half": [
+      0,
+      1,
+      0,
+      2,
+      1,
+      2,
+      0,
+      1,
+      0,
+      2,
+      1,
+      2,
+      0,
+      1,
+      0
+    ],
+    "actual_run_indices": [
+      1,
+      3,
+      6,
+      9,
+      12,
+      15,
+      17,
+      20,
+      23,
+      26
+    ],
+    "base_capped_count": 1,
+    "full_capped_count": 2,
+    "maximal_proper_capped_counts": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "minimal": true,
+    "seconds": 0.4121582500010845
+  },
+  {
+    "k": 6,
+    "runs": 35,
+    "arity": 12,
+    "half": [
+      0,
+      1,
+      0,
+      2,
+      1,
+      2,
+      0,
+      1,
+      0,
+      2,
+      1,
+      2,
+      0,
+      1,
+      0,
+      2,
+      1,
+      2
+    ],
+    "actual_run_indices": [
+      1,
+      3,
+      6,
+      9,
+      12,
+      15,
+      18,
+      20,
+      23,
+      26,
+      29,
+      32
+    ],
+    "base_capped_count": 1,
+    "full_capped_count": 2,
+    "maximal_proper_capped_counts": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "minimal": true,
+    "seconds": 3.626903750002384
+  },
+  {
+    "k": 7,
+    "runs": 41,
+    "arity": 14,
+    "half": [
+      0,
+      1,
+      0,
+      2,
+      1,
+      2,
+      0,
+      1,
+      0,
+      2,
+      1,
+      2,
+      0,
+      1,
+      0,
+      2,
+      1,
+      2,
+      0,
+      1,
+      0
+    ],
+    "actual_run_indices": [
+      1,
+      3,
+      6,
+      9,
+      12,
+      15,
+      18,
+      21,
+      23,
+      26,
+      29,
+      32,
+      35,
+      38
+    ],
+    "base_capped_count": 1,
+    "full_capped_count": 2,
+    "maximal_proper_capped_counts": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "minimal": true,
+    "seconds": 24.4968958150057
+  }
+]

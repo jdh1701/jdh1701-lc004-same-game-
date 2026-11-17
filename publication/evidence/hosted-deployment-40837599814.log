@@ -1,0 +1,6 @@
+# Excerpts from GitHub run 40837599814, commit 3c40389c3f3ccab145f052720b3d12b377b2f4d8
+# Deployment job 123329000481: failure, Pages not enabled
+2026-10-29T07:55:23.9904792Z Pages: write
+2026-10-29T07:55:24.7841660Z   enablement: false
+2026-10-29T07:55:25.4387423Z ##[error]Get Pages site failed. Please verify that the repository has Pages enabled and configured to build using GitHub Actions, or consider exploring the `enablement` parameter for this action. Error: Not Found - https://docs.github.com/rest/pages/pages#get-a-apiname-pages-site
+2026-10-29T07:55:25.4408423Z ##[error]HttpError: Not Found - https://docs.github.com/rest/pages/pages#get-a-apiname-pages-site

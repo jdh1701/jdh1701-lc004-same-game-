@@ -1,0 +1,24 @@
+{
+  "status": "all local verification passes; exact-commit CI will be pinned in follow-up receipt",
+  "scope": "all252 finite five-versus-five relations and increasing placement transport; actual certificate/coefficient bridge pending",
+  "baseline": {
+    "proof_commit": "2d8f0e78a4407f491681eda7dae2fcd54af839b9",
+    "run_id": 40977784940,
+    "conclusion": "success",
+    "probe_run": 40977784898,
+    "probe_conclusion": "success"
+  },
+  "local": {
+    "build": "pass",
+    "active_modules": 207,
+    "python_geometry": "pass",
+    "claude_finite_replay": "pass",
+    "generated_source_check": "pass",
+    "audited_declarations": 3480,
+    "axiom_audit": "pass; only propext, Classical.choice, Quot.sound",
+    "coverage": "pass",
+    "negative_guards": "both pass"
+  },
+  "exact_commit_ci_receipt": "research/FIVE_KERNEL_CI_RECEIPTS_20261029.json",
+  "receipt_policy": "The follow-up pin file is outside source workflow paths to avoid rebuilding unchanged mathematical source merely to record run IDs."
+}

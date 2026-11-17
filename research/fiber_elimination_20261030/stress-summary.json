@@ -1,0 +1,68 @@
+{
+  "total": 2198,
+  "status": {
+    "evaluated": 1120,
+    "SKIPPED-reduced-face-budget": 13,
+    "proper-join": 1008,
+    "SKIPPED-five-second-case-budget": 57
+  },
+  "old32": {
+    "evaluated": 31,
+    "SKIPPED-reduced-face-budget": 1
+  },
+  "sources": {
+    "all-six-run-6-11": {
+      "proper-join": 240,
+      "SKIPPED-reduced-face-budget": 12,
+      "evaluated": 156,
+      "SKIPPED-five-second-case-budget": 42
+    },
+    "all-six-run-7-10": {
+      "proper-join": 252,
+      "evaluated": 288
+    },
+    "all-six-run-7-9": {
+      "proper-join": 210,
+      "evaluated": 210
+    },
+    "all-six-run-8-10": {
+      "proper-join": 306,
+      "evaluated": 435,
+      "SKIPPED-five-second-case-budget": 15
+    },
+    "old-budget-skip": {
+      "evaluated": 31,
+      "SKIPPED-reduced-face-budget": 1
+    }
+  },
+  "zero_evaluated": 326,
+  "zero_homology_checked": 325,
+  "nonzero_coefficients": {
+    "8": 101,
+    "10": 52,
+    "-4": 80,
+    "2": 90,
+    "-12": 45,
+    "-1": 12,
+    "-5": 15,
+    "6": 36,
+    "168": 12,
+    "60": 12,
+    "24": 91,
+    "30": 14,
+    "72": 18,
+    "-6": 6,
+    "56": 48,
+    "20": 39,
+    "-2": 18,
+    "4": 18,
+    "16": 6,
+    "-28": 18,
+    "-10": 30,
+    "1": 3,
+    "11": 12,
+    "9": 12,
+    "-36": 6
+  },
+  "counterexamples": 0
+}

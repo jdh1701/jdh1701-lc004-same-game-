@@ -1,0 +1,25 @@
+{
+  "source_commit": "e6dbea580447aae5b8d87a4095a186dc26107bb0",
+  "claim": "winningJoinCoefficient_crossed_four_zero",
+  "status": "PROVED-LEAN",
+  "ci_run": 40895249874,
+  "conclusion": "success",
+  "jobs": {
+    "lean": 123522463522,
+    "sage": 123522462820
+  },
+  "active_modules": 174,
+  "axiom_audited_project_declarations": 2240,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "sage_version": "10.10",
+  "python_refinement_checks": 117195,
+  "remaining": [
+    "NC-component/cumulant formalization",
+    "universal cumulant support bound in Lean",
+    "surviving connected kernel enumeration"
+  ]
+}

@@ -1,0 +1,2190 @@
+[
+  {
+    "n": 10,
+    "terms": [
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          5
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          5
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          5
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          5
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          5
+        ]
+      }
+    ]
+  },
+  {
+    "n": 11,
+    "terms": [
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          6
+        ]
+      }
+    ]
+  },
+  {
+    "n": 12,
+    "terms": [
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "coefficient": 2,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          5,
+          7
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      },
+      {
+        "partition": [
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "coefficient": -1,
+        "block_sizes": [
+          6,
+          6
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,174 @@
+{
+  "new_theorem_count": 24,
+  "new_named_theorems": [
+    "pairGapPartition_noncrossing",
+    "forced_pair_refines_gaps",
+    "noncrossing_inf",
+    "forced_pair_gap_decomposition",
+    "forced_two_pair_gap_decomposition",
+    "splicePartitions_left",
+    "splicePartitions_right",
+    "splicePartitions_pairTriple",
+    "witness_intersection_glue",
+    "four_gap_witness_intersection",
+    "witnessUnder_meet",
+    "witness_list_coverage",
+    "four_gap_join_coverage_invariant",
+    "four_gap_witness_coefficient_zero",
+    "quadGapIndex_noncrossing",
+    "remainderGapIndex_noncrossing",
+    "adjacent_pair_remainder_regions",
+    "nested_pair_remainder_regions",
+    "forced_adjacent_pairs_remainder_refines",
+    "forced_nested_pairs_remainder_refines",
+    "positional_four_gap_intersection",
+    "mem_regionalWitnessList",
+    "regional_four_block_zero",
+    "positional_regional_four_block_zero"
+  ],
+  "axiom_reports": {
+    "pairGapPartition_noncrossing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "forced_pair_refines_gaps": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "noncrossing_inf": [
+      "propext"
+    ],
+    "forced_pair_gap_decomposition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "forced_two_pair_gap_decomposition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "splicePartitions_left": [
+      "propext"
+    ],
+    "splicePartitions_right": [
+      "propext"
+    ],
+    "splicePartitions_pairTriple": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "witness_intersection_glue": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "four_gap_witness_intersection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "witnessUnder_meet": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "witness_list_coverage": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "four_gap_join_coverage_invariant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "four_gap_witness_coefficient_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "quadGapIndex_noncrossing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "remainderGapIndex_noncrossing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "adjacent_pair_remainder_regions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "nested_pair_remainder_regions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "forced_adjacent_pairs_remainder_refines": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "forced_nested_pairs_remainder_refines": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "positional_four_gap_intersection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "mem_regionalWitnessList": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "regional_four_block_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "positional_regional_four_block_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "source_hashes": {
+    "LC004/PairGapDecomposition.lean": "fcc60fef5afb8e1c8de72b5d336f4c9bde40c3e357741a08189c8ab5a2606bd8",
+    "LC004/WitnessGluing.lean": "fc1f2e1cfda122bb22b788b65d499e803aa1bc48f5ad2049c6b1a46ab47af283",
+    "LC004/FourGapWitnesses.lean": "7257cb2930f5f6bccf4c0330f35416dd9b45d348496df1047fac38c172391220",
+    "LC004/FourGapGeometry.lean": "c869ec892f36acac64bbfdbd38ef6c0ac4c1e43124774fd70dfcc5ab49eb8c52",
+    "LC004/RegionalCancellation.lean": "6ca350e9404c30088013f342f3bd679bc4e7926e006ce137a9bf738866a0c829"
+  },
+  "scans": {
+    "holes": [],
+    "custom_axioms": [],
+    "unchecked_code": []
+  },
+  "stage_counts": {
+    "verified": 4,
+    "partial": 1,
+    "open": 4
+  },
+  "regional_four_gap_invariance_lean_verified": true,
+  "positional_regional_cancellation_lean_verified": true,
+  "full_board_small_block_theorem_lean_verified": false,
+  "general_enumeration_solved": false,
+  "remaining": [
+    "Locality/filtering of witnesses at a target full-board partition",
+    "Full-board/product order isomorphism and coefficient transport",
+    "Exhaustive four-position branch classification and endpoint extension/restriction",
+    "Small-block and component assembly, including size two and three",
+    "Executable witness generator and raw-game correspondence",
+    "Useful general connected-coefficient law with growth analysis"
+  ]
+}

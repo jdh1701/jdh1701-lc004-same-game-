@@ -1,0 +1,22 @@
+name: Exact extra-color-state audit
+on:
+  push:
+    branches: [research/extra-color-state-20261117]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  exact-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Independently replay exact finite-model bounds
+        run: |
+          python3 research/extra_color_state_20261117/check_exact.py > /tmp/extra-color-exact.json
+          diff -u research/extra_color_state_20261117/exact-check.json /tmp/extra-color-exact.json
+      - name: Recheck unchanged original and refined entropy certificates
+        working-directory: research/entropy_certificate_20261111
+        run: |
+          python3 audit_certificate.py prefix9-1.txt tilted10-9.certificate.txt
+          python3 audit_certificate.py prefix9-1.txt refined-bias.certificate.txt

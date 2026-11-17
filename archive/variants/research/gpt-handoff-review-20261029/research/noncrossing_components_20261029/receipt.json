@@ -1,0 +1,20 @@
+{
+  "new_modules": 5,
+  "new_theorem_declarations": 28,
+  "hashes": {
+    "LC004/NoncrossingClosure.lean": "e276538f4a1924eae7aff11dcb831f4f2e91d40bd248ecdb6e239f0d56a64f67",
+    "LC004/NoncrossingCoefficientPushforward.lean": "4490988172ae777117cf67ae55383d499a65c93ebf2072c8c9d80bcceb6953e8",
+    "LC004/NoncrossingRegionPatternEquiv.lean": "7e3f089238bc8e7ccff4dd04a2be276ee48dd59c9a4137e29b127306322e7b4b",
+    "LC004/ProductIncidence.lean": "b5f518d70ae12b58c17a3381ac79edf595a79578786996ac810038b2c9790c2c",
+    "LC004/NoncrossingCoefficientProduct.lean": "69c90e176dd5c87d33f931f8de83c4db1c7bf1adf39e315011206822c026e4f4"
+  },
+  "local_targeted_build": "passed",
+  "full_build": "pass, 179 modules",
+  "hosted_ci": {
+    "run": 40903775123,
+    "status": "in_progress at local receipt creation"
+  },
+  "source_commit": "7c1c26ceec76a4de681abc39b6a24389888b678e",
+  "axiom_audit": "pass, 2280 project declarations; standard axioms only",
+  "negative_guards": "both passed"
+}

@@ -1,0 +1,12 @@
+{"q": 4, "shells": 0, "candidates": 1, "unique_candidates": 1, "elapsed": 3.383000148460269e-05}
+{"q": 4, "shells": 1, "candidates": 4, "unique_candidates": 3, "elapsed": 0.00025181199816870503}
+{"q": 4, "shells": 2, "candidates": 32, "unique_candidates": 18, "elapsed": 0.0009838929981924593}
+{"q": 4, "shells": 3, "candidates": 320, "unique_candidates": 129, "elapsed": 0.012601269998413045}
+{"q": 4, "shells": 4, "candidates": 3584, "unique_candidates": 1062, "elapsed": 0.13096900099844788}
+{"q": 4, "shells": 5, "candidates": 34768, "unique_candidates": 9135, "elapsed": 3.1792536239991023}
+{"q": 4, "shells": 6, "candidates": 96868, "unique_candidates": 53532, "elapsed": 12.815280809998512}
+{"q": 4, "shells": 7, "candidates": 38690, "unique_candidates": 35561, "elapsed": 15.385791264001455}
+{"q": 4, "shells": 8, "candidates": 1094, "unique_candidates": 1094, "elapsed": 15.40264237899828}
+{"q": 4, "nmax": 18, "counts": [1, 0, 4, 4, 16, 40, 100, 268, 688, 1792, 4636, 11980, 30952, 79912, 206332, 532708, 1375072, 3548776, 9156244], "canonical_candidates": 175361, "unique_candidates": 100535, "branching_candidates": 74826, "seconds": 15.40326044199901, "failures": 0, "solver_cache": "CacheInfo(hits=1996364, misses=1028750, maxsize=300000, currsize=300000)"}
+
+EXIT_CODE=0

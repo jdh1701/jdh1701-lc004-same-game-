@@ -1,0 +1,198 @@
+﻿2026-10-29T14:49:02.7600021Z Current runner version: '2.338.0'
+2026-10-29T14:49:02.7623697Z ##[group]Runner Image Provisioner
+2026-10-29T14:49:02.7624674Z Hosted Compute Agent
+2026-10-29T14:49:02.7625328Z Version: 20261021.618
+2026-10-29T14:49:02.7625915Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+2026-10-29T14:49:02.7626585Z Build Date: 2026-10-21T00:45:21Z
+2026-10-29T14:49:02.7627230Z Worker ID: {eeeb5f74-7ea3-46ad-aae3-42a3f06f3701}
+2026-10-29T14:49:02.7627904Z Region: westus3
+2026-10-29T14:49:02.7628399Z Cloud: Azure
+2026-10-29T14:49:02.7629155Z ##[endgroup]
+2026-10-29T14:49:02.7630456Z ##[group]Operating System
+2026-10-29T14:49:02.7631075Z Ubuntu
+2026-10-29T14:49:02.7631577Z 24.04.5
+2026-10-29T14:49:02.7632019Z LTS
+2026-10-29T14:49:02.7632522Z ##[endgroup]
+2026-10-29T14:49:02.7633021Z ##[group]Runner Image
+2026-10-29T14:49:02.7633575Z Image: ubuntu-24.04
+2026-10-29T14:49:02.7634116Z Version: 20261025.353.1
+2026-10-29T14:49:02.7635284Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-29T14:49:02.7636658Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+2026-10-29T14:49:02.7637520Z ##[endgroup]
+2026-10-29T14:49:02.7638630Z ##[group]GITHUB_TOKEN Permissions
+2026-10-29T14:49:02.7640949Z Contents: read
+2026-10-29T14:49:02.7641495Z Metadata: read
+2026-10-29T14:49:02.7641996Z ##[endgroup]
+2026-10-29T14:49:02.7644199Z Secret source: Actions
+2026-10-29T14:49:02.7645046Z Cache mode: write
+2026-10-29T14:49:02.7645682Z Prepare workflow directory
+2026-10-29T14:49:02.7963348Z Prepare all required actions
+2026-10-29T14:49:02.8022074Z Getting action download info
+2026-10-29T14:49:03.1183466Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-29T14:49:03.2464226Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-29T14:49:03.4880494Z Complete job name: sage
+2026-10-29T14:49:03.5576475Z ##[group]Run actions/checkout@v4
+2026-10-29T14:49:03.5577281Z with:
+2026-10-29T14:49:03.5577788Z   repository: jdh1701/jdh1701-lc004-same-game-
+2026-10-29T14:49:03.5581753Z   token: ***
+2026-10-29T14:49:03.5582241Z   ssh-strict: true
+2026-10-29T14:49:03.5582755Z   ssh-user: git
+2026-10-29T14:49:03.5583244Z   persist-credentials: true
+2026-10-29T14:49:03.5583755Z   clean: true
+2026-10-29T14:49:03.5584307Z   sparse-checkout-cone-mode: true
+2026-10-29T14:49:03.5584865Z   fetch-depth: 1
+2026-10-29T14:49:03.5585347Z   fetch-tags: false
+2026-10-29T14:49:03.5585889Z   show-progress: true
+2026-10-29T14:49:03.5586356Z   lfs: false
+2026-10-29T14:49:03.5586869Z   submodules: false
+2026-10-29T14:49:03.5587358Z   set-safe-directory: true
+2026-10-29T14:49:03.5587899Z   allow-unsafe-pr-checkout: false
+2026-10-29T14:49:03.5588647Z ##[endgroup]
+2026-10-29T14:49:03.8045676Z Syncing repository: jdh1701/jdh1701-lc004-same-game-
+2026-10-29T14:49:03.8048548Z ##[group]Getting Git version info
+2026-10-29T14:49:03.8050115Z Working directory is '/home/runner/work/jdh1701-lc004-same-game-/jdh1701-lc004-same-game-'
+2026-10-29T14:49:03.8051947Z [command]/usr/bin/git version
+2026-10-29T14:49:03.8126685Z git version 2.56.0
+2026-10-29T14:49:03.8145657Z ##[endgroup]
+2026-10-29T14:49:03.8187650Z Temporarily overriding HOME='/home/runner/work/_temp/1c611e9e-e6de-47f1-8c98-dfa7c314d810' before making global git config changes
+2026-10-29T14:49:03.8190073Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-29T14:49:03.8193981Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/jdh1701-lc004-same-game-/jdh1701-lc004-same-game-
+2026-10-29T14:49:03.8247598Z Deleting the contents of '/home/runner/work/jdh1701-lc004-same-game-/jdh1701-lc004-same-game-'
+2026-10-29T14:49:03.8261087Z ##[group]Initializing the repository
+2026-10-29T14:49:03.8266586Z [command]/usr/bin/git init /home/runner/work/jdh1701-lc004-same-game-/jdh1701-lc004-same-game-
+2026-10-29T14:49:03.8360159Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-29T14:49:03.8362381Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-29T14:49:03.8364713Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-29T14:49:03.8365875Z hint: call:
+2026-10-29T14:49:03.8366740Z hint:
+2026-10-29T14:49:03.8367855Z hint: 	git config --global init.defaultBranch <name>
+2026-10-29T14:49:03.8369064Z hint:
+2026-10-29T14:49:03.8370181Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-29T14:49:03.8371703Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-29T14:49:03.8372783Z hint:
+2026-10-29T14:49:03.8373724Z hint: 	git branch -m <name>
+2026-10-29T14:49:03.8377551Z hint:
+2026-10-29T14:49:03.8378796Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-29T14:49:03.8380957Z Initialized empty Git repository in /home/runner/work/jdh1701-lc004-same-game-/jdh1701-lc004-same-game-/.git/
+2026-10-29T14:49:03.8388462Z [command]/usr/bin/git remote add origin https://github.com/jdh1701/jdh1701-lc004-same-game-
+2026-10-29T14:49:03.8431933Z ##[endgroup]
+2026-10-29T14:49:03.8433194Z ##[group]Disabling automatic garbage collection
+2026-10-29T14:49:03.8435343Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-29T14:49:03.8465132Z ##[endgroup]
+2026-10-29T14:49:03.8466339Z ##[group]Setting up auth
+2026-10-29T14:49:03.8472377Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-29T14:49:03.8504938Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-29T14:49:03.8856530Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-29T14:49:03.8889682Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-29T14:49:03.9069786Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-29T14:49:03.9097722Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-29T14:49:03.9265447Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-29T14:49:03.9302898Z ##[endgroup]
+2026-10-29T14:49:03.9303827Z ##[group]Fetching the repository
+2026-10-29T14:49:03.9314331Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +e6dbea580447aae5b8d87a4095a186dc26107bb0:refs/remotes/origin/proof/four-gap-coefficient-20261029
+2026-10-29T14:49:04.5928766Z From https://github.com/jdh1701/jdh1701-lc004-same-game-
+2026-10-29T14:49:04.5930915Z  * [new ref]         e6dbea580447aae5b8d87a4095a186dc26107bb0 -> origin/proof/four-gap-coefficient-20261029
+2026-10-29T14:49:04.5935194Z ##[endgroup]
+2026-10-29T14:49:04.5936794Z ##[group]Determining the checkout info
+2026-10-29T14:49:04.5938260Z ##[endgroup]
+2026-10-29T14:49:04.5940890Z [command]/usr/bin/git sparse-checkout disable
+2026-10-29T14:49:04.5992197Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-29T14:49:04.6021870Z ##[group]Checking out the ref
+2026-10-29T14:49:04.6034634Z [command]/usr/bin/git checkout --progress --force -B proof/four-gap-coefficient-20261029 refs/remotes/origin/proof/four-gap-coefficient-20261029
+2026-10-29T14:49:04.6210192Z Switched to a new branch 'proof/four-gap-coefficient-20261029'
+2026-10-29T14:49:04.6215008Z branch 'proof/four-gap-coefficient-20261029' set up to track 'origin/proof/four-gap-coefficient-20261029'.
+2026-10-29T14:49:04.6222772Z ##[endgroup]
+2026-10-29T14:49:04.6256997Z [command]/usr/bin/git log -1 --format=%H
+2026-10-29T14:49:04.6278557Z e6dbea580447aae5b8d87a4095a186dc26107bb0
+2026-10-29T14:49:04.6519224Z ##[group]Run set -o pipefail
+2026-10-29T14:49:04.6520785Z [36;1mset -o pipefail[0m
+2026-10-29T14:49:04.6524781Z [36;1mdocker run --rm -v "$PWD:/work" -w /work sagemath/sagemath@sha256:310dfe23fc786f3a5a06a7b0387c60201ec79b32c0db941b7624505ee5edb565 sage research/solver_campaign_20261029/sage_controls.sage 2>&1 | tee sage-controls.log[0m
+2026-10-29T14:49:04.6547234Z shell: /usr/bin/bash -e {0}
+2026-10-29T14:49:04.6548587Z ##[endgroup]
+2026-10-29T14:49:04.7391523Z Unable to find image 'sagemath/sagemath@sha256:310dfe23fc786f3a5a06a7b0387c60201ec79b32c0db941b7624505ee5edb565' locally
+2026-10-29T14:49:05.3233099Z docker.io/sagemath/sagemath@sha256:310dfe23fc786f3a5a06a7b0387c60201ec79b32c0db941b7624505ee5edb565: Pulling from sagemath/sagemath
+2026-10-29T14:49:05.5360318Z edd1ed89f0d4: Pulling fs layer
+2026-10-29T14:49:05.5361281Z ce450f363bf1: Pulling fs layer
+2026-10-29T14:49:05.5361959Z 158a2cf9584b: Pulling fs layer
+2026-10-29T14:49:05.5362561Z 45b1557245ae: Pulling fs layer
+2026-10-29T14:49:05.5363370Z 157de2f1b62c: Pulling fs layer
+2026-10-29T14:49:05.5363910Z 4f4fb700ef54: Pulling fs layer
+2026-10-29T14:49:05.5364433Z 772c8133ff51: Pulling fs layer
+2026-10-29T14:49:05.5364967Z dd88d17005ee: Pulling fs layer
+2026-10-29T14:49:05.5365627Z da2796057aff: Pulling fs layer
+2026-10-29T14:49:05.5366184Z 157de2f1b62c: Waiting
+2026-10-29T14:49:05.5366637Z 4f4fb700ef54: Waiting
+2026-10-29T14:49:05.5367014Z 772c8133ff51: Waiting
+2026-10-29T14:49:05.5368752Z dd88d17005ee: Waiting
+2026-10-29T14:49:05.5369523Z da2796057aff: Waiting
+2026-10-29T14:49:05.5370042Z 45b1557245ae: Waiting
+2026-10-29T14:49:05.7442380Z ce450f363bf1: Verifying Checksum
+2026-10-29T14:49:05.7443658Z ce450f363bf1: Download complete
+2026-10-29T14:49:05.8390568Z edd1ed89f0d4: Download complete
+2026-10-29T14:49:05.9455037Z 158a2cf9584b: Verifying Checksum
+2026-10-29T14:49:05.9457527Z 158a2cf9584b: Download complete
+2026-10-29T14:49:06.0208141Z 157de2f1b62c: Verifying Checksum
+2026-10-29T14:49:06.0211001Z 157de2f1b62c: Download complete
+2026-10-29T14:49:06.1324428Z 4f4fb700ef54: Verifying Checksum
+2026-10-29T14:49:06.1325118Z 4f4fb700ef54: Download complete
+2026-10-29T14:49:06.5158101Z dd88d17005ee: Verifying Checksum
+2026-10-29T14:49:06.5159503Z dd88d17005ee: Download complete
+2026-10-29T14:49:06.5893562Z edd1ed89f0d4: Pull complete
+2026-10-29T14:49:06.7130334Z da2796057aff: Verifying Checksum
+2026-10-29T14:49:06.7130809Z da2796057aff: Download complete
+2026-10-29T14:49:07.3920605Z ce450f363bf1: Pull complete
+2026-10-29T14:49:07.6523350Z 158a2cf9584b: Pull complete
+2026-10-29T14:49:09.8569357Z 45b1557245ae: Verifying Checksum
+2026-10-29T14:49:09.8570116Z 45b1557245ae: Download complete
+2026-10-29T14:49:24.1736096Z 45b1557245ae: Pull complete
+2026-10-29T14:49:24.8842528Z 157de2f1b62c: Pull complete
+2026-10-29T14:49:24.9605106Z 4f4fb700ef54: Pull complete
+2026-10-29T14:49:31.5904791Z 772c8133ff51: Verifying Checksum
+2026-10-29T14:49:31.5905589Z 772c8133ff51: Download complete
+2026-10-29T14:49:52.9698905Z 772c8133ff51: Pull complete
+2026-10-29T14:50:00.6516377Z dd88d17005ee: Pull complete
+2026-10-29T14:50:00.6604628Z da2796057aff: Pull complete
+2026-10-29T14:50:00.6722724Z Digest: sha256:310dfe23fc786f3a5a06a7b0387c60201ec79b32c0db941b7624505ee5edb565
+2026-10-29T14:50:00.6759587Z Status: Downloaded newer image for sagemath/sagemath@sha256:310dfe23fc786f3a5a06a7b0387c60201ec79b32c0db941b7624505ee5edb565
+2026-10-29T14:50:03.6795629Z 10.10
+2026-10-29T14:50:03.6796558Z {"R6_leading": "19/180", "R6_residue_at_minus8": "45", "crossed44_coefficient": 0, "refinements": 225}
+2026-10-29T14:50:04.2967939Z ##[group]Run actions/upload-artifact@v4
+2026-10-29T14:50:04.2968303Z with:
+2026-10-29T14:50:04.2968574Z   name: coefficient-sage-receipt
+2026-10-29T14:50:04.2969246Z   path: sage-controls.log
+2026-10-29T14:50:04.2969611Z   if-no-files-found: warn
+2026-10-29T14:50:04.2969911Z   compression-level: 6
+2026-10-29T14:50:04.2970187Z   overwrite: false
+2026-10-29T14:50:04.2970474Z   include-hidden-files: false
+2026-10-29T14:50:04.2970807Z ##[endgroup]
+2026-10-29T14:50:04.4446530Z (node:2390) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-29T14:50:04.4447252Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-29T14:50:04.4509356Z With the provided path, there will be 1 file uploaded
+2026-10-29T14:50:04.4516519Z Artifact name is valid!
+2026-10-29T14:50:04.4517360Z Root directory input is valid!
+2026-10-29T14:50:04.8742656Z Beginning upload of artifact content to blob storage
+2026-10-29T14:50:04.8925678Z (node:2390) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-29T14:50:05.1277653Z Uploaded bytes 640
+2026-10-29T14:50:05.1925821Z Finished uploading artifact content to blob storage!
+2026-10-29T14:50:05.1926664Z SHA256 digest of uploaded artifact zip is bfdedb0140df474160ca939462d00660a99fd12129c6708020ca0f9934a4deb7
+2026-10-29T14:50:05.1927635Z Finalizing artifact upload
+2026-10-29T14:50:05.6631070Z Artifact coefficient-sage-receipt.zip successfully finalized. Artifact ID 12906327897
+2026-10-29T14:50:05.6632230Z Artifact coefficient-sage-receipt has been successfully uploaded! Final size is 640 bytes. Artifact ID is 12906327897
+2026-10-29T14:50:05.6640013Z Artifact download URL: https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40895249874/artifacts/12906327897
+2026-10-29T14:50:05.6852298Z Post job cleanup.
+2026-10-29T14:50:05.7606803Z [command]/usr/bin/git version
+2026-10-29T14:50:05.7644211Z git version 2.56.0
+2026-10-29T14:50:05.7677604Z Temporarily overriding HOME='/home/runner/work/_temp/b59ec393-05d1-4be4-81ba-32634df1d34d' before making global git config changes
+2026-10-29T14:50:05.7679176Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-29T14:50:05.7683015Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/jdh1701-lc004-same-game-/jdh1701-lc004-same-game-
+2026-10-29T14:50:05.7716570Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-29T14:50:05.7746925Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-29T14:50:05.7941701Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-29T14:50:05.7966505Z http.https://github.com/.extraheader
+2026-10-29T14:50:05.7977377Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-29T14:50:05.8007839Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-29T14:50:05.8228152Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-29T14:50:05.8248733Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-29T14:50:05.8609426Z Cleaning up orphan processes
+2026-10-29T14:50:05.8911349Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+

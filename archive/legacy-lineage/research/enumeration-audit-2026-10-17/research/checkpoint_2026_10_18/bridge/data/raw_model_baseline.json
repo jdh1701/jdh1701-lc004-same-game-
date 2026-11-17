@@ -1,0 +1,10 @@
+{
+  "base_commit": "c04443b029ff85da4fad7ecc65f2d6e29f9aabb2",
+  "source": "LC004/OrdinaryCorrespondence.lean",
+  "definition_sha256": {
+    "ordinaryStepAtFuel": "edb6062aed9615ef3a39cf2f17fa4b05cabba0f2245f5802667bf392ac010e68",
+    "ordinaryStepAt": "842a656272fcb3ac9f53cd90a0155cef791067e116da8d2535d56fb0fbf06434",
+    "ordinaryFollow": "41d3b13ff1d0835a26bfda0ec7f4cd9dab77ca6686e9104c5785a1ec702cd10c",
+    "OrdinarySolvable": "dda2bb551f5732a095c02335da8b8e8dbdf6285e5496d90f1e38ff667d77d7a3"
+  }
+}

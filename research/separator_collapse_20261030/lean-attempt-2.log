@@ -1,0 +1,4 @@
+Run40999863015, job123881488956, commit3c38dd36535a8a15b00a42f5706191bdb8f5dbf3.
+Excerpt; rejected candidate retired after reuse of PR38.
+2026-10-30T03:56:23.4579136Z research/separator_collapse_20261030/CollapseCriterion.lean:46:23: error: unsolved goals
+2026-10-30T03:56:23.4582431Z research/separator_collapse_20261030/CollapseCriterion.lean:64:0: error: Forbidden axiom sorryAx in LC004.SeparatorCollapse.point_sum

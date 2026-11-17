@@ -1,0 +1,83 @@
+{
+  "status": "VERIFIED-COMP",
+  "patterns_checked": 1231,
+  "exact_fibers_checked": 6155,
+  "witness": {
+    "p": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "removed_class": 0,
+    "projected_facets": [],
+    "unrestricted_facets": [
+      2,
+      64,
+      145,
+      512,
+      1033,
+      1312,
+      2060,
+      2208
+    ],
+    "labels": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        13
+      ],
+      [
+        0,
+        16
+      ],
+      [
+        0,
+        17
+      ],
+      [
+        0,
+        19
+      ],
+      [
+        0,
+        22
+      ],
+      [
+        0,
+        24
+      ],
+      [
+        0,
+        25
+      ],
+      [
+        0,
+        28
+      ]
+    ]
+  },
+  "conclusion": "Class deletion is not closed. Certificate-conditioned barrier rows are exact in this two-class census; no bounded barrier grammar is proved."
+}

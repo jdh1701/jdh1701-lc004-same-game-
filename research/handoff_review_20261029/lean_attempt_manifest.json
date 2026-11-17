@@ -1,0 +1,186 @@
+{
+  "scope": "All currently retained /tmp/four-gap*.log files from this session",
+  "files": [
+    {
+      "file": "research/handoff_review_20261029/lean_attempt_logs/four-gap-assembly.log",
+      "sha256": "fccccebac1f9003bdced6290b673d8d1a8c28f925a827af6f3d08b3b8b6a8667",
+      "bytes": 14361,
+      "error_lines": []
+    },
+    {
+      "file": "research/handoff_review_20261029/lean_attempt_logs/four-gap-cache.log",
+      "sha256": "dfce1e7d6849bcb01696e698fae3345a66f15495d7e36f99ac1293476a5bd045",
+      "bytes": 67,
+      "error_lines": [
+        "error: could not detect the configuration of the Lake installation"
+      ]
+    },
+    {
+      "file": "research/handoff_review_20261029/lean_attempt_logs/four-gap-cache2.log",
+      "sha256": "55bd35b634a87668e92c96dc68fed935aab943b2f40224c159e4462b9b5523ba",
+      "bytes": 93,
+      "error_lines": []
+    },
+    {
+      "file": "research/handoff_review_20261029/lean_attempt_logs/four-gap-coeff.log",
+      "sha256": "1c3a4d92ef687bd0a59a43dd4104a2ab728efb522a24760bc2c5d8ea623eae97",
+      "bytes": 12639,
+      "error_lines": [
+        "error: ././././LC004/CollectedJoinCoefficients.lean:28:4: simp made no progress",
+        "error: ././././LC004/CollectedJoinCoefficients.lean:42:6: failed to synthesize",
+        "error: ././././LC004/CollectedJoinCoefficients.lean:42:48: unsolved goals",
+        "error: ././././LC004/CollectedJoinCoefficients.lean:49:35: failed to synthesize",
+        "error: Lean exited with code 1",
+        "error: build failed"
+      ]
+    },
+    {
+      "file": "research/handoff_review_20261029/lean_attempt_logs/four-gap-coeff2.log",
+      "sha256": "27e5589ccb440579e97075c71326db6c0635079411fa55f1629b11bf19fb1ff9",
+      "bytes": 11078,
+      "error_lines": []
+    },
+    {
+      "file": "research/handoff_review_20261029/lean_attempt_logs/four-gap-cover.log",
+      "sha256": "cc95263ada1593c07f339bae1285e5ec6db64ca651c676352fca6a3646f1fd95",
+      "bytes": 13021,
+      "error_lines": []
+    },
+    {
+      "file": "research/handoff_review_20261029/lean_attempt_logs/four-gap-coverage.log",
+      "sha256": "ac9e4fde9f5be56dadc5822a8e511d3c82f8feee9664a86ef7159c9e23e66fbc",
+      "bytes": 5993,
+      "error_lines": []
+    },
+    {
+      "file": "research/handoff_review_20261029/lean_attempt_logs/four-gap-dependencies.log",
+      "sha256": "3c86e72ececb0fb8510af15057f0627f817a70af9cfeb7f1676a94f23492ccac",
+      "bytes": 12979,
+      "error_lines": []
+    },
+    {
+      "file": "research/handoff_review_20261029/lean_attempt_logs/four-gap-final-axioms.log",
+      "sha256": "c0d310d85e306cbd92bf1c076dea4e1803b1b82380c57e4fcf78670377435d11",
+      "bytes": 144,
+      "error_lines": []
+    },
+    {
+      "file": "research/handoff_review_20261029/lean_attempt_logs/four-gap-final-build.log",
+      "sha256": "374b7f6d87f19ca67a399f80aca60068407bc1bc2427911ad74c26e9a4ca3770",
+      "bytes": 39009,
+      "error_lines": []
+    },
+    {
+      "file": "research/handoff_review_20261029/lean_attempt_logs/four-gap-final-coverage.log",
+      "sha256": "ac9e4fde9f5be56dadc5822a8e511d3c82f8feee9664a86ef7159c9e23e66fbc",
+      "bytes": 5993,
+      "error_lines": []
+    },
+    {
+      "file": "research/handoff_review_20261029/lean_attempt_logs/four-gap-final-guards.log",
+      "sha256": "e6163699386a7fc74634aab2b42385b67e7e0a0b365a471694b2fbfc5fe606a4",
+      "bytes": 428,
+      "error_lines": [
+        "AssertionError: error: failed to locate application"
+      ]
+    },
+    {
+      "file": "research/handoff_review_20261029/lean_attempt_logs/four-gap-final-guards2.log",
+      "sha256": "cdf2a8b0097fbfafd3e2d3cc17d0625b9232cc654dc24c69f8b8a56d368c472e",
+      "bytes": 122,
+      "error_lines": []
+    },
+    {
+      "file": "research/handoff_review_20261029/lean_attempt_logs/four-gap-full-build.log",
+      "sha256": "91ea93c661efa52078e5864fdd2f79c0538beee837f89511414a659b08a65bc5",
+      "bytes": 41639,
+      "error_lines": []
+    },
+    {
+      "file": "research/handoff_review_20261029/lean_attempt_logs/four-gap-guards.log",
+      "sha256": "c9b9c66db80cba9832138542f112621f4f4e83e365c6be9a97c664001c964eaf",
+      "bytes": 64,
+      "error_lines": []
+    },
+    {
+      "file": "research/handoff_review_20261029/lean_attempt_logs/four-gap-indicator-final.log",
+      "sha256": "a8443c4b7484de39b9a9ca66f1789f45c12f3c43748625897c4affdeba5f2443",
+      "bytes": 186,
+      "error_lines": []
+    },
+    {
+      "file": "research/handoff_review_20261029/lean_attempt_logs/four-gap-indicator.log",
+      "sha256": "ee92b18151ff809562a601e0955283964828be3063c58659b03f635065e4dc48",
+      "bytes": 15848,
+      "error_lines": [
+        "error: ././././LC004/FourGapIndicator.lean:38:68: unknown identifier 'c'",
+        "error: ././././LC004/FourGapIndicator.lean:44:19: application type mismatch",
+        "error: Lean exited with code 1",
+        "error: build failed"
+      ]
+    },
+    {
+      "file": "research/handoff_review_20261029/lean_attempt_logs/four-gap-indicator2.log",
+      "sha256": "31b022a1f79cae2612f06b8095281f8ddd878637f172b54baa52ac79d3b87c84",
+      "bytes": 15860,
+      "error_lines": [
+        "error: ././././LC004/FourGapIndicator.lean:44:4: type mismatch",
+        "error: Lean exited with code 1",
+        "error: build failed"
+      ]
+    },
+    {
+      "file": "research/handoff_review_20261029/lean_attempt_logs/four-gap-local-incidence.log",
+      "sha256": "f112c0f8774b94c2d29e61e081a176cc1af12cd989f3dad490dc429a43e2b334",
+      "bytes": 2721,
+      "error_lines": [
+        "error: ././././LC004/FiniteIncidenceSupport.lean:68:29: failed to synthesize",
+        "error: ././././LC004/FiniteIncidenceSupport.lean:69:36: unsolved goals",
+        "error: ././././LC004/FiniteIncidenceSupport.lean:88:8: tactic 'rewrite' failed, did not find instance of the pattern in the target expression",
+        "error: Lean exited with code 1",
+        "error: build failed"
+      ]
+    },
+    {
+      "file": "research/handoff_review_20261029/lean_attempt_logs/four-gap-new.log",
+      "sha256": "0aedd8cf69399de50704cd3e055603a7068e340cc2c2289dfccd59c7622cc3ba",
+      "bytes": 15448,
+      "error_lines": [
+        "error: ././././LC004/FourClassTwoShapes.lean:13:4: unsolved goals",
+        "error: ././././LC004/FourClassTwoShapes.lean:93:48: omega could not prove the goal:",
+        "error: ././././LC004/FourClassTwoShapes.lean:93:48: omega could not prove the goal:",
+        "error: Lean exited with code 1",
+        "error: build failed"
+      ]
+    },
+    {
+      "file": "research/handoff_review_20261029/lean_attempt_logs/four-gap-overlap.log",
+      "sha256": "2db304f219fcd3045682b4f3902f3ea038f56fddf034e5432bf30257baf9cfc3",
+      "bytes": 14032,
+      "error_lines": []
+    },
+    {
+      "file": "research/handoff_review_20261029/lean_attempt_logs/four-gap-regions.log",
+      "sha256": "8d7da00789a2d5fc2d737f3ad2bee41d7fd2818e6b95b8b1c564f829c1985baa",
+      "bytes": 14579,
+      "error_lines": [
+        "error: ././././LC004/CertificatePairRegions.lean:59:4: function expected at",
+        "error: Lean exited with code 1",
+        "error: build failed"
+      ]
+    },
+    {
+      "file": "research/handoff_review_20261029/lean_attempt_logs/four-gap-regions2.log",
+      "sha256": "e6c29f98da26304c9ecd194d9a2dc6023a8b7c03f480e6352135d6fea896d03f",
+      "bytes": 13520,
+      "error_lines": []
+    },
+    {
+      "file": "research/handoff_review_20261029/lean_attempt_logs/four-gap-widgets.log",
+      "sha256": "ed93deb0b79745418b71ca6d44e7cfedb9422faf1540d7d46eb8066b28edd394",
+      "bytes": 347,
+      "error_lines": []
+    }
+  ],
+  "limitation": "Intermediate failed source snapshots were not retained separately. Logs preserve diagnostics; accepted sources are pinned at a2212dc. This is not an exhaustive archive of all historical repository runs."
+}

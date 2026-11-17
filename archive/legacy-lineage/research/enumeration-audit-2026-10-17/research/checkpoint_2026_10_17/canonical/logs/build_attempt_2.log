@@ -1,0 +1,91 @@
+⚠ [6656/6720] Replayed LC004.SplitRunLemmas
+warning: ././././LC004/SplitRunLemmas.lean:37:12: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [6667/6720] Replayed LC004.NormalizedDirectional
+warning: ././././LC004/NormalizedDirectional.lean:18:19: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [6671/6720] Replayed LC004.IndexedMove
+warning: ././././LC004/IndexedMove.lean:73:2: try 'simp at hlt' instead of 'simpa using hlt'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [6672/6720] Replayed LC004.SuccessfulPaths
+warning: ././././LC004/SuccessfulPaths.lean:100:8: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+⚠ [6676/6720] Replayed LC004.ExecutableCorrespondence
+warning: ././././LC004/ExecutableCorrespondence.lean:48:10: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [6678/6720] Replayed LC004.ExchangeScaffold
+warning: ././././LC004/ExchangeScaffold.lean:93:26: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+warning: ././././LC004/ExchangeScaffold.lean:94:28: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+⚠ [6680/6720] Replayed LC004.ExecutableUniqueness
+warning: ././././LC004/ExecutableUniqueness.lean:93:14: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+⚠ [6681/6720] Replayed LC004.ConditionalMain
+warning: ././././LC004/ConditionalMain.lean:55:12: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+⚠ [6699/6720] Replayed LC004.BridgeAdjacentLeftFront
+warning: ././././LC004/BridgeAdjacentLeftFront.lean:26:9: unused variable `d`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+warning: ././././LC004/BridgeAdjacentLeftFront.lean:26:22: unused variable `bp`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+warning: ././././LC004/BridgeAdjacentLeftFront.lean:26:25: unused variable `bq`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+ℹ [6716/6720] Replayed LC004.UnconditionalFinal
+info: ././././LC004/UnconditionalFinal.lean:30:0: 'LC004.unconditional_unique_choice_iff_unique_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UnconditionalFinal.lean:31:0: 'LC004.unconditional_executable_unique_first_iff_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6717/6720] Replayed LC004.UniqueMedian
+info: ././././LC004/UniqueMedian.lean:155:0: 'LC004.unique_successful_choice_is_median' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UniqueMedian.lean:156:0: 'LC004.unique_successful_first_is_median' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UniqueMedian.lean:157:0: 'LC004.unique_successful_path_odd_runs' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UniqueMedian.lean:158:0: 'LC004.unique_successful_path_color_palindrome' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [6718/6720] Building LC004.UniqueCanonical
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /root/.elan/toolchains/leanprover--lean4---v4.19.0/bin/lean ././././LC004/UniqueCanonical.lean -R ./././. -o ././.lake/build/lib/lean/LC004/UniqueCanonical.olean -i ././.lake/build/lib/lean/LC004/UniqueCanonical.ilean -c ././.lake/build/ir/LC004/UniqueCanonical.c --json
+error: ././././LC004/UniqueCanonical.lean:61:18: unsolved goals
+case noMerge.h
+s : RunState
+p rest : List (ℕ × RunState)
+hind : pathIndices rest = descendingChoices rest.length
+pre✝ post✝ : RunState
+c✝ : ℕ
+hboundary✝ : ∀ (p q : ℕ × Bool), List.getLast? pre✝ = some p → List.head? post✝ = some q → p.1 ≠ q.1
+hn : Normalized (pre✝ ++ (c✝, true) :: post✝)
+hu : UniqueCompletePath (pre✝ ++ (c✝, true) :: post✝)
+hne : pre✝ ++ (c✝, true) :: post✝ ≠ []
+hchoice : UniqueSuccessfulChoice (pre✝ ++ (c✝, true) :: post✝)
+hm : List.length (pre✝ ++ (c✝, true) :: post✝) = 2 * List.length pre✝ + 1
+ht : CompletePath (pre✝ ++ post✝) rest
+ih :
+  Normalized (pre✝ ++ post✝) →
+    UniqueCompletePath (pre✝ ++ post✝) →
+      pathIndices rest = descendingChoices rest.length ∧
+        (pre✝ ++ post✝ = [] ∨ List.length (pre✝ ++ post✝) + 1 = 2 * rest.length)
+hut : UniqueCompletePath (pre✝ ++ post✝)
+hsize : pre✝ ++ post✝ = [] ∨ List.length (pre✝ ++ post✝) + 1 = 2 * rest.length
+⊢ List.length pre✝ + List.length post✝ + 1 = List.length pre✝ + (List.length post✝ + 1)
+error: ././././LC004/UniqueCanonical.lean:62:16: unsolved goals
+case merge.h
+s : RunState
+p rest : List (ℕ × RunState)
+hind : pathIndices rest = descendingChoices rest.length
+pre✝ post✝ : RunState
+c✝ d✝ : ℕ
+bp✝ bq✝ : Bool
+hn : Normalized (pre✝ ++ (c✝, bp✝) :: (d✝, true) :: (c✝, bq✝) :: post✝)
+hu : UniqueCompletePath (pre✝ ++ (c✝, bp✝) :: (d✝, true) :: (c✝, bq✝) :: post✝)
+hne : pre✝ ++ (c✝, bp✝) :: (d✝, true) :: (c✝, bq✝) :: post✝ ≠ []
+hchoice : UniqueSuccessfulChoice (pre✝ ++ (c✝, bp✝) :: (d✝, true) :: (c✝, bq✝) :: post✝)
+hm : List.length (pre✝ ++ (c✝, bp✝) :: (d✝, true) :: (c✝, bq✝) :: post✝) = 2 * (List.length pre✝ + 1) + 1
+ht : CompletePath (pre✝ ++ (c✝, true) :: post✝) rest
+ih :
+  Normalized (pre✝ ++ (c✝, true) :: post✝) →
+    UniqueCompletePath (pre✝ ++ (c✝, true) :: post✝) →
+      pathIndices rest = descendingChoices rest.length ∧
+        (pre✝ ++ (c✝, true) :: post✝ = [] ∨ List.length (pre✝ ++ (c✝, true) :: post✝) + 1 = 2 * rest.length)
+hut : UniqueCompletePath (pre✝ ++ (c✝, true) :: post✝)
+hsize : pre✝ ++ (c✝, true) :: post✝ = [] ∨ List.length (pre✝ ++ (c✝, true) :: post✝) + 1 = 2 * rest.length
+⊢ List.length pre✝ + (List.length post✝ + 1) + 2 = List.length pre✝ + (List.length post✝ + 1 + 1 + 1)
+info: ././././LC004/UniqueCanonical.lean:129:0: 'LC004.unique_successful_path_eq_medianPath' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: ././././LC004/UniqueCanonical.lean:130:0: 'LC004.unique_successful_path_length' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: ././././LC004/UniqueCanonical.lean:131:0: 'LC004.unique_successful_path_medianPath_success' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required builds logged failures:
+- LC004.UniqueCanonical
+error: build failed
+
+EXIT_CODE=1

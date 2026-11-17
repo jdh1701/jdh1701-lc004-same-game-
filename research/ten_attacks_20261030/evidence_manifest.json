@@ -1,0 +1,154 @@
+{
+  "archive_sha256": "5c59095b9f6773d5fce510fa17f1f3386fd6ec6ed4ed23ee6f3f492108bde9c3",
+  "archive_bytes": 363335,
+  "files": {
+    "research/ten_attacks_20261030/analytic.json": {
+      "bytes": 9614,
+      "sha256": "1fb9bcc87db84333a640615b008e1d73d7c381a6ae19a81c5bc9c24ee5396f13"
+    },
+    "research/ten_attacks_20261030/analytic.log": {
+      "bytes": 134,
+      "sha256": "5f39dc0009d999b359b0258adb8c846170654b0be18b13801ae0715c06d4c4ad"
+    },
+    "research/ten_attacks_20261030/attempt01-missing-sympy.log": {
+      "bytes": 220,
+      "sha256": "45fd730e5222f10ad62b79b7a9242eab2d77f91359634f8d3f1fc85e536231d9"
+    },
+    "research/ten_attacks_20261030/attempt02-prime-guess.log": {
+      "bytes": 274,
+      "sha256": "974c95e23025af46d37c32d5505cf53dae3434fa08405b423651f838ee7c3714"
+    },
+    "research/ten_attacks_20261030/attempt03-runtime-missing-sympy.log": {
+      "bytes": 220,
+      "sha256": "45fd730e5222f10ad62b79b7a9242eab2d77f91359634f8d3f1fc85e536231d9"
+    },
+    "research/ten_attacks_20261030/attempt04-full-build.log": {
+      "bytes": 64130,
+      "sha256": "f16ff3abf17e2c0e89678f9fda0c2cdac564b7fb987fb29e1f1af2981cf1dc8b"
+    },
+    "research/ten_attacks_20261030/attempt04-old-build-audit.log": {
+      "bytes": 145,
+      "sha256": "dd68ef0e9b3b3e5f33889a36bd5b50ddca20f7aefc01454641224a178f930d6d"
+    },
+    "research/ten_attacks_20261030/attempt05-unbounded-deep.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research/ten_attacks_20261030/attempt05-unbounded-deep.py.txt": {
+      "bytes": 3203,
+      "sha256": "aa0899a0d9e554646160f3f377915a8dda610023b24edc1874e0e8f8fd2730c3"
+    },
+    "research/ten_attacks_20261030/attempt06-deep-generator-budget.log": {
+      "bytes": 2749,
+      "sha256": "8539d83cccbaa91bd003e409b9c39cc63369991bd4fb8bdf8f42809bca012ace"
+    },
+    "research/ten_attacks_20261030/attempt06-deep-generator-budget.py.txt": {
+      "bytes": 3374,
+      "sha256": "9d8bb7754eacdbf5c58154e0747931d92559bbb34e909029e594290e6a13cbea"
+    },
+    "research/ten_attacks_20261030/attempts.json": {
+      "bytes": 1224,
+      "sha256": "de59e19a05bf236d7868f58e635ca31c2e734ed1bfad619c97b07d3b3f5b2a0b"
+    },
+    "research/ten_attacks_20261030/axiom-audit.log": {
+      "bytes": 145,
+      "sha256": "0ea5b62de39939a4c07e9f9144a33cd588de52b9006fb55c1da74617e7e1b34d"
+    },
+    "research/ten_attacks_20261030/collapse_certificates.json": {
+      "bytes": 3294627,
+      "sha256": "a0840b3ad6460edd62f9561db3b063cb80e98ea72d4dedc569ab2cb95b3e1dba"
+    },
+    "research/ten_attacks_20261030/coverage.log": {
+      "bytes": 8298,
+      "sha256": "f5a1db111e841b46f17a85830432a9881465a47c96d0aade8d64979ea81aa492"
+    },
+    "research/ten_attacks_20261030/decision.json": {
+      "bytes": 1431788,
+      "sha256": "e049ad95c31087cf37fd8c5f37b19c16cf9b30274548611ad83eb8bb846e1d0b"
+    },
+    "research/ten_attacks_20261030/decision.log": {
+      "bytes": 210,
+      "sha256": "dade5e83288ba9926556f53411ff65a030408cd0545554faa54226a5c36965ec"
+    },
+    "research/ten_attacks_20261030/deep_holdout.json": {
+      "bytes": 832133,
+      "sha256": "23d83ae4bdd564deab7776245bc95ae0c2dc3513520fe57ea6f4e1e6da3ee023"
+    },
+    "research/ten_attacks_20261030/deep_holdout.log": {
+      "bytes": 2849,
+      "sha256": "ba63bf36344ed6558b7aa6406857b902ff310b96cc7c2e146bec0a388a284f3d"
+    },
+    "research/ten_attacks_20261030/deep_traces.json": {
+      "bytes": 5942095,
+      "sha256": "70330c3f93093f3cbfbccdbbc2fa564f2a50f6989f64b6060c89b74c64068b78"
+    },
+    "research/ten_attacks_20261030/full-build.log": {
+      "bytes": 63211,
+      "sha256": "40f149438dcfd06025875af0c8044ec3dd442233d43336f16587706b85e597f9"
+    },
+    "research/ten_attacks_20261030/holdout.json": {
+      "bytes": 344940,
+      "sha256": "51a513aadfb1b4b7a6aa1413e12ef70648384a57cfca0e008420963ff68effbc"
+    },
+    "research/ten_attacks_20261030/holdout.log": {
+      "bytes": 937,
+      "sha256": "133f30c2fdbc248c0ececb8fae7034844c9e0f61978ca2f235f6d9b4c36fdb8b"
+    },
+    "research/ten_attacks_20261030/holdout_collapses.json": {
+      "bytes": 3222397,
+      "sha256": "577f1d729ff2ee76e503a781d7b5dfde8aecc6d6dbdcd51b7f45bcb32cdf57dc"
+    },
+    "research/ten_attacks_20261030/homology_search.json": {
+      "bytes": 111637,
+      "sha256": "3ee20a2004fe802b8b9ac1232d07ca90e8e6015d3ec26e9b5efa8c91eb6135dc"
+    },
+    "research/ten_attacks_20261030/homology_search.log": {
+      "bytes": 124,
+      "sha256": "38d6b534f09e24af65507f8605e4bfca281a62f67521798ec1e6836741795faf"
+    },
+    "research/ten_attacks_20261030/language.json": {
+      "bytes": 6346,
+      "sha256": "096fe8d7b8b3c96233b181528522558d99ac4e337926c6631739d3fd992e65ca"
+    },
+    "research/ten_attacks_20261030/language.log": {
+      "bytes": 865,
+      "sha256": "9cf68c95fe94c693112cd780d9c7180c0fe709bb8db27da8916478f72d5bc9df"
+    },
+    "research/ten_attacks_20261030/lean-attempt01.log": {
+      "bytes": 311,
+      "sha256": "9835bf99e6a9aad1a291337f54654f83baa9fa892c99e8b915b01a955e10dd79"
+    },
+    "research/ten_attacks_20261030/lean-attempt02.log": {
+      "bytes": 311,
+      "sha256": "9835bf99e6a9aad1a291337f54654f83baa9fa892c99e8b915b01a955e10dd79"
+    },
+    "research/ten_attacks_20261030/lean-attempt03.log": {
+      "bytes": 527,
+      "sha256": "e5e34cde1263498f4dd0a6d1fb624177fe4ce02e86a8e86393edf6a83ae949e9"
+    },
+    "research/ten_attacks_20261030/negative-guards.log": {
+      "bytes": 122,
+      "sha256": "cdf2a8b0097fbfafd3e2d3cc17d0625b9232cc654dc24c69f8b8a56d368c472e"
+    },
+    "research/ten_attacks_20261030/replay.json": {
+      "bytes": 350,
+      "sha256": "f82fa231fb188acc242af09a2098efe50423eff0aefa2c96076cff52d1912036"
+    },
+    "research/ten_attacks_20261030/replay.log": {
+      "bytes": 412,
+      "sha256": "e1a316c63775e11e9c97d8830b60e82719cd0f9521624c1c75b5194aa0d671c1"
+    },
+    "research/ten_attacks_20261030/summary.json": {
+      "bytes": 858,
+      "sha256": "4e35c213f80a4239d567ca408b2c33166a8201556b02649906fd7ce43c446644"
+    },
+    "research/ten_attacks_20261030/topology.json": {
+      "bytes": 1316636,
+      "sha256": "3d56cac4e054bcc76cca35ed4723a53d5f1b63d34163bb4cb79e796d1be4c260"
+    },
+    "research/ten_attacks_20261030/topology.log": {
+      "bytes": 3085,
+      "sha256": "47a2ab1e2e3f15bcac6ea0541e12462f4654ddb23ead50f3da86d90acb9db4fa"
+    }
+  }
+}

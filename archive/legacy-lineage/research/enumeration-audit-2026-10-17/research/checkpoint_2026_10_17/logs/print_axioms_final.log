@@ -1,0 +1,34 @@
+theorem LC004.unconditional_executable_unique_first_iff_path : ∀ {s : LC004.RunState},
+  LC004.Normalized s → s ≠ [] → (LC004.UniqueSuccessfulFirst s ↔ LC004.UniqueSuccessfulPath s) :=
+fun {s} hn hne =>
+  LC004.final_executable_unique_first_iff_path (fun {pre post} {c} {j} => LC004.noMergeStructuralExchange_proved)
+    (fun {pre post} {c d} {bp bq} {childChoice} => LC004.normalizedBridgeStructuralExchange_proved) hn hne
+'LC004.unconditional_executable_unique_first_iff_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.unconditional_unique_choice_iff_unique_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem LC004.unique_successful_first_is_median : ∀ {s : LC004.RunState},
+  LC004.Normalized s →
+    s ≠ [] → LC004.UniqueSuccessfulFirst s → ∀ {i : ℕ}, LC004.SuccessfulMove s i → List.length s = 2 * i + 1 :=
+fun {s} hn hne hu {i} hi =>
+  Exists.casesOn (LC004.successfulMove_iff_exists_successfulChoice.mp hi) fun t ht =>
+    LC004.unique_successful_choice_is_median hn hne (LC004.uniqueSuccessfulFirst_iff_uniqueSuccessfulChoice.mp hu) ht
+'LC004.unique_successful_first_is_median' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem LC004.unique_successful_path_odd_runs : ∀ {s : LC004.RunState},
+  LC004.Normalized s → s ≠ [] → LC004.UniqueSuccessfulPath s → Odd (List.length s) :=
+fun {s} hn hne hu =>
+  let_fun hf := (LC004.unconditional_executable_unique_first_iff_path hn hne).mpr hu;
+  Exists.casesOn hf fun i h =>
+    And.casesOn h fun hi right =>
+      let_fun hm :=
+        LC004.unique_successful_first_is_median hn hne
+          ((LC004.unconditional_executable_unique_first_iff_path hn hne).mpr hu) hi;
+      Exists.intro i (Decidable.byContradiction fun a => LC004.unique_successful_path_odd_runs._proof_1 i hm a)
+'LC004.unique_successful_path_odd_runs' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem LC004.unique_successful_path_color_palindrome : ∀ {s : LC004.RunState},
+  LC004.Normalized s → s ≠ [] → LC004.UniqueSuccessfulPath s → (List.map Prod.fst s).reverse = List.map Prod.fst s :=
+fun {s} hn hne hu =>
+  LC004.unique_successful_choice_color_palindrome hn hne
+    (LC004.uniqueSuccessfulFirst_iff_uniqueSuccessfulChoice.mp
+      ((LC004.unconditional_executable_unique_first_iff_path hn hne).mpr hu))
+'LC004.unique_successful_path_color_palindrome' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT_CODE=0

@@ -1,0 +1,52 @@
+name: five-kernel
+on:
+  push:
+    branches: [research/free-cumulants-20261029]
+    paths: ['research/free_cumulants/five_kernel.cpp', '.github/workflows/five-kernel.yml']
+  workflow_dispatch:
+jobs:
+  shard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      matrix:
+        r: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47]
+    steps:
+      - uses: actions/checkout@v4
+      - run: g++ -O2 -o fk research/free_cumulants/five_kernel.cpp
+      - run: |
+          ./fk 10 1 0 | head -1 | sed 's/^/validate10 /'
+          ./fk 20 48 ${{ matrix.r }} > shard.txt
+          out=$(head -2 shard.txt | tr "\n" " ")
+          echo "::notice title=n20 shard ${{ matrix.r }}::$out"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: shard-${{ matrix.r }}
+          path: shard.txt
+  analyze:
+    needs: shard
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: shard-*
+          path: shards
+      - run: |
+          g++ -O2 -o fk research/free_cumulants/five_kernel.cpp
+          ./fk 10 1 0 > k10.txt; ./fk 15 1 0 > k15.txt
+          cat shards/*/shard.txt > k20.txt
+          cd research/free_cumulants
+          grep -h 'atoms-below' shards/*/shard.txt > atoms20.txt || true
+          python3 - <<'PY2'
+          import re,collections
+          d=collections.Counter()
+          for l in open('atoms20.txt'):
+              for k,v in re.findall(r'\[(\d+) atoms\]=(\d+)',l): d[int(k)]+=int(v)
+          print('::notice title=atoms-below distribution n=20::'+str(dict(d)))
+          PY2
+          for n in 10 15 20; do
+            python3 kernel_structure.py $n ../../k$n.txt | tee s$n.log
+            echo "::notice title=structure n=$n::$(tr '\n' ' ' < s$n.log | cut -c1-1500)"
+          done

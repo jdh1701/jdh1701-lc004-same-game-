@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-29T14:41:06.726566+00:00",
+  "url": "https://sagecell.sagemath.org/tos.html",
+  "method": "GET",
+  "parameters": {},
+  "error": "<HTTPError 403: 'Forbidden'>",
+  "seconds": 4.523361921310425
+}

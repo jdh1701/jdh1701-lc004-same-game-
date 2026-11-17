@@ -1,0 +1,60 @@
+⚠ [719/809] Replayed LC004.SignedConstraints
+warning: ././././LC004/SignedConstraints.lean:43:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ././././LC004/SignedConstraints.lean:104:0: 'LC004.signedEval_addConstraint' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:105:0: 'LC004.signedEval_unionTerms' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:106:0: 'LC004.signedEval_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:107:0: 'LC004.signed_constraint_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [790/809] Built Mathlib.Data.List.Zip
+✔ [791/809] Built Mathlib.Data.Multiset.Sections
+✔ [792/809] Built Mathlib.Algebra.BigOperators.Group.Finset.Pi
+✔ [793/809] Built Mathlib.Algebra.Ring.Divisibility.Basic
+✔ [794/809] Built Mathlib.Data.Finset.Lattice.Union
+✔ [795/809] Built Mathlib.Data.Nat.Factorial.Basic
+✔ [796/809] Built Mathlib.Data.Set.Pairwise.Lattice
+✔ [797/809] Built Mathlib.Algebra.Group.Support
+✔ [798/809] Built Mathlib.Algebra.BigOperators.Ring.List
+✔ [799/809] Built Mathlib.Data.Nat.Choose.Basic
+✔ [800/809] Built Mathlib.Data.Finset.Max
+✔ [801/809] Built Mathlib.Algebra.BigOperators.GroupWithZero.Finset
+✔ [802/809] Built Mathlib.Data.List.Sublists
+✔ [803/809] Built Mathlib.Data.Multiset.Powerset
+✔ [804/809] Built Mathlib.Data.Multiset.Antidiagonal
+✔ [805/809] Built Mathlib.Data.Finset.Powerset
+✔ [806/809] Built Mathlib.Algebra.BigOperators.Ring.Multiset
+✔ [807/809] Built Mathlib.Data.Fintype.Powerset
+✔ [808/809] Built Mathlib.Algebra.BigOperators.Ring.Finset
+✖ [809/809] Building LC004.CoefficientFactorization
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /tmp/lean-4.19.0-linux/bin/lean ././././LC004/CoefficientFactorization.lean -R ./././. -o ././.lake/build/lib/lean/LC004/CoefficientFactorization.olean -i ././.lake/build/lib/lean/LC004/CoefficientFactorization.ilean -c ././.lake/build/ir/LC004/CoefficientFactorization.c --json
+error: ././././LC004/CoefficientFactorization.lean:47:2: tactic 'apply' failed, failed to unify
+  Finset.sum ?m.2497 ?m.2493 = Finset.sum ?m.2497 ?m.2494
+with
+  (∑ x_1, ∑ x_2, if (x_1, x_2) ≤ (x, y) then a x_1 * b x_2 else 0) =
+    ∑ x_1, ∑ i, (if i ≤ x then a i else 0) * if x_1 ≤ y then b x_1 else 0
+P : Type u_1
+Q : Type u_2
+inst✝³ : Fintype P
+inst✝² : Fintype Q
+inst✝¹ : PartialOrder P
+inst✝ : PartialOrder Q
+a : P → ℤ
+b : Q → ℤ
+x : P
+y : Q
+⊢ (∑ x_1, ∑ x_2, if (x_1, x_2) ≤ (x, y) then a x_1 * b x_2 else 0) =
+    ∑ x_1, ∑ i, (if i ≤ x then a i else 0) * if x_1 ≤ y then b x_1 else 0
+error: ././././LC004/CoefficientFactorization.lean:110:2: type mismatch
+  signedEval_unionTerms (fun x1 x2 => x1 ≤ x2) (fun x1 x2 => x1 ⊔ x2) (fun x x_1 x_2 => sup_le_iff) ps x
+has type
+  signedEval (fun x1 x2 => x1 ≤ x2) (unionTerms (fun x1 x2 => x1 ⊔ x2) ps) x =
+    @ite ℤ (∃ p ∈ ps, p ≤ x) (List.decidableBEx (fun p => p ≤ x) ps) 1 0 : Prop
+but is expected to have type
+  signedEval (fun x1 x2 => x1 ≤ x2) (unionTerms (fun x1 x2 => x1 ⊔ x2) ps) x =
+    @ite ℤ (∃ p ∈ ps, p ≤ x) (Classical.propDecidable (∃ p ∈ ps, p ≤ x)) 1 0 : Prop
+info: ././././LC004/CoefficientFactorization.lean:135:0: 'LC004.zetaSum_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientFactorization.lean:136:0: 'LC004.coefficient_factorization' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientFactorization.lean:137:0: 'LC004.collected_union_product' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required builds logged failures:
+- LC004.CoefficientFactorization
+error: build failed

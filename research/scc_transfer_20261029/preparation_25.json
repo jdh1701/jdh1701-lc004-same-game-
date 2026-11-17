@@ -1,0 +1,8 @@
+{
+  "status": "VERIFIED-COMP",
+  "n": 25,
+  "local_interleavings": 252,
+  "first_block_orbits": 1096,
+  "total_five_subsets": 53130,
+  "weight_sum": 53130
+}

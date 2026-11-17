@@ -1,0 +1,85 @@
+⚠ [6660/6715] Replayed LC004.NormalizedDirectional
+warning: ././././LC004/NormalizedDirectional.lean:18:19: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [6662/6715] Replayed LC004.IndexedMove
+warning: ././././LC004/IndexedMove.lean:73:2: try 'simp at hlt' instead of 'simpa using hlt'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [6663/6715] Replayed LC004.ExecutableCorrespondence
+warning: ././././LC004/ExecutableCorrespondence.lean:48:10: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [6664/6715] Replayed LC004.SuccessfulPaths
+warning: ././././LC004/SuccessfulPaths.lean:100:8: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+⚠ [6666/6715] Replayed LC004.ExecutableUniqueness
+warning: ././././LC004/ExecutableUniqueness.lean:93:14: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+⚠ [6668/6715] Replayed LC004.ExchangeScaffold
+warning: ././././LC004/ExchangeScaffold.lean:93:26: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+warning: ././././LC004/ExchangeScaffold.lean:94:28: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+⚠ [6669/6715] Replayed LC004.ConditionalMain
+warning: ././././LC004/ConditionalMain.lean:55:12: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+⚠ [6672/6715] Replayed LC004.SplitRunLemmas
+warning: ././././LC004/SplitRunLemmas.lean:37:12: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [6710/6715] Replayed LC004.BridgeAdjacentLeftFront
+warning: ././././LC004/BridgeAdjacentLeftFront.lean:26:9: unused variable `d`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+warning: ././././LC004/BridgeAdjacentLeftFront.lean:26:22: unused variable `bp`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+warning: ././././LC004/BridgeAdjacentLeftFront.lean:26:25: unused variable `bq`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+ℹ [6713/6715] Replayed LC004.UnconditionalFinal
+info: ././././LC004/UnconditionalFinal.lean:30:0: 'LC004.unconditional_unique_choice_iff_unique_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UnconditionalFinal.lean:31:0: 'LC004.unconditional_executable_unique_first_iff_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [6715/6715] Building LC004.OrdinaryCommutation
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /root/.elan/toolchains/leanprover--lean4---v4.19.0/bin/lean ././././LC004/OrdinaryCommutation.lean -R ./././. -o ././.lake/build/lib/lean/LC004/OrdinaryCommutation.olean -i ././.lake/build/lib/lean/LC004/OrdinaryCommutation.ilean -c ././.lake/build/ir/LC004/OrdinaryCommutation.c --json
+error: ././././LC004/OrdinaryCommutation.lean:37:15: tactic 'rfl' failed, the left-hand side
+  encode ([c] ++ tail)
+is not definitionally equal to the right-hand side
+  attachRun c (! [].isEmpty) []
+case nil.nil
+c : ℕ
+tail : RawState
+h : ∀ d ∈ [], d = c
+hs : encode tail = []
+⊢ encode ([c] ++ tail) = attachRun c (! [].isEmpty) []
+error: ././././LC004/OrdinaryCommutation.lean:56:48: application type mismatch
+  List.mem_takeWhile_imp hd
+argument
+  hd
+has type
+  d ∈ List.takeWhile (fun d => d == c) cs : Prop
+but is expected to have type
+  c ∈ List.takeWhile (BEq.beq d) ?m.792 : Prop
+error: ././././LC004/OrdinaryCommutation.lean:59:6: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  List.takeWhile ?m.2598 ?m.2599 ++ List.dropWhile ?m.2598 ?m.2599
+c : ℕ
+cs : RawState
+hall : ∀ d ∈ List.takeWhile (fun d => d == c) cs, d = c
+hp :
+  encode (c :: List.takeWhile (fun d => d == c) cs ++ List.dropWhile (fun d => d == c) cs) =
+    attachRun c (!(List.takeWhile (fun d => d == c) cs).isEmpty) (encode (List.dropWhile (fun d => d == c) cs))
+⊢ encode (c :: cs) = (c, !(List.takeWhile (fun d => d == c) cs).isEmpty) :: encode (List.dropWhile (fun d => d == c) cs)
+error: ././././LC004/OrdinaryCommutation.lean:106:22: unsolved goals
+case cons.mk.zero.true.cons.mk
+c : ℕ
+b : Bool
+d : ℕ
+hcd : c ≠ d
+ys : List (ℕ × Bool)
+f : ℕ
+g : Bool
+hn : Normalized ((c, b) :: (d, true) :: (f, g) :: ys)
+⊢ (if c = f then some ((c, true) :: ys) else some ((c, b) :: (f, g) :: ys)) =
+    some (if c = f then (c, true) :: ys else (c, b) :: (f, g) :: ys)
+error: ././././LC004/OrdinaryCommutation.lean:144:56: application type mismatch
+  List.mem_takeWhile_imp hd
+argument
+  hd
+has type
+  d ∈ same : Prop
+but is expected to have type
+  c ∈ List.takeWhile (BEq.beq d) ?m.2441 : Prop
+error: ././././LC004/OrdinaryCommutation.lean:162:18: simp made no progress
+error: Lean exited with code 1
+Some required builds logged failures:
+- LC004.OrdinaryCommutation
+error: build failed

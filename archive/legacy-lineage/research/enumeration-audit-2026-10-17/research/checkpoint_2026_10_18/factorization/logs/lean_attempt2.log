@@ -1,0 +1,94 @@
+⚠ [719/790] Replayed LC004.SignedConstraints
+warning: ././././LC004/SignedConstraints.lean:43:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ././././LC004/SignedConstraints.lean:104:0: 'LC004.signedEval_addConstraint' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:105:0: 'LC004.signedEval_unionTerms' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:106:0: 'LC004.signedEval_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:107:0: 'LC004.signed_constraint_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [790/790] Building LC004.CoefficientFactorization
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /tmp/lean-4.19.0-linux/bin/lean ././././LC004/CoefficientFactorization.lean -R ./././. -o ././.lake/build/lib/lean/LC004/CoefficientFactorization.olean -i ././.lake/build/lib/lean/LC004/CoefficientFactorization.ilean -c ././.lake/build/ir/LC004/CoefficientFactorization.c --json
+error: ././././LC004/CoefficientFactorization.lean:33:26: application type mismatch
+  ih y (lt_of_le_of_ne hle hne)
+argument
+  lt_of_le_of_ne hle hne
+has type
+  @LT.lt P Preorder.toLT y x : Prop
+but is expected to have type
+  @LT.lt P ?h.x_1 y x : Prop
+error: ././././LC004/CoefficientFactorization.lean:33:8: unsolved goals
+case pos
+P : Type u_1
+inst✝¹ : Fintype P
+inst✝ : PartialOrder P
+a b : P → ℤ
+hab : ∀ (x : P), zetaSum a x = zetaSum b x
+x✝ x : P
+ih : ∀ y < x, a y = b y
+hd : (∑ y, if y ≤ x then a y - b y else 0) = 0
+y : P
+hy : y ∈ Finset.univ
+hne : y ≠ x
+hle : y ≤ x
+⊢ a y - b y = 0
+error: ././././LC004/CoefficientFactorization.lean:19:2: alternative 'x_1' has not been provided
+error: ././././LC004/CoefficientFactorization.lean:19:2: alternative 'x_2' has not been provided
+error: ././././LC004/CoefficientFactorization.lean:44:45: unknown constant 'Finset.sum_mul'
+error: ././././LC004/CoefficientFactorization.lean:44:61: unknown constant 'Finset.mul_sum'
+error: ././././LC004/CoefficientFactorization.lean:45:2: tactic 'apply' failed, failed to unify
+  Finset.sum ?m.1989 ?m.1985 = Finset.sum ?m.1989 ?m.1986
+with
+  (∑ x_1, ∑ x_2, if (x_1, x_2) ≤ (x, y) then a x_1 * b x_2 else 0) =
+    (∑ y, if y ≤ x then a y else 0) * ∑ y_1, if y_1 ≤ y then b y_1 else 0
+P : Type u_1
+Q : Type u_2
+inst✝³ : Fintype P
+inst✝² : Fintype Q
+inst✝¹ : PartialOrder P
+inst✝ : PartialOrder Q
+a : P → ℤ
+b : Q → ℤ
+x : P
+y : Q
+⊢ (∑ x_1, ∑ x_2, if (x_1, x_2) ≤ (x, y) then a x_1 * b x_2 else 0) =
+    (∑ y, if y ≤ x then a y else 0) * ∑ y_1, if y_1 ≤ y then b y_1 else 0
+error: ././././LC004/CoefficientFactorization.lean:87:10: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ∑ x ∈ ?m.5680, (?m.5682 x + ?m.5683 x)
+P : Type u_1
+inst✝¹ : Fintype P
+inst✝ : PartialOrder P
+x : P
+t : ℤ × P
+ts : List (ℤ × P)
+ih : zetaSum (collectedCoeff ts) x = signedEval (fun x1 x2 => x1 ≤ x2) ts x
+he : collectedCoeff (t :: ts) = fun p => (if t.2 = p then t.1 else 0) + collectedCoeff ts p
+⊢ (∑ x_1, if x_1 ≤ x then if t.2 = x_1 then t.1 + collectedCoeff ts x_1 else 0 + collectedCoeff ts x_1 else 0) =
+    if t.2 ≤ x then t.1 + ∑ y, if y ≤ x then collectedCoeff ts y else 0
+    else 0 + ∑ y, if y ≤ x then collectedCoeff ts y else 0
+error: ././././LC004/CoefficientFactorization.lean:100:6: failed to synthesize
+  Decidable (∃ p ∈ ps, p ≤ x)
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: ././././LC004/CoefficientFactorization.lean:125:6: tactic 'rewrite' failed, did not find instance of the pattern in the target expression
+  ∃ t ∈ List.flatMap (fun p => List.map (fun q => (p, q)) qs) ps, t ≤ (u, v)
+case h
+P : Type u_1
+Q : Type u_2
+inst✝³ : Fintype P
+inst✝² : Fintype Q
+inst✝¹ : SemilatticeSup P
+inst✝ : SemilatticeSup Q
+ps : List P
+qs : List Q
+x : P
+y : Q
+u : P
+v : Q
+he : (∃ t ∈ List.flatMap (fun p => List.map (fun q => (p, q)) qs) ps, t ≤ (u, v)) ↔ (∃ p ∈ ps, p ≤ u) ∧ ∃ q ∈ qs, q ≤ v
+⊢ sorry = sorry * sorry
+info: ././././LC004/CoefficientFactorization.lean:128:0: 'LC004.zetaSum_injective' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientFactorization.lean:129:0: 'LC004.coefficient_factorization' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientFactorization.lean:130:0: 'LC004.collected_union_product' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required builds logged failures:
+- LC004.CoefficientFactorization
+error: build failed

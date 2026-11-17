@@ -1,0 +1,100 @@
+✔ [6653/6719] Built LC004.Monotonicity
+✔ [6654/6719] Built LC004.RunState
+✔ [6655/6719] Built LC004.Transition
+✔ [6656/6719] Built LC004.ListSplit
+✔ [6657/6719] Built LC004.HeavierLemmas
+✔ [6658/6719] Built LC004.Normalized
+⚠ [6659/6719] Built LC004.SplitRunLemmas
+warning: ././././LC004/SplitRunLemmas.lean:37:12: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [6660/6719] Built LC004.Simulation
+⚠ [6661/6719] Built LC004.NormalizedDirectional
+warning: ././././LC004/NormalizedDirectional.lean:18:19: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [6662/6719] Built LC004.RunEncoding
+✔ [6663/6719] Built LC004.RawEncoding
+✔ [6664/6719] Built LC004.ExecutableStep
+✔ [6665/6719] Built LC004.BoundaryLemmas
+✔ [6666/6719] Built LC004.NormalizedStepTarget
+✔ [6667/6719] Built LC004.NoMergeSimulation
+✔ [6668/6719] Built LC004.DeleteSimulation
+✔ [6669/6719] Built LC004.InteriorNoMerge
+⚠ [6670/6719] Built LC004.IndexedMove
+warning: ././././LC004/IndexedMove.lean:73:2: try 'simp at hlt' instead of 'simpa using hlt'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [6671/6719] Built LC004.NoMergeFull
+✔ [6672/6719] Built LC004.InsertedDeletion
+✔ [6673/6719] Built LC004.HeadColorLemmas
+⚠ [6674/6719] Built LC004.SuccessfulPaths
+warning: ././././LC004/SuccessfulPaths.lean:100:8: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+⚠ [6675/6719] Built LC004.ExecutableCorrespondence
+warning: ././././LC004/ExecutableCorrespondence.lean:48:10: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [6676/6719] Built LC004.FullSimulation
+✔ [6677/6719] Built LC004.Bridge
+✔ [6678/6719] Built LC004.IndexedDeterminism
+✔ [6679/6719] Built LC004.SuffixIndexed
+✔ [6680/6719] Built LC004.MoveClassification
+✔ [6681/6719] Built LC004.PrefixIndexed
+✔ [6682/6719] Built LC004.ExchangeTarget
+⚠ [6683/6719] Built LC004.ExchangeScaffold
+warning: ././././LC004/ExchangeScaffold.lean:93:26: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+warning: ././././LC004/ExchangeScaffold.lean:94:28: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+⚠ [6684/6719] Built LC004.ExecutableUniqueness
+warning: ././././LC004/ExecutableUniqueness.lean:93:14: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+✔ [6685/6719] Built LC004.BridgeExchangeRight
+✔ [6686/6719] Built LC004.ExchangeDominance
+⚠ [6687/6719] Built LC004.ConditionalMain
+warning: ././././LC004/ConditionalMain.lean:55:12: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+✔ [6688/6719] Built LC004.BridgeExchangeRightFull
+✔ [6689/6719] Built LC004.NoMergeAdjacentRight
+✔ [6690/6719] Built LC004.NoMergeExchangeLocal
+✔ [6691/6719] Built LC004.NoMergeExchangeRight
+✔ [6692/6719] Built LC004.BridgeExchangeAssembly
+✔ [6693/6719] Built LC004.NoMergeExchangeAssembly
+✔ [6694/6719] Built LC004.BridgeExchangeRemaining
+✔ [6695/6719] Built LC004.FinalAssembly
+✔ [6696/6719] Built LC004.NoMergeExchangeInterior
+✔ [6697/6719] Built LC004.BridgeExchangeLeftAssembly
+✔ [6698/6719] Built LC004.NoMergeAdjacentLeft
+✔ [6699/6719] Built LC004.NoMergeFarLeftProof
+✔ [6700/6719] Built LC004.NoMergeFarRightZero
+✔ [6701/6719] Built LC004.BridgeExchangeFarLeft
+✔ [6702/6719] Built LC004.BridgeAdjacentLeft
+✔ [6703/6719] Built LC004.NoMergeAdjacentLeftConcrete
+✔ [6704/6719] Built LC004.NoMergeFarRightProof
+⚠ [6705/6719] Built LC004.BridgeAdjacentLeftFront
+warning: ././././LC004/BridgeAdjacentLeftFront.lean:26:9: unused variable `d`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+warning: ././././LC004/BridgeAdjacentLeftFront.lean:26:22: unused variable `bp`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+warning: ././././LC004/BridgeAdjacentLeftFront.lean:26:25: unused variable `bq`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+✔ [6706/6719] Built LC004.BridgeFarLeftConcrete
+✔ [6707/6719] Built LC004.NoMergeAdjacentLeftBoundary
+✔ [6708/6719] Built LC004.BridgeAdjacentLeftConcrete
+✔ [6709/6719] Built LC004.BridgeFarLeftProof
+✔ [6710/6719] Built LC004.NoMergeAdjacentLeftBoundaryConcrete
+✔ [6711/6719] Built LC004.BridgeAdjacentLeftClosure
+✔ [6712/6719] Built LC004.BridgeAdjacentBoundary
+✔ [6713/6719] Built LC004.NoMergeStructuralProof
+✔ [6714/6719] Built LC004.BridgeAdjacentPrefixTransport
+✔ [6715/6719] Built LC004.BridgeStructuralFinal
+ℹ [6716/6719] Built LC004.UnconditionalFinal
+info: ././././LC004/UnconditionalFinal.lean:30:0: 'LC004.unconditional_unique_choice_iff_unique_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UnconditionalFinal.lean:31:0: 'LC004.unconditional_executable_unique_first_iff_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [6717/6719] Building LC004.UniqueMedian
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /root/.elan/toolchains/leanprover--lean4---v4.19.0/bin/lean ././././LC004/UniqueMedian.lean -R ./././. -o ././.lake/build/lib/lean/LC004/UniqueMedian.olean -i ././.lake/build/lib/lean/LC004/UniqueMedian.ilean -c ././.lake/build/ir/LC004/UniqueMedian.c --json
+warning: ././././LC004/UniqueMedian.lean:43:38: `List.length_pos` has been deprecated: use `List.length_pos_iff` instead
+error: ././././LC004/UniqueMedian.lean:68:8: simp made no progress
+warning: ././././LC004/UniqueMedian.lean:107:38: `List.length_pos` has been deprecated: use `List.length_pos_iff` instead
+info: ././././LC004/UniqueMedian.lean:156:0: 'LC004.unique_successful_choice_is_median' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: ././././LC004/UniqueMedian.lean:157:0: 'LC004.unique_successful_first_is_median' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: ././././LC004/UniqueMedian.lean:158:0: 'LC004.unique_successful_path_odd_runs' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: ././././LC004/UniqueMedian.lean:159:0: 'LC004.unique_successful_path_color_palindrome' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required builds logged failures:
+- LC004.UniqueMedian
+error: build failed
+
+EXIT_CODE=1

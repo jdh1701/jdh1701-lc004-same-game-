@@ -1,0 +1,98 @@
+{
+  "status": "COUNTEREXAMPLE",
+  "separated_pairs_checked": 165,
+  "nontrivial_intrinsic_components_checked": 5,
+  "witness": {
+    "p": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "pair": [
+      [
+        0,
+        0
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "edges": [
+      [
+        1,
+        0
+      ]
+    ],
+    "sccs": [
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    "coarsened_blocks": [
+      [
+        0,
+        1,
+        2,
+        5,
+        6
+      ],
+      [
+        3,
+        4,
+        7,
+        8,
+        9
+      ]
+    ],
+    "all_choices": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ]
+    ]
+  },
+  "conclusion": "SCC blocks need not form a noncrossing partition, obstructing the direct noncrossing species decomposition."
+}

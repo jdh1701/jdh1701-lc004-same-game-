@@ -1,0 +1,64 @@
+name: Adjacent inflation law and sign obstruction
+on:
+  push:
+    branches: [proof/inflation-law-20261031]
+    paths:
+      - 'LC004/**'
+      - 'LC004.lean'
+      - 'research/inflation_law_20261031/**'
+      - '.github/workflows/inflation-law.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.elan
+            .lake
+          key: ${{ runner.os }}-lean-v4.19.0-${{ hashFiles('lean-toolchain', 'lakefile.toml', 'lake-manifest.json') }}
+          restore-keys: |
+            ${{ runner.os }}-lean-v4.19.0-
+      - name: Install pinned Lean
+        run: |
+          if [ ! -x "$HOME/.elan/bin/elan" ]; then
+            curl https://elan.lean-lang.org/elan-init.sh -sSf | sh -s -- -y
+          fi
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Build and audit all active modules
+        run: |
+          set -eo pipefail
+          python scripts/check_lean_coverage.py
+          lake exe cache get
+          lake build LC004 2>&1 | tee first-excess-build.log
+          lake env lean scripts/AxiomAudit.lean 2>&1 | tee first-excess-axioms.log
+          python scripts/test_verification_guards.py
+          git diff --exit-code -- lake-manifest.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: first-excess-lean
+          path: first-excess-*.log
+  exact:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Independent local replacement and signed-join checks
+        run: |
+          set -eo pipefail
+          python research/inflation_law_20261031/check.py
+          g++ -O3 -std=c++17 -Wall -Wextra -Werror research/inflation_law_20261031/search30.cpp -o /tmp/search30
+          /tmp/search30 research/scc_transfer_20261029 research/inflation_law_20261031/counterexamples30.txt > research/inflation_law_20261031/search30.json
+          python research/inflation_law_20261031/replay30.py
+          git diff --exit-code -- research/inflation_law_20261031/checks.json research/inflation_law_20261031/search30.json research/inflation_law_20261031/replay30.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: inflation-law-exact
+          path: research/inflation_law_20261031/

@@ -1,0 +1,28 @@
+name: Exhaustive first-excess n21 census
+on:
+  push:
+    branches: [research/first-excess-21-20261031]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  exact:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Exhaustive census and independent coefficient replay
+        run: |
+          set -eo pipefail
+          python research/first_excess_20261030/prepare.py
+          python research/first_excess_20261031/prepare.py
+          g++ -O3 -std=c++17 -Wall -Wextra -Werror research/first_excess_20261031/count.cpp -o /tmp/count5556
+          /tmp/count5556 research/first_excess_20261031 research/first_excess_20261030/tables.txt > research/first_excess_20261031/count.json
+          python research/first_excess_20261031/replay.py
+          python research/first_excess_20261031/structure.py
+          git diff --exit-code -- research/first_excess_20261031/count.json research/first_excess_20261031/replay.json research/first_excess_20261031/structure.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: first-excess-21-evidence
+          path: research/first_excess_20261031/

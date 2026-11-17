@@ -1,0 +1,4 @@
+weighted_formula_vs_fifth_order_recurrence_8_to_80=PASS
+This checks algebraic consequences, not Same Game classification.
+coefficients_0_to_30= [1, 0, 2, 2, 4, 8, 14, 26, 48, 88, 158, 278, 480, 816, 1370, 2278, 3760, 6172, 10090, 16446, 26748, 43436, 70458, 114202, 185004, 299588, 485014, 785066, 1270588, 2056208, 3327398]
+EXIT_CODE=0

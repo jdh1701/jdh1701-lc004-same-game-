@@ -1,0 +1,68 @@
+name: Connected support and finishing-route audit
+on:
+  push:
+    branches: [proof/connected-support-20261030]
+    paths:
+      - 'LC004/**'
+      - 'LC004.lean'
+      - 'research/connected_support_20261030/**'
+      - 'research/finishing_routes_20261030/**'
+      - '.github/workflows/connected-support.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.elan
+            .lake
+          key: ${{ runner.os }}-lean-v4.19.0-${{ hashFiles('lean-toolchain', 'lakefile.toml', 'lake-manifest.json') }}
+          restore-keys: |
+            ${{ runner.os }}-lean-v4.19.0-
+      - name: Install pinned Lean
+        run: |
+          if [ ! -x "$HOME/.elan/bin/elan" ]; then
+            curl https://elan.lean-lang.org/elan-init.sh -sSf | sh -s -- -y
+          fi
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Compile and audit all active modules
+        run: |
+          set -eo pipefail
+          python scripts/check_lean_coverage.py
+          lake exe cache get
+          lake build LC004 2>&1 | tee support-build.log
+          lake env lean scripts/AxiomAudit.lean 2>&1 | tee support-axiom-audit.log
+          python scripts/test_verification_guards.py
+          git diff --exit-code -- lake-manifest.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: connected-support-lean
+          path: support-*.log
+  exact:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Replay support and all ten routes
+        run: |
+          set -eo pipefail
+          python research/fiber_elimination_20261030/restore_baseline.py
+          python research/connected_support_20261030/check_support.py
+          python research/finishing_routes_20261030/routes.py
+          python research/finishing_routes_20261030/spectral_stress.py
+          python research/finishing_routes_20261030/replay.py
+          python research/finishing_routes_20261030/interval_compression.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: connected-support-exact
+          path: |
+            research/connected_support_20261030/*.json
+            research/finishing_routes_20261030/*.json

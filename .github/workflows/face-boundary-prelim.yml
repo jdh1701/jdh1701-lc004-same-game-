@@ -1,0 +1,30 @@
+name: LC004 Face boundary preliminary Lean check
+on:
+  push:
+    branches:
+      - integration/alexandria-face-lemma-20261029
+    paths:
+      - 'LC004/FaceBoundaryJoinPrelim.lean'
+      - 'LC004/FaceRestriction.lean'
+      - 'LC004/FaceJoinConditional.lean'
+      - 'LC004/FaceJoinOrder.lean'
+      - '.github/workflows/face-boundary-prelim.yml'
+  workflow_dispatch:
+jobs:
+  proof:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          build: true
+      - name: Check new theorem files with project environment
+        run: |
+          lake env lean LC004/FaceBoundaryJoinPrelim.lean
+          lake env lean -o .lake/build/lib/lean/LC004/FaceRestriction.olean LC004/FaceRestriction.lean
+          lake env lean LC004/FaceJoinConditional.lean
+          lake env lean LC004/FaceJoinOrder.lean
+      - name: Reject placeholders in new files
+        run: |
+          if grep -nE '\b(sorry|admit)\b' LC004/FaceBoundaryJoinPrelim.lean LC004/FaceRestriction.lean LC004/FaceJoinConditional.lean LC004/FaceJoinOrder.lean; then exit 1; fi

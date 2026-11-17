@@ -1,0 +1,60 @@
+⚠ [719/830] Replayed LC004.SignedConstraints
+warning: ././././LC004/SignedConstraints.lean:43:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ././././LC004/SignedConstraints.lean:104:0: 'LC004.signedEval_addConstraint' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:105:0: 'LC004.signedEval_unionTerms' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:106:0: 'LC004.signedEval_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:107:0: 'LC004.signed_constraint_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [790/830] Replayed LC004.PartitionCounting
+info: ././././LC004/PartitionCounting.lean:58:0: 'LC004.respects_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionCounting.lean:59:0: 'LC004.card_partitionEvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionCounting.lean:60:0: 'LC004.partition_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [810/830] Replayed LC004.CoefficientFactorization
+info: ././././LC004/CoefficientFactorization.lean:138:0: 'LC004.zetaSum_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientFactorization.lean:139:0: 'LC004.coefficient_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientFactorization.lean:140:0: 'LC004.collected_union_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [814/830] Replayed LC004.NoncrossingRestriction
+info: ././././LC004/NoncrossingRestriction.lean:90:0: 'LC004.noncrossing_iff_blocks' depends on axioms: [propext]
+info: ././././LC004/NoncrossingRestriction.lean:91:0: 'LC004.blockRestriction_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/NoncrossingRestriction.lean:92:0: 'LC004.pairTriple_iff_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [815/830] Replayed LC004.ChordBarrier
+info: ././././LC004/ChordBarrier.lean:29:0: 'LC004.noncrossing_interval_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [818/830] Replayed LC004.GrammarNormalForm
+info: ././././LC004/GrammarNormalForm.lean:65:0: 'LC004.clickGrammar_iff_firstBlock' depends on axioms: [propext]
+info: ././././LC004/GrammarNormalForm.lean:66:0: 'LC004.clickGrammar_map' depends on axioms: [propext]
+ℹ [819/830] Replayed LC004.CoefficientBarrier
+info: ././././LC004/CoefficientBarrier.lean:45:0: 'LC004.coefficient_zero_outside_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientBarrier.lean:46:0: 'LC004.four_gap_pairing_intersection' does not depend on any axioms
+info: ././././LC004/CoefficientBarrier.lean:47:0: 'LC004.two_pairing_indicator' depends on axioms: [propext]
+ℹ [820/830] Replayed LC004.UnionCoefficientIdentity
+info: ././././LC004/UnionCoefficientIdentity.lean:101:0: 'LC004.two_branch_join_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UnionCoefficientIdentity.lean:102:0: 'LC004.two_branch_barrier_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UnionCoefficientIdentity.lean:103:0: 'LC004.collected_union_append' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UnionCoefficientIdentity.lean:104:0: 'LC004.collected_union_fixed_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [821/830] Replayed LC004.FourBlockCancellation
+info: ././././LC004/FourBlockCancellation.lean:58:0: 'LC004.quad_pairings_join_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourBlockCancellation.lean:59:0: 'LC004.four_block_barrier_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [823/830] Replayed LC004.FourGapGeometry
+warning: ././././LC004/FourGapGeometry.lean:34:5: unused variable `hab`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+warning: ././././LC004/FourGapGeometry.lean:34:33: unused variable `hcd`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [829/830] Replayed LC004.QuadWitnessGeometry
+warning: ././././LC004/QuadWitnessGeometry.lean:52:35: 'omega' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: ././././LC004/QuadWitnessGeometry.lean:62:35: 'omega' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: ././././LC004/QuadWitnessGeometry.lean:52:35: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: ././././LC004/QuadWitnessGeometry.lean:62:35: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: ././././LC004/QuadWitnessGeometry.lean:98:35: 'omega' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: ././././LC004/QuadWitnessGeometry.lean:108:35: 'omega' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: ././././LC004/QuadWitnessGeometry.lean:98:35: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: ././././LC004/QuadWitnessGeometry.lean:108:35: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+✔ [830/830] Built LC004.AllWitnessCancellation
+Build completed successfully.

@@ -1,0 +1,32 @@
+q=3, through 10 runs
+  runs=1 states=2 solvable=1 unique_first=1 unique_path=1
+  runs=2 states=4 solvable=1 unique_first=0 unique_path=0
+  runs=3 states=16 solvable=5 unique_first=3 unique_path=3
+  runs=4 states=64 solvable=19 unique_first=0 unique_path=0
+  runs=5 states=256 solvable=79 unique_first=18 unique_path=18
+  runs=6 states=1024 solvable=334 unique_first=0 unique_path=0
+  runs=7 states=4096 solvable=1388 unique_first=102 unique_path=102
+  runs=8 states=16384 solvable=5891 unique_first=0 unique_path=0
+  runs=9 states=65536 solvable=24710 unique_first=576 unique_path=576
+  runs=10 states=262144 solvable=104199 unique_first=0 unique_path=0
+  bridge_exchange_cases=1058528
+q=4, through 8 runs
+  runs=1 states=2 solvable=1 unique_first=1 unique_path=1
+  runs=2 states=4 solvable=1 unique_first=0 unique_path=0
+  runs=3 states=16 solvable=5 unique_first=3 unique_path=3
+  runs=4 states=80 solvable=20 unique_first=0 unique_path=0
+  runs=5 states=448 solvable=103 unique_first=18 unique_path=18
+  runs=6 states=2624 solvable=567 unique_first=0 unique_path=0
+  runs=7 states=15616 solvable=3269 unique_first=129 unique_path=129
+  runs=8 states=93440 solvable=19310 unique_first=0 unique_path=0
+  bridge_exchange_cases=91736
+q=5, through 7 runs
+  runs=1 states=2 solvable=1 unique_first=1 unique_path=1
+  runs=2 states=4 solvable=1 unique_first=0 unique_path=0
+  runs=3 states=16 solvable=5 unique_first=3 unique_path=3
+  runs=4 states=80 solvable=20 unique_first=0 unique_path=0
+  runs=5 states=480 solvable=104 unique_first=18 unique_path=18
+  runs=6 states=3264 solvable=607 unique_first=0 unique_path=0
+  runs=7 states=23936 solvable=3914 unique_first=129 unique_path=129
+  bridge_exchange_cases=12784
+PASS states=489538 unique_first=1002 bridge_exchange_cases=1163048

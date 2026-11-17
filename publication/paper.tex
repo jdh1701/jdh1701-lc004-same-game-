@@ -1,0 +1,2351 @@
+\documentclass[11pt,reqno]{amsart}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}[SmallCapsFont={Latin Modern Roman Caps}]
+\setsansfont{Latin Modern Sans}
+\setmonofont{DejaVu Sans Mono}[Scale=0.78]
+\usepackage{amsmath,amssymb,mathtools,amsthm}
+\usepackage{booktabs,longtable,array,enumitem}
+\usepackage{fvextra,xcolor}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{microtype}
+\hypersetup{pdftitle={Alexandria Omega: A Verifiable Architecture for Recursive Scientific Discovery (2026)},pdfauthor={John D. Holden III}}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\setlength{\emergencystretch}{2em}
+\setcounter{tocdepth}{2}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Fin}{\operatorname{Fin}}
+\newcommand{\Win}{\operatorname{Win}}
+\newcommand{\Cert}{\mathcal C}
+\newcommand{\Face}{\mathcal F}
+\newcommand{\Res}{\operatorname{res}}
+\newcommand{\card}[1]{\lvert #1\rvert}
+\newcommand{\N}{\mathbb N}
+\newcommand{\RTP}{\operatorname{RTC}}
+\newcommand{\code}[1]{\texttt{\small\detokenize{#1}}}
+\newcommand{\lean}[1]{\par\smallskip\noindent{\footnotesize Lean: \nolinkurl{#1}.}\par\smallskip}
+\newcommand{\leanok}{}
+\newcommand{\uses}[1]{}
+\newcommand{\notready}{}
+\newcommand{\status}[1]{\par\smallskip\noindent\textit{Evidence status: #1.}\par\smallskip}
+\newcommand{\proofsha}{\texttt{3446f6313f1f8a35a3c7891d5deece19c4599855}}
+\newcommand{\coresha}{\texttt{fb413043cb0f4369615132e014691782a344af8a}}
+\DefineVerbatimEnvironment{LeanCode}{Verbatim}{fontsize=\footnotesize,breaklines=true,breakanywhere=true,tabsize=2,numbersep=5pt}
+\title[Alexandria: verified discovery and face decomposition]{Alexandria $\Omega$: A Verifiable Architecture for Recursive Scientific Discovery\\
+--- From Symbolic Compression to Tool-Grounded Research Agents (2026)}
+\author{John D. Holden III}
+\date{29 October 2026}
+\subjclass[2020]{Primary 05A18; Secondary 03B35, 68T15, 68T37}
+\keywords{Same Game, noncrossing partitions, Lean 4, formal verification, proof provenance, research agents}
+\begin{filecontents*}[overwrite]{references.bib}
+@article{Hubert2026AlphaProof,
+  author = {Hubert, Thomas and Mehta, Rishi and Sartran, Laurent and others},
+  title = {Olympiad-level formal mathematical reasoning with reinforcement learning},
+  journal = {Nature},
+  volume = {651},
+  pages = {607--613},
+  year = {2026},
+  doi = {10.1038/s41586-025-09833-y},
+  note = {First published online 12 November 2025; issue version March 2026}
+}
+@article{Breen2026AxProver,
+  author = {Breen, Benjamin and Del Tredici, Marco and McCarran, Jacob and
+    Aspuru Mijares, Javier and Yin, Weichen Winston and Sulimany, Kfir and
+    Taylor, Jacob M. and Koppens, Frank H. L. and Englund, Dirk},
+  title = {{Ax-Prover}: a deep reasoning agentic framework for theorem proving
+    in mathematics and quantum physics},
+  journal = {Machine Learning: Science and Technology},
+  volume = {7},
+  pages = {045073},
+  year = {2026},
+  doi = {10.1088/2632-2153/ae9452},
+  note = {Preprint first posted in 2025 as arXiv:2510.12787}
+}
+@misc{LeanDojoV2,
+  author = {{LeanDojo contributors}},
+  title = {{LeanDojo-v2}: framework for training, evaluating, and deploying
+    {Lean} theorem provers},
+  year = {2026},
+  howpublished = {\url{https://github.com/lean-dojo/LeanDojo-v2}},
+  note = {Software repository; accessed 29 October 2026. No separate
+    LeanDojo-v2 journal article is asserted}
+}
+@incollection{Biedl2002,
+  author = {Biedl, Therese C. and Demaine, Erik D. and Demaine, Martin L. and
+    Fleischer, Rudolf and Jacobsen, Lars and Munro, J. Ian},
+  title = {The Complexity of {Clickomania}},
+  booktitle = {More Games of No Chance},
+  series = {Mathematical Sciences Research Institute Publications},
+  volume = {42},
+  publisher = {Cambridge University Press},
+  year = {2002},
+  pages = {389--404},
+  url = {https://library.slmath.org/books/Book42/files/biedl.pdf}
+}
+@article{BurnsPurcell2007,
+  author = {Burns, Chris and Purcell, Benjamin},
+  title = {Counting the number of winning binary strings in the 1-dimensional same game},
+  journal = {The Fibonacci Quarterly},
+  volume = {45},
+  number = {3},
+  pages = {233--238},
+  year = {2007},
+  doi = {10.1080/00150517.2007.12428215},
+  url = {https://www.fq.math.ca/Papers1/45-3/burns.pdf}
+}
+@misc{KrattenthalerMuller2007,
+  author = {Krattenthaler, Christian and M{\"u}ller, Thomas W.},
+  title = {Decomposition numbers for finite {Coxeter} groups and
+    generalised non-crossing partitions},
+  year = {2007},
+  howpublished = {arXiv:0704.0199},
+  doi = {10.48550/arXiv.0704.0199},
+  url = {https://arxiv.org/abs/0704.0199}
+}
+@misc{OEISA323844,
+  author = {{OEIS Foundation Inc.}},
+  title = {Entry {A323844}, The On-Line Encyclopedia of Integer Sequences},
+  year = {2026},
+  howpublished = {\url{https://oeis.org/A323844}},
+  note = {Accessed 29 October 2026; an index record, not a proof or novelty certificate}
+}
+@misc{MassotLeanBlueprint,
+  author = {Massot, Patrick and contributors},
+  title = {{Lean Blueprint}: a {plasTeX} plugin for formalization blueprints},
+  year = {2026},
+  howpublished = {\url{https://github.com/PatrickMassot/leanblueprint}},
+  note = {Publication toolchain pinned to leanblueprint 0.0.20; documentation accessed 29 October 2026}
+}
+@misc{AlexandriaCoreSnapshot,
+  author = {Holden, III, John D.},
+  title = {{Alexandria Core}: verification-first integration snapshot},
+  year = {2026},
+  howpublished = {\url{https://github.com/jdh1701/Alexandria_Omega_New}},
+  note = {Commit fb413043cb0f4369615132e014691782a344af8a}
+}
+@misc{SameGameProofSnapshot,
+  author = {Holden, III, John D.},
+  title = {{LC004}: structural heavy-face decomposition and certificate product},
+  year = {2026},
+  howpublished = {\url{https://github.com/jdh1701/jdh1701-lc004-same-game-}},
+  note = {Proof commit 3446f6313f1f8a35a3c7891d5deece19c4599855; Lean 4.19.0}
+}
+@misc{GitHubPagesDocs,
+  author = {{GitHub}},
+  title = {Using custom workflows with {GitHub Pages}},
+  year = {2026},
+  howpublished = {\url{https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages}},
+  note = {Documentation accessed 29 October 2026}
+}
+\end{filecontents*}
+\begin{document}
+\begin{abstract}
+We present a verified structural decomposition for one-dimensional Same Game and use it as a case study in accountable computational research. A finite word is winning under maximal-run deletion if and only if every appearing color occurs at least twice, the color classes of sizes two and three form a noncrossing rigid skeleton, and every complete heavy-face subword is winning. For a fixed word satisfying the first two conditions, restriction is a bijection between global pair/triple certificate partitions and the product of their distinct-face certificate partitions. Finite cardinality gives an exact certificate product formula. These results are checked in Lean 4.19.0 at the source commit identified in the verification ledger. Exhaustive computations through length ten independently compare maximal-run search, recursive certificate construction, and brute-force partition filtering. The counterexamples $A$, $ABAB$, and $AAABAB$ demonstrate the necessity of the three conditions; their minimality is computationally established, not a Lean-certified result of this checkpoint.
+
+The architectural contribution is a specification of claim-bound proof admission, reproducible receipts, and source-preserving publication. It distinguishes implemented Alexandria Core mechanisms from proposed transactional and streaming safeguards. Such mechanisms can close a defined proof-admission gap under explicit trust assumptions; they do not eliminate semantic formalization errors, establish novelty, or certify the research orchestrator itself. The general enumeration of winning words, the transfer to a wrap-around operational game, and full end-to-end orchestration correctness remain outside the verified result.
+\end{abstract}
+\maketitle
+\tableofcontents
+
+\section{Introduction: linear words and cyclic geometry}\label{sec:introduction}
+\subsection{The research problem and the exact contribution}
+One-dimensional Same Game asks whether a word can be erased by repeatedly deleting a maximal consecutive run of at least two equal letters. Deletion concatenates the surviving prefix and suffix, so previously separated equal letters can become adjacent. The existence of a successful deletion history is a structural question. Counting all winning words, all winning color patterns, or all successful certificates are different enumeration questions.
+
+This distinction controls the present paper. The verified result is a necessary-and-sufficient structural criterion and an exact product decomposition of certificates of a \emph{fixed} color pattern. It is not an unrestricted formula for the number of winning words of every length over every alphabet. A certificate count cannot be substituted for a winning-word count: the word $AAAA$ already has two pair certificates. An account of discovery that suppresses this distinction would overstate both the mathematics and the performance of the research system.
+
+The formal development proceeds from an established equivalence between actual maximal-run erasure and noncrossing pair/triple certificates. It then proves that every small color class is forced to be one certificate block, uses those classes to define geometric faces, proves confinement of heavy certificate blocks, and constructs the inverse assembly map. The crucial advance over a conditional restriction theorem is that the locality hypothesis is derived from the certificate geometry itself.
+
+The principal statements are Theorems~\ref{thm:face_lemma} and \ref{thm:cellular_assembly}, and Corollary~\ref{thm:certificate_product}. The complete source for the seven geometry, restriction, reconstruction, assembly, and product modules is reproduced in Appendix~\ref{app:sources}. Earlier imported foundations are identified by an immutable source inventory and remain part of the trusted formal dependency graph.
+
+\subsection{Operational semantics}
+Let $\Sigma$ be a finite alphabet. A word is a finite list
+\[
+ w=w_0w_1\cdots w_{n-1}\in\Sigma^*.
+\]
+A legal move chooses a maximal interval $[i,j)$ such that $j-i\geq2$ and
+$w_i=\cdots=w_{j-1}$, removes that interval, and concatenates the remaining lists.
+Maximality means that the interval cannot be extended to either side within
+the current word while preserving the same color. Write $w\longrightarrow w'$
+for one such move and $w\longrightarrow^*\epsilon$ for a finite successful
+history. The empty word is winning.
+
+The Lean relation \code{RawMaxErases} expresses the relevant multi-step
+semantics. A formalization of an auxiliary move system is not by itself enough:
+a correspondence with maximal moves is needed. That correspondence belongs to
+the imported foundation. The declaration
+\code{raw_win_iff_heavy_face_decomposition} finally states the face criterion
+directly for the list made from an arbitrary coloring, retaining the original
+colors in each face subword.
+
+\begin{definition}[Color pattern]\label{def:pattern}
+A color pattern on $n$ positions is an equivalence relation $p$ on
+$[n]=\{0,\ldots,n-1\}$. For a coloring $w:[n]\to\Sigma$, put
+\[
+ i\mathrel p j\quad\Longleftrightarrow\quad w_i=w_j.
+\]
+Write $[i]_p=\{j:i\mathrel p j\}$. A pattern is winning when one, equivalently
+every, realization of its color equalities is winning.
+\lean{LC004.ColorPattern}
+\leanok
+\end{definition}
+The formal type is \code{ColorPattern n := Setoid (Fin n)}. The map
+\code{patternColor} selects a representative position for every class.
+Its purpose is to supply finite color labels without adding unused-color
+multiplicities. Its defining property is
+\[
+ \operatorname{patternColor}(p,i)=\operatorname{patternColor}(p,j)
+ \quad\Longleftrightarrow\quad i\mathrel p j.
+\]
+The use of classical representatives affects computability of this
+presentation, not the logical content of the statements.
+
+\subsection{What the cyclic diagram means}
+For $n\geq3$, let $G_n$ denote the cycle graph whose vertices are $[n]$ in their
+cyclic order, with an edge from $i$ to $i+1$ modulo $n$. Place these vertices on
+the boundary of a disk and draw chords between appropriate positions. This is
+a representation of order and separation. The cases $n=0,1,2$ are treated
+directly, rather than by an ambiguous convention about loops or parallel edges.
+
+The cycle graph is \emph{not} the operational state graph used by the Lean
+theorem. The operational word has a distinguished cut between $n-1$ and $0$;
+those positions are not adjacent for purposes of a move. A ring game allowing
+a maximal run to cross this cut is a separate semantics. The certificate
+noncrossing predicate has a cyclic geometric interpretation, but that
+interpretation alone does not prove equivalence of the two move systems.
+No theorem in the cited checkpoint identifies their transition relations.
+
+This separation is essential in a publication about verification. A drawing
+can preserve the order-theoretic facts used in a proof while changing the rules
+of the game if interpreted literally. Throughout the mathematical claims
+marked as Lean verified, the domain is the linear word. The disk diagram
+organizes rigid chords and faces. Any future ring-game result must identify its
+own move relation and prove the semantic transfer.
+
+\begin{definition}[Noncrossing]\label{def:noncrossing}
+A partition $c$ of $[n]$ is noncrossing if, whenever
+$a<b<c'<d$ with $a\sim_c c'$ and $b\sim_c d$, one also has $a\sim_c b$.
+Thus interleaving pairs may occur only inside a single block.
+\lean{LC004.PatternNoncrossing}
+\leanok
+\end{definition}
+The formal predicate is \code{PatternNoncrossing}. It differs from the
+stronger condition forbidding \emph{all} alternating endpoint pairs. If every
+block has size at most three, the two conditions coincide: four distinct
+alternating positions cannot belong to the same block. Using the stronger
+predicate for a heavy original color class would be an error. Heavy colors
+may have four or more positions, and distinct certificate blocks of one color
+need not be identified.
+
+\subsection{Certificates, colors, and histories}
+\begin{definition}[Certificate partition]\label{def:certificate}
+For a pattern $p$, let
+\[
+ \Cert(p)=\{c:\ c\text{ is a noncrossing partition of }[n],\
+              \card{B}\in\{2,3\}\text{ for every block }B,\
+              c\leq p\},
+\]
+where $c\leq p$ means $a\sim_c b\Rightarrow a\mathrel p b$.
+\lean{LC004.CertificatePartition}
+\leanok
+\end{definition}
+A list-based certificate additionally records a list of blocks and lists of
+positions within blocks. Its exact-cover field is a permutation of all
+positions. The type $\Cert(p)$ forgets those irrelevant list orderings. It does
+not identify two genuinely different pair/triple partitions, even if they
+certify the same word.
+
+The imported certificate correspondence gives
+\begin{equation}\label{eq:certificate_characterization}
+ \Win(p)\quad\Longleftrightarrow\quad\Cert(p)\ne\varnothing.
+\end{equation}
+In Lean this is \code{winning_iff_constraint_refinement}. Conversion from a
+certificate partition to a list certificate is available in the new product
+module. Its inverse property states that the resulting block equivalence
+relation is exactly the supplied partition. This check matters: an existence
+proof for some certificate would not suffice to establish the product
+bijection of \emph{specified} partitions.
+
+For $AAAA$, the partitions
+\[
+ \{\{0,1\},\{2,3\}\},\qquad \{\{0,3\},\{1,2\}\}
+\]
+are both valid. The crossing pairing $\{\{0,2\},\{1,3\}\}$ is not.
+There is one color pattern, two certificate partitions, and a separate
+question about histories. Every counting formula below identifies which
+objects it counts.
+
+\subsection{Evidence conventions}
+Statements carrying a Lean declaration name refer to declarations compiled
+and axiom-audited in the frozen proof snapshot. Ordinary mathematical
+derivations without that marker are explanatory proofs in this manuscript.
+Finite experiments are reported with explicit bounds. Architecture contracts
+are design specifications unless a particular source implementation and
+validation result are supplied.
+
+The final proof snapshot is
+\begin{center}\footnotesize\proofsha.\end{center}
+It uses Lean 4.19.0 and the repository's pinned Mathlib dependency.
+Hosted run 40831342439 passed the full build, source guard, and transitive
+axiom audit. The audit covered 638 imported project declarations; all 162
+active modules were reachable from the root import. These numbers describe
+verification coverage. They are not units of discovery or a measure of
+distance to solving unrestricted enumeration.
+
+\section{The Face Lemma and the Path-Locality Criterion}\label{sec:faces}
+\subsection{Rigid and heavy positions}
+\begin{definition}[Rigid and heavy]\label{def:rigid_heavy}
+A position $i$ is rigid if $\card{[i]_p}\in\{2,3\}$ and heavy if
+$\card{[i]_p}\geq4$. Let $H(p)$ be the set of heavy positions.
+A singleton position is neither rigid nor heavy.
+\lean{LC004.RigidPosition,LC004.HeavyPosition}
+\leanok
+\end{definition}
+A winning word has no singleton color class. Deletion cannot create a second
+occurrence of a color. In the certificate presentation, a class containing
+one position cannot be covered by a monochromatic block of size two or three.
+
+The local rigidity statement must allow arbitrary sizes for all the other
+color classes. A theorem assuming that \emph{every} class is small is not
+enough for the mixed rigid/heavy geometry.
+
+\begin{lemma}[Local rigidity]\label{lem:rigidity}
+Let $c\in\Cert(p)$ and let $i$ be rigid. The $c$-block containing $i$ is
+the entire class $[i]_p$.
+\lean{LC004.certificate_rigid_block_eq_class}
+\leanok
+\uses{def:certificate,def:rigid_heavy}
+\end{lemma}
+\begin{proof}
+The block is monochromatic, so it is contained in $[i]_p$, and it has
+cardinality two or three. A proper inclusion can only leave one position
+uncovered in a class of size three. That remaining position would have to
+belong to a different monochromatic certificate block containing at least two
+positions. Exact coverage makes the two certificate blocks disjoint, so the
+second block would have to fit into a singleton. This is impossible.
+\leanok
+\uses{def:certificate}
+\end{proof}
+The proof is a finite cardinality argument with a disjointness step.
+It does not assume that unrelated heavy colors admit any predetermined
+partition.
+
+\subsection{A face defined without a planar drawing}
+For rigid positions $u,v$ of one color, define the open chord interval test
+\[
+ \chi_{u,v}(x)=
+ \begin{cases}
+ 1,&u<x<v,\\
+ 0,&\text{otherwise}.
+ \end{cases}
+\]
+The orientation with $u\geq v$ contributes a constant zero test and does not
+change the equivalence relation.
+
+\begin{definition}[Face signature]\label{def:face}
+Put $a\sim_F b$ when
+\begin{equation}\label{eq:face_signature}
+ \forall u,v,\quad
+ u\text{ rigid and }u\mathrel p v
+ \ \Longrightarrow\
+ (u<a<v\Longleftrightarrow u<b<v).
+\end{equation}
+For an anchor $a$, its complete heavy carrier is
+\[
+ H_a=\{x\in[n]:x\in H(p),\ a\sim_F x\}.
+\]
+The increasing enumeration is an order embedding
+$e_a:[\card{H_a}]\hookrightarrow[n]$.
+\lean{LC004.rigidFacePattern,LC004.heavyFacePositions,LC004.heavyFaceEmbedding}
+\leanok
+\uses{def:rigid_heavy}
+\end{definition}
+Equality of all Boolean tests is an equivalence relation even when the rigid
+skeleton crosses. For the decomposition theorem, noncrossing of the skeleton
+is a separate condition. Defining the faces first avoids embedding the desired
+conclusion into the definition.
+
+The quotient $[n]/{\sim_F}$ includes signature classes represented by rigid
+positions and possibly having empty heavy carriers. Such classes do not cause
+duplicate heavy positions. They contribute empty local partition types, each
+with its unique empty partition, when a product is formed. A geometric face
+with no marked position need not appear in this quotient at all; omitting a
+factor equal to one has no effect on the certificate product.
+
+\begin{lemma}[Arc criterion]\label{lem:arc}
+For heavy positions $a<b$, one has $a\sim_F b$ if and only if there are no
+same-colored rigid positions $u,v$ such that
+\[
+ a<u<b,\qquad v<a\ \text{or}\ b<v.
+\]
+\lean{LC004.rigid_face_iff_no_rigid_arc_separator}
+\leanok
+\uses{def:face}
+\end{lemma}
+This expresses the two-open-arcs separation criterion on the cyclic diagram.
+The exclusion of boundary endpoints follows from heaviness: a heavy
+position cannot equal a rigid one. The statement identifies the
+order-theoretic signature with the intended geometric separation test, without
+changing the operational game.
+
+\subsection{Confinement of certificate blocks}
+\begin{theorem}[Heavy-block confinement]\label{thm:confinement}
+If $c\in\Cert(p)$, $a$ is heavy, and $a\sim_c b$, then $b$ is heavy and
+$a\sim_F b$.
+\lean{LC004.certificate_heavy_face}
+\leanok
+\uses{lem:rigidity,def:face}
+\end{theorem}
+\begin{proof}
+Monochromaticity gives $a\mathrel p b$, so $a$ and $b$ have the same original
+color-class size. Thus $b$ is heavy. Fix a rigid chord $u,v$ of one color.
+By Lemma~\ref{lem:rigidity}, $u$ and $v$ lie in one forced certificate block.
+If precisely one of $a,b$ lies in $(u,v)$, the two certificate blocks have
+alternating endpoint pairs in one of their orders. Their four endpoints are
+distinct because heavy and rigid positions are disjoint. This contradicts
+noncrossing for blocks of size at most three. Therefore the interval tests
+agree for every rigid chord.
+\leanok
+\uses{lem:rigidity,def:noncrossing}
+\end{proof}
+The conclusion concerns a certificate block, not a complete heavy
+\emph{color} class. For example, in $AABAAB$ the two occurrences of $B$
+form a rigid chord. The four $A$ positions lie in two heavy faces, but each
+pair block of the unique certificate stays in one face. Promoting confinement
+from certificate blocks to color classes would falsely reject this winning
+word.
+
+\begin{corollary}[Face saturation]\label{lem:saturation}
+If $e$ enumerates all and only the heavy positions in one face and
+$c(e(i),b)$, then $b$ is in the range of $e$.
+\lean{LC004.certificate_face_saturated}
+\leanok
+\uses{thm:confinement}
+\end{corollary}
+This closure condition is stronger than merely saying that two endpoints of
+an already chosen path lie in the face. It prevents the path from leaving at
+its first step.
+
+\subsection{Joins, paths, and restriction}
+For equivalence relations $c,d$ on the same set, their join $c\vee d$ is the
+least equivalence relation containing both. Write $E_{c,d}(x,y)$ for
+$c(x,y)\lor d(x,y)$ and let $\RTP(E_{c,d})$ be its reflexive transitive closure.
+Because the generating relation is symmetric, this closure is already an
+equivalence relation, and
+\begin{equation}\label{eq:join_paths}
+ (c\vee d)(x,y)\quad\Longleftrightarrow\quad \RTP(E_{c,d})(x,y).
+\end{equation}
+The repository proves path completeness as \code{faceJoinPath_complete}.
+The development does not rely on a declaration named
+\code{LC004.reflTransGen_symm}; that suggested name is not part of the frozen
+project inventory.
+
+Restriction along an injection $e$ is the pullback relation
+$\Res_e(c)(i,j)\Longleftrightarrow c(e(i),e(j))$. The inclusion
+\[
+ \Res_e(c)\vee\Res_e(d)\ \leq\ \Res_e(c\vee d)
+\]
+is immediate by lifting each local edge. The reverse inclusion can fail:
+a global path may connect two selected points through an omitted point.
+One cannot prove equality by functorial notation alone.
+
+\begin{definition}[Path locality]\label{def:locality}
+A carrier $e$ has path locality for $c,d$ if every global $E_{c,d}$-path between
+$e(i)$ and $e(j)$ can be represented by an internal path in the carrier
+between $i$ and $j$.
+\lean{LC004.FacePathLocality}
+\leanok
+\end{definition}
+The original conditional result said that path locality implies restriction
+commutes with binary join. The geometric development supplies this hypothesis.
+
+\begin{lemma}[Locality from saturation]\label{lem:locality}
+If $e$ is injective and its range is closed under every $c$-edge and every
+$d$-edge, then $e$ has path locality for $c,d$.
+\lean{LC004.facePathLocality_of_edge_saturation}
+\leanok
+\uses{def:locality}
+\end{lemma}
+\begin{proof}
+Induct on the number of edges in a global path. Lift its initial vertex using
+the given starting index. If the prefix ends at $e(k)$ and the next edge
+reaches $z$, saturation supplies an index $\ell$ with $e(\ell)=z$.
+Append the corresponding restricted edge. At the final vertex,
+injectivity identifies the constructed index with the prescribed endpoint.
+The zero-edge path gives reflexivity.
+\leanok
+\end{proof}
+
+\begin{theorem}[Geometric join restriction]\label{thm:join_restriction}
+For two certificates $c,d$ of the same color pattern and every canonical
+complete heavy face,
+\[
+ \Res_{e_a}(c\vee d)=\Res_{e_a}(c)\vee\Res_{e_a}(d).
+\]
+\lean{LC004.canonical_heavy_face_restrict_join}
+\leanok
+\uses{lem:saturation,lem:locality}
+\end{theorem}
+The statement refers to the block equivalence relations of the certificates.
+It does not assert that arbitrary equivalence relations on the positions
+satisfy the same identity. It also does not allow an arbitrary subset of a face
+to replace the complete heavy carrier.
+
+\subsection{Winning face subwords}
+\begin{lemma}[Restriction preserves winning]\label{lem:restriction}
+If $p$ is winning, then every restricted pattern $\Res_{e_a}(p)$ is winning.
+The increasing word in the original colors on $H_a$ is erasable by maximal
+runs.
+\lean{LC004.winning_restrict_heavy_face,LC004.raw_win_heavy_face_word}
+\leanok
+\uses{lem:saturation}
+\end{lemma}
+\begin{proof}
+Choose a global certificate. Saturation says that every certificate class
+meeting the face is wholly contained in it. Consequently restriction
+preserves its cardinality, so the restricted classes still have size two
+or three. The increasing embedding preserves the ordering of four endpoints
+and hence noncrossing. Monochromaticity is preserved by pullback.
+Equation~\eqref{eq:certificate_characterization} gives the local win, and the
+imported semantic correspondence returns a maximal-run erasure in the
+original face colors.
+\leanok
+\end{proof}
+
+\begin{theorem}[Structural Face Lemma]\label{thm:face_lemma}
+For every finite color pattern $p$,
+\begin{align*}
+ \Win(p)\quad\Longleftrightarrow\quad&
+ \bigl(\forall i,\ \card{[i]_p}\geq2\bigr)\\
+ &{}\land\bigl(\text{the rigid skeleton has no alternating chord pairs}\bigr)\\
+ &{}\land\bigl(\forall a,\ \Win(\Res_{e_a}(p))\bigr).
+\end{align*}
+The same equivalence holds for maximal-run erasure of a word with its
+original colors.
+\lean{LC004.winning_iff_heavy_face_decomposition,LC004.raw_win_iff_heavy_face_decomposition}
+\leanok
+\uses{lem:rigidity,lem:restriction,thm:cellular_assembly}
+\end{theorem}
+Necessity follows from the certificate cover, rigidity, and restriction.
+Sufficiency is the assembly theorem proved in the next section. The theorem
+has no assumed global certificate, path-locality oracle, or face-saturation
+oracle. Its three right-hand conditions are mathematical conditions on the
+input, not hidden formalization assumptions.
+
+\section{Cellular assembly and the duplication-free bijection}\label{sec:assembly}
+\subsection{An ordered region assembly theorem}
+The term \emph{cellular} refers here to a decomposition into ordered carriers.
+No CW complex, chain complex, homology theory, or topological gluing theorem
+is silently being invoked.
+
+Let $(S_k)_{k\in I}$ be pairwise disjoint subsets covering $[n]$, with increasing
+enumerations $e_k:[m_k]\hookrightarrow[n]$. Assume that alternating endpoint
+pairs cannot belong to distinct regions:
+\begin{equation}\label{eq:region_noncrossing}
+ e_k(i)<e_\ell(s)<e_k(j)<e_\ell(t)\quad\Longrightarrow\quad k=\ell.
+\end{equation}
+For each $k$, choose a certificate partition $c_k$ of the restricted pattern.
+Define
+\begin{equation}\label{eq:assembled}
+ x\sim_g y\quad\Longleftrightarrow\quad
+ \exists k,i,j,\quad e_k(i)=x,\ e_k(j)=y,\ i\sim_{c_k}j.
+\end{equation}
+
+\begin{lemma}[Assembly on regions]\label{lem:region_assembly}
+The relation $g$ is a certificate partition of $p$, and
+$\Res_{e_k}(g)=c_k$ for every $k$.
+\lean{LC004.assembledPattern_constraint,LC004.exists_partition_of_noncrossing_regions}
+\leanok
+\uses{def:certificate}
+\end{lemma}
+\begin{proof}
+Coverage supplies a region and local coordinate for each position, proving
+reflexivity. Symmetry is inherited locally. For transitivity, two witnesses
+sharing a middle position must belong to the same region by disjointness.
+Injectivity of that region's embedding identifies their middle coordinates,
+and local transitivity completes the argument.
+
+A $g$-class meeting $S_k$ stays inside $S_k$. Its pullback is precisely the
+corresponding $c_k$-class, so its cardinality is two or three. If two
+$g$-relations have alternating endpoints, \eqref{eq:region_noncrossing} puts
+them in the same region. The increasing embedding reflects their inequalities;
+local noncrossing then implies the required relation between the first two
+endpoints. Finally, the local refinement $c_k\leq\Res_{e_k}(p)$ implies
+$g\leq p$.
+
+To verify exact restriction, unfold \eqref{eq:assembled}. A witness connecting
+two points of $S_k$ cannot come from a different region. Injectivity then
+recovers the original local coordinates. The converse uses $k$ itself.
+\leanok
+\end{proof}
+The theorem does not require the index set $I$ to be finite. Only each carrier
+and the covered set are finite. Empty carriers introduce no relations.
+
+\subsection{The actual regions}
+Use two kinds of indices: rigid color classes and face-signature classes.
+A rigid-color index carries all positions of that color; a face index carries
+its complete heavy set. Quotients rather than arbitrary anchors index each
+class once.
+
+If every color occurs at least twice, each position is either rigid or heavy,
+so the regions cover. Two rigid regions are disjoint unless their colors
+coincide. A rigid and heavy region are disjoint by cardinality. Two heavy
+regions sharing a position have the same signature class.
+
+There are four cases in \eqref{eq:region_noncrossing}. Two rigid regions
+cannot alternate because of the assumed skeleton condition. A rigid chord
+cannot alternate with a heavy pair in one face, because that would put the
+two heavy endpoints on different sides of the chord. The reversed mixed
+case is the same interval argument in the other endpoint order.
+For two heavy faces, an alternating pair in each forces the signatures to
+agree. This last observation is the declaration
+\code{rigid_faces_no_alternation}; it is derived directly from the interval
+tests.
+
+Each rigid region has a unique possible certificate block: its whole color
+class, of size two or three. The heavy regions receive the independently
+specified face partitions. Lemma~\ref{lem:region_assembly} now supplies a
+global partition. Its existence proves the reverse direction of the Face
+Lemma.
+
+\subsection{Injectivity and surjectivity}
+Let $Q_F=[n]/{\sim_F}$. Choose the representative $q.\mathrm{out}$ used by the
+formal quotient and write $e_q$ for its heavy-face embedding. Consider
+\begin{equation}\label{eq:restriction_map}
+ R:\Cert(p)\longrightarrow\prod_{q\in Q_F}\Cert(\Res_{e_q}(p)),
+ \qquad R(c)_q=\Res_{e_q}(c).
+\end{equation}
+The map is defined for every certificate partition of every pattern. Face
+saturation guarantees that each component belongs to its claimed codomain.
+
+\begin{theorem}[Cellular assembly isomorphism]\label{thm:cellular_assembly}
+Suppose every appearing color has at least two positions and the rigid
+skeleton is noncrossing. Then $R$ is a bijection:
+\[
+ \Cert(p)\ \simeq\ \prod_{q\in Q_F}\Cert(\Res_{e_q}(p)).
+\]
+\lean{LC004.heavyFaceCertificateEquiv}
+\leanok
+\uses{thm:confinement,lem:rigidity,lem:region_assembly}
+\end{theorem}
+\begin{proof}
+For injectivity, suppose two global partitions have the same face
+restrictions. A relation beginning at a rigid position is forced by the
+original color class, so it holds in both partitions. A relation beginning
+at a heavy position stays in one heavy face by confinement. Lift its endpoints
+into the increasing face coordinates, use equality of restrictions, and
+return to the global positions. Interchanging the two partitions gives
+equality.
+
+For surjectivity, take any tuple of local partitions. Supply the forced
+rigid blocks and apply the regional assembly. Exact restriction in
+Lemma~\ref{lem:region_assembly} proves that the resulting global partition
+maps to the supplied tuple. Thus assembly recovers every tuple, and
+injectivity shows that it does so uniquely.
+\leanok
+\end{proof}
+No global winning hypothesis is assumed. If some face has no certificate,
+the product type is empty; the global certificate type is empty as well.
+For the empty word both sides have one element. This is a type-level
+bijection before a numerical identity is extracted.
+
+\begin{corollary}[Certificate product]\label{thm:certificate_product}
+Under the hypotheses of Theorem~\ref{thm:cellular_assembly},
+\[
+ \card{\Cert(p)}
+ =\prod_{q\in Q_F}\card{\Cert(\Res_{e_q}(p))}.
+\]
+\lean{LC004.certificate_partition_count_product}
+\leanok
+\uses{thm:cellular_assembly}
+\end{corollary}
+\begin{proof}
+Every partition type in the statement is finite. Apply invariance of finite
+cardinality under equivalence and the cardinality formula for a finite
+dependent product.
+\leanok
+\end{proof}
+A count of list encodings would contain extra factorial factors. A count of
+deletion histories would contain different multiplicities. Neither occurs
+here. The certificate partition is the object whose equality and cardinality
+are being used.
+
+\subsection{The remaining slot correspondence}
+The following ordinary mathematical derivation supplies a precise next
+formalization target. It is not included among the Lean-certified results of
+the frozen checkpoint.
+
+Fix a rigid skeleton word $r$ with $m$ positions and a disjoint set $H$ of
+prospective heavy colors. There are $m+1$ linear insertion gaps, indexed by
+$j=0,\ldots,m$. The gap $j$ is after the first $j$ rigid positions.
+For a rigid chord with skeleton indices $u<v$, the gap lies on its inside
+precisely when $u<j\leq v$. Equal gap signatures define geometric gap faces.
+Let $S_f$ be the increasing list of gaps in face $f$ and let $s_f=\card{S_f}$.
+Every such gap face is nonempty by definition.
+
+\begin{proposition}[Slot bijection, manuscript proof]\label{prop:slots}
+Fix a face word $u_f$ of length $h_f$ for every gap face. The ways to place
+these words in their prescribed gaps while preserving their order are in
+bijection with
+\[
+ \prod_f\left\{(\ell_{f,1},\ldots,\ell_{f,s_f})\in\N^{s_f}:
+                  \sum_j\ell_{f,j}=h_f\right\}.
+\]
+Their number is
+\[
+ \prod_f \binom{h_f+s_f-1}{s_f-1}.
+\]
+\status{ordinary mathematical proof below; Lean slot bijection remains open}
+\end{proposition}
+\begin{proof}
+A weak composition cuts $u_f$ into consecutive pieces of the indicated
+lengths, allowing empty pieces. Insert the pieces into the gaps of $S_f$ in
+increasing order. Conversely, given a placement, count the heavy letters in
+each gap. Concatenating the gap contents in $S_f$ recovers $u_f$ and those
+counts recover its cuts. The two operations are inverse.
+
+For the count, encode the composition by a sequence of $h_f$ indistinguishable
+marks and $s_f-1$ separators. Reading the numbers of marks between separators
+recovers the parts. Choose the positions of the separators among
+$h_f+s_f-1$ positions. Different faces have disjoint gaps, so the counts
+multiply.
+\end{proof}
+The two end gaps have the same all-zero rigid-chord signature and both
+belong to the outer face. Their being distinct gaps is the source of the
+extra outer slot. Identifying the two end gaps because of a circular drawing
+would count a different placement problem. For $m=0$, there is one gap,
+one face, and exactly one placement of any specified word.
+
+To retain the intended rigid/heavy decomposition after insertion, every
+color from $H$ used in the resulting word must occur at least four times
+globally, and none may be a rigid color. Individual faces may contain fewer
+than four occurrences of a heavy color. Applying a threshold independently
+inside each face would therefore be wrong.
+
+The slot proof is useful partial progress, but it is not yet a profile
+enumeration theorem. One must also count rigid skeletons with their gap-face
+data, account for color labels, and impose the global content constraint
+without counting a winning word once per certificate.
+
+\section{Minimal counterexample registry}\label{sec:counterexamples}
+\subsection{Why a registry belongs in the proof record}
+A failed hypothesis identifies the boundary of a theorem. It should be retained
+with its precise model, input, and scope of minimality. A program that finds
+one obstruction proves neither universal failure nor minimality without a
+complete search of smaller inputs. Conversely, a surviving finite search
+does not prove a universal theorem.
+
+The present registry records two kinds of failure. Mathematical examples
+refute weakened formulations. Elaboration failures describe code that did
+not compile and the corrections made before a proof was admitted. The latter
+are not mathematical counterexamples. In particular, compiler-generated
+references to an unresolved placeholder during a failed build are evidence
+of failure, never a certificate that can be promoted.
+
+\subsection{Removing the no-singleton condition}
+For $w=A$, the rigid skeleton and heavy carrier are empty. Thus the skeleton
+condition and every face-winning condition hold vacuously. Nevertheless no
+legal move exists. The one position has no possible pair/triple cover.
+This is a counterexample to the implication obtained by dropping the
+no-singleton conjunct of Theorem~\ref{thm:face_lemma}.
+
+The empty word is winning, so no shorter obstruction exists. The finite
+registry also confirms this by exhaustive enumeration. The stated minimality
+is not represented by a dedicated Lean declaration in the cited proof
+snapshot; the manuscript's elementary reasoning and the computational
+verification must not be relabeled as a new kernel theorem.
+
+\subsection{Removing rigid-skeleton noncrossing}
+For $w=ABAB$, both color classes have size two, and there are no heavy
+positions. The no-singleton condition holds, and all heavy-face conditions
+are vacuous. The two rigid chords join $\{0,2\}$ and $\{1,3\}$ and cross.
+There is no adjacent equal pair, so the word loses.
+
+Any word of length at most three with no singleton colors has at most one
+appearing color and is immediately erasable, apart from the empty case.
+Hence four is the least possible length of such a counterexample. This
+ordinary argument agrees with the enumerator. It also makes clear that
+noncrossing is a genuine restriction on the forced blocks, rather than a
+notational property of the drawing.
+
+\subsection{Removing winning of the heavy faces}
+For $w=AAABAB$, the four $A$ positions are heavy and the two $B$ positions,
+at indices $3$ and $5$, form a single rigid chord. Thus the skeleton is
+noncrossing and no original color is a singleton. The heavy carriers contain
+the subwords $AAA$ and $A$. The second loses.
+
+The only legal first move deletes the initial $AAA$, leaving $BAB$, which
+has no legal move. So the whole word loses. There is also a short
+size-based minimality argument. A heavy position requires at least four
+occurrences of its color. To split these among different heavy faces,
+there must be at least one rigid color with at least two occurrences, so
+at least six positions are needed. If there is no rigid class and the total
+length is at most five under the no-singleton condition, a heavy class
+occupies the whole word, and that word wins. Thus this obstruction first
+appears at length six. The finite audit independently examines all shorter
+color patterns.
+
+\begin{center}
+\begin{tabular}{llll}
+\toprule
+Omitted condition & Witness & Other conditions & Minimality evidence\\
+\midrule
+No singletons & $A$ & Hold & Finite search, short argument\\
+Rigid noncrossing & $ABAB$ & Hold & Finite search, short argument\\
+Winning faces & $AAABAB$ & Hold & Finite search, short argument\\
+\bottomrule
+\end{tabular}
+\end{center}
+The table does not assert Lean-certified minimality. The full structural
+criterion is kernel checked; these particular minimality claims have the
+evidence types stated in the last column.
+
+\subsection{Incomplete carriers break join restriction}
+Take the word $AAAA$, its two certificate partitions displayed in
+Section~\ref{sec:introduction}, and the selected carrier $\{0,2\}$.
+The join of the two global partitions is indiscrete, so its restriction
+relates $0$ and $2$. Each separately restricted partition is discrete on
+$\{0,2\}$, so their local join does not relate those points. Hence
+\[
+ \Res_{\{0,2\}}(c\vee d)\ne
+ \Res_{\{0,2\}}(c)\vee\Res_{\{0,2\}}(d).
+\]
+There is only one geometric heavy face in this word. The failure comes from
+using an incomplete subset of it. This example discriminates sharply
+between a geometric locality theorem and an invalid claim that restriction
+preserves joins for arbitrary selected positions.
+
+\subsection{Global colors need not be face-local}
+The winning word $AABAAB$ has rigid class $\{2,5\}$ and heavy faces
+$\{0,1\}$ and $\{3,4\}$. A successful history removes the first $AA$, then
+the remaining $AA$, then $BB$. Its heavy color occurs on both sides of
+the rigid chord, while the certificate blocks remain confined. A test that
+requires each original heavy color class to occupy one face would therefore
+discard legitimate winning words.
+
+The same example explains why a multivariate enumeration must retain
+global color identity across faces. Two local face words using a letter
+called $A$ may refer to the same global color. Treating those labels as
+independently renameable loses precisely the information needed to enforce
+heavy multiplicities and count labeled words.
+
+\subsection{Independent finite implementations}
+The first solver enumerates legal maximal runs and recursively searches the
+strictly shorter residual word. Canonical renaming allows memoization without
+depending on specific alphabet labels. The second solver recursively
+constructs noncrossing pair/triple partitions by choosing the block of the
+least remaining position and recursing on the intervening intervals.
+The third oracle enumerates every set partition and filters by three direct
+conditions: block sizes in $\{2,3\}$, monochromaticity, and absence of a
+four-position alternating witness.
+
+The last oracle does not assume face factorization or the interval recurrence.
+It shares the restricted-growth input generator with the other experiments.
+That shared component is disclosed because agreement is algorithmic
+cross-checking, not statistical independence of three unrelated datasets.
+The face test has an additional comparison between interval signatures and
+the two-open-arcs criterion.
+
+Through length ten, the tests visit 142,418 color patterns, including 22,083
+without singleton classes. They find 2,592 winning patterns and 6,707
+certificate partitions. Face assembly recovers each of the 6,707 partitions
+exactly once. The product identity is checked in 7,300 no-singleton,
+noncrossing-skeleton cases, including zero products when a face loses.
+These counts include the empty word and its empty certificate.
+
+\subsection{Failure records and corrections}
+Four proof-development failures are preserved in the machine-readable
+registry. A simplifier erased useful membership information while proving a
+rigid-class restriction. A raw-word corollary needed explicit arguments to
+a pullback relation lemma. A product construction used a reserved identifier
+and lacked a classical finite-instance scope. Finally, transport across
+equal finite carriers produced dependent embedding types that were awkward
+to identify. The final injectivity proof instead lifts both endpoints into
+their common canonical face.
+
+These corrections changed how the proofs were expressed, without weakening
+the advertised theorem. Every failed compilation preceded the successful
+source snapshot. The publication ledger references only the final sources
+and successful runs; it preserves the unsuccessful attempts as a separate
+history of method and error.
+
+\section{The Alexandria \texorpdfstring{$\Omega$}{Omega} epistemic operating system}\label{sec:architecture}
+\subsection{A small trusted core around an expansive search}
+The phrase \emph{epistemic operating system} describes an organization of
+claims, evidence, obligations, and decisions. It is not a claim that Alexandria
+is a formally verified operating system or a generally intelligent autonomous
+scientist. The relevant Core snapshot is
+\begin{center}\footnotesize\coresha.\end{center}
+Its architecture and selected implementation files were inspected for this
+publication. The Same Game proof was built and audited separately; no
+Core-authority proof receipt for that campaign was issued.
+
+The Core design separates proposal from admission. A generative component
+can propose a conjecture, a source, a counterexample, a proof sketch, or a
+formal proof candidate. None gains authority merely because it was generated
+inside the system. An input schema makes its structure explicit. Verifiers
+then decide particular predicates about it. A theorem claim requires a
+formal-proof gate, not an aggregate plausibility score.
+
+A useful symbolic compression is the replacement of many equivalent word
+representations by one color pattern. This reduction preserves the equality
+structure relevant to the game. It is mathematically justified by the
+certificate correspondence. By contrast, compressing a proof search into
+a short narrative does not preserve all its assumptions automatically.
+The former is a proved representation change; the latter is an editorial
+operation requiring provenance.
+
+The campaign illustrates a productive recursive cycle:
+formulate a discriminating obligation, seek a small counterexample, choose a
+representation that exposes the obstruction, formalize the surviving
+statement, and update the queue. Repeating verbal criticism without a new
+test is not an additional verification step. The correction from arbitrary
+carriers to complete heavy carriers is an example of a change driven by a
+specific obstruction.
+
+\subsection{Claim identity and the formalization boundary}
+Let $C$ denote a canonical record of a scientific claim. At minimum, it must
+include the statement, its domain, parameters, assumptions, and intended
+interpretation. Let $D$ identify a native Lean declaration and let $B$ be a
+complete proof-source bundle, including dependency and toolchain identities.
+A claim-bound formal receipt must bind at least
+\begin{equation}\label{eq:receipt_tuple}
+ (H(C),D,H(B),H(K),H(A),H(V),\text{result}),
+\end{equation}
+where $K$ identifies the kernel or checker, $A$ the axiom auditor, and $V$
+the executing verification bundle. Here $H$ denotes a specified cryptographic
+content digest over canonical bytes, not a semantic equivalence test.
+
+The Core formal gate checks receipt bindings against the expected claim and
+reviewed formalization. A successful run on a nearby declaration is not a
+successful run on this declaration. Similarly, a receipt for a word model
+with arbitrary-run deletion would not establish a theorem about maximal
+deletion unless the correspondence is part of the reviewed bundle.
+
+No digest can prove that a formal statement is the correct translation of
+its informal claim. The review relation
+\[
+ C\ \mathrel{\leadsto}\ (D,B)
+\]
+therefore remains a separate, explicit obligation. In this campaign it
+includes the linear/cyclic distinction, the exact meaning of a face carrier,
+the difference between certificates and winning words, and the scope of
+minimality. These are mathematical model checks rather than hash checks.
+
+\subsection{Bidirectional evidence receipts}
+Bidirectional traceability means that the record supports both queries:
+which exact artifact verifies a claim, and which exact claim does an artifact
+purport to verify? The first direction prevents a bibliography or a green CI
+badge from being used as evidence for an unspecified theorem. The second
+prevents a genuine proof from being reassigned to a stronger or different
+statement.
+
+The implemented receipt ledger stores ordered events with payload digests
+and predecessor links. The formal gate additionally requires an explicitly
+trusted authority and exact claim/formalization/checker bindings. These are
+distinct mechanisms. A hash-chained record of an invalid proof is still a
+record of an invalid proof. A valid theorem with a missing provenance record
+remains a theorem, but its publication claim cannot yet be reproduced from
+that record alone.
+
+A bidirectional publication ledger should expose, for each theorem:
+the manuscript label, native declaration, source location, source digest,
+toolchain, successful run, axiom audit result, and the limitations of the
+prose-to-formal mapping. The inverse index should allow a declaration to
+list all claims that cite it. If one declaration appears under several
+stronger prose statements, the discrepancy should be reviewable rather than
+hidden in a graph.
+
+A receipt chain detects changes relative to a retained reference. It does
+not independently authenticate its author, establish a trustworthy time,
+or prove that an artifact existed before a competing publication. Those
+properties require external signing, timestamping, or an archival institution.
+This paper makes no priority claim based solely on internal hashes.
+
+\subsection{Transaction-locked orchestration: a specified guarantee}
+A transactional publication mechanism should ensure that the source being
+published is the source that was checked. Let $s$ be the immutable snapshot
+submitted for verification, $h=H(s)$, and $r$ a passing receipt bound to $h$.
+Let the branch head expected by the publisher be $b$. A publish transition
+should have the form
+\begin{equation}\label{eq:publish_guard}
+ \operatorname{publish}(s,r,b)\text{ succeeds only if }
+ \operatorname{verified}(r,h)\land
+ \operatorname{currentHead}=b.
+\end{equation}
+The update must be conditional on the expected head at the moment it takes
+effect. A check made earlier, followed by an unconditional write, is not the
+same guarantee.
+
+\begin{proposition}[Conditional source-preservation contract]\label{prop:transaction}
+Suppose immutable source snapshots have collision-free content identities
+on the admitted snapshot set, the verifier binds
+a passing result to the exact snapshot digest, and publication atomically
+checks both that binding and the expected predecessor. Then a successful
+publication under that contract cannot silently substitute a different
+source snapshot for the verified one.
+\status{architecture contract with a direct conditional argument; not a Lean theorem about Core}
+\end{proposition}
+\begin{proof}
+A substituted snapshot either has a different digest, contradicting the
+verification-binding check, or has the same digest. Under the stated
+collision-free identity assumption, the latter is the same snapshot. A concurrent
+branch replacement invalidates the expected predecessor and causes the
+conditional update to fail. These exhaust the specified substitution cases.
+\end{proof}
+The assumptions carry the engineering content. They include digest integrity,
+immutable acquisition, atomic admission, and correct deployment code.
+The proposition does not prove that a running Python process enforces those
+assumptions. Nor does it prevent an operator from selecting a malicious
+authority.
+
+The campaign used conditional branch updates and retained proof and evidence
+commits separately. Its evidence-only head was checked for equality of code,
+workflow, and toolchain files against the successful proof commit.
+This is an observed source-preservation practice. It is not an end-to-end
+formal verification of a distributed transaction protocol.
+
+\subsection{Streaming bulkheads: audit finding and design requirement}
+A streaming bulkhead is a boundary that enforces resource budgets while an
+untrusted producer is still emitting output. It should bound each output
+channel, total retained bytes, elapsed time, and any intermediate decoding
+buffer. On violation it should terminate the relevant process group, preserve
+a bounded diagnostic, and return a failure that cannot be interpreted as a
+passing proof.
+
+The inspected \code{SubprocessVerifier} in the frozen Core directs output to
+temporary files, imposes a timeout, then reads the files after the process
+finishes. Its configured output-size check follows the read. This is not
+a demonstrated streaming memory bound, and the size of stderr is not covered
+by the same stdout predicate at that point. Separate process resource limits
+can reduce some risks, but they do not turn a post-hoc size check into a
+streaming proof.
+
+Accordingly, streaming bulkheads are a proposed strengthening in this paper,
+not a completed capability attributed to the snapshot. A suitable experiment
+would provide an output-flooding verifier, a slow emitter, a process that
+spawns children, and malformed UTF-8 near the byte limit. The evaluator
+would measure peak memory, disk growth, termination latency, and whether
+every case produces a bounded failure receipt. A nominal configuration
+value without those measurements is insufficient.
+
+\subsection{State-substitution shields}
+The inspected Lean adapter validates source inventories and hashes, builds in
+a fresh directory, verifies the pinned Lean version, and runs a separately
+identified axiom auditor. The bounded-session utility binds cached reports to
+scenario, kernel-source, and runtime identities. These mechanisms obstruct
+specific substitution failures: stale cache reuse after a source change,
+an unlisted source file, or a proof result attached to another scenario.
+
+They do not justify an unrestricted claim that state substitution has been
+eliminated. A digest computed before execution and a path opened later can
+leave a time-of-check/time-of-use question. Writable dependencies, mutable
+executables, environment-sensitive behavior, and an attacker-controlled
+authority each require their own assumptions and tests. Process mode is not
+network isolation; the Core architecture explicitly leaves container
+enforcement to deployment tooling.
+
+A stronger shield would identify immutable handles or snapshots for the
+executable, inputs, dependencies, and relevant environment; record the
+captured identities in the request; and verify them at admission. If such a
+design is implemented, a mutation matrix should include replacements before
+capture, between capture and execution, between execution and admission, and
+after publication. A passing response must never be accepted merely because
+it repeats the digest supplied in an untrusted request.
+
+\subsection{Failure memory and research scheduling}
+The Core uses a transactional SQLite failure-memory journal. Re-inserting the
+same failure signature for the same run should not increase recurrence twice;
+a distinct run may increase it. This is a persistence invariant about recorded
+events, not a proof that the recorded scientific diagnosis is correct.
+
+The existing campaign planner bounds task expansion and records dependencies,
+identities, budgets, and a planning receipt. It has no theorem authority and
+does not execute model calls merely by constructing a plan. After the present
+proof milestone, three queued targets are marked verified in the separate
+Lean-evidence progress record: gluing, the structural iff, and certificate
+partition equivalence. The native remaining plan still reports zero started,
+completed, and verified execution counters, because it has not executed
+the remaining tasks.
+
+Those remaining tasks concern slots, profile counting, and general
+enumeration. Keeping their status separate prevents a common accounting
+failure: treating a well-structured plan as completed research. It also
+preserves useful partial knowledge. The structural result is retained even
+though a general generating function is not yet available.
+
+\subsection{Assurance matrix}
+\begin{longtable}{p{.22\textwidth}p{.31\textwidth}p{.38\textwidth}}
+\toprule
+Mechanism & Evidence in inspected snapshot & Boundary\\
+\midrule\endhead
+Claim-bound formal gate & Source checks authority, claim, declaration, bundle and checker bindings & Formalization adequacy and chosen authority remain trusted\\
+Receipt chain & Payload and predecessor digests are recomputable & No external identity or timestamp guarantee\\
+Lean replay & Source inventory, fresh build, pinned version, axiom audit & Does not establish an unreviewed prose theorem\\
+Conditional publication & Expected-head update and source comparison used in campaign & Distributed protocol not formally verified\\
+Streaming bulkhead & Post-process stdout limit and timeout observed & Online output cap remains a proposed improvement\\
+State-substitution protection & Bundle and cache identities checked & Full capture-to-admission immutability not proved\\
+Failure memory & Transactional, idempotent insertion design & Scientific correctness of failure classification is separate\\
+Research planner & Deterministic bounded plan & No execution or theorem promotion by planning\\
+\bottomrule
+\end{longtable}
+
+\subsection{A discriminating benchmark rather than an architecture score}
+A future architecture comparison should freeze the same proof state, model
+access, cache state, resource budget, and intended theorem for both systems.
+The outcome is the number and importance of correctly discharged obligations,
+plus false-promotion rate and reproducibility cost. A larger number of calls,
+agents, or receipts is not itself an improvement.
+
+The mutation suite should include a correct proof with the wrong prose claim,
+a declaration with an extra hypothesis, a modified source after verification,
+an unlisted import, a forbidden axiom, an output flood, a stale cached report,
+and a fabricated completed-task counter. Some cases can be caught by local
+schema checks; others require actual isolated execution. Results must identify
+which layer detected each failure.
+
+A blind holdout is useful where the task involves prediction or conjecture
+selection. It is not a substitute for kernel checking. Conversely, kernel
+checking cannot measure the novelty of the conjecture-selection strategy.
+The benchmark therefore reports proof correctness, statement correspondence,
+search efficiency, and novelty assessment as different axes.
+
+\section{Literature, reproducibility, and publication infrastructure}\label{sec:publication}
+\subsection{Related mathematical work}
+Biedl and collaborators' work on Clickomania supplies a context-free-language
+view of solvable one-row words \cite{Biedl2002}. The present development uses a
+certificate model connected to maximal-run semantics; it does not claim the
+basic grammar characterization as new. The geometric face argument was
+already present in the project's earlier paper notes. The demonstrated
+contribution here is formal closure of the locality hypothesis, reverse
+assembly, and exact certificate partition factorization.
+
+Burns and Purcell studied winning strings in one-dimensional Same Game
+\cite{BurnsPurcell2007}. OEIS A323844 records related counting information
+\cite{OEISA323844}. An indexed sequence match is useful for generating
+questions, but it cannot establish a bijection or priority. The bibliography
+includes these older mathematical sources because restricting all references
+to 2025--2026 would erase the problem's provenance.
+
+The noncrossing decomposition work of Krattenthaler and M\"uller provides
+relevant type/cotype enumeration context \cite{KrattenthalerMuller2007}.
+Applying such a formula requires matching the exact objects, normalization,
+and hypotheses. It is not justified by recognizing a similar multinomial
+expression. This paper does not claim a completed specialization to the
+remaining Same Game profile formula.
+
+\subsection{Formal agents in 2025--2026}
+AlphaProof develops formal mathematical reasoning through reinforcement
+learning in Lean, including problem-specific test-time adaptation
+\cite{Hubert2026AlphaProof}. Its result demonstrates the value of search
+grounded in a proof assistant. It does not imply that natural-language
+formalizations or external publication claims are automatically correct.
+
+Ax-Prover connects general-purpose models to Lean tools and evaluates an
+agentic workflow across several mathematical domains \cite{Breen2026AxProver}.
+Its architecture is relevant to interactive proof production, while the
+Alexandria discussion here emphasizes artifact admission and provenance.
+No comparative performance claim between the two systems is made.
+
+LeanDojo-v2 is cited as a software framework, not as an invented standalone
+2026 journal article \cite{LeanDojoV2}. Its repository describes tracing,
+training, retrieval, and proof-execution components. This is useful
+infrastructure context. A software version, access date, and repository
+identity are more appropriate evidence than attributing a paper title or
+benchmark result that has not been verified.
+
+These three references motivate distinct aspects of a research pipeline:
+learned search, tool-mediated collaboration, and reusable proof infrastructure.
+They do not validate Alexandria's implementation by analogy. The external
+literature descriptions in this subsection are deliberately limited to
+claims supported by their primary records.
+
+\subsection{Blueprint is a cross-reference system, not a proof kernel}
+The upstream package is \code{leanblueprint}, a plasTeX plugin maintained by
+Patrick Massot \cite{MassotLeanBlueprint}. Its standard layout uses
+\code{blueprint/src/web.tex}, a print entry point, shared content, and
+\code{plastex.cfg}. Declaration links use the macro \verb|\lean{...}|;
+status markers use \verb|\leanok|; dependency links use \verb|\uses{...}|.
+A LaTeX label such as \verb|\label{thm:face_lemma}| is a cross-reference
+identifier, not a cryptographic hash.
+
+The requested \code{blueprint.toml} is supplied as a \emph{project-specific}
+manifest consumed by this repository's publication validation script.
+It is not presented as a canonical upstream configuration file.
+It lists actual declarations, source files, theorem labels, proof-snapshot
+identity, status, and dependencies. The real upstream files are included as
+well, so the repository does not depend on an imaginary tool interface.
+
+The manifest uses
+\code{LC004.winning_iff_heavy_face_decomposition} for the structural theorem.
+It does not fabricate \code{LC004.face_decomposition_theorem}.
+The validation process checks names against the compiled Lean environment.
+A successful existence check verifies the name and import context, while the
+separate axiom audit checks proof dependencies. Neither check independently
+proves that the surrounding prose has the correct meaning.
+
+\subsection{A publication gate}
+The publication workflow builds the pinned Lean project, runs the source and
+axiom checks, validates the manifest and declaration names, reruns the exact
+finite experiments, builds the manuscript and interactive Blueprint, and
+then publishes the generated site. Deployment has minimal Pages permissions
+and a named deployment environment.
+
+The source branch is isolated from the mathematical integration branch.
+GitHub Pages must be configured to accept Actions deployments, and repository
+environment restrictions must permit the selected publication branch.
+Supplying a workflow does not grant administrative permissions to change
+those settings. The delivered status file distinguishes an actually completed
+deployment from a workflow that is ready but blocked by repository settings.
+
+The interactive ledger provides source links for each native declaration.
+It is not advertised as full generated Mathlib API documentation.
+The upstream Blueprint's declaration-link route is served by a small static
+index mapping checked names to exact source locations. Unknown names fail
+closed in that index rather than falling back to a vaguely related theorem.
+
+\subsection{Reproducible manifests}
+The source inventory binds the Lean source files, dependency manifest,
+toolchain, test scripts, and verification workflow to exact digests.
+The manuscript manifest separately binds the paper, bibliography, Blueprint
+configuration, mapping script, and architecture audit sources.
+Separating these inventories prevents an evidence-only edit from being
+misrepresented as a freshly verified proof change.
+
+A reproducible run should retain both commands and outcomes: tool versions,
+exit codes, resource limits, successful run URLs, declaration lists, and
+artifact hashes. A digest of a log is useful only when the log or a stable
+archival copy remains available. A green badge without an exact commit is
+not sufficient evidence for the frozen theorem.
+
+The frozen mathematical source is unchanged by this publication work.
+The ordinary slot proof and architecture contracts in the manuscript are not
+inserted into the Lean-certified list. The Blueprint includes open nodes
+where appropriate and does not color a conjecture green because it appears
+in a polished paper.
+
+\section{Enumeration beyond the structural theorem}\label{sec:enumeration}
+\subsection{A precise generating-function target}
+Fix a heavy alphabet $H=\{1,\ldots,r\}$. For an integer $s\geq1$, define the
+formal series
+\[
+ F_s(z_1,\ldots,z_r)=
+ \sum_{\substack{u\in H^*\\u\text{ winning}}}
+ \binom{\card{u}+s-1}{s-1}
+ \prod_{a=1}^r z_a^{\,\#_a(u)}.
+\]
+Each coefficient is finite: a fixed content vector fixes the word length,
+so only finitely many words contribute. The empty word contributes one.
+The binomial factor counts cuts of an already chosen face word among $s$
+ordered slots, not its certificates.
+
+For a fixed labeled noncrossing rigid skeleton with gap-face slot counts
+$s_f$, Proposition~\ref{prop:slots} and the structural Face Lemma give the
+following manuscript-level specification. Multiply $\prod_f F_{s_f}$ and
+retain only content vectors for which every designated heavy color has
+total multiplicity at least four. The retained coefficient counts winning
+extensions of that skeleton using exactly those heavy colors. If unused
+heavy labels are permitted, retain exponents zero or at least four instead.
+The two conventions must not be interchanged.
+
+This expression is a rigorous target for further formalization, but it is not
+a closed solution of general enumeration. Its definition already sums over
+winning words on the heavy alphabet. When the rigid skeleton is empty,
+there is one gap and $F_1$ is the original winning-word series. The reduction
+therefore isolates a hard component rather than removing it.
+
+\subsection{Color patterns and labeled words}
+Let $a_{n,k}$ count winning color patterns on $[n]$ with exactly $k$ classes,
+and let $W_n(q)$ count winning words over a fixed alphabet of $q$ labels.
+Then the ordinary labeling argument gives
+\[
+ W_n(q)=\sum_{k=0}^{n}a_{n,k}\,(q)_{\underline{k}},
+ \qquad
+ (q)_{\underline{k}}=q(q-1)\cdots(q-k+1).
+\]
+For a fixed pattern, assigning distinct alphabet labels to its $k$ classes
+is an injection from the class set to the alphabet. Each realization is
+counted once, regardless of how many certificates it has. Terms with $k>q$
+vanish. This distinction explains why a product formula for $\card{\Cert(p)}$
+cannot be summed naively to recover $W_n(q)$.
+
+A profile formula must address at least three layers: shapes of rigid
+noncrossing skeletons, distribution of heavy content among face slots, and
+label assignment to global classes. Equal-sized rigid classes may introduce
+automorphisms if an intermediate representation labels blocks that the
+target object regards as unlabeled. Every quotient factor needs an actual
+free action or an explicit fiber calculation. A factorial that appears
+plausible from symmetry is not sufficient.
+
+\subsection{Signed joins and cancellation}
+The existing repository includes an unconditional signed-join representation
+of the winning indicator. Its inclusion-exclusion terms are equality
+constraints, and equal joins can be collected before evaluation.
+The geometric locality theorem explains when a join of actual certificate
+partitions restricts correctly to a complete face. It does not by itself show
+that all terms of a signed expansion are independent or that arbitrary
+constraint families have the same locality.
+
+A discriminating next experiment is to compare the support of the collected
+signed expansion with the face decomposition on frozen small patterns.
+A candidate cancellation rule should be proposed before testing held-out
+lengths. The evaluation should record both surviving coefficients and
+counterexamples, including cases where the rigid skeleton is empty.
+A recurrence that simply calls the original winning predicate on the heavy
+word is a valid reduction but not a new enumeration algorithm.
+
+\subsection{Remaining obligations}
+The next formal milestone is the ordered-slot bijection with exact inverse
+laws, including the extra outer slot and the empty skeleton. Next comes a
+profile correspondence whose fibers account for class labels and
+automorphisms. The general heavy-word series then requires a genuinely
+non-circular description or a new invariant.
+
+A separate ring-game project would define wrap-around maximal runs and
+prove the appropriate relation to the linear model. A separate architecture
+project would implement and benchmark online output bounds and immutable
+capture-to-admission bindings. Neither project should acquire a verified
+status through the existence of the present Face Lemma.
+
+The durable result is the closure of a specific geometric obstruction and
+the exact decomposition of certificate partitions. It survives the
+counterexamples that invalidate stronger informal formulations and the
+kernel checks that rejected unsuccessful proof attempts. That combination
+is an appropriate unit of research progress even while the broader counting
+problem remains unresolved.
+
+\appendix
+\section{Verification ledger and replay protocol}\label{app:ledger}
+The exact mathematical checkpoint is \proofsha. The corresponding full
+hosted run is
+\url{https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40831342439}.
+The evidence-only commit
+\code{0f32a99b1db8447b36fed7223f84133b0d1e3ffd}
+adds the final ledger, registry, and queue. Code, workflow, and toolchain
+files were compared with the successful proof snapshot before publication.
+
+The allowed axiom set is
+\[
+ \{\code{propext},\ \code{Classical.choice},\ \code{Quot.sound}\}.
+\]
+The source guard rejects explicit proof placeholders, unsupported custom
+axioms, native decision oracles, and unsafe or partial project source.
+The transitive audit inspects dependencies rather than relying only on
+printed axiom lists for a few flagship statements. Compiler-generated
+runtime helpers are not treated as kernel theorems.
+
+On a normal installation of the pinned toolchain, the principal checks are:
+\begin{Verbatim}[fontsize=\small,breaklines=true]
+lake build
+python scripts/check_lean_coverage.py
+lake env lean scripts/FaceAxiomAudit.lean
+python research/rigid_face_geometry_check.py
+python research/heavy_face_assembly_check.py
+python publication/validate_blueprint.py
+lake env lean publication/BlueprintDeclAudit.lean
+latexmk -xelatex -cd publication/paper.tex
+leanblueprint web
+python publication/build_site.py
+\end{Verbatim}
+The local research environment required an executable-path compatibility
+shim for its pinned Lean binary. The hosted proof run used the normal
+toolchain without that shim. The distinction is recorded rather than
+concealed as an identical runtime.
+
+The source-level mathematics depends on finite equivalence relations,
+finite-set order embeddings, quotient representatives, list certificates,
+and the imported maximal-run correspondence. The proof does not depend on a
+learned model returning a correct answer. A model may help construct a term;
+Lean checks the term against the declared statement. The statement-to-problem
+correspondence remains a reviewed mathematical obligation.
+
+\section{Complete source of the face development}\label{app:sources}
+The following source listings reproduce the seven relevant project modules
+at the frozen proof checkpoint. They are provided for direct review, not as
+a replacement for their pinned imports or the machine-readable inventory.
+Copying a listing into a different toolchain or dependency state is a new
+verification task. The publication build checks that these embedded listings
+match the corresponding repository bytes.
+\subsection{\texorpdfstring{\texttt{RigidFaceGeometry}}{RigidFaceGeometry}}
+% BEGIN FROZEN SOURCE: LC004/RigidFaceGeometry.lean
+\begin{LeanCode}
+import LC004.SmallPatternCorrespondence
+import LC004.FacePathFactorization
+
+namespace LC004
+
+/-- Rigidity is local to this color class; other classes may be heavy. -/
+theorem certificate_rigid_block_eq_class {n : Nat} (p : ColorPattern n)
+    (cert : Noncrossing23Certificate (patternColor p))
+    {b : List (Fin n)} (hb : b ∈ cert.blocks) {i : Fin n} (hi : i ∈ b)
+    (hsmall : (patternClassPositions p i).card = 2 ∨
+      (patternClassPositions p i).card = 3) :
+    b.toFinset = patternClassPositions p i := by
+  classical
+  have hsub := certificate_block_subset_class p cert hb hi
+  apply Finset.eq_of_subset_of_card_le hsub
+  by_contra hnot
+  have hbn := (List.nodup_flatten.mp cert.flatten_nodup).1 b hb
+  have hbc := List.toFinset_card_of_nodup hbn
+  have hblen := cert.sizes b hb
+  have hclass := hsmall
+  have hdiff : ((patternClassPositions p i) \ b.toFinset).card = 1 := by
+    rw [Finset.card_sdiff hsub]
+    rcases hclass with h | h <;> rcases hblen with hlen | hlen <;> omega
+  obtain ⟨j, hj⟩ := Finset.card_pos.mp (show 0 <
+    ((patternClassPositions p i) \ b.toFinset).card by omega)
+  have hjc := (Finset.mem_sdiff.mp hj).1
+  have hjnot := (Finset.mem_sdiff.mp hj).2
+  have hij : p i j := by
+    simpa only [patternClassPositions, Finset.mem_filter, Finset.mem_univ, true_and] using hjc
+  obtain ⟨c, hc, hjmem⟩ := cert.cover_position j
+  have hne : b ≠ c := by
+    intro heq
+    exact hjnot (List.mem_toFinset.mpr (heq.symm ▸ hjmem))
+  have hdis := disjoint_blocks_of_nodup_flatten cert.flatten_nodup hb hc hne
+  have hcsub : c.toFinset ⊆ (patternClassPositions p i) \ b.toFinset := by
+    intro x hx
+    have hxc := List.mem_toFinset.mp hx
+    have hjx : p j x := by
+      have h := certificate_block_subset_class p cert hc hjmem hx
+      simpa only [patternClassPositions, Finset.mem_filter, Finset.mem_univ, true_and] using h
+    refine Finset.mem_sdiff.mpr ⟨?_, ?_⟩
+    · simpa only [patternClassPositions, Finset.mem_filter,
+        Finset.mem_univ, true_and] using p.trans hij hjx
+    · intro hxb
+      exact (List.disjoint_left.mp hdis) (List.mem_toFinset.mp hxb) hxc
+  have hcle := Finset.card_le_card hcsub
+  have hcn := (List.nodup_flatten.mp cert.flatten_nodup).1 c hc
+  have hclen := cert.sizes c hc
+  rw [List.toFinset_card_of_nodup hcn, hdiff] at hcle
+  rcases hclen with h | h <;> omega
+
+def RigidPosition {n : Nat} (p : ColorPattern n) (i : Fin n) : Prop :=
+  (patternClassPositions p i).card = 2 ∨ (patternClassPositions p i).card = 3
+
+def HeavyPosition {n : Nat} (p : ColorPattern n) (i : Fin n) : Prop :=
+  4 ≤ (patternClassPositions p i).card
+
+theorem patternClassPositions_eq_of_related {n : Nat} (p : ColorPattern n)
+    {i j : Fin n} (h : p i j) :
+    patternClassPositions p i = patternClassPositions p j := by
+  classical
+  ext x
+  simp only [patternClassPositions, Finset.mem_filter, Finset.mem_univ, true_and]
+  exact ⟨fun hx => p.trans (p.symm h) hx, fun hx => p.trans h hx⟩
+
+/-- A face is determined by its side of every chord of a rigid color class.
+On heavy positions no point lies on a boundary chord endpoint. The outer
+face is included automatically; an empty skeleton gives one face. -/
+def rigidFacePattern {n : Nat} (p : ColorPattern n) : ColorPattern n where
+  r a b := ∀ u v : Fin n, RigidPosition p u → p u v →
+    (u < a ∧ a < v ↔ u < b ∧ b < v)
+  iseqv := ⟨fun _ _ _ _ _ => Iff.rfl,
+    fun h u v hu huv => (h u v hu huv).symm,
+    fun h₁ h₂ u v hu huv => (h₁ u v hu huv).trans (h₂ u v hu huv)⟩
+
+theorem heavy_ne_rigid {n : Nat} (p : ColorPattern n) {a u : Fin n}
+    (ha : HeavyPosition p a) (hu : RigidPosition p u) : a ≠ u := by
+  rintro rfl
+  unfold HeavyPosition at ha
+  rcases hu with hu | hu <;> omega
+
+/-- The geometric confinement theorem for actual Same Game certificates.
+It is derived from local rigidity and alternating-endpoint exclusion;
+no face-locality or saturation assumption is supplied. -/
+theorem certificate_heavy_face {n : Nat} (p : ColorPattern n)
+    (cert : Noncrossing23Certificate (patternColor p))
+    {a b : Fin n} (ha : HeavyPosition p a)
+    (hab : certificateBlockPattern cert a b) :
+    HeavyPosition p b ∧ rigidFacePattern p a b := by
+  have hpab := certificateBlockPattern_refines p cert hab
+  have hclass := patternClassPositions_eq_of_related p hpab
+  have hb : HeavyPosition p b := by
+    unfold HeavyPosition at *
+    rwa [← hclass]
+  refine ⟨hb, ?_⟩
+  intro u v hu huv
+  have hv : RigidPosition p v := by
+    unfold RigidPosition at *
+    rwa [← patternClassPositions_eq_of_related p huv]
+  have hau := heavy_ne_rigid p ha hu
+  have hav := heavy_ne_rigid p ha hv
+  have hbu := heavy_ne_rigid p hb hu
+  have hbv := heavy_ne_rigid p hb hv
+  obtain ⟨c, hc, hac, hbc⟩ := hab
+  obtain ⟨r, hr, hur⟩ := cert.cover_position u
+  have hrclass := certificate_rigid_block_eq_class p cert hr hur hu
+  have hvr : v ∈ r := by
+    apply List.mem_toFinset.mp
+    rw [hrclass]
+    simpa only [patternClassPositions, Finset.mem_filter,
+      Finset.mem_univ, true_and] using huv
+  have h₁ := cert.no_alternation hr hc hur hvr hac hbc
+  have h₂ := cert.no_alternation hr hc hur hvr hbc hac
+  unfold PairCross at h₁ h₂
+  constructor <;> intro h <;> constructor <;> omega
+
+/-- Distinct geometric faces cannot contain alternating endpoint pairs.
+This supplies the geometric part of gluing certificates from faces. -/
+theorem rigid_faces_no_alternation {n : Nat} (p : ColorPattern n)
+    {a b c d : Fin n} (hab : a < b) (hbc : b < c) (hcd : c < d)
+    (hac : rigidFacePattern p a c) (hbd : rigidFacePattern p b d) :
+    rigidFacePattern p a b := by
+  intro u v hu huv
+  have h₁ := hac u v hu huv
+  have h₂ := hbd u v hu huv
+  constructor <;> intro h <;> constructor <;> omega
+
+/-- A genuine full face carrier, rather than an arbitrary selection of
+positions or a partial face. -/
+def IsHeavyFaceCarrier {n m : Nat} (p : ColorPattern n)
+    (anchor : Fin n) (e : Fin m → Fin n) : Prop :=
+  ∀ x, (∃ i, e i = x) ↔ HeavyPosition p x ∧ rigidFacePattern p anchor x
+
+theorem certificate_face_saturated {n m : Nat} (p : ColorPattern n)
+    (cert : Noncrossing23Certificate (patternColor p))
+    (anchor : Fin n) (e : Fin m → Fin n)
+    (hface : IsHeavyFaceCarrier p anchor e)
+    {i : Fin m} {b : Fin n} (h : certificateBlockPattern cert (e i) b) :
+    ∃ j, e j = b := by
+  have hi := (hface (e i)).mp ⟨i, rfl⟩
+  obtain ⟨hb, hab⟩ := certificate_heavy_face p cert hi.1 h
+  exact (hface b).mpr ⟨hb, (rigidFacePattern p).trans hi.2 hab⟩
+
+theorem facePathLocality_of_edge_saturation {n m : Nat}
+    (p q : ColorPattern n) (e : Fin m → Fin n)
+    (he : Function.Injective e)
+    (hsat : ∀ i b, FaceJoinEdge p q (e i) b → ∃ j, e j = b) :
+    FacePathLocality p q e := by
+  intro i j h
+  have lift : ∀ {a b : Fin n}, FaceJoinPath p q a b →
+      ∀ i : Fin m, e i = a → ∃ k, e k = b ∧ FaceInternalPath p q e i k := by
+    intro a b hab
+    induction hab with
+    | refl =>
+        intro i hi
+        exact ⟨i, hi, Relation.ReflTransGen.refl⟩
+    | @tail b c hab hbc ih =>
+        intro i hi
+        obtain ⟨k, hk, hik⟩ := ih i hi
+        obtain ⟨l, hl⟩ := hsat k c (hk.symm ▸ hbc)
+        refine ⟨l, hl, Relation.ReflTransGen.tail hik ?_⟩
+        change p (e k) (e l) ∨ q (e k) (e l)
+        rw [hk, hl]
+        exact hbc
+  obtain ⟨k, hk, hik⟩ := lift h i rfl
+  exact he hk ▸ hik
+
+/-- The former locality hypothesis now follows from actual certificate
+geometry, for any two certificates of the same color pattern. -/
+theorem heavy_certificate_face_path_locality {n m : Nat} (p : ColorPattern n)
+    (c d : Noncrossing23Certificate (patternColor p))
+    (anchor : Fin n) (e : Fin m → Fin n) (he : Function.Injective e)
+    (hface : IsHeavyFaceCarrier p anchor e) :
+    FacePathLocality (certificateBlockPattern c) (certificateBlockPattern d) e := by
+  apply facePathLocality_of_edge_saturation _ _ e he
+  intro i b h
+  rcases h with hc | hd
+  · exact certificate_face_saturated p c anchor e hface hc
+  · exact certificate_face_saturated p d anchor e hface hd
+
+theorem heavy_certificate_restrict_join {n m : Nat} (p : ColorPattern n)
+    (c d : Noncrossing23Certificate (patternColor p))
+    (anchor : Fin n) (e : Fin m → Fin n) (he : Function.Injective e)
+    (hface : IsHeavyFaceCarrier p anchor e) :
+    restrictColorPattern (certificateBlockPattern c ⊔ certificateBlockPattern d) e =
+      restrictColorPattern (certificateBlockPattern c) e ⊔
+        restrictColorPattern (certificateBlockPattern d) e :=
+  restrict_join_eq_of_face_path_locality _ _ e
+    (heavy_certificate_face_path_locality p c d anchor e he hface)
+
+/-- Canonical increasing list of every heavy position in an actual face. -/
+noncomputable def heavyFacePositions {n : Nat} (p : ColorPattern n) (a : Fin n) :
+    Finset (Fin n) := by
+  classical
+  exact Finset.univ.filter (fun x => HeavyPosition p x ∧ rigidFacePattern p a x)
+
+noncomputable def heavyFaceEmbedding {n : Nat} (p : ColorPattern n) (a : Fin n) :
+    Fin (heavyFacePositions p a).card ↪o Fin n := by
+  classical
+  exact (heavyFacePositions p a).orderEmbOfFin rfl
+
+theorem heavyFaceEmbedding_carrier {n : Nat} (p : ColorPattern n) (a : Fin n) :
+    IsHeavyFaceCarrier p a (heavyFaceEmbedding p a) := by
+  classical
+  intro x
+  change x ∈ Set.range (heavyFaceEmbedding p a) ↔ _
+  rw [heavyFaceEmbedding, Finset.range_orderEmbOfFin]
+  simp [heavyFacePositions]
+
+/-- No user-supplied locality or carrier hypothesis remains: the map is
+the canonical increasing enumeration of the complete geometric face. -/
+theorem canonical_heavy_face_restrict_join {n : Nat} (p : ColorPattern n)
+    (c d : Noncrossing23Certificate (patternColor p)) (a : Fin n) :
+    restrictColorPattern (certificateBlockPattern c ⊔ certificateBlockPattern d)
+        (heavyFaceEmbedding p a) =
+      restrictColorPattern (certificateBlockPattern c) (heavyFaceEmbedding p a) ⊔
+        restrictColorPattern (certificateBlockPattern d) (heavyFaceEmbedding p a) :=
+  heavy_certificate_restrict_join p c d a (heavyFaceEmbedding p a)
+    (heavyFaceEmbedding p a).injective (heavyFaceEmbedding_carrier p a)
+
+#print axioms certificate_rigid_block_eq_class
+#print axioms certificate_heavy_face
+#print axioms rigid_faces_no_alternation
+#print axioms heavy_certificate_face_path_locality
+#print axioms heavy_certificate_restrict_join
+#print axioms canonical_heavy_face_restrict_join
+
+end LC004
+
+\end{LeanCode}
+% END FROZEN SOURCE
+\subsection{\texorpdfstring{\texttt{RigidFaceArcCriterion}}{RigidFaceArcCriterion}}
+% BEGIN FROZEN SOURCE: LC004/RigidFaceArcCriterion.lean
+\begin{LeanCode}
+import LC004.RigidFaceGeometry
+
+namespace LC004
+
+/-- For heavy endpoints in increasing order, the chord-signature faces
+agree exactly with the paper's condition that no rigid class meets both
+open cyclic arcs between the endpoints. No drawing is assumed. -/
+theorem rigid_face_iff_no_rigid_arc_separator {n : Nat} (p : ColorPattern n)
+    {a b : Fin n} (hab : a < b)
+    (ha : HeavyPosition p a) (hb : HeavyPosition p b) :
+    rigidFacePattern p a b ↔
+      ¬ ∃ u v : Fin n, RigidPosition p u ∧ p u v ∧
+        a < u ∧ u < b ∧ (v < a ∨ b < v) := by
+  constructor
+  · intro hface hsep
+    obtain ⟨u, v, hu, huv, hau, hub, hvout⟩ := hsep
+    rcases hvout with hva | hbv
+    · have hv : RigidPosition p v := by
+        unfold RigidPosition at *
+        rwa [← patternClassPositions_eq_of_related p huv]
+      have h := (hface v u hv (p.symm huv)).mp ⟨hva, hau⟩
+      omega
+    · have h := (hface u v hu huv).mpr ⟨hub, hbv⟩
+      omega
+  · intro hsep u v hu huv
+    have hv : RigidPosition p v := by
+      unfold RigidPosition at *
+      rwa [← patternClassPositions_eq_of_related p huv]
+    have hau := heavy_ne_rigid p ha hu
+    have hav := heavy_ne_rigid p ha hv
+    have hbu := heavy_ne_rigid p hb hu
+    have hbv := heavy_ne_rigid p hb hv
+    constructor
+    · intro h
+      by_contra hn
+      have hvb : v < b := by omega
+      exact hsep ⟨v, u, hv, p.symm huv, h.2, hvb, Or.inl h.1⟩
+    · intro h
+      by_contra hn
+      have hau' : a < u := by omega
+      exact hsep ⟨u, v, hu, huv, hau', h.1, Or.inr h.2⟩
+
+#print axioms rigid_face_iff_no_rigid_arc_separator
+
+end LC004
+\end{LeanCode}
+% END FROZEN SOURCE
+\subsection{\texorpdfstring{\texttt{HeavyFaceRestriction}}{HeavyFaceRestriction}}
+% BEGIN FROZEN SOURCE: LC004/HeavyFaceRestriction.lean
+\begin{LeanCode}
+import LC004.RigidFaceGeometry
+import LC004.WinningConstraintGenerators
+
+namespace LC004
+
+/-- A saturated ordered restriction keeps every certificate class intact. -/
+theorem restrict_pattern_class_card {n m : Nat} (c : ColorPattern n)
+    (e : Fin m ↪o Fin n)
+    (hsat : ∀ i b, c (e i) b → ∃ j, e j = b) (i : Fin m) :
+    (patternClassPositions (restrictColorPattern c e) i).card =
+      (patternClassPositions c (e i)).card := by
+  classical
+  have himage : (patternClassPositions (restrictColorPattern c e) i).image e =
+      patternClassPositions c (e i) := by
+    ext b
+    simp only [Finset.mem_image, patternClassPositions, Finset.mem_filter,
+      Finset.mem_univ, true_and]
+    constructor
+    · rintro ⟨j, hj, rfl⟩
+      exact (restrictColorPattern_rel c e i j).mp hj
+    · intro hb
+      obtain ⟨j, rfl⟩ := hsat i b hb
+      exact ⟨j, (restrictColorPattern_rel c e i j).mpr hb, rfl⟩
+  rw [← himage, Finset.card_image_of_injective _ e.injective]
+
+theorem certificateConstraint_restrict {n m : Nat} (c : ColorPattern n)
+    (hc : CertificateConstraint c) (e : Fin m ↪o Fin n)
+    (hsat : ∀ i b, c (e i) b → ∃ j, e j = b) :
+    CertificateConstraint (restrictColorPattern c e) := by
+  constructor
+  · intro i
+    rw [restrict_pattern_class_card c e hsat]
+    exact hc.1 (e i)
+  · intro a b c' d hab hbc hcd hac hbd
+    apply (restrictColorPattern_rel c e a b).mpr
+    exact hc.2 (e a) (e b) (e c') (e d)
+      (e.strictMono hab) (e.strictMono hbc) (e.strictMono hcd)
+      ((restrictColorPattern_rel c e a c').mp hac)
+      ((restrictColorPattern_rel c e b d).mp hbd)
+
+/-- A global winning pattern gives a genuine winning subword in each
+canonical geometric heavy face. This is the forward Face Lemma. -/
+theorem winning_restrict_heavy_face {n : Nat} (p : ColorPattern n)
+    (hwin : WinningColorPattern p) (a : Fin n) :
+    WinningColorPattern (restrictColorPattern p (heavyFaceEmbedding p a)) := by
+  obtain ⟨cert⟩ := hwin
+  apply (winning_iff_constraint_refinement _).mpr
+  refine ⟨restrictColorPattern (certificateBlockPattern cert) (heavyFaceEmbedding p a),
+    ?_, ?_⟩
+  · apply certificateConstraint_restrict _ (certificateBlockPattern_constraint cert)
+    intro i b h
+    exact certificate_face_saturated p cert a (heavyFaceEmbedding p a)
+      (heavyFaceEmbedding_carrier p a) h
+  · apply restrictColorPattern_mono
+    intro i j h
+    exact certificateBlockPattern_refines p cert h
+
+/-- The restricted pattern has the same winning meaning as deleting all
+maximal runs in the face word, with positions read in increasing order. -/
+theorem raw_win_heavy_face_word {n : Nat} (p : ColorPattern n)
+    (hwin : WinningColorPattern p) (a : Fin n) :
+    RawMaxErases (List.ofFn (fun i => patternColor p (heavyFaceEmbedding p a i))) [] := by
+  have heq : colorPatternOf (fun i => patternColor p (heavyFaceEmbedding p a i)) =
+      restrictColorPattern p (heavyFaceEmbedding p a) := by
+    apply Setoid.ext
+    intro i j
+    exact (patternColor_eq_iff p _ _).trans
+      (restrictColorPattern_rel p (heavyFaceEmbedding p a) i j).symm
+  apply (winning_color_pattern_iff_raw_win _).mp
+  rw [heq]
+  exact winning_restrict_heavy_face p hwin a
+
+#print axioms certificateConstraint_restrict
+#print axioms winning_restrict_heavy_face
+#print axioms raw_win_heavy_face_word
+
+end LC004
+\end{LeanCode}
+% END FROZEN SOURCE
+\subsection{\texorpdfstring{\texttt{HeavyFaceReconstruction}}{HeavyFaceReconstruction}}
+% BEGIN FROZEN SOURCE: LC004/HeavyFaceReconstruction.lean
+\begin{LeanCode}
+import LC004.HeavyFaceRestriction
+import LC004.RigidFaceArcCriterion
+
+namespace LC004
+
+theorem certificate_position_rigid_or_heavy {n : Nat} (p : ColorPattern n)
+    (cert : Noncrossing23Certificate (patternColor p)) (i : Fin n) :
+    RigidPosition p i ∨ HeavyPosition p i := by
+  classical
+  obtain ⟨b, hb, hi⟩ := cert.cover_position i
+  have hsub := certificate_block_subset_class p cert hb hi
+  have hle := Finset.card_le_card hsub
+  have hn := (List.nodup_flatten.mp cert.flatten_nodup).1 b hb
+  rw [List.toFinset_card_of_nodup hn] at hle
+  have hs := cert.sizes b hb
+  unfold RigidPosition HeavyPosition
+  omega
+
+theorem certificate_rigid_related {n : Nat} (p : ColorPattern n)
+    (cert : Noncrossing23Certificate (patternColor p))
+    {a b : Fin n} (ha : RigidPosition p a) (hab : p a b) :
+    certificateBlockPattern cert a b := by
+  classical
+  obtain ⟨block, hb, ha'⟩ := cert.cover_position a
+  refine ⟨block, hb, ha', ?_⟩
+  apply List.mem_toFinset.mp
+  rw [certificate_rigid_block_eq_class p cert hb ha' ha]
+  simpa only [patternClassPositions, Finset.mem_filter,
+    Finset.mem_univ, true_and] using hab
+
+/-- A certificate partition is determined by its restrictions to heavy
+faces: the rigid classes leave no choices. Equality here forgets the
+irrelevant ordering of blocks and positions inside a certificate list. -/
+theorem certificate_pattern_determined_by_heavy_faces {n : Nat} (p : ColorPattern n)
+    (c d : Noncrossing23Certificate (patternColor p))
+    (hfaces : ∀ a : Fin n,
+      restrictColorPattern (certificateBlockPattern c) (heavyFaceEmbedding p a) =
+      restrictColorPattern (certificateBlockPattern d) (heavyFaceEmbedding p a)) :
+    certificateBlockPattern c = certificateBlockPattern d := by
+  have forward (c d : Noncrossing23Certificate (patternColor p))
+      (hfaces : ∀ a : Fin n,
+        restrictColorPattern (certificateBlockPattern c) (heavyFaceEmbedding p a) =
+        restrictColorPattern (certificateBlockPattern d) (heavyFaceEmbedding p a)) :
+      certificateBlockPattern c ≤ certificateBlockPattern d := by
+    intro a b hab
+    rcases certificate_position_rigid_or_heavy p c a with ha | ha
+    · exact certificate_rigid_related p d ha (certificateBlockPattern_refines p c hab)
+    · obtain ⟨hb, hface⟩ := certificate_heavy_face p c ha hab
+      have hcarrier := heavyFaceEmbedding_carrier p a
+      obtain ⟨i, hi⟩ := (hcarrier a).mpr ⟨ha, (rigidFacePattern p).refl a⟩
+      obtain ⟨j, hj⟩ := (hcarrier b).mpr ⟨hb, hface⟩
+      have hlocal : restrictColorPattern (certificateBlockPattern c)
+          (heavyFaceEmbedding p a) i j := by
+        apply (restrictColorPattern_rel _ _ i j).mpr
+        simpa only [hi, hj] using hab
+      rw [hfaces a] at hlocal
+      have hout := (restrictColorPattern_rel (certificateBlockPattern d)
+        (heavyFaceEmbedding p a) i j).mp hlocal
+      simpa only [hi, hj] using hout
+  exact le_antisymm (forward c d hfaces) (forward d c (fun a => (hfaces a).symm))
+
+#print axioms certificate_position_rigid_or_heavy
+#print axioms certificate_pattern_determined_by_heavy_faces
+
+end LC004
+\end{LeanCode}
+% END FROZEN SOURCE
+\subsection{\texorpdfstring{\texttt{OrderedCertificateAssembly}}{OrderedCertificateAssembly}}
+% BEGIN FROZEN SOURCE: LC004/OrderedCertificateAssembly.lean
+\begin{LeanCode}
+import LC004.HeavyFaceRestriction
+
+namespace LC004
+
+/-- Assemble equivalence relations on disjoint ordered regions covering all
+positions. No finiteness assumption on the region index is needed. -/
+def assembledPattern {n : Nat} {ι : Type*} {m : ι → Nat}
+    (e : ∀ k, Fin (m k) ↪o Fin n) (c : ∀ k, ColorPattern (m k))
+    (cover : ∀ a, ∃ k i, e k i = a)
+    (disjoint : ∀ k l i j, e k i = e l j → k = l) : ColorPattern n where
+  r a b := ∃ k i j, e k i = a ∧ e k j = b ∧ c k i j
+  iseqv := by
+    constructor
+    · intro a
+      obtain ⟨k, i, rfl⟩ := cover a
+      exact ⟨k, i, i, rfl, rfl, (c k).refl i⟩
+    · rintro a b ⟨k, i, j, hi, hj, hij⟩
+      exact ⟨k, j, i, hj, hi, (c k).symm hij⟩
+    · rintro a b d ⟨k, i, j, hi, hj, hij⟩ ⟨l, s, t, hs, ht, hst⟩
+      have hkl := disjoint k l j s (hj.trans hs.symm)
+      subst l
+      have hjs := (e k).injective (hj.trans hs.symm)
+      subst s
+      exact ⟨k, i, t, hi, ht, (c k).trans hij hst⟩
+
+theorem assembledPattern_local {n : Nat} {ι : Type*} {m : ι → Nat}
+    (e : ∀ k, Fin (m k) ↪o Fin n) (c : ∀ k, ColorPattern (m k))
+    (cover : ∀ a, ∃ k i, e k i = a)
+    (disjoint : ∀ k l i j, e k i = e l j → k = l)
+    (k : ι) (i j : Fin (m k)) :
+    assembledPattern e c cover disjoint (e k i) (e k j) ↔ c k i j := by
+  constructor
+  · rintro ⟨l, s, t, hs, ht, hst⟩
+    have h := disjoint l k s i hs
+    subst l
+    have hsi := (e k).injective hs
+    have htj := (e k).injective ht
+    subst s
+    subst t
+    exact hst
+  · intro h
+    exact ⟨k, i, j, rfl, rfl, h⟩
+
+/-- Local certificate partitions glue without introducing a crossing when
+alternating pairs must belong to the same region. -/
+theorem assembledPattern_constraint {n : Nat} {ι : Type*} {m : ι → Nat}
+    (e : ∀ k, Fin (m k) ↪o Fin n) (c : ∀ k, ColorPattern (m k))
+    (cover : ∀ a, ∃ k i, e k i = a)
+    (disjoint : ∀ k l i j, e k i = e l j → k = l)
+    (noncrossing : ∀ k l i j s t,
+      e k i < e l s → e l s < e k j → e k j < e l t → k = l)
+    (hc : ∀ k, CertificateConstraint (c k)) :
+    CertificateConstraint (assembledPattern e c cover disjoint) := by
+  let g := assembledPattern e c cover disjoint
+  have local_eq (k : ι) : restrictColorPattern g (e k) = c k := by
+    apply Setoid.ext
+    intro i j
+    exact (restrictColorPattern_rel g (e k) i j).trans
+      (assembledPattern_local e c cover disjoint k i j)
+  constructor
+  · intro a
+    obtain ⟨k, i, rfl⟩ := cover a
+    have sat : ∀ i b, g (e k i) b → ∃ j, e k j = b := by
+      rintro i b ⟨l, s, t, hs, ht, _⟩
+      have h := disjoint l k s i hs
+      subst l
+      exact ⟨t, ht⟩
+    have hcard := restrict_pattern_class_card g (e k) sat i
+    rw [local_eq] at hcard
+    change (patternClassPositions g (e k i)).card = 2 ∨ _
+    rw [← hcard]
+    exact (hc k).1 i
+  · rintro a b d f hab hbd hdf ⟨k, i, j, rfl, rfl, hij⟩
+      ⟨l, s, t, rfl, rfl, hst⟩
+    have h := noncrossing k l i j s t hab hbd hdf
+    subst l
+    refine ⟨k, i, s, rfl, rfl, ?_⟩
+    exact (hc k).2 i s j t ((e k).lt_iff_lt.mp hab)
+      ((e k).lt_iff_lt.mp hbd) ((e k).lt_iff_lt.mp hdf) hij hst
+
+/-- Winning restrictions on a disjoint noncrossing cover imply a global win.
+The proof constructs a pair/triple partition and uses the established
+certificate-to-maximal-deletion correspondence. -/
+theorem winning_of_ordered_region_cover {n : Nat} {ι : Type*}
+    (p : ColorPattern n) (m : ι → Nat) (e : ∀ k, Fin (m k) ↪o Fin n)
+    (cover : ∀ a, ∃ k i, e k i = a)
+    (disjoint : ∀ k l i j, e k i = e l j → k = l)
+    (noncrossing : ∀ k l i j s t,
+      e k i < e l s → e l s < e k j → e k j < e l t → k = l)
+    (hwin : ∀ k, WinningColorPattern (restrictColorPattern p (e k))) :
+    WinningColorPattern p := by
+  classical
+  have hex := fun k => (winning_iff_constraint_refinement _).mp (hwin k)
+  choose c hc href using hex
+  apply (winning_iff_constraint_refinement p).mpr
+  refine ⟨assembledPattern e c cover disjoint,
+    assembledPattern_constraint e c cover disjoint noncrossing hc, ?_⟩
+  rintro a b ⟨k, i, j, rfl, rfl, hij⟩
+  exact (restrictColorPattern_rel p (e k) i j).mp (href k hij)
+
+/-- Finite-set interface to the ordered assembly theorem. -/
+theorem winning_of_noncrossing_finset_cover {n : Nat} {ι : Type*}
+    (p : ColorPattern n) (S : ι → Finset (Fin n))
+    (cover : ∀ a, ∃ k, a ∈ S k)
+    (disjoint : ∀ k l a, a ∈ S k → a ∈ S l → k = l)
+    (noncrossing : ∀ k l a b c d, a < b → b < c → c < d →
+      a ∈ S k → c ∈ S k → b ∈ S l → d ∈ S l → k = l)
+    (hwin : ∀ k, WinningColorPattern
+      (restrictColorPattern p ((S k).orderEmbOfFin rfl))) :
+    WinningColorPattern p := by
+  classical
+  apply winning_of_ordered_region_cover p (fun k => (S k).card)
+    (fun k => (S k).orderEmbOfFin rfl) ?_ ?_ ?_ hwin
+  · intro a
+    obtain ⟨k, hk⟩ := cover a
+    refine ⟨k, ?_⟩
+    have : a ∈ Set.range ((S k).orderEmbOfFin rfl) := by
+      rwa [Finset.range_orderEmbOfFin]
+    exact this
+  · intro k l i j h
+    apply disjoint k l ((S k).orderEmbOfFin rfl i)
+      ((S k).orderEmbOfFin_mem rfl i)
+    rw [h]
+    exact (S l).orderEmbOfFin_mem rfl j
+  · intro k l i j s t hab hbc hcd
+    exact noncrossing k l _ _ _ _ hab hbc hcd
+      ((S k).orderEmbOfFin_mem rfl i) ((S k).orderEmbOfFin_mem rfl j)
+      ((S l).orderEmbOfFin_mem rfl s) ((S l).orderEmbOfFin_mem rfl t)
+
+end LC004
+\end{LeanCode}
+% END FROZEN SOURCE
+\subsection{\texorpdfstring{\texttt{HeavyFaceDecomposition}}{HeavyFaceDecomposition}}
+% BEGIN FROZEN SOURCE: LC004/HeavyFaceDecomposition.lean
+\begin{LeanCode}
+import LC004.OrderedCertificateAssembly
+import LC004.HeavyFaceReconstruction
+
+namespace LC004
+
+/-- Every color appearing in the word occurs at least twice. -/
+def NoSingletonColors {n : Nat} (p : ColorPattern n) : Prop :=
+  ∀ i, 2 ≤ (patternClassPositions p i).card
+
+/-- Alternating chords of rigid color classes are forbidden. This includes
+the possibility that the two chords have the same color. -/
+def RigidSkeletonNoncrossing {n : Nat} (p : ColorPattern n) : Prop :=
+  ∀ a b c d : Fin n, a < b → b < c → c < d →
+    RigidPosition p a → RigidPosition p b → p a c → p b d → False
+
+abbrev HeavyFaceRegionIndex {n : Nat} (p : ColorPattern n) :=
+  {q : Quotient p // RigidPosition p q.out} ⊕ Quotient (rigidFacePattern p)
+
+/-- One region per rigid color class and one per geometric face. Heavy
+faces with no positions are harmless empty regions. Quotient indices avoid
+duplicating a region for each possible anchor. -/
+noncomputable def heavyFaceRegion {n : Nat} (p : ColorPattern n) :
+    HeavyFaceRegionIndex p → Finset (Fin n)
+  | .inl q => patternClassPositions p q.val.out
+  | .inr q => heavyFacePositions p q.out
+
+theorem rigidPosition_of_related {n : Nat} (p : ColorPattern n)
+    {a b : Fin n} (ha : RigidPosition p a) (hab : p a b) : RigidPosition p b := by
+  unfold RigidPosition at *
+  rwa [← patternClassPositions_eq_of_related p hab]
+
+theorem quotient_eq_of_out_related {n : Nat} (p : ColorPattern n)
+    (q r : Quotient p) (h : p q.out r.out) : q = r := by
+  simpa only [Quotient.out_eq] using (Quotient.sound h)
+
+theorem heavyFaceRegion_cover {n : Nat} (p : ColorPattern n)
+    (hsize : NoSingletonColors p) (a : Fin n) :
+    ∃ k, a ∈ heavyFaceRegion p k := by
+  classical
+  by_cases ha : RigidPosition p a
+  · let q : Quotient p := Quotient.mk p a
+    have hqa : p q.out a := Quotient.exact (Quotient.out_eq q)
+    have hq : RigidPosition p q.out := rigidPosition_of_related p ha (p.symm hqa)
+    refine ⟨Sum.inl ⟨q, hq⟩, ?_⟩
+    simpa [heavyFaceRegion, patternClassPositions] using hqa
+  · have hh : HeavyPosition p a := by
+      have hs := hsize a
+      unfold RigidPosition at ha
+      unfold HeavyPosition
+      omega
+    let q : Quotient (rigidFacePattern p) := Quotient.mk _ a
+    have hqa : rigidFacePattern p q.out a := Quotient.exact (Quotient.out_eq q)
+    exact ⟨Sum.inr q, by simpa [heavyFaceRegion, heavyFacePositions] using And.intro hh hqa⟩
+
+theorem heavyFaceRegion_disjoint {n : Nat} (p : ColorPattern n)
+    (k l : HeavyFaceRegionIndex p) (a : Fin n)
+    (hk : a ∈ heavyFaceRegion p k) (hl : a ∈ heavyFaceRegion p l) : k = l := by
+  classical
+  cases k with
+  | inl q =>
+    have hqa : p q.val.out a := by simpa [heavyFaceRegion, patternClassPositions] using hk
+    have ha := rigidPosition_of_related p q.property hqa
+    cases l with
+    | inl r =>
+      have hra : p r.val.out a := by simpa [heavyFaceRegion, patternClassPositions] using hl
+      have heq := quotient_eq_of_out_related p q.val r.val (p.trans hqa (p.symm hra))
+      exact congrArg Sum.inl (Subtype.ext heq)
+    | inr r =>
+      have hh : HeavyPosition p a := (show HeavyPosition p a ∧ _ by
+        simpa [heavyFaceRegion, heavyFacePositions] using hl).1
+      exact (heavy_ne_rigid p hh ha rfl).elim
+  | inr q =>
+    have hqa : HeavyPosition p a ∧ rigidFacePattern p q.out a := by
+      simpa [heavyFaceRegion, heavyFacePositions] using hk
+    cases l with
+    | inl r =>
+      have hra : p r.val.out a := by simpa [heavyFaceRegion, patternClassPositions] using hl
+      exact (heavy_ne_rigid p hqa.1 (rigidPosition_of_related p r.property hra) rfl).elim
+    | inr r =>
+      have hra : HeavyPosition p a ∧ rigidFacePattern p r.out a := by
+        simpa [heavyFaceRegion, heavyFacePositions] using hl
+      exact congrArg Sum.inr (quotient_eq_of_out_related (rigidFacePattern p) q r
+        ((rigidFacePattern p).trans hqa.2 ((rigidFacePattern p).symm hra.2)))
+
+theorem heavyFaceRegion_noncrossing {n : Nat} (p : ColorPattern n)
+    (hskel : RigidSkeletonNoncrossing p)
+    (k l : HeavyFaceRegionIndex p) (a b c d : Fin n)
+    (hab : a < b) (hbc : b < c) (hcd : c < d)
+    (ha : a ∈ heavyFaceRegion p k) (hc : c ∈ heavyFaceRegion p k)
+    (hb : b ∈ heavyFaceRegion p l) (hd : d ∈ heavyFaceRegion p l) : k = l := by
+  classical
+  cases k with
+  | inl q =>
+    have hqa : p q.val.out a := by simpa [heavyFaceRegion, patternClassPositions] using ha
+    have hqc : p q.val.out c := by simpa [heavyFaceRegion, patternClassPositions] using hc
+    have hra := rigidPosition_of_related p q.property hqa
+    have hac := p.trans (p.symm hqa) hqc
+    cases l with
+    | inl r =>
+      have hrb : p r.val.out b := by simpa [heavyFaceRegion, patternClassPositions] using hb
+      have hrd : p r.val.out d := by simpa [heavyFaceRegion, patternClassPositions] using hd
+      exact (hskel a b c d hab hbc hcd hra (rigidPosition_of_related p r.property hrb)
+        hac (p.trans (p.symm hrb) hrd)).elim
+    | inr r =>
+      have hrb : HeavyPosition p b ∧ rigidFacePattern p r.out b := by
+        simpa [heavyFaceRegion, heavyFacePositions] using hb
+      have hrd : HeavyPosition p d ∧ rigidFacePattern p r.out d := by
+        simpa [heavyFaceRegion, heavyFacePositions] using hd
+      have hbd := (rigidFacePattern p).trans ((rigidFacePattern p).symm hrb.2) hrd.2
+      have h := (hbd a c hra hac).mp ⟨hab, hbc⟩
+      omega
+  | inr q =>
+    have hqa : HeavyPosition p a ∧ rigidFacePattern p q.out a := by
+      simpa [heavyFaceRegion, heavyFacePositions] using ha
+    have hqc : HeavyPosition p c ∧ rigidFacePattern p q.out c := by
+      simpa [heavyFaceRegion, heavyFacePositions] using hc
+    have hac := (rigidFacePattern p).trans ((rigidFacePattern p).symm hqa.2) hqc.2
+    cases l with
+    | inl r =>
+      have hrb : p r.val.out b := by simpa [heavyFaceRegion, patternClassPositions] using hb
+      have hrd : p r.val.out d := by simpa [heavyFaceRegion, patternClassPositions] using hd
+      have hr := rigidPosition_of_related p r.property hrb
+      have hbd := p.trans (p.symm hrb) hrd
+      have h := (hac b d hr hbd).mpr ⟨hbc, hcd⟩
+      omega
+    | inr r =>
+      have hrb : HeavyPosition p b ∧ rigidFacePattern p r.out b := by
+        simpa [heavyFaceRegion, heavyFacePositions] using hb
+      have hrd : HeavyPosition p d ∧ rigidFacePattern p r.out d := by
+        simpa [heavyFaceRegion, heavyFacePositions] using hd
+      have hbd := (rigidFacePattern p).trans ((rigidFacePattern p).symm hrb.2) hrd.2
+      have hafb := rigid_faces_no_alternation p hab hbc hcd hac hbd
+      exact congrArg Sum.inr (quotient_eq_of_out_related (rigidFacePattern p) q r
+        ((rigidFacePattern p).trans hqa.2
+          ((rigidFacePattern p).trans hafb ((rigidFacePattern p).symm hrb.2))))
+
+theorem winning_restrict_rigid_class {n : Nat} (p : ColorPattern n)
+    (a : Fin n) (ha : RigidPosition p a) :
+    WinningColorPattern (restrictColorPattern p
+      ((patternClassPositions p a).orderEmbOfFin rfl)) := by
+  classical
+  let e := (patternClassPositions p a).orderEmbOfFin rfl
+  have he (i) : p a (e i) := by
+    have hi : e i ∈ patternClassPositions p a :=
+      (patternClassPositions p a).orderEmbOfFin_mem rfl i
+    simpa only [patternClassPositions, Finset.mem_filter,
+      Finset.mem_univ, true_and] using hi
+  have sat : ∀ i b, p (e i) b → ∃ j, e j = b := by
+    intro i b hib
+    have hb : b ∈ patternClassPositions p a := by
+      simpa [patternClassPositions] using p.trans (he i) hib
+    change b ∈ Set.range e
+    simpa [e, Finset.range_orderEmbOfFin] using hb
+  apply (winning_iff_constraint_refinement _).mpr
+  refine ⟨restrictColorPattern p e, ⟨?_, ?_⟩, le_rfl⟩
+  · intro i
+    rw [restrict_pattern_class_card p e sat i,
+      ← patternClassPositions_eq_of_related p (he i)]
+    exact ha
+  · intro i j k l _ _ _ _ _
+    exact (restrictColorPattern_rel p e i j).mpr (p.trans (p.symm (he i)) (he j))
+
+/-- The reverse geometric Face Lemma: rigid classes and independently
+winning complete heavy faces assemble into a genuine Same Game win. -/
+theorem winning_of_heavy_faces {n : Nat} (p : ColorPattern n)
+    (hsize : NoSingletonColors p) (hskel : RigidSkeletonNoncrossing p)
+    (hfaces : ∀ a, WinningColorPattern
+      (restrictColorPattern p (heavyFaceEmbedding p a))) : WinningColorPattern p := by
+  classical
+  apply winning_of_noncrossing_finset_cover p (heavyFaceRegion p)
+    (heavyFaceRegion_cover p hsize) (heavyFaceRegion_disjoint p)
+    (heavyFaceRegion_noncrossing p hskel)
+  intro k
+  cases k with
+  | inl q => exact winning_restrict_rigid_class p q.val.out q.property
+  | inr q => exact hfaces q.out
+
+/-- Full structural Face Decomposition Theorem. It has no assumed global
+certificate, path-locality condition, saturation condition, or gluing oracle. -/
+theorem winning_iff_heavy_face_decomposition {n : Nat} (p : ColorPattern n) :
+    WinningColorPattern p ↔ NoSingletonColors p ∧ RigidSkeletonNoncrossing p ∧
+      ∀ a, WinningColorPattern (restrictColorPattern p (heavyFaceEmbedding p a)) := by
+  constructor
+  · intro hwin
+    obtain ⟨cert⟩ := hwin
+    refine ⟨?_, ?_, fun a => winning_restrict_heavy_face p ⟨cert⟩ a⟩
+    · intro i
+      rcases certificate_position_rigid_or_heavy p cert i with h | h
+      · rcases h with h | h <;> omega
+      · exact le_trans (by decide : 2 ≤ 4) h
+    · intro a b c d hab hbc hcd ha hb hac hbd
+      have cc := certificateBlockPattern_constraint cert
+      have hsmall : ∀ i, (patternClassPositions (certificateBlockPattern cert) i).card ≤ 3 := by
+        intro i
+        rcases cc.1 i with h | h <;> omega
+      exact small_noncrossing_no_alternation _ hsmall cc.2 a b c d hab hbc hcd
+        ⟨certificate_rigid_related p cert ha hac, certificate_rigid_related p cert hb hbd⟩
+  · rintro ⟨hsize, hskel, hfaces⟩
+    exact winning_of_heavy_faces p hsize hskel hfaces
+
+/-- The same criterion for the original maximal-run deletion game, using
+the original colors in every increasing face subword. -/
+theorem raw_win_iff_heavy_face_decomposition {n q : Nat} (color : Fin n → Fin q) :
+    RawMaxErases (List.ofFn color) [] ↔
+      NoSingletonColors (colorPatternOf color) ∧
+      RigidSkeletonNoncrossing (colorPatternOf color) ∧
+      ∀ a, RawMaxErases (List.ofFn (fun i =>
+        color (heavyFaceEmbedding (colorPatternOf color) a i))) [] := by
+  rw [← winning_color_pattern_iff_raw_win, winning_iff_heavy_face_decomposition]
+  apply and_congr_right
+  intro _
+  apply and_congr_right
+  intro _
+  apply forall_congr'
+  intro a
+  rw [← winning_color_pattern_iff_raw_win]
+  have heq : colorPatternOf (fun i =>
+      color (heavyFaceEmbedding (colorPatternOf color) a i)) =
+      restrictColorPattern (colorPatternOf color) (heavyFaceEmbedding (colorPatternOf color) a) := by
+    apply Setoid.ext
+    intro i j
+    exact (restrictColorPattern_rel (colorPatternOf color)
+      (heavyFaceEmbedding (colorPatternOf color) a) i j).symm
+  rw [heq]
+
+#print axioms winning_of_heavy_faces
+#print axioms winning_iff_heavy_face_decomposition
+#print axioms raw_win_iff_heavy_face_decomposition
+
+end LC004
+\end{LeanCode}
+% END FROZEN SOURCE
+\subsection{\texorpdfstring{\texttt{HeavyFaceCertificateProduct}}{HeavyFaceCertificateProduct}}
+% BEGIN FROZEN SOURCE: LC004/HeavyFaceCertificateProduct.lean
+\begin{LeanCode}
+import LC004.HeavyFaceDecomposition
+
+namespace LC004
+open scoped Classical
+
+/-- Unordered certificate partitions of a fixed color pattern. Neither
+block order nor the order of entries inside a block is counted. -/
+abbrev CertificatePartition {n : Nat} (p : ColorPattern n) :=
+  {c : ColorPattern n // CertificateConstraint c ∧ c ≤ p}
+
+noncomputable def CertificatePartition.toCertificate {n : Nat} {p : ColorPattern n}
+    (c : CertificatePartition p) : Noncrossing23Certificate (patternColor p) :=
+  (smallPatternCertificate c.val c.property.1.1 c.property.1.2).recolor
+    (patternColor p) (fun i j h => (patternColor_eq_iff p i j).mpr
+      (c.property.2 ((patternColor_eq_iff c.val i j).mp h)))
+
+theorem CertificatePartition.toCertificate_pattern {n : Nat} {p : ColorPattern n}
+    (c : CertificatePartition p) : certificateBlockPattern c.toCertificate = c.val := by
+  change certificateBlockPattern
+    (smallPatternCertificate c.val c.property.1.1 c.property.1.2) = c.val
+  apply le_antisymm
+  · intro i j h
+    exact certificateBlockPattern_refines c.val _ h
+  · intro i j h
+    exact certificate_rigid_related c.val _ (c.property.1.1 i) h
+
+/-- Restriction acts on actual partitions, retaining the exact pair/triple
+classes, not merely the existence of some winning face certificate. -/
+noncomputable def heavyFacePartitionRestriction {n : Nat} (p : ColorPattern n)
+    (c : CertificatePartition p) (q : Quotient (rigidFacePattern p)) :
+    CertificatePartition (restrictColorPattern p (heavyFaceEmbedding p q.out)) := by
+  refine ⟨restrictColorPattern c.val (heavyFaceEmbedding p q.out), ?_,
+    restrictColorPattern_mono c.property.2 _⟩
+  apply certificateConstraint_restrict c.val c.property.1
+  intro i b h
+  rw [← c.toCertificate_pattern] at h
+  exact certificate_face_saturated p c.toCertificate q.out (heavyFaceEmbedding p q.out)
+    (heavyFaceEmbedding_carrier p q.out) h
+
+abbrev HeavyFacePartitionFamily {n : Nat} (p : ColorPattern n) :=
+  ∀ q : Quotient (rigidFacePattern p),
+    CertificatePartition (restrictColorPattern p (heavyFaceEmbedding p q.out))
+
+theorem heavyFacePartitionRestriction_injective {n : Nat} (p : ColorPattern n) :
+    Function.Injective (heavyFacePartitionRestriction p) := by
+  have forward (c d : CertificatePartition p)
+      (h : heavyFacePartitionRestriction p c = heavyFacePartitionRestriction p d) :
+      c.val ≤ d.val := by
+    intro a b hab
+    have hcert : certificateBlockPattern c.toCertificate a b := by
+      rwa [c.toCertificate_pattern]
+    rcases certificate_position_rigid_or_heavy p c.toCertificate a with ha | ha
+    · have hd := certificate_rigid_related p d.toCertificate ha (c.property.2 hab)
+      rwa [d.toCertificate_pattern] at hd
+    · obtain ⟨hb, habf⟩ := certificate_heavy_face p c.toCertificate ha hcert
+      let q : Quotient (rigidFacePattern p) := Quotient.mk _ a
+      have hqa : rigidFacePattern p q.out a := Quotient.exact (Quotient.out_eq q)
+      have carrier := heavyFaceEmbedding_carrier p q.out
+      obtain ⟨i, hi⟩ := (carrier a).mpr ⟨ha, hqa⟩
+      obtain ⟨j, hj⟩ := (carrier b).mpr ⟨hb, (rigidFacePattern p).trans hqa habf⟩
+      have hlocal : restrictColorPattern c.val (heavyFaceEmbedding p q.out) i j := by
+        apply (restrictColorPattern_rel _ _ i j).mpr
+        simpa only [hi, hj] using hab
+      have heq := congrArg Subtype.val (congrFun h q)
+      change restrictColorPattern c.val (heavyFaceEmbedding p q.out) =
+        restrictColorPattern d.val (heavyFaceEmbedding p q.out) at heq
+      rw [heq] at hlocal
+      have hout := (restrictColorPattern_rel d.val (heavyFaceEmbedding p q.out) i j).mp hlocal
+      simpa only [hi, hj] using hout
+  intro c d h
+  exact Subtype.ext (le_antisymm (forward c d h) (forward d c h.symm))
+
+/-- The assembly construction preserves every supplied regional partition
+exactly. This is stronger than preservation of winning status. -/
+theorem exists_partition_of_noncrossing_regions {n : Nat} {ι : Type*}
+    (p : ColorPattern n) (S : ι → Finset (Fin n))
+    (cover : ∀ a, ∃ k, a ∈ S k)
+    (disjoint : ∀ k l a, a ∈ S k → a ∈ S l → k = l)
+    (noncrossing : ∀ k l a b c d, a < b → b < c → c < d →
+      a ∈ S k → c ∈ S k → b ∈ S l → d ∈ S l → k = l)
+    (parts : ∀ k, CertificatePartition
+      (restrictColorPattern p ((S k).orderEmbOfFin rfl))) :
+    ∃ c : CertificatePartition p, ∀ k,
+      restrictColorPattern c.val ((S k).orderEmbOfFin rfl) = (parts k).val := by
+  classical
+  let e := fun k => (S k).orderEmbOfFin rfl
+  have coverE : ∀ a, ∃ k i, e k i = a := by
+    intro a
+    obtain ⟨k, hk⟩ := cover a
+    refine ⟨k, ?_⟩
+    change a ∈ Set.range (e k)
+    simpa [e, Finset.range_orderEmbOfFin] using hk
+  have disjointE : ∀ k l i j, e k i = e l j → k = l := by
+    intro k l i j h
+    apply disjoint k l (e k i) ((S k).orderEmbOfFin_mem rfl i)
+    rw [h]
+    exact (S l).orderEmbOfFin_mem rfl j
+  have ncE : ∀ k l i j s t, e k i < e l s → e l s < e k j → e k j < e l t → k = l := by
+    intro k l i j s t hab hbc hcd
+    exact noncrossing k l _ _ _ _ hab hbc hcd
+      ((S k).orderEmbOfFin_mem rfl i) ((S k).orderEmbOfFin_mem rfl j)
+      ((S l).orderEmbOfFin_mem rfl s) ((S l).orderEmbOfFin_mem rfl t)
+  let g := assembledPattern e (fun k => (parts k).val) coverE disjointE
+  have hg : CertificateConstraint g := assembledPattern_constraint e _ coverE disjointE ncE
+    (fun k => (parts k).property.1)
+  have hgp : g ≤ p := by
+    rintro a b ⟨k, i, j, rfl, rfl, hij⟩
+    exact (restrictColorPattern_rel p (e k) i j).mp ((parts k).property.2 hij)
+  refine ⟨⟨g, hg, hgp⟩, ?_⟩
+  intro k
+  apply Setoid.ext
+  intro i j
+  exact (restrictColorPattern_rel g (e k) i j).trans
+    (assembledPattern_local e _ coverE disjointE k i j)
+
+theorem heavyFacePartitionRestriction_surjective {n : Nat} (p : ColorPattern n)
+    (hsize : NoSingletonColors p) (hskel : RigidSkeletonNoncrossing p) :
+    Function.Surjective (heavyFacePartitionRestriction p) := by
+  classical
+  intro f
+  have rigidWin (q : {q : Quotient p // RigidPosition p q.out}) :=
+    (winning_iff_constraint_refinement _).mp
+      (winning_restrict_rigid_class p q.val.out q.property)
+  choose cr hcr href using rigidWin
+  let parts : ∀ k : HeavyFaceRegionIndex p, CertificatePartition
+      (restrictColorPattern p ((heavyFaceRegion p k).orderEmbOfFin rfl))
+    | .inl q => ⟨cr q, hcr q, href q⟩
+    | .inr q => f q
+  obtain ⟨c, hc⟩ := exists_partition_of_noncrossing_regions p (heavyFaceRegion p)
+    (heavyFaceRegion_cover p hsize) (heavyFaceRegion_disjoint p)
+    (heavyFaceRegion_noncrossing p hskel) parts
+  refine ⟨c, ?_⟩
+  funext q
+  apply Subtype.ext
+  exact hc (.inr q)
+
+/-- Exact, duplication-free certificate partition factorization over the
+distinct geometric faces. Rigid blocks have no choices. -/
+noncomputable def heavyFaceCertificateEquiv {n : Nat} (p : ColorPattern n)
+    (hsize : NoSingletonColors p) (hskel : RigidSkeletonNoncrossing p) :
+    CertificatePartition p ≃ HeavyFacePartitionFamily p :=
+  Equiv.ofBijective (heavyFacePartitionRestriction p)
+    ⟨heavyFacePartitionRestriction_injective p,
+      heavyFacePartitionRestriction_surjective p hsize hskel⟩
+
+/-- This counts certificate partitions for a fixed word. It does not count
+winning color patterns or erasure histories. -/
+theorem certificate_partition_count_product {n : Nat} (p : ColorPattern n)
+    (hsize : NoSingletonColors p) (hskel : RigidSkeletonNoncrossing p) :
+    Nat.card (CertificatePartition p) =
+      ∏ q : Quotient (rigidFacePattern p),
+        Nat.card (CertificatePartition (restrictColorPattern p (heavyFaceEmbedding p q.out))) := by
+  classical
+  rw [Nat.card_congr (heavyFaceCertificateEquiv p hsize hskel)]
+  exact Nat.card_pi
+
+#print axioms heavyFaceCertificateEquiv
+#print axioms certificate_partition_count_product
+
+end LC004
+\end{LeanCode}
+% END FROZEN SOURCE
+\clearpage
+\bibliographystyle{amsplain}
+\nocite{AlexandriaCoreSnapshot,SameGameProofSnapshot,GitHubPagesDocs}
+\bibliography{references}
+\end{document}

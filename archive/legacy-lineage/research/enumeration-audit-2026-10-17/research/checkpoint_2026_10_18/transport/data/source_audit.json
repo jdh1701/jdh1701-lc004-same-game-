@@ -1,0 +1,165 @@
+{
+  "new_theorem_count": 23,
+  "new_named_theorems": [
+    "zetaSum_injective_below",
+    "collected_union_congr_below",
+    "collected_union_filter_le",
+    "unionTerms_map_sup",
+    "collectedCoeff_map_injective",
+    "collected_union_transport",
+    "separatedPartition_le_iff",
+    "separatedPartition_restrictions",
+    "separatedPartition_le_separated_iff",
+    "separatedPartition_injective",
+    "separatedPartition_sup",
+    "separatedPartition_reconstruct",
+    "fullBoardPartition_injective",
+    "fullBoardPartition_sup",
+    "fullBoard_coefficient_transport",
+    "splitComplementEquiv_selected",
+    "splitComplementEquiv_remainder",
+    "quadPosition_injective",
+    "quadPosition_complement",
+    "quadSplitEquiv_selected",
+    "quadSplitEquiv_remainder",
+    "fullBoard_four_block_zero",
+    "fullBoard_four_block_zero_of_coverage"
+  ],
+  "axiom_reports": {
+    "zetaSum_injective_below": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "collected_union_congr_below": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "collected_union_filter_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "unionTerms_map_sup": [
+      "propext",
+      "Quot.sound"
+    ],
+    "collectedCoeff_map_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "collected_union_transport": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "separatedPartition_le_iff": [],
+    "separatedPartition_restrictions": [
+      "propext",
+      "Quot.sound"
+    ],
+    "separatedPartition_le_separated_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "separatedPartition_injective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "separatedPartition_sup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "separatedPartition_reconstruct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "fullBoardPartition_injective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "fullBoardPartition_sup": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "fullBoard_coefficient_transport": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "splitComplementEquiv_selected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "splitComplementEquiv_remainder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "quadPosition_injective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "quadPosition_complement": [
+      "propext"
+    ],
+    "quadSplitEquiv_selected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "quadSplitEquiv_remainder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "fullBoard_four_block_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "fullBoard_four_block_zero_of_coverage": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "source_hashes": {
+    "LC004/CoefficientLocality.lean": "4ff6c4332195732d410684c25b459c7f323a6248d3f54810e80f26cbf8d8e680",
+    "LC004/CoefficientTransport.lean": "7acbdc36e6803d1f49716cf6904933c43a3c6b2863113824c1f96a5cc4e03186",
+    "LC004/SeparatedPartitions.lean": "3fb96f4ef74d6c1bd5585dc36e721b9a8b2b882e3a7271fe98e970a06ebfee93",
+    "LC004/FullBoardCancellation.lean": "d367bc02a8209657960400a96b781b30d81be58e02c1d0fe01bc85da3398c1ba"
+  },
+  "scans": {
+    "holes": [],
+    "custom_axioms": [],
+    "unchecked_code": []
+  },
+  "stage_counts": {
+    "verified": 4,
+    "partial": 1,
+    "open": 4
+  },
+  "coefficient_locality_lean_verified": true,
+  "disjoint_partition_product_order_isomorphism_lean_verified": true,
+  "full_board_image_family_cancellation_lean_verified": true,
+  "full_board_all_witness_coverage_lean_verified": false,
+  "full_board_small_block_theorem_lean_verified": false,
+  "general_enumeration_solved": false,
+  "mathematical_originality_established": false,
+  "numerical_prior_art_correction_recorded": true,
+  "remaining": [
+    "Exhaustive four-position branch classification and endpoint extension/restriction",
+    "Discharge hcover for the full valid-witness family",
+    "Small-block and component assembly, including size two and three",
+    "Executable witness generator and grammar-to-raw-game correspondence",
+    "Useful general connected-coefficient law with growth analysis",
+    "End-to-end W(q,n) theorem and full originality assessment"
+  ]
+}

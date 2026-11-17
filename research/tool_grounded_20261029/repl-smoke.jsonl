@@ -1,0 +1,14 @@
+{"messages":
+ [{"severity": "info",
+   "pos": {"line": 3, "column": 0},
+   "endPos": {"line": 3, "column": 6},
+   "data": "LC004.stepAt : LC004.RunState → ℕ → Option LC004.RunState"}],
+ "env": 0}
+
+{"messages":
+ [{"severity": "info",
+   "pos": {"line": 1, "column": 0},
+   "endPos": {"line": 1, "column": 111},
+   "data": "Goals accomplished!"}],
+ "env": 1}
+

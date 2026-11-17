@@ -1,0 +1,76 @@
+{
+  "prior_registry": "research/heavy_face_counterexamples.json",
+  "new_hypothesis_tests": [
+    {
+      "removed_hypothesis": "no_singleton",
+      "word": [
+        0
+      ],
+      "letters": "A",
+      "other_two_conditions": true,
+      "winning": false,
+      "minimality": "computationally minimal up to relabeling; all shorter words exhaustively checked",
+      "formal_minimality_claim": false
+    },
+    {
+      "removed_hypothesis": "noncrossing_skeleton",
+      "word": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "letters": "ABAB",
+      "other_two_conditions": true,
+      "winning": false,
+      "minimality": "computationally minimal up to relabeling; all shorter words exhaustively checked",
+      "formal_minimality_claim": false
+    },
+    {
+      "removed_hypothesis": "winning_faces",
+      "word": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "letters": "AAABAB",
+      "other_two_conditions": true,
+      "winning": false,
+      "minimality": "computationally minimal up to relabeling; all shorter words exhaustively checked",
+      "formal_minimality_claim": false
+    }
+  ],
+  "failed_proof_attempts": [
+    {
+      "attempt": "rigid-class restriction",
+      "category": "elaboration",
+      "result": "failed",
+      "diagnostic": "simp reduced orderEmbOfFin_mem to True instead of exposing class membership",
+      "correction": "typed membership hypothesis and simp only on the membership definition"
+    },
+    {
+      "attempt": "raw maximal-run corollary",
+      "category": "elaboration",
+      "result": "failed",
+      "diagnostic": "implicit color pattern and embedding not inferred under Setoid.ker",
+      "correction": "explicit arguments to restrictColorPattern_rel"
+    },
+    {
+      "attempt": "product equivalence first build",
+      "category": "elaboration",
+      "result": "failed",
+      "diagnostic": "reserved local identifier; dependent Finset rewriting; quotient Fintype instance unavailable in theorem signature",
+      "correction": "parts identifier, Classical scope, direct geometric lifting for injectivity"
+    },
+    {
+      "attempt": "product equivalence second build",
+      "category": "elaboration",
+      "result": "failed",
+      "diagnostic": "simp produced syntactically similar but dependently different order embeddings",
+      "correction": "avoid carrier equality transport; lift both endpoints into their quotient-indexed face"
+    }
+  ]
+}

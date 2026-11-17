@@ -1,0 +1,24 @@
+{
+  "lower_open_threshold": "45248935/410282362",
+  "upper_open_threshold": "10996525/97447751",
+  "lower_witness_state_back_sum_favored": [
+    736,
+    0,
+    45248935,
+    -410282362
+  ],
+  "upper_witness_state_back_sum_favored": [
+    4301,
+    0,
+    -21993050,
+    194895502
+  ],
+  "selected_excess_bias": "11028731/100000000",
+  "weights": [
+    111028731,
+    100000000,
+    100000000
+  ],
+  "growth_decimal_display_only": "2.99627261278230836771816237769154641964583952053875005742864",
+  "scope": "Optimal common-bias interval for this fixed potential and fixed favorites only; not global optimization."
+}

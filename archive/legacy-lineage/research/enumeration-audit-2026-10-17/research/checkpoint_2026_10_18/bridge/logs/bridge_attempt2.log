@@ -1,0 +1,12 @@
+ℹ [400/403] Replayed LC004.GrammarNormalForm
+info: ././././LC004/GrammarNormalForm.lean:65:0: 'LC004.clickGrammar_iff_firstBlock' depends on axioms: [propext]
+info: ././././LC004/GrammarNormalForm.lean:66:0: 'LC004.clickGrammar_map' depends on axioms: [propext]
+ℹ [402/403] Replayed LC004.GrammarInsertion
+info: ././././LC004/GrammarInsertion.lean:91:0: 'LC004.clickGrammar_splice' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/GrammarInsertion.lean:92:0: 'LC004.clickGrammar_insert' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/GrammarInsertion.lean:93:0: 'LC004.clickGrammar_replicate' depends on axioms: [propext, Quot.sound]
+ℹ [403/403] Built LC004.OrdinaryGrammarComplete
+info: ././././LC004/OrdinaryGrammarComplete.lean:88:0: 'LC004.ordinaryStepAtFuel_block' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/OrdinaryGrammarComplete.lean:89:0: 'LC004.ordinarySolvable_clickGrammar' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/OrdinaryGrammarComplete.lean:90:0: 'LC004.ordinarySolvable_firstBlock' depends on axioms: [propext, Quot.sound]
+Build completed successfully.

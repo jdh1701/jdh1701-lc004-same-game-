@@ -1,0 +1,1 @@
+Source commit 77f33636c7769cfb1273b4774b104b5d5ec89dbc, PR #34. Hosted CI run 40920655444 pending at archival time. Local full build passed. See coverage.log, axioms.log and guards.log for full audit results. The two new declarations have standard axioms only. All retained attempt logs uploaded; intermediate failed sources were not retained.

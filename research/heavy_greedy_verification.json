@@ -1,0 +1,19 @@
+{
+  "schema": "lc004-heavy-greedy-research/1",
+  "base_evidence_commit": "0f32a99b1db8447b36fed7223f84133b0d1e3ffd",
+  "lean_local": "pass; 11 declarations axiom-audited",
+  "hosted_status": "see branch workflow; no hosted success inferred from local success",
+  "family_status": "ordinary mathematical argument, not Lean-certified",
+  "novelty_status": "unassessed",
+  "source_hashes": {
+    "research/HeavyGreedyObstruction.lean": "b84a9430b87486dffda6cae91f33f24cc23749309a42159e40e8c0c3f16c8366",
+    "research/heavy_greedy_obstruction.py": "c71e6ee0340d61390b95a96fc0ea9c91c45138fc1f29cb7b0a9641c49c0f303b",
+    "research/heavy_greedy_obstruction_results.json": "1ccf91913eec3749381fbcb391bc272ff6d00dee2ecc3684b83465e42d17f3ea",
+    "research/heavy_greedy_obstruction_report.md": "0df801749c72c52ef4ffdb77f19ad10981eb0a8a76bd80e648e5f9a97b370a06",
+    ".github/workflows/heavy-greedy-obstruction.yml": "db2985ae2ccb2208e4ac2ffa6c9e1522e024840e46f09a2383664cc30372cb39",
+    "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+    "lake-manifest.json": "9bdb0deebd12bb67d5850c1228a99a4141b7192ec9ca2872a30810b04b9c7ae4"
+  },
+  "previous_workflow_sha256": "90b47875de31852b8a5992201b0278da760aa0caff775513d32b950f3cef4c66",
+  "workflow_evolution": "Extended to native continuation proof, pinned REPL, SymPy and Z3; original obstruction source unchanged"
+}

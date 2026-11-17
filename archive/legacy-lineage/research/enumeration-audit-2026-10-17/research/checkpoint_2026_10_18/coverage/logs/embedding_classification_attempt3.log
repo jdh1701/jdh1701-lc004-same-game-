@@ -1,0 +1,687 @@
+⚠ [719/828] Replayed LC004.SignedConstraints
+warning: ././././LC004/SignedConstraints.lean:43:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ././././LC004/SignedConstraints.lean:104:0: 'LC004.signedEval_addConstraint' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:105:0: 'LC004.signedEval_unionTerms' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:106:0: 'LC004.signedEval_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:107:0: 'LC004.signed_constraint_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [790/828] Replayed LC004.PartitionCounting
+info: ././././LC004/PartitionCounting.lean:58:0: 'LC004.respects_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionCounting.lean:59:0: 'LC004.card_partitionEvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionCounting.lean:60:0: 'LC004.partition_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [810/828] Replayed LC004.CoefficientFactorization
+info: ././././LC004/CoefficientFactorization.lean:138:0: 'LC004.zetaSum_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientFactorization.lean:139:0: 'LC004.coefficient_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientFactorization.lean:140:0: 'LC004.collected_union_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [814/828] Replayed LC004.NoncrossingRestriction
+info: ././././LC004/NoncrossingRestriction.lean:90:0: 'LC004.noncrossing_iff_blocks' depends on axioms: [propext]
+info: ././././LC004/NoncrossingRestriction.lean:91:0: 'LC004.blockRestriction_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/NoncrossingRestriction.lean:92:0: 'LC004.pairTriple_iff_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [815/828] Replayed LC004.ChordBarrier
+info: ././././LC004/ChordBarrier.lean:29:0: 'LC004.noncrossing_interval_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [818/828] Replayed LC004.GrammarNormalForm
+info: ././././LC004/GrammarNormalForm.lean:65:0: 'LC004.clickGrammar_iff_firstBlock' depends on axioms: [propext]
+info: ././././LC004/GrammarNormalForm.lean:66:0: 'LC004.clickGrammar_map' depends on axioms: [propext]
+ℹ [819/828] Replayed LC004.CoefficientBarrier
+info: ././././LC004/CoefficientBarrier.lean:45:0: 'LC004.coefficient_zero_outside_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientBarrier.lean:46:0: 'LC004.four_gap_pairing_intersection' does not depend on any axioms
+info: ././././LC004/CoefficientBarrier.lean:47:0: 'LC004.two_pairing_indicator' depends on axioms: [propext]
+ℹ [820/828] Replayed LC004.UnionCoefficientIdentity
+info: ././././LC004/UnionCoefficientIdentity.lean:101:0: 'LC004.two_branch_join_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UnionCoefficientIdentity.lean:102:0: 'LC004.two_branch_barrier_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UnionCoefficientIdentity.lean:103:0: 'LC004.collected_union_append' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UnionCoefficientIdentity.lean:104:0: 'LC004.collected_union_fixed_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [821/828] Replayed LC004.FourBlockCancellation
+info: ././././LC004/FourBlockCancellation.lean:58:0: 'LC004.quad_pairings_join_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourBlockCancellation.lean:59:0: 'LC004.four_block_barrier_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [823/828] Replayed LC004.FourGapGeometry
+warning: ././././LC004/FourGapGeometry.lean:34:5: unused variable `hab`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+warning: ././././LC004/FourGapGeometry.lean:34:33: unused variable `hcd`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+✔ [826/828] Built Mathlib.Tactic.FinCases
+✖ [827/828] Building LC004.WitnessEmbedding
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /tmp/lean-4.19.0-linux/bin/lean ././././LC004/WitnessEmbedding.lean -R ./././. -o ././.lake/build/lib/lean/LC004/WitnessEmbedding.olean -i ././.lake/build/lib/lean/LC004/WitnessEmbedding.ilean -c ././.lake/build/ir/LC004/WitnessEmbedding.c --json
+error: ././././LC004/WitnessEmbedding.lean:109:54: tactic 'assumption' failed
+α : Type u_1
+β : Type u_2
+γ : Type u_3
+inst✝² : LinearOrder α
+inst✝¹ : LinearOrder β
+inst✝ : LinearOrder γ
+e : γ ≃ α ⊕ β
+hf : StrictMono fun a => e.symm (Sum.inl a)
+hg : StrictMono fun b => e.symm (Sum.inr b)
+p P : Setoid α × Setoid β
+hp : IsNoncrossing p.1
+hq : IsNoncrossing p.2
+hle : p ≤ P
+hP : IsNoncrossing (fullBoardPartition e P)
+ht : fullBoardPartition e p ≤ fullBoardPartition e P
+val✝³ val✝² : α
+hab : e.symm (Sum.inl val✝³) < e.symm (Sum.inl val✝²)
+val✝¹ : α
+hbc : e.symm (Sum.inl val✝²) < e.symm (Sum.inl val✝¹)
+val✝ : α
+hcd : e.symm (Sum.inl val✝¹) < e.symm (Sum.inl val✝)
+hac : Sum.LiftRel (⇑p.1) (⇑p.2) (Sum.inl val✝³) (Sum.inl val✝¹)
+hbd : Sum.LiftRel (⇑p.1) (⇑p.2) (Sum.inl val✝²) (Sum.inl val✝)
+hAB : Sum.LiftRel (⇑P.1) (⇑P.2) (Sum.inl val✝³) (Sum.inl val✝²)
+⊢ p.1 val✝³ val✝¹
+error: ././././LC004/WitnessEmbedding.lean:109:70: tactic 'assumption' failed
+α : Type u_1
+β : Type u_2
+γ : Type u_3
+inst✝² : LinearOrder α
+inst✝¹ : LinearOrder β
+inst✝ : LinearOrder γ
+e : γ ≃ α ⊕ β
+hf : StrictMono fun a => e.symm (Sum.inl a)
+hg : StrictMono fun b => e.symm (Sum.inr b)
+p P : Setoid α × Setoid β
+hp : IsNoncrossing p.1
+hq : IsNoncrossing p.2
+hle : p ≤ P
+hP : IsNoncrossing (fullBoardPartition e P)
+ht : fullBoardPartition e p ≤ fullBoardPartition e P
+val✝³ val✝² : α
+hab : e.symm (Sum.inl val✝³) < e.symm (Sum.inl val✝²)
+val✝¹ : α
+hbc : e.symm (Sum.inl val✝²) < e.symm (Sum.inl val✝¹)
+val✝ : α
+hcd : e.symm (Sum.inl val✝¹) < e.symm (Sum.inl val✝)
+hac : Sum.LiftRel (⇑p.1) (⇑p.2) (Sum.inl val✝³) (Sum.inl val✝¹)
+hbd : Sum.LiftRel (⇑p.1) (⇑p.2) (Sum.inl val✝²) (Sum.inl val✝)
+hAB : Sum.LiftRel (⇑P.1) (⇑P.2) (Sum.inl val✝³) (Sum.inl val✝²)
+⊢ p.1 val✝² val✝
+error: ././././LC004/WitnessEmbedding.lean:111:54: tactic 'assumption' failed
+α : Type u_1
+β : Type u_2
+γ : Type u_3
+inst✝² : LinearOrder α
+inst✝¹ : LinearOrder β
+inst✝ : LinearOrder γ
+e : γ ≃ α ⊕ β
+hf : StrictMono fun a => e.symm (Sum.inl a)
+hg : StrictMono fun b => e.symm (Sum.inr b)
+p P : Setoid α × Setoid β
+hp : IsNoncrossing p.1
+hq : IsNoncrossing p.2
+hle : p ≤ P
+hP : IsNoncrossing (fullBoardPartition e P)
+ht : fullBoardPartition e p ≤ fullBoardPartition e P
+val✝³ val✝² : β
+hab : e.symm (Sum.inr val✝³) < e.symm (Sum.inr val✝²)
+val✝¹ : β
+hbc : e.symm (Sum.inr val✝²) < e.symm (Sum.inr val✝¹)
+val✝ : β
+hcd : e.symm (Sum.inr val✝¹) < e.symm (Sum.inr val✝)
+hac : Sum.LiftRel (⇑p.1) (⇑p.2) (Sum.inr val✝³) (Sum.inr val✝¹)
+hbd : Sum.LiftRel (⇑p.1) (⇑p.2) (Sum.inr val✝²) (Sum.inr val✝)
+hAB : Sum.LiftRel (⇑P.1) (⇑P.2) (Sum.inr val✝³) (Sum.inr val✝²)
+⊢ p.2 val✝³ val✝¹
+error: ././././LC004/WitnessEmbedding.lean:111:70: tactic 'assumption' failed
+α : Type u_1
+β : Type u_2
+γ : Type u_3
+inst✝² : LinearOrder α
+inst✝¹ : LinearOrder β
+inst✝ : LinearOrder γ
+e : γ ≃ α ⊕ β
+hf : StrictMono fun a => e.symm (Sum.inl a)
+hg : StrictMono fun b => e.symm (Sum.inr b)
+p P : Setoid α × Setoid β
+hp : IsNoncrossing p.1
+hq : IsNoncrossing p.2
+hle : p ≤ P
+hP : IsNoncrossing (fullBoardPartition e P)
+ht : fullBoardPartition e p ≤ fullBoardPartition e P
+val✝³ val✝² : β
+hab : e.symm (Sum.inr val✝³) < e.symm (Sum.inr val✝²)
+val✝¹ : β
+hbc : e.symm (Sum.inr val✝²) < e.symm (Sum.inr val✝¹)
+val✝ : β
+hcd : e.symm (Sum.inr val✝¹) < e.symm (Sum.inr val✝)
+hac : Sum.LiftRel (⇑p.1) (⇑p.2) (Sum.inr val✝³) (Sum.inr val✝¹)
+hbd : Sum.LiftRel (⇑p.1) (⇑p.2) (Sum.inr val✝²) (Sum.inr val✝)
+hAB : Sum.LiftRel (⇑P.1) (⇑P.2) (Sum.inr val✝³) (Sum.inr val✝²)
+⊢ p.2 val✝² val✝
+error: Lean exited with code 1
+✖ [828/828] Building LC004.QuadWitnessClassification
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /tmp/lean-4.19.0-linux/bin/lean ././././LC004/QuadWitnessClassification.lean -R ./././. -o ././.lake/build/lib/lean/LC004/QuadWitnessClassification.olean -i ././.lake/build/lib/lean/LC004/QuadWitnessClassification.ilean -c ././.lake/build/ir/LC004/QuadWitnessClassification.c --json
+error: ././././LC004/QuadWitnessClassification.lean:11:61: unsolved goals
+r : Setoid (Fin 4)
+a : Fin 4
+hu : Finset.univ = {0, 1, 2, 3}
+⊢ {x ∈ {0, 1, 2, 3} | r x a}.card =
+    (if r 0 a then 1 else 0) + ((if r 1 a then 1 else 0) + ((if r 2 a then 1 else 0) + if r 3 a then 1 else 0))
+error: ././././LC004/QuadWitnessClassification.lean:43:61: unsolved goals
+case pos
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : ¬r 0 0
+hc1 : ¬r 1 1
+hc2 : (2 + if r 2 2 then 1 else 0) = 1 ∨ ¬r 2 2
+hc3 : (3 + if r 3 3 then 1 else 0) = 2 ∨ ¬r 3 3
+h01 : r 0 1
+h02 : r 0 2
+h03 : r 0 3
+h12 : r 1 2
+h13 : r 1 3
+h23 : r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : ¬r 0 0
+hc1 : ¬r 1 1
+hc2 : ¬r 2 2 ∨ (2 + if r 2 2 then 1 else 0) = 3
+hc3 : ¬r 3 3 ∨ (2 + if r 3 3 then 1 else 0) = 3
+h01 : r 0 1
+h02 : r 0 2
+h03 : r 0 3
+h12 : r 1 2
+h13 : r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : ¬r 0 0
+hc1 : ¬r 1 1 ∨ (1 + if r 1 1 then 1 else 0) = 2
+hc2 : ¬r 2 2 ∨ (2 + if r 2 2 then 1 else 0) = 3
+hc3 : (1 + if r 3 3 then 1 else 0) = 2 ∨ (1 + if r 3 3 then 1 else 0) = 3
+h01 : r 0 1
+h02 : r 0 2
+h03 : r 0 3
+h12 : r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case pos
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : ¬r 0 0
+hc1 : ¬r 1 1 ∨ (1 + if r 1 1 then 1 else 0) = 2
+hc2 : ¬r 2 2 ∨ (1 + if r 2 2 then 1 else 0) = 2
+hc3 : (3 + if r 3 3 then 1 else 0) = 2 ∨ ¬r 3 3
+h01 : r 0 1
+h02 : r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : r 1 3
+h23 : r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : ¬r 0 0
+hc1 : ¬r 1 1 ∨ (1 + if r 1 1 then 1 else 0) = 2
+hc2 : (1 + if r 2 2 then 1 else 0) = 2 ∨ (1 + if r 2 2 then 1 else 0) = 3
+hc3 : ¬r 3 3 ∨ (2 + if r 3 3 then 1 else 0) = 3
+h01 : r 0 1
+h02 : r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case pos
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : ¬r 0 0
+hc1 : (1 + if r 1 1 then 1 else 0) = 2 ∨ (1 + if r 1 1 then 1 else 0) = 3
+hc2 : ¬r 2 2 ∨ (1 + if r 2 2 then 1 else 0) = 2
+hc3 : ¬r 3 3 ∨ (2 + if r 3 3 then 1 else 0) = 3
+h01 : r 0 1
+h02 : r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : ¬r 0 0
+hc1 : (1 + if r 1 1 then 1 else 0) = 2 ∨ (1 + if r 1 1 then 1 else 0) = 3
+hc2 : (1 + if r 2 2 then 1 else 0) = 2 ∨ (1 + if r 2 2 then 1 else 0) = 3
+hc3 : (1 + if r 3 3 then 1 else 0) = 2 ∨ (1 + if r 3 3 then 1 else 0) = 3
+h01 : r 0 1
+h02 : r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : ¬r 0 0 ∨ r 0 0
+hc1 : ¬r 1 1 ∨ (1 + if r 1 1 then 1 else 0) = 2
+hc2 : ¬r 2 2 ∨ (2 + if r 2 2 then 1 else 0) = 3
+hc3 : (if r 3 3 then 1 else 0) = 2 ∨ (if r 3 3 then 1 else 0) = 3
+h01 : r 0 1
+h02 : r 0 2
+h03 : ¬r 0 3
+h12 : r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : ¬r 0 0 ∨ r 0 0
+hc1 : (1 + if r 1 1 then 1 else 0) = 2 ∨ (1 + if r 1 1 then 1 else 0) = 3
+hc2 : (1 + if r 2 2 then 1 else 0) = 2 ∨ (1 + if r 2 2 then 1 else 0) = 3
+hc3 : (if r 3 3 then 1 else 0) = 2 ∨ (if r 3 3 then 1 else 0) = 3
+h01 : r 0 1
+h02 : r 0 2
+h03 : ¬r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case pos
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : ¬r 0 0 ∨ r 0 0
+hc1 : ¬r 1 1 ∨ (1 + if r 1 1 then 1 else 0) = 2
+hc2 : r 2 2 ∨ (if r 2 2 then 1 else 0) = 2
+hc3 : (3 + if r 3 3 then 1 else 0) = 2 ∨ ¬r 3 3
+h01 : r 0 1
+h02 : ¬r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : r 1 3
+h23 : r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : ¬r 0 0 ∨ r 0 0
+hc1 : ¬r 1 1 ∨ (1 + if r 1 1 then 1 else 0) = 2
+hc2 : (if r 2 2 then 1 else 0) = 2 ∨ (if r 2 2 then 1 else 0) = 3
+hc3 : ¬r 3 3 ∨ (2 + if r 3 3 then 1 else 0) = 3
+h01 : r 0 1
+h02 : ¬r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case pos
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : ¬r 0 0 ∨ r 0 0
+hc1 : (1 + if r 1 1 then 1 else 0) = 2 ∨ (1 + if r 1 1 then 1 else 0) = 3
+hc2 : r 2 2 ∨ (if r 2 2 then 1 else 0) = 2
+hc3 : ¬r 3 3 ∨ (2 + if r 3 3 then 1 else 0) = 3
+h01 : r 0 1
+h02 : ¬r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : ¬r 0 0 ∨ r 0 0
+hc1 : (1 + if r 1 1 then 1 else 0) = 2 ∨ (1 + if r 1 1 then 1 else 0) = 3
+hc2 : (if r 2 2 then 1 else 0) = 2 ∨ (if r 2 2 then 1 else 0) = 3
+hc3 : (1 + if r 3 3 then 1 else 0) = 2 ∨ (1 + if r 3 3 then 1 else 0) = 3
+h01 : r 0 1
+h02 : ¬r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : r 0 0 ∨ (if r 0 0 then 1 else 0) = 2
+hc1 : (1 + if r 1 1 then 1 else 0) = 2 ∨ (1 + if r 1 1 then 1 else 0) = 3
+hc2 : (if r 2 2 then 1 else 0) = 2 ∨ (if r 2 2 then 1 else 0) = 3
+hc3 : (if r 3 3 then 1 else 0) = 2 ∨ (if r 3 3 then 1 else 0) = 3
+h01 : r 0 1
+h02 : ¬r 0 2
+h03 : ¬r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : ¬r 0 0 ∨ r 0 0
+hc1 : r 1 1 ∨ (if r 1 1 then 1 else 0) = 2
+hc2 : ¬r 2 2 ∨ (2 + if r 2 2 then 1 else 0) = 3
+hc3 : (1 + if r 3 3 then 1 else 0) = 2 ∨ (1 + if r 3 3 then 1 else 0) = 3
+h01 : ¬r 0 1
+h02 : r 0 2
+h03 : r 0 3
+h12 : r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case pos
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : ¬r 0 0 ∨ r 0 0
+hc1 : (if r 1 1 then 1 else 0) = 2 ∨ (if r 1 1 then 1 else 0) = 3
+hc2 : ¬r 2 2 ∨ (1 + if r 2 2 then 1 else 0) = 2
+hc3 : ¬r 3 3 ∨ (2 + if r 3 3 then 1 else 0) = 3
+h01 : ¬r 0 1
+h02 : r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : ¬r 0 0 ∨ r 0 0
+hc1 : (if r 1 1 then 1 else 0) = 2 ∨ (if r 1 1 then 1 else 0) = 3
+hc2 : (1 + if r 2 2 then 1 else 0) = 2 ∨ (1 + if r 2 2 then 1 else 0) = 3
+hc3 : (1 + if r 3 3 then 1 else 0) = 2 ∨ (1 + if r 3 3 then 1 else 0) = 3
+h01 : ¬r 0 1
+h02 : r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : r 0 0 ∨ (if r 0 0 then 1 else 0) = 2
+hc1 : r 1 1 ∨ (if r 1 1 then 1 else 0) = 2
+hc2 : ¬r 2 2 ∨ (2 + if r 2 2 then 1 else 0) = 3
+hc3 : (if r 3 3 then 1 else 0) = 2 ∨ (if r 3 3 then 1 else 0) = 3
+h01 : ¬r 0 1
+h02 : r 0 2
+h03 : ¬r 0 3
+h12 : r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : r 0 0 ∨ (if r 0 0 then 1 else 0) = 2
+hc1 : (if r 1 1 then 1 else 0) = 2 ∨ (if r 1 1 then 1 else 0) = 3
+hc2 : (1 + if r 2 2 then 1 else 0) = 2 ∨ (1 + if r 2 2 then 1 else 0) = 3
+hc3 : (if r 3 3 then 1 else 0) = 2 ∨ (if r 3 3 then 1 else 0) = 3
+h01 : ¬r 0 1
+h02 : r 0 2
+h03 : ¬r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case pos
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : r 0 0 ∨ (if r 0 0 then 1 else 0) = 2
+hc1 : ¬r 1 1 ∨ r 1 1
+hc2 : ¬r 2 2 ∨ (1 + if r 2 2 then 1 else 0) = 2
+hc3 : (3 + if r 3 3 then 1 else 0) = 2 ∨ ¬r 3 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : r 0 3
+h12 : r 1 2
+h13 : r 1 3
+h23 : r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : r 0 0 ∨ (if r 0 0 then 1 else 0) = 2
+hc1 : ¬r 1 1 ∨ r 1 1
+hc2 : (1 + if r 2 2 then 1 else 0) = 2 ∨ (1 + if r 2 2 then 1 else 0) = 3
+hc3 : ¬r 3 3 ∨ (2 + if r 3 3 then 1 else 0) = 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : r 0 3
+h12 : r 1 2
+h13 : r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case pos
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : r 0 0 ∨ (if r 0 0 then 1 else 0) = 2
+hc1 : r 1 1 ∨ (if r 1 1 then 1 else 0) = 2
+hc2 : r 2 2 ∨ (if r 2 2 then 1 else 0) = 2
+hc3 : (3 + if r 3 3 then 1 else 0) = 2 ∨ ¬r 3 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : r 1 3
+h23 : r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : r 0 0 ∨ (if r 0 0 then 1 else 0) = 2
+hc1 : r 1 1 ∨ (if r 1 1 then 1 else 0) = 2
+hc2 : (if r 2 2 then 1 else 0) = 2 ∨ (if r 2 2 then 1 else 0) = 3
+hc3 : ¬r 3 3 ∨ (2 + if r 3 3 then 1 else 0) = 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case pos
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : r 0 0 ∨ (if r 0 0 then 1 else 0) = 2
+hc1 : (if r 1 1 then 1 else 0) = 2 ∨ (if r 1 1 then 1 else 0) = 3
+hc2 : r 2 2 ∨ (if r 2 2 then 1 else 0) = 2
+hc3 : ¬r 3 3 ∨ (2 + if r 3 3 then 1 else 0) = 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : r 0 0 ∨ (if r 0 0 then 1 else 0) = 2
+hc1 : (if r 1 1 then 1 else 0) = 2 ∨ (if r 1 1 then 1 else 0) = 3
+hc2 : (if r 2 2 then 1 else 0) = 2 ∨ (if r 2 2 then 1 else 0) = 3
+hc3 : (1 + if r 3 3 then 1 else 0) = 2 ∨ (1 + if r 3 3 then 1 else 0) = 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case pos
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : (if r 0 0 then 1 else 0) = 2 ∨ (if r 0 0 then 1 else 0) = 3
+hc1 : ¬r 1 1 ∨ r 1 1
+hc2 : ¬r 2 2 ∨ (1 + if r 2 2 then 1 else 0) = 2
+hc3 : ¬r 3 3 ∨ (2 + if r 3 3 then 1 else 0) = 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : ¬r 0 3
+h12 : r 1 2
+h13 : r 1 3
+h23 : r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : (if r 0 0 then 1 else 0) = 2 ∨ (if r 0 0 then 1 else 0) = 3
+hc1 : ¬r 1 1 ∨ r 1 1
+hc2 : (1 + if r 2 2 then 1 else 0) = 2 ∨ (1 + if r 2 2 then 1 else 0) = 3
+hc3 : (1 + if r 3 3 then 1 else 0) = 2 ∨ (1 + if r 3 3 then 1 else 0) = 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : ¬r 0 3
+h12 : r 1 2
+h13 : r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : (if r 0 0 then 1 else 0) = 2 ∨ (if r 0 0 then 1 else 0) = 3
+hc1 : r 1 1 ∨ (if r 1 1 then 1 else 0) = 2
+hc2 : (1 + if r 2 2 then 1 else 0) = 2 ∨ (1 + if r 2 2 then 1 else 0) = 3
+hc3 : (if r 3 3 then 1 else 0) = 2 ∨ (if r 3 3 then 1 else 0) = 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : ¬r 0 3
+h12 : r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case pos
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : (if r 0 0 then 1 else 0) = 2 ∨ (if r 0 0 then 1 else 0) = 3
+hc1 : r 1 1 ∨ (if r 1 1 then 1 else 0) = 2
+hc2 : r 2 2 ∨ (if r 2 2 then 1 else 0) = 2
+hc3 : ¬r 3 3 ∨ (2 + if r 3 3 then 1 else 0) = 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : ¬r 0 3
+h12 : ¬r 1 2
+h13 : r 1 3
+h23 : r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : (if r 0 0 then 1 else 0) = 2 ∨ (if r 0 0 then 1 else 0) = 3
+hc1 : r 1 1 ∨ (if r 1 1 then 1 else 0) = 2
+hc2 : (if r 2 2 then 1 else 0) = 2 ∨ (if r 2 2 then 1 else 0) = 3
+hc3 : (1 + if r 3 3 then 1 else 0) = 2 ∨ (1 + if r 3 3 then 1 else 0) = 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : ¬r 0 3
+h12 : ¬r 1 2
+h13 : r 1 3
+h23 : ¬r 2 3
+⊢ False
+
+case pos
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : (if r 0 0 then 1 else 0) = 2 ∨ (if r 0 0 then 1 else 0) = 3
+hc1 : (if r 1 1 then 1 else 0) = 2 ∨ (if r 1 1 then 1 else 0) = 3
+hc2 : r 2 2 ∨ (if r 2 2 then 1 else 0) = 2
+hc3 : (1 + if r 3 3 then 1 else 0) = 2 ∨ (1 + if r 3 3 then 1 else 0) = 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : ¬r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : r 2 3
+⊢ False
+
+case neg
+r : Setoid (Fin 4)
+hr : PairTriplePartition r
+hs : ∀ (i j : Fin 4), r i j ↔ r j i
+hc0 : (if r 0 0 then 1 else 0) = 2 ∨ (if r 0 0 then 1 else 0) = 3
+hc1 : (if r 1 1 then 1 else 0) = 2 ∨ (if r 1 1 then 1 else 0) = 3
+hc2 : (if r 2 2 then 1 else 0) = 2 ∨ (if r 2 2 then 1 else 0) = 3
+hc3 : (if r 3 3 then 1 else 0) = 2 ∨ (if r 3 3 then 1 else 0) = 3
+h01 : ¬r 0 1
+h02 : ¬r 0 2
+h03 : ¬r 0 3
+h12 : ¬r 1 2
+h13 : ¬r 1 3
+h23 : ¬r 2 3
+⊢ False
+error: ././././LC004/QuadWitnessClassification.lean:52:6: tactic 'simp' failed, nested error:
+(deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+Use `set_option maxHeartbeats <num>` to set the limit.
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: ././././LC004/QuadWitnessClassification.lean:51:4: (deterministic) timeout at `«tactic execution»`, maximum number of heartbeats (200000) has been reached
+Use `set_option maxHeartbeats <num>` to set the limit.
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: ././././LC004/QuadWitnessClassification.lean:19:0: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+Use `set_option maxHeartbeats <num>` to set the limit.
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: Lean exited with code 1
+Some required builds logged failures:
+- LC004.WitnessEmbedding
+- LC004.QuadWitnessClassification
+error: build failed

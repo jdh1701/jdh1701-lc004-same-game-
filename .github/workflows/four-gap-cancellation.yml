@@ -1,0 +1,47 @@
+name: Four-gap cancellation proof audit
+on:
+  push:
+    branches: [proof/four-gap-cancellation-20261029]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.elan
+            .lake
+          key: ${{ runner.os }}-lean-v4.19.0-${{ hashFiles('lean-toolchain', 'lakefile.toml', 'lake-manifest.json') }}
+          restore-keys: |
+            ${{ runner.os }}-lean-v4.19.0-
+      - name: Install pinned Lean
+        run: |
+          if [ ! -x "$HOME/.elan/bin/elan" ]; then
+            curl https://elan.lean-lang.org/elan-init.sh -sSf | sh -s -- -y
+          fi
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Restore dependencies
+        run: |
+          lake exe cache get
+          git diff --exit-code -- lake-manifest.json
+      - name: Verify complete source closure
+        run: python scripts/check_lean_coverage.py
+      - name: Build and audit
+        run: |
+          set -o pipefail
+          lake build 2>&1 | tee four-gap-build.log
+          lake env lean scripts/AxiomAudit.lean 2>&1 | tee four-gap-axioms.log
+          python scripts/test_verification_guards.py
+          git diff --exit-code -- lake-manifest.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: four-gap-proof-receipts
+          path: |
+            four-gap-build.log
+            four-gap-axioms.log
+            lake-manifest.json

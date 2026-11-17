@@ -1,0 +1,65 @@
+name: Adjacent contraction and restricted cancellation
+on:
+  push:
+    branches: [proof/adjacent-contraction-20261031]
+    paths:
+      - 'LC004/**'
+      - 'LC004.lean'
+      - 'research/adjacent_contraction_20261031/**'
+      - '.github/workflows/adjacent-contraction.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache/restore@v4
+        id: cache
+        with:
+          path: |
+            ~/.elan
+            .lake
+          key: ${{ runner.os }}-lean-v4.19.0-${{ hashFiles('lean-toolchain', 'lakefile.toml', 'lake-manifest.json') }}-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-lean-v4.19.0-${{ hashFiles('lean-toolchain', 'lakefile.toml', 'lake-manifest.json') }}-
+            ${{ runner.os }}-lean-v4.19.0-
+      - name: Install pinned Lean
+        run: |
+          if [ ! -x "$HOME/.elan/bin/elan" ]; then
+            curl https://elan.lean-lang.org/elan-init.sh -sSf | sh -s -- -y
+          fi
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Build and audit all active modules
+        run: |
+          set -eo pipefail
+          python scripts/check_lean_coverage.py
+          lake exe cache get
+          lake build LC004 2>&1 | tee contraction-build.log
+          lake env lean scripts/AxiomAudit.lean 2>&1 | tee contraction-axioms.log
+          python scripts/test_verification_guards.py
+          git diff --exit-code -- lake-manifest.json
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: |
+            ~/.elan
+            .lake
+          key: ${{ steps.cache.outputs.cache-primary-key }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: adjacent-contraction-lean
+          path: contraction-*.log
+  exact:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Original certificate contraction and connected coefficient checks
+        run: |
+          set -eo pipefail
+          python research/adjacent_contraction_20261031/check.py
+          git diff --exit-code -- research/adjacent_contraction_20261031/checks.json

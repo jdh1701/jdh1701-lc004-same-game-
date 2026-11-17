@@ -1,0 +1,10 @@
+{
+  "status": "VERIFIED-COMP",
+  "cases": 17,
+  "collapsed": 17,
+  "elementary_pairs": 88105,
+  "compressed_intervals": 88105,
+  "seconds": 34.47031463999883,
+  "compression_gain": 0,
+  "conclusion": "The complete traces replay, but this contiguous-prefix compression obtains no gain on these inputs. No bounded-width or counting theorem is inferred."
+}

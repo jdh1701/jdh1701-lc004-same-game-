@@ -1,0 +1,111 @@
+{
+  "scope": "all currently retained /tmp/nc-*.log files",
+  "files": [
+    {
+      "name": "nc-axioms.log",
+      "bytes": 144,
+      "sha256": "6ee68676600770be09011639237febee345684ca51457321d7194d628b3579e1"
+    },
+    {
+      "name": "nc-cache.log",
+      "bytes": 2981,
+      "sha256": "66b3b8c0a7fc5bc39005a44574476d8f173f61aa824bb74093d0b3141c94a06b"
+    },
+    {
+      "name": "nc-cache3.log",
+      "bytes": 6624,
+      "sha256": "30fcbc9a521abcafbf44cbead970519957b5847137db5f4b9f750e445458b594"
+    },
+    {
+      "name": "nc-coefficient-product.log",
+      "bytes": 16663,
+      "sha256": "dae598b09ea1a0e572b631e34a616653f1adabf24792841ac968de9c21607389"
+    },
+    {
+      "name": "nc-coefficient-product2.log",
+      "bytes": 17377,
+      "sha256": "4aea3fdd801a39502f222609440b4a55abd545328e721f2e7e1d755ead599591"
+    },
+    {
+      "name": "nc-coefficient-product3.log",
+      "bytes": 18019,
+      "sha256": "8e3e33f908280d64a7edb5301860ef1d53c5194770aa56616d569c7f1da23360"
+    },
+    {
+      "name": "nc-coefficient-product4.log",
+      "bytes": 18073,
+      "sha256": "5c397a342ccf012b37c33c5abddf621a3a2bc980abc7879a643be4a9e5fea628"
+    },
+    {
+      "name": "nc-coefficient-product5.log",
+      "bytes": 18320,
+      "sha256": "55169c81ca66c7f9c0c710ecef22dbebccd99b0b14f14ae5bce572a6b6695190"
+    },
+    {
+      "name": "nc-coefficient-product6.log",
+      "bytes": 18019,
+      "sha256": "8abfb479f301f92cf9cc5c266ee260cfcc62dddacc338c5a9500ea97b836bd1c"
+    },
+    {
+      "name": "nc-coefficient-product7.log",
+      "bytes": 18019,
+      "sha256": "7a1999da8387f7a8bd5e4e03794128a7eeb6da27935e728d2206cdfcefa4542e"
+    },
+    {
+      "name": "nc-coefficient-product8.log",
+      "bytes": 18545,
+      "sha256": "43366fbdb5cf767fe2c25d0396ff9ab562d8a8a911511c27d931fa12b6c8d005"
+    },
+    {
+      "name": "nc-coefficient-product9.log",
+      "bytes": 16362,
+      "sha256": "7013eefc7e8593e7747e64c69f493afc9e89eb52c58c9ed767f2135e92dcec3b"
+    },
+    {
+      "name": "nc-coverage.log",
+      "bytes": 6304,
+      "sha256": "c32f9b38e50af77aebe8bbbd3cfb50f445d268c563507a37d9901ea00015b058"
+    },
+    {
+      "name": "nc-full-build.log",
+      "bytes": 46034,
+      "sha256": "ee14236b2e932b4f7f7dc62dcfc144917f323c153047e95ede334b85780e21a8"
+    },
+    {
+      "name": "nc-negative-guards.log",
+      "bytes": 540,
+      "sha256": "568b32a618c52c0442e9b8126d426eb01ea2127793ac84fd564ae3c0c4dd7e33"
+    },
+    {
+      "name": "nc-negative-guards2.log",
+      "bytes": 122,
+      "sha256": "cdf2a8b0097fbfafd3e2d3cc17d0625b9232cc654dc24c69f8b8a56d368c472e"
+    },
+    {
+      "name": "nc-targets.log",
+      "bytes": 16567,
+      "sha256": "1d51c3571797e0f96a60a5a211fdd4d9c35e2cdb7ffe548c5fb374db8af6f23e"
+    },
+    {
+      "name": "nc-targets2.log",
+      "bytes": 16140,
+      "sha256": "db1e4df23d49732f09293f5034222f29f40273def170f0876d3985c504da2fae"
+    },
+    {
+      "name": "nc-toolchain-download.log",
+      "bytes": 1424,
+      "sha256": "10529f7a0344841e8a2f08e8aa44cfd2a8fc2583d524777a1a446d7e0e32afa7"
+    },
+    {
+      "name": "nc-widgets.log",
+      "bytes": 60436,
+      "sha256": "3038b497e30e67402885520c6f67d0a988d9ec4c53329b7805ae94f84a1108e6"
+    },
+    {
+      "name": "nc-widgets2.log",
+      "bytes": 347,
+      "sha256": "ed93deb0b79745418b71ca6d44e7cfedb9422faf1540d7d46eb8066b28edd394"
+    }
+  ],
+  "source_snapshots": "final sources pinned; intermediate failed edits represented by diagnostics"
+}

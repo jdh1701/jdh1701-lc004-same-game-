@@ -1,0 +1,25 @@
+LC004/FiveClassRankNormalization.lean:78:50: error: unexpected token '+'; expected term
+LC004/FiveClassRankNormalization.lean:78:42: error: unexpected syntax
+  failed to pretty print term (use 'set_option pp.rawOnError true' for raw representation)
+LC004/FiveClassRankNormalization.lean:56:51: error: unsolved goals
+case intro.intro
+G H : Finset ℕ
+hG : G.card = 5
+hH : H.card = 5
+hd : Disjoint G H
+hs : (G ∪ H).card = 10
+f : ℕ → ℕ
+hf : StrictMono f
+himage : ∀ (x : ℕ), x ∈ List.map f (List.range 10) ↔ x ∈ G ∪ H
+g : List ℕ := List.filter (fun i => decide (f i ∈ G)) (List.range 10)
+hgmem : ∀ (i : ℕ), i ∈ g ↔ i < 10 ∧ f i ∈ G
+hsorted : List.Sorted (fun x1 x2 => x1 < x2) g
+hgm : List.map f g = Finset.sort (fun x1 x2 => x1 ≤ x2) G
+hglen : g.length = 5
+hgrank : g ∈ List.sublistsLen 5 (List.range 10)
+⊢ ∃ f g,
+    StrictMono f ∧
+      g ∈ List.sublistsLen 5 (List.range 10) ∧
+        List.map f g = Finset.sort (fun x1 x2 => x1 ≤ x2) G ∧
+          List.map f (fiveOtherRanks g) = Finset.sort (fun x1 x2 => x1 ≤ x2) H
+'LC004.five_classes_rank_normal_form' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

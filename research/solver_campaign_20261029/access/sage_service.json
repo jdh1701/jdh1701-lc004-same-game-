@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-29T14:41:06.727323+00:00",
+  "url": "https://sagecell.sagemath.org/service",
+  "method": "POST",
+  "parameters": {
+    "data": {
+      "code": "R.<k> = PolynomialRing(QQ)\nf=(38*k^6+694*k^5+4025*k^4+6670*k^3-5593*k^2-9434*k+6840)/(360*(k+8))\nprint(version())\nprint('leading',f.numerator().leading_coefficient()/f.denominator().leading_coefficient())\nprint('residue',((k+8)*f)(-8))"
+    }
+  },
+  "error": "<HTTPError 403: 'Forbidden'>",
+  "seconds": 4.539361476898193
+}

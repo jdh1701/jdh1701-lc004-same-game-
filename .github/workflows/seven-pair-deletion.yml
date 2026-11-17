@@ -1,0 +1,67 @@
+name: Seven-class pair deletion verification
+on:
+  push:
+    branches: [research/seven-pair-deletion-20261101]
+    paths:
+      - 'LC004/**'
+      - 'LC004.lean'
+      - 'research/seven_pair_deletion_20261101/**'
+      - 'research/seven_boundary_20261101/**'
+      - '.github/workflows/seven-pair-deletion.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache/restore@v4
+        id: cache
+        with:
+          path: |
+            ~/.elan
+            .lake
+          key: ${{ runner.os }}-lean-v4.19.0-${{ hashFiles('lean-toolchain', 'lakefile.toml', 'lake-manifest.json') }}-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-lean-v4.19.0-${{ hashFiles('lean-toolchain', 'lakefile.toml', 'lake-manifest.json') }}-
+            ${{ runner.os }}-lean-v4.19.0-
+      - name: Install pinned Lean
+        run: |
+          if [ ! -x "$HOME/.elan/bin/elan" ]; then
+            curl https://elan.lean-lang.org/elan-init.sh -sSf | sh -s -- -y
+          fi
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Build and audit all active modules
+        run: |
+          set -eo pipefail
+          python scripts/check_lean_coverage.py
+          lake exe cache get
+          lake build LC004 2>&1 | tee pair-deletion-build.log
+          lake env lean scripts/AxiomAudit.lean 2>&1 | tee pair-deletion-axioms.log
+          python scripts/test_verification_guards.py
+          git diff --exit-code -- lake-manifest.json
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: |
+            ~/.elan
+            .lake
+          key: ${{ steps.cache.outputs.cache-primary-key }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: seven-pair-deletion-lean
+          path: pair-deletion-*.log
+  exact:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Exact recurrence, iterated tripling and original-coefficient regression
+        run: |
+          set -eo pipefail
+          python research/seven_pair_deletion_20261101/check.py
+          python research/seven_boundary_20261101/check.py
+          git diff --exit-code -- research/seven_pair_deletion_20261101/checks.json research/seven_boundary_20261101/checks.json

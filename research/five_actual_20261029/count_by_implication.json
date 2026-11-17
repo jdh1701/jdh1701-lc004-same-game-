@@ -1,0 +1,26 @@
+{
+  "status": "VERIFIED-COMP",
+  "method": "first solution, separated second solution, raw-constraint SCC",
+  "rows": [
+    {
+      "classes": 2,
+      "positions": 10,
+      "patterns": 126,
+      "connected": 121,
+      "feasible": 70,
+      "separated_pair_found": 14,
+      "support": 5,
+      "search_nodes": 2094
+    },
+    {
+      "classes": 3,
+      "positions": 15,
+      "patterns": 126126,
+      "connected": 124276,
+      "feasible": 12270,
+      "separated_pair_found": 254,
+      "support": 35,
+      "search_nodes": 1242848
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "n": 13,
+  "created_utc": "2026-10-18T09:09:49.284344+00:00",
+  "status": "conditional prediction; length-13 partition computation not yet run",
+  "assumptions": [
+    "crossing-component coefficient factorization",
+    "at least five positions per block in nontrivial connected support"
+  ],
+  "input_lengths": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "one_colour": 1,
+  "two_colour": 5878,
+  "connected_polynomial": {
+    "1": 807,
+    "2": 403
+  },
+  "predicted_polynomial": {
+    "2": -2392,
+    "3": 585,
+    "4": 4004,
+    "5": -4290,
+    "6": 1287,
+    "1": 807
+  },
+  "predicted_q3": 216765,
+  "predicted_q4": 1906012
+}

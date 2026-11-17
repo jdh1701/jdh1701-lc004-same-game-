@@ -1,0 +1,14 @@
+{
+  "status": "VERIFIED-COMP",
+  "independent": true,
+  "checks": {
+    "matroid_complete_minimal_basis_family": 8,
+    "flag_missing_triangle": true,
+    "class_deletion_failure": true,
+    "spectral_collision_determinant_evaluations": 18,
+    "heredity_failure_original_signed_joins": true,
+    "interval_hypothesis_failure": true,
+    "scc_non_noncrossing_failure": true,
+    "interpolation_independent_support_polynomials": 11
+  }
+}

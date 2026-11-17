@@ -1,0 +1,96 @@
+{
+  "interleavings": 462,
+  "distinct_matrices": 154,
+  "boundary_masks": [
+    0,
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    12,
+    20,
+    132,
+    72,
+    80,
+    192,
+    255
+  ],
+  "composed_relations": {
+    "bijection2": 148,
+    "empty": 8105,
+    "twofan": 1328,
+    "universal": 14135
+  },
+  "six_edges": [
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "fibre_types": {
+    "[1, 1]": 44,
+    "[1, 2]": 36
+  },
+  "pair_preserving_triples": 12,
+  "pair_splitting_triples": 6,
+  "four_gap_cases": 8,
+  "failed_shortcut": {
+    "five": [
+      0,
+      1,
+      2,
+      5,
+      6
+    ],
+    "six": [
+      3,
+      4,
+      7,
+      8,
+      9,
+      10
+    ],
+    "a": 0,
+    "b": 2,
+    "s": 2,
+    "t": 3,
+    "z": 5,
+    "rows": [
+      255,
+      12,
+      12,
+      12,
+      12
+    ]
+  },
+  "regression": {
+    "certificates_2": 59,
+    "certificates_3": 83,
+    "full_join_representatives": 5816,
+    "nonzero_representatives": 142
+  }
+}

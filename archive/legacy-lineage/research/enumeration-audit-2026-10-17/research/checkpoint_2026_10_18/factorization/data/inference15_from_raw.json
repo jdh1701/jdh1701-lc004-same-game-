@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-10-18T09:42:22.140089+00:00",
+  "evidence": "Direct q=3 raw count completed; full n=15 partition calculation still running",
+  "assumption": "connected polynomial has degree at most three",
+  "raw_q3": 2003151,
+  "quadratic_q3": 2003361,
+  "difference": -210,
+  "inferred_connected": {
+    "1": -7625,
+    "2": -3285,
+    "3": -35
+  },
+  "inferred_q4": 25980940
+}

@@ -1,0 +1,22 @@
+LC004.four_block_barrier_zero.{u_1} {Q : Type u_1} [Fintype Q] [Lattice Q] (ps qs : List Q) (barrier y : Q)
+  (hinv : ∀ (r : Q), (∃ p ∈ LC004.joinWitnessLists ps qs, p ≤ r) ↔ ∃ p ∈ LC004.joinWitnessLists ps qs, p ≤ r ⊓ barrier)
+  (hy : ¬y ≤ barrier) :
+  LC004.collectedCoeff
+      (LC004.unionTerms (fun x1 x2 => x1 ⊔ x2)
+        (List.map (fun p => (LC004.quadAdjacent, p)) ps ++ List.map (fun q => (LC004.quadNested, q)) qs))
+      (⊤, y) =
+    0
+LC004.noncrossing_interval_barrier.{u_1} {α : Type u_1} [LinearOrder α] (r : Setoid α) (hr : LC004.IsNoncrossing r)
+  (a b x y : α) (hab : r a b) (hxy : r x y) (hax : ¬r a x) (hay : ¬r a y) : a < x ∧ x < b ↔ a < y ∧ y < b
+'LC004.coefficient_zero_outside_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.four_gap_pairing_intersection' does not depend on any axioms
+'LC004.two_pairing_indicator' depends on axioms: [propext]
+'LC004.zetaSum_add_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.joinWitnessLists_covered' depends on axioms: [propext, Quot.sound]
+'LC004.collected_union_append' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.collected_union_fixed_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.two_branch_join_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.two_branch_barrier_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.quad_pairings_join_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.four_block_barrier_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.noncrossing_interval_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]

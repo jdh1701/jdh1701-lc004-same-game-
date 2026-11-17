@@ -1,0 +1,35 @@
+{
+  "new_theorem_count": 12,
+  "new_named_theorems": [
+    "coefficient_zero_outside_barrier",
+    "four_gap_pairing_intersection",
+    "two_pairing_indicator",
+    "zetaSum_add_sub",
+    "joinWitnessLists_covered",
+    "collected_union_append",
+    "collected_union_fixed_first",
+    "two_branch_join_coefficient",
+    "two_branch_barrier_zero",
+    "quad_pairings_join_top",
+    "four_block_barrier_zero",
+    "noncrossing_interval_barrier"
+  ],
+  "stage_counts": {
+    "verified": 4,
+    "partial": 1,
+    "open": 4
+  },
+  "source_hashes": {
+    "LC004/CoefficientBarrier.lean": "1125fc927f4b4758faf3820d093e03aa54da417fd0d68c14c95846e262ca53ae",
+    "LC004/UnionCoefficientIdentity.lean": "71a7fd2d48a3b48a3522a668f33027c26cb957e7a539b500e33a5874ea98d206",
+    "LC004/FourBlockCancellation.lean": "7dfa2ff50976ca42c9dba299353528a514a3defc0e1a928dd60228320c4c72f1",
+    "LC004/ChordBarrier.lean": "971a4efd29351c31c89602918beaf3d20021f9ca03425bfdb96a154380c82f9e"
+  },
+  "scans": {
+    "holes": [],
+    "custom_axioms": [],
+    "unsafe": []
+  },
+  "minimum_five_theorem_lean_verified": false,
+  "remaining": "Discharge four-gap invariance for the full witness family, locality, product/rotation transport, and generator correspondence."
+}

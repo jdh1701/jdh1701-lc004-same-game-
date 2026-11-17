@@ -1,0 +1,398 @@
+⚠ [6656/6839] Replayed LC004.SplitRunLemmas
+warning: ././././LC004/SplitRunLemmas.lean:37:12: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [6667/6839] Replayed LC004.NormalizedDirectional
+warning: ././././LC004/NormalizedDirectional.lean:18:19: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [6671/6839] Replayed LC004.IndexedMove
+warning: ././././LC004/IndexedMove.lean:73:2: try 'simp at hlt' instead of 'simpa using hlt'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [6672/6839] Replayed LC004.SuccessfulPaths
+warning: ././././LC004/SuccessfulPaths.lean:100:8: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+⚠ [6676/6839] Replayed LC004.ExecutableCorrespondence
+warning: ././././LC004/ExecutableCorrespondence.lean:48:10: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [6678/6839] Replayed LC004.ExchangeScaffold
+warning: ././././LC004/ExchangeScaffold.lean:93:26: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+warning: ././././LC004/ExchangeScaffold.lean:94:28: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+⚠ [6680/6839] Replayed LC004.ExecutableUniqueness
+warning: ././././LC004/ExecutableUniqueness.lean:93:14: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+⚠ [6681/6839] Replayed LC004.ConditionalMain
+warning: ././././LC004/ConditionalMain.lean:55:12: `List.length_eq_zero` has been deprecated: use `List.length_eq_zero_iff` instead
+⚠ [6699/6839] Replayed LC004.BridgeAdjacentLeftFront
+warning: ././././LC004/BridgeAdjacentLeftFront.lean:26:9: unused variable `d`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+warning: ././././LC004/BridgeAdjacentLeftFront.lean:26:22: unused variable `bp`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+warning: ././././LC004/BridgeAdjacentLeftFront.lean:26:25: unused variable `bq`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+ℹ [6716/6839] Replayed LC004.UnconditionalFinal
+info: ././././LC004/UnconditionalFinal.lean:30:0: 'LC004.unconditional_unique_choice_iff_unique_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UnconditionalFinal.lean:31:0: 'LC004.unconditional_executable_unique_first_iff_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6731/6839] Replayed LC004.NewProofAxiomAudit
+info: ././././LC004/NewProofAxiomAudit.lean:17:0: 'LC004.encode_eq_encodeRuns' depends on axioms: [propext]
+info: ././././LC004/NewProofAxiomAudit.lean:18:0: 'LC004.grammar_erases_empty' depends on axioms: [propext]
+info: ././././LC004/NewProofAxiomAudit.lean:19:0: 'LC004.raw_max_path_to_erases' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/NewProofAxiomAudit.lean:20:0: 'LC004.isolated_block_preserves_raw_win' does not depend on any axioms
+info: ././././LC004/NewProofAxiomAudit.lean:21:0: 'LC004.encode_duplicate_anywhere_heavier' depends on axioms: [propext]
+info: ././././LC004/NewProofAxiomAudit.lean:22:0: 'LC004.encoded_duplicate_anywhere_solvable' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/NewProofAxiomAudit.lean:23:0: 'LC004.encoded_repeat_anywhere_solvable' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/NewProofAxiomAudit.lean:24:0: 'LC004.grammar_implies_win_of_one_step_lift' depends on axioms: [propext]
+info: ././././LC004/NewProofAxiomAudit.lean:25:0: 'LC004.win_insert_grammar_of_lift' depends on axioms: [propext]
+⚠ [6734/6839] Replayed LC004.FourBlockCrossing
+warning: ././././LC004/FourBlockCrossing.lean:26:5: unused variable `hu`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+ℹ [6736/6839] Replayed LC004.ReverseInsertionHistory
+info: ././././LC004/ReverseInsertionHistory.lean:71:0: 'LC004.insertion_history_iff_erases_empty' does not depend on any axioms
+info: ././././LC004/ReverseInsertionHistory.lean:72:0: 'LC004.raw_max_win_to_insertion_history' depends on axioms: [propext, Quot.sound]
+⚠ [6737/6839] Replayed LC004.NoncrossingInsertionIndex
+warning: ././././LC004/NoncrossingInsertionIndex.lean:40:19: unused variable `hst`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [6739/6839] Replayed LC004.BlockCrossingInsertion
+warning: ././././LC004/BlockCrossingInsertion.lean:14:27: unused variable `hs`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+ℹ [6741/6839] Replayed LC004.TypedInsertionPositions
+info: ././././LC004/TypedInsertionPositions.lean:91:0: 'LC004.oldPosition_injective' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/TypedInsertionPositions.lean:92:0: 'LC004.freshPosition_injective' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/TypedInsertionPositions.lean:93:0: 'LC004.oldPosition_ne_freshPosition' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/TypedInsertionPositions.lean:94:0: 'LC004.insertion_positions_cover' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/TypedInsertionPositions.lean:95:0: 'LC004.four_position_block_crosses_itself' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/TypedInsertionPositions.lean:96:0: 'LC004.noncrossing_block_family_insert' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6742/6839] Replayed LC004.CertificateInsertion
+info: ././././LC004/CertificateInsertion.lean:99:0: 'LC004.insertion_positions_perm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CertificateInsertion.lean:100:0: 'LC004.Noncrossing23Certificate.insert' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6743/6839] Replayed LC004.HistoryCertificate
+info: ././././LC004/HistoryCertificate.lean:97:0: 'LC004.insertion_history_to_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/HistoryCertificate.lean:98:0: 'LC004.erases_empty_to_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/HistoryCertificate.lean:99:0: 'LC004.raw_max_win_to_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6744/6839] Replayed LC004.InnermostBlock
+info: ././././LC004/InnermostBlock.lean:169:0: 'LC004.Noncrossing23Certificate.exists_innermost_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/InnermostBlock.lean:170:0: 'LC004.Noncrossing23Certificate.exists_contiguous_monochromatic_block' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [6745/6839] Replayed LC004.CertificateFirstErase
+info: ././././LC004/CertificateFirstErase.lean:52:0: 'LC004.certificate_has_first_erasure' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [6746/6839] Replayed LC004.CertificateDeletion
+warning: ././././LC004/CertificateDeletion.lean:102:31: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ././././LC004/CertificateDeletion.lean:148:0: 'LC004.Noncrossing23Certificate.deleteInterval' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6747/6839] Replayed LC004.CertificateConverse
+info: ././././LC004/CertificateConverse.lean:98:0: 'LC004.certificate_has_smaller_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CertificateConverse.lean:99:0: 'LC004.certificate_to_erases_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CertificateConverse.lean:100:0: 'LC004.certificate_iff_erases_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6748/6839] Replayed LC004.RawRunInflation
+info: ././././LC004/RawRunInflation.lean:120:0: 'LC004.raw_inflates_step' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/RawRunInflation.lean:121:0: 'LC004.raw_win_inflation' depends on axioms: [propext, Quot.sound]
+ℹ [6749/6839] Replayed LC004.RawCertificateEquivalence
+info: ././././LC004/RawCertificateEquivalence.lean:82:0: 'LC004.raw_win_inflation' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/RawCertificateEquivalence.lean:83:0: 'LC004.monochromatic_insertion_preserves_raw_win' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/RawCertificateEquivalence.lean:84:0: 'LC004.aux_erases_to_raw_max_win' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/RawCertificateEquivalence.lean:85:0: 'LC004.raw_max_win_iff_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/RawCertificateEquivalence.lean:86:0: 'LC004.grammar_to_raw_max_win' depends on axioms: [propext, Quot.sound]
+ℹ [6750/6839] Replayed LC004.SecondDiagonalProfiles
+info: ././././LC004/SecondDiagonalProfiles.lean:153:0: 'LC004.raw_win_count_ge_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/SecondDiagonalProfiles.lean:154:0: 'LC004.raw_win_second_diagonal_profiles' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/SecondDiagonalProfiles.lean:155:0: 'LC004.second_diagonal_profiles_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [6751/6839] Replayed LC004.FourRefinementOverlap
+warning: ././././LC004/FourRefinementOverlap.lean:44:21: unused variable `hab`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+warning: ././././LC004/FourRefinementOverlap.lean:59:35: unused variable `hbc`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+info: ././././LC004/FourRefinementOverlap.lean:164:0: 'LC004.both_refinements_valid_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourRefinementOverlap.lean:165:0: 'LC004.valid_four_refinements_card_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourRefinementOverlap.lean:166:0: 'LC004.valid_four_refinements_card_eq_two_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6752/6839] Replayed LC004.DoubleRepresentationCount
+info: ././././LC004/DoubleRepresentationCount.lean:60:0: 'LC004.finite_one_or_two_fiber_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6753/6839] Replayed LC004.ColorPatternSpace
+info: ././././LC004/ColorPatternSpace.lean:158:0: 'LC004.colorPatternOf_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ColorPatternSpace.lean:159:0: 'LC004.certificate_iff_same_color_pattern' depends on axioms: [propext]
+info: ././././LC004/ColorPatternSpace.lean:160:0: 'LC004.winning_word_pattern_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ColorPatternSpace.lean:161:0: 'LC004.colorPatternClassCount_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6754/6839] Replayed LC004.MatchingPatternMerge
+info: ././././LC004/MatchingPatternMerge.lean:60:0: 'LC004.mergePatternClasses' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/MatchingPatternMerge.lean:61:0: 'LC004.winning_mergePatternClasses' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6755/6839] Replayed LC004.MatchingMergeProfile
+info: ././././LC004/MatchingMergeProfile.lean:165:0: 'LC004.fourfold_representation_class_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/MatchingMergeProfile.lean:166:0: 'LC004.merge_selection_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/MatchingMergeProfile.lean:167:0: 'LC004.fourfold_representation_unique_four_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [6756/6839] Replayed LC004.PairPatternCertificate
+warning: ././././LC004/PairPatternCertificate.lean:180:11: unused variable `p`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+warning: ././././LC004/PairPatternCertificate.lean:181:12: unused variable `p`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+info: ././././LC004/PairPatternCertificate.lean:183:0: 'LC004.winning_pair_pattern_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PairPatternCertificate.lean:184:0: 'LC004.pairWinningPatternEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PairPatternCertificate.lean:185:0: 'LC004.patternBlockLists_exact_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PairPatternCertificate.lean:186:0: 'LC004.noncrossing_pair_pattern_winning' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PairPatternCertificate.lean:187:0: 'LC004.fourfold_representation_winning' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6757/6839] Replayed LC004.FourfoldCertificatePairs
+info: ././././LC004/FourfoldCertificatePairs.lean:104:0: 'LC004.certificate_even_small_classes_all_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourfoldCertificatePairs.lean:105:0: 'LC004.fourfold_certificate_all_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6758/6839] Replayed LC004.CertificatePairRefinement
+info: ././././LC004/CertificatePairRefinement.lean:102:0: 'LC004.fourfold_representation_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CertificatePairRefinement.lean:103:0: 'LC004.certificateBlockPattern_pair_noncrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CertificatePairRefinement.lean:104:0: 'LC004.fourfold_winning_has_pair_refinement' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6759/6839] Replayed LC004.FourfoldRepresentationSurjection
+info: ././././LC004/FourfoldRepresentationSurjection.lean:105:0: 'LC004.fourfold_winning_has_representation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourfoldRepresentationSurjection.lean:106:0: 'LC004.fourfoldRepresentationProfileMap_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6760/6839] Replayed LC004.FourfoldMatchingChoices
+info: ././././LC004/FourfoldMatchingChoices.lean:125:0: 'LC004.four_refinement_two_shapes' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourfoldMatchingChoices.lean:126:0: 'LC004.matching_refinements_eq_of_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6761/6839] Replayed LC004.FourfoldFiberCount
+info: ././././LC004/FourfoldFiberCount.lean:179:0: 'LC004.fourfold_representation_fiber_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourfoldFiberCount.lean:180:0: 'LC004.fourfold_representation_fiber_one_or_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourfoldFiberCount.lean:181:0: 'LC004.fourfold_winning_count_subtraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6762/6839] Replayed LC004.FourfoldDoubleFiber
+info: ././././LC004/FourfoldDoubleFiber.lean:71:0: 'LC004.fourfold_double_fiber_iff_both_shapes' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6763/6839] Replayed LC004.SmallPatternCorrespondence
+info: ././././LC004/SmallPatternCorrespondence.lean:200:0: 'LC004.certificate_small_block_eq_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/SmallPatternCorrespondence.lean:201:0: 'LC004.winning_small_pattern_iff_noncrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6764/6839] Replayed LC004.TwoTripleCorrespondence
+info: ././././LC004/TwoTripleCorrespondence.lean:57:0: 'LC004.winning_two_triple_iff_noncrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/TwoTripleCorrespondence.lean:58:0: 'LC004.two_triple_winning_count_eq_noncrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6765/6839] Replayed LC004.FourfoldSplit
+info: ././././LC004/FourfoldSplit.lean:170:0: 'LC004.splitPairClass_classes_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourfoldSplit.lean:171:0: 'LC004.splitPairClass_no_alternation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6766/6839] Replayed LC004.DoubleFiberGeometry
+info: ././././LC004/DoubleFiberGeometry.lean:162:0: 'LC004.both_global_shapes_noncrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/DoubleFiberGeometry.lean:163:0: 'LC004.noncrossing_fourfold_has_both_shapes' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/DoubleFiberGeometry.lean:164:0: 'LC004.fourfold_double_fiber_iff_noncrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6767/6839] Replayed LC004.DoubleFiberCountCorrespondence
+info: ././././LC004/DoubleFiberCountCorrespondence.lean:48:0: 'LC004.fourfold_double_count_eq_noncrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/DoubleFiberCountCorrespondence.lean:49:0: 'LC004.fourfold_winning_count_eq_representations_sub_noncrossing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [6768/6839] Replayed LC004.MatchingRepresentationCardinality
+info: ././././LC004/MatchingRepresentationCardinality.lean:74:0: 'LC004.pair_pattern_position_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/MatchingRepresentationCardinality.lean:75:0: 'LC004.fourfold_matching_representation_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/MatchingRepresentationCardinality.lean:76:0: 'LC004.fourfold_second_diagonal_count_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [6769/6839] Replayed LC004.IntrinsicDiagonalProfiles
+warning: ././././LC004/IntrinsicDiagonalProfiles.lean:176:6: 'change (patternQuotientFiber p q).card = 2' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+info: ././././LC004/IntrinsicDiagonalProfiles.lean:183:0: 'LC004.winning_intrinsic_second_diagonal_profiles' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/IntrinsicDiagonalProfiles.lean:184:0: 'LC004.fourfold_profile_position_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/IntrinsicDiagonalProfiles.lean:185:0: 'LC004.two_triple_profile_position_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6770/6839] Replayed LC004.SecondDiagonalCountAssembly
+info: ././././LC004/SecondDiagonalCountAssembly.lean:50:0: 'LC004.second_diagonal_winning_count_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/SecondDiagonalCountAssembly.lean:51:0: 'LC004.second_diagonal_count_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6771/6839] Replayed LC004.MatchingPartner
+info: ././././LC004/MatchingPartner.lean:78:0: 'LC004.matchingPartner_twice' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/MatchingPartner.lean:79:0: 'LC004.matching_closes_before_le_opens' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/MatchingPartner.lean:80:0: 'LC004.matching_opens_closes_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6772/6839] Replayed LC004.MatchingDyckEncoding
+info: ././././LC004/MatchingDyckEncoding.lean:100:0: 'LC004.count_take_ofFn_eq_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/MatchingDyckEncoding.lean:101:0: 'LC004.matchingToDyckWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/MatchingDyckEncoding.lean:102:0: 'LC004.matchingToDyckWord_semilength' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6773/6839] Replayed LC004.MatchingDyckInjective
+info: ././././LC004/MatchingDyckInjective.lean:119:0: 'LC004.matchingDyckMap_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/MatchingDyckInjective.lean:120:0: 'LC004.noncrossing_pair_pattern_count_le_catalan' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6774/6839] Replayed LC004.EndpointMatching
+info: ././././LC004/EndpointMatching.lean:183:0: 'LC004.EndpointMatching.pattern_noncrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/EndpointMatching.lean:184:0: 'LC004.EndpointMatching.append' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/EndpointMatching.lean:185:0: 'LC004.EndpointMatching.nest' depends on axioms: [propext, Quot.sound]
+ℹ [6775/6839] Replayed LC004.EndpointMatchingDyck
+info: ././././LC004/EndpointMatchingDyck.lean:75:0: 'LC004.EndpointMatching.toDyck_append' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/EndpointMatchingDyck.lean:76:0: 'LC004.EndpointMatching.toDyck_nest' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6776/6839] Replayed LC004.MatchingCatalan
+info: ././././LC004/MatchingCatalan.lean:64:0: 'LC004.second_diagonal_count_reduction_catalan' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/MatchingCatalan.lean:65:0: 'LC004.matchingDyckMap_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/MatchingCatalan.lean:66:0: 'LC004.noncrossing_pair_pattern_count_eq_catalan' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6777/6839] Replayed LC004.SecondDiagonalArithmetic
+info: ././././LC004/SecondDiagonalArithmetic.lean:88:0: 'LC004.second_diagonal_representation_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/SecondDiagonalArithmetic.lean:89:0: 'LC004.second_diagonal_subtraction_algebra' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/SecondDiagonalArithmetic.lean:90:0: 'LC004.second_diagonal_two_triple_numerator_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/SecondDiagonalArithmetic.lean:91:0: 'LC004.second_diagonal_candidate_simplification' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/SecondDiagonalArithmetic.lean:92:0: 'LC004.second_diagonal_formula_of_refined_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6778/6839] Replayed LC004.PartitionOpeningMass
+info: ././././LC004/PartitionOpeningMass.lean:207:0: 'LC004.patternOpeningDegree_arity_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionOpeningMass.lean:208:0: 'LC004.patternTreeDegrees_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionOpeningMass.lean:209:0: 'LC004.patternTreeDegrees_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionOpeningMass.lean:211:0: 'LC004.patternClassMinimum_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionOpeningMass.lean:212:0: 'LC004.patternOpeningMass_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionOpeningMass.lean:213:0: 'LC004.patternOpeningMass_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6779/6839] Replayed LC004.BoundaryContextRegression
+info: ././././LC004/BoundaryContextRegression.lean:13:0: 'LC004.prefix_boundary_stripping_counterexample' does not depend on any axioms
+ℹ [6780/6839] Replayed LC004.SecondDiagonalEndpoint
+info: ././././LC004/SecondDiagonalEndpoint.lean:41:0: 'LC004.second_diagonal_one_color_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/SecondDiagonalEndpoint.lean:42:0: 'LC004.second_diagonal_formula_at_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6781/6839] Replayed LC004.NoncrossingLastBlock
+info: ././././LC004/NoncrossingLastBlock.lean:106:0: 'LC004.last_opened_class_eq_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6782/6839] Replayed LC004.NoncrossingDegreeInjective
+info: ././././LC004/NoncrossingDegreeInjective.lean:109:0: 'LC004.noncrossing_pattern_eq_of_opening_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/NoncrossingDegreeInjective.lean:110:0: 'LC004.noncrossing_tree_degrees_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6783/6839] Replayed LC004.PartitionIntervalInsertion
+info: ././././LC004/PartitionIntervalInsertion.lean:134:0: 'LC004.insertPatternInterval_noncrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6784/6839] Replayed LC004.PartitionIntervalDegrees
+info: ././././LC004/PartitionIntervalDegrees.lean:154:0: 'LC004.inserted_old_opening_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionIntervalDegrees.lean:155:0: 'LC004.inserted_fresh_opening_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6786/6839] Replayed LC004.NoncrossingDegreeRealization
+info: ././././LC004/NoncrossingDegreeRealization.lean:97:0: 'LC004.noncrossing_degree_realization' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6787/6839] Replayed LC004.CyclicRootLemma
+info: ././././LC004/CyclicRootLemma.lean:167:0: 'LC004.existsUnique_rooted_rotation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6788/6839] Replayed LC004.CyclicWordEnumeration
+info: ././././LC004/CyclicWordEnumeration.lean:108:0: 'LC004.marked_rooted_word_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6789/6839] Replayed LC004.NoncrossingDegreeWordEquiv
+info: ././././LC004/NoncrossingDegreeWordEquiv.lean:135:0: 'LC004.noncrossingDegreeWordEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6790/6839] Replayed LC004.ExceptionalDegreeProfiles
+info: ././././LC004/ExceptionalDegreeProfiles.lean:101:0: 'LC004.singleExceptionalWord_arity_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ExceptionalDegreeProfiles.lean:102:0: 'LC004.doubleExceptionalWord_arity_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6791/6839] Replayed LC004.PartitionExceptionalWordProfiles
+info: ././././LC004/PartitionExceptionalWordProfiles.lean:139:0: 'LC004.fourfold_iff_singleExceptionalWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionExceptionalWordProfiles.lean:140:0: 'LC004.twoTriple_iff_doubleExceptionalWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6792/6839] Replayed LC004.SingleExceptionalWordCount
+info: ././././LC004/SingleExceptionalWordCount.lean:111:0: 'LC004.single_anchored_word_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6793/6839] Replayed LC004.NoncrossingProfileEnumeration
+info: ././././LC004/NoncrossingProfileEnumeration.lean:56:0: 'LC004.fourfold_noncrossing_count_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [6794/6839] Replayed LC004.DoubleExceptionalWordCount
+warning: ././././LC004/DoubleExceptionalWordCount.lean:92:8: 'change ¬(w.val j.succ).val = 2' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: ././././LC004/DoubleExceptionalWordCount.lean:189:16: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: ././././LC004/DoubleExceptionalWordCount.lean:189:16: 'omega' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+info: ././././LC004/DoubleExceptionalWordCount.lean:193:0: 'LC004.double_anchored_word_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6795/6839] Replayed LC004.SecondDiagonalClosedForm
+info: ././././LC004/SecondDiagonalClosedForm.lean:75:0: 'LC004.two_triple_noncrossing_count_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/SecondDiagonalClosedForm.lean:76:0: 'LC004.winningColorPatternCount_second_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6796/6839] Replayed LC004.CertificateConstraintJoins
+info: ././././LC004/CertificateConstraintJoins.lean:41:0: 'LC004.winning_pattern_upward_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CertificateConstraintJoins.lean:42:0: 'LC004.constraint_join_union_update' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6797/6839] Replayed LC004.CertificateJoinIteration
+info: ././././LC004/CertificateJoinIteration.lean:63:0: 'LC004.certificateJoinTerms_score' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CertificateJoinIteration.lean:64:0: 'LC004.certificateJoinTerms_winning_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6798/6839] Replayed LC004.PatternCoarseningCorrespondence
+info: ././././LC004/PatternCoarseningCorrespondence.lean:43:0: 'LC004.patternCoarseningEquiv_class_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PatternCoarseningCorrespondence.lean:44:0: 'LC004.patternCoarseningClass_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6799/6839] Replayed LC004.WinningConstraintGenerators
+info: ././././LC004/WinningConstraintGenerators.lean:55:0: 'LC004.winning_iff_constraint_refinement' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/WinningConstraintGenerators.lean:56:0: 'LC004.winning_signed_join_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6800/6839] Replayed LC004.WinningJoinCount
+info: ././././LC004/WinningJoinCount.lean:45:0: 'LC004.sum_joinTermScore' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/WinningJoinCount.lean:46:0: 'LC004.winningColorPatternCount_signed_joins' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6801/6839] Replayed LC004.FaceBoundaryJoinPrelim
+info: ././././LC004/FaceBoundaryJoinPrelim.lean:23:0: 'LC004.constraintIndicator_triple_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FaceBoundaryJoinPrelim.lean:24:0: 'LC004.constraintIndicator_join_of_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6802/6839] Replayed LC004.FaceRestriction
+info: ././././LC004/FaceRestriction.lean:27:0: 'LC004.restrictColorPattern_rel' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/FaceRestriction.lean:28:0: 'LC004.restrictColorPattern_mono' depends on axioms: [propext, Quot.sound]
+ℹ [6803/6839] Replayed LC004.FaceJoinConditional
+info: ././././LC004/FaceJoinConditional.lean:27:0: 'LC004.restrictColorPattern_join_of_rel_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FaceJoinConditional.lean:28:0: 'LC004.restrictColorPattern_join_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6804/6839] Replayed LC004.FaceJoinOrder
+info: ././././LC004/FaceJoinOrder.lean:35:0: 'LC004.join_restrictions_le_restrict_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FaceJoinOrder.lean:36:0: 'LC004.restrict_join_eq_of_no_external_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6805/6839] Replayed LC004.FaceJoinPaths
+info: ././././LC004/FaceJoinPaths.lean:36:0: 'LC004.faceJoinPath_le_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6806/6839] Replayed LC004.FaceInternalPaths
+info: ././././LC004/FaceInternalPaths.lean:32:0: 'LC004.faceInternalPath_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6807/6839] Replayed LC004.FacePathFactorization
+info: ././././LC004/FacePathFactorization.lean:52:0: 'LC004.faceJoinPath_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FacePathFactorization.lean:53:0: 'LC004.restrict_join_eq_of_face_path_locality' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6808/6839] Replayed LC004.RigidFaceGeometry
+info: ././././LC004/RigidFaceGeometry.lean:221:0: 'LC004.certificate_rigid_block_eq_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/RigidFaceGeometry.lean:222:0: 'LC004.certificate_heavy_face' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/RigidFaceGeometry.lean:223:0: 'LC004.rigid_faces_no_alternation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/RigidFaceGeometry.lean:224:0: 'LC004.heavy_certificate_face_path_locality' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/RigidFaceGeometry.lean:225:0: 'LC004.heavy_certificate_restrict_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/RigidFaceGeometry.lean:226:0: 'LC004.canonical_heavy_face_restrict_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6809/6839] Replayed LC004.HeavyFaceRestriction
+info: ././././LC004/HeavyFaceRestriction.lean:73:0: 'LC004.certificateConstraint_restrict' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/HeavyFaceRestriction.lean:74:0: 'LC004.winning_restrict_heavy_face' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/HeavyFaceRestriction.lean:75:0: 'LC004.raw_win_heavy_face_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6810/6839] Replayed LC004.RigidFaceArcCriterion
+info: ././././LC004/RigidFaceArcCriterion.lean:43:0: 'LC004.rigid_face_iff_no_rigid_arc_separator' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6811/6839] Replayed LC004.HeavyFaceReconstruction
+info: ././././LC004/HeavyFaceReconstruction.lean:62:0: 'LC004.certificate_position_rigid_or_heavy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/HeavyFaceReconstruction.lean:63:0: 'LC004.certificate_pattern_determined_by_heavy_faces' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6813/6839] Replayed LC004.HeavyFaceDecomposition
+info: ././././LC004/HeavyFaceDecomposition.lean:226:0: 'LC004.winning_of_heavy_faces' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/HeavyFaceDecomposition.lean:227:0: 'LC004.winning_iff_heavy_face_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/HeavyFaceDecomposition.lean:228:0: 'LC004.raw_win_iff_heavy_face_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6814/6839] Replayed LC004.HeavyFaceCertificateProduct
+info: ././././LC004/HeavyFaceCertificateProduct.lean:157:0: 'LC004.heavyFaceCertificateEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/HeavyFaceCertificateProduct.lean:158:0: 'LC004.certificate_partition_count_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6815/6839] Replayed LC004.FiniteIncidenceSupport
+info: ././././LC004/FiniteIncidenceSupport.lean:63:0: 'LC004.lowerIncidence_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FiniteIncidenceSupport.lean:64:0: 'LC004.incidence_support_of_meet_invariance' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FiniteIncidenceSupport.lean:94:0: 'LC004.lowerIncidence_truncate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FiniteIncidenceSupport.lean:95:0: 'LC004.incidence_support_of_local_meet_invariance' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6816/6839] Replayed LC004.CollectedJoinCoefficients
+info: ././././LC004/CollectedJoinCoefficients.lean:54:0: 'LC004.collectedJoinCoefficient_incidence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CollectedJoinCoefficients.lean:55:0: 'LC004.winningJoinCoefficient_incidence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CollectedJoinCoefficients.lean:56:0: 'LC004.winningJoinCoefficient_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6817/6839] Replayed LC004.NoncrossingRegionEquivalence
+info: ././././LC004/NoncrossingRegionEquivalence.lean:29:0: 'LC004.winning_restrict_closed_color_region' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/NoncrossingRegionEquivalence.lean:30:0: 'LC004.winning_iff_noncrossing_region_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6818/6839] Replayed LC004.FourClassLocalPairs
+info: ././././LC004/FourClassLocalPairs.lean:60:0: 'LC004.certificate_four_class_block_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourClassLocalPairs.lean:61:0: 'LC004.certificate_four_class_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6819/6839] Replayed LC004.FourClassTwoShapes
+info: ././././LC004/FourClassTwoShapes.lean:104:0: 'LC004.certificate_four_two_shapes' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6820/6839] Replayed LC004.CertificatePairRegions
+info: ././././LC004/CertificatePairRegions.lean:93:0: 'LC004.winning_pair_interior' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CertificatePairRegions.lean:94:0: 'LC004.winning_pair_exterior' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6821/6839] Replayed LC004.FourGapWitnessOverlap
+info: ././././LC004/FourGapWitnessOverlap.lean:93:0: 'LC004.two_pairing_witnesses_give_four_gaps' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourGapWitnessOverlap.lean:94:0: 'LC004.winning_iff_two_pairing_witnesses' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourGapWitnessOverlap.lean:95:0: 'LC004.fourPairRegions_noncrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6822/6839] Replayed LC004.FourGapAssembly
+info: ././././LC004/FourGapAssembly.lean:134:0: 'LC004.four_gaps_give_pairing_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourGapAssembly.lean:135:0: 'LC004.four_gap_overlap_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6823/6839] Replayed LC004.FourGapIndicator
+info: ././././LC004/FourGapIndicator.lean:74:0: 'LC004.winning_splitOffPair_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourGapIndicator.lean:75:0: 'LC004.four_gap_winning_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6824/6839] Replayed LC004.FourGapRefinementIndicator
+info: ././././LC004/FourGapRefinementIndicator.lean:75:0: 'LC004.winning_iff_pairing_witnesses_below' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourGapRefinementIndicator.lean:76:0: 'LC004.pairing_overlap_below_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourGapRefinementIndicator.lean:77:0: 'LC004.four_gap_indicator_below' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6825/6839] Replayed LC004.FourGapCoefficientSupport
+info: ././././LC004/FourGapCoefficientSupport.lean:102:0: 'LC004.fourOverlapCoefficient_incidence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourGapCoefficientSupport.lean:103:0: 'LC004.winningJoinCoefficient_zero_of_four_gap_separator' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6826/6839] Replayed LC004.CrossedFourCancellation
+info: ././././LC004/CrossedFourCancellation.lean:78:0: 'LC004.fourGapPattern_gaps' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CrossedFourCancellation.lean:79:0: 'LC004.fourGapPattern_separates_crossing' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/CrossedFourCancellation.lean:80:0: 'LC004.winningJoinCoefficient_crossed_four_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6827/6839] Replayed LC004.NoncrossingClosure
+info: ././././LC004/NoncrossingClosure.lean:73:0: 'LC004.noncrossingClosure_noncrossing' does not depend on any axioms
+info: ././././LC004/NoncrossingClosure.lean:74:0: 'LC004.noncrossingClosure_le_iff' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/NoncrossingClosure.lean:75:0: 'LC004.ncConnected_iff_no_proper_noncrossing_coarsening' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6828/6839] Replayed LC004.NoncrossingCoefficientPushforward
+info: ././././LC004/NoncrossingCoefficientPushforward.lean:67:0: 'LC004.closurePushforward_incidence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/NoncrossingCoefficientPushforward.lean:68:0: 'LC004.closurePushforward_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/NoncrossingCoefficientPushforward.lean:69:0: 'LC004.winning_closurePushforward_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6829/6839] Replayed LC004.NoncrossingRegionPatternEquiv
+info: ././././LC004/NoncrossingRegionPatternEquiv.lean:96:0: 'LC004.winning_iff_noncrossing_coarsening_regions' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/NoncrossingRegionPatternEquiv.lean:97:0: 'LC004.regionPatternEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/NoncrossingRegionPatternEquiv.lean:98:0: 'LC004.regionPatternEquiv_le_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/NoncrossingRegionPatternEquiv.lean:106:0: 'LC004.regionPatternOrderIso' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6830/6839] Replayed LC004.ProductIncidence
+info: ././././LC004/ProductIncidence.lean:42:0: 'LC004.lowerIncidence_eq_on_ideal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ProductIncidence.lean:43:0: 'LC004.lowerIncidence_pi_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ProductIncidence.lean:70:0: 'LC004.lowerIncidence_orderIso' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ProductIncidence.lean:71:0: 'LC004.lowerIncidence_Iic' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6831/6839] Replayed LC004.NoncrossingCoefficientProduct
+info: ././././LC004/NoncrossingCoefficientProduct.lean:59:0: 'LC004.winningJoinCoefficient_noncrossing_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/NoncrossingCoefficientProduct.lean:69:0: 'LC004.winningJoinCoefficient_closure_components' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6832/6839] Replayed LC004.NoncrossingClosureRegions
+info: ././././LC004/NoncrossingClosureRegions.lean:94:0: 'LC004.assembledPattern_noncrossing' depends on axioms: [propext]
+info: ././././LC004/NoncrossingClosureRegions.lean:95:0: 'LC004.noncrossingClosure_restrict' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/NoncrossingClosureRegions.lean:96:0: 'LC004.noncrossingClosure_regions_connected' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6833/6839] Replayed LC004.NoncrossingConnectedFiber
+info: ././././LC004/NoncrossingConnectedFiber.lean:50:0: 'LC004.noncrossingClosure_eq_iff_regions_connected' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/NoncrossingConnectedFiber.lean:51:0: 'LC004.connectedClosureFiberEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6834/6839] Replayed LC004.RegionalClassCount
+info: ././././LC004/RegionalClassCount.lean:57:0: 'LC004.regionalQuotientEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/RegionalClassCount.lean:58:0: 'LC004.pattern_class_count_regions' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/RegionalClassCount.lean:59:0: 'LC004.weighted_winningJoinCoefficient_regions' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6835/6839] Replayed LC004.LabeledJoinEnumeration
+info: ././././LC004/LabeledJoinEnumeration.lean:66:0: 'LC004.constraintColoringEquiv' depends on axioms: [Quot.sound]
+info: ././././LC004/LabeledJoinEnumeration.lean:67:0: 'LC004.constraintColoring_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/LabeledJoinEnumeration.lean:68:0: 'LC004.labeledWinningCount_signed_joins' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6836/6839] Replayed LC004.WeightedConnectedFibers
+info: ././././LC004/WeightedConnectedFibers.lean:61:0: 'LC004.weighted_connected_fiber_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/WeightedConnectedFibers.lean:62:0: 'LC004.weighted_game_noncrossing_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [6837/6839] Replayed LC004.LabeledConnectedExpansion
+info: ././././LC004/LabeledConnectedExpansion.lean:38:0: 'LC004.labeledWinningCount_collected' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/LabeledConnectedExpansion.lean:39:0: 'LC004.labeledWinningCount_connected_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [6838/6839] Built LC004
+Build completed successfully.

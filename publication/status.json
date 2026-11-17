@@ -1,0 +1,58 @@
+{
+  "schema": "alexandria-publication-status/1",
+  "as_of_date": "2026-10-29",
+  "proof_commit": "3446f6313f1f8a35a3c7891d5deece19c4599855",
+  "proof_ci": {
+    "run_id": 40831342439,
+    "conclusion": "success"
+  },
+  "publication_branch": "publication/alexandria-blueprint-20261029",
+  "local_validation": {
+    "pdf_pages": 37,
+    "pdf_compile": "pass",
+    "pdf_visual_review": "All pages in contact sheets; full-size title, mathematics, assurance table, Lean source, references inspected",
+    "blueprint_render": "pass",
+    "mapped_statements": 17,
+    "native_declarations": 23,
+    "lean_declaration_audit": "pass",
+    "mutation_checks": "4 rejected as expected",
+    "local_html_links": 175,
+    "local_html_link_audit": "pass",
+    "standalone_tex_build": "pass: paper.tex alone in an empty directory, 37 pages"
+  },
+  "hosted_publication": {
+    "verified_commit": "3c40389c3f3ccab145f052720b3d12b377b2f4d8",
+    "run_id": 40837599814,
+    "build_job_id": 123325955138,
+    "build_conclusion": "success",
+    "deployment_job_id": 123329000481,
+    "deployment_conclusion": "failure",
+    "run_conclusion": "failure (deployment prerequisite)",
+    "url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40837599814"
+  },
+  "deployment": {
+    "status": "blocked: GitHub Pages is not enabled",
+    "initial_repository_has_pages": false,
+    "settings_operation_available_in_connector": false,
+    "browser_state": "GitHub settings returned a signed-out 404; no authenticated browser session available",
+    "observed_error": "Get Pages site failed; Not Found. Configure Pages to build using GitHub Actions.",
+    "required_setting": "Settings > Pages > Build and deployment > Source > GitHub Actions; permit publication branch in github-pages environment"
+  },
+  "scope": {
+    "game": "linear maximal-run deletion",
+    "general_enumeration": "open",
+    "counterexample_minimality": "computational",
+    "slot_bijection": "ordinary manuscript proof; Lean target open",
+    "architecture": "source audit and conditional specifications, not universal verification guarantee"
+  },
+  "post_build_changes": [
+    "Explicit collision-free identity assumption in manuscript architecture contract",
+    "Provenance, status and README updates; mathematical Lean source unchanged"
+  ],
+  "bibliography_correction": {
+    "record": "publication/evidence/bibliography-correction.json",
+    "authors": "Chris Burns and Benjamin Purcell",
+    "title_includes_binary": true,
+    "proof_source_changed": false
+  }
+}

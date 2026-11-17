@@ -1,0 +1,30 @@
+{
+  "first": {
+    "generators": 5,
+    "independently_regenerated_matrix_spectrum": [
+      0,
+      0,
+      -128,
+      -1458,
+      0,
+      62500,
+      466560,
+      2117682,
+      7340032
+    ]
+  },
+  "second": {
+    "generators": 5,
+    "independently_regenerated_matrix_spectrum": [
+      0,
+      0,
+      -128,
+      -1458,
+      0,
+      62500,
+      466560,
+      2117682,
+      7340032
+    ]
+  }
+}

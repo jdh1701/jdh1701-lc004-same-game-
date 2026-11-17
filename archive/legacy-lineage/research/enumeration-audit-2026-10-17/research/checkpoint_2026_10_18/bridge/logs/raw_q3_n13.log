@@ -1,0 +1,14 @@
+{"q":3,"n":0,"words":1,"winning":1}
+{"q":3,"n":1,"words":3,"winning":0}
+{"q":3,"n":2,"words":9,"winning":3}
+{"q":3,"n":3,"words":27,"winning":3}
+{"q":3,"n":4,"words":81,"winning":15}
+{"q":3,"n":5,"words":243,"winning":33}
+{"q":3,"n":6,"words":729,"winning":105}
+{"q":3,"n":7,"words":2187,"winning":297}
+{"q":3,"n":8,"words":6561,"winning":879}
+{"q":3,"n":9,"words":19683,"winning":2631}
+{"q":3,"n":10,"words":59049,"winning":7833}
+{"q":3,"n":11,"words":177147,"winning":23697}
+{"q":3,"n":12,"words":531441,"winning":71385}
+{"q":3,"n":13,"words":1594323,"winning":216765}

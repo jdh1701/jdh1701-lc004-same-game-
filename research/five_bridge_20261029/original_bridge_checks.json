@@ -1,0 +1,27 @@
+{
+  "status": "VERIFIED-COMP",
+  "original_position_join_cases": 554,
+  "connected_cases": 548,
+  "connected_histogram": {
+    "0": 501,
+    "-1": 47
+  },
+  "original_generator_count_histogram": {
+    "25": 5,
+    "0": 183,
+    "5": 28,
+    "1": 48,
+    "9": 24,
+    "2": 47,
+    "13": 111,
+    "6": 72,
+    "29": 36
+  },
+  "exhaustive_n10_partitions": 126,
+  "existing_fixtures": 268,
+  "random_cases": 160,
+  "seed": 20261029,
+  "singleton_coefficient": -4,
+  "disconnected_coefficient": 16,
+  "failures": 0
+}

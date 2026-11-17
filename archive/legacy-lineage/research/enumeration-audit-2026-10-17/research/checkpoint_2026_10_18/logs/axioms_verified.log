@@ -1,0 +1,26 @@
+LC004.clickGrammar_iff_firstBlock (w : List ℕ) : LC004.ClickGrammar w ↔ LC004.FirstBlock w
+LC004.clickGrammar_map (f : ℕ → ℕ) {w : List ℕ} (h : LC004.ClickGrammar w) : LC004.ClickGrammar (List.map f w)
+LC004.signedEval_unionTerms.{u_1, u_2} {C : Type u_1} {W : Type u_2} (sat : C → W → Prop) [DecidableRel sat]
+  (join : C → C → C) (hjoin : ∀ (p r : C) (w : W), sat (join p r) w ↔ sat p w ∧ sat r w) (ps : List C) (w : W) :
+  LC004.signedEval sat (LC004.unionTerms join ps) w = if ∃ p ∈ ps, sat p w then 1 else 0
+LC004.signed_constraint_count.{u_1, u_2} {C : Type u_1} {W : Type u_2} [DecidableEq W] (sat : C → W → Prop)
+  [DecidableRel sat] (join : C → C → C) (hjoin : ∀ (p r : C) (w : W), sat (join p r) w ↔ sat p w ∧ sat r w)
+  (ps : List C) (domain : Finset W) :
+  ↑{w ∈ domain | ∃ p ∈ ps, sat p w}.card =
+    (List.map (fun t => t.1 * ↑(Finset.filter (sat t.2) domain).card) (LC004.unionTerms join ps)).sum
+LC004.card_partitionEvent {n : ℕ} (q : ℕ) (p : Setoid (Fin n)) :
+  (LC004.partitionEvent q p).card = q ^ LC004.blockCount p
+LC004.partition_union_count {n : ℕ} (q : ℕ) (ps : List (Setoid (Fin n))) :
+  ↑(LC004.coveredWords q ps).card =
+    (List.map (fun t => t.1 * ↑q ^ LC004.blockCount t.2) (LC004.unionTerms (fun x1 x2 => x1 ⊔ x2) ps)).sum
+LC004.noncrossing_pairings_crossing_join :
+  LC004.Crossing (Setoid.ker LC004.leftPairLabels ⊔ Setoid.ker LC004.nestedPairLabels)
+'LC004.clickGrammar_iff_firstBlock' depends on axioms: [propext]
+'LC004.clickGrammar_map' depends on axioms: [propext]
+'LC004.signedEval_unionTerms' depends on axioms: [propext, Quot.sound]
+'LC004.signed_constraint_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.card_partitionEvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.partition_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.leftPair_noncrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.nestedPair_noncrossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.noncrossing_pairings_crossing_join' depends on axioms: [propext, Classical.choice, Quot.sound]

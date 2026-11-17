@@ -1,0 +1,69 @@
+built {'controls': 23129, 'augmented_states': 46258, 'edges': 138774, 'pop_edges_with_unknown_older_color': 23062, 'determined_edges': 115712, 'three_letter_base_checks': 277548}
+checks {'source_commit': '0990b0e9a86a0adf78bdbf20a78bcceeafae4d39', 'model_sha256': '9e2b870282b506b1e730d96faf57179cf54b719ee7d1b2cbebfb058cc37500cb', 'model': {'controls': 23129, 'augmented_states': 46258, 'edges': 138774, 'pop_edges_with_unknown_older_color': 23062, 'determined_edges': 115712, 'three_letter_base_checks': 277548}, 'inherited_certificates': {'tilted10-9.certificate.txt': {'maximum_drift_numerator': -3041932, 'denominator': 2800000000, 'inequalities': 46258, 'status': 'PASS'}, 'refined-bias.certificate.txt': {'maximum_drift_numerator': -304542622, 'denominator': 31102873100000000, 'inequalities': 46258, 'status': 'PASS'}}, 'small_cases': {'max_length': 10, 'prefix_transitions': 88572, 'exact_winning_counts': [1, 0, 3, 3, 15, 33, 105, 297, 879, 2631, 7833], 'policy_pop_transitions': 17606, 'boundary_transitions': 17316, 'status': 'PASS', 'scope': 'Exhaustive small words only; retained-policy acceptance is not exact recognition.'}}
+{
+  "source_commit": "0990b0e9a86a0adf78bdbf20a78bcceeafae4d39",
+  "model_sha256": "9e2b870282b506b1e730d96faf57179cf54b719ee7d1b2cbebfb058cc37500cb",
+  "model": {
+    "controls": 23129,
+    "augmented_states": 46258,
+    "edges": 138774,
+    "pop_edges_with_unknown_older_color": 23062,
+    "determined_edges": 115712,
+    "three_letter_base_checks": 277548
+  },
+  "inherited_certificates": {
+    "tilted10-9.certificate.txt": {
+      "maximum_drift_numerator": -3041932,
+      "denominator": 2800000000,
+      "inequalities": 46258,
+      "status": "PASS"
+    },
+    "refined-bias.certificate.txt": {
+      "maximum_drift_numerator": -304542622,
+      "denominator": 31102873100000000,
+      "inequalities": 46258,
+      "status": "PASS"
+    }
+  },
+  "small_cases": {
+    "max_length": 10,
+    "prefix_transitions": 88572,
+    "exact_winning_counts": [
+      1,
+      0,
+      3,
+      3,
+      15,
+      33,
+      105,
+      297,
+      879,
+      2631,
+      7833
+    ],
+    "policy_pop_transitions": 17606,
+    "boundary_transitions": 17316,
+    "status": "PASS",
+    "scope": "Exhaustive small words only; retained-policy acceptance is not exact recognition."
+  },
+  "old": {
+    "iterations": 242,
+    "seconds": 0.4821434020996094,
+    "residual_numerator_min": 138287869,
+    "residual_numerator_max": 138287874,
+    "denominator": 3000000000,
+    "lower": 0.046095956333333334,
+    "upper": 0.046095958,
+    "interpretation": "Exact integer Bellman sub/supersolution bounds for THIS finite adversarial abstraction, not the real base process."
+  },
+  "extra_color": {
+    "iterations": 246,
+    "seconds": 1.691255807876587,
+    "residual_numerator_min": 132338197,
+    "residual_numerator_max": 132338202,
+    "denominator": 3000000000,
+    "lower": 0.044112732333333335,
+    "upper": 0.044112734,
+    "interpretation": "Exact integer Bellman sub/supersolution bounds for THIS finite adversarial abstraction, not the real base process."
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "checks": 117195,
+  "max_length": 9,
+  "A_refinements_per_case": 15,
+  "scope": "All upper equality patterns through n=9 and all partitions of each distinguished four-class; other classes unchanged. Universal Lean proof handles arbitrary refinements.",
+  "seconds": 1.0244736671447754
+}

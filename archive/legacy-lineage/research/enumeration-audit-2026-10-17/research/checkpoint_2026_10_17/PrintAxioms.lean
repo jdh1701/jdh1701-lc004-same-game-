@@ -1,0 +1,11 @@
+import LC004
+
+#print LC004.unconditional_executable_unique_first_iff_path
+#print axioms LC004.unconditional_executable_unique_first_iff_path
+#print axioms LC004.unconditional_unique_choice_iff_unique_path
+#print LC004.unique_successful_first_is_median
+#print axioms LC004.unique_successful_first_is_median
+#print LC004.unique_successful_path_odd_runs
+#print axioms LC004.unique_successful_path_odd_runs
+#print LC004.unique_successful_path_color_palindrome
+#print axioms LC004.unique_successful_path_color_palindrome

@@ -1,0 +1,1 @@
+{"profile":[5,5,5,6],"all_patterns":6844101264,"completion_cases":18069315,"certificate_incidences":276746400,"feasible":56506226,"connected_feasible":53433226,"connected_full_join":206290,"nonzero":5607,"coefficient_sum":-5607,"weighted_nonzero_generator_histogram":{"2":2121,"3":3486},"unweighted_full_join_coefficient_histogram":{"-1":142,"0":5674}}

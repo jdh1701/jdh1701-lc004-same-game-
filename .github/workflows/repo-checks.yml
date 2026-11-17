@@ -1,0 +1,25 @@
+name: repo-checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Provenance (carried-over files unchanged)
+        run: python3 scripts/check_provenance.py
+      - name: Lean coverage and source guard
+        run: python3 scripts/check_lean_coverage.py > /dev/null && echo ok
+      - name: Research index covers every research folder
+        run: |
+          for d in research/*/; do n=$(basename "$d"); grep -q "\`$n\`" docs/RESEARCH_INDEX.md || { echo "missing from index: $n"; exit 1; }; done
+          echo "index ok"

@@ -1,0 +1,91 @@
+{
+  "schema_version": "alexandria-candidate-campaign/1",
+  "id": "lc004-after-structural-face-proof-20261029",
+  "title": "LC004 slot, profile, and unrestricted enumeration obligations",
+  "question": "Can the verified structural face decomposition support a duplication-free winning-pattern enumeration?",
+  "budget": {
+    "max_planned_tasks": 3,
+    "batch_width": 1,
+    "max_concurrency": 1,
+    "per_task_timeout_seconds": 1800,
+    "max_total_tokens": 60000,
+    "max_total_wall_time_seconds": 5400
+  },
+  "targets": [
+    {
+      "id": "slot-count",
+      "statement": "Certify the ordered-slot weak-composition correspondence including the extra outer slot.",
+      "acceptance_criteria": [
+        "Pinned Lean compilation and transitive axiom audit for formal claims.",
+        "Independent finite counterexample tests and exact-source provenance."
+      ],
+      "falsifier": "Failure at empty words, zero rigid classes or the outer-face cut.",
+      "claim_boundary": "open_research_obligation"
+    },
+    {
+      "id": "profile-count",
+      "statement": "Connect the established noncrossing type/cotype enumeration to the exact LC004 profile formula.",
+      "acceptance_criteria": [
+        "Pinned Lean compilation and transitive axiom audit for formal claims.",
+        "Independent finite counterexample tests and exact-source provenance."
+      ],
+      "falsifier": "Missing orbit multiplicity or invalid w=0 denominator.",
+      "claim_boundary": "open_research_obligation"
+    },
+    {
+      "id": "general-enumeration",
+      "statement": "Investigate a non-circular description of the heavy-word content series beyond the known binary case.",
+      "acceptance_criteria": [
+        "Pinned Lean compilation and transitive axiom audit for formal claims.",
+        "Independent finite counterexample tests and exact-source provenance."
+      ],
+      "falsifier": "A held-out coefficient inconsistent with the proposed recurrence.",
+      "claim_boundary": "open_research_obligation"
+    }
+  ],
+  "workstreams": [
+    {
+      "id": "slot-count",
+      "target_id": "slot-count",
+      "role": "formalize",
+      "strategy_id": "slot-count",
+      "replicas": 1,
+      "depends_on": [],
+      "instruction": "State and prove both maps, inverse laws and binomial count.",
+      "isolation_group": "single-research-campaign"
+    },
+    {
+      "id": "profile-count",
+      "target_id": "profile-count",
+      "role": "formalize",
+      "strategy_id": "profile-count",
+      "replicas": 1,
+      "depends_on": [
+        "slot-count"
+      ],
+      "instruction": "Check Goulden-Jackson normalization from the primary source, class automorphisms, and coefficient extraction.",
+      "isolation_group": "single-research-campaign"
+    },
+    {
+      "id": "general-enumeration",
+      "target_id": "general-enumeration",
+      "role": "propose",
+      "strategy_id": "general-enumeration",
+      "replicas": 1,
+      "depends_on": [
+        "profile-count"
+      ],
+      "instruction": "Freeze competing recurrence candidates before held-out tests; distinguish fixed-excess formulas from unrestricted b-ary enumeration.",
+      "isolation_group": "single-research-campaign"
+    }
+  ],
+  "stopping_rules": [
+    "Stop and preserve a minimal counterexample when a target fails.",
+    "Stop at the stated resource bound and record unresolved obligations.",
+    "Never promote a theorem using only finite tests or planning receipts."
+  ],
+  "limitations": [
+    "This is a future research queue, not a scheduled automation or claim of completed work.",
+    "The existing Core planner records no agent execution or theorem verification."
+  ]
+}

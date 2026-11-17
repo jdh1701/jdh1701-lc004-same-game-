@@ -1,0 +1,43 @@
+LC004/FiveClassGeometryBridge.lean:22:14: error: application type mismatch
+  And.intro hu
+argument
+  hu
+has type
+  f u ∈ List.map f xs : Prop
+but is expected to have type
+  u ∈ xs : Prop
+LC004/FiveClassGeometryBridge.lean:22:21: error: application type mismatch
+  And.intro hv
+argument
+  hv
+has type
+  f v ∈ List.map f xs : Prop
+but is expected to have type
+  v ∈ xs : Prop
+LC004/FiveClassGeometryBridge.lean:22:28: error: application type mismatch
+  And.intro hx
+argument
+  hx
+has type
+  f x ∈ List.map f ys : Prop
+but is expected to have type
+  x ∈ ys : Prop
+LC004/FiveClassGeometryBridge.lean:22:35: error: application type mismatch
+  And.intro hy
+argument
+  hy
+has type
+  f y ∈ List.map f ys : Prop
+but is expected to have type
+  y ∈ ys : Prop
+LC004/FiveClassGeometryBridge.lean:42:14: error: application type mismatch
+  h a ha
+argument
+  ha
+has type
+  List.map f a ∈ List.map (List.map f) blocks : Prop
+but is expected to have type
+  a ∈ blocks : Prop
+'LC004.blocksCross_map_strictMono_iff' depends on axioms: [propext, sorryAx, Quot.sound]
+'LC004.noncrossingBlockFamily_map_strictMono_iff' depends on axioms: [propext, sorryAx, Quot.sound]
+'LC004.unary_binary_spec_iff' depends on axioms: [propext, Classical.choice, Quot.sound]

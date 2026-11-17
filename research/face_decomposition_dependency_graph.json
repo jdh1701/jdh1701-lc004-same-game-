@@ -1,0 +1,310 @@
+{
+  "root": "LC004.HeavyFaceCertificateProduct",
+  "proof_commit": "3446f6313f1f8a35a3c7891d5deece19c4599855",
+  "modules": {
+    "LC004.HeavyFaceCertificateProduct": {
+      "file": "LC004/HeavyFaceCertificateProduct.lean",
+      "sha256": "f3e3ca59989f3ccb183cb7990ef2385b652ccedab7e190a4b72dcf467cbdfc7e",
+      "imports": [
+        "LC004.HeavyFaceDecomposition"
+      ]
+    },
+    "LC004.HeavyFaceDecomposition": {
+      "file": "LC004/HeavyFaceDecomposition.lean",
+      "sha256": "2ec7c720a282290ec94438c93ee5367eb2232d3bed0c57bb4e52d844341d4a60",
+      "imports": [
+        "LC004.OrderedCertificateAssembly",
+        "LC004.HeavyFaceReconstruction"
+      ]
+    },
+    "LC004.HeavyFaceReconstruction": {
+      "file": "LC004/HeavyFaceReconstruction.lean",
+      "sha256": "f3e17b9e8c907722f300638b6bc3293434076d5b3c4a041a635069d518459450",
+      "imports": [
+        "LC004.HeavyFaceRestriction",
+        "LC004.RigidFaceArcCriterion"
+      ]
+    },
+    "LC004.RigidFaceArcCriterion": {
+      "file": "LC004/RigidFaceArcCriterion.lean",
+      "sha256": "bd37291f05b1cba08ac19a112988f0c1f8255cfd5e8f208a35da6275856c7a55",
+      "imports": [
+        "LC004.RigidFaceGeometry"
+      ]
+    },
+    "LC004.RigidFaceGeometry": {
+      "file": "LC004/RigidFaceGeometry.lean",
+      "sha256": "19a4c630874ab723d2bacc820ff2e6d8584c384ef698ef97f4bc06b702db6a2c",
+      "imports": [
+        "LC004.SmallPatternCorrespondence",
+        "LC004.FacePathFactorization"
+      ]
+    },
+    "LC004.FacePathFactorization": {
+      "file": "LC004/FacePathFactorization.lean",
+      "sha256": "21b36c826e64db2460f4414c3a96c6eb3d1dfe454c77bbf632d934d9635d04e7",
+      "imports": [
+        "LC004.FaceInternalPaths"
+      ]
+    },
+    "LC004.FaceInternalPaths": {
+      "file": "LC004/FaceInternalPaths.lean",
+      "sha256": "3d642d3d7ba222010d773887bbac2fc38902ef266cacab8c3f692b4c633eaaf8",
+      "imports": [
+        "LC004.FaceJoinPaths"
+      ]
+    },
+    "LC004.FaceJoinPaths": {
+      "file": "LC004/FaceJoinPaths.lean",
+      "sha256": "d0735ff9def72bd38ff0a080af4fb58558e651d05235b1cfa852501f656da76a",
+      "imports": [
+        "LC004.FaceRestriction"
+      ]
+    },
+    "LC004.FaceRestriction": {
+      "file": "LC004/FaceRestriction.lean",
+      "sha256": "e1b0e6da33b86c6a1884622df2f80d3fd42c46a1fbbc0923925015e132516d0d",
+      "imports": [
+        "LC004.CertificateConstraintJoins"
+      ]
+    },
+    "LC004.CertificateConstraintJoins": {
+      "file": "LC004/CertificateConstraintJoins.lean",
+      "sha256": "2d1ff68153185fc46a17881d858a8909e71fbd55c45a65200aabed173a214e76",
+      "imports": [
+        "LC004.ColorPatternSpace",
+        "Mathlib"
+      ]
+    },
+    "LC004.ColorPatternSpace": {
+      "file": "LC004/ColorPatternSpace.lean",
+      "sha256": "525708efd3918411e419f63a435aa7acfd13a82c7089513177137080f88de0d5",
+      "imports": [
+        "LC004.RawCertificateEquivalence"
+      ]
+    },
+    "LC004.RawCertificateEquivalence": {
+      "file": "LC004/RawCertificateEquivalence.lean",
+      "sha256": "ce6ccfb1df198be5d2a28cc9c13b0f19c08419c22956187a01ee2778a0706bc5",
+      "imports": [
+        "LC004.RawRunInflation",
+        "LC004.CertificateConverse",
+        "LC004.ConditionalGrammarBridge"
+      ]
+    },
+    "LC004.ConditionalGrammarBridge": {
+      "file": "LC004/ConditionalGrammarBridge.lean",
+      "sha256": "5103d013aa75f6730e7484866ff805fa0d2b88a126e8d4d765a2d05a1eb8c476",
+      "imports": [
+        "LC004.GrammarErase"
+      ]
+    },
+    "LC004.GrammarErase": {
+      "file": "LC004/GrammarErase.lean",
+      "sha256": "95e09f72cf28e5e75bd57ce367b6e0710df687f5b880197e6935938f4657d457",
+      "imports": [
+        "LC004.GrammarLength"
+      ]
+    },
+    "LC004.GrammarLength": {
+      "file": "LC004/GrammarLength.lean",
+      "sha256": "bee19c962aad38fc6f2a200836e49bf346ee0fd5cfdfb5e5371c6e0e5e3fc021",
+      "imports": [
+        "Mathlib"
+      ]
+    },
+    "LC004.CertificateConverse": {
+      "file": "LC004/CertificateConverse.lean",
+      "sha256": "813691b819b4ffb8d2f28d0415b56c58f0f025c7f4706d4deb800fb025d85ef6",
+      "imports": [
+        "LC004.CertificateDeletion"
+      ]
+    },
+    "LC004.CertificateDeletion": {
+      "file": "LC004/CertificateDeletion.lean",
+      "sha256": "fa4352d5dd54455593846ee7dc18bb45750972ff1bd9a797ecc97034107c52ac",
+      "imports": [
+        "LC004.CertificateFirstErase"
+      ]
+    },
+    "LC004.CertificateFirstErase": {
+      "file": "LC004/CertificateFirstErase.lean",
+      "sha256": "10fff4dcb3304e632b5cac7cbdeb69d41ce9ff03e432a90f6eb56c54ad7777e9",
+      "imports": [
+        "LC004.InnermostBlock"
+      ]
+    },
+    "LC004.InnermostBlock": {
+      "file": "LC004/InnermostBlock.lean",
+      "sha256": "4498cb149f5a8049d09463a99bfa793c337ad6f2d1bb5b4cac095b984fc51f2f",
+      "imports": [
+        "LC004.HistoryCertificate"
+      ]
+    },
+    "LC004.HistoryCertificate": {
+      "file": "LC004/HistoryCertificate.lean",
+      "sha256": "21cca6a70c944f58bba5bcf74c9c36f800ea421bc1cccbaeb5a2349592c74275",
+      "imports": [
+        "LC004.CertificateInsertion",
+        "LC004.ReverseInsertionHistory"
+      ]
+    },
+    "LC004.ReverseInsertionHistory": {
+      "file": "LC004/ReverseInsertionHistory.lean",
+      "sha256": "b5e1302e2c76603f69b2aaff4830ded61fd1f8c7671a0ed306224ba1a0e31ff4",
+      "imports": [
+        "LC004.RawMaxSemanticsBridge"
+      ]
+    },
+    "LC004.RawMaxSemanticsBridge": {
+      "file": "LC004/RawMaxSemanticsBridge.lean",
+      "sha256": "e847a93c75f0be2a650ed41f3367b8883f6004b560951fbf9c1d9476cc9ab8bc",
+      "imports": [
+        "LC004.FullRunErasure"
+      ]
+    },
+    "LC004.FullRunErasure": {
+      "file": "LC004/FullRunErasure.lean",
+      "sha256": "e48f07c692fb877000bcc3831a726c2b887df764e4307643148e4bfeb459137a",
+      "imports": [
+        "LC004.GrammarErase",
+        "LC004.RunLengthTwoThree"
+      ]
+    },
+    "LC004.RunLengthTwoThree": {
+      "file": "LC004/RunLengthTwoThree.lean",
+      "sha256": "f50b7faaf27fd1ae621ceca91c39181e84ff580e7c3c23af595d40f8f8cc1c30",
+      "imports": [
+        "Mathlib"
+      ]
+    },
+    "LC004.CertificateInsertion": {
+      "file": "LC004/CertificateInsertion.lean",
+      "sha256": "f0d22d2b50035fb7ed583f05a2e8f675d40198472c96d80c4af5fdcb157b886c",
+      "imports": [
+        "LC004.TypedInsertionPositions"
+      ]
+    },
+    "LC004.TypedInsertionPositions": {
+      "file": "LC004/TypedInsertionPositions.lean",
+      "sha256": "05a41bbaab101cb3bc4eef808f148d791061e5b77318f9af9fcf90f05856aeab",
+      "imports": [
+        "LC004.NoncrossingBlockFamily"
+      ]
+    },
+    "LC004.NoncrossingBlockFamily": {
+      "file": "LC004/NoncrossingBlockFamily.lean",
+      "sha256": "3ee1cbc4d20112f3d70dd0ba9542a06cec8dd7b420b621f2c42b3cad5187c396",
+      "imports": [
+        "LC004.BlockCrossingInsertion"
+      ]
+    },
+    "LC004.BlockCrossingInsertion": {
+      "file": "LC004/BlockCrossingInsertion.lean",
+      "sha256": "6cd47bfe2ab3096974e5ebc919abab0b1f7bf547ff4684726706ceb742dfd213",
+      "imports": [
+        "LC004.NoncrossingInsertionIndex"
+      ]
+    },
+    "LC004.NoncrossingInsertionIndex": {
+      "file": "LC004/NoncrossingInsertionIndex.lean",
+      "sha256": "28f8be0ecb675327707371b27199a9167d1e17bffb48f8e2127a821197271fb5",
+      "imports": [
+        "LC004.FourBlockCrossing"
+      ]
+    },
+    "LC004.FourBlockCrossing": {
+      "file": "LC004/FourBlockCrossing.lean",
+      "sha256": "581849bd81aeb9c7c64c03eb57f49e85c0517e819d304197e004b0edc46b271d",
+      "imports": [
+        "Mathlib"
+      ]
+    },
+    "LC004.RawRunInflation": {
+      "file": "LC004/RawRunInflation.lean",
+      "sha256": "21027b42327aba7c2754a55548bc0d055c498d52a371dcfa28f127a6bfbfcf2a",
+      "imports": [
+        "LC004.RawIsolatedInsertion"
+      ]
+    },
+    "LC004.RawIsolatedInsertion": {
+      "file": "LC004/RawIsolatedInsertion.lean",
+      "sha256": "ff6f97c573821a5256b75934990514a9ea98d8cd89fefd4bafe64a7fbed3d76a",
+      "imports": [
+        "LC004.RawMaxSemanticsBridge"
+      ]
+    },
+    "LC004.SmallPatternCorrespondence": {
+      "file": "LC004/SmallPatternCorrespondence.lean",
+      "sha256": "f7c6265d9f5b688e4def379e0113c176b01855590c6bcd2cc4cd8dd788ed6759",
+      "imports": [
+        "LC004.CertificatePairRefinement"
+      ]
+    },
+    "LC004.CertificatePairRefinement": {
+      "file": "LC004/CertificatePairRefinement.lean",
+      "sha256": "bd6bacf1ced6fd57e000689cceda2a703e535be3a61e274bb649974c4660a3b9",
+      "imports": [
+        "LC004.FourfoldCertificatePairs"
+      ]
+    },
+    "LC004.FourfoldCertificatePairs": {
+      "file": "LC004/FourfoldCertificatePairs.lean",
+      "sha256": "56446b63b8805cfc1ba0533d85fe67a869445d887617ee780638147b50b28214",
+      "imports": [
+        "LC004.PairPatternCertificate"
+      ]
+    },
+    "LC004.PairPatternCertificate": {
+      "file": "LC004/PairPatternCertificate.lean",
+      "sha256": "08e4994a45ec649825e951d957b7de11a063192de0b9bc8f4f2deab0cd2da595",
+      "imports": [
+        "LC004.MatchingMergeProfile"
+      ]
+    },
+    "LC004.MatchingMergeProfile": {
+      "file": "LC004/MatchingMergeProfile.lean",
+      "sha256": "597d461e4a161d53a47167eaaaa9ed86f22957528da1540a128b49898c9c1656",
+      "imports": [
+        "LC004.MatchingPatternMerge"
+      ]
+    },
+    "LC004.MatchingPatternMerge": {
+      "file": "LC004/MatchingPatternMerge.lean",
+      "sha256": "c59d3095ff40d5823ae10ab57947b6159cbd1048e9f15e2a7c4ddfa24c62b62f",
+      "imports": [
+        "LC004.ColorPatternSpace"
+      ]
+    },
+    "LC004.HeavyFaceRestriction": {
+      "file": "LC004/HeavyFaceRestriction.lean",
+      "sha256": "9273308aa24dbe97567fa1574a00d0be3a03a8ba79daa645600166c0e33d7da2",
+      "imports": [
+        "LC004.RigidFaceGeometry",
+        "LC004.WinningConstraintGenerators"
+      ]
+    },
+    "LC004.WinningConstraintGenerators": {
+      "file": "LC004/WinningConstraintGenerators.lean",
+      "sha256": "eed51ac79a2608a4e443d2c187e271608241408acdd70ac15c63d83afa48150c",
+      "imports": [
+        "LC004.CertificateJoinIteration",
+        "LC004.SmallPatternCorrespondence"
+      ]
+    },
+    "LC004.CertificateJoinIteration": {
+      "file": "LC004/CertificateJoinIteration.lean",
+      "sha256": "3de47cd2ab3d139c73c4ead4cf5a55b726eb94ead4ad4734c0bbdf32e3327ae3",
+      "imports": [
+        "LC004.CertificateConstraintJoins"
+      ]
+    },
+    "LC004.OrderedCertificateAssembly": {
+      "file": "LC004/OrderedCertificateAssembly.lean",
+      "sha256": "8871d01310115085b5563b4b1a9b91b871a3f07d061899f6cd1edb8f00316215",
+      "imports": [
+        "LC004.HeavyFaceRestriction"
+      ]
+    }
+  }
+}

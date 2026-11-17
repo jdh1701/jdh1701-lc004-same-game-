@@ -1,0 +1,40 @@
+# Selected validation lines from GitHub run 40837599814
+# Commit 3c40389c3f3ccab145f052720b3d12b377b2f4d8; build job 123325955138: success
+2026-10-29T07:52:05.9242829Z Build completed successfully.
+2026-10-29T07:54:19.7759043Z COVERAGE PASS: 162 active modules all reachable from LC004.lean
+2026-10-29T07:54:19.7816936Z SOURCE GUARD PASS: no placeholders, custom axioms, unsafe or partial source
+2026-10-29T07:54:44.8500776Z AXIOM AUDIT PASS: 638 project declarations; only propext, Classical.choice, Quot.sound permitted
+2026-10-29T07:54:45.0125291Z MUTATION CHECK PASS: absent name, changed source, cycle, false promotion
+2026-10-29T07:54:45.0126031Z PUBLICATION MAPPING PASS: 23 declarations; run Lean audit next
+2026-10-29T07:54:49.5241369Z BLUEPRINT DECLARATION AUDIT PASS: 23 actual declarations
+2026-10-29T07:54:49.6412045Z {"n": 0, "patterns": 1, "eligible": 1, "winning": 1, "certificates": 1, "heavy_blocks": 0, "join_face_checks": 0, "glued_certificates": 1}
+2026-10-29T07:54:49.6413640Z {"n": 1, "patterns": 1, "eligible": 0, "winning": 0, "certificates": 0, "heavy_blocks": 0, "join_face_checks": 0, "glued_certificates": 0}
+2026-10-29T07:54:49.6415148Z {"n": 2, "patterns": 2, "eligible": 1, "winning": 1, "certificates": 1, "heavy_blocks": 0, "join_face_checks": 0, "glued_certificates": 1}
+2026-10-29T07:54:49.6417011Z {"n": 3, "patterns": 5, "eligible": 1, "winning": 1, "certificates": 1, "heavy_blocks": 0, "join_face_checks": 0, "glued_certificates": 1}
+2026-10-29T07:54:49.6418916Z {"n": 4, "patterns": 15, "eligible": 4, "winning": 3, "certificates": 4, "heavy_blocks": 4, "join_face_checks": 1, "glued_certificates": 4}
+2026-10-29T07:54:49.6430830Z {"n": 5, "patterns": 52, "eligible": 11, "winning": 6, "certificates": 10, "heavy_blocks": 10, "join_face_checks": 10, "glued_certificates": 10}
+2026-10-29T07:54:49.6480721Z {"n": 6, "patterns": 203, "eligible": 41, "winning": 18, "certificates": 31, "heavy_blocks": 51, "join_face_checks": 34, "glued_certificates": 31}
+2026-10-29T07:54:49.6678243Z {"n": 7, "patterns": 877, "eligible": 162, "winning": 50, "certificates": 105, "heavy_blocks": 189, "join_face_checks": 287, "glued_certificates": 105}
+2026-10-29T07:54:49.7651201Z {"n": 8, "patterns": 4140, "eligible": 715, "winning": 161, "certificates": 350, "heavy_blocks": 812, "join_face_checks": 1247, "glued_certificates": 350}
+2026-10-29T07:54:50.1277753Z {"n": 9, "patterns": 21147, "eligible": 3425, "winning": 523, "certificates": 1320, "heavy_blocks": 3468, "join_face_checks": 0, "glued_certificates": 0}
+2026-10-29T07:54:52.3138378Z {"n": 10, "patterns": 115975, "eligible": 17722, "winning": 1828, "certificates": 4884, "heavy_blocks": 14970, "join_face_checks": 0, "glued_certificates": 0}
+2026-10-29T07:54:52.3693428Z {"n": 0, "patterns": 1, "eligible": 1, "winning": 1, "certificate_shapes": 1, "global_certificates": 1, "assembled_certificates": 1, "exact_product_checks": 1}
+2026-10-29T07:54:52.3695290Z {"n": 1, "patterns": 1, "eligible": 0, "winning": 0, "certificate_shapes": 0, "global_certificates": 0, "assembled_certificates": 0, "exact_product_checks": 0}
+2026-10-29T07:54:52.3696974Z {"n": 2, "patterns": 2, "eligible": 1, "winning": 1, "certificate_shapes": 1, "global_certificates": 1, "assembled_certificates": 1, "exact_product_checks": 1}
+2026-10-29T07:54:52.3698146Z {"n": 3, "patterns": 5, "eligible": 1, "winning": 1, "certificate_shapes": 1, "global_certificates": 1, "assembled_certificates": 1, "exact_product_checks": 1}
+2026-10-29T07:54:52.3702760Z {"n": 4, "patterns": 15, "eligible": 4, "winning": 3, "certificate_shapes": 2, "global_certificates": 4, "assembled_certificates": 4, "exact_product_checks": 3}
+2026-10-29T07:54:52.3720709Z {"n": 5, "patterns": 52, "eligible": 11, "winning": 6, "certificate_shapes": 5, "global_certificates": 10, "assembled_certificates": 10, "exact_product_checks": 6}
+2026-10-29T07:54:52.3801272Z {"n": 6, "patterns": 203, "eligible": 41, "winning": 18, "certificate_shapes": 8, "global_certificates": 31, "assembled_certificates": 31, "exact_product_checks": 24}
+2026-10-29T07:54:52.4196352Z {"n": 7, "patterns": 877, "eligible": 162, "winning": 50, "certificate_shapes": 21, "global_certificates": 105, "assembled_certificates": 105, "exact_product_checks": 78}
+2026-10-29T07:54:52.6427382Z {"n": 8, "patterns": 4140, "eligible": 715, "winning": 161, "certificate_shapes": 42, "global_certificates": 350, "assembled_certificates": 350, "exact_product_checks": 302}
+2026-10-29T07:54:54.1362008Z {"n": 9, "patterns": 21147, "eligible": 3425, "winning": 523, "certificate_shapes": 96, "global_certificates": 1320, "assembled_certificates": 1320, "exact_product_checks": 1225}
+2026-10-29T07:55:06.1482017Z {"n": 10, "patterns": 115975, "eligible": 17722, "winning": 1828, "certificate_shapes": 222, "global_certificates": 4884, "assembled_certificates": 4884, "exact_product_checks": 5659}
+2026-10-29T07:55:07.6437245Z Output written on paper.xdv (34 pages, 1030964 bytes).
+2026-10-29T07:55:08.8727746Z Output written on paper.xdv (37 pages, 1110652 bytes).
+2026-10-29T07:55:10.0719926Z Output written on paper.xdv (37 pages, 1111960 bytes).
+2026-10-29T07:55:12.1773818Z LOCAL LINK AUDIT PASS: 175 links
+2026-10-29T07:55:12.1774399Z SITE BUILD PASS: 37 pages, 23 checked declaration links
+2026-10-29T07:55:14.1741735Z Artifact alexandria-publication has been successfully uploaded! Final size is 329603 bytes. Artifact ID is 12881353883
+2026-10-29T07:55:14.1746759Z Artifact download URL: https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40837599814/artifacts/12881353883
+2026-10-29T07:55:16.3950464Z Artifact github-pages has been successfully uploaded! Final size is 1040333 bytes. Artifact ID is 12882085651
+2026-10-29T07:55:16.3957732Z Artifact download URL: https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40837599814/artifacts/12882085651

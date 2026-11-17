@@ -1,0 +1,686 @@
+⚠ [719/820] Replayed LC004.SignedConstraints
+warning: ././././LC004/SignedConstraints.lean:43:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ././././LC004/SignedConstraints.lean:104:0: 'LC004.signedEval_addConstraint' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:105:0: 'LC004.signedEval_unionTerms' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:106:0: 'LC004.signedEval_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:107:0: 'LC004.signed_constraint_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [790/820] Replayed LC004.PartitionCounting
+info: ././././LC004/PartitionCounting.lean:58:0: 'LC004.respects_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionCounting.lean:59:0: 'LC004.card_partitionEvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionCounting.lean:60:0: 'LC004.partition_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [791/820] Replayed LC004.NoncrossingRestriction
+info: ././././LC004/NoncrossingRestriction.lean:90:0: 'LC004.noncrossing_iff_blocks' depends on axioms: [propext]
+info: ././././LC004/NoncrossingRestriction.lean:91:0: 'LC004.blockRestriction_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/NoncrossingRestriction.lean:92:0: 'LC004.pairTriple_iff_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [792/820] Replayed LC004.ChordBarrier
+info: ././././LC004/ChordBarrier.lean:29:0: 'LC004.noncrossing_interval_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [814/820] Replayed LC004.CoefficientFactorization
+info: ././././LC004/CoefficientFactorization.lean:138:0: 'LC004.zetaSum_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientFactorization.lean:139:0: 'LC004.coefficient_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientFactorization.lean:140:0: 'LC004.collected_union_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [815/820] Replayed LC004.GrammarNormalForm
+info: ././././LC004/GrammarNormalForm.lean:65:0: 'LC004.clickGrammar_iff_firstBlock' depends on axioms: [propext]
+info: ././././LC004/GrammarNormalForm.lean:66:0: 'LC004.clickGrammar_map' depends on axioms: [propext]
+ℹ [816/820] Replayed LC004.CoefficientBarrier
+info: ././././LC004/CoefficientBarrier.lean:45:0: 'LC004.coefficient_zero_outside_barrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/CoefficientBarrier.lean:46:0: 'LC004.four_gap_pairing_intersection' does not depend on any axioms
+info: ././././LC004/CoefficientBarrier.lean:47:0: 'LC004.two_pairing_indicator' depends on axioms: [propext]
+ℹ [817/820] Replayed LC004.UnionCoefficientIdentity
+info: ././././LC004/UnionCoefficientIdentity.lean:101:0: 'LC004.two_branch_join_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UnionCoefficientIdentity.lean:102:0: 'LC004.two_branch_barrier_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UnionCoefficientIdentity.lean:103:0: 'LC004.collected_union_append' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/UnionCoefficientIdentity.lean:104:0: 'LC004.collected_union_fixed_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [818/820] Replayed LC004.FourBlockCancellation
+info: ././././LC004/FourBlockCancellation.lean:58:0: 'LC004.quad_pairings_join_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/FourBlockCancellation.lean:59:0: 'LC004.four_block_barrier_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [820/820] Building LC004.FourGapGeometry
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /tmp/lean-4.19.0-linux/bin/lean ././././LC004/FourGapGeometry.lean -R ./././. -o ././.lake/build/lib/lean/LC004/FourGapGeometry.olean -i ././.lake/build/lib/lean/LC004/FourGapGeometry.ilean -c ././.lake/build/ir/LC004/FourGapGeometry.c --json
+error: ././././LC004/FourGapGeometry.lean:37:56: unsolved goals
+case neg
+n : ℕ
+a b c d : Fin n
+hab : a < b
+hbc : b < c
+hcd : c < d
+x y : QuadRemainder a b c d
+hxa : ↑x ≠ a
+hxb : ↑x ≠ b
+hxc : ↑x ≠ c
+hxd : ↑x ≠ d
+hya : ↑y ≠ a
+hyb : ↑y ≠ b
+hyc : ↑y ≠ c
+hyd : ↑y ≠ d
+h0 : adjacentGapLabel 0 = 0
+h1 : adjacentGapLabel 1 = 1
+h2 : adjacentGapLabel 2 = 2
+h3 : adjacentGapLabel 3 = 1
+h✝³ : a < ↑x ∧ ↑x < b
+h✝² : a < ↑y ∧ ↑y < b
+h✝¹ : ¬(c < ↑x ∧ ↑x < d)
+h✝ : ¬(c < ↑y ∧ ↑y < d)
+⊢ True ∧ True ↔ True
+
+case neg
+n : ℕ
+a b c d : Fin n
+hab : a < b
+hbc : b < c
+hcd : c < d
+x y : QuadRemainder a b c d
+hxa : ↑x ≠ a
+hxb : ↑x ≠ b
+hxc : ↑x ≠ c
+hxd : ↑x ≠ d
+hya : ↑y ≠ a
+hyb : ↑y ≠ b
+hyc : ↑y ≠ c
+hyd : ↑y ≠ d
+h0 : adjacentGapLabel 0 = 0
+h1 : adjacentGapLabel 1 = 1
+h2 : adjacentGapLabel 2 = 2
+h3 : adjacentGapLabel 3 = 1
+h✝⁵ : ¬(a < ↑x ∧ ↑x < b)
+h✝⁴ : ¬(a < ↑y ∧ ↑y < b)
+h✝³ : c < ↑x ∧ ↑x < d
+h✝² : c < ↑y ∧ ↑y < d
+h✝¹ : ¬(b < ↑x ∧ ↑x < c)
+h✝ : ¬(b < ↑y ∧ ↑y < c)
+⊢ True ∧ True ↔ True
+
+case pos
+n : ℕ
+a b c d : Fin n
+hab : a < b
+hbc : b < c
+hcd : c < d
+x y : QuadRemainder a b c d
+hxa : ↑x ≠ a
+hxb : ↑x ≠ b
+hxc : ↑x ≠ c
+hxd : ↑x ≠ d
+hya : ↑y ≠ a
+hyb : ↑y ≠ b
+hyc : ↑y ≠ c
+hyd : ↑y ≠ d
+h0 : adjacentGapLabel 0 = 0
+h1 : adjacentGapLabel 1 = 1
+h2 : adjacentGapLabel 2 = 2
+h3 : adjacentGapLabel 3 = 1
+h✝⁵ : ¬(a < ↑x ∧ ↑x < b)
+h✝⁴ : ¬(a < ↑y ∧ ↑y < b)
+h✝³ : ¬(c < ↑x ∧ ↑x < d)
+h✝² : ¬(c < ↑y ∧ ↑y < d)
+h✝¹ : b < ↑x ∧ ↑x < c
+h✝ : b < ↑y ∧ ↑y < c
+⊢ True ∧ True ↔ True
+
+case neg
+n : ℕ
+a b c d : Fin n
+hab : a < b
+hbc : b < c
+hcd : c < d
+x y : QuadRemainder a b c d
+hxa : ↑x ≠ a
+hxb : ↑x ≠ b
+hxc : ↑x ≠ c
+hxd : ↑x ≠ d
+hya : ↑y ≠ a
+hyb : ↑y ≠ b
+hyc : ↑y ≠ c
+hyd : ↑y ≠ d
+h0 : adjacentGapLabel 0 = 0
+h1 : adjacentGapLabel 1 = 1
+h2 : adjacentGapLabel 2 = 2
+h3 : adjacentGapLabel 3 = 1
+h✝⁵ : ¬(a < ↑x ∧ ↑x < b)
+h✝⁴ : ¬(a < ↑y ∧ ↑y < b)
+h✝³ : ¬(c < ↑x ∧ ↑x < d)
+h✝² : ¬(c < ↑y ∧ ↑y < d)
+h✝¹ : b < ↑x ∧ ↑x < c
+h✝ : ¬(b < ↑y ∧ ↑y < c)
+⊢ True ∧ True ↔ True
+
+case pos
+n : ℕ
+a b c d : Fin n
+hab : a < b
+hbc : b < c
+hcd : c < d
+x y : QuadRemainder a b c d
+hxa : ↑x ≠ a
+hxb : ↑x ≠ b
+hxc : ↑x ≠ c
+hxd : ↑x ≠ d
+hya : ↑y ≠ a
+hyb : ↑y ≠ b
+hyc : ↑y ≠ c
+hyd : ↑y ≠ d
+h0 : adjacentGapLabel 0 = 0
+h1 : adjacentGapLabel 1 = 1
+h2 : adjacentGapLabel 2 = 2
+h3 : adjacentGapLabel 3 = 1
+h✝⁵ : ¬(a < ↑x ∧ ↑x < b)
+h✝⁴ : ¬(a < ↑y ∧ ↑y < b)
+h✝³ : ¬(c < ↑x ∧ ↑x < d)
+h✝² : ¬(c < ↑y ∧ ↑y < d)
+h✝¹ : ¬(b < ↑x ∧ ↑x < c)
+h✝ : b < ↑y ∧ ↑y < c
+⊢ True ∧ True ↔ True
+
+case neg
+n : ℕ
+a b c d : Fin n
+hab : a < b
+hbc : b < c
+hcd : c < d
+x y : QuadRemainder a b c d
+hxa : ↑x ≠ a
+hxb : ↑x ≠ b
+hxc : ↑x ≠ c
+hxd : ↑x ≠ d
+hya : ↑y ≠ a
+hyb : ↑y ≠ b
+hyc : ↑y ≠ c
+hyd : ↑y ≠ d
+h0 : adjacentGapLabel 0 = 0
+h1 : adjacentGapLabel 1 = 1
+h2 : adjacentGapLabel 2 = 2
+h3 : adjacentGapLabel 3 = 1
+h✝⁵ : ¬(a < ↑x ∧ ↑x < b)
+h✝⁴ : ¬(a < ↑y ∧ ↑y < b)
+h✝³ : ¬(c < ↑x ∧ ↑x < d)
+h✝² : ¬(c < ↑y ∧ ↑y < d)
+h✝¹ : ¬(b < ↑x ∧ ↑x < c)
+h✝ : ¬(b < ↑y ∧ ↑y < c)
+⊢ True ∧ True ↔ True
+info: ././././LC004/FourGapGeometry.lean:50:60: case neg
+n : ℕ
+a b c d : Fin n
+hab : a < b
+hbc : b < c
+hcd : c < d
+x y : QuadRemainder a b c d
+hxa : ↑x ≠ a
+hxb : ↑x ≠ b
+hxc : ↑x ≠ c
+hxd : ↑x ≠ d
+hya : ↑y ≠ a
+hyb : ↑y ≠ b
+hyc : ↑y ≠ c
+hyd : ↑y ≠ d
+h0 : adjacentGapLabel 0 = 0
+h1 : adjacentGapLabel 1 = 1
+h2 : adjacentGapLabel 2 = 2
+h3 : adjacentGapLabel 3 = 1
+h✝³ : a < ↑x ∧ ↑x < b
+h✝² : a < ↑y ∧ ↑y < b
+h✝¹ : ¬(c < ↑x ∧ ↑x < d)
+h✝ : ¬(c < ↑y ∧ ↑y < d)
+⊢ True ∧ True ↔ True
+case neg
+n : ℕ
+a b c d : Fin n
+hab : a < b
+hbc : b < c
+hcd : c < d
+x y : QuadRemainder a b c d
+hxa : ↑x ≠ a
+hxb : ↑x ≠ b
+hxc : ↑x ≠ c
+hxd : ↑x ≠ d
+hya : ↑y ≠ a
+hyb : ↑y ≠ b
+hyc : ↑y ≠ c
+hyd : ↑y ≠ d
+h0 : adjacentGapLabel 0 = 0
+h1 : adjacentGapLabel 1 = 1
+h2 : adjacentGapLabel 2 = 2
+h3 : adjacentGapLabel 3 = 1
+h✝⁵ : ¬(a < ↑x ∧ ↑x < b)
+h✝⁴ : ¬(a < ↑y ∧ ↑y < b)
+h✝³ : c < ↑x ∧ ↑x < d
+h✝² : c < ↑y ∧ ↑y < d
+h✝¹ : ¬(b < ↑x ∧ ↑x < c)
+h✝ : ¬(b < ↑y ∧ ↑y < c)
+⊢ True ∧ True ↔ True
+case pos
+n : ℕ
+a b c d : Fin n
+hab : a < b
+hbc : b < c
+hcd : c < d
+x y : QuadRemainder a b c d
+hxa : ↑x ≠ a
+hxb : ↑x ≠ b
+hxc : ↑x ≠ c
+hxd : ↑x ≠ d
+hya : ↑y ≠ a
+hyb : ↑y ≠ b
+hyc : ↑y ≠ c
+hyd : ↑y ≠ d
+h0 : adjacentGapLabel 0 = 0
+h1 : adjacentGapLabel 1 = 1
+h2 : adjacentGapLabel 2 = 2
+h3 : adjacentGapLabel 3 = 1
+h✝⁵ : ¬(a < ↑x ∧ ↑x < b)
+h✝⁴ : ¬(a < ↑y ∧ ↑y < b)
+h✝³ : ¬(c < ↑x ∧ ↑x < d)
+h✝² : ¬(c < ↑y ∧ ↑y < d)
+h✝¹ : b < ↑x ∧ ↑x < c
+h✝ : b < ↑y ∧ ↑y < c
+⊢ True ∧ True ↔ True
+case neg
+n : ℕ
+a b c d : Fin n
+hab : a < b
+hbc : b < c
+hcd : c < d
+x y : QuadRemainder a b c d
+hxa : ↑x ≠ a
+hxb : ↑x ≠ b
+hxc : ↑x ≠ c
+hxd : ↑x ≠ d
+hya : ↑y ≠ a
+hyb : ↑y ≠ b
+hyc : ↑y ≠ c
+hyd : ↑y ≠ d
+h0 : adjacentGapLabel 0 = 0
+h1 : adjacentGapLabel 1 = 1
+h2 : adjacentGapLabel 2 = 2
+h3 : adjacentGapLabel 3 = 1
+h✝⁵ : ¬(a < ↑x ∧ ↑x < b)
+h✝⁴ : ¬(a < ↑y ∧ ↑y < b)
+h✝³ : ¬(c < ↑x ∧ ↑x < d)
+h✝² : ¬(c < ↑y ∧ ↑y < d)
+h✝¹ : b < ↑x ∧ ↑x < c
+h✝ : ¬(b < ↑y ∧ ↑y < c)
+⊢ True ∧ True ↔ True
+case pos
+n : ℕ
+a b c d : Fin n
+hab : a < b
+hbc : b < c
+hcd : c < d
+x y : QuadRemainder a b c d
+hxa : ↑x ≠ a
+hxb : ↑x ≠ b
+hxc : ↑x ≠ c
+hxd : ↑x ≠ d
+hya : ↑y ≠ a
+hyb : ↑y ≠ b
+hyc : ↑y ≠ c
+hyd : ↑y ≠ d
+h0 : adjacentGapLabel 0 = 0
+h1 : adjacentGapLabel 1 = 1
+h2 : adjacentGapLabel 2 = 2
+h3 : adjacentGapLabel 3 = 1
+h✝⁵ : ¬(a < ↑x ∧ ↑x < b)
+h✝⁴ : ¬(a < ↑y ∧ ↑y < b)
+h✝³ : ¬(c < ↑x ∧ ↑x < d)
+h✝² : ¬(c < ↑y ∧ ↑y < d)
+h✝¹ : ¬(b < ↑x ∧ ↑x < c)
+h✝ : b < ↑y ∧ ↑y < c
+⊢ True ∧ True ↔ True
+case neg
+n : ℕ
+a b c d : Fin n
+hab : a < b
+hbc : b < c
+hcd : c < d
+x y : QuadRemainder a b c d
+hxa : ↑x ≠ a
+hxb : ↑x ≠ b
+hxc : ↑x ≠ c
+hxd : ↑x ≠ d
+hya : ↑y ≠ a
+hyb : ↑y ≠ b
+hyc : ↑y ≠ c
+hyd : ↑y ≠ d
+h0 : adjacentGapLabel 0 = 0
+h1 : adjacentGapLabel 1 = 1
+h2 : adjacentGapLabel 2 = 2
+h3 : adjacentGapLabel 3 = 1
+h✝⁵ : ¬(a < ↑x ∧ ↑x < b)
+h✝⁴ : ¬(a < ↑y ∧ ↑y < b)
+h✝³ : ¬(c < ↑x ∧ ↑x < d)
+h✝² : ¬(c < ↑y ∧ ↑y < d)
+h✝¹ : ¬(b < ↑x ∧ ↑x < c)
+h✝ : ¬(b < ↑y ∧ ↑y < c)
+⊢ True ∧ True ↔ True
+error: ././././LC004/FourGapGeometry.lean:57:54: unsolved goals
+case neg
+n : ℕ
+a b c d : Fin n
+hab : a < b
+hbc : b < c
+hcd : c < d
+x y : QuadRemainder a b c d
+hxa : ↑x ≠ a
+hxb : ↑x ≠ b
+hxc : ↑x ≠ c
+hxd : ↑x ≠ d
+hya : ↑y ≠ a
+hyb : ↑y ≠ b
+hyc : ↑y ≠ c
+hyd : ↑y ≠ d
+h0 : nestedGapLabel 0 = 0
+h1 : nestedGapLabel 1 = 1
+h2 : nestedGapLabel 2 = 0
+h3 : nestedGapLabel 3 = 3
+h✝⁵ : a < ↑x ∧ ↑x < d
+h✝⁴ : a < ↑y ∧ ↑y < d
+h✝³ : b < ↑x ∧ ↑x < c
+h✝² : b < ↑y ∧ ↑y < c
+h✝¹ : ¬(a < ↑x ∧ ↑x < b)
+h✝ : ¬(a < ↑y ∧ ↑y < b)
+⊢ True ∧ True ↔ True
+
+case pos
+n : ℕ
+a b c d : Fin n
+hab : a < b
+hbc : b < c
+hcd : c < d
+x y : QuadRemainder a b c d
+hxa : ↑x ≠ a
+hxb : ↑x ≠ b
+hxc : ↑x ≠ c
+hxd : ↑x ≠ d
+hya : ↑y ≠ a
+hyb : ↑y ≠ b
+hyc : ↑y ≠ c
+hyd : ↑y ≠ d
+h0 : nestedGapLabel 0 = 0
+h1 : nestedGapLabel 1 = 1
+h2 : nestedGapLabel 2 = 0
+h3 : nestedGapLabel 3 = 3
+h✝⁵ : a < ↑x ∧ ↑x < d
+h✝⁴ : a < ↑y ∧ ↑y < d
+h✝³ : ¬(b < ↑x ∧ ↑x < c)
+h✝² : ¬(b < ↑y ∧ ↑y < c)
+h✝¹ : a < ↑x ∧ ↑x < b
+h✝ : a < ↑y ∧ ↑y < b
+⊢ True ∧ True ↔ True
+
+case pos
+n : ℕ
+a b c d : Fin n
+hab : a < b
+hbc : b < c
+hcd : c < d
+x y : QuadRemainder a b c d
+hxa : ↑x ≠ a
+hxb : ↑x ≠ b
+hxc : ↑x ≠ c
+hxd : ↑x ≠ d
+hya : ↑y ≠ a
+hyb : ↑y ≠ b
+hyc : ↑y ≠ c
+hyd : ↑y ≠ d
+h0 : nestedGapLabel 0 = 0
+h1 : nestedGapLabel 1 = 1
+h2 : nestedGapLabel 2 = 0
+h3 : nestedGapLabel 3 = 3
+h✝⁶ : a < ↑x ∧ ↑x < d
+h✝⁵ : a < ↑y ∧ ↑y < d
+h✝⁴ : ¬(b < ↑x ∧ ↑x < c)
+h✝³ : ¬(b < ↑y ∧ ↑y < c)
+h✝² : a < ↑x ∧ ↑x < b
+h✝¹ : ¬(a < ↑y ∧ ↑y < b)
+h✝ : c < ↑y ∧ ↑y < d
+⊢ True ∧ True ↔ True
+
+case pos
+n : ℕ
+a b c d : Fin n
+hab : a < b
+hbc : b < c
+hcd : c < d
+x y : QuadRemainder a b c d
+hxa : ↑x ≠ a
+hxb : ↑x ≠ b
+hxc : ↑x ≠ c
+hxd : ↑x ≠ d
+hya : ↑y ≠ a
+hyb : ↑y ≠ b
+hyc : ↑y ≠ c
+hyd : ↑y ≠ d
+h0 : nestedGapLabel 0 = 0
+h1 : nestedGapLabel 1 = 1
+h2 : nestedGapLabel 2 = 0
+h3 : nestedGapLabel 3 = 3
+h✝⁶ : a < ↑x ∧ ↑x < d
+h✝⁵ : a < ↑y ∧ ↑y < d
+h✝⁴ : ¬(b < ↑x ∧ ↑x < c)
+h✝³ : ¬(b < ↑y ∧ ↑y < c)
+h✝² : ¬(a < ↑x ∧ ↑x < b)
+h✝¹ : c < ↑x ∧ ↑x < d
+h✝ : a < ↑y ∧ ↑y < b
+⊢ True ∧ True ↔ True
+
+case pos
+n : ℕ
+a b c d : Fin n
+hab : a < b
+hbc : b < c
+hcd : c < d
+x y : QuadRemainder a b c d
+hxa : ↑x ≠ a
+hxb : ↑x ≠ b
+hxc : ↑x ≠ c
+hxd : ↑x ≠ d
+hya : ↑y ≠ a
+hyb : ↑y ≠ b
+hyc : ↑y ≠ c
+hyd : ↑y ≠ d
+h0 : nestedGapLabel 0 = 0
+h1 : nestedGapLabel 1 = 1
+h2 : nestedGapLabel 2 = 0
+h3 : nestedGapLabel 3 = 3
+h✝⁷ : a < ↑x ∧ ↑x < d
+h✝⁶ : a < ↑y ∧ ↑y < d
+h✝⁵ : ¬(b < ↑x ∧ ↑x < c)
+h✝⁴ : ¬(b < ↑y ∧ ↑y < c)
+h✝³ : ¬(a < ↑x ∧ ↑x < b)
+h✝² : c < ↑x ∧ ↑x < d
+h✝¹ : ¬(a < ↑y ∧ ↑y < b)
+h✝ : c < ↑y ∧ ↑y < d
+⊢ True ∧ True ↔ True
+
+case neg
+n : ℕ
+a b c d : Fin n
+hab : a < b
+hbc : b < c
+hcd : c < d
+x y : QuadRemainder a b c d
+hxa : ↑x ≠ a
+hxb : ↑x ≠ b
+hxc : ↑x ≠ c
+hxd : ↑x ≠ d
+hya : ↑y ≠ a
+hyb : ↑y ≠ b
+hyc : ↑y ≠ c
+hyd : ↑y ≠ d
+h0 : nestedGapLabel 0 = 0
+h1 : nestedGapLabel 1 = 1
+h2 : nestedGapLabel 2 = 0
+h3 : nestedGapLabel 3 = 3
+h✝⁷ : ¬(a < ↑x ∧ ↑x < d)
+h✝⁶ : ¬(a < ↑y ∧ ↑y < d)
+h✝⁵ : ¬(b < ↑x ∧ ↑x < c)
+h✝⁴ : ¬(b < ↑y ∧ ↑y < c)
+h✝³ : ¬(a < ↑x ∧ ↑x < b)
+h✝² : ¬(c < ↑x ∧ ↑x < d)
+h✝¹ : ¬(a < ↑y ∧ ↑y < b)
+h✝ : ¬(c < ↑y ∧ ↑y < d)
+⊢ True ∧ True ↔ True
+info: ././././LC004/FourGapGeometry.lean:70:60: case neg
+n : ℕ
+a b c d : Fin n
+hab : a < b
+hbc : b < c
+hcd : c < d
+x y : QuadRemainder a b c d
+hxa : ↑x ≠ a
+hxb : ↑x ≠ b
+hxc : ↑x ≠ c
+hxd : ↑x ≠ d
+hya : ↑y ≠ a
+hyb : ↑y ≠ b
+hyc : ↑y ≠ c
+hyd : ↑y ≠ d
+h0 : nestedGapLabel 0 = 0
+h1 : nestedGapLabel 1 = 1
+h2 : nestedGapLabel 2 = 0
+h3 : nestedGapLabel 3 = 3
+h✝⁵ : a < ↑x ∧ ↑x < d
+h✝⁴ : a < ↑y ∧ ↑y < d
+h✝³ : b < ↑x ∧ ↑x < c
+h✝² : b < ↑y ∧ ↑y < c
+h✝¹ : ¬(a < ↑x ∧ ↑x < b)
+h✝ : ¬(a < ↑y ∧ ↑y < b)
+⊢ True ∧ True ↔ True
+case pos
+n : ℕ
+a b c d : Fin n
+hab : a < b
+hbc : b < c
+hcd : c < d
+x y : QuadRemainder a b c d
+hxa : ↑x ≠ a
+hxb : ↑x ≠ b
+hxc : ↑x ≠ c
+hxd : ↑x ≠ d
+hya : ↑y ≠ a
+hyb : ↑y ≠ b
+hyc : ↑y ≠ c
+hyd : ↑y ≠ d
+h0 : nestedGapLabel 0 = 0
+h1 : nestedGapLabel 1 = 1
+h2 : nestedGapLabel 2 = 0
+h3 : nestedGapLabel 3 = 3
+h✝⁵ : a < ↑x ∧ ↑x < d
+h✝⁴ : a < ↑y ∧ ↑y < d
+h✝³ : ¬(b < ↑x ∧ ↑x < c)
+h✝² : ¬(b < ↑y ∧ ↑y < c)
+h✝¹ : a < ↑x ∧ ↑x < b
+h✝ : a < ↑y ∧ ↑y < b
+⊢ True ∧ True ↔ True
+case pos
+n : ℕ
+a b c d : Fin n
+hab : a < b
+hbc : b < c
+hcd : c < d
+x y : QuadRemainder a b c d
+hxa : ↑x ≠ a
+hxb : ↑x ≠ b
+hxc : ↑x ≠ c
+hxd : ↑x ≠ d
+hya : ↑y ≠ a
+hyb : ↑y ≠ b
+hyc : ↑y ≠ c
+hyd : ↑y ≠ d
+h0 : nestedGapLabel 0 = 0
+h1 : nestedGapLabel 1 = 1
+h2 : nestedGapLabel 2 = 0
+h3 : nestedGapLabel 3 = 3
+h✝⁶ : a < ↑x ∧ ↑x < d
+h✝⁵ : a < ↑y ∧ ↑y < d
+h✝⁴ : ¬(b < ↑x ∧ ↑x < c)
+h✝³ : ¬(b < ↑y ∧ ↑y < c)
+h✝² : a < ↑x ∧ ↑x < b
+h✝¹ : ¬(a < ↑y ∧ ↑y < b)
+h✝ : c < ↑y ∧ ↑y < d
+⊢ True ∧ True ↔ True
+case pos
+n : ℕ
+a b c d : Fin n
+hab : a < b
+hbc : b < c
+hcd : c < d
+x y : QuadRemainder a b c d
+hxa : ↑x ≠ a
+hxb : ↑x ≠ b
+hxc : ↑x ≠ c
+hxd : ↑x ≠ d
+hya : ↑y ≠ a
+hyb : ↑y ≠ b
+hyc : ↑y ≠ c
+hyd : ↑y ≠ d
+h0 : nestedGapLabel 0 = 0
+h1 : nestedGapLabel 1 = 1
+h2 : nestedGapLabel 2 = 0
+h3 : nestedGapLabel 3 = 3
+h✝⁶ : a < ↑x ∧ ↑x < d
+h✝⁵ : a < ↑y ∧ ↑y < d
+h✝⁴ : ¬(b < ↑x ∧ ↑x < c)
+h✝³ : ¬(b < ↑y ∧ ↑y < c)
+h✝² : ¬(a < ↑x ∧ ↑x < b)
+h✝¹ : c < ↑x ∧ ↑x < d
+h✝ : a < ↑y ∧ ↑y < b
+⊢ True ∧ True ↔ True
+case pos
+n : ℕ
+a b c d : Fin n
+hab : a < b
+hbc : b < c
+hcd : c < d
+x y : QuadRemainder a b c d
+hxa : ↑x ≠ a
+hxb : ↑x ≠ b
+hxc : ↑x ≠ c
+hxd : ↑x ≠ d
+hya : ↑y ≠ a
+hyb : ↑y ≠ b
+hyc : ↑y ≠ c
+hyd : ↑y ≠ d
+h0 : nestedGapLabel 0 = 0
+h1 : nestedGapLabel 1 = 1
+h2 : nestedGapLabel 2 = 0
+h3 : nestedGapLabel 3 = 3
+h✝⁷ : a < ↑x ∧ ↑x < d
+h✝⁶ : a < ↑y ∧ ↑y < d
+h✝⁵ : ¬(b < ↑x ∧ ↑x < c)
+h✝⁴ : ¬(b < ↑y ∧ ↑y < c)
+h✝³ : ¬(a < ↑x ∧ ↑x < b)
+h✝² : c < ↑x ∧ ↑x < d
+h✝¹ : ¬(a < ↑y ∧ ↑y < b)
+h✝ : c < ↑y ∧ ↑y < d
+⊢ True ∧ True ↔ True
+case neg
+n : ℕ
+a b c d : Fin n
+hab : a < b
+hbc : b < c
+hcd : c < d
+x y : QuadRemainder a b c d
+hxa : ↑x ≠ a
+hxb : ↑x ≠ b
+hxc : ↑x ≠ c
+hxd : ↑x ≠ d
+hya : ↑y ≠ a
+hyb : ↑y ≠ b
+hyc : ↑y ≠ c
+hyd : ↑y ≠ d
+h0 : nestedGapLabel 0 = 0
+h1 : nestedGapLabel 1 = 1
+h2 : nestedGapLabel 2 = 0
+h3 : nestedGapLabel 3 = 3
+h✝⁷ : ¬(a < ↑x ∧ ↑x < d)
+h✝⁶ : ¬(a < ↑y ∧ ↑y < d)
+h✝⁵ : ¬(b < ↑x ∧ ↑x < c)
+h✝⁴ : ¬(b < ↑y ∧ ↑y < c)
+h✝³ : ¬(a < ↑x ∧ ↑x < b)
+h✝² : ¬(c < ↑x ∧ ↑x < d)
+h✝¹ : ¬(a < ↑y ∧ ↑y < b)
+h✝ : ¬(c < ↑y ∧ ↑y < d)
+⊢ True ∧ True ↔ True
+error: Lean exited with code 1
+Some required builds logged failures:
+- LC004.FourGapGeometry
+error: build failed

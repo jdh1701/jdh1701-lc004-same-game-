@@ -1,0 +1,19 @@
+{
+  "status": "HOSTED_EXACT_VERIFIED",
+  "source_commit": "b67d938aeed992c06aeaf7f975ac827f8b30d0da",
+  "source_tree": "190e81363775a9e1e2085f1b12e0de2222baad3b",
+  "pull_request": 50,
+  "run": 41267556436,
+  "job": 124733423229,
+  "conclusion": "success",
+  "run_url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/41267556436",
+  "order_types": 792,
+  "composed_relations": 114244,
+  "euler_identity_order_types": 792,
+  "direct_original_join_replays": 672,
+  "formal_source_unchanged_from": "80e6c8dc3df62ada6721b0b8544cecace24b9d1c",
+  "new_lean_theorems": 0,
+  "status_boundary": "Computer-assisted paper reductions and exact finite counterexamples; full higher-excess classification and LC004/A035617 remain open.",
+  "log_sha256": "e942c03c611803f49cc75d80552b00eaf3f04b9362cd822142fe054d39942281",
+  "archive_sha256": "9b035a99db533949244d72a504f374bf364292aaa1fcf093a72f3a217ec0c2d7"
+}

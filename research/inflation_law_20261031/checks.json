@@ -1,0 +1,235 @@
+{
+  "status": "VERIFIED-COMP",
+  "gap_pairs": 16,
+  "local_states": 13,
+  "actual_interleavings": 280,
+  "python_lift_map": [
+    2,
+    3,
+    2,
+    3,
+    1,
+    0,
+    1,
+    4
+  ],
+  "lean_lift_map": [
+    2,
+    4,
+    0,
+    1,
+    0,
+    3,
+    1,
+    4
+  ],
+  "rows": [
+    {
+      "python_old_states": [
+        0,
+        2
+      ],
+      "python_new_states": [
+        0,
+        2,
+        5
+      ],
+      "synthetic_generators": [
+        [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          4,
+          4,
+          4,
+          3
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          2,
+          2,
+          3,
+          4,
+          4,
+          4,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          3
+        ]
+      ],
+      "top_join_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "coefficient": -1,
+      "realizability": "not asserted"
+    },
+    {
+      "python_old_states": [
+        0,
+        3
+      ],
+      "python_new_states": [
+        1,
+        3,
+        5
+      ],
+      "synthetic_generators": [
+        [
+          0,
+          0,
+          1,
+          2,
+          2,
+          1,
+          3,
+          4,
+          4,
+          4,
+          3
+        ],
+        [
+          0,
+          1,
+          1,
+          2,
+          2,
+          0,
+          3,
+          4,
+          4,
+          4,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          3
+        ]
+      ],
+      "top_join_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "coefficient": -1,
+      "realizability": "not asserted"
+    },
+    {
+      "python_old_states": [
+        2,
+        3
+      ],
+      "python_new_states": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "synthetic_generators": [
+        [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          4
+        ],
+        [
+          0,
+          0,
+          1,
+          2,
+          2,
+          1,
+          3,
+          4,
+          4,
+          4,
+          3
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          4
+        ],
+        [
+          0,
+          1,
+          1,
+          2,
+          2,
+          0,
+          3,
+          4,
+          4,
+          4,
+          3
+        ]
+      ],
+      "top_join_pairs": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "coefficient": 1,
+      "realizability": "not asserted"
+    }
+  ],
+  "scope": "Exact local replacement identities and abstract signed-join kernels. Positive kernel does not exhibit an actual connected first-excess game pattern."
+}

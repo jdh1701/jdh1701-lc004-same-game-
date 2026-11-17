@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "semantic_witnesses": 138774,
+  "pop_edges": 23062,
+  "scale": 1000000000,
+  "old_interval": {
+    "numerators": [
+      138287869,
+      138287874
+    ],
+    "denominator": 3000000000
+  },
+  "extra_color_interval": {
+    "numerators": [
+      132338197,
+      132338202
+    ],
+    "denominator": 3000000000
+  },
+  "both_lower_bounds_strictly_positive": true,
+  "extra_color_upper_less_than_old_lower": true,
+  "model_sha256": "9e2b870282b506b1e730d96faf57179cf54b719ee7d1b2cbebfb058cc37500cb",
+  "potential_sha256": {
+    "old_potential.txt": "26f4c42210f97a6c418fae05b7f112a390d3f054676cb137ae4cb27f6b17483e",
+    "extra_color_potential.txt": "3cdf77c6cba0e4d8d6331c55565ef2706772f89b2e3275a2dd669d0f6580521d"
+  },
+  "scope": "Finite max-adversary models with fixed lexicographic witnesses only; no impossibility claim about actual Same Game or other policies."
+}

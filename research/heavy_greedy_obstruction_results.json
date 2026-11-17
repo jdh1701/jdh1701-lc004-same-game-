@@ -1,0 +1,237 @@
+{
+  "scope": "all color patterns with each class size at least four, n<=12",
+  "rows": [
+    {
+      "n": 0,
+      "heavy_patterns": 1,
+      "winning": 1
+    },
+    {
+      "n": 1,
+      "heavy_patterns": 0,
+      "winning": 0
+    },
+    {
+      "n": 2,
+      "heavy_patterns": 0,
+      "winning": 0
+    },
+    {
+      "n": 3,
+      "heavy_patterns": 0,
+      "winning": 0
+    },
+    {
+      "n": 4,
+      "heavy_patterns": 1,
+      "winning": 1
+    },
+    {
+      "n": 5,
+      "heavy_patterns": 1,
+      "winning": 1
+    },
+    {
+      "n": 6,
+      "heavy_patterns": 1,
+      "winning": 1
+    },
+    {
+      "n": 7,
+      "heavy_patterns": 1,
+      "winning": 1
+    },
+    {
+      "n": 8,
+      "heavy_patterns": 36,
+      "winning": 19
+    },
+    {
+      "n": 9,
+      "heavy_patterns": 127,
+      "winning": 73
+    },
+    {
+      "n": 10,
+      "heavy_patterns": 337,
+      "winning": 206
+    },
+    {
+      "n": 11,
+      "heavy_patterns": 793,
+      "winning": 518
+    },
+    {
+      "n": 12,
+      "heavy_patterns": 7525,
+      "winning": 2012
+    }
+  ],
+  "minimal_counterexamples": {
+    "no_singleton_safe": {
+      "word": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "deleted_interval": [
+        0,
+        2
+      ],
+      "child": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "winning_path": [
+        [
+          3,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "losing_reachable_states": [
+        [
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1
+        ]
+      ]
+    },
+    "heavy_preserving_safe": {
+      "word": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "deleted_interval": [
+        4,
+        6
+      ],
+      "child": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "winning_path": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "losing_reachable_states": [
+        [
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1
+        ]
+      ]
+    }
+  },
+  "family_checks": 196,
+  "family": "A^r B A^s B^t A B, r,s,t >= 2; delete A^s",
+  "formal_boundary": "Concrete compressed run-state obstruction certified separately in Lean; family and minimality are not Lean-certified",
+  "novelty": "Not assessed; this is a discriminating failure result for proposed counting strategies"
+}

@@ -1,0 +1,262 @@
+{
+  "status": "VERIFIED-COMP",
+  "training": "coefficients 0..25",
+  "holdout": "26..28; surviving dimension computed from all 29 coefficients, allowing every linear combination of training basis vectors",
+  "recurrence_templates": [
+    {
+      "order": 1,
+      "polynomial_degree": 0,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 2,
+      "polynomial_degree": 0,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 3,
+      "polynomial_degree": 0,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 4,
+      "polynomial_degree": 0,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 5,
+      "polynomial_degree": 0,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 6,
+      "polynomial_degree": 0,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 7,
+      "polynomial_degree": 0,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 8,
+      "polynomial_degree": 0,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 9,
+      "polynomial_degree": 0,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 10,
+      "polynomial_degree": 0,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 11,
+      "polynomial_degree": 0,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 12,
+      "polynomial_degree": 0,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 13,
+      "polynomial_degree": 0,
+      "training_nullity": 1,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 1,
+      "polynomial_degree": 1,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 2,
+      "polynomial_degree": 1,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 3,
+      "polynomial_degree": 1,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 4,
+      "polynomial_degree": 1,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 5,
+      "polynomial_degree": 1,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 6,
+      "polynomial_degree": 1,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 7,
+      "polynomial_degree": 1,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 8,
+      "polynomial_degree": 1,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 9,
+      "polynomial_degree": 1,
+      "training_nullity": 3,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 1,
+      "polynomial_degree": 2,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 2,
+      "polynomial_degree": 2,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 3,
+      "polynomial_degree": 2,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 4,
+      "polynomial_degree": 2,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 5,
+      "polynomial_degree": 2,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 6,
+      "polynomial_degree": 2,
+      "training_nullity": 1,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 1,
+      "polynomial_degree": 3,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 2,
+      "polynomial_degree": 3,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 3,
+      "polynomial_degree": 3,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 4,
+      "polynomial_degree": 3,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 5,
+      "polynomial_degree": 3,
+      "training_nullity": 3,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 1,
+      "polynomial_degree": 4,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 2,
+      "polynomial_degree": 4,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 3,
+      "polynomial_degree": 4,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "order": 4,
+      "polynomial_degree": 4,
+      "training_nullity": 3,
+      "full_nullity_after_holdout": 0
+    }
+  ],
+  "algebraic_templates": [
+    {
+      "degree_F": 1,
+      "degree_z": 13,
+      "training_nullity": 2,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "degree_F": 2,
+      "degree_z": 8,
+      "training_nullity": 1,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "degree_F": 3,
+      "degree_z": 6,
+      "training_nullity": 2,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "degree_F": 4,
+      "degree_z": 4,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    },
+    {
+      "degree_F": 5,
+      "degree_z": 3,
+      "training_nullity": 0,
+      "full_nullity_after_holdout": 0
+    }
+  ],
+  "scope": "Recurrences are required from n=0. Finite exact linear-algebra exclusions of specified templates; not a proof of nonrationality, nonalgebraicity, non-D-finiteness, or impossibility of an all-length formula."
+}

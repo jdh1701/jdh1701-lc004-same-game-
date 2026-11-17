@@ -1,0 +1,19 @@
+name: LC004 internal path locality
+on:
+  push:
+    branches:
+      - integration/alexandria-face-lemma-20261029
+    paths:
+      - 'research/face_path_locality_check.py'
+      - '.github/workflows/face-path-locality.yml'
+  workflow_dispatch:
+jobs:
+  finite:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python research/face_path_locality_check.py

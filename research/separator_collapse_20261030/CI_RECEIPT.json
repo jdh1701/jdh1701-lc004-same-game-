@@ -1,0 +1,84 @@
+{
+  "schema": "lc004-verification-ledger/1",
+  "source_commit": "81bca891be8f9f7534444a3fb3cbc9073171af4a",
+  "source_tree": "8e957d0cd9e74ef3dc95246cb9ae657ebd54739e",
+  "run_id": 41002449977,
+  "run_url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/41002449977",
+  "foundation": {
+    "reused_from": "c6f719c08d519e0656ce6b035c69bbe143d74e46",
+    "checked_proof_source": "f919410e300e724914913e862f551967c989a5f6",
+    "base_ci_run": 40998017137,
+    "new_theorems_in_this_checkpoint": 0
+  },
+  "lean": {
+    "job_id": 123889742127,
+    "conclusion": "success",
+    "toolchain": "Lean4.19.0",
+    "declarations_audited": [
+      "LC004.faceAlternatingSum_elementary_trace",
+      "LC004.winningJoinCoefficient_zero_of_elementary_trace",
+      "LC004.facetFaces_eq_of_mutual_cover",
+      "LC004.facetAlternatingSum_deletion_link",
+      "LC004.winningJoinCoefficient_separator_deletion_link"
+    ],
+    "allowed_transitive_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "individual_python_traces_instantiated_in_lean": false
+  },
+  "exact": {
+    "job_id": 123889741828,
+    "conclusion": "success",
+    "census_crossing": 10364,
+    "census_full_join_zeros_replayed": 1156,
+    "prior_budget_skips_resolved": 32,
+    "rescued_zero_collapses": 26,
+    "nonzero_histogram": {
+      "8": 2,
+      "10": 2,
+      "-4": 2
+    },
+    "max_original_generators": 3591,
+    "receipt_comparison": "all result fields, with timings removed and tuples canonicalized as JSON lists",
+    "overlap_warning": "Do not add census counts to overlapping PR38 totals"
+  },
+  "local_diagnostic": {
+    "file": "core-obstructions.json",
+    "cores_tested": 17,
+    "minimum_free_face_dimension_histogram": {
+      "2": 14,
+      "3": 3
+    },
+    "independent_global_coface_checks": 3,
+    "status": "VERIFIED-COMP locally only"
+  },
+  "failed_attempts": [
+    {
+      "run_id": 40999056173,
+      "reason": "duplicate collapse candidate: point_sum elaboration failure; axiom guard rejected sorryAx",
+      "exact_job": "success"
+    },
+    {
+      "run_id": 40999863015,
+      "reason": "duplicate candidate point_sum elaboration still failed; candidate retired"
+    },
+    {
+      "run_id": 41002034447,
+      "reason": "audit documentation comment parser error and tuple-versus-JSON-list receipt comparison"
+    },
+    {
+      "run_id": 41002136477,
+      "reason": "audit documentation comment parser error; exact computation passed"
+    }
+  ],
+  "open_obligations": [
+    "Construct uniform geometry-dependent collapse rule with actual separator-complex hypotheses",
+    "Classify and enumerate surviving nonzero coefficient cores",
+    "Derive general winning-word enumeration law"
+  ],
+  "claim_boundary": "A reproducible finite research checkpoint; not a solution of the general counting problem",
+  "conclusion": "success",
+  "checked_at_utc": "2026-10-30T04:30:37.591592+00:00"
+}

@@ -1,0 +1,48 @@
+{
+  "status": "HOSTED_VERIFIED",
+  "source_commit": "80e6c8dc3df62ada6721b0b8544cecace24b9d1c",
+  "source_tree": "bbaf4bb94b97857581e421a5db96499a04f9c24a",
+  "pull_request": 49,
+  "run": 41266402544,
+  "run_url": "https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/41266402544",
+  "jobs": {
+    "lean": {
+      "id": 124730005486,
+      "conclusion": "success"
+    },
+    "exact": {
+      "id": 124730005601,
+      "conclusion": "success"
+    }
+  },
+  "lean": {
+    "active_modules": 248,
+    "audited_declarations": 4189,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "negative_guards": "both passed",
+    "new_module": "LC004/SixBoundaryLists.lean",
+    "full_first_excess_assembly_formalized": false
+  },
+  "finite": {
+    "order_types": 462,
+    "composed_relations": 23716,
+    "original_full_join_regressions": 5816
+  },
+  "proof_status": "Uniform first-excess theorem is a computer-assisted paper proof; only the specified local and Helly lemmas are newly Lean-certified. Full LC004/A035617 remains open.",
+  "logs": {
+    "lean": {
+      "sha256": "b66fda08f083eb3e35349a1444391d9351040b52c59757e4c4479471c347410c",
+      "bytes": 137095
+    },
+    "exact": {
+      "sha256": "ee68a882d42087f67b601fdce946745aadde0583df16b8b55b28a450fc79017d",
+      "bytes": 14904
+    }
+  },
+  "archive_sha256": "6b03a3f186ae1928b5a017942152826ed233ef0a05c305e4e1c10a658a8c41bb",
+  "verified_utc": "2026-11-01T02:56:28Z"
+}

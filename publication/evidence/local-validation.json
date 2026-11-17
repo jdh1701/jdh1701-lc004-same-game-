@@ -1,0 +1,49 @@
+{
+  "schema": "alexandria-local-publication-validation/1",
+  "proof_commit": "3446f6313f1f8a35a3c7891d5deece19c4599855",
+  "publication_code_commit": "3c40389c3f3ccab145f052720b3d12b377b2f4d8",
+  "python": "3.12.14",
+  "lean": "4.19.0",
+  "tex_engine": "XeTeX 3.141592653-2.6-0.999995 (TeX Live 2023/Debian)",
+  "leanblueprint": "0.0.20",
+  "plasTeX": "3.1",
+  "tests": [
+    {
+      "name": "source inventory and statement mapping",
+      "result": "pass"
+    },
+    {
+      "name": "four adversarial manifest mutations",
+      "result": "all rejected"
+    },
+    {
+      "name": "native Lean declaration and axiom audit",
+      "result": "23 checked"
+    },
+    {
+      "name": "project coverage and source guard",
+      "result": "162 active modules; pass"
+    },
+    {
+      "name": "XeLaTeX document build",
+      "result": "37 pages, no missing glyphs, overfull boxes or undefined references"
+    },
+    {
+      "name": "standalone paper.tex in empty directory",
+      "result": "37-page build passes"
+    },
+    {
+      "name": "rendered PDF visual audit",
+      "result": "37 pages inspected in contact sheets; representative pages at full size"
+    },
+    {
+      "name": "upstream interactive Blueprint",
+      "result": "rendered"
+    },
+    {
+      "name": "local HTML links and anchors",
+      "result": "175 links pass"
+    }
+  ],
+  "runtime_note": "Local Lean executable used an executable-path compatibility shim; hosted CI uses normal toolchain. Local Graphviz was extracted from distribution packages because system package installation was unavailable. Python and source hashes are recorded separately."
+}

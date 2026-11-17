@@ -1,0 +1,150 @@
+{
+  "proof_source_commit": "5f4d56e608ea6fc024aca91af514c95ec33f6871",
+  "toolchain": "leanprover/lean4:v4.19.0",
+  "local_lean_verified": true,
+  "local_axiom_audit_project_declarations": 588,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "new_theorems": [
+    {
+      "declaration": "LC004.certificate_rigid_block_eq_class",
+      "source": "LC004/RigidFaceGeometry.lean",
+      "line": 7,
+      "source_sha256": "19a4c630874ab723d2bacc820ff2e6d8584c384ef698ef97f4bc06b702db6a2c",
+      "status": "PROVED-LEAN-local-and-hosted"
+    },
+    {
+      "declaration": "LC004.patternClassPositions_eq_of_related",
+      "source": "LC004/RigidFaceGeometry.lean",
+      "line": 58,
+      "source_sha256": "19a4c630874ab723d2bacc820ff2e6d8584c384ef698ef97f4bc06b702db6a2c",
+      "status": "PROVED-LEAN-local-and-hosted"
+    },
+    {
+      "declaration": "LC004.heavy_ne_rigid",
+      "source": "LC004/RigidFaceGeometry.lean",
+      "line": 76,
+      "source_sha256": "19a4c630874ab723d2bacc820ff2e6d8584c384ef698ef97f4bc06b702db6a2c",
+      "status": "PROVED-LEAN-local-and-hosted"
+    },
+    {
+      "declaration": "LC004.certificate_heavy_face",
+      "source": "LC004/RigidFaceGeometry.lean",
+      "line": 85,
+      "source_sha256": "19a4c630874ab723d2bacc820ff2e6d8584c384ef698ef97f4bc06b702db6a2c",
+      "status": "PROVED-LEAN-local-and-hosted"
+    },
+    {
+      "declaration": "LC004.rigid_faces_no_alternation",
+      "source": "LC004/RigidFaceGeometry.lean",
+      "line": 119,
+      "source_sha256": "19a4c630874ab723d2bacc820ff2e6d8584c384ef698ef97f4bc06b702db6a2c",
+      "status": "PROVED-LEAN-local-and-hosted"
+    },
+    {
+      "declaration": "LC004.certificate_face_saturated",
+      "source": "LC004/RigidFaceGeometry.lean",
+      "line": 134,
+      "source_sha256": "19a4c630874ab723d2bacc820ff2e6d8584c384ef698ef97f4bc06b702db6a2c",
+      "status": "PROVED-LEAN-local-and-hosted"
+    },
+    {
+      "declaration": "LC004.facePathLocality_of_edge_saturation",
+      "source": "LC004/RigidFaceGeometry.lean",
+      "line": 144,
+      "source_sha256": "19a4c630874ab723d2bacc820ff2e6d8584c384ef698ef97f4bc06b702db6a2c",
+      "status": "PROVED-LEAN-local-and-hosted"
+    },
+    {
+      "declaration": "LC004.heavy_certificate_face_path_locality",
+      "source": "LC004/RigidFaceGeometry.lean",
+      "line": 170,
+      "source_sha256": "19a4c630874ab723d2bacc820ff2e6d8584c384ef698ef97f4bc06b702db6a2c",
+      "status": "PROVED-LEAN-local-and-hosted"
+    },
+    {
+      "declaration": "LC004.heavy_certificate_restrict_join",
+      "source": "LC004/RigidFaceGeometry.lean",
+      "line": 181,
+      "source_sha256": "19a4c630874ab723d2bacc820ff2e6d8584c384ef698ef97f4bc06b702db6a2c",
+      "status": "PROVED-LEAN-local-and-hosted"
+    },
+    {
+      "declaration": "LC004.heavyFaceEmbedding_carrier",
+      "source": "LC004/RigidFaceGeometry.lean",
+      "line": 202,
+      "source_sha256": "19a4c630874ab723d2bacc820ff2e6d8584c384ef698ef97f4bc06b702db6a2c",
+      "status": "PROVED-LEAN-local-and-hosted"
+    },
+    {
+      "declaration": "LC004.canonical_heavy_face_restrict_join",
+      "source": "LC004/RigidFaceGeometry.lean",
+      "line": 212,
+      "source_sha256": "19a4c630874ab723d2bacc820ff2e6d8584c384ef698ef97f4bc06b702db6a2c",
+      "status": "PROVED-LEAN-local-and-hosted"
+    },
+    {
+      "declaration": "LC004.rigid_face_iff_no_rigid_arc_separator",
+      "source": "LC004/RigidFaceArcCriterion.lean",
+      "line": 8,
+      "source_sha256": "bd37291f05b1cba08ac19a112988f0c1f8255cfd5e8f208a35da6275856c7a55",
+      "status": "PROVED-LEAN-local-and-hosted"
+    },
+    {
+      "declaration": "LC004.restrict_pattern_class_card",
+      "source": "LC004/HeavyFaceRestriction.lean",
+      "line": 7,
+      "source_sha256": "9273308aa24dbe97567fa1574a00d0be3a03a8ba79daa645600166c0e33d7da2",
+      "status": "PROVED-LEAN-local-and-hosted"
+    },
+    {
+      "declaration": "LC004.certificateConstraint_restrict",
+      "source": "LC004/HeavyFaceRestriction.lean",
+      "line": 26,
+      "source_sha256": "9273308aa24dbe97567fa1574a00d0be3a03a8ba79daa645600166c0e33d7da2",
+      "status": "PROVED-LEAN-local-and-hosted"
+    },
+    {
+      "declaration": "LC004.winning_restrict_heavy_face",
+      "source": "LC004/HeavyFaceRestriction.lean",
+      "line": 43,
+      "source_sha256": "9273308aa24dbe97567fa1574a00d0be3a03a8ba79daa645600166c0e33d7da2",
+      "status": "PROVED-LEAN-local-and-hosted"
+    },
+    {
+      "declaration": "LC004.raw_win_heavy_face_word",
+      "source": "LC004/HeavyFaceRestriction.lean",
+      "line": 60,
+      "source_sha256": "9273308aa24dbe97567fa1574a00d0be3a03a8ba79daa645600166c0e33d7da2",
+      "status": "PROVED-LEAN-local-and-hosted"
+    },
+    {
+      "declaration": "LC004.certificate_position_rigid_or_heavy",
+      "source": "LC004/HeavyFaceReconstruction.lean",
+      "line": 6,
+      "source_sha256": "f3e17b9e8c907722f300638b6bc3293434076d5b3c4a041a635069d518459450",
+      "status": "PROVED-LEAN-local-and-hosted"
+    },
+    {
+      "declaration": "LC004.certificate_rigid_related",
+      "source": "LC004/HeavyFaceReconstruction.lean",
+      "line": 19,
+      "source_sha256": "f3e17b9e8c907722f300638b6bc3293434076d5b3c4a041a635069d518459450",
+      "status": "PROVED-LEAN-local-and-hosted"
+    },
+    {
+      "declaration": "LC004.certificate_pattern_determined_by_heavy_faces",
+      "source": "LC004/HeavyFaceReconstruction.lean",
+      "line": 34,
+      "source_sha256": "f3e17b9e8c907722f300638b6bc3293434076d5b3c4a041a635069d518459450",
+      "status": "PROVED-LEAN-local-and-hosted"
+    }
+  ],
+  "hosted_status_file": "heavy_face_verification.json",
+  "formal_authority_receipt": false,
+  "hosted_run_id": 40828254711,
+  "hosted_conclusion": "success"
+}

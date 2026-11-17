@@ -1,0 +1,28 @@
+{
+  "status": "all local Lean/Python checks pass; exact new-commit CI pending",
+  "local": {
+    "active_modules": 215,
+    "audited_declarations": 3574,
+    "build": "pass",
+    "coverage": "pass",
+    "negative_guards": "both pass",
+    "implication_tests": "2619 CSPs,330 geometric candidate pairs,4 negative controls pass",
+    "counts": "5 atn10 over126 partitions;35 atn15 over126126 partitions",
+    "third_witnesses": 228,
+    "sage": "not available locally; independent CI replay configured"
+  },
+  "baseline": {
+    "proof_commit": "9f53675350823a9b5a4770600e7b1b8efd083ad7",
+    "run_id": 40980791072,
+    "conclusion": "success",
+    "probe_run": 40980790895,
+    "probe_conclusion": "success"
+  },
+  "exact_commit_ci_receipt": "research/FIVE_ACTUAL_CI_RECEIPTS_20261029.json",
+  "scope": "actual noncrossing split-family law and SCC survivor recognizer; original CertificateConstraint/coefficient identity and general counting pending",
+  "n25": {
+    "run_id": 40942806037,
+    "status": "in_progress",
+    "count_accepted": false
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "status": "all local computations and independent witness/shard audits pass; transfer CI pending",
+  "local": {
+    "n20": 415,
+    "n25": 6455,
+    "positive_witnesses_replayed": 767,
+    "weighted_n25_survivors": 32275,
+    "claude_shards_audited": 128,
+    "compiler": "g++ -O3 -std=c++17 -Wall -Wextra -Werror -pedantic; assertions enabled"
+  },
+  "independent_ci": {
+    "run_id": 40942806037,
+    "source_commit": "56d867dd07e781fe1565e8ab3761bb1c647e3009",
+    "conclusion": "success"
+  },
+  "formal_basis": {
+    "proof_commit": "c365c2ae2922a35765f9a6b692d05e838873ebcd",
+    "run_id": 40984245009,
+    "conclusion": "success"
+  },
+  "exact_commit_ci_receipt": "research/SCC_TRANSFER_CI_RECEIPTS_20261029.json",
+  "scope": "connected all-five surviving split patterns; not A(25,5) or general winning words"
+}

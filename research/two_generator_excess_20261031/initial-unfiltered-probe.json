@@ -1,0 +1,22 @@
+{
+  "scope": "local initial unfiltered n26 two-generator discovery; not a full first-excess census",
+  "classes": 5,
+  "core_counts": {
+    "4": 28880,
+    "6": 1935
+  },
+  "original_counts": {
+    "4": 46930,
+    "6": 2795
+  },
+  "two_generator_total": 49725,
+  "witness_rows": 30815,
+  "witness_sha256": "bd3c54ea05677176ceab6d9f17746ad88db2b57719b23f064659f96228c784a5",
+  "source_sha256": {
+    "lc004-exceptional.cpp": "598b9f3638ac233d24112dd0e53e014283ef9d98a55f779cd83b08d0776ddd9d",
+    "lc004-exceptional-types.txt": "ecf2e0bf54544c08fb5d980b8d01f0d1b94d1ef1558f4abff1d7fabcc1172a9a",
+    "lc004-exceptional-cats.txt": "3888335efb8c0627194a3d0cffe2a7918ed0a0c28c35746de0f737463521e3ec"
+  },
+  "archive_sha256": "9f67b71bba61272fd6fc7baba6ec10ff54b6ccdd5c6aca9c72be60075f43d857",
+  "reproduce": "compile archived lc004-exceptional.cpp, place the two archived data files under /tmp, and run the binary with arguments 5 and the witness output path"
+}

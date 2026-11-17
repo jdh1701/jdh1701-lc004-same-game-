@@ -1,0 +1,282 @@
+{
+  "commit": "895dcec1830fc5f710c5db63d786690ca345c428",
+  "run_id": 40952508624,
+  "status": "success",
+  "jobs": [
+    {
+      "id": 123724018890,
+      "name": "sage",
+      "conclusion": "success"
+    },
+    {
+      "id": 123724019186,
+      "name": "exact",
+      "conclusion": "success"
+    },
+    {
+      "id": 123724019280,
+      "name": "lean",
+      "conclusion": "success"
+    }
+  ],
+  "lean": {
+    "modules": 186,
+    "declarations": 2342,
+    "source_guards": "pass",
+    "negative_guards": "pass",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "sage": {
+    "sage_version": "SageMath version 10.10, Release Date: 2026-09-28",
+    "status": "VERIFIED-COMP",
+    "checks": 38,
+    "control": "two components confirmed",
+    "rows": [
+      {
+        "n": 10,
+        "atoms": 9,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 10,
+        "atoms": 9,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 10,
+        "atoms": 9,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 10,
+        "atoms": 9,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 10,
+        "atoms": 9,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 10,
+        "atoms": 9,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 10,
+        "atoms": 9,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 10,
+        "atoms": 9,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 10,
+        "atoms": 9,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 10,
+        "atoms": 9,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 15,
+        "atoms": 13,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 15,
+        "atoms": 29,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 15,
+        "atoms": 6,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 15,
+        "atoms": 29,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 15,
+        "atoms": 29,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 15,
+        "atoms": 13,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 15,
+        "atoms": 13,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 15,
+        "atoms": 29,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 15,
+        "atoms": 29,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 15,
+        "atoms": 13,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 15,
+        "atoms": 13,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 15,
+        "atoms": 29,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 15,
+        "atoms": 13,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 15,
+        "atoms": 29,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 20,
+        "atoms": 17,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 20,
+        "atoms": 49,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 20,
+        "atoms": 49,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 20,
+        "atoms": 17,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 20,
+        "atoms": 33,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 20,
+        "atoms": 49,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 20,
+        "atoms": 33,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 20,
+        "atoms": 49,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 20,
+        "atoms": 49,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 20,
+        "atoms": 65,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 25,
+        "atoms": 53,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 25,
+        "atoms": 69,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 25,
+        "atoms": 69,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      },
+      {
+        "n": 25,
+        "atoms": 85,
+        "euler": 1,
+        "reduced_rational_homology": "zero"
+      }
+    ]
+  },
+  "coefficient_probe": {
+    "run_id": 40952508600,
+    "status": "success"
+  },
+  "claude_review": {
+    "head": "d0efa2b6317617fdd1a2384a1a2d396053dfa052",
+    "reviewed_gpt_commit": "fd64c4d",
+    "scope": "Projection identity and five-split join; not the later universal cancellation proof"
+  },
+  "n25": {
+    "run_id": 40942806037,
+    "status": "queued at baseline check"
+  }
+}

@@ -1,0 +1,39 @@
+LC004.separatedPartitionOrderIso.{u_1, u_2} (α : Type u_1) (β : Type u_2) :
+  Setoid α × Setoid β ≃o { t // t ≤ LC004.separatedPartition (⊤, ⊤) }
+LC004.fullBoard_four_block_zero {n : ℕ} (a b c d : Fin n) (hab : a < b) (hbc : b < c) (hcd : c < d)
+  (p : Setoid (LC004.QuadRemainder a b c d)) (hp : ¬p ≤ Setoid.ker (LC004.remainderGapIndex a b c d)) :
+  LC004.collectedCoeff (LC004.unionTerms (fun x1 x2 => x1 ⊔ x2) (LC004.fullBoardFourBlockFamily a b c d hab hbc hcd))
+      (LC004.fullBoardPartition (LC004.quadSplitEquiv a b c d hab hbc hcd) (⊤, p)) =
+    0
+LC004.fullBoard_four_block_zero_of_coverage {n : ℕ} (a b c d : Fin n) (hab : a < b) (hbc : b < c) (hcd : c < d)
+  (p : Setoid (LC004.QuadRemainder a b c d)) (hp : ¬p ≤ Setoid.ker (LC004.remainderGapIndex a b c d))
+  (ws : List (Setoid (Fin n)))
+  (hcover :
+    ∀ x ≤ LC004.fullBoardPartition (LC004.quadSplitEquiv a b c d hab hbc hcd) (⊤, p),
+      (∃ r ∈ ws, r ≤ x) ↔ ∃ r ∈ LC004.fullBoardFourBlockFamily a b c d hab hbc hcd, r ≤ x) :
+  LC004.collectedCoeff (LC004.unionTerms (fun x1 x2 => x1 ⊔ x2) ws)
+      (LC004.fullBoardPartition (LC004.quadSplitEquiv a b c d hab hbc hcd) (⊤, p)) =
+    0
+'LC004.zetaSum_injective_below' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.collected_union_congr_below' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.collected_union_filter_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.unionTerms_map_sup' depends on axioms: [propext, Quot.sound]
+'LC004.collectedCoeff_map_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.collected_union_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.separatedPartition_le_iff' does not depend on any axioms
+'LC004.separatedPartition_restrictions' depends on axioms: [propext, Quot.sound]
+'LC004.separatedPartition_le_separated_iff' depends on axioms: [propext, Quot.sound]
+'LC004.separatedPartition_injective' depends on axioms: [propext, Quot.sound]
+'LC004.separatedPartition_sup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.separatedPartition_reconstruct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.fullBoardPartition_injective' depends on axioms: [propext, Quot.sound]
+'LC004.fullBoardPartition_sup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.fullBoard_coefficient_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.splitComplementEquiv_selected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.splitComplementEquiv_remainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.quadPosition_injective' depends on axioms: [propext, Quot.sound]
+'LC004.quadPosition_complement' depends on axioms: [propext]
+'LC004.quadSplitEquiv_selected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.quadSplitEquiv_remainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.fullBoard_four_block_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.fullBoard_four_block_zero_of_coverage' depends on axioms: [propext, Classical.choice, Quot.sound]

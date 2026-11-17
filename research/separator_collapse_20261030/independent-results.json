@@ -1,0 +1,228 @@
+{
+  "status": "VERIFIED-COMP",
+  "checks": [
+    {
+      "profile": [
+        5,
+        6
+      ],
+      "coefficient": -1,
+      "refinements_checked": 451,
+      "separator_faces": 31,
+      "nerve_faces": 5,
+      "betti": {
+        "0": 1
+      }
+    },
+    {
+      "profile": [
+        5,
+        7
+      ],
+      "coefficient": 2,
+      "refinements_checked": 1782,
+      "separator_faces": 88,
+      "nerve_faces": 38,
+      "betti": {
+        "1": 2
+      }
+    },
+    {
+      "profile": [
+        5,
+        7
+      ],
+      "coefficient": -1,
+      "refinements_checked": 1782,
+      "separator_faces": 55,
+      "nerve_faces": 7,
+      "betti": {
+        "0": 1
+      }
+    },
+    {
+      "profile": [
+        5,
+        8
+      ],
+      "coefficient": 6,
+      "refinements_checked": 7865,
+      "separator_faces": 1284,
+      "nerve_faces": 302,
+      "betti": {
+        "1": 6
+      }
+    },
+    {
+      "profile": [
+        5,
+        8
+      ],
+      "coefficient": 2,
+      "refinements_checked": 7865,
+      "separator_faces": 1024,
+      "nerve_faces": 56,
+      "betti": {
+        "1": 2
+      }
+    },
+    {
+      "profile": [
+        6,
+        6
+      ],
+      "coefficient": -1,
+      "refinements_checked": 1681,
+      "separator_faces": 55,
+      "nerve_faces": 7,
+      "betti": {
+        "0": 1
+      }
+    },
+    {
+      "profile": [
+        6,
+        7
+      ],
+      "coefficient": 2,
+      "refinements_checked": 6642,
+      "separator_faces": 256,
+      "nerve_faces": 56,
+      "betti": {
+        "1": 2
+      }
+    },
+    {
+      "profile": [
+        6,
+        7
+      ],
+      "coefficient": -1,
+      "refinements_checked": 6642,
+      "separator_faces": 223,
+      "nerve_faces": 19,
+      "betti": {
+        "0": 1
+      }
+    },
+    {
+      "profile": [
+        6,
+        7
+      ],
+      "coefficient": 1,
+      "refinements_checked": 6642,
+      "separator_faces": 365,
+      "nerve_faces": 135,
+      "betti": {
+        "1": 1
+      }
+    },
+    {
+      "profile": [
+        6,
+        8
+      ],
+      "coefficient": 6,
+      "refinements_checked": 29315,
+      "separator_faces": 1668,
+      "nerve_faces": 1324,
+      "betti": {
+        "1": 6
+      }
+    },
+    {
+      "profile": [
+        6,
+        8
+      ],
+      "coefficient": 2,
+      "refinements_checked": 29315,
+      "separator_faces": 6808,
+      "nerve_faces": 332,
+      "betti": {
+        "1": 2
+      }
+    },
+    {
+      "profile": [
+        6,
+        8
+      ],
+      "coefficient": 1,
+      "refinements_checked": 29315,
+      "separator_faces": 6461,
+      "nerve_faces": 2067,
+      "betti": {
+        "1": 1
+      }
+    },
+    {
+      "profile": [
+        6,
+        8
+      ],
+      "coefficient": -1,
+      "refinements_checked": 29315,
+      "separator_faces": 3871,
+      "nerve_faces": 17,
+      "betti": {
+        "0": 1
+      }
+    },
+    {
+      "profile": [
+        7,
+        7
+      ],
+      "coefficient": -4,
+      "refinements_checked": 26244,
+      "separator_faces": 880,
+      "nerve_faces": 2596,
+      "betti": {
+        "2": 4
+      }
+    },
+    {
+      "profile": [
+        7,
+        7
+      ],
+      "coefficient": 2,
+      "refinements_checked": 26244,
+      "separator_faces": 640,
+      "nerve_faces": 1066,
+      "betti": {
+        "1": 2
+      }
+    },
+    {
+      "profile": [
+        7,
+        7
+      ],
+      "coefficient": -1,
+      "refinements_checked": 26244,
+      "separator_faces": 391,
+      "nerve_faces": 31,
+      "betti": {
+        "0": 1
+      }
+    },
+    {
+      "profile": [
+        7,
+        7
+      ],
+      "coefficient": 1,
+      "refinements_checked": 26244,
+      "separator_faces": 599,
+      "nerve_faces": 1129,
+      "betti": {
+        "1": 1
+      }
+    }
+  ],
+  "controls": "Circle-plus-point negative and cone positive; stored collapse traces replayed",
+  "method": "Raw maximal-run deletion and full no-singleton refinement Mobius sum; dual facet-nerve GF2 homology"
+}

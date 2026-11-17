@@ -1,0 +1,18 @@
+LC004/ChoiceRelationClassification.lean:69:62: error: invalid field 'symm', the environment does not contain 'Not.symm'
+  hzx
+has type
+  ¬z = x
+LC004/ChoiceRelationClassification.lean:69:62: error: invalid field notation, type is not of the form (C ...) where C is a constant
+  hzx
+has type
+  z = x → False
+LC004/ChoiceRelationClassification.lean:98:66: error: invalid field 'symm', the environment does not contain 'Not.symm'
+  hxa
+has type
+  ¬x = a
+LC004/ChoiceRelationClassification.lean:98:66: error: invalid field notation, type is not of the form (C ...) where C is a constant
+  hxa
+has type
+  x = a → False
+'LC004.choiceRelation_classification' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'LC004.choiceRelation_bijective_of_isolated_pair' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

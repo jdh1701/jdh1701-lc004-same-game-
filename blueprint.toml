@@ -1,0 +1,290 @@
+schema_version = "alexandria-blueprint/1"
+# Project manifest, consumed by publication/validate_blueprint.py.
+# Upstream leanblueprint does NOT read this file.
+
+[project]
+title = "Alexandria Omega: verified Same Game face decomposition"
+repository = "jdh1701/jdh1701-lc004-same-game-"
+publication_branch = "publication/alexandria-blueprint-20261029"
+proof_commit = "3446f6313f1f8a35a3c7891d5deece19c4599855"
+core_commit = "fb413043cb0f4369615132e014691782a344af8a"
+lean_toolchain = "leanprover/lean4:v4.19.0"
+upstream_package = "leanblueprint"
+upstream_version = "0.0.20"
+web_entry = "blueprint/src/web.tex"
+upstream_config = "blueprint/src/plastex.cfg"
+paper = "publication/paper.tex"
+axiom_allowlist = ["propext", "Classical.choice", "Quot.sound"]
+
+[[statements]]
+label = "def:pattern"
+status = "lean_verified"
+declarations = ["LC004.ColorPattern"]
+uses = []
+
+[[declarations]]
+name = "LC004.ColorPattern"
+label = "def:pattern"
+file = "LC004/ColorPatternSpace.lean"
+line = 7
+source_sha256 = "525708efd3918411e419f63a435aa7acfd13a82c7089513177137080f88de0d5"
+
+[[statements]]
+label = "def:noncrossing"
+status = "lean_verified"
+declarations = ["LC004.PatternNoncrossing"]
+uses = []
+
+[[declarations]]
+name = "LC004.PatternNoncrossing"
+label = "def:noncrossing"
+file = "LC004/SmallPatternCorrespondence.lean"
+line = 7
+source_sha256 = "f7c6265d9f5b688e4def379e0113c176b01855590c6bcd2cc4cd8dd788ed6759"
+
+[[statements]]
+label = "def:certificate"
+status = "lean_verified"
+declarations = ["LC004.CertificatePartition"]
+uses = []
+
+[[declarations]]
+name = "LC004.CertificatePartition"
+label = "def:certificate"
+file = "LC004/HeavyFaceCertificateProduct.lean"
+line = 8
+source_sha256 = "f3e3ca59989f3ccb183cb7990ef2385b652ccedab7e190a4b72dcf467cbdfc7e"
+
+[[statements]]
+label = "def:rigid_heavy"
+status = "lean_verified"
+declarations = ["LC004.RigidPosition", "LC004.HeavyPosition"]
+uses = []
+
+[[declarations]]
+name = "LC004.RigidPosition"
+label = "def:rigid_heavy"
+file = "LC004/RigidFaceGeometry.lean"
+line = 52
+source_sha256 = "19a4c630874ab723d2bacc820ff2e6d8584c384ef698ef97f4bc06b702db6a2c"
+
+[[declarations]]
+name = "LC004.HeavyPosition"
+label = "def:rigid_heavy"
+file = "LC004/RigidFaceGeometry.lean"
+line = 55
+source_sha256 = "19a4c630874ab723d2bacc820ff2e6d8584c384ef698ef97f4bc06b702db6a2c"
+
+[[statements]]
+label = "lem:rigidity"
+status = "lean_verified"
+declarations = ["LC004.certificate_rigid_block_eq_class"]
+uses = ["def:certificate", "def:rigid_heavy"]
+
+[[declarations]]
+name = "LC004.certificate_rigid_block_eq_class"
+label = "lem:rigidity"
+file = "LC004/RigidFaceGeometry.lean"
+line = 7
+source_sha256 = "19a4c630874ab723d2bacc820ff2e6d8584c384ef698ef97f4bc06b702db6a2c"
+
+[[statements]]
+label = "def:face"
+status = "lean_verified"
+declarations = ["LC004.rigidFacePattern", "LC004.heavyFacePositions", "LC004.heavyFaceEmbedding"]
+uses = ["def:rigid_heavy"]
+
+[[declarations]]
+name = "LC004.rigidFacePattern"
+label = "def:face"
+file = "LC004/RigidFaceGeometry.lean"
+line = 69
+source_sha256 = "19a4c630874ab723d2bacc820ff2e6d8584c384ef698ef97f4bc06b702db6a2c"
+
+[[declarations]]
+name = "LC004.heavyFacePositions"
+label = "def:face"
+file = "LC004/RigidFaceGeometry.lean"
+line = 192
+source_sha256 = "19a4c630874ab723d2bacc820ff2e6d8584c384ef698ef97f4bc06b702db6a2c"
+
+[[declarations]]
+name = "LC004.heavyFaceEmbedding"
+label = "def:face"
+file = "LC004/RigidFaceGeometry.lean"
+line = 197
+source_sha256 = "19a4c630874ab723d2bacc820ff2e6d8584c384ef698ef97f4bc06b702db6a2c"
+
+[[statements]]
+label = "lem:arc"
+status = "lean_verified"
+declarations = ["LC004.rigid_face_iff_no_rigid_arc_separator"]
+uses = ["def:face"]
+
+[[declarations]]
+name = "LC004.rigid_face_iff_no_rigid_arc_separator"
+label = "lem:arc"
+file = "LC004/RigidFaceArcCriterion.lean"
+line = 8
+source_sha256 = "bd37291f05b1cba08ac19a112988f0c1f8255cfd5e8f208a35da6275856c7a55"
+
+[[statements]]
+label = "thm:confinement"
+status = "lean_verified"
+declarations = ["LC004.certificate_heavy_face"]
+uses = ["lem:rigidity", "def:face"]
+
+[[declarations]]
+name = "LC004.certificate_heavy_face"
+label = "thm:confinement"
+file = "LC004/RigidFaceGeometry.lean"
+line = 85
+source_sha256 = "19a4c630874ab723d2bacc820ff2e6d8584c384ef698ef97f4bc06b702db6a2c"
+
+[[statements]]
+label = "lem:saturation"
+status = "lean_verified"
+declarations = ["LC004.certificate_face_saturated"]
+uses = ["thm:confinement"]
+
+[[declarations]]
+name = "LC004.certificate_face_saturated"
+label = "lem:saturation"
+file = "LC004/RigidFaceGeometry.lean"
+line = 134
+source_sha256 = "19a4c630874ab723d2bacc820ff2e6d8584c384ef698ef97f4bc06b702db6a2c"
+
+[[statements]]
+label = "def:locality"
+status = "lean_verified"
+declarations = ["LC004.FacePathLocality"]
+uses = []
+
+[[declarations]]
+name = "LC004.FacePathLocality"
+label = "def:locality"
+file = "LC004/FaceInternalPaths.lean"
+line = 27
+source_sha256 = "3d642d3d7ba222010d773887bbac2fc38902ef266cacab8c3f692b4c633eaaf8"
+
+[[statements]]
+label = "lem:locality"
+status = "lean_verified"
+declarations = ["LC004.facePathLocality_of_edge_saturation"]
+uses = ["def:locality"]
+
+[[declarations]]
+name = "LC004.facePathLocality_of_edge_saturation"
+label = "lem:locality"
+file = "LC004/RigidFaceGeometry.lean"
+line = 144
+source_sha256 = "19a4c630874ab723d2bacc820ff2e6d8584c384ef698ef97f4bc06b702db6a2c"
+
+[[statements]]
+label = "thm:join_restriction"
+status = "lean_verified"
+declarations = ["LC004.canonical_heavy_face_restrict_join"]
+uses = ["lem:saturation", "lem:locality"]
+
+[[declarations]]
+name = "LC004.canonical_heavy_face_restrict_join"
+label = "thm:join_restriction"
+file = "LC004/RigidFaceGeometry.lean"
+line = 212
+source_sha256 = "19a4c630874ab723d2bacc820ff2e6d8584c384ef698ef97f4bc06b702db6a2c"
+
+[[statements]]
+label = "lem:restriction"
+status = "lean_verified"
+declarations = ["LC004.winning_restrict_heavy_face", "LC004.raw_win_heavy_face_word"]
+uses = ["lem:saturation"]
+
+[[declarations]]
+name = "LC004.winning_restrict_heavy_face"
+label = "lem:restriction"
+file = "LC004/HeavyFaceRestriction.lean"
+line = 43
+source_sha256 = "9273308aa24dbe97567fa1574a00d0be3a03a8ba79daa645600166c0e33d7da2"
+
+[[declarations]]
+name = "LC004.raw_win_heavy_face_word"
+label = "lem:restriction"
+file = "LC004/HeavyFaceRestriction.lean"
+line = 60
+source_sha256 = "9273308aa24dbe97567fa1574a00d0be3a03a8ba79daa645600166c0e33d7da2"
+
+[[statements]]
+label = "thm:face_lemma"
+status = "lean_verified"
+declarations = ["LC004.winning_iff_heavy_face_decomposition", "LC004.raw_win_iff_heavy_face_decomposition"]
+uses = ["lem:rigidity", "lem:restriction", "thm:cellular_assembly"]
+
+[[declarations]]
+name = "LC004.winning_iff_heavy_face_decomposition"
+label = "thm:face_lemma"
+file = "LC004/HeavyFaceDecomposition.lean"
+line = 180
+source_sha256 = "2ec7c720a282290ec94438c93ee5367eb2232d3bed0c57bb4e52d844341d4a60"
+
+[[declarations]]
+name = "LC004.raw_win_iff_heavy_face_decomposition"
+label = "thm:face_lemma"
+file = "LC004/HeavyFaceDecomposition.lean"
+line = 203
+source_sha256 = "2ec7c720a282290ec94438c93ee5367eb2232d3bed0c57bb4e52d844341d4a60"
+
+[[statements]]
+label = "lem:region_assembly"
+status = "lean_verified"
+declarations = ["LC004.assembledPattern_constraint", "LC004.exists_partition_of_noncrossing_regions"]
+uses = ["def:certificate"]
+
+[[declarations]]
+name = "LC004.assembledPattern_constraint"
+label = "lem:region_assembly"
+file = "LC004/OrderedCertificateAssembly.lean"
+line = 46
+source_sha256 = "8871d01310115085b5563b4b1a9b91b871a3f07d061899f6cd1edb8f00316215"
+
+[[declarations]]
+name = "LC004.exists_partition_of_noncrossing_regions"
+label = "lem:region_assembly"
+file = "LC004/HeavyFaceCertificateProduct.lean"
+line = 75
+source_sha256 = "f3e3ca59989f3ccb183cb7990ef2385b652ccedab7e190a4b72dcf467cbdfc7e"
+
+[[statements]]
+label = "thm:cellular_assembly"
+status = "lean_verified"
+declarations = ["LC004.heavyFaceCertificateEquiv"]
+uses = ["thm:confinement", "lem:rigidity", "lem:region_assembly"]
+
+[[declarations]]
+name = "LC004.heavyFaceCertificateEquiv"
+label = "thm:cellular_assembly"
+file = "LC004/HeavyFaceCertificateProduct.lean"
+line = 139
+source_sha256 = "f3e3ca59989f3ccb183cb7990ef2385b652ccedab7e190a4b72dcf467cbdfc7e"
+
+[[statements]]
+label = "thm:certificate_product"
+status = "lean_verified"
+declarations = ["LC004.certificate_partition_count_product"]
+uses = ["thm:cellular_assembly"]
+
+[[declarations]]
+name = "LC004.certificate_partition_count_product"
+label = "thm:certificate_product"
+file = "LC004/HeavyFaceCertificateProduct.lean"
+line = 148
+source_sha256 = "f3e3ca59989f3ccb183cb7990ef2385b652ccedab7e190a4b72dcf467cbdfc7e"
+
+[[open_obligations]]
+label = "prop:slots"
+status = "manuscript_proof_not_lean"
+description = "Ordered-slot weak-composition bijection and its profile specialization."
+
+[[open_obligations]]
+label = "prop:transaction"
+status = "architecture_contract_not_lean"
+description = "Immutable capture and atomic admission assumptions require deployment validation."

@@ -1,0 +1,35 @@
+⚠ [719/792] Replayed LC004.SignedConstraints
+warning: ././././LC004/SignedConstraints.lean:43:27: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ././././LC004/SignedConstraints.lean:104:0: 'LC004.signedEval_addConstraint' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:105:0: 'LC004.signedEval_unionTerms' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:106:0: 'LC004.signedEval_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/SignedConstraints.lean:107:0: 'LC004.signed_constraint_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [790/792] Replayed LC004.PartitionCounting
+info: ././././LC004/PartitionCounting.lean:58:0: 'LC004.respects_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionCounting.lean:59:0: 'LC004.card_partitionEvent' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/PartitionCounting.lean:60:0: 'LC004.partition_union_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [791/792] Replayed LC004.GrammarNormalForm
+info: ././././LC004/GrammarNormalForm.lean:65:0: 'LC004.clickGrammar_iff_firstBlock' depends on axioms: [propext]
+info: ././././LC004/GrammarNormalForm.lean:66:0: 'LC004.clickGrammar_map' depends on axioms: [propext]
+✖ [792/792] Building LC004.CrossingJoin
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /tmp/lean-4.19.0-linux/bin/lean ././././LC004/CrossingJoin.lean -R ./././. -o ././.lake/build/lib/lean/LC004/CrossingJoin.olean -i ././.lake/build/lib/lean/LC004/CrossingJoin.ilean -c ././.lake/build/ir/LC004/CrossingJoin.c --json
+error: ././././LC004/CrossingJoin.lean:23:2: failed to synthesize
+  Decidable ¬Crossing (Setoid.ker leftPairLabels)
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: ././././LC004/CrossingJoin.lean:26:2: failed to synthesize
+  Decidable ¬Crossing (Setoid.ker nestedPairLabels)
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+error: ././././LC004/CrossingJoin.lean:44:4: failed to synthesize
+  Setoid (Fin 8)
+
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+info: ././././LC004/CrossingJoin.lean:53:0: 'LC004.leftPair_noncrossing' depends on axioms: [sorryAx]
+info: ././././LC004/CrossingJoin.lean:54:0: 'LC004.nestedPair_noncrossing' depends on axioms: [sorryAx]
+info: ././././LC004/CrossingJoin.lean:55:0: 'LC004.noncrossing_pairings_crossing_join' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required builds logged failures:
+- LC004.CrossingJoin
+error: build failed

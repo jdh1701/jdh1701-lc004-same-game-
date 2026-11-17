@@ -1,0 +1,26 @@
+2026-10-30T03:47:33.5534869Z [36;1mset -euo pipefail[0m
+2026-10-30T03:47:33.5535440Z [36;1mlake env lean research/separator_collapse_20261030/CollapseCriterion.lean | tee separator-collapse-lean.log[0m
+2026-10-30T03:47:33.5553353Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-30T03:47:33.5553688Z ##[endgroup]
+2026-10-30T03:47:37.1455059Z research/separator_collapse_20261030/CollapseCriterion.lean:43:61: error: unsolved goals
+2026-10-30T03:47:37.1455732Z α : Type u_1
+2026-10-30T03:47:37.1456454Z inst✝ : DecidableEq α
+2026-10-30T03:47:37.1456659Z v : α
+2026-10-30T03:47:37.1456890Z ⊢ ∑ s ∈ {∅, {v}}, (-1) ^ s.card = 0
+2026-10-30T03:47:37.1457375Z research/separator_collapse_20261030/CollapseCriterion.lean:62:0: error: Forbidden axiom sorryAx in LC004.SeparatorCollapse.point_sum
+2026-10-30T03:47:37.2242632Z ##[error]Process completed with exit code 1.
+2026-10-30T03:47:37.2301439Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+2026-10-30T03:47:37.2301780Z with:
+2026-10-30T03:47:37.2301977Z   name: separator-collapse-lean
+2026-10-30T03:47:37.2302211Z   path: separator-collapse-lean.log
+2026-10-30T03:47:37.2302463Z   if-no-files-found: warn
+2026-10-30T03:47:37.2302659Z   compression-level: 6
+2026-10-30T03:47:37.2302851Z   overwrite: false
+2026-10-30T03:47:37.2303035Z   include-hidden-files: false
+2026-10-30T03:47:37.2303236Z ##[endgroup]
+2026-10-30T03:47:37.3684393Z (node:3143) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-30T03:47:37.3685118Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-30T03:47:37.3723465Z With the provided path, there will be 1 file uploaded
+2026-10-30T03:47:37.3727697Z Artifact name is valid!
+2026-10-30T03:47:37.3728340Z Root directory input is valid!
+2026-10-30T03:47:37.7559569Z Beginning upload of artifact content to blob storage

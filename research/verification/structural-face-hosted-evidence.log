@@ -1,0 +1,29 @@
+2026-10-29T06:40:07.0656728Z ##[group]Checking out the ref
+2026-10-29T06:40:54.9044163Z ℹ [6813/6815] Built LC004.HeavyFaceDecomposition
+2026-10-29T06:40:57.9160621Z Build completed successfully.
+2026-10-29T06:41:19.5874126Z COVERAGE PASS: 161 active modules all reachable from LC004.lean
+2026-10-29T06:41:19.5949951Z SOURCE GUARD PASS: no placeholders, custom axioms, unsafe or partial source
+2026-10-29T06:41:43.2546044Z AXIOM AUDIT PASS: 622 project declarations; only propext, Classical.choice, Quot.sound permitted
+2026-10-29T06:41:43.4829764Z {"n": 0, "patterns": 1, "eligible": 1, "winning": 1, "certificates": 1, "heavy_blocks": 0, "join_face_checks": 0, "glued_certificates": 1}
+2026-10-29T06:41:43.4831642Z {"n": 1, "patterns": 1, "eligible": 0, "winning": 0, "certificates": 0, "heavy_blocks": 0, "join_face_checks": 0, "glued_certificates": 0}
+2026-10-29T06:41:43.4833487Z {"n": 2, "patterns": 2, "eligible": 1, "winning": 1, "certificates": 1, "heavy_blocks": 0, "join_face_checks": 0, "glued_certificates": 1}
+2026-10-29T06:41:43.4835638Z {"n": 3, "patterns": 5, "eligible": 1, "winning": 1, "certificates": 1, "heavy_blocks": 0, "join_face_checks": 0, "glued_certificates": 1}
+2026-10-29T06:41:43.4836990Z {"n": 4, "patterns": 15, "eligible": 4, "winning": 3, "certificates": 4, "heavy_blocks": 4, "join_face_checks": 1, "glued_certificates": 4}
+2026-10-29T06:41:43.4847002Z {"n": 5, "patterns": 52, "eligible": 11, "winning": 6, "certificates": 10, "heavy_blocks": 10, "join_face_checks": 10, "glued_certificates": 10}
+2026-10-29T06:41:43.4889018Z {"n": 6, "patterns": 203, "eligible": 41, "winning": 18, "certificates": 31, "heavy_blocks": 51, "join_face_checks": 34, "glued_certificates": 31}
+2026-10-29T06:41:43.5047359Z {"n": 7, "patterns": 877, "eligible": 162, "winning": 50, "certificates": 105, "heavy_blocks": 189, "join_face_checks": 287, "glued_certificates": 105}
+2026-10-29T06:41:43.5831382Z {"n": 8, "patterns": 4140, "eligible": 715, "winning": 161, "certificates": 350, "heavy_blocks": 812, "join_face_checks": 1247, "glued_certificates": 350}
+2026-10-29T06:41:43.8605090Z {"n": 9, "patterns": 21147, "eligible": 3425, "winning": 523, "certificates": 1320, "heavy_blocks": 3468, "join_face_checks": 0, "glued_certificates": 0}
+2026-10-29T06:41:45.5253079Z {"n": 10, "patterns": 115975, "eligible": 17722, "winning": 1828, "certificates": 4884, "heavy_blocks": 14970, "join_face_checks": 0, "glued_certificates": 0}
+2026-10-29T06:41:45.5804558Z {"n": 0, "patterns": 1, "eligible": 1, "winning": 1, "certificate_shapes": 1, "global_certificates": 1, "assembled_certificates": 1, "exact_product_checks": 1}
+2026-10-29T06:41:45.5806779Z {"n": 1, "patterns": 1, "eligible": 0, "winning": 0, "certificate_shapes": 0, "global_certificates": 0, "assembled_certificates": 0, "exact_product_checks": 0}
+2026-10-29T06:41:45.5808666Z {"n": 2, "patterns": 2, "eligible": 1, "winning": 1, "certificate_shapes": 1, "global_certificates": 1, "assembled_certificates": 1, "exact_product_checks": 1}
+2026-10-29T06:41:45.5810558Z {"n": 3, "patterns": 5, "eligible": 1, "winning": 1, "certificate_shapes": 1, "global_certificates": 1, "assembled_certificates": 1, "exact_product_checks": 1}
+2026-10-29T06:41:45.5816632Z {"n": 4, "patterns": 15, "eligible": 4, "winning": 3, "certificate_shapes": 2, "global_certificates": 4, "assembled_certificates": 4, "exact_product_checks": 3}
+2026-10-29T06:41:45.5827534Z {"n": 5, "patterns": 52, "eligible": 11, "winning": 6, "certificate_shapes": 5, "global_certificates": 10, "assembled_certificates": 10, "exact_product_checks": 6}
+2026-10-29T06:41:45.5884561Z {"n": 6, "patterns": 203, "eligible": 41, "winning": 18, "certificate_shapes": 8, "global_certificates": 31, "assembled_certificates": 31, "exact_product_checks": 24}
+2026-10-29T06:41:45.6164104Z {"n": 7, "patterns": 877, "eligible": 162, "winning": 50, "certificate_shapes": 21, "global_certificates": 105, "assembled_certificates": 105, "exact_product_checks": 78}
+2026-10-29T06:41:45.7686350Z {"n": 8, "patterns": 4140, "eligible": 715, "winning": 161, "certificate_shapes": 42, "global_certificates": 350, "assembled_certificates": 350, "exact_product_checks": 302}
+2026-10-29T06:41:46.7439261Z {"n": 9, "patterns": 21147, "eligible": 3425, "winning": 523, "certificate_shapes": 96, "global_certificates": 1320, "assembled_certificates": 1320, "exact_product_checks": 1225}
+2026-10-29T06:41:53.9483556Z {"n": 10, "patterns": 115975, "eligible": 17722, "winning": 1828, "certificate_shapes": 222, "global_certificates": 4884, "assembled_certificates": 4884, "exact_product_checks": 5659}
+

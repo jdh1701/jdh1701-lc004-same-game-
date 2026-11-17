@@ -1,0 +1,69 @@
+⚠ [2793/2799] Replayed LC004.ChoiceComplexCancellation
+warning: ././././LC004/ChoiceComplexCancellation.lean:22:4: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+info: ././././LC004/ChoiceComplexCancellation.lean:149:0: 'LC004.faceAlternatingSum_delete_dominated' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceComplexCancellation.lean:150:0: 'LC004.facetAlternatingSum_erase_dominated' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceComplexCancellation.lean:151:0: 'LC004.twoFan_closed_choiceMajority' depends on axioms: [propext]
+info: ././././LC004/ChoiceComplexCancellation.lean:152:0: 'LC004.choiceMajority_closed_row_all' depends on axioms: [propext]
+ℹ [2794/2799] Replayed LC004.ChoiceRelationClassification
+info: ././././LC004/ChoiceRelationClassification.lean:125:0: 'LC004.choiceRelation_classification' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceRelationClassification.lean:126:0: 'LC004.choiceRelation_bijective_of_isolated_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2795/2799] Replayed LC004.ChoiceUniversalValue
+info: ././././LC004/ChoiceUniversalValue.lean:125:0: 'LC004.choicePairProjection_closed' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/ChoiceUniversalValue.lean:126:0: 'LC004.choice_exists_universal_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceUniversalValue.lean:127:0: 'LC004.choiceBinaryDetermined_of_binary_constraints' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/ChoiceUniversalValue.lean:128:0: 'LC004.choice_universal_value_replace' depends on axioms: [propext, Quot.sound]
+⚠ [2796/2799] Replayed LC004.ChoiceReducedCancellation
+warning: ././././LC004/ChoiceReducedCancellation.lean:105:40: `Function.update_same` has been deprecated: use `Function.update_self` instead
+warning: ././././LC004/ChoiceReducedCancellation.lean:118:10: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+info: ././././LC004/ChoiceReducedCancellation.lean:179:0: 'LC004.facetAlternatingSum_delete_set' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceReducedCancellation.lean:180:0: 'LC004.choiceAlternatingSum_zero_of_replace_and_force' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceReducedCancellation.lean:181:0: 'LC004.choiceAlternatingSum_zero_of_reduced_system' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceReducedCancellation.lean:182:0: 'LC004.binaryChoiceFan_alternatingSum_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2797/2799] Replayed LC004.ChoiceFunctionalElimination
+info: ././././LC004/ChoiceFunctionalElimination.lean:71:0: 'LC004.facetAlternatingSum_delete_set_varying' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceFunctionalElimination.lean:72:0: 'LC004.choiceAlternatingSum_delete_determined_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceFunctionalElimination.lean:73:0: 'LC004.choiceAlternatingSum_delete_bijective_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [2798/2799] Replayed LC004.ChoiceCoordinateReduction
+info: ././././LC004/ChoiceCoordinateReduction.lean:153:0: 'LC004.choiceReducedFamily_binary' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceCoordinateReduction.lean:154:0: 'LC004.choiceReducedFamily_connected' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceCoordinateReduction.lean:155:0: 'LC004.choiceReducedFamily_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+✖ [2799/2799] Building LC004.ChoiceBijectiveQuotient
+trace: .> LEAN_PATH=././.lake/packages/Cli/.lake/build/lib/lean:././.lake/packages/batteries/.lake/build/lib/lean:././.lake/packages/Qq/.lake/build/lib/lean:././.lake/packages/aesop/.lake/build/lib/lean:././.lake/packages/proofwidgets/.lake/build/lib/lean:././.lake/packages/importGraph/.lake/build/lib/lean:././.lake/packages/LeanSearchClient/.lake/build/lib/lean:././.lake/packages/plausible/.lake/build/lib/lean:././.lake/packages/mathlib/.lake/build/lib/lean:././.lake/build/lib/lean /tmp/lean-4.19.0-linux/bin/lean ././././LC004/ChoiceBijectiveQuotient.lean -R ./././. -o ././.lake/build/lib/lean/LC004/ChoiceBijectiveQuotient.olean -i ././.lake/build/lib/lean/LC004/ChoiceBijectiveQuotient.ilean -c ././.lake/build/ir/LC004/ChoiceBijectiveQuotient.c --json
+error: ././././LC004/ChoiceBijectiveQuotient.lean:168:29: typeclass instance problem is stuck, it is often due to metavariables
+  (k : Quotient (choiceBijectiveSetoid A hsupport)) → Fintype (?m.4485 k)
+error: ././././LC004/ChoiceBijectiveQuotient.lean:193:49: application type mismatch
+  (mem_choiceReducedFamily A r ?m.5840 b).mp hb
+argument
+  hb
+has type
+  b ∈ B : Prop
+but is expected to have type
+  b ∈ choiceReducedFamily A r ?m.5840 : Prop
+error: ././././LC004/ChoiceBijectiveQuotient.lean:197:12: application type mismatch
+  And.intro ((mem_choiceReducedFamily A r ?m.13334 b).mpr ?m.15458)
+argument
+  (mem_choiceReducedFamily A r ?m.13334 b).mpr ?m.15458
+has type
+  b ∈ choiceReducedFamily A r ?m.13334 : Prop
+but is expected to have type
+  b ∈ B : Prop
+error: ././././LC004/ChoiceBijectiveQuotient.lean:198:48: application type mismatch
+  choiceCoordinateLift_injective r e
+argument
+  e
+has type
+  (i : ι) → D ⟦i⟧.out ≃ D i : Type (max u_1 u_2)
+but is expected to have type
+  (i : ι) → ?m.22390 (r i) ≃ ?m.22389 i : Type (max (max ?u.22383 ?u.22384) u_1)
+info: ././././LC004/ChoiceBijectiveQuotient.lean:203:0: 'LC004.choiceBijectiveSetoid' depends on axioms: [propext, Quot.sound]
+info: ././././LC004/ChoiceBijectiveQuotient.lean:204:0: 'LC004.choiceQuotient_covers' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceBijectiveQuotient.lean:205:0: 'LC004.choiceQuotientFamily_binary' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceBijectiveQuotient.lean:206:0: 'LC004.choiceQuotientFamily_connected' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceBijectiveQuotient.lean:207:0: 'LC004.choiceQuotientFamily_no_bijections' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+info: ././././LC004/ChoiceBijectiveQuotient.lean:208:0: 'LC004.choiceQuotientFamily_card' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+error: Lean exited with code 1
+Some required builds logged failures:
+- LC004.ChoiceBijectiveQuotient
+error: build failed

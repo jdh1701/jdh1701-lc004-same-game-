@@ -1,0 +1,135 @@
+{
+  "schema_version": "alexandria-candidate-campaign-plan/1",
+  "campaign_id": "lc004-after-structural-face-proof-20261029",
+  "campaign_sha256": "sha256:d6077213f68b60b6ceec88f345cdcd69303e4a061be102705caf39f7e629fb3b",
+  "execution_state": "not_started",
+  "planned_task_count": 3,
+  "started_task_count": 0,
+  "completed_task_count": 0,
+  "verified_task_count": 0,
+  "batch_count": 3,
+  "budget": {
+    "max_planned_tasks": 3,
+    "batch_width": 1,
+    "max_concurrency": 1,
+    "per_task_timeout_seconds": 1800,
+    "max_total_tokens": 60000,
+    "max_total_wall_time_seconds": 5400
+  },
+  "targets": [
+    {
+      "id": "general-enumeration",
+      "statement": "Investigate a non-circular description of the heavy-word content series beyond the known binary case.",
+      "acceptance_criteria": [
+        "Pinned Lean compilation and transitive axiom audit for formal claims.",
+        "Independent finite counterexample tests and exact-source provenance."
+      ],
+      "falsifier": "A held-out coefficient inconsistent with the proposed recurrence.",
+      "claim_boundary": "open_research_obligation"
+    },
+    {
+      "id": "profile-count",
+      "statement": "Connect the established noncrossing type/cotype enumeration to the exact LC004 profile formula.",
+      "acceptance_criteria": [
+        "Pinned Lean compilation and transitive axiom audit for formal claims.",
+        "Independent finite counterexample tests and exact-source provenance."
+      ],
+      "falsifier": "Missing orbit multiplicity or invalid w=0 denominator.",
+      "claim_boundary": "open_research_obligation"
+    },
+    {
+      "id": "slot-count",
+      "statement": "Certify the ordered-slot weak-composition correspondence including the extra outer slot.",
+      "acceptance_criteria": [
+        "Pinned Lean compilation and transitive axiom audit for formal claims.",
+        "Independent finite counterexample tests and exact-source provenance."
+      ],
+      "falsifier": "Failure at empty words, zero rigid classes or the outer-face cut.",
+      "claim_boundary": "open_research_obligation"
+    }
+  ],
+  "batches": [
+    {
+      "id": "campaign-batch_8f9812dfadad",
+      "index": 1,
+      "layer": 0,
+      "task_ids": [
+        "campaign-task_0de2418a0d9e"
+      ]
+    },
+    {
+      "id": "campaign-batch_a69e986f0dab",
+      "index": 2,
+      "layer": 1,
+      "task_ids": [
+        "campaign-task_792a2744b1c9"
+      ]
+    },
+    {
+      "id": "campaign-batch_55d1a4feff58",
+      "index": 3,
+      "layer": 2,
+      "task_ids": [
+        "campaign-task_19829e69539c"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "campaign-task_0de2418a0d9e",
+      "target_id": "slot-count",
+      "workstream_id": "slot-count",
+      "role": "formalize",
+      "strategy_id": "slot-count",
+      "replica_index": 1,
+      "instruction_sha256": "sha256:f7b4456feef40e3da35d559f8fcebfa23f2885d2e4d6a580aee8b65064aa9920",
+      "isolation_group": "single-research-campaign",
+      "batch_index": 1,
+      "dependency_task_ids": []
+    },
+    {
+      "id": "campaign-task_792a2744b1c9",
+      "target_id": "profile-count",
+      "workstream_id": "profile-count",
+      "role": "formalize",
+      "strategy_id": "profile-count",
+      "replica_index": 1,
+      "instruction_sha256": "sha256:e1d9d04d8d4f43ac27ae3d7e1c955d2e2d98183d538d3ee594f28c4dc4254453",
+      "isolation_group": "single-research-campaign",
+      "batch_index": 2,
+      "dependency_task_ids": [
+        "campaign-task_0de2418a0d9e"
+      ]
+    },
+    {
+      "id": "campaign-task_19829e69539c",
+      "target_id": "general-enumeration",
+      "workstream_id": "general-enumeration",
+      "role": "propose",
+      "strategy_id": "general-enumeration",
+      "replica_index": 1,
+      "instruction_sha256": "sha256:ea26ef3546453266c3b8aad95b3bcf573ba7372629d4cdc2e99b18491f2a84df",
+      "isolation_group": "single-research-campaign",
+      "batch_index": 3,
+      "dependency_task_ids": [
+        "campaign-task_792a2744b1c9"
+      ]
+    }
+  ],
+  "stopping_rules": [
+    "Stop and preserve a minimal counterexample when a target fails.",
+    "Stop at the stated resource bound and record unresolved obligations.",
+    "Never promote a theorem using only finite tests or planning receipts."
+  ],
+  "limitations": [
+    "This is a future research queue, not a scheduled automation or claim of completed work.",
+    "The existing Core planner records no agent execution or theorem verification.",
+    "A planned task is not an executed agent, message, proof attempt, or independent replication.",
+    "Agent counts and isolation labels describe work allocation, not statistical independence.",
+    "Generated text is an untrusted proposal and cannot promote a theorem.",
+    "Only an exact claim-bound formal-proof receipt may report a theorem as verified.",
+    "This campaign makes no claim that P equals NP or that P differs from NP."
+  ],
+  "claim_boundary": "planning_only_no_agents_invoked",
+  "plan_sha256": "sha256:281a0dfbc32dd552b9f9898509e7608b6f43c2406e3360bfb0884accee0e6095"
+}

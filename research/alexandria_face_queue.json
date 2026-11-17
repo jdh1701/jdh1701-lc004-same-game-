@@ -1,0 +1,157 @@
+{
+  "schema_version": "alexandria-candidate-campaign/1",
+  "id": "lc004-face-continuation-20261029",
+  "title": "LC004 remaining face and enumeration obligations",
+  "question": "Can the verified geometric confinement be completed to a duplication-free enumerative face theorem?",
+  "budget": {
+    "max_planned_tasks": 6,
+    "batch_width": 1,
+    "max_concurrency": 1,
+    "per_task_timeout_seconds": 1800,
+    "max_total_tokens": 120000,
+    "max_total_wall_time_seconds": 10800
+  },
+  "targets": [
+    {
+      "id": "gluing",
+      "statement": "Construct a global Noncrossing23Certificate from one winning certificate per complete heavy face and the rigid skeleton.",
+      "acceptance_criteria": [
+        "Pinned Lean compilation and transitive axiom audit for formal claims.",
+        "Independent finite counterexample tests and exact-source provenance."
+      ],
+      "falsifier": "A singleton face block or duplicate position after assembly.",
+      "claim_boundary": "open_research_obligation"
+    },
+    {
+      "id": "face-iff",
+      "statement": "Prove the full winning-pattern iff using rigid-skeleton noncrossing and winning heavy face subwords.",
+      "acceptance_criteria": [
+        "Pinned Lean compilation and transitive axiom audit for formal claims.",
+        "Independent finite counterexample tests and exact-source provenance."
+      ],
+      "falsifier": "A losing word satisfying every stated right-hand condition.",
+      "claim_boundary": "open_research_obligation"
+    },
+    {
+      "id": "partition-equivalence",
+      "statement": "Build an equivalence of certificate partitions with products of face certificate partitions.",
+      "acceptance_criteria": [
+        "Pinned Lean compilation and transitive axiom audit for formal claims.",
+        "Independent finite counterexample tests and exact-source provenance."
+      ],
+      "falsifier": "Two different global partitions having identical face partitions or a local tuple with no lift.",
+      "claim_boundary": "open_research_obligation"
+    },
+    {
+      "id": "slot-count",
+      "statement": "Certify the ordered-slot weak-composition correspondence including the extra outer slot.",
+      "acceptance_criteria": [
+        "Pinned Lean compilation and transitive axiom audit for formal claims.",
+        "Independent finite counterexample tests and exact-source provenance."
+      ],
+      "falsifier": "Failure at empty words, zero rigid classes or the outer-face cut.",
+      "claim_boundary": "open_research_obligation"
+    },
+    {
+      "id": "profile-count",
+      "statement": "Connect the established noncrossing type/cotype enumeration to the exact LC004 profile formula.",
+      "acceptance_criteria": [
+        "Pinned Lean compilation and transitive axiom audit for formal claims.",
+        "Independent finite counterexample tests and exact-source provenance."
+      ],
+      "falsifier": "Missing orbit multiplicity or invalid w=0 denominator.",
+      "claim_boundary": "open_research_obligation"
+    },
+    {
+      "id": "general-enumeration",
+      "statement": "Investigate a non-circular description of the heavy-word content series beyond the known binary case.",
+      "acceptance_criteria": [
+        "Pinned Lean compilation and transitive axiom audit for formal claims.",
+        "Independent finite counterexample tests and exact-source provenance."
+      ],
+      "falsifier": "A held-out coefficient inconsistent with the proposed recurrence.",
+      "claim_boundary": "open_research_obligation"
+    }
+  ],
+  "workstreams": [
+    {
+      "id": "gluing",
+      "target_id": "gluing",
+      "role": "formalize",
+      "strategy_id": "gluing",
+      "replicas": 1,
+      "depends_on": [],
+      "instruction": "Construct the partition with exact coverage; prove sizes, colors, and noncrossing. Use canonical face representatives to avoid duplicate blocks.",
+      "isolation_group": "single-research-campaign"
+    },
+    {
+      "id": "face-iff",
+      "target_id": "face-iff",
+      "role": "formalize",
+      "strategy_id": "face-iff",
+      "replicas": 1,
+      "depends_on": [
+        "gluing"
+      ],
+      "instruction": "Combine gluing with winning_restrict_heavy_face; include no-singleton hypothesis, empty skeleton and empty word.",
+      "isolation_group": "single-research-campaign"
+    },
+    {
+      "id": "partition-equivalence",
+      "target_id": "partition-equivalence",
+      "role": "formalize",
+      "strategy_id": "partition-equivalence",
+      "replicas": 1,
+      "depends_on": [
+        "face-iff"
+      ],
+      "instruction": "Use certificate_pattern_determined_by_heavy_faces for injectivity and gluing for surjectivity. Quotient irrelevant list ordering.",
+      "isolation_group": "single-research-campaign"
+    },
+    {
+      "id": "slot-count",
+      "target_id": "slot-count",
+      "role": "formalize",
+      "strategy_id": "slot-count",
+      "replicas": 1,
+      "depends_on": [
+        "partition-equivalence"
+      ],
+      "instruction": "State and prove both maps, inverse laws and binomial count.",
+      "isolation_group": "single-research-campaign"
+    },
+    {
+      "id": "profile-count",
+      "target_id": "profile-count",
+      "role": "formalize",
+      "strategy_id": "profile-count",
+      "replicas": 1,
+      "depends_on": [
+        "slot-count"
+      ],
+      "instruction": "Check Goulden-Jackson normalization from the primary source, class automorphisms, and coefficient extraction.",
+      "isolation_group": "single-research-campaign"
+    },
+    {
+      "id": "general-enumeration",
+      "target_id": "general-enumeration",
+      "role": "propose",
+      "strategy_id": "general-enumeration",
+      "replicas": 1,
+      "depends_on": [
+        "profile-count"
+      ],
+      "instruction": "Freeze competing recurrence candidates before held-out tests; distinguish fixed-excess formulas from unrestricted b-ary enumeration.",
+      "isolation_group": "single-research-campaign"
+    }
+  ],
+  "stopping_rules": [
+    "Stop and preserve a minimal counterexample when a target fails.",
+    "Stop at the stated resource bound and record unresolved obligations.",
+    "Never promote a theorem using only finite tests or planning receipts."
+  ],
+  "limitations": [
+    "This is a future research queue, not a scheduled automation or claim of completed work.",
+    "The existing Core planner records no agent execution or theorem verification."
+  ]
+}

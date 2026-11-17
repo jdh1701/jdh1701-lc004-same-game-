@@ -1,0 +1,314 @@
+\section{Frozen mathematical scope}
+The game is linear maximal-run deletion. Circular chord diagrams do not
+change the move semantics. The counting objects below are certificate
+partitions of a fixed word, not winning words or deletion histories.
+Proof snapshot: \texttt{3446f63}, Lean 4.19.0.
+The manuscript and proof ledger are available from the project home page.
+\section{Definitions and checked results}
+\begin{definition}[Color pattern]\label{def:pattern}
+A color pattern on $n$ positions is an equivalence relation $p$ on
+$[n]=\{0,\ldots,n-1\}$. For a coloring $w:[n]\to\Sigma$, put
+\[
+ i\mathrel p j\quad\Longleftrightarrow\quad w_i=w_j.
+\]
+Write $[i]_p=\{j:i\mathrel p j\}$. A pattern is winning when one, equivalently
+every, realization of its color equalities is winning.
+\lean{LC004.ColorPattern}
+\leanok
+\end{definition}
+
+\begin{definition}[Noncrossing]\label{def:noncrossing}
+A partition $c$ of $[n]$ is noncrossing if, whenever
+$a<b<c'<d$ with $a\sim_c c'$ and $b\sim_c d$, one also has $a\sim_c b$.
+Thus interleaving pairs may occur only inside a single block.
+\lean{LC004.PatternNoncrossing}
+\leanok
+\end{definition}
+
+\begin{definition}[Certificate partition]\label{def:certificate}
+For a pattern $p$, let
+\[
+ \Cert(p)=\{c:\ c\text{ is a noncrossing partition of }[n],\
+              \card{B}\in\{2,3\}\text{ for every block }B,\
+              c\leq p\},
+\]
+where $c\leq p$ means $a\sim_c b\Rightarrow a\mathrel p b$.
+\lean{LC004.CertificatePartition}
+\leanok
+\end{definition}
+
+The imported certificate characterization is
+\begin{equation}\label{eq:certificate_characterization}
+ \Win(p)\quad\Longleftrightarrow\quad\Cert(p)\ne\varnothing.
+\end{equation}
+
+\begin{definition}[Rigid and heavy]\label{def:rigid_heavy}
+A position $i$ is rigid if $\card{[i]_p}\in\{2,3\}$ and heavy if
+$\card{[i]_p}\geq4$. Let $H(p)$ be the set of heavy positions.
+A singleton position is neither rigid nor heavy.
+\lean{LC004.RigidPosition,LC004.HeavyPosition}
+\leanok
+\end{definition}
+
+\begin{lemma}[Local rigidity]\label{lem:rigidity}
+Let $c\in\Cert(p)$ and let $i$ be rigid. The $c$-block containing $i$ is
+the entire class $[i]_p$.
+\lean{LC004.certificate_rigid_block_eq_class}
+\leanok
+\uses{def:certificate,def:rigid_heavy}
+\end{lemma}
+\begin{proof}
+The block is monochromatic, so it is contained in $[i]_p$, and it has
+cardinality two or three. A proper inclusion can only leave one position
+uncovered in a class of size three. That remaining position would have to
+belong to a different monochromatic certificate block containing at least two
+positions. Exact coverage makes the two certificate blocks disjoint, so the
+second block would have to fit into a singleton. This is impossible.
+\leanok
+\uses{def:certificate}
+\end{proof}
+
+\begin{definition}[Face signature]\label{def:face}
+Put $a\sim_F b$ when
+\begin{equation}\label{eq:face_signature}
+ \forall u,v,\quad
+ u\text{ rigid and }u\mathrel p v
+ \ \Longrightarrow\
+ (u<a<v\Longleftrightarrow u<b<v).
+\end{equation}
+For an anchor $a$, its complete heavy carrier is
+\[
+ H_a=\{x\in[n]:x\in H(p),\ a\sim_F x\}.
+\]
+The increasing enumeration is an order embedding
+$e_a:[\card{H_a}]\hookrightarrow[n]$.
+\lean{LC004.rigidFacePattern,LC004.heavyFacePositions,LC004.heavyFaceEmbedding}
+\leanok
+\uses{def:rigid_heavy}
+\end{definition}
+
+\begin{lemma}[Arc criterion]\label{lem:arc}
+For heavy positions $a<b$, one has $a\sim_F b$ if and only if there are no
+same-colored rigid positions $u,v$ such that
+\[
+ a<u<b,\qquad v<a\ \text{or}\ b<v.
+\]
+\lean{LC004.rigid_face_iff_no_rigid_arc_separator}
+\leanok
+\uses{def:face}
+\end{lemma}
+\begin{proof}\leanok
+The complete proof is in the checked Lean declarations linked above.
+\end{proof}
+
+
+\begin{theorem}[Heavy-block confinement]\label{thm:confinement}
+If $c\in\Cert(p)$, $a$ is heavy, and $a\sim_c b$, then $b$ is heavy and
+$a\sim_F b$.
+\lean{LC004.certificate_heavy_face}
+\leanok
+\uses{lem:rigidity,def:face}
+\end{theorem}
+\begin{proof}
+Monochromaticity gives $a\mathrel p b$, so $a$ and $b$ have the same original
+color-class size. Thus $b$ is heavy. Fix a rigid chord $u,v$ of one color.
+By Lemma~\ref{lem:rigidity}, $u$ and $v$ lie in one forced certificate block.
+If precisely one of $a,b$ lies in $(u,v)$, the two certificate blocks have
+alternating endpoint pairs in one of their orders. Their four endpoints are
+distinct because heavy and rigid positions are disjoint. This contradicts
+noncrossing for blocks of size at most three. Therefore the interval tests
+agree for every rigid chord.
+\leanok
+\uses{lem:rigidity,def:noncrossing}
+\end{proof}
+
+\begin{corollary}[Face saturation]\label{lem:saturation}
+If $e$ enumerates all and only the heavy positions in one face and
+$c(e(i),b)$, then $b$ is in the range of $e$.
+\lean{LC004.certificate_face_saturated}
+\leanok
+\uses{thm:confinement}
+\end{corollary}
+\begin{proof}\leanok
+The complete proof is in the checked Lean declarations linked above.
+\end{proof}
+
+
+Write $E_{c,d}(x,y)$ for $c(x,y)\lor d(x,y)$. Restriction is the pullback
+$\Res_e(c)(i,j)\Longleftrightarrow c(e(i),e(j))$; $c\vee d$ is the least
+equivalence relation containing both relations.
+\begin{definition}[Path locality]\label{def:locality}
+A carrier $e$ has path locality for $c,d$ if every global $E_{c,d}$-path between
+$e(i)$ and $e(j)$ can be represented by an internal path in the carrier
+between $i$ and $j$.
+\lean{LC004.FacePathLocality}
+\leanok
+\end{definition}
+
+\begin{lemma}[Locality from saturation]\label{lem:locality}
+If $e$ is injective and its range is closed under every $c$-edge and every
+$d$-edge, then $e$ has path locality for $c,d$.
+\lean{LC004.facePathLocality_of_edge_saturation}
+\leanok
+\uses{def:locality}
+\end{lemma}
+\begin{proof}
+Induct on the number of edges in a global path. Lift its initial vertex using
+the given starting index. If the prefix ends at $e(k)$ and the next edge
+reaches $z$, saturation supplies an index $\ell$ with $e(\ell)=z$.
+Append the corresponding restricted edge. At the final vertex,
+injectivity identifies the constructed index with the prescribed endpoint.
+The zero-edge path gives reflexivity.
+\leanok
+\end{proof}
+
+\begin{theorem}[Geometric join restriction]\label{thm:join_restriction}
+For two certificates $c,d$ of the same color pattern and every canonical
+complete heavy face,
+\[
+ \Res_{e_a}(c\vee d)=\Res_{e_a}(c)\vee\Res_{e_a}(d).
+\]
+\lean{LC004.canonical_heavy_face_restrict_join}
+\leanok
+\uses{lem:saturation,lem:locality}
+\end{theorem}
+\begin{proof}\leanok
+The complete proof is in the checked Lean declarations linked above.
+\end{proof}
+
+
+\begin{lemma}[Restriction preserves winning]\label{lem:restriction}
+If $p$ is winning, then every restricted pattern $\Res_{e_a}(p)$ is winning.
+The increasing word in the original colors on $H_a$ is erasable by maximal
+runs.
+\lean{LC004.winning_restrict_heavy_face,LC004.raw_win_heavy_face_word}
+\leanok
+\uses{lem:saturation}
+\end{lemma}
+\begin{proof}
+Choose a global certificate. Saturation says that every certificate class
+meeting the face is wholly contained in it. Consequently restriction
+preserves its cardinality, so the restricted classes still have size two
+or three. The increasing embedding preserves the ordering of four endpoints
+and hence noncrossing. Monochromaticity is preserved by pullback.
+Equation~\eqref{eq:certificate_characterization} gives the local win, and the
+imported semantic correspondence returns a maximal-run erasure in the
+original face colors.
+\leanok
+\end{proof}
+
+\begin{theorem}[Structural Face Lemma]\label{thm:face_lemma}
+For every finite color pattern $p$,
+\begin{align*}
+ \Win(p)\quad\Longleftrightarrow\quad&
+ \bigl(\forall i,\ \card{[i]_p}\geq2\bigr)\\
+ &{}\land\bigl(\text{the rigid skeleton has no alternating chord pairs}\bigr)\\
+ &{}\land\bigl(\forall a,\ \Win(\Res_{e_a}(p))\bigr).
+\end{align*}
+The same equivalence holds for maximal-run erasure of a word with its
+original colors.
+\lean{LC004.winning_iff_heavy_face_decomposition,LC004.raw_win_iff_heavy_face_decomposition}
+\leanok
+\uses{lem:rigidity,lem:restriction,thm:cellular_assembly}
+\end{theorem}
+\begin{proof}\leanok
+The complete proof is in the checked Lean declarations linked above.
+\end{proof}
+
+
+Let $(S_k)_{k\in I}$ be disjoint regions covering $[n]$, with increasing
+enumerations $e_k:[m_k]\hookrightarrow[n]$, and suppose
+\begin{equation}\label{eq:region_noncrossing}
+ e_k(i)<e_\ell(s)<e_k(j)<e_\ell(t)\quad\Longrightarrow\quad k=\ell.
+\end{equation}
+For certificate partitions $c_k\in\Cert(\Res_{e_k}(p))$, define
+\begin{equation}\label{eq:assembled}
+ x\sim_g y\quad\Longleftrightarrow\quad
+ \exists k,i,j,\ e_k(i)=x,\ e_k(j)=y,\ i\sim_{c_k}j.
+\end{equation}
+\begin{lemma}[Assembly on regions]\label{lem:region_assembly}
+The relation $g$ is a certificate partition of $p$, and
+$\Res_{e_k}(g)=c_k$ for every $k$.
+\lean{LC004.assembledPattern_constraint,LC004.exists_partition_of_noncrossing_regions}
+\leanok
+\uses{def:certificate}
+\end{lemma}
+\begin{proof}
+Coverage supplies a region and local coordinate for each position, proving
+reflexivity. Symmetry is inherited locally. For transitivity, two witnesses
+sharing a middle position must belong to the same region by disjointness.
+Injectivity of that region's embedding identifies their middle coordinates,
+and local transitivity completes the argument.
+
+A $g$-class meeting $S_k$ stays inside $S_k$. Its pullback is precisely the
+corresponding $c_k$-class, so its cardinality is two or three. If two
+$g$-relations have alternating endpoints, \eqref{eq:region_noncrossing} puts
+them in the same region. The increasing embedding reflects their inequalities;
+local noncrossing then implies the required relation between the first two
+endpoints. Finally, the local refinement $c_k\leq\Res_{e_k}(p)$ implies
+$g\leq p$.
+
+To verify exact restriction, unfold \eqref{eq:assembled}. A witness connecting
+two points of $S_k$ cannot come from a different region. Injectivity then
+recovers the original local coordinates. The converse uses $k$ itself.
+\leanok
+\end{proof}
+
+Let $Q_F=[n]/{\sim_F}$ and choose the quotient representative used by Lean.
+Write $e_q$ for the increasing embedding of its complete heavy carrier.
+The restriction map is
+\[
+ R:\Cert(p)\longrightarrow\prod_{q\in Q_F}\Cert(\Res_{e_q}(p)),
+ \qquad R(c)_q=\Res_{e_q}(c).
+\]
+\begin{theorem}[Cellular assembly isomorphism]\label{thm:cellular_assembly}
+Suppose every appearing color has at least two positions and the rigid
+skeleton is noncrossing. Then $R$ is a bijection:
+\[
+ \Cert(p)\ \simeq\ \prod_{q\in Q_F}\Cert(\Res_{e_q}(p)).
+\]
+\lean{LC004.heavyFaceCertificateEquiv}
+\leanok
+\uses{thm:confinement,lem:rigidity,lem:region_assembly}
+\end{theorem}
+\begin{proof}
+For injectivity, suppose two global partitions have the same face
+restrictions. A relation beginning at a rigid position is forced by the
+original color class, so it holds in both partitions. A relation beginning
+at a heavy position stays in one heavy face by confinement. Lift its endpoints
+into the increasing face coordinates, use equality of restrictions, and
+return to the global positions. Interchanging the two partitions gives
+equality.
+
+For surjectivity, take any tuple of local partitions. Supply the forced
+rigid blocks and apply the regional assembly. Exact restriction in
+Lemma~\ref{lem:region_assembly} proves that the resulting global partition
+maps to the supplied tuple. Thus assembly recovers every tuple, and
+injectivity shows that it does so uniquely.
+\leanok
+\end{proof}
+
+\begin{corollary}[Certificate product]\label{thm:certificate_product}
+Under the hypotheses of Theorem~\ref{thm:cellular_assembly},
+\[
+ \card{\Cert(p)}
+ =\prod_{q\in Q_F}\card{\Cert(\Res_{e_q}(p))}.
+\]
+\lean{LC004.certificate_partition_count_product}
+\leanok
+\uses{thm:cellular_assembly}
+\end{corollary}
+\begin{proof}
+Every partition type in the statement is finite. Apply invariance of finite
+cardinality under equivalence and the cardinality formula for a finite
+dependent product.
+\leanok
+\end{proof}\section{Open publication obligations}
+\begin{proposition}[Ordered slots]\label{prop:slots}\notready
+For fixed face words and ordered gap carriers, prove the weak-composition
+placement bijection in Lean, including the extra outer slot.
+\end{proposition}
+The complete ordinary proof is in the manuscript. Counterexample minimality
+is computationally established; no Lean declaration is attached to it.
+Transaction and streaming contracts are architecture specifications and
+are not kernel-verified theorems about Alexandria Core.

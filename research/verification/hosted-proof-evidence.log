@@ -1,0 +1,27 @@
+2026-10-29T06:18:10.1637718Z info: ././././LC004/RigidFaceGeometry.lean:221:0: 'LC004.certificate_rigid_block_eq_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-29T06:18:10.1638836Z info: ././././LC004/RigidFaceGeometry.lean:222:0: 'LC004.certificate_heavy_face' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-29T06:18:10.1639932Z info: ././././LC004/RigidFaceGeometry.lean:223:0: 'LC004.rigid_faces_no_alternation' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-29T06:18:10.1641099Z info: ././././LC004/RigidFaceGeometry.lean:224:0: 'LC004.heavy_certificate_face_path_locality' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-29T06:18:10.1642282Z info: ././././LC004/RigidFaceGeometry.lean:225:0: 'LC004.heavy_certificate_restrict_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-29T06:18:10.1643578Z info: ././././LC004/RigidFaceGeometry.lean:226:0: 'LC004.canonical_heavy_face_restrict_join' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-29T06:18:10.1645250Z info: ././././LC004/HeavyFaceRestriction.lean:73:0: 'LC004.certificateConstraint_restrict' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-29T06:18:10.1646428Z info: ././././LC004/HeavyFaceRestriction.lean:74:0: 'LC004.winning_restrict_heavy_face' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-29T06:18:10.1647539Z info: ././././LC004/HeavyFaceRestriction.lean:75:0: 'LC004.raw_win_heavy_face_word' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-29T06:18:13.2416259Z info: ././././LC004/RigidFaceArcCriterion.lean:43:0: 'LC004.rigid_face_iff_no_rigid_arc_separator' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-29T06:18:16.2449095Z info: ././././LC004/HeavyFaceReconstruction.lean:62:0: 'LC004.certificate_position_rigid_or_heavy' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-29T06:18:16.2449943Z info: ././././LC004/HeavyFaceReconstruction.lean:63:0: 'LC004.certificate_pattern_determined_by_heavy_faces' depends on axioms: [propext, Classical.choice, Quot.sound]
+2026-10-29T06:18:18.9634504Z Build completed successfully.
+2026-10-29T06:18:36.8869138Z COVERAGE PASS: 159 active modules all reachable from LC004.lean
+2026-10-29T06:18:36.8922885Z SOURCE GUARD PASS: no placeholders, custom axioms, unsafe or partial source
+2026-10-29T06:18:57.3892655Z AXIOM AUDIT PASS: 588 project declarations; only propext, Classical.choice, Quot.sound permitted
+2026-10-29T06:18:57.5798200Z {"n": 0, "patterns": 1, "eligible": 1, "winning": 1, "certificates": 1, "heavy_blocks": 0, "join_face_checks": 0, "glued_certificates": 1}
+2026-10-29T06:18:57.5799215Z {"n": 1, "patterns": 1, "eligible": 0, "winning": 0, "certificates": 0, "heavy_blocks": 0, "join_face_checks": 0, "glued_certificates": 0}
+2026-10-29T06:18:57.5800189Z {"n": 2, "patterns": 2, "eligible": 1, "winning": 1, "certificates": 1, "heavy_blocks": 0, "join_face_checks": 0, "glued_certificates": 1}
+2026-10-29T06:18:57.5801120Z {"n": 3, "patterns": 5, "eligible": 1, "winning": 1, "certificates": 1, "heavy_blocks": 0, "join_face_checks": 0, "glued_certificates": 1}
+2026-10-29T06:18:57.5802172Z {"n": 4, "patterns": 15, "eligible": 4, "winning": 3, "certificates": 4, "heavy_blocks": 4, "join_face_checks": 1, "glued_certificates": 4}
+2026-10-29T06:18:57.5807509Z {"n": 5, "patterns": 52, "eligible": 11, "winning": 6, "certificates": 10, "heavy_blocks": 10, "join_face_checks": 10, "glued_certificates": 10}
+2026-10-29T06:18:57.5836991Z {"n": 6, "patterns": 203, "eligible": 41, "winning": 18, "certificates": 31, "heavy_blocks": 51, "join_face_checks": 34, "glued_certificates": 31}
+2026-10-29T06:18:57.5947744Z {"n": 7, "patterns": 877, "eligible": 162, "winning": 50, "certificates": 105, "heavy_blocks": 189, "join_face_checks": 287, "glued_certificates": 105}
+2026-10-29T06:18:57.6494312Z {"n": 8, "patterns": 4140, "eligible": 715, "winning": 161, "certificates": 350, "heavy_blocks": 812, "join_face_checks": 1247, "glued_certificates": 350}
+2026-10-29T06:18:57.8448509Z {"n": 9, "patterns": 21147, "eligible": 3425, "winning": 523, "certificates": 1320, "heavy_blocks": 3468, "join_face_checks": 0, "glued_certificates": 0}
+2026-10-29T06:18:59.0543666Z {"n": 10, "patterns": 115975, "eligible": 17722, "winning": 1828, "certificates": 4884, "heavy_blocks": 14970, "join_face_checks": 0, "glued_certificates": 0}

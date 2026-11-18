@@ -29,6 +29,7 @@ Status words inside these folders follow the WORKBOARD vocabulary (PROVED-LEAN, 
 | [`closure_fibers_20261029`](../research/closure_fibers_20261029/) | 10 | [`REPORT.md`](../research/closure_fibers_20261029/REPORT.md) | Closure restriction checkpoint and method decision | `research/gpt-handoff-review-20261029` |
 | [`connected_fiber_20261029`](../research/connected_fiber_20261029/) | 13 | [`REPORT.md`](../research/connected_fiber_20261029/REPORT.md) | Connected closure fiber checkpoint | `research/gpt-handoff-review-20261029` |
 | [`fixed_content_333_20261117`](../research/fixed_content_333_20261117/) | 5 | [`REPORT.md`](../research/fixed_content_333_20261117/REPORT.md) | Fixed-content counts W(3,3,r): exact closed form; H1 binary polynomiality | `claude/fixed-content-333-20261117` |
+| [`all_alphabets_20261118`](../research/all_alphabets_20261118/) | 3 | [`REPORT.md`](../research/all_alphabets_20261118/REPORT.md) | W_n(q) for every alphabet size, n ≤ 20, via the Lean cumulant degree bound | `claude/review-r20261104-20261118` |
 
 ## 3. All-five kernel and coefficient law
 

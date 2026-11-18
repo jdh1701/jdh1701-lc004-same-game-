@@ -1,12 +1,12 @@
 # LC004 status
 
-Snapshot as of 2026-11-17, including PR #57 and the fixed-content work. This page summarizes the records; it does not certify anything. The canonical claim registry is [`research/WORKBOARD.md`](research/WORKBOARD.md). Each line below points to the folder whose REPORT, HANDOFF or receipts carry the evidence.
+Snapshot as of 2026-11-18. This page summarizes the records; it does not certify anything. The canonical claim registry is [`research/WORKBOARD.md`](research/WORKBOARD.md). Each line below points to the folder whose REPORT, HANDOFF or receipts carry the evidence.
 
 **The problem.** In one-dimensional Same Game you may delete any maximal run of two or more equal letters, and the pieces on either side then join. A word *wins* if it can be erased completely. The open target is an all-length counting law for W_q(n), the number of winning words of length n over q colors. For q = 3 this is OEIS A035617, which OEIS lists as unsolved. **The target is still open.**
 
 ## Proved in Lean (PROVED-LEAN)
 
-All of these are in the build closure of `LC004.lean`: 251 modules, no `sorry`, standard axioms only. They were green on hosted CI on the commits cited in the folder receipts. **The library has not yet been built in this new repository.** The first CI run here will confirm it.
+All of these are in the build closure of `LC004.lean`: 251 modules, no `sorry`, standard axioms only. They were green on hosted CI on the commits cited in the folder receipts. The full build and the axiom audit ran green on the consolidation (#58) and again on `main` afterwards.
 
 | Result | Lean name | Evidence |
 |---|---|---|
@@ -14,6 +14,8 @@ All of these are in the build closure of `LC004.lean`: 251 modules, no `sorry`, 
 | Second diagonal: A(2k+2,k) = k·C(2k+2,k−1) for k ≥ 1 | `winningColorPatternCount_second_diagonal` | WORKBOARD K3, PR #27 |
 | Face lemma: a word wins iff its heavy skeleton is noncrossing and every face wins | `winning_iff_heavy_face_decomposition` | WORKBOARD C2, PR #28 |
 | A crossed class in a join with nonzero coefficient has size ≥ 5 | `winningJoinCoefficient_ne_zero_crossed_class_card_ge_five` | `claude-own-proof` branch, PR #41 |
+| **Free moment–cumulant expansion:** W_n(q) = Σ over noncrossing π of Π κ_\|B\|(q), with κ_s the connected weight | `labeledWinningCount_connected_expansion` | WORKBOARD K7, PR #34 |
+| **Connected-kernel support:** every class of a nonzero connected pattern has size ≥ 5. κ_s(q) has no constant term and degree ≤ max(1, ⌊s/5⌋), so its q^j coefficient vanishes for s < 5j. | `ncConnected_nonzero_every_class_min_five`, `connectedGamePolynomial_coeff_zero`, `connectedGamePolynomial_natDegree_le` | WORKBOARD K8, PR #42, run 41029475200 |
 | The original all-five coefficient law, SCC recognition and the generator bijection | see `five_bridge_20261029/` | PR #35, final audit: 225 modules |
 | Fusion automaton: winning ⇔ ε lies in the Boolean fusion support; wins(u++v) ⇔ support(u) ∩ support(rev v) ≠ ∅ | `raw_max_win_iff_fusionEval` (`FusionStack.lean`) | `global_fusion_20261101/`, PR #52 |
 | Fusion horizon (stack-length bound and truncation separation) | `FusionHorizon.lean` | `fusion_horizon_20261101/`, PR #53 |
@@ -25,6 +27,11 @@ All of these are in the build closure of `LC004.lean`: 251 modules, no `sorry`, 
   - Two independent methods agree through n = 26.
   - n = 27 and 28 rest on a single method, the half-word count (`global_fusion_20261101/`).
 - A from-scratch brute-force counter agrees through n = 14 (`cross_domain_20261029/`). Claude's own independent DP agrees through n = 15 (`entropy_certificate_20261111/claude_review/`).
+- The OEIS lists A035617 only through n = 25, so W₂₆, W₂₇ and W₂₈ are not in it. No OEIS submission has been made.
+- **Every alphabet, n ≤ 20.** W_n(q) is an explicit polynomial in q for n ≤ 20 (`all_alphabets_20261118/`, 2026-11-18).
+  - It follows from the two Lean theorems above, using only the 1-, 2- and 3-letter counts, plus one published 4-letter term for n = 20.
+  - It matches every published term of OEIS A065237, A065238, A065239 and A065241.
+  - It gives new terms: q = 5 and 6 at n = 19–20, and q = 8 at n = 18–20.
 
 ## Paper proofs with finite checks (PROVED-PAPER, not in Lean)
 
@@ -34,9 +41,8 @@ All of these are in the build closure of `LC004.lean`: 251 modules, no `sorry`, 
 - **Fixed content (3,3,r).** For r ≥ 6, W(3,3,r) = (r⁶ + r⁵ + 15r⁴ + 395r³ − 376r² − 3636r + 18720)/120. Verified for r ≤ 40; brute force agrees for r ≤ 11 (`fixed_content_333_20261117/`, 2026-11-17).
   - The proof is the cap lemma (run lengths matter only up to 2) plus a sum over the types of the gaps between letters.
 - **Binary content counts (WORKBOARD H1).** For every a ≥ 2 and b ≥ a + 2, B(a,b) is a polynomial in b of degree exactly a, with leading coefficient 1/a!. It holds at b = a + 1 as well for a ≤ 7, by computation (same folder).
-- **First-excess layer.**
-  - The two-generator stratum is enumerated in full.
-  - The universal (7,5,…,5) stratum is classified as singleton triplings, with count (5j+2)·A_j/5 (`two_generator_excess_20261031/`, `seven_pair_deletion_20261101/`).
+- **First excess (n = 5j + 1).** Every nonzero connected pattern with class sizes (6,5,…,5) has 2 or 3 certificates and coefficient −1. The totals at j = 2..5 are 22, 312, 5607, 116857 (`first_excess_exhaustiveness_20261101/`, PR #50; the supporting lemmas are PROVED-LEAN).
+- **Second excess (n = 5j + 2), partial.** The universal (7,5,…,5) stratum consists exactly of singleton triplings, with coefficient +2 (`seven_pair_deletion_20261101/`, PR #51). The (6,6,5,…,5) stratum and the non-universal sevens are open.
 
 ## Negative results (KILLED / ruled out)
 
@@ -63,16 +69,15 @@ All of these are in the build closure of `LC004.lean`: 251 modules, no `sorry`, 
   - Evidence: the density rises at every computed length from n = 10 to 28.
   - Falsifier: a persistent decline at n = 29–32.
 - **Binary content counts, boundary case.** H1's polynomial also holds at b = a + 1 for every a. Proved for b ≥ a + 2; checked at b = a + 1 for a ≤ 7.
-- **Cumulant vanishing.** The q^j coefficient of κ_s is zero for s < 5j. Checked for s ≤ 15.
 
 ## Open obligations
 
 These are in order of leverage.
 
-1. **First excess.** Rule out a nonzero connected first-excess pattern that has no three-run and at least 3 original certificates (`two_generator_excess_20261031/HANDOFF.md`). The higher-excess layers are open beyond that.
+1. **Second excess, (6,6,5,…,5).** Classify the nonzero connected patterns, and Lean-formalize the first-excess coefficient law (see R-2026-11-04, Q2). The first-excess obligation once listed here was discharged on paper by PR #50. The higher-excess layers remain open.
 2. **Lean for the growth bound.** Formalize finite-table lifting and policy induction for the entropy certificate, against the `FusionStack.lean` soundness theorems.
 3. **Entropy method.** Two experiments are next:
    - Optimize over *all* valid witness choices in the extra-color model, not only the lexicographically first. If the drift stays positive, keep a longer base suffix (PR #57's proposed next step).
    - Separately, compute exact uniform drift intervals for H = 5…9, to see whether the drift trends toward zero.
 4. **Second method for n = 27, 28.** A second, independent count for these two terms.
-5. **Review request R-2026-11-04.** Questions 1, 3, 4 and 6 are unanswered; 2 and 5 are partly answered. See [`coordination/OPEN_REQUESTS.md`](coordination/OPEN_REQUESTS.md).
+5. **4-letter counts to n = 24.** These would extend the every-alphabet table (AQ1) to n = 24, since κ_s has degree ≤ 4 there. It needs a 4-letter version of `fusion_count.cpp`.

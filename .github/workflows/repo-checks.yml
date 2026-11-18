@@ -27,3 +27,5 @@ jobs:
         run: |
           python3 -I research/fixed_content_333_20261117/fixed_content_333.py 11 40 | diff research/fixed_content_333_20261117/results.json -
           python3 -I research/fixed_content_333_20261117/binary_content.py 7 | diff research/fixed_content_333_20261117/binary_results.json -
+      - name: All-alphabet transfer (W_n(q), n <= 20) replay
+        run: python3 -I research/all_alphabets_20261118/all_alphabets.py | diff research/all_alphabets_20261118/results.json -

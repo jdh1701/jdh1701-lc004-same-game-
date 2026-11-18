@@ -42,7 +42,7 @@ current; it outranks older journals and notes when they disagree.
 | C0 | Winning (maximal-run) iff noncrossing 2/3 certificate | PROVED-LEAN | `raw_max_win_iff_certificate`; published as Biedl et al. 2002 Thm 2 | — |
 | C1 | Classes of size 2/3 are certificate blocks | PROVED-LEAN | `certificate_small_block_eq_class` | — |
 | K3 | A(2k+2,k) = k·C(2k+2,k−1), k ≥ 1 | PROVED-LEAN | `winningColorPatternCount_second_diagonal`, 8d8f647, run 40811399447 | — |
-| C2 | Face lemma: win iff rigid skeleton NC and every face word wins | PROVED-PAPER, VERIFIED-COMP | `face_decomposition/NOTE.md` Step 2; all patterns n ≤ 12 + 200k random to length 60 | open |
+| C2 | Face lemma: win iff rigid skeleton NC and every face word wins | PROVED-LEAN (was PROVED-PAPER, VERIFIED-COMP; updated 2026-11-18) | `winning_iff_heavy_face_decomposition` (`HeavyFaceDecomposition.lean`), PR #28 0f32a99, run 40832788563; earlier evidence `face_decomposition/NOTE.md` Step 2 | — |
 | C4 | Goulden–Jackson type/cotype count | published | GJ 1992; Krattenthaler–Müller 0704.0199 Thm 5; checked N0 ≤ 11 | open |
 | C5 | Rotation averaging of the outer face | PROVED-PAPER, VERIFIED-COMP | NOTE.md Step 4; N0 ≤ 11 | open |
 | T | Face decomposition counting theorem | PROVED-PAPER, VERIFIED-COMP | NOTE.md; rows n ≤ 15 exact, per-profile n = 14 (27/27), n = 16 (44/44) | open |
@@ -55,13 +55,26 @@ current; it outranks older journals and notes when they disagree.
 | H1 | Binary content counts B(a,b) polynomial in b of degree a for b > a | PROVED-PAPER for a ≥ 2, b ≥ a+2 (degree exactly a, leading 1/a!); VERIFIED-COMP at b = a+1 for a ≤ 7; B(1,b) = 0 | a ≤ 6, words ≤ 22 (`audit/kappa2.c`); `fixed_content_333_20261117/` (2026-11-17) | b = a+1 boundary open in general |
 | H4 | Periodic ternary losers are trivial | KILLED | aabcaabc | — |
 | H5 | Ternary losers reduce to one letter | KILLED | residues of every length occur, n ≤ 13 | — |
-| OPEN | Closed form for fixed q ≥ 3 (A035617) | open problem | reduced to heavy kernel (all classes ≥ 4) | open |
+| K7 | Free moment–cumulant expansion: W_n(q) = Σ_{π∈NC(n)} Π κ_{\|B\|}(q), κ_s = connected weight | PROVED-LEAN | `labeledWinningCount_connected_expansion`, PR #34, runs 40919253021 / 40925789541 | — |
+| K8 | Every class of a nonzero connected pattern has size ≥ 5; κ_s(q) has zero constant term and degree ≤ max(1, ⌊s/5⌋) | PROVED-LEAN | `ncConnected_nonzero_every_class_min_five`, `connectedGamePolynomial_coeff_zero`, `connectedGamePolynomial_natDegree_le`, PR #42 f653c28, run 41029475200 (uses PR #41 `CrossedClassMinSize`) | — |
+| K9 | All-five layer (n = 5j): original signed coefficient law, generator bijection, SCC recognition | PROVED-LEAN | `five_bridge_20261029/`, PR #35, runs 40992099928 / 40992346166 | — |
+| K10 | First excess (n = 5j+1): every nonzero connected (6,5,…,5) pattern has 2 or 3 certificates and coefficient −1; totals 22, 312, 5607, 116857 at j = 2..5 | PROVED-PAPER (SixBoundaryLists lemmas PROVED-LEAN, run 41266402544) | `first_excess_exhaustiveness_20261101/`, PR #50 | Lean assembly open |
+| K11 | Universal (7,5,…,5) stratum = singleton triplings, coefficient +2 | PROVED-PAPER (seven SmallRefinementGap lemmas PROVED-LEAN, run 41323752649) | `seven_pair_deletion_20261101/`, PR #51 | (6,6,5,…) and non-universal sevens open |
+| F1 | Fusion-stack semantics: win ⇔ ε ∈ support; wins(u++v) ⇔ support(u) ∩ support(rev v) ≠ ∅ | PROVED-LEAN | `raw_max_win_iff_fusionEval`, `raw_max_win_append_iff_common_fusion_stack` (`FusionStack.lean`), PR #52 293cdb9, run 41329698273 | — |
+| F2 | W₃(n) for n ≤ 28 (n = 26–28 beyond OEIS, which ends at n = 25) | VERIFIED-COMP | `global_fusion_20261101/`; n ≤ 26 two methods, n = 27, 28 one method | second method for 27, 28 open |
+| F3 | Fusion horizon: finite-horizon support soundness; reversal is not a transition automorphism (non-lumpability witness) | PROVED-LEAN | `FusionHorizon.lean`, PR #53 c23423a, run 41336874589 | — |
+| E1 | liminf W₃(n)^{1/n} ≥ 2.996273 | PROVED-PAPER, finite certificate exhaustively checked | `entropy_certificate_20261111/` | Lean lifting open |
+| E2 | W₅(n)/5ⁿ ≤ 129·(40/41)ⁿ | PROVED-PAPER | `global_fusion_20261101/RUN_BOUND.md` | — |
+| E3 | Fixed-policy H = 9 entropy model has uniform drift in [138287869, 138287874]/3·10⁹ > 0; extra-base-color model [132338197, 132338202]/3·10⁹ > 0 | VERIFIED-COMP (exact integer certificates) | `extra_color_state_20261117/`, PR #57; Claude replay 2026-11-17 | — |
+| FC1 | W(3,3,r) = (r⁶+r⁵+15r⁴+395r³−376r²−3636r+18720)/120 for r ≥ 6; (2^(r−3)+1)(r+6)(r+5) KILLED | PROVED-PAPER, VERIFIED-COMP r ≤ 40 | `fixed_content_333_20261117/`, PR #59 | — |
+| AQ1 | W_n(q) for every q as an explicit polynomial, n ≤ 20; W_n(q) for all q is determined by counts over ≤ max(1, ⌊n/5⌋) letters | VERIFIED-COMP from K7, K8 | `all_alphabets_20261118/`; matches OEIS A065237/8/9/41 | — |
+| OPEN | Closed form for fixed q ≥ 3 (A035617) | open problem | reduced to the connected kernel κ_s(q) (K7, K8), was "heavy kernel (all classes ≥ 4)" before 2026-11-18; exact for excess n − 5j = 0 (K9) and 1 (K10, paper), partial for 2 (K11) | open |
 
 ## Lean target queue
 
 | Priority | Target | Spec | Notes | Owner |
 |---|---|---|---|---|
-| 1 | C2 face lemma | `lean_targets/FaceLemma.lean.txt` | structural; reuses C0, C1 | open |
+| 1 | C2 face lemma | `lean_targets/FaceLemma.lean.txt` | DONE: PR #28 (`winning_iff_heavy_face_decomposition`) | — |
 | 2 | Kreweras general type formula | — | the cycle-lemma machinery on PR #27 already covers two profiles; generalize | open |
 | 3 | C4 Goulden–Jackson count | — | largest piece; mathlib has no noncrossing partitions | open |
 | 4 | T, then K2, K4 (j = 3) | NOTE.md | after 1–3 | open |
@@ -85,6 +98,7 @@ current; it outranks older journals and notes when they disagree.
 | 2026-10-28 | Claude | Biedl et al. 2002; Burns–Purcell 2005/2007; Kurz 2001 | Characterization and binary count only |
 | 2026-10-28 | Claude | Web: clickomania/same game enumeration, Kreweras + game, noncrossing + Same Game, combinatorics-on-words reductions, arXiv 2026 (2608.11290, 2605.19063) | Nothing on face decomposition, diagonals j ≥ 2, or second coefficients |
 | — | open | Direct OEIS search for the triangle 1;1;1,2;1,5;1,12,5;1,28,21;1,62,84,14 | Blocked from Claude's sandbox; needs a manual check |
+| 2026-11-18 | Claude | OEIS A035617 internal format; A065237–A065241; Kurz 2001 note; Burns–Purcell 2007 abstract | A035617 lists n ≤ 25 (a(16)–a(25) by Dobbelaere, 2018), so W₂₆–W₂₈ (F2) are not in the OEIS. A065237 (q = 4) goes to n = 20; A065238 and A065239 to n = 18; A065241 to n = 17. Kurz gives W_n(q) polynomials only for n ≤ 11, with q-degree ≲ n/2. Burns–Purcell count binary losers (multiples of F(n−2)); their abstract shows no content-refined counts. Nothing found on cumulant degree ≤ s/5 (K8), fixed-content polynomials (FC1, H1) or the all-alphabet transfer (AQ1). |
 
 ## Change log
 
@@ -94,7 +108,7 @@ current; it outranks older journals and notes when they disagree.
 - C2 face decomposition (`winning_iff_heavy_face_decomposition`): PROVED-LEAN on PR #28 (0f32a99); independent rebuild + audit run 40832788563 (162 modules, 1913 decls, standard axioms only).
 - R2 `join_small_class_no_cross` (in a join of NC 2/3 certificates, a class of size <= 3 is never crossed by another class): PROVED-LEAN, commit 9d494fe, standard axioms only. Not yet imported into LC004.lean.
 - R1 `small_class_eq_of_refines` (a refinement with all classes >= 2 agrees with the coarser pattern on classes of size <= 3): PROVED-LEAN, run 40837815906, axioms propext/choice/Quot.sound.
-- kappa_s(q) polynomial in q, q^j coefficient (j >= 2) zero for s < 5j, s <= 15: VERIFIED-COMP (run d4e19c2). General law: CONJECTURE.
+- kappa_s(q) polynomial in q, q^j coefficient (j >= 2) zero for s < 5j, s <= 15: VERIFIED-COMP (run d4e19c2). General law: CONJECTURE. [2026-11-18 note: now PROVED-LEAN as `connectedGamePolynomial_coeff_zero`, PR #42, run 41029475200; registry row K8.]
 - "kappa_s linear in q": KILLED (fails n = 10: 305 vs 300).
 - Rows 16-17 not computed (process killed). Novelty unchecked (OEIS fetch blocked).
 - Process notes: PR #28's branch audit covers only the closure of HeavyFaceCertificateProduct; merge order must be #26 -> #27 -> integration -> #28; claude/github-consolidation-cet7n9 is 131 commits behind main, do not merge naively.
@@ -113,7 +127,7 @@ current; it outranks older journals and notes when they disagree.
 - Publication branch: infrastructure only (paper.tex 37 pp, blueprint adapter). GitHub Pages deployment is BLOCKED by a repo setting: Settings > Pages > Source = GitHub Actions (owner action). I did not rebuild the PDF.
 - Both branches still hold only a negative result about a greedy/finite-summary strategy; no counting law.
 - Crossing coefficients (my computation): c({0145}{2367}) = 0 at n=8, although it is a join of two certificates. Joins with a crossing and nonzero c first appear at n=10, profile (5,5), total c=-5. So the right statement is about NONZERO coefficients, not about which joins exist (see the Z3 entry above). Extending to n=11,12 running.
-- Crossing-coefficient law (VERIFIED-COMP n<=12 via research/free_cumulants/crossing_profiles.py, CONJECTURE in general): every join x with a crossing and c(x)!=0 has ALL crossed classes of size >=5. Data (crossed-class size profile: sum of c, number of x): n=10 (5,5): -5, 5; n=11 (5,6): -22, 22; n=12 (5,5): -60, 60; (5,7): 60, 48; (6,6): -30, 30; none at n<=9. R2 (Lean) proves only >=4 for joins to exist; the extra step 4 -> 5 is a Mobius cancellation (e.g. c({0145}{2367})=0 at n=8) and is the real target lemma: show c(x)=0 when x has a crossed class of size 4. This is consistent with, and probably the source of, the cumulant vanishing law s<5j.
+- Crossing-coefficient law (VERIFIED-COMP n<=12 via research/free_cumulants/crossing_profiles.py, CONJECTURE in general): every join x with a crossing and c(x)!=0 has ALL crossed classes of size >=5. Data (crossed-class size profile: sum of c, number of x): n=10 (5,5): -5, 5; n=11 (5,6): -22, 22; n=12 (5,5): -60, 60; (5,7): 60, 48; (6,6): -30, 30; none at n<=9. R2 (Lean) proves only >=4 for joins to exist; the extra step 4 -> 5 is a Mobius cancellation (e.g. c({0145}{2367})=0 at n=8) and is the real target lemma: show c(x)=0 when x has a crossed class of size 4. This is consistent with, and probably the source of, the cumulant vanishing law s<5j. [2026-11-18 note: now PROVED-LEAN as `winningJoinCoefficient_nonzero_crossed_min_five`, PR #42; registry row K8.]
 - n=13 (same script): crossing_nonzero=585, min crossed class size still 5; profile (sum c, count): (5,5): -65, 65; (5,6): -286, 286; (5,8): 286, 91; (6,7): 117, 143. VERIFIED-COMP n<=13. Note sums like 65 = 5*13, 286 = C(13,3) look structured (unexplained).
 - Cancellation mechanism for crossed 4-classes (VERIFIED-COMP, research/free_cumulants/redundant_atom.py): for every crossing join x with a crossed class of size 4 and at most 16 certificates below it (all of n=8,9,10; 143 of 165 at n=11; 22 skipped for size), c(x)=0. In all but 10 of the n<=11 cases a single redundant certificate a exists (a lies in no irredundant generating set), giving the sign-reversing involution F <-> F xor {a} on {F : sup F = x}, so the crosscut sum vanishes. Smallest example n=8: the three certificates below x={0145}{2367} are a=(01)(45)(23)(67), b=(01)(45)(27)(36), c=(05)(14)(23)(67) (the fourth combination crosses); every generating set contains b and c, and a<=b v c, so a cancels. The 10 n=10 exceptions still have c=0 but need another argument. This turns the target lemma into: exhibit the redundant certificate for a crossed 4-class in general. CONJECTURE until proved.
 
@@ -828,6 +842,16 @@ This answers R-2026-11-14 point 4. Everything is in `research/fixed_content_333_
   - A gap-type sum then gives multiplicities C(r − s − k − 1, k − 1), which are polynomial in r for r ≥ 8. The polynomial also checks at r = 6 and 7.
 - **H1 upgraded.** H1 is PROVED-PAPER for a ≥ 2 and b ≥ a + 2, with degree exactly a and leading coefficient 1/a!. The b = a + 1 case is VERIFIED-COMP for a ≤ 7.
 - Neither result is in Lean, and novelty has not been checked.
+
+## 2026-11-18 Claude: answer to R-2026-11-04; all-alphabet counts; registry reconciliation
+
+- **R-2026-11-04 answered.** All six questions are answered in `coordination/requests/R-2026-11-04.md`.
+- **Registry updated.** C2 moves to PROVED-LEAN, and Lean queue item 1 is done. New rows: K7–K11, F1–F3, E1–E3, FC1 and AQ1. The OPEN row is restated. The old CONJECTURE lines for cumulant vanishing and for the crossing law are annotated as now PROVED-LEAN (PR #42). Nothing was deleted.
+- **New VERIFIED-COMP (AQ1).** W_n(q) is now an explicit polynomial in q for n ≤ 20, so it is known for every q.
+  - It is derived from K7 and K8 (Lean) with only 1-, 2- and 3-letter data, plus one published 4-letter term for n = 20.
+  - It matches every published term of A065237 (n ≤ 19), A065238, A065239 and A065241.
+  - It gives new terms: q = 5 and 6 at n = 19–20, and q = 8 at n = 18–20.
+- **Corrections to Claude's own STATUS.md of 2026-11-17.** It listed the cumulant vanishing law as an open conjecture; it was already PROVED-LEAN in PR #42. It also listed the first-excess obligation as open; PR #50 had already discharged it at the paper level. Both are fixed.
 
 ## Side-branch session entries merged 2026-11-17
 

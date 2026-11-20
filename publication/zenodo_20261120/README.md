@@ -36,7 +36,7 @@ From this directory on Linux or macOS, run
 ```
 
 The expected SHA-256 of the reconstructed archive is
-`f2ec74e9cc3d2b6761db7d3f0d9f7ac775632587634536f4f71238f6858a6716`.
+`2d271de115c89c10abf9ee250bed01901e6c455bad0ad45bad9c9310c12985db`.
 The ZIP includes the exact source snapshot, verification scripts, expected
 outputs, 60-entry claim manifest, 31 formal proof records, source-to-kernel
 mapping for all 1,604 indexed theorem declarations, and hashes of all 252
@@ -86,10 +86,12 @@ draft and the derived digests changed.
   declaration-index location, the census files storing representatives, and
   the deposit draft separating the signed-reconstruction inputs from the
   through-20 comparison.
+- (g) Section 5 sets out the length-21 census as five numbered steps. This
+  follows an outside reader's comment on its density.
 
 ## Notes for reviewers of this edition
 
-The 1.1-draft ZIP has 9,787,219 bytes. The two PDFs were built with pdfTeX
+The 1.1-draft ZIP has 9,789,046 bytes. The two PDFs were built with pdfTeX
 1.40.25 (TeX Live 2023/Debian). From the unpacked bundle,
 `sh scripts/build_pdfs.sh ./rebuilt-pdfs` reproduces them byte-for-byte on
 that toolchain. A different pdfTeX, such as the 1.40.29 used for 1.0-draft,

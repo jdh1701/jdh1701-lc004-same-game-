@@ -1,6 +1,6 @@
 # LC004 Zenodo manuscript review package
 
-Prepared 20 November 2026 from canonical source commit
+Version 1.1-draft. Prepared 20 November 2026 from canonical source commit
 `71145023aa9dfa628533ec10977ec563d4147d2d`. This directory is a review
 package. It does not represent a Zenodo deposit, DOI reservation, journal
 submission, or accepted priority claim.
@@ -36,7 +36,7 @@ From this directory on Linux or macOS, run
 ```
 
 The expected SHA-256 of the reconstructed archive is
-`c5b005a9e6982375376c49518639ee1dfa18141d2d87762b0128a86281559416`.
+`2d271de115c89c10abf9ee250bed01901e6c455bad0ad45bad9c9310c12985db`.
 The ZIP includes the exact source snapshot, verification scripts, expected
 outputs, 60-entry claim manifest, 31 formal proof records, source-to-kernel
 mapping for all 1,604 indexed theorem declarations, and hashes of all 252
@@ -58,19 +58,48 @@ locally compiled project objects.
   ordinary degree-eight interpolation. The manuscript does not claim that
   polynomial itself as new.
 
-Claude's requested audit is recorded in
-`coordination/requests/R-2026-11-20-zenodo-review.md`. Review responses belong
-in that file and in the pull-request conversation before anything is merged or
-deposited.
+Codex's verification and Claude's independent review are recorded in
+`coordination/requests/R-2026-11-20-zenodo-review.md`. Both verdicts were
+READY FOR HUMAN AUTHOR REVIEW. Version 1.1-draft applies the editorial
+corrections 8(a)-(f) listed there.
+
+## Changes in 1.1-draft
+
+The mathematics, data, programs, snapshot and expected outputs are unchanged.
+Only manuscript wording, the formal-coverage table, version labels, the deposit
+draft and the derived digests changed.
+
+- (a) Length 17 is identified as already determined by public rows, and
+  lengths 18 to 21 as new. This is in `core.tex`.
+- (b) The formal-coverage table and the main text cite commits or CI runs
+  instead of pull-request numbers. This is in `application.tex`. The archival
+  provenance chapters of the monograph keep their pull-request history, which
+  is anchored by commit links.
+- (c) The source labels after the length-20 coefficient move into a footnote.
+- (d) A table row cites `connectedGamePolynomial_eval`, which identifies the
+  polynomial in the support and degree theorems with the expansion's connected
+  weight.
+- (e) Lemma 3 states why both witnesses are needed. An H certificate leaves the
+  b-c gap and the exterior in one region, and a V certificate leaves the
+  interiors of ab and cd in one region.
+- (f) Codex's three clarifications are now in the sources. They cover the
+  declaration-index location, the census files storing representatives, and
+  the deposit draft separating the signed-reconstruction inputs from the
+  through-20 comparison.
+- (g) Section 5 sets out the length-21 census as five numbered steps. This
+  follows an outside reader's comment on its density.
 
 ## Notes for reviewers of this edition
 
-The repaired ZIP has 9,774,935 bytes. The two manuscripts can also be rebuilt
-byte-for-byte with the Linux x86-64 [TinyTeX November 2026 release](https://github.com/rstudio/tinytex-releases/releases/tag/v2026.11).
-Use the full distribution with pdfTeX 1.40.29, put its bin directory first on
-PATH, then run `sh scripts/build_pdfs.sh ./rebuilt-pdfs` from the unpacked
-bundle. Compare the resulting PDFs against the two PDF entries in
-`LC004_SHA256SUMS.txt`.
+The 1.1-draft ZIP has 9,789,046 bytes. The two PDFs were built with pdfTeX
+1.40.25 (TeX Live 2023/Debian). From the unpacked bundle,
+`sh scripts/build_pdfs.sh ./rebuilt-pdfs` reproduces them byte-for-byte on
+that toolchain. A different pdfTeX, such as the 1.40.29 used for 1.0-draft,
+gives the same text with different bytes. A final deposit edition may be
+re-rendered on one pinned toolchain.
+
+Three details clarify the preserved files. They are now also stated in the
+manuscripts.
 
 Three details clarify the preserved files for this review.
 

@@ -75,7 +75,79 @@ does not replace the durable response.
 
 ## Response
 
-Pending Claude review.
+### Claude independent review (20 November 2026)
+
+**Head reviewed:** `418c0e7` (archive repair `1f70f4e` plus the Codex record below). The first head, `743775a`, had nine truncated parts. Each was 786,444 bytes, the decoded size of a roughly 1 MiB base64 payload. That defect is fixed. **Source pin:** `71145023aa9d`, tree `9829ed1f`. **CI at `418c0e7`:** `lean` succeeded and `checks` succeeded. **Environment:** 2 CPUs, no Lean toolchain. I did not compile Lean locally. For the Lean build I rely on the green CI run at this head and on the packaged build and kernel logs.
+
+The checks I added are in `claude_check_signed_mobius.py` (with output `claude_check_signed_mobius_n10.json`) and `claude_check_bruteforce_W.py` in this directory. They share no code with the bundle or with `check_zenodo_crossed_four.py`.
+
+1. **Core proof: sound. One exposition gap.**
+   - **Lemma 2 (every class of a connected partition is crossed).** Correct. The cyclic-gap argument handles the wraparound gap, and the proof does not appeal to the Lean theorem.
+   - **Classes of size 2 or 3.** Correct. A class that cannot split must stay whole in every certificate. Every other block then lies in one cyclic gap of the class, so no join can cross it.
+   - **Lemma 3, the two-witness characterization.** Correct, but too compressed. An H-certificate `(ab)(cd)` may contain blocks joining the exterior gap to the gap between b and c. These do not cross either chord. A V-certificate `(ad)(bc)` isolates exactly those two gaps, and H isolates the other two. So only *both* witnesses together force all four gaps to win separately. The paper's sentence "Restrict those certificates to obtain four witnesses" hides this step. A referee will ask for it. Codex's item 1 states it correctly.
+   - **Meet invariance.** Correct. f(r) = f(r∧D) holds on the whole lower ideal, including refinements that split A, because the overlap condition reads only r restricted to A and to each gap. Uniqueness of lower sums then kills the coefficient at p, since p ≰ D. The two single-pair terms also vanish at p, since p ≰ D_H and p ≰ D_V.
+   - **From connectedness to the threshold.** Correct. j ≥ 2 classes of size at least 5 give 5j ≤ s. The degree-one exception and the zero constant term are handled.
+   - **No circularity.** The paper proof never cites the Lean result.
+   - **Independent test.** For every set partition of [n] with n ≤ 10, I computed c(p) by partition-lattice Möbius inversion. Here h comes from legal whole-run play, not from certificates. Results:
+     - There are 0 violations of the five-position threshold.
+     - κ₁ through κ₁₀ match `expected/transfer.json` exactly. At n = 10, κ₁₀ = −161q − 5q², and the five (5,5) survivors all have weight −1.
+     - Codex's check reached 8 positions. This one adds n = 9 and n = 10, and n = 10 is the first size where the j = 2 boundary is live.
+
+2. **Formal alignment: matches. Add one bridge citation.**
+   - **Statements checked against the paper.**
+     - `ncConnected_nonzero_every_class_min_five` has hypotheses connected, `p ≠ ⊤` (at least two classes) and a nonzero coefficient. Its conclusion is that every class has size at least 5. This is Theorem 1's first claim in contrapositive form.
+     - `connectedGamePolynomial_natDegree_le` gives `max 1 (n / 5)`.
+     - `connectedGamePolynomial_constant_zero` requires `0 < n`.
+     - `connectedClassCoefficient_first_excess` requires `2 ≤ j` at size `5j+1`.
+     - `labeledWinningCount b n` counts `Fin n → Fin b` with `RawMaxErases` (whole maximal runs), so letters are named and b may be 0. At n = 0 it is the empty word, and the expansion has the empty product.
+   - **One missing citation.** The expansion is stated with `connectedGameWeight`. The support and degree theorems are stated with `connectedGamePolynomial`. These are linked by `connectedGamePolynomial_eval` (`ConnectedCoefficientSupport.lean:174`), which neither paper's formal-coverage table cites. Without it, a reader cannot see that the two Lean objects are the paper's single κₛ. Add one row.
+   - **Shorter lengths.** These are used only in the paper corollary. The paper says so.
+   - **Builds.** The PR 34, PR 42 and consolidated build records were not rerun by me. CI is green at this head. Treat that, plus the packaged logs, as the build certificate.
+
+3. **Length 21: reproduced.**
+   - `replay.py census` ran in 21 s and passed byte-for-byte on `count.json`, `replay.json`, `structure.json`, `survivors.txt` and `full_join.txt`.
+   - Counts: 5,816 full-join representatives and 142 nonzero ones, expanding to 5,607 patterns. The split is 2,121 two-generator and 3,486 three-generator patterns.
+   - No factorial or orbit multiplier remains. The census already counts indexed partitions, and q⁴ in (2) accounts for the labels.
+   - The cubic residual at q = 1, 2, 3 is 432,329, −5,071,650 and −19,396,917. Restoring the quartic gives κ₂₁ = 2438823q − 1525664q² − 480830q³ − 5607q⁴. I evaluated the table rows from the stated polynomials and they agree.
+   - The W₂₁ coefficients evaluate to 1 at q = 1 and to 1,921,550 at q = 2, which is the Burns–Purcell value. At q = 3 they give 1,623,881,889, matching A035617. At q = 4 they give 70,840,767,772. The top coefficient is C(21,9) = 293,930.
+   - The census and the coefficient replay share candidate generation. The papers say so, so they are not two independent censuses.
+
+4. **Holdouts and independence: confirmed.**
+   - `scripts/transfer.py` reads only three files: `n20_shards.txt`, the census `count.json` and `evidence/ternary_input.json`. The last holds A035617 values only, frozen at an `oeisdata` blob. No four-color value is read.
+   - The transfer gives W₁₈(4) = 1,341,482,740, W₁₉(4) = 5,023,006,444 and W₂₀(4) = 18,844,637,356. All three match live OEIS A065237. A065237 has no length-21 term, so 70,840,767,772 is a new number.
+   - `replay.py four` passed in 15 s. It takes only the length as input, so it independently counts the four-color specialization. It relies on the Lean-proved common-stack join (`raw_max_win_append_iff_common_fusion_stack`), not on the census.
+   - Brute force by legal whole-run play gives the full W_n polynomials for n ≤ 13 at q = 0 through 6, and they match `transfer.json`. Values at q = 4, 5, 6 were never inputs.
+   - `replay.py pr60` and `replay.py input` both passed.
+   - Distinguish carefully. The q = 4 check and the "÷24" recovery are arithmetic replays given the shared small-alphabet data. The four-color counter and my brute force are the only checks that count under the game rules.
+
+5. **Ternary: not fully rerun.**
+   - `replay.py ternary` did not finish in 9 minutes on 2 cores, so I did not reproduce lengths 26–28 locally. I rely on the PR 52 and PR 53 receipts, which Codex reran.
+   - From the source, the two counters are genuinely distinct. One works on half-words with posting lists. The other is a forward support-state recurrence with reversal averaging. They share the fusion and stack semantics, so "two algorithms, shared semantics" is the right description. The papers' wording is correct.
+
+6. **Prior work: no prior statement found.**
+   - I searched the game literature, OEIS (A065237–A065243, A323844, A323812, A309874) and the free-cumulant literature.
+   - I found no earlier statement of the five-position cancellation for this signed winning indicator, or of an alphabet-transfer bound below ⌊n/2⌋.
+   - The length-17 correction stands: lengths 17 at q = 0 through 8 are public.
+   - **Narrowest defensible claim:** "We prove, for the signed certificate-join weights of one-dimensional Same Game, that connected terms with ≥ 2 classes vanish unless every class has ≥ 5 positions, and derive a finite alphabet-transfer bound; to our knowledge this is not stated in the Same Game or OEIS literature."
+   - Also: Biedl et al. now has a 2025 Cambridge online edition of the MSRI volume. Citing the 2002 print edition is fine.
+
+7. **Archive: complete.**
+   - The parts reassemble to 9,774,935 bytes with SHA-256 `c5b005a9…9416`, and `unzip -t` is clean.
+   - `verify_files.py` passes 1,844 internal digests and rebuilds the 1,751-blob tree `9829ed1f`. It needs the script directory on `sys.path`, so do not run it under `python3 -I`.
+   - `replay.py fast` passed.
+   - I did not recount 251/103/1,604/31/60 beyond Codex's audit, and I did not rebuild the PDFs.
+
+8. **Editorial: corrections needed.**
+   1. **(a) Length 17.** The text says "The length-17–21 formulas extend the displayed list" and then says 17 is already determined. State that 18–21 are new and that 17 is determined by public data. This appears in both papers, from `core.tex`.
+   2. **(b) PR numbers.** Formal tables and text cite "PR 34/42/52/53/60". Replace these with commit hashes or run URLs.
+   3. **(c) Link labels.** Leftover link labels read as sentences, for example `\source{…}{Shard totals}; \source{…}{pair-search source}.` in `application.tex`. Move them into a footnote or the reproducibility note.
+   4. **(d) Bridge row.** Add the `connectedGamePolynomial_eval` row (item 2).
+   5. **(e) Lemma 3.** Add two or three sentences making the H/V gap-isolation step explicit (item 1).
+   6. **(f) Codex's three wording corrections.** These are recorded in the publication README but not yet in the PDFs. The PDF hashes are unchanged, and that is fine for a review edition. The deposit draft's "two historic numerical inputs" still needs fixing.
+   7. **(g) Abstracts.** Both papers have the same abstract. The Zenodo abstract adds "support bound", which is consistent.
+   8. **(h) Prose.** The prose is dense, clipped and recognisably machine-drafted. The deposit's AI disclosure is accurate. For JIS, the human author must rewrite the prose.
+
+9. **Decision: READY FOR HUMAN AUTHOR REVIEW.** The mathematics, Lean alignment, length-21 numbers, holdout and archive all check out. Nothing blocks review. Before any deposit, apply 8(a)–(f), regenerate the PDFs and manifests, and settle authorship, licence and rights. Not merged, deposited or submitted.
 
 ### Codex verification of the repaired review head
 

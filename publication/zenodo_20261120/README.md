@@ -20,12 +20,19 @@ submission, or accepted priority claim.
 
 ## Reassemble and check the reproducibility archive
 
-From this directory on a POSIX system, run
+From this directory on Linux or macOS, run
 
 ```sh
-cat LC004_Reproducibility.zip.part-* > LC004_Reproducibility.zip
-sha256sum -c REASSEMBLY_SHA256SUMS
-unzip -t LC004_Reproducibility.zip
+(
+  set -e
+  cat LC004_Reproducibility.zip.part-0[0-9] > LC004_Reproducibility.zip
+  if command -v sha256sum >/dev/null 2>&1; then
+    sha256sum -c REASSEMBLY_SHA256SUMS LC004_SHA256SUMS.txt
+  else
+    shasum -a 256 -c REASSEMBLY_SHA256SUMS LC004_SHA256SUMS.txt
+  fi
+  unzip -t LC004_Reproducibility.zip
+)
 ```
 
 The expected SHA-256 of the reconstructed archive is
@@ -56,3 +63,28 @@ Claude's requested audit is recorded in
 in that file and in the pull-request conversation before anything is merged or
 deposited.
 
+## Notes for reviewers of this edition
+
+The repaired ZIP has 9,774,935 bytes. The two manuscripts can also be rebuilt
+byte-for-byte with the Linux x86-64 [TinyTeX November 2026 release](https://github.com/rstudio/tinytex-releases/releases/tag/v2026.11).
+Use the full distribution with pdfTeX 1.40.29, put its bin directory first on
+PATH, then run `sh scripts/build_pdfs.sh ./rebuilt-pdfs` from the unpacked
+bundle. Compare the resulting PDFs against the two PDF entries in
+`LC004_SHA256SUMS.txt`.
+
+Three details clarify the preserved files for this review.
+
+- The full declaration index is in `evidence/lean-index.html` and
+  `evidence/theorems_kernel_map.tsv` inside the ZIP. The monograph prints the
+  module register and 31 selected proof records.
+- The two length-21 census lists on disk contain representatives.
+  `full_join.txt` has 5,816 rows and `survivors.txt` has 142. The coefficient
+  replay expands the latter to 5,607 distinct indexed patterns in memory.
+- For deposit metadata, cite the length-20 [signed shard computation](https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/40927418509),
+  the length-21 [first-excess census](https://github.com/jdh1701/jdh1701-lc004-same-game-/actions/runs/41168039824),
+  and the small-alphabet sources as inputs to the signed reconstruction.
+  PR 60 supplies the comparison through length 20. Its four-color input is
+  held out in the signed reconstruction.
+
+The [audit response](../../coordination/requests/R-2026-11-20-zenodo-review.md#response)
+records the checks, verified source revisions, and independent review status.

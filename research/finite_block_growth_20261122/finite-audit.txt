@@ -1,0 +1,3 @@
+'LC004.RawGrowth.capped_block_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LC004.RawGrowth.fixed_cap_forbids_segment' depends on axioms: [propext, Quot.sound]
+'LC004.RawGrowth.full_iff_finite_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
